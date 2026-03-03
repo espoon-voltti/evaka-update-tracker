@@ -34,6 +34,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL_ESPOO: ${{ secrets.SLACK_WEBHOOK_URL_ESPOO }}
+          SLACK_WEBHOOK_URL_TAMPERE_REGION: ${{ secrets.SLACK_WEBHOOK_URL_TAMPERE_REGION }}
+          SLACK_WEBHOOK_URL_OULU: ${{ secrets.SLACK_WEBHOOK_URL_OULU }}
+          SLACK_WEBHOOK_URL_TURKU: ${{ secrets.SLACK_WEBHOOK_URL_TURKU }}
           STAGING_INSTANCES: ${{ secrets.STAGING_INSTANCES }}
           OULU_STAGING_USER: ${{ secrets.OULU_STAGING_USER }}
           OULU_STAGING_PASS: ${{ secrets.OULU_STAGING_PASS }}

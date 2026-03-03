@@ -1,17 +1,38 @@
 import nock from 'nock';
 import { sendSlackNotification } from '../../src/api/slack';
+import { resolveWebhookUrl } from '../../src/config/slack-routing';
 import { DeploymentEvent } from '../../src/types';
 
 // Override DRY_RUN for tests
 const originalEnv = process.env.DRY_RUN;
 
+const ROUTING_ENV_VARS = [
+  'SLACK_WEBHOOK_URL',
+  'SLACK_WEBHOOK_URL_ESPOO',
+  'SLACK_WEBHOOK_URL_TAMPERE_REGION',
+  'SLACK_WEBHOOK_URL_OULU',
+  'SLACK_WEBHOOK_URL_TURKU',
+];
+const savedRoutingEnv: Record<string, string | undefined> = {};
+
 beforeEach(() => {
   process.env.DRY_RUN = 'false';
+  for (const key of ROUTING_ENV_VARS) {
+    savedRoutingEnv[key] = process.env[key];
+    delete process.env[key];
+  }
 });
 
 afterEach(() => {
   nock.cleanAll();
   process.env.DRY_RUN = originalEnv;
+  for (const key of ROUTING_ENV_VARS) {
+    if (savedRoutingEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedRoutingEnv[key];
+    }
+  }
 });
 
 const mockEvent: DeploymentEvent = {
@@ -116,4 +137,104 @@ describe('sendSlackNotification', () => {
     );
     warnSpy.mockRestore();
   }, 30000);
+});
+
+describe('per-city Slack channel routing', () => {
+  const ouluEvent: DeploymentEvent = {
+    ...mockEvent,
+    id: '2026-03-02T12:00:00Z_oulu-prod_core',
+    environmentId: 'oulu-prod',
+    cityGroupId: 'oulu',
+  };
+
+  const tampereEvent: DeploymentEvent = {
+    ...mockEvent,
+    id: '2026-03-02T12:00:00Z_tampere-prod_wrapper',
+    environmentId: 'tampere-prod',
+    cityGroupId: 'tampere-region',
+    repoType: 'wrapper',
+  };
+
+  const ouluStagingEvent: DeploymentEvent = {
+    ...mockEvent,
+    id: '2026-03-02T12:00:00Z_oulu-staging_core',
+    environmentId: 'oulu-staging',
+    cityGroupId: 'oulu',
+  };
+
+  it('routes notifications to different webhooks per city group', async () => {
+    process.env.SLACK_WEBHOOK_URL_ESPOO = 'https://hooks.slack.com/services/T00/ESPOO/XXX';
+    process.env.SLACK_WEBHOOK_URL_OULU = 'https://hooks.slack.com/services/T00/OULU/XXX';
+
+    const espooScope = nock('https://hooks.slack.com')
+      .post('/services/T00/ESPOO/XXX')
+      .reply(200, 'ok');
+    const ouluScope = nock('https://hooks.slack.com')
+      .post('/services/T00/OULU/XXX')
+      .reply(200, 'ok');
+
+    const espooUrl = resolveWebhookUrl('espoo');
+    const ouluUrl = resolveWebhookUrl('oulu');
+
+    await sendSlackNotification(espooUrl, mockEvent);
+    await sendSlackNotification(ouluUrl, ouluEvent);
+
+    expect(espooScope.isDone()).toBe(true);
+    expect(ouluScope.isDone()).toBe(true);
+  });
+
+  it('sends all notifications to default webhook when no per-city vars are set', async () => {
+    process.env.SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/T00/DEFAULT/XXX';
+
+    const defaultScope = nock('https://hooks.slack.com')
+      .post('/services/T00/DEFAULT/XXX')
+      .times(2)
+      .reply(200, 'ok');
+
+    const espooUrl = resolveWebhookUrl('espoo');
+    const tampereUrl = resolveWebhookUrl('tampere-region');
+
+    await sendSlackNotification(espooUrl, mockEvent);
+    await sendSlackNotification(tampereUrl, tampereEvent);
+
+    expect(defaultScope.isDone()).toBe(true);
+  });
+
+  it('uses per-city webhook for configured city and default for unconfigured city', async () => {
+    process.env.SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/T00/DEFAULT/XXX';
+    process.env.SLACK_WEBHOOK_URL_ESPOO = 'https://hooks.slack.com/services/T00/ESPOO/XXX';
+
+    const espooScope = nock('https://hooks.slack.com')
+      .post('/services/T00/ESPOO/XXX')
+      .reply(200, 'ok');
+    const defaultScope = nock('https://hooks.slack.com')
+      .post('/services/T00/DEFAULT/XXX')
+      .reply(200, 'ok');
+
+    const espooUrl = resolveWebhookUrl('espoo');
+    const ouluUrl = resolveWebhookUrl('oulu');
+
+    await sendSlackNotification(espooUrl, mockEvent);
+    await sendSlackNotification(ouluUrl, ouluEvent);
+
+    expect(espooScope.isDone()).toBe(true);
+    expect(defaultScope.isDone()).toBe(true);
+  });
+
+  it('routes staging events to the same per-city webhook as production', async () => {
+    process.env.SLACK_WEBHOOK_URL_OULU = 'https://hooks.slack.com/services/T00/OULU/XXX';
+
+    const ouluScope = nock('https://hooks.slack.com')
+      .post('/services/T00/OULU/XXX')
+      .times(2)
+      .reply(200, 'ok');
+
+    const prodUrl = resolveWebhookUrl('oulu');
+    const stagingUrl = resolveWebhookUrl('oulu');
+
+    await sendSlackNotification(prodUrl, ouluEvent);
+    await sendSlackNotification(stagingUrl, ouluStagingEvent);
+
+    expect(ouluScope.isDone()).toBe(true);
+  });
 });

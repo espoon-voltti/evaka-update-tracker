@@ -8,6 +8,7 @@ import { collectPRsBetween, collectPendingPRs, buildPRTrack } from './services/p
 import { readPreviousData, detectChanges, buildUpdatedPrevious } from './services/change-detector.js';
 import { deploySite } from './services/site-deployer.js';
 import { sendSlackNotification } from './api/slack.js';
+import { resolveWebhookUrl } from './config/slack-routing.js';
 import { readHistory, appendEvents, pruneOldEvents, writeHistory } from './services/history-manager.js';
 import {
   CityGroupData,
@@ -200,11 +201,11 @@ export async function run() {
   };
 
   // Send Slack notifications for deployment events
-  const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
   if (allEvents.length > 0) {
     console.log(`\n${allEvents.length} deployment event(s) detected.`);
     for (const event of allEvents) {
-      await sendSlackNotification(slackWebhookUrl ?? '', event);
+      const webhookUrl = resolveWebhookUrl(event.cityGroupId);
+      await sendSlackNotification(webhookUrl, event);
     }
   } else {
     console.log('\nNo deployment changes detected.');
