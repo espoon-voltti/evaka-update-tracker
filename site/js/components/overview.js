@@ -8,7 +8,7 @@ import { navigate } from '../router.js';
 
 export function renderOverview(data) {
   if (!data || !data.cityGroups) {
-    return '<div class="empty-state">No deployment data available</div>';
+    return '<div class="empty-state">Muutostietoja ei saatavilla</div>';
   }
 
   const cards = data.cityGroups.map((city) => renderCityCard(city));
@@ -17,10 +17,10 @@ export function renderOverview(data) {
 
 function renderCityCard(city) {
   const envSections = city.environments.map((env) => {
-    const label = env.type === 'production' ? 'Production' : 'Staging';
+    const label = env.type === 'production' ? 'Tuotanto' : 'Testaus';
     const badge = renderStatusBadge(env.version);
     const mismatch = env.versionMismatch
-      ? '<div class="mismatch-warning">Version mismatch detected across instances</div>'
+      ? '<div class="mismatch-warning">Versioero havaittu instanssien välillä</div>'
       : '';
 
     return `
@@ -38,7 +38,7 @@ function renderCityCard(city) {
   const corePRs = city.prTracks?.core?.deployed || [];
   const coreSection = corePRs.length > 0
     ? `<div class="pr-track">
-        <div class="pr-track-header">Core — In Production</div>
+        <div class="pr-track-header">Ydin — Tuotannossa</div>
         ${renderPRList(corePRs)}
       </div>`
     : '';
@@ -47,7 +47,7 @@ function renderCityCard(city) {
   const wrapperPRs = city.prTracks?.wrapper?.deployed || [];
   const wrapperSection = wrapperPRs.length > 0
     ? `<div class="pr-track">
-        <div class="pr-track-header">Wrapper — In Production</div>
+        <div class="pr-track-header">Kuntaimplementaatio — Tuotannossa</div>
         ${renderPRList(wrapperPRs)}
       </div>`
     : '';

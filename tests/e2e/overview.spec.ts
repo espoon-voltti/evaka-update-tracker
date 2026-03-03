@@ -34,7 +34,7 @@ test.describe('Overview — In Production sections', () => {
 
     for (let i = 0; i < count; i++) {
       const card = cityCards.nth(i);
-      const coreHeader = card.locator('.pr-track-header', { hasText: 'Core — In Production' });
+      const coreHeader = card.locator('.pr-track-header', { hasText: 'Ydin — Tuotannossa' });
       await expect(coreHeader).toBeVisible();
 
       // Each card should have at least one PR item
@@ -53,7 +53,7 @@ test.describe('Overview — In Production sections', () => {
     const tampereCard = page.locator('.city-card[data-city-id="tampere-region"]');
     await expect(tampereCard).toBeVisible();
 
-    const wrapperHeader = tampereCard.locator('.pr-track-header', { hasText: 'Wrapper — In Production' });
+    const wrapperHeader = tampereCard.locator('.pr-track-header', { hasText: 'Kuntaimplementaatio — Tuotannossa' });
     await expect(wrapperHeader).toBeVisible();
   });
 

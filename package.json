@@ -9,7 +9,8 @@
     "test": "jest",
     "test:e2e": "playwright test",
     "lint": "eslint src/ tests/",
-    "format": "prettier --write 'src/**/*.ts' 'tests/**/*.ts'"
+    "format": "prettier --write 'src/**/*.ts' 'tests/**/*.ts'",
+    "screenshot": "npx tsx scripts/screenshot.ts"
   },
   "engines": {
     "node": ">=20.0.0"

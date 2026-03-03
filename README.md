@@ -1,147 +1,152 @@
-# eVaka Deployment Tracker
+# eVaka-muutosten seuranta
 
-A monitoring dashboard that tracks which Pull Requests are deployed across eVaka instances in multiple Finnish cities. A scheduled GitHub Action fetches deployed versions, resolves PRs via the GitHub API, detects changes, sends Slack notifications, and generates a static dashboard served on GitHub Pages.
+Seurantanäkymä, joka näyttää mitkä Pull Requestit on asennettu eri eVaka-instansseihin suomalaisissa kunnissa. Ajastettu GitHub Action hakee asennetut versiot, selvittää PR:t GitHub API:n kautta, tunnistaa muutokset, lähettää Slack-ilmoitukset ja tuottaa staattisen hallintapaneelin GitHub Pagesiin.
 
-## Monitored Cities
+![Hallintapaneelin kuvakaappaus — Tampereen seutu](site/images/screenshot.png)
 
-| City | Repository | Production | Staging |
-|------|-----------|------------|---------|
-| **Espoo** | [espoon-voltti/evaka](https://github.com/espoon-voltti/evaka) (core) | espoonvarhaiskasvatus.fi | via `STAGING_INSTANCES` env var |
-| **Tampere region** | [Tampere/trevaka](https://github.com/Tampere/trevaka) (wrapper) | varhaiskasvatus.tampere.fi + 8 municipalities | via `STAGING_INSTANCES` env var |
-| **Oulu** | [Oulunkaupunki/evakaoulu](https://github.com/Oulunkaupunki/evakaoulu) (wrapper) | varhaiskasvatus.ouka.fi | via `STAGING_INSTANCES` env var |
-| **Turku** | [City-of-Turku/evakaturku](https://github.com/City-of-Turku/evakaturku) (wrapper) | evaka.turku.fi | via `STAGING_INSTANCES` env var |
+## Seuratut kunnat
 
-4 city groups with production instances hardcoded and staging/test instances configured via environment variable. Wrapper cities track both wrapper-specific and core eVaka PRs separately.
+| Kunta | Repositorio | Tuotanto | Testaus |
+|-------|------------|----------|---------|
+| **Espoo** | [espoon-voltti/evaka](https://github.com/espoon-voltti/evaka) (ydin) | espoonvarhaiskasvatus.fi | `STAGING_INSTANCES`-ympäristömuuttujan kautta |
+| **Tampereen seutu** | [Tampere/trevaka](https://github.com/Tampere/trevaka) (Kuntaimplementaatio) | varhaiskasvatus.tampere.fi + 8 kuntaa | `STAGING_INSTANCES`-ympäristömuuttujan kautta |
+| **Oulu** | [Oulunkaupunki/evakaoulu](https://github.com/Oulunkaupunki/evakaoulu) (Kuntaimplementaatio) | varhaiskasvatus.ouka.fi | `STAGING_INSTANCES`-ympäristömuuttujan kautta |
+| **Turku** | [City-of-Turku/evakaturku](https://github.com/City-of-Turku/evakaturku) (Kuntaimplementaatio) | evaka.turku.fi | `STAGING_INSTANCES`-ympäristömuuttujan kautta |
 
-## How It Works
+4 kuntaryhmää, joiden tuotantoinstanssit on kovakoodattu ja testaus-/testiympäristöt konfiguroidaan ympäristömuuttujalla. Kuntaimplementaatioiden kunnat seuraavat sekä kuntakohtaisia että ydin-eVakan PR:iä erikseen.
 
-1. **Every 5 minutes**, a GitHub Action queries each instance's `/api/citizen/auth/status` endpoint to get the deployed commit SHA
-2. For wrapper repos, the core eVaka version is resolved via the git submodule reference
-3. PRs between the previous and current deployed versions are collected using the GitHub Compare API
-4. Version changes trigger Slack notifications with Block Kit messages
-5. Results are written as JSON files (`data/current.json`, `data/history.json`, `data/previous.json`) and committed to the repo
-6. A static dashboard (`site/`) is deployed to GitHub Pages alongside the data files
+## Toimintaperiaate
 
-## Dashboard Features
+1. **5 minuutin välein** GitHub Action kyselee kunkin instanssin `/api/citizen/auth/status`-päätepistettä saadakseen asennetun commitin SHA:n
+2. Kuntaimplementaatioiden osalta ydin-eVakan versio selvitetään git-submoduuliviittauksen kautta
+3. PR:t edellisen ja nykyisen asennetun version väliltä kerätään GitHub Compare API:lla
+4. Versiomuutokset laukaisevat Slack-ilmoitukset Block Kit -viesteillä
+5. Tulokset kirjoitetaan JSON-tiedostoihin (`data/current.json`, `data/history.json`, `data/previous.json`) ja commitoidaan repositorioon
+6. Staattinen hallintapaneeli (`site/`) julkaistaan GitHub Pagesiin datatiedostojen rinnalle
 
-- **Overview** — all cities at a glance with production/staging versions and recent PRs
-- **City detail** — per-city view with environment status, wrapper/core PR tracks, and instance details
-- **PR status tracking** — see if a PR is merged, in staging, or in production
-- **Deployment history** — chronological log of deployments with included changes
-- **Bot PR toggle** — filter to show/hide Dependabot and Renovate PRs
-- **Deep linking** — hash-based URLs for bookmarking (`#/city/espoo`, `#/city/tampere-region/history`)
+## Hallintapaneelin ominaisuudet
 
-## Prerequisites
+- **Yleiskatsaus** — kaikki kunnat yhdellä silmäyksellä tuotanto-/testausversioiden ja viimeaikaisten PR:ien kanssa
+- **Kunnan tiedot** — kuntakohtainen näkymä ympäristöjen tiloilla, Kuntaimplementaatio/ydin-PR-raidoilla ja instanssien tiedoilla
+- **PR-tilan seuranta** — näe onko PR yhdistetty, testauksessa vai tuotannossa
+- **Muutoshistoria** — aikajärjestyksessä oleva loki muutoksista ja niihin sisältyvistä PR:istä
+- **Automaatio-PR-suodatin** — suodata Dependabot- ja Renovate-PR:t näkyviin tai piiloon
+- **Syvälinkit** — hash-pohjaiset URL:t kirjanmerkkejä varten (`#/city/espoo`, `#/city/tampere-region/history`)
+
+## Edellytykset
 
 - Node.js 20+
-- A GitHub PAT with `public_repo` scope (5,000 req/hr rate limit)
+- GitHub PAT `public_repo`-oikeudella (5 000 pyyntöä/tunti)
 
-## Setup
+## Asennus
 
 ```bash
 npm install
 
 cp .env.example .env
-# Edit .env and set GH_TOKEN (required), plus optional SLACK_WEBHOOK_URL, STAGING_INSTANCES, and Oulu staging credentials
+# Muokkaa .env ja aseta GH_TOKEN (pakollinen), sekä valinnaiset SLACK_WEBHOOK_URL, STAGING_INSTANCES ja Oulun testausympäristön tunnukset
 ```
 
-## Development
+## Kehitys
 
 ```bash
-# Run the data fetcher in dry-run mode (prints output, doesn't write files or send Slack)
+# Suorita tiedonhakija dry-run-tilassa (tulostaa, ei kirjoita tiedostoja eikä lähetä Slackiin)
 DRY_RUN=true npx ts-node --esm src/index.ts
 
-# Run the full pipeline (writes data files, sends Slack notifications)
+# Suorita koko putki (kirjoittaa datatiedostot, lähettää Slack-ilmoitukset)
 npx ts-node --esm src/index.ts
 
-# Preview the dashboard locally
+# Esikatsele hallintapaneelia paikallisesti
 ln -sf ../data site/data
 npx serve site
-# Open http://localhost:3000
+# Avaa http://localhost:3000
 
-# Run tests
+# Suorita testit
 npm test
 
-# Type-check
+# Tyyppitarkistus
 npx tsc --noEmit
+
+# Ota kuvakaappaus hallintapaneelista
+npm run screenshot -- --path "#/city/tampere-region" --width 750 --height 1300
 ```
 
-## Project Structure
+## Projektin rakenne
 
 ```
-src/                              # Data fetcher (TypeScript)
-├── config/instances.ts           # City groups, repos, environments, instances
+src/                              # Tiedonhakija (TypeScript)
+├── config/instances.ts           # Kuntaryhmät, repositoriot, ympäristöt, instanssit
 ├── api/
-│   ├── github.ts                 # GitHub REST API client with ETag caching
-│   ├── status.ts                 # Instance version fetcher
-│   └── slack.ts                  # Slack webhook client (Block Kit)
+│   ├── github.ts                 # GitHub REST API -asiakas ETag-välimuistilla
+│   ├── status.ts                 # Instanssin version hakija
+│   └── slack.ts                  # Slack webhook -asiakas (Block Kit)
 ├── services/
-│   ├── version-resolver.ts       # Resolve deployed version + submodule
-│   ├── pr-collector.ts           # Collect PRs via Compare API
-│   ├── change-detector.ts        # Detect version changes
-│   ├── history-manager.ts        # Read/write/prune deployment history
-│   └── site-deployer.ts          # Copy site + data to dist/
+│   ├── version-resolver.ts       # Asennetun version + submoduulin selvitys
+│   ├── pr-collector.ts           # PR:ien keruu Compare API:lla
+│   ├── change-detector.ts        # Versiomuutosten tunnistus
+│   ├── history-manager.ts        # Muutoshistorian luku/kirjoitus/karsinta
+│   └── site-deployer.ts          # Sivuston + datan kopiointi dist/-kansioon
 ├── utils/
-│   ├── retry.ts                  # Retry with exponential backoff
-│   └── pr-classifier.ts          # Classify PRs as human vs bot
-├── types.ts                      # Shared TypeScript interfaces
-└── index.ts                      # Pipeline orchestrator
+│   ├── retry.ts                  # Uudelleenyritys eksponentiaalisella viiveellä
+│   └── pr-classifier.ts          # PR:ien luokittelu ihminen vs. automaatio
+├── types.ts                      # Jaetut TypeScript-rajapinnat
+└── index.ts                      # Putken orkestroija
 
-site/                             # Static frontend (vanilla JS, zero dependencies)
+site/                             # Staattinen käyttöliittymä (vanilla JS, ei riippuvuuksia)
 ├── index.html
 ├── css/style.css
 └── js/
-    ├── app.js                    # Initialization, data loading, routing
-    ├── router.js                 # Hash-based router
+    ├── app.js                    # Alustus, datan lataus, reititys
+    ├── router.js                 # Hash-pohjainen reititin
     └── components/
-        ├── overview.js           # All-cities overview grid
-        ├── city-tabs.js          # City tab navigation
-        ├── city-detail.js        # Single city detail view
-        ├── pr-list.js            # PR listing with status badges
-        ├── status-badge.js       # Environment status indicators
-        └── history-view.js       # Deployment history timeline
+        ├── overview.js           # Kaikkien kuntien yleiskatsausruudukko
+        ├── city-tabs.js          # Kuntavälilehdet
+        ├── city-detail.js        # Yksittäisen kunnan tietonäkymä
+        ├── pr-list.js            # PR-listaus tilamerkinnöillä
+        ├── status-badge.js       # Ympäristön tilaindikaattorit
+        └── history-view.js       # Muutoshistorian aikajana
 
-data/                             # Persisted state (committed by GH Action)
-├── current.json                  # Full deployment snapshot
-├── history.json                  # Deployment events (1-month rolling window)
-└── previous.json                 # Previous run SHAs for change detection
+data/                             # Tallennettu tila (GitHub Action commitoi)
+├── current.json                  # Täydellinen muutosten tilannekuva
+├── history.json                  # Muutostapahtumat (1 kk:n liukuva ikkuna)
+└── previous.json                 # Edellisen ajon SHA:t muutosten tunnistamiseen
 
 tests/
-├── unit/                         # Unit tests (Jest)
-├── integration/                  # Integration tests (nock)
-└── fixtures/                     # Sample API responses and data files
+├── unit/                         # Yksikkötestit (Jest)
+├── integration/                  # Integraatiotestit (nock)
+└── fixtures/                     # Esimerkki-API-vastaukset ja datatiedostot
 
-.github/workflows/monitor.yml     # Scheduled workflow (every 5 min)
+.github/workflows/monitor.yml     # Ajastettu työnkulku (5 min välein)
 ```
 
-## Environment Variables
+## Ympäristömuuttujat
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `GH_TOKEN` | Yes | GitHub PAT for API access (5,000 req/hr) |
-| `SLACK_WEBHOOK_URL` | No | Slack incoming webhook for deployment notifications |
-| `STAGING_INSTANCES` | No | JSON array defining staging/test instances to monitor (see `.env.example`) |
-| `OULU_STAGING_USER` | No | HTTP basic auth username for Oulu staging |
-| `OULU_STAGING_PASS` | No | HTTP basic auth password for Oulu staging |
-| `DRY_RUN` | No | Set to `true` to skip file writes and Slack sends |
+| Muuttuja | Pakollinen | Kuvaus |
+|----------|------------|--------|
+| `GH_TOKEN` | Kyllä | GitHub PAT API-käyttöön (5 000 pyyntöä/tunti) |
+| `SLACK_WEBHOOK_URL` | Ei | Slack incoming webhook muutosilmoituksille |
+| `STAGING_INSTANCES` | Ei | JSON-taulukko testaus-/testiympäristöjen instansseista (katso `.env.example`) |
+| `OULU_STAGING_USER` | Ei | HTTP basic auth -käyttäjänimi Oulun testausympäristölle |
+| `OULU_STAGING_PASS` | Ei | HTTP basic auth -salasana Oulun testausympäristölle |
+| `DRY_RUN` | Ei | Aseta `true` ohittaaksesi tiedostokirjoitukset ja Slack-lähetykset |
 
-## Deployment
+## Julkaisu
 
-The GitHub Actions workflow (`.github/workflows/monitor.yml`) runs automatically:
+GitHub Actions -työnkulku (`.github/workflows/monitor.yml`) suoritetaan automaattisesti:
 
-1. Fetches versions from all configured instances
-2. Resolves PRs and detects changes
-3. Sends Slack notifications for any deployments
-4. Commits updated data files
-5. Deploys dashboard to GitHub Pages
+1. Hakee versiot kaikista konfiguroiduista instansseista
+2. Selvittää PR:t ja tunnistaa muutokset
+3. Lähettää Slack-ilmoitukset muutoksista
+4. Commitoi päivitetyt datatiedostot
+5. Julkaisee hallintapaneelin GitHub Pagesiin
 
-**Required setup:** Repository Settings → Pages → Source: "GitHub Actions". Add secrets for `GH_TOKEN` and optionally `SLACK_WEBHOOK_URL`, `STAGING_INSTANCES`, `OULU_STAGING_USER`, `OULU_STAGING_PASS`.
+**Vaadittu asennus:** Repository Settings → Pages → Source: "GitHub Actions". Lisää salaisuudet `GH_TOKEN` ja valinnaisesti `SLACK_WEBHOOK_URL`, `STAGING_INSTANCES`, `OULU_STAGING_USER`, `OULU_STAGING_PASS`.
 
-## Tests
+## Testit
 
 ```bash
-npm test        # 69 tests across 8 suites
+npm test        # 86 testiä 9 sarjassa
 ```
 
-- **Unit tests** — version resolver, PR collector, change detector, PR classifier, history manager
-- **Integration tests** — GitHub API, status API, Slack API (all using nock for HTTP mocking)
+- **Yksikkötestit** — version selvitys, PR:ien keruu, muutosten tunnistus, PR:ien luokittelu, muutoshistorian hallinta
+- **Integraatiotestit** — GitHub API, status API, Slack API (kaikki nock-HTTP-mockauksella)

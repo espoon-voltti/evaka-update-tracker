@@ -14,18 +14,18 @@ function getBaseUrl(): string {
   return info.url;
 }
 
-test.describe('City Detail — Recent Production Commits', () => {
-  test('Espoo city detail page shows "Recent Production Commits" heading with PRs', async ({ page }) => {
+test.describe('City Detail — Viimeisimmät muutokset tuotantoympäristössä', () => {
+  test('Espoo city detail page shows "Viimeisimmät muutokset tuotantoympäristössä" heading with PRs', async ({ page }) => {
     const baseUrl = getBaseUrl();
     await page.goto(`${baseUrl}/#/city/espoo`);
     await page.waitForSelector('.city-detail');
 
-    // Assert "Recent Production Commits" heading is visible
+    // Assert "Viimeisimmät muutokset tuotantoympäristössä" heading is visible
     const productionHeading = page.locator('.production-section h4');
-    await expect(productionHeading).toHaveText('Recent Production Commits');
+    await expect(productionHeading).toHaveText('Viimeisimmät muutokset tuotantoympäristössä');
 
-    // Assert "Core" track header exists (not "Core — In Production")
-    const coreHeader = page.locator('.production-section .pr-track-header', { hasText: 'Core' });
+    // Assert "Ydin" track header exists
+    const coreHeader = page.locator('.production-section .pr-track-header', { hasText: 'Ydin' });
     await expect(coreHeader).toBeVisible();
 
     // Assert PR items are listed (production PRs from history events)
@@ -52,11 +52,11 @@ test.describe('City Detail — Recent Production Commits', () => {
     const productionSection = page.locator('.production-section');
     await expect(productionSection).toBeVisible();
 
-    // Assert both "Core" and "Wrapper" sub-headers (new format)
-    const coreHeader = productionSection.locator('.pr-track-header', { hasText: 'Core' });
+    // Assert both "Ydin" and "Kuntaimplementaatio" sub-headers
+    const coreHeader = productionSection.locator('.pr-track-header', { hasText: 'Ydin' });
     await expect(coreHeader).toBeVisible();
 
-    const wrapperHeader = productionSection.locator('.pr-track-header', { hasText: 'Wrapper' });
+    const wrapperHeader = productionSection.locator('.pr-track-header', { hasText: 'Kuntaimplementaatio' });
     await expect(wrapperHeader).toBeVisible();
   });
 
@@ -102,7 +102,7 @@ test.describe('City Detail — Staging Section', () => {
 
     // Heading text
     const heading = stagingSection.locator('h4');
-    await expect(heading).toHaveText('Changes in Staging');
+    await expect(heading).toHaveText('Muutokset testauksessa');
 
     // PR items should have repo labels
     const repoLabels = stagingSection.locator('.repo-label');
@@ -136,7 +136,7 @@ test.describe('City Detail — Awaiting Deployment Section', () => {
     const pendingSection = page.locator('.pending-section');
     if (await pendingSection.isVisible()) {
       const heading = pendingSection.locator('h4');
-      await expect(heading).toHaveText('Awaiting Deployment');
+      await expect(heading).toHaveText('Odottaa julkaisua');
 
       // Should have repo labels
       const repoLabels = pendingSection.locator('.repo-label');
@@ -155,7 +155,7 @@ test.describe('City Detail — Bot Toggle', () => {
     // Verify toggle button exists
     const botToggle = page.locator('#bot-toggle');
     await expect(botToggle).toBeVisible();
-    await expect(botToggle).toHaveText('Show dependency updates');
+    await expect(botToggle).toHaveText('Näytä riippuvuuspäivitykset');
 
     // Click toggle — should activate it and re-render with showBots=true
     await botToggle.click();
@@ -230,12 +230,12 @@ test.describe('City Detail — Section Ordering (FR-015)', () => {
     await expect(productionSection).toBeVisible();
   });
 
-  test('Production section heading text is "Recent Production Commits"', async ({ page }) => {
+  test('Production section heading text is "Viimeisimmät muutokset tuotantoympäristössä"', async ({ page }) => {
     const baseUrl = getBaseUrl();
     await page.goto(`${baseUrl}/#/city/espoo`);
     await page.waitForSelector('.city-detail');
 
     const heading = page.locator('.production-section h4');
-    await expect(heading).toHaveText('Recent Production Commits');
+    await expect(heading).toHaveText('Viimeisimmät muutokset tuotantoympäristössä');
   });
 });

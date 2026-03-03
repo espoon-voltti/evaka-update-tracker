@@ -16,13 +16,13 @@ async function loadCurrentData() {
     currentData = await response.json();
     if (generatedAtEl() && currentData.generatedAt) {
       const d = new Date(currentData.generatedAt);
-      generatedAtEl().textContent = `Last updated: ${d.toLocaleString('en-GB')}`;
+      generatedAtEl().textContent = `Päivitetty: ${d.toLocaleString('fi')}`;
     }
   } catch (err) {
     console.error('Failed to load deployment data:', err);
     appEl().innerHTML = `
       <div class="empty-state">
-        Failed to load deployment data. The data may not have been generated yet.
+        Muutostietojen lataaminen epäonnistui. Tietoja ei ehkä ole vielä luotu.
       </div>
     `;
   }
@@ -35,7 +35,7 @@ function renderView(html) {
 // Route: Overview (#/)
 function handleOverview() {
   if (!currentData) {
-    renderView('<div class="loading">Loading...</div>');
+    renderView('<div class="loading">Ladataan...</div>');
     return;
   }
   renderView(renderOverview(currentData));
@@ -46,7 +46,7 @@ function handleOverview() {
 // Route: City detail (#/city/:id)
 function handleCityDetail({ id }, queryParams) {
   if (!currentData) {
-    renderView('<div class="loading">Loading...</div>');
+    renderView('<div class="loading">Ladataan...</div>');
     return;
   }
   // Dynamically import city-detail and load history for detection timestamps
@@ -56,7 +56,7 @@ function handleCityDetail({ id }, queryParams) {
   ]).then(([{ renderCityDetail, bindCityDetailEvents }, historyData]) => {
     const city = currentData.cityGroups.find((c) => c.id === id);
     if (!city) {
-      renderView('<div class="empty-state">City not found</div>');
+      renderView('<div class="empty-state">Kuntaa ei löytynyt</div>');
       return;
     }
     const showBots = queryParams?.get('showBots') === 'true';
@@ -69,13 +69,13 @@ function handleCityDetail({ id }, queryParams) {
 // Route: City history (#/city/:id/history)
 function handleCityHistory({ id }) {
   if (!currentData) {
-    renderView('<div class="loading">Loading...</div>');
+    renderView('<div class="loading">Ladataan...</div>');
     return;
   }
   import('./components/history-view.js').then(async ({ renderHistoryView }) => {
     const city = currentData.cityGroups.find((c) => c.id === id);
     if (!city) {
-      renderView('<div class="empty-state">City not found</div>');
+      renderView('<div class="empty-state">Kuntaa ei löytynyt</div>');
       return;
     }
     try {

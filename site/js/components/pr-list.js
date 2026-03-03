@@ -5,12 +5,12 @@
 
 export function renderPRList(prs, { showBots = false, showStatus = false, showRepoLabel = false, limit = 0 } = {}) {
   if (!prs || prs.length === 0) {
-    return '<div class="empty-state">No recent PRs</div>';
+    return '<div class="empty-state">Ei viimeaikaisia PR:iä</div>';
   }
 
   let filtered = showBots ? prs : prs.filter((pr) => !pr.isBot);
   if (filtered.length === 0) {
-    return '<div class="empty-state">No recent human PRs</div>';
+    return '<div class="empty-state">Ei viimeaikaisia manuaalisia PR:iä</div>';
   }
 
   if (limit > 0) {
@@ -19,7 +19,7 @@ export function renderPRList(prs, { showBots = false, showStatus = false, showRe
 
   const items = filtered.map((pr) => {
     const botClass = pr.isBot ? ' bot' : '';
-    const botLabel = pr.isBot ? '<span class="bot-label">bot</span>' : '';
+    const botLabel = pr.isBot ? '<span class="bot-label">automaatio</span>' : '';
     const repoLabel = showRepoLabel && pr.repoType
       ? `<span class="repo-label">[${pr.repoType}]</span>`
       : '';
@@ -45,9 +45,9 @@ export function renderPRList(prs, { showBots = false, showStatus = false, showRe
 function renderDeployBadge(status) {
   if (!status) return '';
   const labels = {
-    'merged': 'merged',
-    'in-staging': 'staging',
-    'in-production': 'production',
+    'merged': 'yhdistetty',
+    'in-staging': 'testauksessa',
+    'in-production': 'tuotannossa',
   };
   return `<span class="deploy-badge ${status}">${labels[status] || status}</span>`;
 }
@@ -55,7 +55,7 @@ function renderDeployBadge(status) {
 function formatDate(isoString) {
   if (!isoString) return '';
   const d = new Date(isoString);
-  return d.toLocaleDateString('en-GB', { month: 'short', day: 'numeric' });
+  return d.toLocaleDateString('fi', { month: 'short', day: 'numeric' });
 }
 
 function escapeHtml(str) {

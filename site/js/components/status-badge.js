@@ -5,14 +5,14 @@
 
 export function renderStatusBadge(version, { detectedAt = null } = {}) {
   if (!version) {
-    return '<span class="status-badge"><span class="status-dot unavailable"></span>No data</span>';
+    return '<span class="status-badge"><span class="status-dot unavailable"></span>Ei tietoja</span>';
   }
 
   const dot = `<span class="status-dot ${version.status}"></span>`;
   const statusText = {
     ok: 'ok',
-    unavailable: 'unavailable',
-    'auth-error': 'auth error',
+    unavailable: 'ei saatavilla',
+    'auth-error': 'tunnistautumisvirhe',
   }[version.status] || version.status;
 
   if (version.status !== 'ok') {
@@ -60,7 +60,7 @@ function guessRepoPath(domain, type) {
 function formatTime(isoString) {
   if (!isoString) return '';
   const d = new Date(isoString);
-  return d.toLocaleString('en-GB', {
+  return d.toLocaleString('fi', {
     month: 'short', day: 'numeric',
     hour: '2-digit', minute: '2-digit',
     hour12: false,

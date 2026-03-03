@@ -6,7 +6,7 @@
 export function renderCityTabs(cityGroups, activeCityId) {
   const overviewActive = activeCityId === null || activeCityId === undefined;
 
-  const overviewTab = `<span class="tab${overviewActive ? ' active' : ''}" data-city-id="">Overview</span>`;
+  const overviewTab = `<span class="tab${overviewActive ? ' active' : ''}" data-city-id="">Yleiskatsaus</span>`;
 
   const cityTabs = cityGroups.map((city) => {
     const active = city.id === activeCityId;

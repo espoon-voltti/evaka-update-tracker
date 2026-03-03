@@ -9,31 +9,31 @@ export function renderHistoryView(city, historyData) {
     .filter((e) => e.cityGroupId === city.id)
     .sort((a, b) => new Date(b.detectedAt).getTime() - new Date(a.detectedAt).getTime());
 
-  const backLink = `<a class="nav-link" data-action="back-to-city">Back to ${escapeHtml(city.name)}</a>`;
+  const backLink = `<a class="nav-link" data-action="back-to-city">Takaisin: ${escapeHtml(city.name)}</a>`;
 
   if (events.length === 0) {
     return `
       <div class="city-detail">
-        <h2>${escapeHtml(city.name)} — Deployment History</h2>
+        <h2>${escapeHtml(city.name)} — Muutoshistoria</h2>
         <div class="nav-links">${backLink}</div>
-        <div class="empty-state">No deployment events recorded yet</div>
+        <div class="empty-state">Muutostapahtumia ei ole vielä tallennettu</div>
       </div>
     `;
   }
 
   const eventItems = events.map((event) => {
     const timestamp = formatTimestamp(event.detectedAt);
-    const envLabel = event.environmentId.includes('prod') ? 'Production' : 'Staging';
+    const envLabel = event.environmentId.includes('prod') ? 'Tuotanto' : 'Testaus';
     const repoLabel = event.repoType;
 
     const prevSha = event.previousCommit
       ? `<span class="history-version">${event.previousCommit.shortSha}</span>`
-      : '<span class="history-version">initial</span>';
+      : '<span class="history-version">ensimmäinen</span>';
     const newSha = `<span class="history-version">${event.newCommit.shortSha}</span>`;
 
     const prList = event.includedPRs && event.includedPRs.length > 0
       ? `<details class="history-prs">
-          <summary>${event.includedPRs.length} PR(s) included</summary>
+          <summary>${event.includedPRs.length} PR sisältyy</summary>
           <ul class="pr-list">
             ${event.includedPRs.map((pr) => `
               <li class="pr-item">
@@ -44,7 +44,7 @@ export function renderHistoryView(city, historyData) {
             `).join('')}
           </ul>
         </details>`
-      : '<div class="history-prs"><em>No PR details available</em></div>';
+      : '<div class="history-prs"><em>PR-tietoja ei saatavilla</em></div>';
 
     return `
       <li class="history-event">
@@ -75,7 +75,7 @@ export function renderHistoryView(city, historyData) {
 
   return `
     <div class="city-detail">
-      <h2>${escapeHtml(city.name)} — Deployment History</h2>
+      <h2>${escapeHtml(city.name)} — Muutoshistoria</h2>
       <div class="nav-links">${backLink}</div>
       <ul class="history-list">${eventItems.join('')}</ul>
     </div>
@@ -85,7 +85,7 @@ export function renderHistoryView(city, historyData) {
 function formatTimestamp(isoString) {
   if (!isoString) return '';
   const d = new Date(isoString);
-  return d.toLocaleString('en-GB', {
+  return d.toLocaleString('fi', {
     year: 'numeric', month: 'short', day: 'numeric',
     hour: '2-digit', minute: '2-digit',
     hour12: false,

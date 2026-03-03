@@ -2,11 +2,21 @@ import axios from 'axios';
 import { DeploymentEvent } from '../types.js';
 import { withRetry } from '../utils/retry.js';
 
+const repoTypeDisplayNames: Record<string, string> = {
+  core: 'ydin',
+  wrapper: 'Kuntaimplementaatio',
+};
+
+function getRepoTypeDisplay(repoType: string): string {
+  return repoTypeDisplayNames[repoType] || repoType;
+}
+
 function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
   const isProduction = event.environmentId.includes('prod');
   const emoji = isProduction ? '\ud83d\ude80' : '\ud83e\uddea';
-  const envLabel = isProduction ? 'Production deployed' : 'Staging updated';
+  const envLabel = isProduction ? 'Tuotantoon asennettu' : 'Testaus päivitetty';
   const cityName = event.cityGroupId.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  const repoTypeDisplay = getRepoTypeDisplay(event.repoType);
 
   const commitUrl = event.repoType === 'core'
     ? `https://github.com/espoon-voltti/evaka/commit/${event.newCommit.shortSha}`
@@ -19,8 +29,8 @@ function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
   );
 
   const changesText = prLines.length > 0
-    ? `*Changes (${event.repoType}):*\n${prLines.join('\n')}`
-    : `*No PR details available for this ${event.repoType} update*`;
+    ? `*Muutokset (${repoTypeDisplay}):*\n${prLines.join('\n')}`
+    : `*PR-tietoja ei saatavilla tälle ${repoTypeDisplay}-päivitykselle*`;
 
   return {
     blocks: [
@@ -31,8 +41,8 @@ function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
       {
         type: 'section',
         fields: [
-          { type: 'mrkdwn', text: `*Version:*\n<${commitUrl}|\`${event.newCommit.shortSha}\`>` },
-          { type: 'mrkdwn', text: `*Detected:*\n${detectedAt}` },
+          { type: 'mrkdwn', text: `*Versio:*\n<${commitUrl}|\`${event.newCommit.shortSha}\`>` },
+          { type: 'mrkdwn', text: `*Havaittu:*\n${detectedAt}` },
         ],
       },
       {
@@ -44,7 +54,7 @@ function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
         elements: [
           {
             type: 'mrkdwn',
-            text: `<${dashboardBaseUrl}#/city/${event.cityGroupId}|View dashboard>`,
+            text: `<${dashboardBaseUrl}#/city/${event.cityGroupId}|Näytä hallintapaneeli>`,
           },
         ],
       },

@@ -63,7 +63,7 @@ function getRecentProductionPRs(events, city) {
 export function renderCityDetail(city, { showBots = false } = {}, historyEvents = []) {
   // Environment status badges
   const envSections = city.environments.map((env) => {
-    const label = env.type === 'production' ? 'Production' : 'Staging / Test';
+    const label = env.type === 'production' ? 'Tuotanto' : 'Testaus / Testi';
     const commitSha = env.version?.coreCommit?.sha || env.version?.wrapperCommit?.sha;
     const detectedAt = findDetectedAt(historyEvents, env.id, commitSha);
     const badge = renderStatusBadge(env.version, { detectedAt });
@@ -77,7 +77,7 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
         return `<span class="instance-chip"><span class="status-dot ${dotClass}"></span>${escapeHtml(v.instanceDomain.split('.')[0])} (${sha})</span>`;
       });
       instanceList = `
-        <div class="mismatch-warning">Version mismatch detected</div>
+        <div class="mismatch-warning">Versioero havaittu</div>
         <div class="instance-list">${chips.join('')}</div>
       `;
     }
@@ -95,21 +95,21 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
 
   // Bot toggle
   const toggleActive = showBots ? ' active' : '';
-  const botToggle = `<button class="bot-toggle${toggleActive}" id="bot-toggle">Show dependency updates</button>`;
+  const botToggle = `<button class="bot-toggle${toggleActive}" id="bot-toggle">Näytä riippuvuuspäivitykset</button>`;
 
   // Production section: last 5 per repo with sub-headers (sourced from history events)
   const { core: coreDeployed, wrapper: wrapperDeployed } = getRecentProductionPRs(historyEvents, city);
   let productionSection = '';
   const wrapperProdList = wrapperDeployed.length > 0
-    ? `<div class="pr-track"><div class="pr-track-header">Wrapper</div>${renderPRList(wrapperDeployed, { showBots, limit: 5 })}</div>`
+    ? `<div class="pr-track"><div class="pr-track-header">Kuntaimplementaatio</div>${renderPRList(wrapperDeployed, { showBots, limit: 5 })}</div>`
     : '';
   const coreProdList = coreDeployed.length > 0
-    ? `<div class="pr-track"><div class="pr-track-header">Core</div>${renderPRList(coreDeployed, { showBots, limit: 5 })}</div>`
+    ? `<div class="pr-track"><div class="pr-track-header">Ydin</div>${renderPRList(coreDeployed, { showBots, limit: 5 })}</div>`
     : '';
   if (wrapperProdList || coreProdList) {
     productionSection = `
       <div class="production-section">
-        <h4>Recent Production Commits</h4>
+        <h4>Viimeisimmät muutokset tuotantoympäristössä</h4>
         ${wrapperProdList}
         ${coreProdList}
       </div>
@@ -124,7 +124,7 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
   if (mergedStaging.length > 0) {
     stagingSection = `
       <div class="staging-section">
-        <h4>Changes in Staging</h4>
+        <h4>Muutokset testauksessa</h4>
         ${renderPRList(mergedStaging, { showBots: true, showRepoLabel: true })}
       </div>
     `;
@@ -138,7 +138,7 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
   if (mergedPending.length > 0) {
     pendingSection = `
       <div class="pending-section">
-        <h4>Awaiting Deployment</h4>
+        <h4>Odottaa julkaisua</h4>
         ${renderPRList(mergedPending, { showBots: true, showRepoLabel: true })}
       </div>
     `;
@@ -149,7 +149,7 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
     <div class="city-detail">
       <h2>${escapeHtml(city.name)}</h2>
       <div class="nav-links">
-        <a class="nav-link" data-action="history">Deployment History</a>
+        <a class="nav-link" data-action="history">Muutoshistoria</a>
       </div>
       ${envSections.join('')}
       ${botToggle}
