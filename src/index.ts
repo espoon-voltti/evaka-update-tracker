@@ -103,9 +103,25 @@ export async function run() {
           stagingSha = { wrapper: wrapperSha, core: coreSha };
         }
 
-        // Detect changes
+        // Collect PRs for any detected changes, then detect changes with PR data
         const prevEntry = previousData.versions[env.id];
-        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, []);
+        const prevWrapperSha = prevEntry?.wrapperSha ?? null;
+        const prevCoreSha = prevEntry?.coreSha ?? null;
+
+        const wrapperRepo = cityGroup.repositories.find((r) => r.type === 'wrapper');
+        const coreRepo = cityGroup.repositories.find((r) => r.type === 'core')!;
+        const changePRs: PullRequest[] = [];
+
+        if (wrapperRepo && wrapperSha && prevWrapperSha && wrapperSha !== prevWrapperSha) {
+          const wrapperPRs = await collectPRsBetween(wrapperRepo, prevWrapperSha, wrapperSha);
+          changePRs.push(...wrapperPRs);
+        }
+        if (coreSha && prevCoreSha && coreSha !== prevCoreSha) {
+          const corePRs = await collectPRsBetween(coreRepo, prevCoreSha, coreSha);
+          changePRs.push(...corePRs);
+        }
+
+        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, changePRs);
         allEvents.push(...events);
 
         updatedPrevious = buildUpdatedPrevious(updatedPrevious, env.id, rep);

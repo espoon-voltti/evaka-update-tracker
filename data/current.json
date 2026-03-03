@@ -1,0 +1,488 @@
+{
+  "generatedAt": "2026-03-03T08:37:52.333Z",
+  "cityGroups": [
+    {
+      "id": "espoo",
+      "name": "Espoo",
+      "environments": [
+        {
+          "id": "espoo-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "espoonvarhaiskasvatus.fi",
+            "checkedAt": "2026-03-03T08:36:28.809Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "aa22da22851dbf376bf83b457ee646da5ddfd702",
+              "shortSha": "aa22da2",
+              "message": "Merge pull request #8573 from espoon-voltti/renovate/io.github.oshai-kotlin-logging-jvm-8.x",
+              "date": "2026-03-02T09:53:35Z",
+              "author": "terolaakso-reaktor"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "espoo-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
+            "checkedAt": "2026-03-03T08:36:29.367Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "5ff94c8cd104a2c4bd164c9f64f3c4455ac39370",
+              "shortSha": "5ff94c8",
+              "message": "Merge pull request #8629 from espoon-voltti/fix-minimatch-vulnerability",
+              "date": "2026-03-02T13:41:42Z",
+              "author": "terolaakso-reaktor"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": null,
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
+          "inStaging": [
+            {
+              "number": 8629,
+              "title": "Tekninen: minimatch-kirjaston haavoittuvuuspäivitys",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-02T13:41:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8629"
+            },
+            {
+              "number": 8594,
+              "title": "Aikaleimasarakkeiden yhdenmukaistaminen - osa 1",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-02T12:29:22Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8594"
+            },
+            {
+              "number": 8602,
+              "title": "Johtajalle näkyviin muut toimet -historia",
+              "author": "tomuli",
+              "mergedAt": "2026-03-02T10:54:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8602"
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 8630,
+              "title": "Tekninen: Poista käyttämätön @types/webpack-riippuvuus",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-03T06:47:56Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8630"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tampere-region",
+      "name": "Tampere region",
+      "environments": [
+        {
+          "id": "tampere-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "varhaiskasvatus.tampere.fi",
+            "checkedAt": "2026-03-03T08:36:34.378Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "2c67801a007f6883ad754c2075e3f082bae056f8",
+              "shortSha": "2c67801",
+              "message": "Merge pull request #2021 from Tampere/undo-pirkkala-ramp-up",
+              "date": "2026-02-25T08:26:41Z",
+              "author": "tmkrepo"
+            },
+            "coreCommit": {
+              "sha": "8216e179803627eb1f429062560980cbe8fbbc46",
+              "shortSha": "8216e17",
+              "message": "Merge pull request #8578 from espoon-voltti/fix-income-statement-edit-query-invalidation",
+              "date": "2026-02-24T10:57:31Z",
+              "author": "ohinkinen"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "tampere-test",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+            "checkedAt": "2026-03-03T08:36:42.831Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "81af22d7eefc454b3479a7bcd9aba8552fabb954",
+              "shortSha": "81af22d",
+              "message": "Merge pull request #2033 from Tampere/dependabot/submodules/evaka-5ff94c8",
+              "date": "2026-03-03T06:11:27Z",
+              "author": "tomuli"
+            },
+            "coreCommit": {
+              "sha": "5ff94c8cd104a2c4bd164c9f64f3c4455ac39370",
+              "shortSha": "5ff94c8",
+              "message": "Merge pull request #8629 from espoon-voltti/fix-minimatch-vulnerability",
+              "date": "2026-03-02T13:41:42Z",
+              "author": "terolaakso-reaktor"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": {
+          "repository": "Tampere/trevaka",
+          "deployed": [],
+          "inStaging": [
+            {
+              "number": 2023,
+              "title": "Remove Fuel library",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-02-27T07:49:28Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2023"
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 2032,
+              "title": "Ramp up Kangasala archival daily limit to 100",
+              "author": "ohinkinen",
+              "mergedAt": "2026-03-03T07:43:18Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2032"
+            },
+            {
+              "number": 2031,
+              "title": "Ramp up Nokia archival daily limit to 1000",
+              "author": "ohinkinen",
+              "mergedAt": "2026-03-03T07:42:56Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2031"
+            }
+          ]
+        },
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
+          "inStaging": [
+            {
+              "number": 8629,
+              "title": "Tekninen: minimatch-kirjaston haavoittuvuuspäivitys",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-02T13:41:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8629"
+            },
+            {
+              "number": 8594,
+              "title": "Aikaleimasarakkeiden yhdenmukaistaminen - osa 1",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-02T12:29:22Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8594"
+            },
+            {
+              "number": 8602,
+              "title": "Johtajalle näkyviin muut toimet -historia",
+              "author": "tomuli",
+              "mergedAt": "2026-03-02T10:54:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8602"
+            },
+            {
+              "number": 8601,
+              "title": "Lisätään päätöksiin pdf:ien latausnappi",
+              "author": "ohinkinen",
+              "mergedAt": "2026-02-27T14:29:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8601"
+            },
+            {
+              "number": 8599,
+              "title": "Espoo only: Ryhmän henkilökuntamäärän muokkaaminen vain pääkäyttäjille",
+              "author": "ohinkinen",
+              "mergedAt": "2026-02-27T14:28:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8599"
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 8630,
+              "title": "Tekninen: Poista käyttämätön @types/webpack-riippuvuus",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-03T06:47:56Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8630"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "oulu",
+      "name": "Oulu",
+      "environments": [
+        {
+          "id": "oulu-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "varhaiskasvatus.ouka.fi",
+            "checkedAt": "2026-03-03T08:37:26.204Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "3debd92969dc34c8475f0f7065c0498751f2a2d9",
+              "shortSha": "3debd92",
+              "message": "ifx build",
+              "date": "2026-03-02T07:29:10Z",
+              "author": "tomuli"
+            },
+            "coreCommit": {
+              "sha": "745a747b08dc63d584ba841c04198dd597530721",
+              "shortSha": "745a747",
+              "message": "Update dependency uv to v0.10.5 (#8625)",
+              "date": "2026-03-01T08:10:16Z",
+              "author": "renovate[bot]"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "oulu-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
+            "checkedAt": "2026-03-03T08:37:27.324Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "7c491d106e5425c94061ac81c79f55e9d14cdf75",
+              "shortSha": "7c491d1",
+              "message": "Merge pull request #290 from Oulunkaupunki/dependabot/submodules/evaka-5ff94c8",
+              "date": "2026-03-03T02:15:10Z",
+              "author": "github-actions[bot]"
+            },
+            "coreCommit": {
+              "sha": "5ff94c8cd104a2c4bd164c9f64f3c4455ac39370",
+              "shortSha": "5ff94c8",
+              "message": "Merge pull request #8629 from espoon-voltti/fix-minimatch-vulnerability",
+              "date": "2026-03-02T13:41:42Z",
+              "author": "terolaakso-reaktor"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": {
+          "repository": "Oulunkaupunki/evakaoulu",
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": []
+        },
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
+          "inStaging": [
+            {
+              "number": 8629,
+              "title": "Tekninen: minimatch-kirjaston haavoittuvuuspäivitys",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-02T13:41:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8629"
+            },
+            {
+              "number": 8594,
+              "title": "Aikaleimasarakkeiden yhdenmukaistaminen - osa 1",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-02T12:29:22Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8594"
+            },
+            {
+              "number": 8602,
+              "title": "Johtajalle näkyviin muut toimet -historia",
+              "author": "tomuli",
+              "mergedAt": "2026-03-02T10:54:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8602"
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 8630,
+              "title": "Tekninen: Poista käyttämätön @types/webpack-riippuvuus",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-03T06:47:56Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8630"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "turku",
+      "name": "Turku",
+      "environments": [
+        {
+          "id": "turku-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "evaka.turku.fi",
+            "checkedAt": "2026-03-03T08:37:39.215Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "0f30d2917bdf553d4f30aaeb1b0ce6168e1c385a",
+              "shortSha": "0f30d29",
+              "message": "Merge pull request #250 from City-of-Turku/fix-evaka-bump",
+              "date": "2026-03-02T07:51:18Z",
+              "author": "ohinkinen"
+            },
+            "coreCommit": {
+              "sha": "745a747b08dc63d584ba841c04198dd597530721",
+              "shortSha": "745a747",
+              "message": "Update dependency uv to v0.10.5 (#8625)",
+              "date": "2026-03-01T08:10:16Z",
+              "author": "renovate[bot]"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "turku-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging-evaka.turku.fi",
+            "checkedAt": "2026-03-03T08:37:40.271Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "4acb427527b3425ea287ff03649b4f64bf6018e1",
+              "shortSha": "4acb427",
+              "message": "Merge pull request #251 from City-of-Turku/dependabot/submodules/evaka-5ff94c8",
+              "date": "2026-03-03T02:15:49Z",
+              "author": "github-actions[bot]"
+            },
+            "coreCommit": {
+              "sha": "5ff94c8cd104a2c4bd164c9f64f3c4455ac39370",
+              "shortSha": "5ff94c8",
+              "message": "Merge pull request #8629 from espoon-voltti/fix-minimatch-vulnerability",
+              "date": "2026-03-02T13:41:42Z",
+              "author": "terolaakso-reaktor"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": {
+          "repository": "City-of-Turku/evakaturku",
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": []
+        },
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
+          "inStaging": [
+            {
+              "number": 8629,
+              "title": "Tekninen: minimatch-kirjaston haavoittuvuuspäivitys",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-02T13:41:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8629"
+            },
+            {
+              "number": 8594,
+              "title": "Aikaleimasarakkeiden yhdenmukaistaminen - osa 1",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-02T12:29:22Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8594"
+            },
+            {
+              "number": 8602,
+              "title": "Johtajalle näkyviin muut toimet -historia",
+              "author": "tomuli",
+              "mergedAt": "2026-03-02T10:54:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8602"
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 8630,
+              "title": "Tekninen: Poista käyttämätön @types/webpack-riippuvuus",
+              "author": "terolaakso-reaktor",
+              "mergedAt": "2026-03-03T06:47:56Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8630"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
