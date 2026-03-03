@@ -72,25 +72,28 @@ function handleCityDetail({ id }, queryParams) {
 }
 
 // Route: City history (#/city/:id/history)
-function handleCityHistory({ id }) {
+function handleCityHistory({ id }, queryParams) {
   if (!currentData) {
     renderView('<div class="loading">Ladataan...</div>');
     return;
   }
-  import('./components/history-view.js').then(async ({ renderHistoryView }) => {
+  import('./components/history-view.js').then(async ({ renderHistoryView, bindHistoryViewEvents }) => {
     const city = currentData.cityGroups.find((c) => c.id === id);
     if (!city) {
       renderView('<div class="empty-state">Kuntaa ei löytynyt</div>');
       return;
     }
     document.title = `Muutoshistoria - ${city.name} - eVaka muutostenseuranta`;
+    const showBots = queryParams?.get('showBots') === 'true';
     try {
       const resp = await fetch('data/history.json');
       const historyData = resp.ok ? await resp.json() : { events: [] };
-      renderView(renderHistoryView(city, historyData));
+      renderView(renderHistoryView(city, historyData, { showBots }));
+      bindHistoryViewEvents(city);
       updateTabs(id);
     } catch {
-      renderView(renderHistoryView(city, { events: [] }));
+      renderView(renderHistoryView(city, { events: [] }, { showBots }));
+      bindHistoryViewEvents(city);
       updateTabs(id);
     }
   });

@@ -26,7 +26,7 @@ function renderLabelBadges(labels) {
     .join('');
 }
 
-export function renderPRList(prs, { showBots = false, showStatus = false, showRepoLabel = false, limit = 0 } = {}) {
+export function renderPRList(prs, { showBots = false, showStatus = false, showRepoLabel = false, showLabels = true, limit = 0 } = {}) {
   if (!prs || prs.length === 0) {
     return '<div class="empty-state">Ei viimeaikaisia PR:iä</div>';
   }
@@ -60,7 +60,7 @@ export function renderPRList(prs, { showBots = false, showStatus = false, showRe
         </span>
         ${botLabel}
         ${statusBadge}
-        <span class="pr-labels-col">${renderLabelBadges(pr.labels)}</span>
+        <span class="pr-labels-col">${showLabels ? renderLabelBadges(pr.labels) : ''}</span>
         <span class="pr-date">${date}</span>
       </li>
     `;

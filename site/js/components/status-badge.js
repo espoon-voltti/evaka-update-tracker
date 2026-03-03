@@ -66,7 +66,7 @@ function guessRepoPath(domain, type) {
   return 'espoon-voltti/evaka';
 }
 
-function formatTime(isoString) {
+export function formatTime(isoString) {
   if (!isoString) return '';
   const d = new Date(isoString);
   const weekday = d.toLocaleDateString('fi', { weekday: 'short' });

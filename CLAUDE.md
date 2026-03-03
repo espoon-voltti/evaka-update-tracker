@@ -17,6 +17,8 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - JSON files (`data/current.json`, `data/history.json`, `data/previous.json`) — no changes needed (007-slack-channel-routing)
 - GitHub Actions YAML; TypeScript 5.x on Node.js 20 (existing) + GitHub Actions (`actions/checkout@v4`, `actions/setup-node@v4`); Playwright (existing dev dependency) (008-ci-cd-pipeline)
 - TypeScript 5.x on Node.js 20+ (data pipeline & scripts); vanilla JavaScript ES modules (frontend) + axios (HTTP), nock (test mocking), Playwright (E2E) (009-streamline-city-view)
+- Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (E2E tests) + Playwright (E2E tests) — no new dependencies needed (010-improve-history-view)
+- JSON files (`data/history.json`) — read-only from frontend, no changes to data forma (010-improve-history-view)
 
 - TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend) + axios (HTTP client), @octokit/rest or direct fetch (GitHub API) — minimal dependency se (001-deployment-tracker)
 
@@ -37,9 +39,9 @@ npm test && npm run lint
 TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend): Follow standard conventions
 
 ## Recent Changes
+- 010-improve-history-view: Added Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (E2E tests) + Playwright (E2E tests) — no new dependencies needed
 - 009-streamline-city-view: Added TypeScript 5.x on Node.js 20+ (data pipeline & scripts); vanilla JavaScript ES modules (frontend) + axios (HTTP), nock (test mocking), Playwright (E2E)
 - 008-ci-cd-pipeline: Added GitHub Actions YAML; TypeScript 5.x on Node.js 20 (existing) + GitHub Actions (`actions/checkout@v4`, `actions/setup-node@v4`); Playwright (existing dev dependency)
-- 007-slack-channel-routing: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), dotenv (env loading), nock (test HTTP mocking)
 
 
 <!-- MANUAL ADDITIONS START -->
