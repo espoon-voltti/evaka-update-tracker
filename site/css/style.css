@@ -307,14 +307,15 @@ main {
   font-size: 0.8125rem;
   font-weight: 600;
   cursor: pointer;
-  list-style: disclosure-closed;
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
   margin-bottom: 0.5rem;
 }
 
 .production-section details[open] > summary,
 .staging-section details[open] > summary,
 .pending-section details[open] > summary {
-  list-style: disclosure-open;
+  list-style-type: disclosure-open;
 }
 
 .production-section summary { color: #166534; }

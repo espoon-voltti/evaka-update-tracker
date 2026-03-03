@@ -76,7 +76,7 @@ async function main() {
     // Small delay for any async rendering
     await page.waitForTimeout(500);
 
-    await page.screenshot({ path: config.output, fullPage: true });
+    await page.screenshot({ path: config.output });
     console.log(`[Screenshot] Saved to ${config.output}`);
 
     await browser.close();
