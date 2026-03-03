@@ -125,7 +125,7 @@ describe('sendSlackNotification', () => {
   });
 
   it('logs warning on 404 (webhook disabled)', async () => {
-    const scope = nock('https://hooks.slack.com')
+    nock('https://hooks.slack.com')
       .post('/services/T00/B00/XXX')
       .times(4) // initial + 3 retries
       .reply(404, 'not found');

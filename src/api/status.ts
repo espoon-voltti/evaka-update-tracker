@@ -67,8 +67,6 @@ export async function fetchDeployedSha(
   auth?: BasicAuth | null
 ): Promise<{ sha: string | null; status: VersionSnapshot['status'] }> {
   const url = `https://${domain}/api/citizen/auth/status`;
-  const checkedAt = new Date().toISOString();
-
   try {
     const response = await withRetry(
       () =>

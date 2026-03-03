@@ -8,6 +8,7 @@
     "start": "npx tsx src/index.ts",
     "test": "jest",
     "test:e2e": "playwright test",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint src/ tests/",
     "format": "prettier --write 'src/**/*.ts' 'tests/**/*.ts'",
     "screenshot": "npx tsx scripts/screenshot.ts"

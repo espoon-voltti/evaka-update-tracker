@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from 'axios';
-import { CommitInfo, PullRequest } from '../types.js';
+import { CommitInfo } from '../types.js';
 import { withRetry } from '../utils/retry.js';
 
 // ETag cache: url -> { etag, data }
