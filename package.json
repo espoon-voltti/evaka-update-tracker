@@ -1,0 +1,33 @@
+{
+  "name": "evaka-update-tracker",
+  "version": "1.0.0",
+  "description": "Track eVaka deployment status across cities and environments",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx ts-node --esm src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/ tests/",
+    "format": "prettier --write 'src/**/*.ts' 'tests/**/*.ts'"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "^10.0.2",
+    "jest": "^30.2.0",
+    "nock": "^14.0.11",
+    "prettier": "^3.8.1",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
