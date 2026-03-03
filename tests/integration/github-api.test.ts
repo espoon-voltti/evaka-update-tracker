@@ -8,8 +8,6 @@ import {
   extractPRNumberFromCommitMessage,
 } from '../../src/api/github.js';
 
-// Increase timeout for tests that trigger retries with real delays
-jest.setTimeout(30000);
 
 const GITHUB_API = 'https://api.github.com';
 const OWNER = 'espoon-voltti';

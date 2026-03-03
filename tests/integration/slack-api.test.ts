@@ -105,7 +105,7 @@ describe('sendSlackNotification', () => {
     );
 
     expect(scope.isDone()).toBe(true);
-  }, 30000);
+  });
 
   it('skips when webhook URL is empty', async () => {
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
@@ -136,7 +136,7 @@ describe('sendSlackNotification', () => {
       mockEvent
     );
     warnSpy.mockRestore();
-  }, 30000);
+  });
 });
 
 describe('per-city Slack channel routing', () => {

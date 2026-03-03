@@ -28,7 +28,8 @@ export async function withRetry<T>(
         opts.baseDelayMs * Math.pow(2, attempt),
         opts.maxDelayMs ?? 10000
       );
-      await new Promise((resolve) => setTimeout(resolve, delay));
+      const effectiveDelay = process.env.NODE_ENV === 'test' ? 1 : delay;
+      await new Promise((resolve) => setTimeout(resolve, effectiveDelay));
     }
   }
 

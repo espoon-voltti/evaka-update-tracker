@@ -1,8 +1,6 @@
 import nock from 'nock';
 import { fetchVersion, fetchDeployedSha } from '../../src/api/status.js';
 
-// Increase timeout for tests that trigger retries with real delays
-jest.setTimeout(30000);
 
 const DOMAIN = 'espoo.evaka.fi';
 const BASE_URL = `https://${DOMAIN}`;
