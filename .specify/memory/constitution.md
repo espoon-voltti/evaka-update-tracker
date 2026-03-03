@@ -1,21 +1,18 @@
 <!-- Sync Impact Report
-  Version change: 1.1.0 → 1.2.0
-  Modified principles:
-    - II. Pragmatic Testing: expanded to elevate E2E tests as
-      first-class citizens (new sub-section, 5 new bullets)
+  Version change: 1.2.0 → 1.3.0
+  Modified sections:
+    - Development Workflow: added screenshot maintenance requirement
+      (new bullet with sub-bullets)
   Added sections: None
   Removed sections: None
   Templates requiring updates:
     - .specify/templates/plan-template.md ✅ no changes needed
     - .specify/templates/spec-template.md ✅ no changes needed
     - .specify/templates/tasks-template.md ⚠ pending — Polish phase
-      should reference E2E test update/run as a standard task
+      should reference screenshot regeneration as a standard task
+      when view changes are involved
     - CLAUDE.md ✅ no changes needed
-  Follow-up TODOs:
-    - E2E tests in tests/e2e/ need updating to match current DOM
-      structure (h4→summary, .pr-number removed, .pr-title is now
-      an <a> element). This is a direct consequence of ratifying
-      this principle.
+  Follow-up TODOs: None
 -->
 
 # eVaka Update Tracker Constitution
@@ -127,6 +124,15 @@ tests to provide quick feedback.
 - Code review is RECOMMENDED but not mandatory for single-
   developer workflows. The CI gates serve as the minimum quality
   bar.
+- When frontend views undergo major visual changes (layout
+  redesign, new sections, restructured components), the README
+  screenshot MUST be regenerated and committed in the same change.
+  - The screenshot tool is `npm run screenshot` (Playwright-based,
+    outputs to `site/images/screenshot.png`).
+  - "Major visual changes" means changes that would make the
+    existing screenshot inaccurate or misleading. Minor tweaks
+    (color adjustments, small text changes) do NOT require a
+    screenshot update.
 
 ## Governance
 
@@ -141,4 +147,4 @@ principles.
 - If a principle is violated, the violation MUST be justified in
   the Complexity Tracking section of the implementation plan.
 
-**Version**: 1.2.0 | **Ratified**: 2026-03-02 | **Last Amended**: 2026-03-03
+**Version**: 1.3.0 | **Ratified**: 2026-03-02 | **Last Amended**: 2026-03-04
