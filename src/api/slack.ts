@@ -2,8 +2,6 @@ import axios from 'axios';
 import { DeploymentEvent } from '../types.js';
 import { withRetry } from '../utils/retry.js';
 
-const DRY_RUN = process.env.DRY_RUN === 'true';
-
 function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
   const isProduction = event.environmentId.includes('prod');
   const emoji = isProduction ? '\ud83d\ude80' : '\ud83e\uddea';
@@ -59,7 +57,7 @@ export async function sendSlackNotification(
   event: DeploymentEvent,
   dashboardBaseUrl: string = ''
 ): Promise<void> {
-  if (DRY_RUN) {
+  if (process.env.DRY_RUN === 'true') {
     console.log(`[DRY RUN] Slack notification for ${event.environmentId}: ${event.repoType} ${event.newCommit.shortSha}`);
     return;
   }
