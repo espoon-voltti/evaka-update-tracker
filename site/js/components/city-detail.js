@@ -60,30 +60,47 @@ export function renderCityDetail(city, { showBots = false } = {}) {
   const wrapperTrack = city.prTracks?.wrapper;
   const coreTrack = city.prTracks?.core;
 
-  let wrapperSection = '';
+  // Staging sections
+  let wrapperStagingSection = '';
+  let coreStagingSection = '';
   if (wrapperTrack) {
-    const deployed = wrapperTrack.deployed || [];
     const inStaging = wrapperTrack.inStaging || [];
-    const stagingSection = inStaging.length > 0
+    wrapperStagingSection = inStaging.length > 0
       ? `<div class="pr-track"><div class="pr-track-header">Wrapper — In Staging</div>${renderPRList(inStaging, { showBots })}</div>`
       : '';
-    const deployedSection = deployed.length > 0
-      ? `<div class="pr-track"><div class="pr-track-header">Wrapper — Deployed</div>${renderPRList(deployed, { showBots })}</div>`
-      : '';
-    wrapperSection = stagingSection + deployedSection;
   }
-
-  let coreSection = '';
   if (coreTrack) {
-    const deployed = coreTrack.deployed || [];
     const inStaging = coreTrack.inStaging || [];
-    const stagingSection = inStaging.length > 0
+    coreStagingSection = inStaging.length > 0
       ? `<div class="pr-track"><div class="pr-track-header">Core — In Staging</div>${renderPRList(inStaging, { showBots })}</div>`
       : '';
-    const deployedSection = deployed.length > 0
-      ? `<div class="pr-track"><div class="pr-track-header">Core — Deployed</div>${renderPRList(deployed, { showBots })}</div>`
+  }
+
+  // Production (deployed) sections
+  let wrapperProductionContent = '';
+  let coreProductionContent = '';
+  if (wrapperTrack) {
+    const deployed = wrapperTrack.deployed || [];
+    wrapperProductionContent = deployed.length > 0
+      ? `<div class="pr-track"><div class="pr-track-header">Wrapper — In Production</div>${renderPRList(deployed, { showBots })}</div>`
       : '';
-    coreSection = stagingSection + deployedSection;
+  }
+  if (coreTrack) {
+    const deployed = coreTrack.deployed || [];
+    coreProductionContent = deployed.length > 0
+      ? `<div class="pr-track"><div class="pr-track-header">Core — In Production</div>${renderPRList(deployed, { showBots })}</div>`
+      : '';
+  }
+
+  let productionSection = '';
+  if (wrapperProductionContent || coreProductionContent) {
+    productionSection = `
+      <div class="production-section">
+        <h4>In Production</h4>
+        ${wrapperProductionContent}
+        ${coreProductionContent}
+      </div>
+    `;
   }
 
   // Bot toggle
@@ -99,8 +116,9 @@ export function renderCityDetail(city, { showBots = false } = {}) {
       ${envSections.join('')}
       ${botToggle}
       ${pendingSection}
-      ${wrapperSection}
-      ${coreSection}
+      ${wrapperStagingSection}
+      ${coreStagingSection}
+      ${productionSection}
     </div>
   `;
 }

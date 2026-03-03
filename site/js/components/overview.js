@@ -34,11 +34,11 @@ function renderCityCard(city) {
     `;
   });
 
-  // Show core PRs (last 5 deployed)
+  // Show core PRs (last 5 deployed to production)
   const corePRs = city.prTracks?.core?.deployed || [];
   const coreSection = corePRs.length > 0
     ? `<div class="pr-track">
-        <div class="pr-track-header">Core PRs</div>
+        <div class="pr-track-header">Core — In Production</div>
         ${renderPRList(corePRs)}
       </div>`
     : '';
@@ -47,7 +47,7 @@ function renderCityCard(city) {
   const wrapperPRs = city.prTracks?.wrapper?.deployed || [];
   const wrapperSection = wrapperPRs.length > 0
     ? `<div class="pr-track">
-        <div class="pr-track-header">Wrapper PRs</div>
+        <div class="pr-track-header">Wrapper — In Production</div>
         ${renderPRList(wrapperPRs)}
       </div>`
     : '';

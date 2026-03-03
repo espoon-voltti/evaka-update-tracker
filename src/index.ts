@@ -22,16 +22,16 @@ import {
 loadEnv();
 
 const DRY_RUN = process.env.DRY_RUN === 'true';
-const DATA_DIR = path.resolve('data');
-const SITE_DIR = path.resolve('site');
-const DIST_DIR = path.resolve('dist');
+const DATA_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.resolve('data');
+const SITE_DIR = process.env.SITE_DIR ? path.resolve(process.env.SITE_DIR) : path.resolve('site');
+const DIST_DIR = process.env.DIST_DIR ? path.resolve(process.env.DIST_DIR) : path.resolve('dist');
 
 async function collectPRsForRepo(
   repo: Repository,
   prodSha: string | null,
   stagingSha: string | null,
   previousProdSha: string | null,
-  previousStagingSha: string | null
+  _previousStagingSha: string | null
 ) {
   let deployed: PullRequest[] = [];
   let inStaging: PullRequest[] = [];
@@ -56,7 +56,7 @@ async function collectPRsForRepo(
   return buildPRTrack(deployed, inStaging, pendingDeployment);
 }
 
-async function run() {
+export async function run() {
   const ghToken = process.env.GH_TOKEN;
   if (!ghToken) {
     console.error('GH_TOKEN is required. Set it in .env or as an environment variable.');
@@ -227,7 +227,14 @@ async function run() {
   console.log('\nDone.');
 }
 
-run().catch((error) => {
-  console.error('Fatal error:', error);
-  process.exit(1);
-});
+// Only auto-run when executed directly (not when imported)
+const isMainModule =
+  process.argv[1] &&
+  import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').replace(/.*\//, ''));
+
+if (isMainModule) {
+  run().catch((error) => {
+    console.error('Fatal error:', error);
+    process.exit(1);
+  });
+}

@@ -9,9 +9,12 @@ function copyDirSync(src: string, dest: string) {
     const srcPath = path.join(src, entry.name);
     const destPath = path.join(dest, entry.name);
 
-    if (entry.isDirectory()) {
+    // Use statSync to follow symlinks
+    const stat = fs.statSync(srcPath);
+
+    if (stat.isDirectory()) {
       copyDirSync(srcPath, destPath);
-    } else {
+    } else if (stat.isFile()) {
       fs.copyFileSync(srcPath, destPath);
     }
   }

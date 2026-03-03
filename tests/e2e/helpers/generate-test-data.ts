@@ -1,0 +1,281 @@
+/**
+ * E2E test data generator.
+ * Sets up nock mocks for all external HTTP calls, then runs the backend
+ * to produce realistic current.json and history.json with populated deployed arrays.
+ */
+
+import * as fs from 'fs';
+import * as path from 'path';
+import nock from 'nock';
+import {
+  ESPOO_PROD_SHA,
+  ESPOO_STAGING_SHA,
+  TAMPERE_WRAPPER_PROD_SHA,
+  TAMPERE_WRAPPER_STAGING_SHA,
+  TAMPERE_CORE_PROD_SHA,
+  TAMPERE_CORE_STAGING_SHA,
+  OULU_WRAPPER_PROD_SHA,
+  OULU_WRAPPER_STAGING_SHA,
+  OULU_CORE_PROD_SHA,
+  OULU_CORE_STAGING_SHA,
+  TURKU_WRAPPER_PROD_SHA,
+  TURKU_WRAPPER_STAGING_SHA,
+  TURKU_CORE_PROD_SHA,
+  TURKU_CORE_STAGING_SHA,
+  PREV_CORE_PROD_SHA,
+  TAMPERE_WRAPPER_PREV_PROD_SHA,
+  OULU_WRAPPER_PREV_PROD_SHA,
+  TURKU_WRAPPER_PREV_PROD_SHA,
+  statusResponse,
+  coreCommitResponses,
+  wrapperCommitResponses,
+  coreDeployedCompareResponse,
+  coreStagingCompareResponse,
+  corePendingCompareResponse,
+  wrapperDeployedCompareResponse,
+  wrapperStagingCompareResponse,
+  emptyCompareResponse,
+  prResponses,
+  submoduleResponse,
+  previousJsonFixture,
+  STAGING_INSTANCES_ENV,
+} from '../fixtures/mock-api-responses.js';
+
+const TEST_DATA_DIR = path.resolve('tests/e2e/test-data');
+
+function setupStatusMocks() {
+  // Espoo production
+  nock('https://espoonvarhaiskasvatus.fi')
+    .get('/api/citizen/auth/status')
+    .reply(200, statusResponse(ESPOO_PROD_SHA));
+
+  // Espoo staging
+  nock('https://staging.espoonvarhaiskasvatus.fi')
+    .get('/api/citizen/auth/status')
+    .reply(200, statusResponse(ESPOO_STAGING_SHA));
+
+  // Tampere region production (9 instances, all return same SHA)
+  const tampereInstances = [
+    'varhaiskasvatus.tampere.fi',
+    'evaka.hameenkyro.fi',
+    'evaka.kangasala.fi',
+    'evaka.lempaala.fi',
+    'evaka.nokiankaupunki.fi',
+    'evaka.orivesi.fi',
+    'evaka.pirkkala.fi',
+    'evaka.vesilahti.fi',
+    'evaka.ylojarvi.fi',
+  ];
+  for (const domain of tampereInstances) {
+    nock(`https://${domain}`)
+      .get('/api/citizen/auth/status')
+      .reply(200, statusResponse(TAMPERE_WRAPPER_PROD_SHA));
+  }
+
+  // Tampere staging
+  nock('https://test-varhaiskasvatus.tampere.fi')
+    .get('/api/citizen/auth/status')
+    .reply(200, statusResponse(TAMPERE_WRAPPER_STAGING_SHA));
+
+  // Oulu production
+  nock('https://varhaiskasvatus.ouka.fi')
+    .get('/api/citizen/auth/status')
+    .reply(200, statusResponse(OULU_WRAPPER_PROD_SHA));
+
+  // Oulu staging
+  nock('https://staging-varhaiskasvatus.ouka.fi')
+    .get('/api/citizen/auth/status')
+    .reply(200, statusResponse(OULU_WRAPPER_STAGING_SHA));
+
+  // Turku production
+  nock('https://evaka.turku.fi')
+    .get('/api/citizen/auth/status')
+    .reply(200, statusResponse(TURKU_WRAPPER_PROD_SHA));
+
+  // Turku staging
+  nock('https://staging-evaka.turku.fi')
+    .get('/api/citizen/auth/status')
+    .reply(200, statusResponse(TURKU_WRAPPER_STAGING_SHA));
+}
+
+function setupGitHubMocks() {
+  const gh = nock('https://api.github.com').persist();
+
+  // --- Commit detail responses ---
+
+  // Core commits
+  for (const [sha, response] of Object.entries(coreCommitResponses)) {
+    gh.get(`/repos/espoon-voltti/evaka/commits/${sha}`).reply(200, response);
+  }
+
+  // Wrapper commits (all wrapper repos)
+  for (const [sha, response] of Object.entries(wrapperCommitResponses)) {
+    // Tampere
+    gh.get(`/repos/Tampere/trevaka/commits/${sha}`).reply(200, response);
+    // Oulu
+    gh.get(`/repos/Oulunkaupunki/evakaoulu/commits/${sha}`).reply(200, response);
+    // Turku
+    gh.get(`/repos/City-of-Turku/evakaturku/commits/${sha}`).reply(200, response);
+  }
+
+  // --- Submodule references (wrapper → core SHA) ---
+
+  // Tampere submodule at production SHA
+  gh.get(`/repos/Tampere/trevaka/contents/evaka?ref=${TAMPERE_WRAPPER_PROD_SHA}`)
+    .reply(200, submoduleResponse(TAMPERE_CORE_PROD_SHA));
+  gh.get(`/repos/Tampere/trevaka/contents/evaka?ref=${TAMPERE_WRAPPER_STAGING_SHA}`)
+    .reply(200, submoduleResponse(TAMPERE_CORE_STAGING_SHA));
+
+  // Oulu submodule
+  gh.get(`/repos/Oulunkaupunki/evakaoulu/contents/evaka?ref=${OULU_WRAPPER_PROD_SHA}`)
+    .reply(200, submoduleResponse(OULU_CORE_PROD_SHA));
+  gh.get(`/repos/Oulunkaupunki/evakaoulu/contents/evaka?ref=${OULU_WRAPPER_STAGING_SHA}`)
+    .reply(200, submoduleResponse(OULU_CORE_STAGING_SHA));
+
+  // Turku submodule
+  gh.get(`/repos/City-of-Turku/evakaturku/contents/evaka?ref=${TURKU_WRAPPER_PROD_SHA}`)
+    .reply(200, submoduleResponse(TURKU_CORE_PROD_SHA));
+  gh.get(`/repos/City-of-Turku/evakaturku/contents/evaka?ref=${TURKU_WRAPPER_STAGING_SHA}`)
+    .reply(200, submoduleResponse(TURKU_CORE_STAGING_SHA));
+
+  // --- Compare responses (for PR extraction) ---
+
+  // Core: deployed PRs (prev prod → current prod)
+  gh.get(`/repos/espoon-voltti/evaka/compare/${PREV_CORE_PROD_SHA}...${ESPOO_PROD_SHA}`)
+    .reply(200, coreDeployedCompareResponse);
+
+  // Core: staging PRs (prod → staging)
+  gh.get(`/repos/espoon-voltti/evaka/compare/${ESPOO_PROD_SHA}...${ESPOO_STAGING_SHA}`)
+    .reply(200, coreStagingCompareResponse);
+
+  // Core: pending PRs (staging → master)
+  gh.get(`/repos/espoon-voltti/evaka/compare/${ESPOO_STAGING_SHA}...master`)
+    .reply(200, corePendingCompareResponse);
+
+  // Tampere wrapper: deployed
+  gh.get(`/repos/Tampere/trevaka/compare/${TAMPERE_WRAPPER_PREV_PROD_SHA}...${TAMPERE_WRAPPER_PROD_SHA}`)
+    .reply(200, wrapperDeployedCompareResponse);
+
+  // Tampere wrapper: staging
+  gh.get(`/repos/Tampere/trevaka/compare/${TAMPERE_WRAPPER_PROD_SHA}...${TAMPERE_WRAPPER_STAGING_SHA}`)
+    .reply(200, wrapperStagingCompareResponse);
+
+  // Tampere wrapper: pending (staging → main)
+  gh.get(`/repos/Tampere/trevaka/compare/${TAMPERE_WRAPPER_STAGING_SHA}...main`)
+    .reply(200, emptyCompareResponse);
+
+  // Oulu wrapper: deployed
+  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/${OULU_WRAPPER_PREV_PROD_SHA}...${OULU_WRAPPER_PROD_SHA}`)
+    .reply(200, emptyCompareResponse);
+
+  // Oulu wrapper: staging
+  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/${OULU_WRAPPER_PROD_SHA}...${OULU_WRAPPER_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+
+  // Oulu wrapper: pending
+  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/${OULU_WRAPPER_STAGING_SHA}...main`)
+    .reply(200, emptyCompareResponse);
+
+  // Turku wrapper: deployed
+  gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_PREV_PROD_SHA}...${TURKU_WRAPPER_PROD_SHA}`)
+    .reply(200, emptyCompareResponse);
+
+  // Turku wrapper: staging
+  gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_PROD_SHA}...${TURKU_WRAPPER_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+
+  // Turku wrapper: pending
+  gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_STAGING_SHA}...main`)
+    .reply(200, emptyCompareResponse);
+
+  // --- PR detail responses ---
+
+  for (const [number, response] of Object.entries(prResponses)) {
+    const num = parseInt(number, 10);
+    // Core PRs
+    gh.get(`/repos/espoon-voltti/evaka/pulls/${num}`).reply(200, response);
+    // Wrapper PRs (respond on all wrapper repos)
+    gh.get(`/repos/Tampere/trevaka/pulls/${num}`).reply(200, response);
+    gh.get(`/repos/Oulunkaupunki/evakaoulu/pulls/${num}`).reply(200, response);
+    gh.get(`/repos/City-of-Turku/evakaturku/pulls/${num}`).reply(200, response);
+  }
+}
+
+function setupSlackMock() {
+  // Mock Slack webhook to prevent real notifications
+  nock('https://hooks.slack.com').post(/.*/).reply(200, 'ok').persist();
+  nock('http://localhost').post('/slack-mock').reply(200, 'ok').persist();
+}
+
+export async function generateTestData(): Promise<string> {
+  // Clean and create test data directory
+  if (fs.existsSync(TEST_DATA_DIR)) {
+    fs.rmSync(TEST_DATA_DIR, { recursive: true });
+  }
+  fs.mkdirSync(TEST_DATA_DIR, { recursive: true });
+
+  // Write previous.json so the backend detects production deployments
+  fs.writeFileSync(
+    path.join(TEST_DATA_DIR, 'previous.json'),
+    JSON.stringify(previousJsonFixture, null, 2)
+  );
+
+  // Write empty history.json
+  fs.writeFileSync(
+    path.join(TEST_DATA_DIR, 'history.json'),
+    JSON.stringify({ events: [] })
+  );
+
+  // Set environment variables
+  process.env.GH_TOKEN = 'test-token-for-e2e';
+  process.env.DRY_RUN = 'false';
+  process.env.SLACK_WEBHOOK_URL = 'http://localhost/slack-mock';
+  process.env.DATA_DIR = TEST_DATA_DIR;
+  process.env.DIST_DIR = path.join(TEST_DATA_DIR, '..', 'test-dist');
+  process.env.STAGING_INSTANCES = STAGING_INSTANCES_ENV;
+
+  // Disable all real HTTP and set up mocks
+  nock.disableNetConnect();
+  setupStatusMocks();
+  setupGitHubMocks();
+  setupSlackMock();
+
+  try {
+    // Import and run the backend
+    const { run } = await import('../../../src/index.js');
+    await run();
+
+    // Verify generated data
+    const currentPath = path.join(TEST_DATA_DIR, 'current.json');
+    if (!fs.existsSync(currentPath)) {
+      throw new Error('current.json was not generated');
+    }
+
+    const current = JSON.parse(fs.readFileSync(currentPath, 'utf-8'));
+    const espooDeployed = current.cityGroups?.find(
+      (cg: { id: string }) => cg.id === 'espoo'
+    )?.prTracks?.core?.deployed;
+
+    console.log(`[E2E] Test data generated. Espoo deployed PRs: ${espooDeployed?.length ?? 0}`);
+
+    return TEST_DATA_DIR;
+  } finally {
+    nock.cleanAll();
+    nock.enableNetConnect();
+    // Clean up env vars
+    delete process.env.DATA_DIR;
+    delete process.env.DIST_DIR;
+    delete process.env.STAGING_INSTANCES;
+  }
+}
+
+// Allow running directly
+const isMain = process.argv[1] && import.meta.url.endsWith(process.argv[1].replace(/\\/g, '/').replace(/.*\//, ''));
+if (isMain) {
+  generateTestData()
+    .then((dir) => console.log(`Test data written to: ${dir}`))
+    .catch((err) => {
+      console.error('Failed to generate test data:', err);
+      process.exit(1);
+    });
+}
