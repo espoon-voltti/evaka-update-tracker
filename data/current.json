@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-04T11:06:53.348Z",
+  "generatedAt": "2026-03-04T11:20:38.743Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-04T11:05:48.162Z",
+            "checkedAt": "2026-03-04T11:19:42.309Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-04T11:05:49.100Z",
+            "checkedAt": "2026-03-04T11:19:42.950Z",
             "status": "auth-error",
             "wrapperCommit": null,
             "coreCommit": null
@@ -123,7 +123,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-04T11:05:58.922Z",
+            "checkedAt": "2026-03-04T11:19:52.443Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2c67801a007f6883ad754c2075e3f082bae056f8",
@@ -148,7 +148,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-04T11:06:07.422Z",
+            "checkedAt": "2026-03-04T11:19:59.323Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -304,7 +304,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-04T11:06:36.509Z",
+            "checkedAt": "2026-03-04T11:20:27.134Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -329,7 +329,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-04T11:06:38.974Z",
+            "checkedAt": "2026-03-04T11:20:28.163Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -359,34 +359,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8632,
-              "title": "Ei avoimia tuloselvityksiä -hakuehdon kuuluisi huomioida myös käsittelyssä olevat",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-03T17:07:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8632",
-              "labels": [
-                "bug"
-              ]
-            },
-            {
-              "number": 8630,
-              "title": "Tekninen: Poista käyttämätön @types/webpack-riippuvuus",
-              "author": "terolaakso-reaktor",
-              "mergedAt": "2026-03-03T06:47:56Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8630",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -401,7 +374,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-04T11:06:42.312Z",
+            "checkedAt": "2026-03-04T11:20:29.644Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "0f30d2917bdf553d4f30aaeb1b0ce6168e1c385a",
@@ -426,7 +399,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-04T11:06:44.127Z",
+            "checkedAt": "2026-03-04T11:20:30.611Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ec9cf46065753fc462f2fa2cb50b5617b1bba4aa",
