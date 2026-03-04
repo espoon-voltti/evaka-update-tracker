@@ -123,6 +123,21 @@ export async function getPullRequest(
   });
 }
 
+export async function getFileContent(
+  owner: string,
+  repo: string,
+  path: string,
+  ref?: string
+): Promise<string> {
+  return withRetry(async () => {
+    const url = ref
+      ? `/repos/${owner}/${repo}/contents/${path}?ref=${ref}`
+      : `/repos/${owner}/${repo}/contents/${path}`;
+    const data = await ghGet<{ content: string; encoding: string }>(url);
+    return Buffer.from(data.content, 'base64').toString('utf-8');
+  });
+}
+
 // Patterns: "Merge pull request #123 from ..." or "Title (#123)"
 const MERGE_PR_PATTERN = /Merge pull request #(\d+) from/;
 const SQUASH_PR_PATTERN = /\(#(\d+)\)$/;

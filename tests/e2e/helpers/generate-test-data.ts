@@ -193,6 +193,12 @@ function setupGitHubMocks() {
   gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_STAGING_SHA}...main`)
     .reply(200, emptyCompareResponse);
 
+  // --- Feature flag file content (return 404 to trigger graceful error handling) ---
+  // The actual feature-flags.json is generated as a static fixture above.
+  // These mocks prevent the feature flag collector from crashing the pipeline.
+  gh.get(/\/repos\/.*\/contents\/frontend\/.*featureFlags\.tsx/).reply(404, { message: 'Not Found' });
+  gh.get(/\/repos\/.*\/contents\/service\/.*Config\.kt/).reply(404, { message: 'Not Found' });
+
   // --- PR detail responses ---
 
   for (const [number, response] of Object.entries(prResponses)) {
@@ -210,6 +216,67 @@ function setupSlackMock() {
   // Mock Slack webhook to prevent real notifications
   nock('https://hooks.slack.com').post(/.*/).reply(200, 'ok').persist();
   nock('http://localhost').post('/slack-mock').reply(200, 'ok').persist();
+}
+
+function featureFlagsFixture() {
+  const cities = [
+    { id: 'espoo', name: 'Espoo', cityGroupId: 'espoo', error: null },
+    { id: 'tampere', name: 'Tampere', cityGroupId: 'tampere-region', error: null },
+    { id: 'nokia', name: 'Nokia', cityGroupId: 'tampere-region', error: null },
+    { id: 'kangasala', name: 'Kangasala', cityGroupId: 'tampere-region', error: null },
+    { id: 'lempaala', name: 'Lempäälä', cityGroupId: 'tampere-region', error: null },
+    { id: 'orivesi', name: 'Orivesi', cityGroupId: 'tampere-region', error: null },
+    { id: 'pirkkala', name: 'Pirkkala', cityGroupId: 'tampere-region', error: null },
+    { id: 'vesilahti', name: 'Vesilahti', cityGroupId: 'tampere-region', error: null },
+    { id: 'ylojarvi', name: 'Ylöjärvi', cityGroupId: 'tampere-region', error: null },
+    { id: 'hameenkyro', name: 'Hämeenkyrö', cityGroupId: 'tampere-region', error: null },
+    { id: 'oulu', name: 'Oulu', cityGroupId: 'oulu', error: null },
+    { id: 'turku', name: 'Turku', cityGroupId: 'turku', error: null },
+  ];
+
+  const allIds = cities.map((c) => c.id);
+  const makeValues = (defaultVal: boolean, overrides: Record<string, boolean | null> = {}) => {
+    const values: Record<string, boolean | null> = {};
+    for (const id of allIds) values[id] = defaultVal;
+    Object.assign(values, overrides);
+    return values;
+  };
+
+  return {
+    generatedAt: new Date().toISOString(),
+    cities,
+    categories: [
+      {
+        id: 'frontend',
+        label: 'Käyttöliittymäominaisuudet',
+        flags: [
+          { key: 'citizenShiftCareAbsence', label: 'Vuorohoidon poissaolot kansalaisille', type: 'boolean', values: makeValues(false, { espoo: true }) },
+          { key: 'assistanceActionOther', label: 'Tukitoimi: muu', type: 'boolean', values: makeValues(false, { espoo: true }) },
+          { key: 'daycareApplication.dailyTimes', label: 'Päivähoitohakemus: päivittäiset ajat', type: 'boolean', values: makeValues(false, { espoo: true, oulu: true }) },
+          { key: 'decisionDraftMultipleUnits', label: 'Sijoitushahmotelma: erilliset yksiköt', type: 'boolean', values: makeValues(true, { espoo: false }) },
+          { key: 'preschool', label: 'Esiopetuksen tuki', type: 'boolean', values: makeValues(true) },
+          { key: 'preparatory', label: 'Valmistava opetus', type: 'boolean', values: makeValues(false, { espoo: true }) },
+          { key: 'placementGuarantee', label: 'Paikkavakuus', type: 'boolean', values: makeValues(true) },
+          { key: 'voucherUnitPayments', label: 'Palvelusetelimaksatus', type: 'boolean', values: makeValues(true, { espoo: false }) },
+          { key: 'discussionReservations', label: 'Keskusteluvaraukset', type: 'boolean', values: makeValues(true) },
+        ],
+      },
+      {
+        id: 'backend',
+        label: 'Taustajärjestelmän asetukset',
+        flags: [
+          { key: 'valueDecisionCapacityFactorEnabled', label: 'Kapasiteettikerroin arvopäätöksissä', type: 'boolean', values: makeValues(true, { espoo: false, oulu: false, turku: false }) },
+          { key: 'citizenReservationThresholdHours', label: 'Varausten lukitusraja (tuntia)', type: 'number',
+            values: { espoo: 150, tampere: 144, nokia: 159, kangasala: 144, lempaala: 144, orivesi: 144, pirkkala: 144, vesilahti: 144, ylojarvi: 144, hameenkyro: 144, oulu: 165, turku: 156 } },
+          { key: 'freeAbsenceGivesADailyRefund', label: 'Vapaan poissaolon päiväkorvaus', type: 'boolean', values: makeValues(false, { espoo: true, nokia: true }) },
+          { key: 'daycarePlacementPlanEndMonthDay', label: 'Sijoitussuunnitelman päättymispäivä', type: 'string',
+            values: { espoo: '07-31', tampere: '08-15', nokia: '08-15', kangasala: '08-15', lempaala: '08-15', orivesi: '08-15', pirkkala: '08-15', vesilahti: '08-15', ylojarvi: '08-15', hameenkyro: '08-15', oulu: '07-31', turku: '07-31' } },
+          { key: 'holidayQuestionnaireType', label: 'Lomakyselyn tyyppi', type: 'enum',
+            values: { espoo: 'FIXED_PERIOD', tampere: 'FIXED_PERIOD', nokia: 'FIXED_PERIOD', kangasala: 'FIXED_PERIOD', lempaala: 'FIXED_PERIOD', orivesi: 'FIXED_PERIOD', pirkkala: 'FIXED_PERIOD', vesilahti: 'FIXED_PERIOD', ylojarvi: 'FIXED_PERIOD', hameenkyro: 'FIXED_PERIOD', oulu: 'OPEN_RANGES', turku: 'FIXED_PERIOD' } },
+        ],
+      },
+    ],
+  };
 }
 
 export async function generateTestData(): Promise<string> {
@@ -261,6 +328,12 @@ export async function generateTestData(): Promise<string> {
     const espooDeployed = current.cityGroups?.find(
       (cg: { id: string }) => cg.id === 'espoo'
     )?.prTracks?.core?.deployed;
+
+    // Write feature-flags.json AFTER pipeline (overwrite the empty one from failed collection)
+    fs.writeFileSync(
+      path.join(TEST_DATA_DIR, 'feature-flags.json'),
+      JSON.stringify(featureFlagsFixture(), null, 2)
+    );
 
     console.log(`[E2E] Test data generated. Espoo deployed PRs: ${espooDeployed?.length ?? 0}`);
 

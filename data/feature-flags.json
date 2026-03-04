@@ -1,0 +1,1231 @@
+{
+  "generatedAt": "2026-03-04T00:19:55.446Z",
+  "cities": [
+    {
+      "id": "espoo",
+      "name": "Espoo",
+      "cityGroupId": "espoo",
+      "error": null
+    },
+    {
+      "id": "tampere",
+      "name": "Tampere",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "nokia",
+      "name": "Nokia",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "kangasala",
+      "name": "Kangasala",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "lempaala",
+      "name": "Lempäälä",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "orivesi",
+      "name": "Orivesi",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "pirkkala",
+      "name": "Pirkkala",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "vesilahti",
+      "name": "Vesilahti",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "ylojarvi",
+      "name": "Ylöjärvi",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "hameenkyro",
+      "name": "Hämeenkyrö",
+      "cityGroupId": "tampere-region",
+      "error": null
+    },
+    {
+      "id": "oulu",
+      "name": "Oulu",
+      "cityGroupId": "oulu",
+      "error": null
+    },
+    {
+      "id": "turku",
+      "name": "Turku",
+      "cityGroupId": "turku",
+      "error": null
+    }
+  ],
+  "categories": [
+    {
+      "id": "frontend",
+      "label": "Käyttöliittymäominaisuudet",
+      "flags": [
+        {
+          "key": "absenceApplications",
+          "label": "Poissaolohakemukset",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "archiveIntegration.childDocuments",
+          "label": "Arkistointi: lapsiasiakirjat",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": true,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "archiveIntegration.decisions",
+          "label": "Arkistointi: päätökset",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": true,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "archiveIntegration.feeDecisions",
+          "label": "Arkistointi: maksupäätökset",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": true,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "archiveIntegration.voucherValueDecisions",
+          "label": "Arkistointi: arvopäätökset",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": true,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "aromiIntegration",
+          "label": "Aromi-ruokatilausintegraatio",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "assistanceActionOther",
+          "label": "Tukitoimi: muu",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": false,
+            "turku": true
+          }
+        },
+        {
+          "key": "citizenAttendanceSummary",
+          "label": "Kansalaisen läsnäoloyhteenveto",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "citizenChildDocumentTypes",
+          "label": "Kansalaisen lapsiasiakirjatyypit",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "citizenShiftCareAbsence",
+          "label": "Vuorohoidon poissaolot kansalaisille",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "daycareApplication.dailyTimes",
+          "label": "Päivähoitohakemus: päivittäiset ajat",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": true,
+            "turku": false
+          }
+        },
+        {
+          "key": "daycareApplication.serviceNeedOption",
+          "label": "Päivähoitohakemus: palveluntarpeen valinta",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": false
+          }
+        },
+        {
+          "key": "decisionChildDocumentTypes",
+          "label": "Päätösasiakirjatyypit",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "decisionDraftMultipleUnits",
+          "label": "Sijoitushahmotelma: erilliset yksiköt",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "discussionReservations",
+          "label": "Keskusteluvaraukset",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "extendedPreschoolTerm",
+          "label": "Laajennettu esiopetuskausi",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "feeDecisionPreschoolClubFilter",
+          "label": "Maksupäätökset: esiopetuskerhon suodatus",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "financeDecisionHandlerSelect",
+          "label": "Talouspäätöksen käsittelijän valinta",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "forceUnpublishDocumentTemplate",
+          "label": "Asiakirjamallien pakkojulkaisun peruminen",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "hideClubApplication",
+          "label": "Piilota kerhohakemus",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": true,
+            "kangasala": false,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": false,
+            "vesilahti": true,
+            "ylojarvi": false,
+            "hameenkyro": true,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "intermittentShiftCare",
+          "label": "Ajoittainen vuorohoito",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "invoiceDisplayAccountNumber",
+          "label": "Tilinumero laskun tiedoissa",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "jamixIntegration",
+          "label": "Jamix-ruokatilausintegraatio",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "missingQuestionnaireAnswerMarkerEnabled",
+          "label": "Puuttuvan kyselyvastauksen merkintä",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": null
+          }
+        },
+        {
+          "key": "multiSelectDeparture",
+          "label": "Monen lapsen lähtökirjaus",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "nekkuIntegration",
+          "label": "Nekku-ruokatilausintegraatio",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": null
+          }
+        },
+        {
+          "key": "noAbsenceType",
+          "label": "Ei poissaolotyyppiä mobiilissa",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "placementDesktop",
+          "label": "Sijoituksen työpöytänäkymä",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "placementGuarantee",
+          "label": "Paikkavakuus",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "preparatory",
+          "label": "Valmistava opetus",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": true,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "preschool",
+          "label": "Esiopetuksen tuki",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": false,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "preschoolApplication.connectedDaycarePreferredStartDate",
+          "label": "Esiopetushakemus: liittyvän päivähoidon aloituspäivä",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": false,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "preschoolApplication.serviceNeedOption",
+          "label": "Esiopetushakemus: palveluntarpeen valinta",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": false
+          }
+        },
+        {
+          "key": "requireAttachments",
+          "label": "Liitteiden pakollisuus",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "serviceApplications",
+          "label": "Palveluntarvemuutokset",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "showCitizenApplicationPreschoolTerms",
+          "label": "Esiopetuskauden tiedot hakemuksella",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "showMetadataToCitizen",
+          "label": "Metatiedot kansalaiselle",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "titaniaErrorsReport",
+          "label": "Titania-virheraportit",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": false
+          }
+        },
+        {
+          "key": "urgencyAttachments",
+          "label": "Kiireellisyyden liitteet",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "voucherUnitPayments",
+          "label": "Palvelusetelimaksatus",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "voucherValueSeparation",
+          "label": "Palveluseteliarvojen erittely",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": false,
+            "turku": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "Taustajärjestelmän asetukset",
+      "flags": [
+        {
+          "key": "alwaysUseDaycareFinanceDecisionHandler",
+          "label": "Käytä aina yksikön talouskäsittelijää",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": true
+          }
+        },
+        {
+          "key": "applyPlacementUnitFromDecision",
+          "label": "Sijoitusyksikkö päätöksestä",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "citizenReservationThresholdHours",
+          "label": "Varausten lukitusraja (tuntia)",
+          "type": "number",
+          "values": {
+            "espoo": 150,
+            "tampere": 144,
+            "nokia": 159,
+            "kangasala": 159,
+            "lempaala": 231,
+            "orivesi": 159,
+            "pirkkala": 159,
+            "vesilahti": 159,
+            "ylojarvi": 159,
+            "hameenkyro": 159,
+            "oulu": 165,
+            "turku": 156
+          }
+        },
+        {
+          "key": "daycarePlacementPlanEndMonthDay",
+          "label": "Sijoitussuunnitelman päättymispäivä",
+          "type": "string",
+          "values": {
+            "espoo": "07-31",
+            "tampere": "08-15",
+            "nokia": "08-15",
+            "kangasala": "08-15",
+            "lempaala": "08-15",
+            "orivesi": "08-15",
+            "pirkkala": "08-15",
+            "vesilahti": "08-15",
+            "ylojarvi": "08-15",
+            "hameenkyro": "08-15",
+            "oulu": "08-20",
+            "turku": "07-31"
+          }
+        },
+        {
+          "key": "fiveYearsOldDaycareEnabled",
+          "label": "5-vuotiaiden päivähoitosijoitukset",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": false,
+            "turku": null
+          }
+        },
+        {
+          "key": "freeAbsenceGivesADailyRefund",
+          "label": "Vapaan poissaolon päiväkorvaus",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "freeJulyStartOnSeptember",
+          "label": "Maksuton heinäkuu syyskuun aloituksella",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "holidayQuestionnaireType",
+          "label": "Lomakyselyn tyyppi",
+          "type": "enum",
+          "values": {
+            "espoo": "FIXED_PERIOD",
+            "tampere": "FIXED_PERIOD",
+            "nokia": "FIXED_PERIOD",
+            "kangasala": "FIXED_PERIOD",
+            "lempaala": "FIXED_PERIOD",
+            "orivesi": "FIXED_PERIOD",
+            "pirkkala": "FIXED_PERIOD",
+            "vesilahti": "FIXED_PERIOD",
+            "ylojarvi": "FIXED_PERIOD",
+            "hameenkyro": "FIXED_PERIOD",
+            "oulu": "OPEN_RANGES",
+            "turku": "FIXED_PERIOD"
+          }
+        },
+        {
+          "key": "maxContractDaySurplusThreshold",
+          "label": "Sopimuspäivien ylitysraja",
+          "type": "number",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": 13,
+            "turku": 13
+          }
+        },
+        {
+          "key": "minimumInvoiceAmount",
+          "label": "Laskun vähimmäissumma (senttejä)",
+          "type": "number",
+          "values": {
+            "espoo": 0,
+            "tampere": 0,
+            "nokia": 0,
+            "kangasala": 0,
+            "lempaala": 0,
+            "orivesi": 0,
+            "pirkkala": 0,
+            "vesilahti": 0,
+            "ylojarvi": 0,
+            "hameenkyro": 0,
+            "oulu": 800,
+            "turku": 0
+          }
+        },
+        {
+          "key": "paymentNumberSeriesStart",
+          "label": "Maksatusnumeroinnin aloitus",
+          "type": "number",
+          "values": {
+            "espoo": 1,
+            "tampere": 1,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": 1,
+            "turku": 1
+          }
+        },
+        {
+          "key": "placementToolApplicationStatus",
+          "label": "Sijoitustyökalun hakemusten tila",
+          "type": "enum",
+          "values": {
+            "espoo": "SENT",
+            "tampere": "WAITING_DECISION",
+            "nokia": "WAITING_DECISION",
+            "kangasala": "WAITING_DECISION",
+            "lempaala": "SENT",
+            "orivesi": "SENT",
+            "pirkkala": "SENT",
+            "vesilahti": "SENT",
+            "ylojarvi": "WAITING_DECISION",
+            "hameenkyro": "SENT",
+            "oulu": "WAITING_DECISION",
+            "turku": "WAITING_DECISION"
+          }
+        },
+        {
+          "key": "preferredStartRelativeApplicationDueDate",
+          "label": "Eräpäivä suhteessa toivottuun aloitukseen",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "requestedStartUpperLimit",
+          "label": "Aloituspäivän siirtorajat (päivää)",
+          "type": "number",
+          "values": {
+            "espoo": 14,
+            "tampere": 14,
+            "nokia": 14,
+            "kangasala": 14,
+            "lempaala": 14,
+            "orivesi": 14,
+            "pirkkala": 14,
+            "vesilahti": 14,
+            "ylojarvi": 14,
+            "hameenkyro": 14,
+            "oulu": 7,
+            "turku": 14
+          }
+        },
+        {
+          "key": "skipGuardianPreschoolDecisionApproval",
+          "label": "Ohita esiopetuspäätöksen huoltajan hyväksyntä",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": false,
+            "nokia": false,
+            "kangasala": false,
+            "lempaala": false,
+            "orivesi": false,
+            "pirkkala": false,
+            "vesilahti": false,
+            "ylojarvi": false,
+            "hameenkyro": false,
+            "oulu": false,
+            "turku": true
+          }
+        },
+        {
+          "key": "temporaryDaycarePartDayAbsenceGivesADailyRefund",
+          "label": "Tilapäisen osapäiväisen poissaolokorvaus",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": false,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "unplannedAbsencesAreContractSurplusDays",
+          "label": "Suunnittelemattomat poissaolot sopimuspäivinä",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "useContractDaysAsDailyFeeDivisor",
+          "label": "Sopimuspäivät päivähinta-jakajana",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
+          "key": "valueDecisionCapacityFactorEnabled",
+          "label": "Kapasiteettikerroin arvopäätöksissä",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": true,
+            "nokia": true,
+            "kangasala": true,
+            "lempaala": true,
+            "orivesi": true,
+            "pirkkala": true,
+            "vesilahti": true,
+            "ylojarvi": true,
+            "hameenkyro": true,
+            "oulu": false,
+            "turku": false
+          }
+        }
+      ]
+    }
+  ]
+}

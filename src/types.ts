@@ -147,3 +147,33 @@ export interface PreviousData {
   checkedAt: string; // ISO 8601
   versions: Record<string, PreviousVersionEntry>;
 }
+
+// --- Feature Flag Data ---
+
+export type FeatureFlagValue = boolean | number | string | null;
+
+export interface FeatureFlag {
+  key: string;
+  label: string;
+  type: 'boolean' | 'number' | 'string' | 'enum';
+  values: Record<string, FeatureFlagValue>;
+}
+
+export interface FeatureFlagCategory {
+  id: 'frontend' | 'backend';
+  label: string;
+  flags: FeatureFlag[];
+}
+
+export interface FeatureFlagCity {
+  id: string;
+  name: string;
+  cityGroupId: string;
+  error: string | null;
+}
+
+export interface FeatureFlagData {
+  generatedAt: string;
+  cities: FeatureFlagCity[];
+  categories: FeatureFlagCategory[];
+}

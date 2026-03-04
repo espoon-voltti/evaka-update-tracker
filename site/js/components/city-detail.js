@@ -96,7 +96,7 @@ function findLatestPRTitle(city, envType, historyEvents) {
     || findLatestNonBotPRFromEvents(historyEvents, city, 'staging');
 }
 
-export function renderCityDetail(city, { showBots = false } = {}, historyEvents = []) {
+export function renderCityDetail(city, { showBots = false } = {}, historyEvents = [], featureData = null) {
   // Environment status badges
   const envSections = city.environments.map((env) => {
     const label = env.type === 'production' ? 'Tuotanto' : 'Staging / Testi';
@@ -187,7 +187,10 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
     `;
   }
 
-  // Layout order per FR-015: env badges → toggle → production → staging → awaiting
+  // Feature flag summary
+  const featureSummary = renderFeatureSummary(city, featureData);
+
+  // Layout order per FR-015: env badges → toggle → production → staging → awaiting → features
   return `
     <div class="city-detail">
       <h2>${escapeHtml(city.name)}</h2>
@@ -199,6 +202,7 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
       ${productionSection}
       ${stagingSection}
       ${pendingSection}
+      ${featureSummary}
     </div>
   `;
 }
@@ -220,6 +224,60 @@ export function bindCityDetailEvents(city) {
       setQueryParam('showBots', current ? null : 'true');
     });
   }
+}
+
+function renderFeatureSummary(city, featureData) {
+  if (!featureData || !featureData.categories) return '';
+
+  // Determine which city IDs to look up
+  // For tampere-region cities, find the specific city ID
+  const cityId = city.id;
+  const featureCity = featureData.cities?.find(
+    (c) => c.cityGroupId === cityId || c.id === cityId
+  );
+
+  // Find all cities belonging to this city group
+  const citiesInGroup = featureData.cities?.filter((c) => c.cityGroupId === cityId) || [];
+  const cityIds = citiesInGroup.length > 0
+    ? citiesInGroup.map((c) => c.id)
+    : featureData.cities?.filter((c) => c.id === cityId).map((c) => c.id) || [];
+
+  if (cityIds.length === 0) return '';
+
+  let categoriesHtml = '';
+  for (const category of featureData.categories) {
+    const booleanFlags = category.flags.filter((f) => f.type === 'boolean');
+    if (booleanFlags.length === 0) continue;
+
+    const items = booleanFlags.map((flag) => {
+      // For multi-city groups, use the first city's value as representative
+      const val = flag.values[cityIds[0]];
+      let indicator;
+      if (val === true) indicator = '<span class="flag-true">✓</span>';
+      else if (val === false) indicator = '<span class="flag-false">✗</span>';
+      else indicator = '<span class="flag-unset">—</span>';
+
+      return `<li class="feature-summary-item">${indicator} ${escapeHtml(flag.label)}</li>`;
+    }).join('');
+
+    categoriesHtml += `
+      <div class="feature-summary-category">
+        <div class="feature-summary-category-header">${escapeHtml(category.label)}</div>
+        <ul class="feature-summary-list">${items}</ul>
+      </div>
+    `;
+  }
+
+  if (!categoriesHtml) return '';
+
+  return `
+    <div class="feature-summary-section">
+      <details>
+        <summary>Ominaisuudet</summary>
+        ${categoriesHtml}
+      </details>
+    </div>
+  `;
 }
 
 function escapeHtml(str) {

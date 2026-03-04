@@ -10,6 +10,8 @@ import { deploySite } from './services/site-deployer.js';
 import { sendSlackNotification } from './api/slack.js';
 import { resolveWebhookUrl } from './config/slack-routing.js';
 import { readHistory, appendEvents, pruneOldEvents, writeHistory } from './services/history-manager.js';
+import { collectFeatureFlags } from './services/feature-flag-collector.js';
+import { FEATURE_FLAG_CITIES } from './config/feature-flag-cities.js';
 import {
   CityGroupData,
   CurrentData,
@@ -218,6 +220,32 @@ export async function run() {
     history = appendEvents(history, allEvents);
   }
   history = pruneOldEvents(history);
+
+  // Collect feature flags (non-blocking — errors don't fail the pipeline)
+  try {
+    console.log('\nCollecting feature flags...');
+    const featureFlagData = await collectFeatureFlags(FEATURE_FLAG_CITIES);
+    const citiesWithErrors = featureFlagData.cities.filter((c) => c.error);
+    if (citiesWithErrors.length > 0) {
+      console.warn(
+        `Feature flag collection had errors for: ${citiesWithErrors.map((c) => c.name).join(', ')}`
+      );
+    }
+    const totalFlags =
+      featureFlagData.categories.reduce((sum, cat) => sum + cat.flags.length, 0);
+    console.log(
+      `Feature flags collected: ${totalFlags} flags across ${featureFlagData.cities.length} cities`
+    );
+
+    if (!DRY_RUN) {
+      fs.writeFileSync(
+        path.join(DATA_DIR, 'feature-flags.json'),
+        JSON.stringify(featureFlagData, null, 2)
+      );
+    }
+  } catch (err) {
+    console.warn('Feature flag collection failed (non-fatal):', err);
+  }
 
   if (DRY_RUN) {
     console.log('\n--- DRY RUN: current.json ---');

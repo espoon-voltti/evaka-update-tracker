@@ -13,7 +13,10 @@ export function renderCityTabs(cityGroups, activeCityId) {
     return `<span class="tab${active ? ' active' : ''}" data-city-id="${city.id}">${escapeHtml(city.name)}</span>`;
   });
 
-  return overviewTab + cityTabs.join('');
+  const featuresActive = activeCityId === 'features';
+  const featuresTab = `<span class="tab${featuresActive ? ' active' : ''}" data-city-id="features">Ominaisuudet</span>`;
+
+  return overviewTab + cityTabs.join('') + featuresTab;
 }
 
 function escapeHtml(str) {

@@ -53,11 +53,12 @@ function handleCityDetail({ id }, queryParams) {
     renderView('<div class="loading">Ladataan...</div>');
     return;
   }
-  // Dynamically import city-detail and load history for detection timestamps
+  // Dynamically import city-detail and load history + feature flags
   Promise.all([
     import('./components/city-detail.js'),
     fetch('data/history.json').then((r) => r.ok ? r.json() : { events: [] }).catch(() => ({ events: [] })),
-  ]).then(([{ renderCityDetail, bindCityDetailEvents }, historyData]) => {
+    fetch('data/feature-flags.json').then((r) => r.ok ? r.json() : null).catch(() => null),
+  ]).then(([{ renderCityDetail, bindCityDetailEvents }, historyData, featureData]) => {
     const city = currentData.cityGroups.find((c) => c.id === id);
     if (!city) {
       renderView('<div class="empty-state">Kuntaa ei löytynyt</div>');
@@ -65,7 +66,7 @@ function handleCityDetail({ id }, queryParams) {
     }
     document.title = `${city.name} - eVaka muutostenseuranta`;
     const showBots = queryParams?.get('showBots') === 'true';
-    renderView(renderCityDetail(city, { showBots }, historyData.events || []));
+    renderView(renderCityDetail(city, { showBots }, historyData.events || [], featureData));
     bindCityDetailEvents(city);
     updateTabs(id);
   });
@@ -99,6 +100,35 @@ function handleCityHistory({ id }, queryParams) {
   });
 }
 
+// Route: Features (#/features)
+function handleFeatures(_params, queryParams) {
+  document.title = 'Ominaisuudet - eVaka muutostenseuranta';
+  renderView('<div class="loading">Ladataan...</div>');
+  fetch('data/feature-flags.json')
+    .then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
+    .then((featureData) => {
+      import('./components/feature-matrix.js').then(
+        ({ renderFeatureMatrix, bindFeatureMatrixEvents }) => {
+          const differencesOnly = queryParams?.get('differencesOnly') === 'true';
+          const showValues = queryParams?.get('showValues') === 'true';
+          renderView(renderFeatureMatrix(featureData, { differencesOnly, showValues }));
+          bindFeatureMatrixEvents();
+          updateTabs('features');
+        }
+      );
+    })
+    .catch((err) => {
+      console.error('Failed to load feature flags:', err);
+      renderView(
+        '<div class="empty-state">Ominaisuustietojen lataaminen epäonnistui.</div>'
+      );
+      updateTabs('features');
+    });
+}
+
 function updateTabs(activeCityId) {
   // Dynamically import city-tabs if they exist
   import('./components/city-tabs.js').then(({ renderCityTabs }) => {
@@ -109,7 +139,9 @@ function updateTabs(activeCityId) {
       tabsEl.querySelectorAll('.tab').forEach((tab) => {
         tab.addEventListener('click', () => {
           const cityId = tab.dataset.cityId;
-          if (cityId) {
+          if (cityId === 'features') {
+            navigate('/features');
+          } else if (cityId) {
             navigate(`/city/${cityId}`);
           } else {
             navigate('/');
@@ -124,6 +156,7 @@ function updateTabs(activeCityId) {
 
 // Register routes
 addRoute('/', handleOverview);
+addRoute('/features', handleFeatures);
 addRoute('/city/:id', handleCityDetail);
 addRoute('/city/:id/history', handleCityHistory);
 setNotFound(() => navigate('/'));
