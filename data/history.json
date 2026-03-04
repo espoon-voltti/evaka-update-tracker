@@ -1,6 +1,92 @@
 {
   "events": [
     {
+      "id": "2026-03-04T07:28:20.597Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-04T07:28:20.597Z",
+      "previousCommit": {
+        "sha": "4acb427527b3425ea287ff03649b4f64bf6018e1",
+        "shortSha": "4acb427",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ec9cf46065753fc462f2fa2cb50b5617b1bba4aa",
+        "shortSha": "ec9cf46",
+        "message": "Merge pull request #252 from City-of-Turku/dependabot/submodules/evaka-bf2c392",
+        "date": "2026-03-04T02:14:40Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 252,
+          "title": "Bump evaka from `5ff94c8` to `bf2c392`",
+          "author": "dependabot[bot]",
+          "mergedAt": "2026-03-04T02:14:40Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/252",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-04T07:28:20.597Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-04T07:28:20.597Z",
+      "previousCommit": {
+        "sha": "5ff94c8cd104a2c4bd164c9f64f3c4455ac39370",
+        "shortSha": "5ff94c8",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
+        "shortSha": "bf2c392",
+        "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
+        "date": "2026-03-03T17:07:58Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 8632,
+          "title": "Ei avoimia tuloselvityksiä -hakuehdon kuuluisi huomioida myös käsittelyssä olevat",
+          "author": "Joosakur",
+          "mergedAt": "2026-03-03T17:07:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8632",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 8630,
+          "title": "Tekninen: Poista käyttämätön @types/webpack-riippuvuus",
+          "author": "terolaakso-reaktor",
+          "mergedAt": "2026-03-03T06:47:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8630",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-03T11:02:55.999Z_oulu-prod_wrapper",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",
