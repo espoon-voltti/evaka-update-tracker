@@ -21,6 +21,8 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - JSON files (`data/history.json`) — read-only from frontend, no changes to data forma (010-improve-history-view)
 - TypeScript 5.x on Node.js 20+ (data pipeline); vanilla JavaScript ES modules (frontend) + axios (HTTP), existing GitHub API client (`src/api/github.ts`) — no new dependencies (012-feature-flag-tracker)
 - JSON file (`data/feature-flags.json`) — new file alongside existing `data/current.json` (012-feature-flag-tracker)
+- TypeScript 5.x on Node.js 20+ + dotenv (env loading) — no new dependencies (013-dev-data-isolation)
+- JSON files (`current.json`, `history.json`, `previous.json`, `feature-flags.json`) (013-dev-data-isolation)
 - Vanilla JavaScript ES modules (frontend) + None (pure DOM, no framework) (014-show-empty-sections)
 - JSON data files (read-only from frontend) -- no changes needed (014-show-empty-sections)
 - Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (build scripts, E2E tests) + None (pure DOM, no framework) -- no new dependencies added (015-auto-refresh)
@@ -47,7 +49,7 @@ TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (fro
 ## Recent Changes
 - 015-auto-refresh: Added Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (build scripts, E2E tests) + None (pure DOM, no framework) -- no new dependencies added
 - 014-show-empty-sections: Added Vanilla JavaScript ES modules (frontend) + None (pure DOM, no framework)
-- 012-feature-flag-tracker: Added TypeScript 5.x on Node.js 20+ (data pipeline); vanilla JavaScript ES modules (frontend) + axios (HTTP), existing GitHub API client (`src/api/github.ts`) — no new dependencies
+- 013-dev-data-isolation: Added TypeScript 5.x on Node.js 20+ + dotenv (env loading) — no new dependencies
 
 
 <!-- MANUAL ADDITIONS START -->
