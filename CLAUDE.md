@@ -23,6 +23,8 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - JSON file (`data/feature-flags.json`) — new file alongside existing `data/current.json` (012-feature-flag-tracker)
 - Vanilla JavaScript ES modules (frontend) + None (pure DOM, no framework) (014-show-empty-sections)
 - JSON data files (read-only from frontend) -- no changes needed (014-show-empty-sections)
+- Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (build scripts, E2E tests) + None (pure DOM, no framework) -- no new dependencies added (015-auto-refresh)
+- JSON data files (`data/current.json`, `data/history.json`, `data/feature-flags.json`) -- read-only from frontend, no changes to data forma (015-auto-refresh)
 
 - TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend) + axios (HTTP client), @octokit/rest or direct fetch (GitHub API) — minimal dependency se (001-deployment-tracker)
 
@@ -43,9 +45,9 @@ npm test && npm run lint
 TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend): Follow standard conventions
 
 ## Recent Changes
+- 015-auto-refresh: Added Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (build scripts, E2E tests) + None (pure DOM, no framework) -- no new dependencies added
 - 014-show-empty-sections: Added Vanilla JavaScript ES modules (frontend) + None (pure DOM, no framework)
 - 012-feature-flag-tracker: Added TypeScript 5.x on Node.js 20+ (data pipeline); vanilla JavaScript ES modules (frontend) + axios (HTTP), existing GitHub API client (`src/api/github.ts`) — no new dependencies
-- 010-improve-history-view: Added Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (E2E tests) + Playwright (E2E tests) — no new dependencies needed
 
 
 <!-- MANUAL ADDITIONS START -->

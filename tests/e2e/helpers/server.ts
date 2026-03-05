@@ -14,6 +14,7 @@ const MIME_TYPES: Record<string, string> = {
   '.json': 'application/json; charset=utf-8',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
+  '.txt': 'text/plain; charset=utf-8',
 };
 
 const SITE_DIR = path.resolve('site');
@@ -31,6 +32,15 @@ function serveFile(res: http.ServerResponse, filePath: string) {
     res.writeHead(404);
     res.end('Not found');
   }
+}
+
+/**
+ * Write or update a test data file so E2E tests can simulate data changes mid-test.
+ */
+export function updateTestData(filename: string, data: object | string) {
+  const filePath = path.join(TEST_DATA_DIR, filename);
+  const content = typeof data === 'string' ? data : JSON.stringify(data, null, 2);
+  fs.writeFileSync(filePath, content, 'utf-8');
 }
 
 export function startServer(): Promise<{ url: string; close: () => void }> {

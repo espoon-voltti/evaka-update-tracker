@@ -2,29 +2,41 @@
  * App initialization: fetch data, wire router, render views.
  */
 
-import { addRoute, setNotFound, startRouter, navigate } from './router.js';
+import { addRoute, setNotFound, startRouter, navigate, handleRoute } from './router.js';
 import { renderOverview, bindOverviewEvents } from './components/overview.js';
+import { initCache, startAutoRefresh } from './auto-refresh.js';
 
 let currentData = null;
 const appEl = () => document.getElementById('app');
 const generatedAtEl = () => document.getElementById('generated-at');
 
-async function loadCurrentData() {
+function cacheBustUrl(url) {
+  return `${url}?t=${Date.now()}`;
+}
+
+function updateGeneratedAt() {
+  if (generatedAtEl() && currentData?.generatedAt) {
+    const d = new Date(currentData.generatedAt);
+    generatedAtEl().textContent = `Päivitetty: ${d.toLocaleString('fi')}`;
+  }
+}
+
+async function loadCurrentData(bustCache = false) {
   try {
-    const response = await fetch('data/current.json');
+    const url = bustCache ? cacheBustUrl('data/current.json') : 'data/current.json';
+    const response = await fetch(url);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     currentData = await response.json();
-    if (generatedAtEl() && currentData.generatedAt) {
-      const d = new Date(currentData.generatedAt);
-      generatedAtEl().textContent = `Päivitetty: ${d.toLocaleString('fi')}`;
-    }
+    updateGeneratedAt();
   } catch (err) {
     console.error('Failed to load deployment data:', err);
-    appEl().innerHTML = `
-      <div class="empty-state">
-        Muutostietojen lataaminen epäonnistui. Tietoja ei ehkä ole vielä luotu.
-      </div>
-    `;
+    if (!currentData) {
+      appEl().innerHTML = `
+        <div class="empty-state">
+          Muutostietojen lataaminen epäonnistui. Tietoja ei ehkä ole vielä luotu.
+        </div>
+      `;
+    }
   }
 }
 
@@ -154,6 +166,15 @@ function updateTabs(activeCityId) {
   });
 }
 
+/**
+ * Re-render the current view with fresh data.
+ * Called by auto-refresh when data changes are detected.
+ */
+export async function refreshCurrentView() {
+  await loadCurrentData(true);
+  handleRoute();
+}
+
 // Register routes
 addRoute('/', handleOverview);
 addRoute('/features', handleFeatures);
@@ -165,6 +186,8 @@ setNotFound(() => navigate('/'));
 async function init() {
   await loadCurrentData();
   startRouter();
+  await initCache();
+  startAutoRefresh(refreshCurrentView);
 }
 
 init();

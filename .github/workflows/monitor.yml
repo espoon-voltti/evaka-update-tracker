@@ -71,6 +71,9 @@ jobs:
           mkdir -p dist
           cp -rL site/* dist/
 
+      - name: Generate site version file
+        run: echo "$(date -u +%Y-%m-%dT%H:%M:%SZ)-$(git rev-parse --short HEAD)" > dist/data/site-version.txt
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
