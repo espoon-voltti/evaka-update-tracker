@@ -102,6 +102,41 @@ main {
   margin-bottom: 0.75rem;
 }
 
+/* Change count badges (overview cards) */
+.change-counts {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.count-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 1rem;
+  font-size: 0.8125rem;
+}
+
+.count-badge.staging {
+  background: #eff6ff;
+  color: var(--color-staging);
+}
+
+.count-badge.pending {
+  background: #fffbeb;
+  color: #b45309;
+}
+
+.count-value {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.count-label {
+  font-weight: 500;
+}
+
 /* Environment section */
 .env-section {
   margin-bottom: 1rem;
@@ -764,6 +799,117 @@ details[open] > .category-header {
   gap: 0.5rem;
   padding: 0.125rem 0;
   font-size: 0.8125rem;
+}
+
+/* Fullscreen toggle button */
+.fullscreen-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  background: var(--color-card);
+  margin-bottom: 1rem;
+}
+
+.fullscreen-toggle:hover {
+  color: var(--color-text);
+}
+
+/* Fullscreen mode */
+body.fullscreen header {
+  display: none;
+}
+
+body.fullscreen footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 1.5vmin;
+  padding: 0.5vmin 1vmin;
+  border-top: 1px solid var(--color-border);
+}
+
+body.fullscreen main {
+  max-width: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 1vmin;
+  margin: 0;
+  overflow: hidden;
+}
+
+body.fullscreen .city-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: calc(100vh - 2vmin - 3rem - 2.5vmin);
+  gap: 1vmin;
+}
+
+body.fullscreen .city-card {
+  padding: 2vmin;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+body.fullscreen .city-card h2 {
+  font-size: 4vmin;
+  margin-bottom: 1.5vmin;
+}
+
+body.fullscreen .change-counts {
+  gap: 1.5vmin;
+  margin-bottom: 1.5vmin;
+}
+
+body.fullscreen .count-value {
+  font-size: 5vmin;
+}
+
+body.fullscreen .count-label {
+  font-size: 2.5vmin;
+}
+
+body.fullscreen .count-badge {
+  padding: 0.5vmin 1.5vmin;
+  border-radius: 2vmin;
+  font-size: 2.5vmin;
+}
+
+body.fullscreen .env-label {
+  font-size: 2vmin;
+}
+
+body.fullscreen .status-badge {
+  font-size: 2vmin;
+}
+
+body.fullscreen .status-dot {
+  width: 1.5vmin;
+  height: 1.5vmin;
+}
+
+body.fullscreen .fullscreen-toggle {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 100;
+  opacity: 0.4;
+  transition: opacity 0.15s;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+body.fullscreen .fullscreen-toggle:hover {
+  opacity: 1;
 }
 
 /* Responsive */

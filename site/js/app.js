@@ -44,8 +44,15 @@ function renderView(html) {
   appEl().innerHTML = html;
 }
 
+function exitFullscreen() {
+  document.body.classList.remove('fullscreen');
+  if (document.fullscreenElement) {
+    document.exitFullscreen().catch(() => {});
+  }
+}
+
 // Route: Overview (#/)
-function handleOverview() {
+function handleOverview(_params, queryParams) {
   if (!currentData) {
     renderView('<div class="loading">Ladataan...</div>');
     return;
@@ -56,11 +63,23 @@ function handleOverview() {
       renderView(renderOverview(currentData, historyData.events || []));
       bindOverviewEvents();
       updateTabs(null);
+      if (queryParams?.get('fullscreen') === 'true') {
+        document.body.classList.add('fullscreen');
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        }
+      } else {
+        document.body.classList.remove('fullscreen');
+        if (document.fullscreenElement) {
+          document.exitFullscreen().catch(() => {});
+        }
+      }
     });
 }
 
 // Route: City detail (#/city/:id)
 function handleCityDetail({ id }, queryParams) {
+  exitFullscreen();
   if (!currentData) {
     renderView('<div class="loading">Ladataan...</div>');
     return;
@@ -86,6 +105,7 @@ function handleCityDetail({ id }, queryParams) {
 
 // Route: City history (#/city/:id/history)
 function handleCityHistory({ id }, queryParams) {
+  exitFullscreen();
   if (!currentData) {
     renderView('<div class="loading">Ladataan...</div>');
     return;
@@ -114,6 +134,7 @@ function handleCityHistory({ id }, queryParams) {
 
 // Route: Features (#/features)
 function handleFeatures(_params, queryParams) {
+  exitFullscreen();
   document.title = 'Ominaisuudet - eVaka muutostenseuranta';
   renderView('<div class="loading">Ladataan...</div>');
   fetch('data/feature-flags.json')

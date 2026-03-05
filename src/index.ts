@@ -25,9 +25,28 @@ import {
 loadEnv();
 
 const DRY_RUN = process.env.DRY_RUN === 'true';
-const DATA_DIR = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.resolve('data');
+const DATA_DIR = process.env.DATA_DIR
+  ? path.resolve(process.env.DATA_DIR)
+  : process.env.CI
+    ? path.resolve('data')
+    : path.resolve('.data');
 const SITE_DIR = process.env.SITE_DIR ? path.resolve(process.env.SITE_DIR) : path.resolve('site');
 const DIST_DIR = process.env.DIST_DIR ? path.resolve(process.env.DIST_DIR) : path.resolve('dist');
+
+// Update site/data symlink to point to the resolved data directory
+const siteDataLink = path.join(SITE_DIR, 'data');
+const symlinkTarget = path.relative(SITE_DIR, DATA_DIR);
+try {
+  const currentTarget = fs.readlinkSync(siteDataLink);
+  if (currentTarget !== symlinkTarget) {
+    fs.rmSync(siteDataLink, { force: true });
+    fs.symlinkSync(symlinkTarget, siteDataLink);
+  }
+} catch {
+  // Symlink doesn't exist or isn't a symlink — recreate it
+  fs.rmSync(siteDataLink, { recursive: true, force: true });
+  fs.symlinkSync(symlinkTarget, siteDataLink);
+}
 
 async function collectPRsForRepo(
   repo: Repository,
