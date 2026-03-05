@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T06:30:34.193Z",
+  "generatedAt": "2026-03-05T06:52:55.469Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-05T06:29:39.268Z",
+            "checkedAt": "2026-03-05T06:52:16.201Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-05T06:29:40.206Z",
+            "checkedAt": "2026-03-05T06:52:17.236Z",
             "status": "auth-error",
             "wrapperCommit": null,
             "coreCommit": null
@@ -45,6 +45,19 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8596,
+              "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T06:49:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8596",
+              "labels": [
+                "bug"
+              ]
+            },
             {
               "number": 8632,
               "title": "Ei avoimia tuloselvityksiä -hakuehdon kuuluisi huomioida myös käsittelyssä olevat",
@@ -96,19 +109,6 @@
               "labels": [
                 "tech"
               ]
-            },
-            {
-              "number": 8602,
-              "title": "Johtajalle näkyviin muut toimet -historia",
-              "author": "tomuli",
-              "mergedAt": "2026-03-02T10:54:11Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8602",
-              "labels": [
-                "enhancement"
-              ]
             }
           ]
         }
@@ -123,7 +123,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-05T06:29:51.664Z",
+            "checkedAt": "2026-03-05T06:52:27.080Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -148,7 +148,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-05T06:30:04.177Z",
+            "checkedAt": "2026-03-05T06:52:36.184Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -180,7 +180,21 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8596,
+              "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T06:49:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8596",
+              "labels": [
+                "bug"
+              ]
+            }
+          ]
         }
       }
     },
@@ -193,7 +207,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-05T06:30:17.564Z",
+            "checkedAt": "2026-03-05T06:52:43.977Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -218,7 +232,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-05T06:30:18.987Z",
+            "checkedAt": "2026-03-05T06:52:44.896Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -250,7 +264,21 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8596,
+              "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T06:49:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8596",
+              "labels": [
+                "bug"
+              ]
+            }
+          ]
         }
       }
     },
@@ -263,7 +291,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-05T06:30:21.154Z",
+            "checkedAt": "2026-03-05T06:52:46.394Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "0f30d2917bdf553d4f30aaeb1b0ce6168e1c385a",
@@ -288,7 +316,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-05T06:30:22.963Z",
+            "checkedAt": "2026-03-05T06:52:47.293Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ec9cf46065753fc462f2fa2cb50b5617b1bba4aa",
@@ -386,7 +414,21 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8596,
+              "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T06:49:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8596",
+              "labels": [
+                "bug"
+              ]
+            }
+          ]
         }
       }
     }
