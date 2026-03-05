@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-05T12:03:15.380Z",
+  "generatedAt": "2026-03-05T12:26:32.174Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-05T12:02:41.350Z",
+            "checkedAt": "2026-03-05T12:25:44.432Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-05T12:02:42.124Z",
+            "checkedAt": "2026-03-05T12:25:45.337Z",
             "status": "auth-error",
             "wrapperCommit": null,
             "coreCommit": null
@@ -45,6 +45,32 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8634,
+              "title": "Henkilökunnan ruotsi-käännökset",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T12:22:54Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8634",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
+              "number": 8464,
+              "title": "Korjataan suurennetun tekstikoon ongelmat",
+              "author": "tomuli",
+              "mergedAt": "2026-03-05T12:08:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8464",
+              "labels": [
+                "enhancement"
+              ]
+            },
             {
               "number": 8596,
               "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
@@ -83,32 +109,6 @@
               "labels": [
                 "tech"
               ]
-            },
-            {
-              "number": 8629,
-              "title": "Tekninen: minimatch-kirjaston haavoittuvuuspäivitys",
-              "author": "terolaakso-reaktor",
-              "mergedAt": "2026-03-02T13:41:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8629",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 8594,
-              "title": "Aikaleimasarakkeiden yhdenmukaistaminen - osa 1",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-02T12:29:22Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8594",
-              "labels": [
-                "tech"
-              ]
             }
           ]
         }
@@ -123,7 +123,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-05T12:02:52.269Z",
+            "checkedAt": "2026-03-05T12:25:57.379Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -148,7 +148,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-05T12:03:00.603Z",
+            "checkedAt": "2026-03-05T12:26:09.520Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -182,6 +182,32 @@
           "inStaging": [],
           "pendingDeployment": [
             {
+              "number": 8634,
+              "title": "Henkilökunnan ruotsi-käännökset",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T12:22:54Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8634",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
+              "number": 8464,
+              "title": "Korjataan suurennetun tekstikoon ongelmat",
+              "author": "tomuli",
+              "mergedAt": "2026-03-05T12:08:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8464",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
               "number": 8596,
               "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
               "author": "Joosakur",
@@ -207,7 +233,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-05T12:03:09.538Z",
+            "checkedAt": "2026-03-05T12:26:22.714Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -232,7 +258,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-05T12:03:10.609Z",
+            "checkedAt": "2026-03-05T12:26:24.257Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -266,6 +292,32 @@
           "inStaging": [],
           "pendingDeployment": [
             {
+              "number": 8634,
+              "title": "Henkilökunnan ruotsi-käännökset",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T12:22:54Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8634",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
+              "number": 8464,
+              "title": "Korjataan suurennetun tekstikoon ongelmat",
+              "author": "tomuli",
+              "mergedAt": "2026-03-05T12:08:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8464",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
               "number": 8596,
               "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
               "author": "Joosakur",
@@ -291,7 +343,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-05T12:03:12.451Z",
+            "checkedAt": "2026-03-05T12:26:27.576Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ec9cf46065753fc462f2fa2cb50b5617b1bba4aa",
@@ -316,7 +368,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-05T12:03:13.596Z",
+            "checkedAt": "2026-03-05T12:26:28.869Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ec9cf46065753fc462f2fa2cb50b5617b1bba4aa",
@@ -349,6 +401,32 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8634,
+              "title": "Henkilökunnan ruotsi-käännökset",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-05T12:22:54Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8634",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
+              "number": 8464,
+              "title": "Korjataan suurennetun tekstikoon ongelmat",
+              "author": "tomuli",
+              "mergedAt": "2026-03-05T12:08:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8464",
+              "labels": [
+                "enhancement"
+              ]
+            },
             {
               "number": 8596,
               "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
