@@ -3,16 +3,19 @@
  */
 
 import { renderStatusBadge } from './status-badge.js';
-import { renderPRList } from './pr-list.js';
-import { navigate } from '../router.js';
+import { navigate, getQueryParam, setQueryParam } from '../router.js';
 
 export function renderOverview(data, historyEvents = []) {
   if (!data || !data.cityGroups) {
     return '<div class="empty-state">Muutostietoja ei saatavilla</div>';
   }
 
+  const isFullscreen = getQueryParam('fullscreen') === 'true';
+  const toggleLabel = isFullscreen ? 'Poistu koko näytöstä' : 'Koko näyttö';
+  const toggleBtn = `<button class="fullscreen-toggle" id="fullscreen-toggle">${toggleLabel}</button>`;
+
   const cards = data.cityGroups.map((city) => renderCityCard(city, historyEvents));
-  return `<div class="city-grid">${cards.join('')}</div>`;
+  return `${toggleBtn}<div class="city-grid">${cards.join('')}</div>`;
 }
 
 function findEnvInfo(city, env, historyEvents) {
@@ -83,6 +86,16 @@ function findEnvInfo(city, env, historyEvents) {
   };
 }
 
+function countNonBot(arr) {
+  return (arr || []).filter((pr) => !pr.isBot).length;
+}
+
+function computeChangeCounts(prTracks) {
+  const stagingCount = countNonBot(prTracks?.core?.inStaging) + countNonBot(prTracks?.wrapper?.inStaging);
+  const pendingCount = countNonBot(prTracks?.core?.pendingDeployment) + countNonBot(prTracks?.wrapper?.pendingDeployment);
+  return { stagingCount, pendingCount };
+}
+
 function renderCityCard(city, historyEvents) {
   const envSections = city.environments.map((env) => {
     const label = env.type === 'production' ? 'Tuotanto' : 'Testaus';
@@ -103,30 +116,19 @@ function renderCityCard(city, historyEvents) {
     `;
   });
 
-  // Show core PRs (last 5 deployed to production)
-  const corePRs = city.prTracks?.core?.deployed || [];
-  const coreSection = corePRs.length > 0
-    ? `<div class="pr-track">
-        <div class="pr-track-header">Ydin — Tuotannossa</div>
-        ${renderPRList(corePRs)}
-      </div>`
-    : '';
-
-  // Show wrapper PRs if applicable
-  const wrapperPRs = city.prTracks?.wrapper?.deployed || [];
-  const wrapperSection = wrapperPRs.length > 0
-    ? `<div class="pr-track">
-        <div class="pr-track-header">Kuntaimplementaatio — Tuotannossa</div>
-        ${renderPRList(wrapperPRs)}
-      </div>`
-    : '';
+  const { stagingCount, pendingCount } = computeChangeCounts(city.prTracks);
+  const countsHtml = `
+    <div class="change-counts">
+      <span class="count-badge staging"><span class="count-value">${stagingCount}</span> <span class="count-label">Testauksessa</span></span>
+      <span class="count-badge pending"><span class="count-value">${pendingCount}</span> <span class="count-label">Julkaisematta</span></span>
+    </div>
+  `;
 
   return `
     <div class="city-card" data-city-id="${city.id}">
       <h2>${escapeHtml(city.name)}</h2>
+      ${countsHtml}
       ${envSections.join('')}
-      ${wrapperSection}
-      ${coreSection}
     </div>
   `;
 }
@@ -143,4 +145,20 @@ export function bindOverviewEvents() {
       if (cityId) navigate(`/city/${cityId}`);
     });
   });
+
+  const toggle = document.getElementById('fullscreen-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const isFullscreen = getQueryParam('fullscreen') === 'true';
+      setQueryParam('fullscreen', isFullscreen ? null : 'true');
+    });
+  }
+
+  document.addEventListener('keydown', handleFullscreenEsc);
+}
+
+function handleFullscreenEsc(e) {
+  if (e.key === 'Escape' && getQueryParam('fullscreen') === 'true') {
+    setQueryParam('fullscreen', null);
+  }
 }

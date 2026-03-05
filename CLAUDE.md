@@ -27,6 +27,8 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - JSON data files (read-only from frontend) -- no changes needed (014-show-empty-sections)
 - Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (build scripts, E2E tests) + None (pure DOM, no framework) -- no new dependencies added (015-auto-refresh)
 - JSON data files (`data/current.json`, `data/history.json`, `data/feature-flags.json`) -- read-only from frontend, no changes to data forma (015-auto-refresh)
+- Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (E2E tests) + None new — existing Playwright for E2E tests (014-overview-fullscreen)
+- JSON files (`data/current.json`) — read-only, no changes (014-overview-fullscreen)
 
 - TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend) + axios (HTTP client), @octokit/rest or direct fetch (GitHub API) — minimal dependency se (001-deployment-tracker)
 
