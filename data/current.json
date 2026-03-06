@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T09:28:44.707Z",
+  "generatedAt": "2026-03-06T09:50:02.522Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-06T09:28:13.979Z",
+            "checkedAt": "2026-03-06T09:49:14.486Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-06T09:28:14.615Z",
+            "checkedAt": "2026-03-06T09:49:15.381Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "9a4e61b6ce6660969c83119edef971a501573fd3",
-              "shortSha": "9a4e61b",
-              "message": "Merge pull request #8634 from espoon-voltti/swedish-translations-for-employee-frontends",
-              "date": "2026-03-05T12:22:53Z",
-              "author": "Joosakur"
+              "sha": "86732b7b79b3df0618b6e13409d2bdc22a3ca4a0",
+              "shortSha": "86732b7",
+              "message": "Remove proxy s3downloader and fix docker-compose volume user",
+              "date": "2026-03-05T12:36:22Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -116,7 +116,21 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8633,
+              "title": "Endpoint-kohtainen huoltotila",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-06T09:34:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
+              "labels": [
+                "tech"
+              ]
+            }
+          ]
         }
       }
     },
@@ -129,7 +143,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-06T09:28:19.693Z",
+            "checkedAt": "2026-03-06T09:49:22.681Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -154,7 +168,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-06T09:28:27.128Z",
+            "checkedAt": "2026-03-06T09:49:34.634Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "aa16bae59839c52678c464e3ed5f718dabc1d10a",
@@ -226,7 +240,21 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8633,
+              "title": "Endpoint-kohtainen huoltotila",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-06T09:34:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
+              "labels": [
+                "tech"
+              ]
+            }
+          ]
         }
       }
     },
@@ -239,7 +267,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-06T09:28:36.396Z",
+            "checkedAt": "2026-03-06T09:49:49.708Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -264,7 +292,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-06T09:28:37.264Z",
+            "checkedAt": "2026-03-06T09:49:51.258Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "91284abc3ae0edf04ba1537dfe1bd09a0c03322b",
@@ -336,7 +364,21 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8633,
+              "title": "Endpoint-kohtainen huoltotila",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-06T09:34:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
+              "labels": [
+                "tech"
+              ]
+            }
+          ]
         }
       }
     },
@@ -349,7 +391,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-06T09:28:40.384Z",
+            "checkedAt": "2026-03-06T09:49:56.187Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ec9cf46065753fc462f2fa2cb50b5617b1bba4aa",
@@ -374,7 +416,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-06T09:28:41.450Z",
+            "checkedAt": "2026-03-06T09:49:57.683Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4e953857499d77b269c602fbed1f00ec0cf36488",
@@ -446,7 +488,21 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8633,
+              "title": "Endpoint-kohtainen huoltotila",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-06T09:34:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
+              "labels": [
+                "tech"
+              ]
+            }
+          ]
         }
       }
     }
