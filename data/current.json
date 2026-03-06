@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T10:20:30.534Z",
+  "generatedAt": "2026-03-06T10:37:48.296Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-06T10:19:38.650Z",
+            "checkedAt": "2026-03-06T10:37:08.336Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-06T10:19:39.544Z",
+            "checkedAt": "2026-03-06T10:37:09.161Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -156,7 +156,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-06T10:19:47.145Z",
+            "checkedAt": "2026-03-06T10:37:15.253Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -181,7 +181,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-06T10:19:58.680Z",
+            "checkedAt": "2026-03-06T10:37:24.507Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "aa16bae59839c52678c464e3ed5f718dabc1d10a",
@@ -293,20 +293,20 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-06T10:20:14.517Z",
+            "checkedAt": "2026-03-06T10:37:36.360Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
-              "shortSha": "3fa5808",
-              "message": "Merge pull request #291 from Oulunkaupunki/dependabot/submodules/evaka-bf2c392",
-              "date": "2026-03-04T02:14:45Z",
+              "sha": "91284abc3ae0edf04ba1537dfe1bd09a0c03322b",
+              "shortSha": "91284ab",
+              "message": "Merge pull request #292 from Oulunkaupunki/dependabot/submodules/evaka-9a4e61b",
+              "date": "2026-03-06T02:14:20Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-              "shortSha": "bf2c392",
-              "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-              "date": "2026-03-03T17:07:58Z",
+              "sha": "9a4e61b6ce6660969c83119edef971a501573fd3",
+              "shortSha": "9a4e61b",
+              "message": "Merge pull request #8634 from espoon-voltti/swedish-translations-for-employee-frontends",
+              "date": "2026-03-05T12:22:53Z",
               "author": "Joosakur"
             }
           },
@@ -318,7 +318,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-06T10:20:16.490Z",
+            "checkedAt": "2026-03-06T10:37:39.805Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "91284abc3ae0edf04ba1537dfe1bd09a0c03322b",
@@ -342,143 +342,6 @@
       "prTracks": {
         "wrapper": {
           "repository": "Oulunkaupunki/evakaoulu",
-          "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": []
-        },
-        "core": {
-          "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
-            {
-              "number": 8634,
-              "title": "Henkilökunnan ruotsi-käännökset",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-05T12:22:54Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8634",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8464,
-              "title": "Korjataan suurennetun tekstikoon ongelmat",
-              "author": "tomuli",
-              "mergedAt": "2026-03-05T12:08:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8464",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8596,
-              "title": "Jos hakee EO-hakemuksella liittyvän lisäämistä sekä siirtoa toiseen yksikköön pitäisi lähteä myös uusi EO-päätös",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-05T06:49:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8596",
-              "labels": [
-                "bug"
-              ]
-            }
-          ],
-          "pendingDeployment": [
-            {
-              "number": 8628,
-              "title": "Testidatan refaktorointi - ei käytetä lateinit",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-06T10:02:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8628",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8633,
-              "title": "Endpoint-kohtainen huoltotila",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-06T09:34:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
-              "labels": [
-                "tech"
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "turku",
-      "name": "Turku",
-      "environments": [
-        {
-          "id": "turku-prod",
-          "type": "production",
-          "version": {
-            "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-06T10:20:21.788Z",
-            "status": "ok",
-            "wrapperCommit": {
-              "sha": "4e953857499d77b269c602fbed1f00ec0cf36488",
-              "shortSha": "4e95385",
-              "message": "enable employee language selection in staging",
-              "date": "2026-03-06T07:02:23Z",
-              "author": "tomuli"
-            },
-            "coreCommit": {
-              "sha": "9a4e61b6ce6660969c83119edef971a501573fd3",
-              "shortSha": "9a4e61b",
-              "message": "Merge pull request #8634 from espoon-voltti/swedish-translations-for-employee-frontends",
-              "date": "2026-03-05T12:22:53Z",
-              "author": "Joosakur"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        },
-        {
-          "id": "turku-staging",
-          "type": "staging",
-          "version": {
-            "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-06T10:20:25.498Z",
-            "status": "ok",
-            "wrapperCommit": {
-              "sha": "4e953857499d77b269c602fbed1f00ec0cf36488",
-              "shortSha": "4e95385",
-              "message": "enable employee language selection in staging",
-              "date": "2026-03-06T07:02:23Z",
-              "author": "tomuli"
-            },
-            "coreCommit": {
-              "sha": "9a4e61b6ce6660969c83119edef971a501573fd3",
-              "shortSha": "9a4e61b",
-              "message": "Merge pull request #8634 from espoon-voltti/swedish-translations-for-employee-frontends",
-              "date": "2026-03-05T12:22:53Z",
-              "author": "Joosakur"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        }
-      ],
-      "prTracks": {
-        "wrapper": {
-          "repository": "City-of-Turku/evakaturku",
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
@@ -526,6 +389,103 @@
               ]
             }
           ],
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 8628,
+              "title": "Testidatan refaktorointi - ei käytetä lateinit",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-06T10:02:01Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8628",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8633,
+              "title": "Endpoint-kohtainen huoltotila",
+              "author": "Joosakur",
+              "mergedAt": "2026-03-06T09:34:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
+              "labels": [
+                "tech"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "turku",
+      "name": "Turku",
+      "environments": [
+        {
+          "id": "turku-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "evaka.turku.fi",
+            "checkedAt": "2026-03-06T10:37:44.467Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "4e953857499d77b269c602fbed1f00ec0cf36488",
+              "shortSha": "4e95385",
+              "message": "enable employee language selection in staging",
+              "date": "2026-03-06T07:02:23Z",
+              "author": "tomuli"
+            },
+            "coreCommit": {
+              "sha": "9a4e61b6ce6660969c83119edef971a501573fd3",
+              "shortSha": "9a4e61b",
+              "message": "Merge pull request #8634 from espoon-voltti/swedish-translations-for-employee-frontends",
+              "date": "2026-03-05T12:22:53Z",
+              "author": "Joosakur"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "turku-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging-evaka.turku.fi",
+            "checkedAt": "2026-03-06T10:37:45.615Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "4e953857499d77b269c602fbed1f00ec0cf36488",
+              "shortSha": "4e95385",
+              "message": "enable employee language selection in staging",
+              "date": "2026-03-06T07:02:23Z",
+              "author": "tomuli"
+            },
+            "coreCommit": {
+              "sha": "9a4e61b6ce6660969c83119edef971a501573fd3",
+              "shortSha": "9a4e61b",
+              "message": "Merge pull request #8634 from espoon-voltti/swedish-translations-for-employee-frontends",
+              "date": "2026-03-05T12:22:53Z",
+              "author": "Joosakur"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": {
+          "repository": "City-of-Turku/evakaturku",
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": []
+        },
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
