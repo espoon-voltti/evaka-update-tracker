@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T07:28:45.645Z",
+  "generatedAt": "2026-03-06T07:47:53.588Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-06T07:28:01.264Z",
+            "checkedAt": "2026-03-06T07:47:00.275Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-06T07:28:02.166Z",
+            "checkedAt": "2026-03-06T07:47:01.333Z",
             "status": "auth-error",
             "wrapperCommit": null,
             "coreCommit": null
@@ -123,7 +123,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-06T07:28:13.635Z",
+            "checkedAt": "2026-03-06T07:47:16.111Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -148,7 +148,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-06T07:28:22.531Z",
+            "checkedAt": "2026-03-06T07:47:28.459Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "aa16bae59839c52678c464e3ed5f718dabc1d10a",
@@ -165,180 +165,8 @@
               "author": "Joosakur"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-03-06T07:28:22.531Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "aa16bae59839c52678c464e3ed5f718dabc1d10a",
-                "shortSha": "aa16bae",
-                "message": "Merge pull request #2037 from Tampere/dependabot/submodules/evaka-9a4e61b",
-                "date": "2026-03-06T07:14:52Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "9a4e61b6ce6660969c83119edef971a501573fd3",
-                "shortSha": "9a4e61b",
-                "message": "Merge pull request #8634 from espoon-voltti/swedish-translations-for-employee-frontends",
-                "date": "2026-03-05T12:22:53Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-03-06T07:28:23.507Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-03-06T07:28:24.421Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-03-06T07:28:25.331Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-03-06T07:28:26.267Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-03-06T07:28:27.247Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-03-06T07:28:28.087Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-03-06T07:28:28.990Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-03-06T07:28:30.102Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
-                "shortSha": "2a33a64",
-                "message": "Merge pull request #2035 from Tampere/dependabot/submodules/evaka-bf2c392",
-                "date": "2026-03-04T07:22:19Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "bf2c392339a0fe36fec51b4fdc2b1cf022007938",
-                "shortSha": "bf2c392",
-                "message": "Merge pull request #8632 from espoon-voltti/fix-open-income-statement-filter",
-                "date": "2026-03-03T17:07:58Z",
-                "author": "Joosakur"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -405,7 +233,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-06T07:28:34.730Z",
+            "checkedAt": "2026-03-06T07:47:42.263Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3fa58088d5d5511c506b643e90efa494e2b92cff",
@@ -430,7 +258,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-06T07:28:35.782Z",
+            "checkedAt": "2026-03-06T07:47:43.640Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "91284abc3ae0edf04ba1537dfe1bd09a0c03322b",
@@ -515,7 +343,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-06T07:28:39.233Z",
+            "checkedAt": "2026-03-06T07:47:47.708Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ec9cf46065753fc462f2fa2cb50b5617b1bba4aa",
@@ -540,7 +368,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-06T07:28:40.376Z",
+            "checkedAt": "2026-03-06T07:47:49.033Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4e953857499d77b269c602fbed1f00ec0cf36488",
