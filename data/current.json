@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-09T10:53:25.008Z",
+  "generatedAt": "2026-03-09T11:11:25.661Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-09T10:52:30.560Z",
+            "checkedAt": "2026-03-09T11:10:21.584Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-09T10:52:31.292Z",
+            "checkedAt": "2026-03-09T11:10:22.577Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-09T10:52:34.673Z",
+            "checkedAt": "2026-03-09T11:10:27.258Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-09T10:52:42.270Z",
+            "checkedAt": "2026-03-09T11:10:38.555Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "755d4b5a112134aef452537361a1309fb1ddbf98",
@@ -199,7 +199,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-09T10:52:59.538Z",
+            "checkedAt": "2026-03-09T11:11:02.872Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "91284abc3ae0edf04ba1537dfe1bd09a0c03322b",
@@ -224,7 +224,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-09T10:53:00.548Z",
+            "checkedAt": "2026-03-09T11:11:04.613Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b968504fc4cd68d1f61c777b82113e048a83b8ce",
@@ -296,7 +296,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-09T10:53:10.015Z",
+            "checkedAt": "2026-03-09T11:11:17.345Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "df54f3f0d610f0973e2492d5ce8d3b550299d408",
@@ -321,7 +321,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-09T10:53:15.769Z",
+            "checkedAt": "2026-03-09T11:11:18.887Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "df54f3f0d610f0973e2492d5ce8d3b550299d408",
@@ -351,34 +351,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8628,
-              "title": "Testidatan refaktorointi - ei käytetä lateinit",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-06T10:02:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8628",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8633,
-              "title": "Endpoint-kohtainen huoltotila",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-06T09:34:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
