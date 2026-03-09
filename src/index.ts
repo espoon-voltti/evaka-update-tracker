@@ -221,12 +221,18 @@ export async function run() {
     cityGroups: cityGroupsData,
   };
 
-  // Send Slack notifications for deployment events
+  // Send Slack notifications for deployment events (grouped by environment)
   if (allEvents.length > 0) {
     console.log(`\n${allEvents.length} deployment event(s) detected.`);
+    const eventsByEnvironment = new Map<string, DeploymentEvent[]>();
     for (const event of allEvents) {
-      const webhookUrl = resolveWebhookUrl(event.cityGroupId);
-      await sendSlackNotification(webhookUrl, event);
+      const existing = eventsByEnvironment.get(event.environmentId) ?? [];
+      existing.push(event);
+      eventsByEnvironment.set(event.environmentId, existing);
+    }
+    for (const [, envEvents] of eventsByEnvironment) {
+      const webhookUrl = resolveWebhookUrl(envEvents[0].cityGroupId);
+      await sendSlackNotification(webhookUrl, envEvents);
     }
   } else {
     console.log('\nNo deployment changes detected.');

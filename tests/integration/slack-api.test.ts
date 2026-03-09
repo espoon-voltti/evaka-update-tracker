@@ -35,11 +35,11 @@ afterEach(() => {
   }
 });
 
-const mockEvent: DeploymentEvent = {
-  id: '2026-03-02T12:00:00Z_espoo-prod_core',
+const mockCoreEvent: DeploymentEvent = {
+  id: '2026-03-06T07:28:00Z_espoo-prod_core',
   environmentId: 'espoo-prod',
   cityGroupId: 'espoo',
-  detectedAt: '2026-03-02T12:00:00Z',
+  detectedAt: '2026-03-06T07:28:00Z',
   previousCommit: {
     sha: 'oldsha1234567890',
     shortSha: 'oldsha1',
@@ -51,7 +51,7 @@ const mockEvent: DeploymentEvent = {
     sha: 'newsha1234567890',
     shortSha: 'newsha1',
     message: 'New commit',
-    date: '2026-03-02T11:00:00Z',
+    date: '2026-03-06T06:00:00Z',
     author: 'dev2',
   },
   includedPRs: [
@@ -70,8 +70,43 @@ const mockEvent: DeploymentEvent = {
   repoType: 'core',
 };
 
+const mockWrapperEvent: DeploymentEvent = {
+  id: '2026-03-06T07:28:00Z_espoo-prod_wrapper',
+  environmentId: 'espoo-prod',
+  cityGroupId: 'espoo',
+  detectedAt: '2026-03-06T07:28:00Z',
+  previousCommit: {
+    sha: 'oldwrap1234567890',
+    shortSha: 'oldwrap1',
+    message: 'Previous wrapper commit',
+    date: '2026-02-28T09:00:00Z',
+    author: 'dev1',
+  },
+  newCommit: {
+    sha: 'newwrap1234567890',
+    shortSha: 'newwrap1',
+    message: 'New wrapper commit',
+    date: '2026-03-06T05:00:00Z',
+    author: 'dev3',
+  },
+  includedPRs: [
+    {
+      number: 456,
+      title: 'Update config',
+      author: 'dev3',
+      mergedAt: '2026-03-05T10:00:00Z',
+      repository: 'espoo/evaka-wrapper',
+      repoType: 'wrapper',
+      isBot: false,
+      url: 'https://github.com/espoo/evaka-wrapper/pull/456',
+      labels: [],
+    },
+  ],
+  repoType: 'wrapper',
+};
+
 describe('sendSlackNotification', () => {
-  it('sends a Block Kit message to the webhook URL', async () => {
+  it('sends a Block Kit message with 4 blocks for a single event', async () => {
     const scope = nock('https://hooks.slack.com')
       .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
         expect(body).toHaveProperty('blocks');
@@ -87,7 +122,173 @@ describe('sendSlackNotification', () => {
 
     await sendSlackNotification(
       'https://hooks.slack.com/services/T00/B00/XXX',
-      mockEvent
+      [mockCoreEvent]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  it('sends a combined message with 5 blocks for both wrapper and core events', async () => {
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        expect(body).toHaveProperty('blocks');
+        const blocks = body.blocks as Array<{ type: string; text?: unknown; fields?: unknown }>;
+        expect(blocks.length).toBe(5);
+        expect(blocks[0].type).toBe('header');
+        expect(blocks[1].type).toBe('section'); // version + timestamp fields
+        expect(blocks[2].type).toBe('section'); // core changes
+        expect(blocks[3].type).toBe('section'); // wrapper changes
+        expect(blocks[4].type).toBe('context');
+
+        // Verify version field contains both SHAs
+        const fields = (blocks[1] as { fields: Array<{ text: string }> }).fields;
+        const versionField = fields[0].text;
+        expect(versionField).toContain('newsha1');
+        expect(versionField).toContain('newwrap1');
+        expect(versionField).toContain('ydin');
+        expect(versionField).toContain('Kuntaimplementaatio');
+
+        // Verify both changes sections
+        const coreChanges = (blocks[2] as { text: { text: string } }).text.text;
+        expect(coreChanges).toContain('Muutokset (ydin)');
+        expect(coreChanges).toContain('#123');
+
+        const wrapperChanges = (blocks[3] as { text: { text: string } }).text.text;
+        expect(wrapperChanges).toContain('Muutokset (Kuntaimplementaatio)');
+        expect(wrapperChanges).toContain('#456');
+
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [mockCoreEvent, mockWrapperEvent]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  it('shows single SHA in version field for single repo change', async () => {
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{ fields?: Array<{ text: string }> }>;
+        const versionField = blocks[1].fields![0].text;
+        expect(versionField).toContain('newsha1');
+        expect(versionField).not.toContain('ydin');
+        expect(versionField).not.toContain('Kuntaimplementaatio');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [mockCoreEvent]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  it('displays timestamp in Finnish Helsinki format', async () => {
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{ fields?: Array<{ text: string }> }>;
+        const timestampField = blocks[1].fields![1].text;
+        // 2026-03-06T07:28:00Z = pe 6.3. klo 09.28 in Helsinki (EET, UTC+2)
+        expect(timestampField).toContain('pe 6.3. klo 09.28');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [mockCoreEvent]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  it('filters bot PRs from the message', async () => {
+    const eventWithBotPR: DeploymentEvent = {
+      ...mockCoreEvent,
+      includedPRs: [
+        ...mockCoreEvent.includedPRs,
+        {
+          number: 2037,
+          title: 'Bump evaka from bf2c392 to 9a4e61b',
+          author: 'dependabot[bot]',
+          mergedAt: '2026-03-05T08:00:00Z',
+          repository: 'espoon-voltti/evaka',
+          repoType: 'core',
+          isBot: true,
+          url: 'https://github.com/espoon-voltti/evaka/pull/2037',
+          labels: [],
+        },
+      ],
+    };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{ text?: { text: string } }>;
+        const changesText = blocks[2].text!.text;
+        expect(changesText).toContain('#123');
+        expect(changesText).not.toContain('#2037');
+        expect(changesText).not.toContain('dependabot');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [eventWithBotPR]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  it('shows fallback text when all PRs are bot-authored', async () => {
+    const allBotEvent: DeploymentEvent = {
+      ...mockCoreEvent,
+      includedPRs: [
+        {
+          number: 2037,
+          title: 'Bump evaka from bf2c392 to 9a4e61b',
+          author: 'dependabot[bot]',
+          mergedAt: '2026-03-05T08:00:00Z',
+          repository: 'espoon-voltti/evaka',
+          repoType: 'core',
+          isBot: true,
+          url: 'https://github.com/espoon-voltti/evaka/pull/2037',
+          labels: [],
+        },
+        {
+          number: 2038,
+          title: 'Update dependency foo to v2',
+          author: 'renovate[bot]',
+          mergedAt: '2026-03-05T09:00:00Z',
+          repository: 'espoon-voltti/evaka',
+          repoType: 'core',
+          isBot: true,
+          url: 'https://github.com/espoon-voltti/evaka/pull/2038',
+          labels: [],
+        },
+      ],
+    };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{ text?: { text: string } }>;
+        const changesText = blocks[2].text!.text;
+        expect(changesText).toContain('Ei merkittäviä muutoksia');
+        expect(changesText).not.toContain('dependabot');
+        expect(changesText).not.toContain('renovate');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [allBotEvent]
     );
 
     expect(scope.isDone()).toBe(true);
@@ -102,7 +303,7 @@ describe('sendSlackNotification', () => {
 
     await sendSlackNotification(
       'https://hooks.slack.com/services/T00/B00/XXX',
-      mockEvent
+      [mockCoreEvent]
     );
 
     expect(scope.isDone()).toBe(true);
@@ -110,18 +311,19 @@ describe('sendSlackNotification', () => {
 
   it('skips when webhook URL is empty', async () => {
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
-    await sendSlackNotification('', mockEvent);
+    await sendSlackNotification('', [mockCoreEvent]);
     expect(consoleSpy).toHaveBeenCalledWith(expect.stringContaining('SKIP'));
     consoleSpy.mockRestore();
   });
 
   it('skips in DRY_RUN mode', async () => {
     process.env.DRY_RUN = 'true';
-    // Re-import to pick up env change - but since it reads at module level,
-    // we test the console output
     const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
-    // The module reads DRY_RUN at import time, so this tests the conditional
-    // We verify no HTTP call is made by ensuring nock has no pending interceptors
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [mockCoreEvent]
+    );
+    expect(consoleSpy).toHaveBeenCalledWith(expect.stringContaining('DRY RUN'));
     consoleSpy.mockRestore();
   });
 
@@ -134,7 +336,7 @@ describe('sendSlackNotification', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     await sendSlackNotification(
       'https://hooks.slack.com/services/T00/B00/XXX',
-      mockEvent
+      [mockCoreEvent]
     );
     warnSpy.mockRestore();
   });
@@ -142,23 +344,23 @@ describe('sendSlackNotification', () => {
 
 describe('per-city Slack channel routing', () => {
   const ouluEvent: DeploymentEvent = {
-    ...mockEvent,
-    id: '2026-03-02T12:00:00Z_oulu-prod_core',
+    ...mockCoreEvent,
+    id: '2026-03-06T07:28:00Z_oulu-prod_core',
     environmentId: 'oulu-prod',
     cityGroupId: 'oulu',
   };
 
   const tampereEvent: DeploymentEvent = {
-    ...mockEvent,
-    id: '2026-03-02T12:00:00Z_tampere-prod_wrapper',
+    ...mockCoreEvent,
+    id: '2026-03-06T07:28:00Z_tampere-prod_wrapper',
     environmentId: 'tampere-prod',
     cityGroupId: 'tampere-region',
     repoType: 'wrapper',
   };
 
   const ouluStagingEvent: DeploymentEvent = {
-    ...mockEvent,
-    id: '2026-03-02T12:00:00Z_oulu-staging_core',
+    ...mockCoreEvent,
+    id: '2026-03-06T07:28:00Z_oulu-staging_core',
     environmentId: 'oulu-staging',
     cityGroupId: 'oulu',
   };
@@ -177,8 +379,8 @@ describe('per-city Slack channel routing', () => {
     const espooUrl = resolveWebhookUrl('espoo');
     const ouluUrl = resolveWebhookUrl('oulu');
 
-    await sendSlackNotification(espooUrl, mockEvent);
-    await sendSlackNotification(ouluUrl, ouluEvent);
+    await sendSlackNotification(espooUrl, [mockCoreEvent]);
+    await sendSlackNotification(ouluUrl, [ouluEvent]);
 
     expect(espooScope.isDone()).toBe(true);
     expect(ouluScope.isDone()).toBe(true);
@@ -195,8 +397,8 @@ describe('per-city Slack channel routing', () => {
     const espooUrl = resolveWebhookUrl('espoo');
     const tampereUrl = resolveWebhookUrl('tampere-region');
 
-    await sendSlackNotification(espooUrl, mockEvent);
-    await sendSlackNotification(tampereUrl, tampereEvent);
+    await sendSlackNotification(espooUrl, [mockCoreEvent]);
+    await sendSlackNotification(tampereUrl, [tampereEvent]);
 
     expect(defaultScope.isDone()).toBe(true);
   });
@@ -215,8 +417,8 @@ describe('per-city Slack channel routing', () => {
     const espooUrl = resolveWebhookUrl('espoo');
     const ouluUrl = resolveWebhookUrl('oulu');
 
-    await sendSlackNotification(espooUrl, mockEvent);
-    await sendSlackNotification(ouluUrl, ouluEvent);
+    await sendSlackNotification(espooUrl, [mockCoreEvent]);
+    await sendSlackNotification(ouluUrl, [ouluEvent]);
 
     expect(espooScope.isDone()).toBe(true);
     expect(defaultScope.isDone()).toBe(true);
@@ -233,8 +435,8 @@ describe('per-city Slack channel routing', () => {
     const prodUrl = resolveWebhookUrl('oulu');
     const stagingUrl = resolveWebhookUrl('oulu');
 
-    await sendSlackNotification(prodUrl, ouluEvent);
-    await sendSlackNotification(stagingUrl, ouluStagingEvent);
+    await sendSlackNotification(prodUrl, [ouluEvent]);
+    await sendSlackNotification(stagingUrl, [ouluStagingEvent]);
 
     expect(ouluScope.isDone()).toBe(true);
   });

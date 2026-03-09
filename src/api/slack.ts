@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { DeploymentEvent } from '../types.js';
 import { withRetry } from '../utils/retry.js';
+import { formatFinnishDateTime } from '../utils/date-format.js';
 
 const repoTypeDisplayNames: Record<string, string> = {
   core: 'ydin',
@@ -11,26 +12,64 @@ function getRepoTypeDisplay(repoType: string): string {
   return repoTypeDisplayNames[repoType] || repoType;
 }
 
-function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
-  const isProduction = event.environmentId.includes('prod');
-  const emoji = isProduction ? '\ud83d\ude80' : '\ud83e\uddea';
-  const envLabel = isProduction ? 'Tuotanto päivitetty' : 'Staging / testaus päivitetty';
-  const cityName = event.cityGroupId.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+function getCommitUrl(event: DeploymentEvent): string {
+  if (event.repoType === 'core') {
+    return `https://github.com/espoon-voltti/evaka/commit/${event.newCommit.shortSha}`;
+  }
+  const wrapperPR = event.includedPRs.find((pr) => pr.repoType === 'wrapper');
+  const repoPath = wrapperPR?.repository ?? `${event.cityGroupId}/evaka-wrapper`;
+  return `https://github.com/${repoPath}/commit/${event.newCommit.shortSha}`;
+}
+
+function buildVersionField(events: DeploymentEvent[]): string {
+  if (events.length === 1) {
+    const event = events[0];
+    const commitUrl = getCommitUrl(event);
+    return `*Versio:*\n<${commitUrl}|\`${event.newCommit.shortSha}\`>`;
+  }
+
+  const parts = events.map((event) => {
+    const commitUrl = getCommitUrl(event);
+    const label = getRepoTypeDisplay(event.repoType);
+    return `${label}: <${commitUrl}|\`${event.newCommit.shortSha}\`>`;
+  });
+  return `*Versio:*\n${parts.join(', ')}`;
+}
+
+function buildChangesSection(event: DeploymentEvent): { type: string; text: { type: string; text: string } } {
   const repoTypeDisplay = getRepoTypeDisplay(event.repoType);
+  const humanPRs = event.includedPRs.filter((pr) => !pr.isBot);
 
-  const commitUrl = event.repoType === 'core'
-    ? `https://github.com/espoon-voltti/evaka/commit/${event.newCommit.shortSha}`
-    : `https://github.com/${event.cityGroupId}/commit/${event.newCommit.shortSha}`;
-
-  const detectedAt = new Date(event.detectedAt).toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
-
-  const prLines = event.includedPRs.slice(0, 10).map((pr) =>
+  const prLines = humanPRs.slice(0, 10).map((pr) =>
     `\u2022 <${pr.url}|#${pr.number}> ${pr.title} \u2014 _${pr.author}_`
   );
 
-  const changesText = prLines.length > 0
-    ? `*Muutokset (${repoTypeDisplay}):*\n${prLines.join('\n')}`
-    : `*PR-tietoja ei saatavilla tälle ${repoTypeDisplay}-päivitykselle*`;
+  let changesText: string;
+  if (prLines.length > 0) {
+    changesText = `*Muutokset (${repoTypeDisplay}):*\n${prLines.join('\n')}`;
+  } else if (event.includedPRs.length > 0) {
+    // Had PRs but all were bot-authored
+    changesText = `*Muutokset (${repoTypeDisplay}):*\nEi merkittäviä muutoksia`;
+  } else {
+    changesText = `*PR-tietoja ei saatavilla tälle ${repoTypeDisplay}-päivitykselle*`;
+  }
+
+  return {
+    type: 'section',
+    text: { type: 'mrkdwn', text: changesText },
+  };
+}
+
+function buildSlackMessage(events: DeploymentEvent[], dashboardBaseUrl: string) {
+  const firstEvent = events[0];
+  const isProduction = firstEvent.environmentId.includes('prod');
+  const emoji = isProduction ? '\ud83d\ude80' : '\ud83e\uddea';
+  const envLabel = isProduction ? 'Tuotanto päivitetty' : 'Staging / testaus päivitetty';
+  const cityName = firstEvent.cityGroupId.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+
+  const detectedAt = formatFinnishDateTime(firstEvent.detectedAt);
+
+  const changesSections = events.map(buildChangesSection);
 
   return {
     blocks: [
@@ -41,20 +80,17 @@ function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
       {
         type: 'section',
         fields: [
-          { type: 'mrkdwn', text: `*Versio:*\n<${commitUrl}|\`${event.newCommit.shortSha}\`>` },
+          { type: 'mrkdwn', text: buildVersionField(events) },
           { type: 'mrkdwn', text: `*Havaittu:*\n${detectedAt}` },
         ],
       },
-      {
-        type: 'section',
-        text: { type: 'mrkdwn', text: changesText },
-      },
+      ...changesSections,
       {
         type: 'context',
         elements: [
           {
             type: 'mrkdwn',
-            text: `<${dashboardBaseUrl}#/city/${event.cityGroupId}|Ympäristöjen tiedot>`,
+            text: `<${dashboardBaseUrl}#/city/${firstEvent.cityGroupId}|Ympäristöjen tiedot>`,
           },
         ],
       },
@@ -64,11 +100,15 @@ function buildSlackMessage(event: DeploymentEvent, dashboardBaseUrl: string) {
 
 export async function sendSlackNotification(
   webhookUrl: string,
-  event: DeploymentEvent,
+  events: DeploymentEvent | DeploymentEvent[],
   dashboardBaseUrl: string = ''
 ): Promise<void> {
+  const eventArray = Array.isArray(events) ? events : [events];
+  const firstEvent = eventArray[0];
+
   if (process.env.DRY_RUN === 'true') {
-    console.log(`[DRY RUN] Slack notification for ${event.environmentId}: ${event.repoType} ${event.newCommit.shortSha}`);
+    const descriptions = eventArray.map((e) => `${e.repoType} ${e.newCommit.shortSha}`).join(', ');
+    console.log(`[DRY RUN] Slack notification for ${firstEvent.environmentId}: ${descriptions}`);
     return;
   }
 
@@ -77,7 +117,7 @@ export async function sendSlackNotification(
     return;
   }
 
-  const message = buildSlackMessage(event, dashboardBaseUrl);
+  const message = buildSlackMessage(eventArray, dashboardBaseUrl);
 
   try {
     await withRetry(
@@ -87,7 +127,8 @@ export async function sendSlackNotification(
       }),
       { maxRetries: 3, baseDelayMs: 1000 }
     );
-    console.log(`[SLACK] Sent notification for ${event.environmentId} (${event.repoType})`);
+    const repoTypes = eventArray.map((e) => e.repoType).join('+');
+    console.log(`[SLACK] Sent notification for ${firstEvent.environmentId} (${repoTypes})`);
   } catch (error) {
     if (axios.isAxiosError(error)) {
       const status = error.response?.status;

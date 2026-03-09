@@ -29,6 +29,8 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - JSON data files (`data/current.json`, `data/history.json`, `data/feature-flags.json`) -- read-only from frontend, no changes to data forma (015-auto-refresh)
 - Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (E2E tests) + None new — existing Playwright for E2E tests (014-overview-fullscreen)
 - JSON files (`data/current.json`) — read-only, no changes (014-overview-fullscreen)
+- TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking) (017-improve-slack-announcements)
+- JSON files (data/current.json, data/history.json) — no changes needed (017-improve-slack-announcements)
 
 - TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend) + axios (HTTP client), @octokit/rest or direct fetch (GitHub API) — minimal dependency se (001-deployment-tracker)
 
@@ -49,9 +51,9 @@ npm test && npm run lint
 TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend): Follow standard conventions
 
 ## Recent Changes
+- 017-improve-slack-announcements: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking)
 - 015-auto-refresh: Added Vanilla JavaScript ES modules (frontend); TypeScript 5.x on Node.js 20+ (build scripts, E2E tests) + None (pure DOM, no framework) -- no new dependencies added
 - 014-show-empty-sections: Added Vanilla JavaScript ES modules (frontend) + None (pure DOM, no framework)
-- 013-dev-data-isolation: Added TypeScript 5.x on Node.js 20+ + dotenv (env loading) — no new dependencies
 
 
 <!-- MANUAL ADDITIONS START -->
