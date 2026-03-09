@@ -1,5 +1,7 @@
 # eVaka-muutosten seuranta
 
+**[Avaa seurantanäkymä](https://espoon-voltti.github.io/evaka-update-tracker/)**
+
 Seurantanäkymä, joka näyttää mitkä Pull Requestit on asennettu eri eVaka-instansseihin suomalaisissa kunnissa. Ajastettu GitHub Action hakee asennetut versiot, selvittää PR:t GitHub API:n kautta, tunnistaa muutokset, lähettää Slack-ilmoitukset ja tuottaa staattisen hallintapaneelin GitHub Pagesiin.
 
 ![Hallintapaneelin kuvakaappaus — Tampereen seutu](site/images/screenshot.png)
