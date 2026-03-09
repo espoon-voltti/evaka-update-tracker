@@ -13,9 +13,12 @@ function getRepoTypeDisplay(repoType: string): string {
 }
 
 function getCommitUrl(event: DeploymentEvent): string {
-  return event.repoType === 'core'
-    ? `https://github.com/espoon-voltti/evaka/commit/${event.newCommit.shortSha}`
-    : `https://github.com/${event.cityGroupId}/commit/${event.newCommit.shortSha}`;
+  if (event.repoType === 'core') {
+    return `https://github.com/espoon-voltti/evaka/commit/${event.newCommit.shortSha}`;
+  }
+  const wrapperPR = event.includedPRs.find((pr) => pr.repoType === 'wrapper');
+  const repoPath = wrapperPR?.repository ?? `${event.cityGroupId}/evaka-wrapper`;
+  return `https://github.com/${repoPath}/commit/${event.newCommit.shortSha}`;
 }
 
 function buildVersionField(events: DeploymentEvent[]): string {
