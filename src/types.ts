@@ -148,6 +148,33 @@ export interface PreviousData {
   versions: Record<string, PreviousVersionEntry>;
 }
 
+// --- Change Announcement Data ---
+
+export interface RepoHeadEntry {
+  sha: string;
+  branch: string;
+}
+
+export interface RepoHeadsData {
+  checkedAt: string; // ISO 8601
+  repos: Record<string, RepoHeadEntry>;
+}
+
+export interface TrackedRepository {
+  owner: string;
+  name: string;
+  type: 'core' | 'wrapper';
+  defaultBranch: string;
+  cityGroupId: string | null;
+}
+
+export interface ChangeAnnouncement {
+  repository: string; // "owner/name"
+  repoType: 'core' | 'wrapper';
+  cityGroupId: string | null;
+  prs: PullRequest[];
+}
+
 // --- Feature Flag Data ---
 
 export type FeatureFlagValue = boolean | number | string | null;

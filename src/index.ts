@@ -9,6 +9,7 @@ import { readPreviousData, detectChanges, buildUpdatedPrevious } from './service
 import { deploySite } from './services/site-deployer.js';
 import { sendSlackNotification } from './api/slack.js';
 import { resolveWebhookUrl } from './config/slack-routing.js';
+import { announceChanges } from './services/change-announcer.js';
 import { readHistory, appendEvents, pruneOldEvents, writeHistory } from './services/history-manager.js';
 import { collectFeatureFlags } from './services/feature-flag-collector.js';
 import { FEATURE_FLAG_CITIES } from './config/feature-flag-cities.js';
@@ -245,6 +246,13 @@ export async function run() {
     history = appendEvents(history, allEvents);
   }
   history = pruneOldEvents(history);
+
+  // Announce changes to repo default branches (independent from deployment notifications)
+  try {
+    await announceChanges(cityGroups, DATA_DIR);
+  } catch (err) {
+    console.warn('Change announcements failed (non-fatal):', err);
+  }
 
   // Collect feature flags (non-blocking — errors don't fail the pipeline)
   try {

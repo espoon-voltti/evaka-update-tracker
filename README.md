@@ -21,8 +21,9 @@ Seurantanäkymä, joka näyttää mitkä Pull Requestit on asennettu eri eVaka-i
 2. Kuntaimplementaatioiden osalta ydin-eVakan versio selvitetään git-submoduuliviittauksen kautta
 3. PR:t edellisen ja nykyisen asennetun version väliltä kerätään GitHub Compare API:lla
 4. Versiomuutokset laukaisevat Slack-ilmoitukset Block Kit -viesteillä
-5. Tulokset kirjoitetaan JSON-tiedostoihin (`data/current.json`, `data/history.json`, `data/previous.json`) ja commitoidaan repositorioon
-6. Staattinen hallintapaneeli (`site/`) julkaistaan GitHub Pagesiin datatiedostojen rinnalle
+5. Repositorioiden oletushaarojen uudet PR:t ilmoitetaan minimaalisilla Slack-viesteillä (ydin- ja kuntaimplementaatiot omille kanavilleen)
+6. Tulokset kirjoitetaan JSON-tiedostoihin (`data/current.json`, `data/history.json`, `data/previous.json`) ja commitoidaan repositorioon
+7. Staattinen hallintapaneeli (`site/`) julkaistaan GitHub Pagesiin datatiedostojen rinnalle
 
 ## Hallintapaneelin ominaisuudet
 
@@ -84,6 +85,7 @@ src/                              # Tiedonhakija (TypeScript)
 │   ├── version-resolver.ts       # Asennetun version + submoduulin selvitys
 │   ├── pr-collector.ts           # PR:ien keruu Compare API:lla
 │   ├── change-detector.ts        # Versiomuutosten tunnistus
+│   ├── change-announcer.ts       # Repositoriomuutosten Slack-ilmoitukset
 │   ├── history-manager.ts        # Muutoshistorian luku/kirjoitus/karsinta
 │   └── site-deployer.ts          # Sivuston + datan kopiointi dist/-kansioon
 ├── utils/
@@ -109,7 +111,8 @@ site/                             # Staattinen käyttöliittymä (vanilla JS, ei
 data/                             # Tallennettu tila (GitHub Action commitoi)
 ├── current.json                  # Täydellinen muutosten tilannekuva
 ├── history.json                  # Muutostapahtumat (1 kk:n liukuva ikkuna)
-└── previous.json                 # Edellisen ajon SHA:t muutosten tunnistamiseen
+├── previous.json                 # Edellisen ajon SHA:t muutosten tunnistamiseen
+└── repo-heads.json               # Repositorioiden oletushaarojen HEAD-SHA:t muutosilmoituksia varten
 
 tests/
 ├── unit/                         # Yksikkötestit (Jest)
@@ -124,7 +127,9 @@ tests/
 | Muuttuja | Pakollinen | Kuvaus |
 |----------|------------|--------|
 | `GH_TOKEN` | Kyllä | GitHub PAT API-käyttöön (5 000 pyyntöä/tunti) |
-| `SLACK_WEBHOOK_URL` | Ei | Slack incoming webhook muutosilmoituksille |
+| `SLACK_WEBHOOK_URL` | Ei | Slack incoming webhook asennusilmoituksille |
+| `SLACK_CHANGE_WEBHOOK_CORE` | Ei | Slack webhook ydin-repositorioon yhdistettyjen PR:ien ilmoituksille |
+| `SLACK_CHANGE_WEBHOOK_<KUNTA>` | Ei | Slack webhook kuntaimplementaation PR-ilmoituksille (esim. `SLACK_CHANGE_WEBHOOK_TAMPERE_REGION`) |
 | `STAGING_INSTANCES` | Ei | JSON-taulukko testaus-/testiympäristöjen instansseista (katso `.env.example`) |
 | `OULU_STAGING_USER` | Ei | HTTP basic auth -käyttäjänimi Oulun testausympäristölle |
 | `OULU_STAGING_PASS` | Ei | HTTP basic auth -salasana Oulun testausympäristölle |
@@ -140,12 +145,12 @@ GitHub Actions -työnkulku (`.github/workflows/monitor.yml`) suoritetaan automaa
 4. Commitoi päivitetyt datatiedostot
 5. Julkaisee hallintapaneelin GitHub Pagesiin
 
-**Vaadittu asennus:** Repository Settings → Pages → Source: "GitHub Actions". Lisää salaisuudet `GH_TOKEN` ja valinnaisesti `SLACK_WEBHOOK_URL`, `STAGING_INSTANCES`, `OULU_STAGING_USER`, `OULU_STAGING_PASS`.
+**Vaadittu asennus:** Repository Settings → Pages → Source: "GitHub Actions". Lisää salaisuudet `GH_TOKEN` ja valinnaisesti `SLACK_WEBHOOK_URL`, `SLACK_CHANGE_WEBHOOK_CORE`, `SLACK_CHANGE_WEBHOOK_<KUNTA>`, `STAGING_INSTANCES`, `OULU_STAGING_USER`, `OULU_STAGING_PASS`.
 
 ## Testit
 
 ```bash
-npm test        # 86 testiä 9 sarjassa
+npm test        # 171 testiä 18 sarjassa
 ```
 
 - **Yksikkötestit** — version selvitys, PR:ien keruu, muutosten tunnistus, PR:ien luokittelu, muutoshistorian hallinta
