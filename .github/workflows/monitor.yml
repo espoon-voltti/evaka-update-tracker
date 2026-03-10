@@ -45,6 +45,10 @@ jobs:
           OULU_STAGING_PASS: ${{ secrets.OULU_STAGING_PASS }}
           ESPOO_STAGING_USER: ${{ secrets.ESPOO_STAGING_USER }}
           ESPOO_STAGING_PASS: ${{ secrets.ESPOO_STAGING_PASS }}
+          SLACK_CHANGE_WEBHOOK_CORE: ${{ secrets.SLACK_CHANGE_WEBHOOK_CORE }}
+          SLACK_CHANGE_WEBHOOK_TAMPERE_REGION: ${{ secrets.SLACK_CHANGE_WEBHOOK_TAMPERE_REGION }}
+          SLACK_CHANGE_WEBHOOK_OULU: ${{ secrets.SLACK_CHANGE_WEBHOOK_OULU }}
+          SLACK_CHANGE_WEBHOOK_TURKU: ${{ secrets.SLACK_CHANGE_WEBHOOK_TURKU }}
         run: npx tsx src/index.ts
 
       - name: Commit data changes
