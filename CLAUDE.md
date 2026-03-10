@@ -33,6 +33,7 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - JSON files (data/current.json, data/history.json) — no changes needed (017-improve-slack-announcements)
 - JSON file (`data/repo-heads.json`) (018-slack-change-announcements)
 - TypeScript 5.x on Node.js 20+ + None (standalone string constants file) (019-update-feature-labels)
+- TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking) — no new dependencies (020-slack-announcement-retry)
 
 - TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend) + axios (HTTP client), @octokit/rest or direct fetch (GitHub API) — minimal dependency se (001-deployment-tracker)
 
@@ -53,9 +54,9 @@ npm test && npm run lint
 TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend): Follow standard conventions
 
 ## Recent Changes
+- 020-slack-announcement-retry: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking) — no new dependencies
 - 019-update-feature-labels: Added TypeScript 5.x on Node.js 20+ + None (standalone string constants file)
 - 018-slack-change-announcements: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking)
-- 017-improve-slack-announcements: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking)
 
 
 <!-- MANUAL ADDITIONS START -->

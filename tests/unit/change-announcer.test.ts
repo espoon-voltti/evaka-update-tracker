@@ -3,6 +3,7 @@ import {
   getTrackedRepositories,
   readRepoHeads,
   buildChangeAnnouncement,
+  formatFinnishTimestamp,
 } from '../../src/services/change-announcer';
 import { CityGroup, PullRequest } from '../../src/types';
 
@@ -127,6 +128,38 @@ describe('readRepoHeads', () => {
   });
 });
 
+describe('formatFinnishTimestamp', () => {
+  it('formats a Friday morning correctly', () => {
+    // 2026-03-06 is a Friday. 09:28 Helsinki time = 07:28 UTC (EET = UTC+2 in March before DST)
+    const date = new Date('2026-03-06T07:28:00Z');
+    expect(formatFinnishTimestamp(date)).toBe('pe 6.3. klo 09.28');
+  });
+
+  it('formats a Monday afternoon correctly', () => {
+    // 2026-03-09 is a Monday. 14:05 Helsinki time = 12:05 UTC
+    const date = new Date('2026-03-09T12:05:00Z');
+    expect(formatFinnishTimestamp(date)).toBe('ma 9.3. klo 14.05');
+  });
+
+  it('formats midnight correctly with zero-padded hours', () => {
+    // 2026-03-10 is a Tuesday. 00:03 Helsinki time = 22:03 UTC on March 9
+    const date = new Date('2026-03-09T22:03:00Z');
+    expect(formatFinnishTimestamp(date)).toBe('ti 10.3. klo 00.03');
+  });
+
+  it('formats a Sunday correctly', () => {
+    // 2026-03-08 is a Sunday. 16:30 Helsinki time = 14:30 UTC
+    const date = new Date('2026-03-08T14:30:00Z');
+    expect(formatFinnishTimestamp(date)).toBe('su 8.3. klo 16.30');
+  });
+
+  it('handles DST transition (last Sunday of March)', () => {
+    // 2026-03-29 is a Sunday, DST starts. 15:00 Helsinki time (EEST = UTC+3) = 12:00 UTC
+    const date = new Date('2026-03-29T12:00:00Z');
+    expect(formatFinnishTimestamp(date)).toBe('su 29.3. klo 15.00');
+  });
+});
+
 describe('buildChangeAnnouncement', () => {
   const mockPRs: PullRequest[] = [
     {
@@ -153,30 +186,64 @@ describe('buildChangeAnnouncement', () => {
     },
   ];
 
-  it('formats PRs as one line each with linked number, title, and author', () => {
-    const text = buildChangeAnnouncement(mockPRs);
-    const lines = text.split('\n');
-    expect(lines).toHaveLength(2);
-    expect(lines[0]).toBe(
+  it('formats recent PRs without timestamp', () => {
+    // "now" is 5 minutes after mergedAt
+    const now = new Date('2026-03-08T10:05:00Z');
+    const text = buildChangeAnnouncement([mockPRs[0]], now);
+    expect(text).toBe(
       '<https://github.com/espoon-voltti/evaka/pull/8628|#8628> Testidatan refaktorointi - ei käytetä lateinit \u2014 Joosakur'
-    );
-    expect(lines[1]).toBe(
-      '<https://github.com/espoon-voltti/evaka/pull/8629|#8629> Fix login redirect \u2014 developer2'
     );
   });
 
+  it('formats old PRs with Finnish timestamp', () => {
+    // "now" is 2 hours after mergedAt (well over 20 min)
+    const now = new Date('2026-03-08T12:00:00Z');
+    const text = buildChangeAnnouncement([mockPRs[0]], now);
+    // 2026-03-08T10:00:00Z = 12:00 Helsinki time (EET +2), Sunday
+    expect(text).toBe(
+      '<https://github.com/espoon-voltti/evaka/pull/8628|#8628> Testidatan refaktorointi - ei käytetä lateinit \u2014 Joosakur \u2014 su 8.3. klo 12.00'
+    );
+  });
+
+  it('does not include timestamp at exactly 20 minutes', () => {
+    const now = new Date('2026-03-08T10:20:00Z');
+    const text = buildChangeAnnouncement([mockPRs[0]], now);
+    expect(text).not.toContain('klo');
+  });
+
+  it('includes timestamp at 21 minutes', () => {
+    const now = new Date('2026-03-08T10:21:00Z');
+    const text = buildChangeAnnouncement([mockPRs[0]], now);
+    expect(text).toContain('klo');
+  });
+
+  it('handles mixed PRs — old with timestamp, recent without', () => {
+    const prs: PullRequest[] = [
+      { ...mockPRs[0], mergedAt: '2026-03-08T10:00:00Z' }, // old
+      { ...mockPRs[1], mergedAt: '2026-03-08T11:55:00Z' }, // recent
+    ];
+    const now = new Date('2026-03-08T12:00:00Z');
+    const text = buildChangeAnnouncement(prs, now);
+    const lines = text.split('\n');
+    expect(lines[0]).toContain('klo'); // old PR has timestamp
+    expect(lines[1]).not.toContain('klo'); // recent PR does not
+  });
+
   it('uses Slack mrkdwn link format for PR numbers', () => {
-    const text = buildChangeAnnouncement([mockPRs[0]]);
+    const now = new Date('2026-03-08T10:05:00Z');
+    const text = buildChangeAnnouncement([mockPRs[0]], now);
     expect(text).toContain('<https://github.com/espoon-voltti/evaka/pull/8628|#8628>');
   });
 
   it('uses em dash between title and author', () => {
-    const text = buildChangeAnnouncement([mockPRs[0]]);
+    const now = new Date('2026-03-08T10:05:00Z');
+    const text = buildChangeAnnouncement([mockPRs[0]], now);
     expect(text).toContain('\u2014 Joosakur');
   });
 
   it('returns single line for single PR', () => {
-    const text = buildChangeAnnouncement([mockPRs[0]]);
+    const now = new Date('2026-03-08T10:05:00Z');
+    const text = buildChangeAnnouncement([mockPRs[0]], now);
     expect(text.split('\n')).toHaveLength(1);
   });
 });

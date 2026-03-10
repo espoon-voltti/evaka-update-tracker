@@ -454,7 +454,7 @@ describe('announceChanges - end-to-end', () => {
     expect(slackScope.isDone()).toBe(true);
   });
 
-  it('handles Slack webhook failure gracefully without crashing', async () => {
+  it('does not update HEAD when Slack webhook fails (500), enabling retry on next run', async () => {
     const oldCoreSha = 'old_core_sha_111111111111111111111111';
     const newCoreSha = 'new_core_sha_222222222222222222222222';
 
@@ -511,8 +511,208 @@ describe('announceChanges - end-to-end', () => {
 
     warnSpy.mockRestore();
 
-    // HEAD should still be updated despite Slack failure
+    // HEAD should NOT be updated — will retry on next run
     const heads = JSON.parse(fs.readFileSync(path.join(TEST_DATA_DIR, 'repo-heads.json'), 'utf-8'));
+    expect(heads.repos['espoon-voltti/evaka'].sha).toBe(oldCoreSha);
+  });
+
+  it('does not update HEAD when Slack webhook returns 404', async () => {
+    const oldCoreSha = 'old_core_sha_111111111111111111111111';
+    const newCoreSha = 'new_core_sha_222222222222222222222222';
+
+    fs.writeFileSync(
+      path.join(TEST_DATA_DIR, 'repo-heads.json'),
+      JSON.stringify({
+        checkedAt: '2026-03-09T09:00:00Z',
+        repos: {
+          'espoon-voltti/evaka': { sha: oldCoreSha, branch: 'master' },
+          'Tampere/trevaka': { sha: 'wrapper_unchanged', branch: 'main' },
+        },
+      })
+    );
+
+    process.env.SLACK_CHANGE_WEBHOOK_CORE = 'https://hooks.slack.com/services/T00/CORE/XXX';
+
+    mockedGetCommit.mockImplementation(async (_owner, repo) => ({
+      sha: repo === 'evaka' ? newCoreSha : 'wrapper_unchanged',
+      shortSha: (repo === 'evaka' ? newCoreSha : 'wrapper_unchanged').slice(0, 7),
+      message: 'commit',
+      date: '2026-03-09T10:00:00Z',
+      author: 'dev',
+    }));
+
+    mockedCompareShas.mockResolvedValue([
+      {
+        sha: 'commit1',
+        commit: {
+          message: 'Feature (#100)',
+          author: { date: '2026-03-09T09:30:00Z', name: 'dev1' },
+        },
+        author: { login: 'dev1' },
+      },
+    ]);
+
+    mockedGetPullRequest.mockResolvedValue({
+      number: 100,
+      title: 'Feature',
+      user: { login: 'dev1' },
+      merged_at: '2026-03-09T09:30:00Z',
+      html_url: 'https://github.com/espoon-voltti/evaka/pull/100',
+      labels: [],
+    });
+
+    nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX')
+      .reply(404, 'Not Found');
+
+    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    await announceChanges(mockCityGroups, TEST_DATA_DIR);
+    warnSpy.mockRestore();
+
+    const heads = JSON.parse(fs.readFileSync(path.join(TEST_DATA_DIR, 'repo-heads.json'), 'utf-8'));
+    expect(heads.repos['espoon-voltti/evaka'].sha).toBe(oldCoreSha);
+  });
+
+  it('retries announcement on next run after previous failure', async () => {
+    const oldCoreSha = 'old_core_sha_111111111111111111111111';
+    const newCoreSha = 'new_core_sha_222222222222222222222222';
+
+    fs.writeFileSync(
+      path.join(TEST_DATA_DIR, 'repo-heads.json'),
+      JSON.stringify({
+        checkedAt: '2026-03-09T09:00:00Z',
+        repos: {
+          'espoon-voltti/evaka': { sha: oldCoreSha, branch: 'master' },
+          'Tampere/trevaka': { sha: 'wrapper_unchanged', branch: 'main' },
+        },
+      })
+    );
+
+    process.env.SLACK_CHANGE_WEBHOOK_CORE = 'https://hooks.slack.com/services/T00/CORE/XXX';
+
+    mockedGetCommit.mockImplementation(async (_owner, repo) => ({
+      sha: repo === 'evaka' ? newCoreSha : 'wrapper_unchanged',
+      shortSha: (repo === 'evaka' ? newCoreSha : 'wrapper_unchanged').slice(0, 7),
+      message: 'commit',
+      date: '2026-03-09T10:00:00Z',
+      author: 'dev',
+    }));
+
+    mockedCompareShas.mockResolvedValue([
+      {
+        sha: 'commit1',
+        commit: {
+          message: 'Feature (#100)',
+          author: { date: '2026-03-09T09:30:00Z', name: 'dev1' },
+        },
+        author: { login: 'dev1' },
+      },
+    ]);
+
+    mockedGetPullRequest.mockResolvedValue({
+      number: 100,
+      title: 'Feature',
+      user: { login: 'dev1' },
+      merged_at: '2026-03-09T09:30:00Z',
+      html_url: 'https://github.com/espoon-voltti/evaka/pull/100',
+      labels: [],
+    });
+
+    // First run: Slack fails
+    nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX')
+      .reply(500, 'Internal Server Error');
+
+    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    await announceChanges(mockCityGroups, TEST_DATA_DIR);
+    warnSpy.mockRestore();
+
+    // HEAD should not be updated
+    let heads = JSON.parse(fs.readFileSync(path.join(TEST_DATA_DIR, 'repo-heads.json'), 'utf-8'));
+    expect(heads.repos['espoon-voltti/evaka'].sha).toBe(oldCoreSha);
+
+    // Second run: Slack succeeds
+    const slackScope = nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('#100');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await announceChanges(mockCityGroups, TEST_DATA_DIR);
+
+    expect(slackScope.isDone()).toBe(true);
+
+    // NOW HEAD should be updated
+    heads = JSON.parse(fs.readFileSync(path.join(TEST_DATA_DIR, 'repo-heads.json'), 'utf-8'));
     expect(heads.repos['espoon-voltti/evaka'].sha).toBe(newCoreSha);
+  });
+
+  it('updates HEAD independently per-repo when one fails and another succeeds', async () => {
+    const oldCoreSha = 'old_core_sha_111111111111111111111111';
+    const newCoreSha = 'new_core_sha_222222222222222222222222';
+    const oldWrapperSha = 'old_wrapper_sha_11111111111111111111';
+    const newWrapperSha = 'new_wrapper_sha_22222222222222222222';
+
+    fs.writeFileSync(
+      path.join(TEST_DATA_DIR, 'repo-heads.json'),
+      JSON.stringify({
+        checkedAt: '2026-03-09T09:00:00Z',
+        repos: {
+          'espoon-voltti/evaka': { sha: oldCoreSha, branch: 'master' },
+          'Tampere/trevaka': { sha: oldWrapperSha, branch: 'main' },
+        },
+      })
+    );
+
+    process.env.SLACK_CHANGE_WEBHOOK_CORE = 'https://hooks.slack.com/services/T00/CORE/XXX';
+    process.env.SLACK_CHANGE_WEBHOOK_TAMPERE_REGION = 'https://hooks.slack.com/services/T00/TAMPERE/XXX';
+
+    mockedGetCommit.mockImplementation(async (_owner, repo) => ({
+      sha: repo === 'evaka' ? newCoreSha : newWrapperSha,
+      shortSha: (repo === 'evaka' ? newCoreSha : newWrapperSha).slice(0, 7),
+      message: 'commit',
+      date: '2026-03-09T10:00:00Z',
+      author: 'dev',
+    }));
+
+    mockedCompareShas.mockResolvedValue([
+      {
+        sha: 'commit1',
+        commit: {
+          message: 'Some change (#100)',
+          author: { date: '2026-03-09T09:30:00Z', name: 'dev1' },
+        },
+        author: { login: 'dev1' },
+      },
+    ]);
+
+    mockedGetPullRequest.mockResolvedValue({
+      number: 100,
+      title: 'Some change',
+      user: { login: 'dev1' },
+      merged_at: '2026-03-09T09:30:00Z',
+      html_url: 'https://github.com/test/repo/pull/100',
+      labels: [],
+    });
+
+    // Core Slack fails, Tampere Slack succeeds
+    nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX')
+      .reply(500, 'Internal Server Error');
+
+    nock('https://hooks.slack.com')
+      .post('/services/T00/TAMPERE/XXX')
+      .reply(200, 'ok');
+
+    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    await announceChanges(mockCityGroups, TEST_DATA_DIR);
+    warnSpy.mockRestore();
+
+    const heads = JSON.parse(fs.readFileSync(path.join(TEST_DATA_DIR, 'repo-heads.json'), 'utf-8'));
+    // Core HEAD should NOT be updated (Slack failed)
+    expect(heads.repos['espoon-voltti/evaka'].sha).toBe(oldCoreSha);
+    // Wrapper HEAD SHOULD be updated (Slack succeeded)
+    expect(heads.repos['Tampere/trevaka'].sha).toBe(newWrapperSha);
   });
 });

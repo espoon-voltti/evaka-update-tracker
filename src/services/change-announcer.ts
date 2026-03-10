@@ -51,35 +51,66 @@ export function writeRepoHeads(filePath: string, data: RepoHeadsData): void {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
 }
 
+const FINNISH_WEEKDAYS = ['su', 'ma', 'ti', 'ke', 'to', 'pe', 'la'];
+const DELAY_THRESHOLD_MS = 20 * 60 * 1000; // 20 minutes
+
+/**
+ * Formats a Date as a Finnish-locale timestamp in Europe/Helsinki timezone.
+ * Example: "pe 6.3. klo 09.28"
+ */
+export function formatFinnishTimestamp(date: Date): string {
+  const helsinkiDate = new Date(date.toLocaleString('en-US', { timeZone: 'Europe/Helsinki' }));
+  const weekday = FINNISH_WEEKDAYS[helsinkiDate.getDay()];
+  const day = helsinkiDate.getDate();
+  const month = helsinkiDate.getMonth() + 1;
+  const hour = String(helsinkiDate.getHours()).padStart(2, '0');
+  const minute = String(helsinkiDate.getMinutes()).padStart(2, '0');
+
+  return `${weekday} ${day}.${month}. klo ${hour}.${minute}`;
+}
+
 /**
  * Formats a list of PRs into a minimal Slack mrkdwn message.
  * One line per PR: <PR_URL|#NUMBER> TITLE — AUTHOR
+ * PRs merged more than 20 minutes ago include a Finnish timestamp.
  */
-export function buildChangeAnnouncement(prs: PullRequest[]): string {
+export function buildChangeAnnouncement(prs: PullRequest[], now?: Date): string {
+  const currentTime = now ?? new Date();
   return prs
-    .map((pr) => `<${pr.url}|#${pr.number}> ${pr.title} \u2014 ${pr.author}`)
+    .map((pr) => {
+      const mergedAt = new Date(pr.mergedAt);
+      const ageMs = currentTime.getTime() - mergedAt.getTime();
+      const base = `<${pr.url}|#${pr.number}> ${pr.title} \u2014 ${pr.author}`;
+      if (ageMs > DELAY_THRESHOLD_MS) {
+        return `${base} \u2014 ${formatFinnishTimestamp(mergedAt)}`;
+      }
+      return base;
+    })
     .join('\n');
 }
 
 /**
  * Sends a plain-text change announcement to a Slack webhook.
+ * Returns true on success (HTTP 200), false on any failure.
  * Never throws — logs warnings on failure.
  */
-async function sendChangeAnnouncement(webhookUrl: string, text: string): Promise<void> {
+export async function sendChangeAnnouncement(webhookUrl: string, text: string): Promise<boolean> {
   try {
     await axios.post(webhookUrl, { text }, {
       headers: { 'Content-Type': 'application/json' },
       timeout: 10000,
     });
+    return true;
   } catch (error) {
     if (axios.isAxiosError(error)) {
       const status = error.response?.status;
       if (status === 404 || status === 410) {
         console.warn(`[CHANGE] Webhook appears disabled (${status}). Skipping.`);
-        return;
+        return false;
       }
     }
     console.warn('[CHANGE] Failed to send announcement:', error);
+    return false;
   }
 }
 
@@ -115,15 +146,17 @@ export async function announceChanges(
     const previousEntry = previousHeads.repos[repoKey];
     const previousSha = previousEntry?.sha;
 
-    // Update HEAD regardless of whether we announce
-    updatedHeads.repos[repoKey] = {
-      sha: currentHead,
-      branch: repo.defaultBranch,
+    const updateHead = () => {
+      updatedHeads.repos[repoKey] = {
+        sha: currentHead,
+        branch: repo.defaultBranch,
+      };
     };
 
     // First run for this repo: store HEAD without announcing
     if (!previousSha) {
       console.log(`[CHANGE] First run for ${repoKey}, storing HEAD ${currentHead.slice(0, 7)}`);
+      updateHead();
       continue;
     }
 
@@ -139,9 +172,10 @@ export async function announceChanges(
     const allPRs = await collectPRsBetween(repoConfig, previousSha, currentHead);
     const humanPRs = filterHumanPRs(allPRs, Infinity);
 
-    // Skip if no human PRs
+    // Skip if no human PRs — update HEAD (nothing to announce)
     if (humanPRs.length === 0) {
       console.log(`[CHANGE] ${repoKey}: no human PRs to announce`);
+      updateHead();
       continue;
     }
 
@@ -149,6 +183,7 @@ export async function announceChanges(
     const webhookUrl = resolveChangeWebhookUrl(repo.type, repo.cityGroupId);
     if (!webhookUrl) {
       console.log(`[CHANGE] No webhook configured for ${repoKey}, skipping`);
+      updateHead();
       continue;
     }
 
@@ -157,10 +192,15 @@ export async function announceChanges(
       continue;
     }
 
-    // Send announcement
+    // Send announcement — only update HEAD on success
     const text = buildChangeAnnouncement(humanPRs);
-    await sendChangeAnnouncement(webhookUrl, text);
-    console.log(`[CHANGE] Announced ${humanPRs.length} PR(s) for ${repoKey}`);
+    const success = await sendChangeAnnouncement(webhookUrl, text);
+    if (success) {
+      console.log(`[CHANGE] Announced ${humanPRs.length} PR(s) for ${repoKey}`);
+      updateHead();
+    } else {
+      console.warn(`[CHANGE] Failed to announce ${repoKey}, will retry on next run`);
+    }
   }
 
   // Persist updated heads
