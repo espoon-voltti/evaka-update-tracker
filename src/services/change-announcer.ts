@@ -59,25 +59,12 @@ const DELAY_THRESHOLD_MS = 20 * 60 * 1000; // 20 minutes
  * Example: "pe 6.3. klo 09.28"
  */
 export function formatFinnishTimestamp(date: Date): string {
-  const parts = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'Europe/Helsinki',
-    weekday: 'short',
-    day: 'numeric',
-    month: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
-  }).formatToParts(date);
-
-  const get = (type: Intl.DateTimeFormatPartTypes) =>
-    parts.find((p) => p.type === type)?.value ?? '';
-
   const helsinkiDate = new Date(date.toLocaleString('en-US', { timeZone: 'Europe/Helsinki' }));
   const weekday = FINNISH_WEEKDAYS[helsinkiDate.getDay()];
-  const day = get('day');
-  const month = get('month');
-  const hour = get('hour').padStart(2, '0');
-  const minute = get('minute').padStart(2, '0');
+  const day = helsinkiDate.getDate();
+  const month = helsinkiDate.getMonth() + 1;
+  const hour = String(helsinkiDate.getHours()).padStart(2, '0');
+  const minute = String(helsinkiDate.getMinutes()).padStart(2, '0');
 
   return `${weekday} ${day}.${month}. klo ${hour}.${minute}`;
 }
