@@ -1,6 +1,93 @@
 {
   "events": [
     {
+      "id": "2026-03-11T06:04:54.675Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-11T06:04:54.675Z",
+      "previousCommit": {
+        "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+        "shortSha": "c2a7f7a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
+        "shortSha": "f0d4ef4",
+        "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
+        "date": "2026-03-11T05:28:11Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2041,
+          "title": "Bump jest from 30.2.0 to 30.3.0 in /e2e in the jest group",
+          "author": "dependabot[bot]",
+          "mergedAt": "2026-03-11T05:28:12Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2041",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 2043,
+          "title": "Bump evaka from `e1d38a8` to `2d5ce68`",
+          "author": "dependabot[bot]",
+          "mergedAt": "2026-03-11T05:27:22Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2043",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-11T06:04:54.675Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-11T06:04:54.675Z",
+      "previousCommit": {
+        "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+        "shortSha": "e1d38a8",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
+        "shortSha": "2d5ce68",
+        "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
+        "date": "2026-03-10T11:24:15Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 8637,
+          "title": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä",
+          "author": "ilja-git",
+          "mergedAt": "2026-03-10T11:24:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8637",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-11T05:52:40.171Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",

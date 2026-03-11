@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-11T05:53:20.375Z",
+  "generatedAt": "2026-03-11T06:05:14.514Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-11T05:52:37.588Z",
+            "checkedAt": "2026-03-11T06:04:36.496Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-11T05:52:39.031Z",
+            "checkedAt": "2026-03-11T06:04:37.164Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -77,7 +77,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-11T05:52:40.870Z",
+            "checkedAt": "2026-03-11T06:04:38.539Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a33a649c8e1cb8f8f621f2ab376ac382655f2ff",
@@ -102,25 +102,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-11T05:52:49.171Z",
+            "checkedAt": "2026-03-11T06:04:46.280Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
-              "shortSha": "c2a7f7a",
-              "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
-              "date": "2026-03-10T06:15:08Z",
+              "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
+              "shortSha": "f0d4ef4",
+              "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
+              "date": "2026-03-11T05:28:11Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
-              "shortSha": "e1d38a8",
-              "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
-              "date": "2026-03-09T14:32:31Z",
-              "author": "ohinkinen"
+              "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
+              "shortSha": "2d5ce68",
+              "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
+              "date": "2026-03-10T11:24:15Z",
+              "author": "ilja-git"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-03-11T06:04:46.280Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
+                "shortSha": "f0d4ef4",
+                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
+                "date": "2026-03-11T05:28:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
+                "shortSha": "2d5ce68",
+                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
+                "date": "2026-03-10T11:24:15Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-03-11T06:04:47.077Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-03-11T06:04:47.908Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-03-11T06:04:48.678Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-03-11T06:04:49.624Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-03-11T06:04:50.375Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-03-11T06:04:51.137Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-03-11T06:04:51.903Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-03-11T06:04:52.720Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c2a7f7a53b466965cd11686c6e0f499b6f3231ba",
+                "shortSha": "c2a7f7a",
+                "message": "Merge pull request #2040 from Tampere/dependabot/submodules/evaka-e1d38a8",
+                "date": "2026-03-10T06:15:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "e1d38a805c8b29b7be9d36d4da0450f4e5c12efc",
+                "shortSha": "e1d38a8",
+                "message": "Merge pull request #8638 from espoon-voltti/fix-missing-holiday-questionnaire-answer",
+                "date": "2026-03-09T14:32:31Z",
+                "author": "ohinkinen"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -134,6 +306,19 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8637,
+              "title": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä",
+              "author": "ilja-git",
+              "mergedAt": "2026-03-10T11:24:16Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8637",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8638,
               "title": "Oulu only: Korjataan poissaolokyselyn kehykset ja sopimuspoissaolojen merkkaaminen",
@@ -185,36 +370,9 @@
               "labels": [
                 "tech"
               ]
-            },
-            {
-              "number": 8633,
-              "title": "Endpoint-kohtainen huoltotila",
-              "author": "Joosakur",
-              "mergedAt": "2026-03-06T09:34:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8633",
-              "labels": [
-                "tech"
-              ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8637,
-              "title": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä",
-              "author": "ilja-git",
-              "mergedAt": "2026-03-10T11:24:16Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8637",
-              "labels": [
-                "tech"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -227,7 +385,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-11T05:53:10.402Z",
+            "checkedAt": "2026-03-11T06:05:07.402Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -252,7 +410,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-11T05:53:11.484Z",
+            "checkedAt": "2026-03-11T06:05:08.198Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "00373d9a8695994857e7e45aacf5c3d4c2e238ea",
@@ -311,7 +469,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-11T05:53:15.329Z",
+            "checkedAt": "2026-03-11T06:05:10.906Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ab5e158a12bb22419a4695fcfa509c04a8e2bc30",
@@ -336,7 +494,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-11T05:53:16.460Z",
+            "checkedAt": "2026-03-11T06:05:11.777Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b0ad729bb9764af8b1def32010acdc626a9e852d",
