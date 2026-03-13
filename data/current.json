@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-13T10:13:04.015Z",
+  "generatedAt": "2026-03-13T10:17:51.433Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T10:12:22.672Z",
+            "checkedAt": "2026-03-13T10:17:24.925Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T10:12:25.011Z",
+            "checkedAt": "2026-03-13T10:17:25.665Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,34 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8546,
-              "title": "Käytetään playwright test runneria e2e-testeissä",
-              "author": "akheron",
-              "mergedAt": "2026-03-12T15:03:50Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8546",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8666,
-              "title": "Tekninen: Vähennetään nginx-lokitusta puuttuvista well-known resursseista",
-              "author": "terolaakso-reaktor",
-              "mergedAt": "2026-03-12T14:42:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8666",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -90,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T10:12:27.183Z",
+            "checkedAt": "2026-03-13T10:17:26.541Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -115,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T10:12:37.679Z",
+            "checkedAt": "2026-03-13T10:17:34.304Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -221,7 +194,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T10:12:49.715Z",
+            "checkedAt": "2026-03-13T10:17:43.381Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -246,7 +219,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T10:12:50.943Z",
+            "checkedAt": "2026-03-13T10:17:44.547Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6a89a92860ab8acc1b7f56a99447afe7362dd2c2",
@@ -354,7 +327,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-13T10:12:56.273Z",
+            "checkedAt": "2026-03-13T10:17:48.959Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
@@ -379,7 +352,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-13T10:12:59.907Z",
+            "checkedAt": "2026-03-13T10:17:49.943Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
@@ -403,63 +376,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "City-of-Turku/evakaturku",
-          "deployed": [
-            {
-              "number": 264,
-              "title": "Käytetään playwright runneria e2e-testeissä",
-              "author": "akheron",
-              "mergedAt": "2026-03-13T08:39:08Z",
-              "repository": "City-of-Turku/evakaturku",
-              "repoType": "wrapper",
-              "isBot": false,
-              "url": "https://github.com/City-of-Turku/evakaturku/pull/264",
-              "labels": []
-            },
-            {
-              "number": 260,
-              "title": "Tekninen: CircleCI Slack-notifikaatiokanavan päivitys",
-              "author": "terolaakso-reaktor",
-              "mergedAt": "2026-03-11T10:08:52Z",
-              "repository": "City-of-Turku/evakaturku",
-              "repoType": "wrapper",
-              "isBot": false,
-              "url": "https://github.com/City-of-Turku/evakaturku/pull/260",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8546,
-              "title": "Käytetään playwright test runneria e2e-testeissä",
-              "author": "akheron",
-              "mergedAt": "2026-03-12T15:03:50Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8546",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8666,
-              "title": "Tekninen: Vähennetään nginx-lokitusta puuttuvista well-known resursseista",
-              "author": "terolaakso-reaktor",
-              "mergedAt": "2026-03-12T14:42:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8666",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
