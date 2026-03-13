@@ -42,6 +42,7 @@ function makePR(number: number, repoType: 'core' | 'wrapper'): PullRequest {
     number,
     title: `PR #${number}`,
     author: 'developer',
+    authorName: null,
     mergedAt: '2026-03-01T12:00:00Z',
     repository: 'owner/repo',
     repoType,

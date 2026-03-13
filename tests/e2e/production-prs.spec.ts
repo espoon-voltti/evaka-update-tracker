@@ -25,10 +25,17 @@ test.describe('City Detail — Viimeisimmät muutokset tuotantoympäristössä',
     expect(count).toBeGreaterThan(0);
     expect(count).toBeLessThanOrEqual(5);
 
-    // PR items have title link and date (author hidden by default)
+    // PR items have title link, author (real name), and date
     const firstPR = prItems.first();
     await expect(firstPR.locator('.pr-title')).toBeVisible();
     await expect(firstPR.locator('.pr-date')).toBeVisible();
+
+    // Author should show real name (resolved from GitHub profile), not GitHub username
+    const authorEl = firstPR.locator('.pr-author');
+    const authorText = await authorEl.textContent();
+    // The real names from mock data don't contain hyphens like GitHub usernames do
+    expect(authorText).toBeTruthy();
+    expect(authorText).not.toContain('terolaakso-reaktor');
   });
 
   test('Tampere shows both Core and Wrapper production sub-headers', async ({ page, baseUrl }) => {

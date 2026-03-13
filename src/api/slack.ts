@@ -41,7 +41,7 @@ function buildChangesSection(event: DeploymentEvent): { type: string; text: { ty
   const humanPRs = event.includedPRs.filter((pr) => !pr.isBot);
 
   const prLines = humanPRs.slice(0, 10).map((pr) =>
-    `\u2022 <${pr.url}|#${pr.number}> ${pr.title} \u2014 _${pr.author}_`
+    `\u2022 <${pr.url}|#${pr.number}> ${pr.title} \u2014 _${pr.authorName ?? pr.author}_`
   );
 
   let changesText: string;
