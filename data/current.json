@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-13T11:11:05.327Z",
+  "generatedAt": "2026-03-13T11:25:37.598Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T11:10:27.427Z",
+            "checkedAt": "2026-03-13T11:24:59.890Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T11:10:28.592Z",
+            "checkedAt": "2026-03-13T11:25:01.069Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T11:10:29.713Z",
+            "checkedAt": "2026-03-13T11:25:02.279Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T11:10:39.533Z",
+            "checkedAt": "2026-03-13T11:25:12.415Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
@@ -105,180 +105,8 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-03-13T11:10:39.533Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-03-13T11:10:40.849Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-03-13T11:10:41.919Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-03-13T11:10:43.041Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-03-13T11:10:44.120Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-03-13T11:10:45.247Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-03-13T11:10:46.348Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-03-13T11:10:47.410Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-03-13T11:10:48.832Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
-                "shortSha": "f0d4ef4",
-                "message": "Merge pull request #2041 from Tampere/dependabot/npm_and_yarn/e2e/jest-38f85558c6",
-                "date": "2026-03-11T05:28:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-                "shortSha": "2d5ce68",
-                "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-                "date": "2026-03-10T11:24:15Z",
-                "author": "ilja-git"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -366,7 +194,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T11:10:55.406Z",
+            "checkedAt": "2026-03-13T11:25:27.279Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -391,7 +219,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T11:10:56.778Z",
+            "checkedAt": "2026-03-13T11:25:28.623Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6a89a92860ab8acc1b7f56a99447afe7362dd2c2",
@@ -499,7 +327,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-13T11:11:01.983Z",
+            "checkedAt": "2026-03-13T11:25:34.490Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
@@ -524,7 +352,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-13T11:11:03.395Z",
+            "checkedAt": "2026-03-13T11:25:35.846Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
