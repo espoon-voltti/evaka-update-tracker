@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-13T08:43:08.296Z",
+  "generatedAt": "2026-03-13T08:58:32.276Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T08:42:40.258Z",
+            "checkedAt": "2026-03-13T08:58:00.455Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T08:42:40.911Z",
+            "checkedAt": "2026-03-13T08:58:01.124Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -90,7 +90,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T08:42:42.943Z",
+            "checkedAt": "2026-03-13T08:58:03.260Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -115,7 +115,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T08:42:50.251Z",
+            "checkedAt": "2026-03-13T08:58:10.638Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -210,7 +210,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T08:42:59.360Z",
+            "checkedAt": "2026-03-13T08:58:20.431Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -235,7 +235,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T08:43:00.236Z",
+            "checkedAt": "2026-03-13T08:58:21.323Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "00373d9a8695994857e7e45aacf5c3d4c2e238ea",
@@ -333,7 +333,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-13T08:43:04.250Z",
+            "checkedAt": "2026-03-13T08:58:25.824Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b0ad729bb9764af8b1def32010acdc626a9e852d",
@@ -358,21 +358,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-13T08:43:05.267Z",
+            "checkedAt": "2026-03-13T08:58:26.880Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "b0ad729bb9764af8b1def32010acdc626a9e852d",
-              "shortSha": "b0ad729",
-              "message": "Merge pull request #259 from City-of-Turku/dependabot/submodules/evaka-2d5ce68",
-              "date": "2026-03-11T02:14:44Z",
-              "author": "github-actions[bot]"
+              "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
+              "shortSha": "6bcba1f",
+              "message": "Merge pull request #264 from City-of-Turku/playwright-runner",
+              "date": "2026-03-13T08:39:08Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
-              "shortSha": "2d5ce68",
-              "message": "Tuki konttien ajamiseen kirjoitussuojatussa-tiedostojärjestessä (#8637)",
-              "date": "2026-03-10T11:24:15Z",
-              "author": "ilja-git"
+              "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
+              "shortSha": "ba4c2f4",
+              "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
+              "date": "2026-03-12T15:03:50Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -383,8 +383,7 @@
         "wrapper": {
           "repository": "City-of-Turku/evakaturku",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 264,
               "title": "Käytetään playwright runneria e2e-testeissä",
@@ -407,13 +406,13 @@
               "url": "https://github.com/City-of-Turku/evakaturku/pull/260",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8546,
               "title": "Käytetään playwright test runneria e2e-testeissä",
@@ -440,7 +439,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }

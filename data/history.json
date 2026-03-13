@@ -1,6 +1,114 @@
 {
   "events": [
     {
+      "id": "2026-03-13T08:58:29.930Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-13T08:58:29.930Z",
+      "previousCommit": {
+        "sha": "b0ad729bb9764af8b1def32010acdc626a9e852d",
+        "shortSha": "b0ad729",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
+        "shortSha": "6bcba1f",
+        "message": "Merge pull request #264 from City-of-Turku/playwright-runner",
+        "date": "2026-03-13T08:39:08Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 264,
+          "title": "Käytetään playwright runneria e2e-testeissä",
+          "author": "akheron",
+          "mergedAt": "2026-03-13T08:39:08Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": false,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/264",
+          "labels": []
+        },
+        {
+          "number": 262,
+          "title": "Bump evaka from `2d5ce68` to `ba4c2f4`",
+          "author": "dependabot[bot]",
+          "mergedAt": "2026-03-13T02:14:26Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/262",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 260,
+          "title": "Tekninen: CircleCI Slack-notifikaatiokanavan päivitys",
+          "author": "terolaakso-reaktor",
+          "mergedAt": "2026-03-11T10:08:52Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": false,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/260",
+          "labels": []
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-13T08:58:29.930Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-13T08:58:29.930Z",
+      "previousCommit": {
+        "sha": "2d5ce68519b8961ee33b58cee1fd049a7fdec225",
+        "shortSha": "2d5ce68",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
+        "shortSha": "ba4c2f4",
+        "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
+        "date": "2026-03-12T15:03:50Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8546,
+          "title": "Käytetään playwright test runneria e2e-testeissä",
+          "author": "akheron",
+          "mergedAt": "2026-03-12T15:03:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8546",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8666,
+          "title": "Tekninen: Vähennetään nginx-lokitusta puuttuvista well-known resursseista",
+          "author": "terolaakso-reaktor",
+          "mergedAt": "2026-03-12T14:42:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8666",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-13T07:13:36.034Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
