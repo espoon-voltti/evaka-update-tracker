@@ -10,6 +10,8 @@ import { deploySite } from './services/site-deployer.js';
 import { sendSlackNotification } from './api/slack.js';
 import { resolveWebhookUrl } from './config/slack-routing.js';
 import { announceChanges } from './services/change-announcer.js';
+import { loadNameCache, saveNameCache, resolveNames } from './services/name-resolver.js';
+import { getUser } from './api/github.js';
 import { readHistory, appendEvents, pruneOldEvents, writeHistory } from './services/history-manager.js';
 import { collectFeatureFlags } from './services/feature-flag-collector.js';
 import { FEATURE_FLAG_CITIES } from './config/feature-flag-cities.js';
@@ -221,6 +223,25 @@ export async function run() {
     generatedAt: new Date().toISOString(),
     cityGroups: cityGroupsData,
   };
+
+  // Resolve author display names from GitHub profiles
+  const nameCachePath = path.join(DATA_DIR, 'user-names.json');
+  const nameCache = loadNameCache(nameCachePath);
+  const allPRs: PullRequest[] = [];
+  for (const cg of cityGroupsData) {
+    for (const track of [cg.prTracks.core, cg.prTracks.wrapper]) {
+      if (track) {
+        allPRs.push(...track.deployed, ...track.inStaging, ...track.pendingDeployment);
+      }
+    }
+  }
+  for (const event of allEvents) {
+    allPRs.push(...event.includedPRs);
+  }
+  await resolveNames(allPRs, nameCache, getUser);
+  if (!DRY_RUN) {
+    saveNameCache(nameCachePath, nameCache);
+  }
 
   // Send Slack notifications for deployment events (grouped by environment)
   if (allEvents.length > 0) {

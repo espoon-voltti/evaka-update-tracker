@@ -72,6 +72,7 @@ export interface PullRequest {
   number: number;
   title: string;
   author: string;
+  authorName: string | null;
   mergedAt: string; // ISO 8601
   repository: string; // e.g., "espoon-voltti/evaka"
   repoType: 'core' | 'wrapper';

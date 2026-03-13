@@ -193,6 +193,15 @@ function setupGitHubMocks() {
   gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_STAGING_SHA}...main`)
     .reply(200, emptyCompareResponse);
 
+  // --- User profile responses (for name resolution) ---
+  gh.get('/users/terolaakso-reaktor').reply(200, { login: 'terolaakso-reaktor', name: 'Tero Laakso' });
+  gh.get('/users/Joosakur').reply(200, { login: 'Joosakur', name: 'Joosa Kurvinen' });
+  gh.get('/users/tomuli').reply(200, { login: 'tomuli', name: 'Tomi Mulari' });
+  gh.get('/users/tampere-dev').reply(200, { login: 'tampere-dev', name: 'Tampere Developer' });
+  gh.get('/users/oulu-dev').reply(200, { login: 'oulu-dev', name: 'Oulu Developer' });
+  gh.get('/users/turku-dev').reply(200, { login: 'turku-dev', name: 'Turku Developer' });
+  gh.get('/users/developer1').reply(200, { login: 'developer1', name: 'Developer One' });
+
   // --- Feature flag file content (return 404 to trigger graceful error handling) ---
   // The actual feature-flags.json is generated as a static fixture above.
   // These mocks prevent the feature flag collector from crashing the pipeline.
@@ -296,6 +305,12 @@ export async function generateTestData(): Promise<string> {
   fs.writeFileSync(
     path.join(TEST_DATA_DIR, 'history.json'),
     JSON.stringify({ events: [] })
+  );
+
+  // Write empty user-names.json (name cache)
+  fs.writeFileSync(
+    path.join(TEST_DATA_DIR, 'user-names.json'),
+    '{}'
   );
 
   // Set environment variables

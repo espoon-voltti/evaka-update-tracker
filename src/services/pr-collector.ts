@@ -38,6 +38,7 @@ async function extractPRsFromCommits(
         number: ghPR.number,
         title: ghPR.title,
         author: ghPR.user.login,
+        authorName: null,
         mergedAt: ghPR.merged_at,
         repository: `${repo.owner}/${repo.name}`,
         repoType: repo.type,

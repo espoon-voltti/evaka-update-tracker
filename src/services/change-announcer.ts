@@ -80,7 +80,7 @@ export function buildChangeAnnouncement(prs: PullRequest[], now?: Date): string 
     .map((pr) => {
       const mergedAt = new Date(pr.mergedAt);
       const ageMs = currentTime.getTime() - mergedAt.getTime();
-      const base = `<${pr.url}|#${pr.number}> ${pr.title} \u2014 ${pr.author}`;
+      const base = `<${pr.url}|#${pr.number}> ${pr.title} \u2014 ${pr.authorName ?? pr.author}`;
       if (ageMs > DELAY_THRESHOLD_MS) {
         return `${base} \u2014 ${formatFinnishTimestamp(mergedAt)}`;
       }

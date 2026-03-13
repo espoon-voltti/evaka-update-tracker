@@ -5,6 +5,7 @@ import {
   getSubmoduleRef,
   compareShas,
   getPullRequest,
+  getUser,
   extractPRNumberFromCommitMessage,
 } from '../../src/api/github.js';
 
@@ -193,6 +194,37 @@ describe('extractPRNumberFromCommitMessage', () => {
     const message = 'Merge pull request #100 from branch (#200)';
     expect(extractPRNumberFromCommitMessage(message)).toBe(100);
   });
+});
+
+describe('getUser', () => {
+  it('returns the name field from a user profile', async () => {
+    const scope = nock(GITHUB_API)
+      .get('/users/akheron')
+      .reply(200, {
+        login: 'akheron',
+        name: 'Petri Lehtinen',
+      });
+
+    const result = await getUser('akheron');
+
+    expect(result).toBe('Petri Lehtinen');
+    scope.done();
+  });
+
+  it('returns null when user has no name set', async () => {
+    const scope = nock(GITHUB_API)
+      .get('/users/noname')
+      .reply(200, {
+        login: 'noname',
+        name: null,
+      });
+
+    const result = await getUser('noname');
+
+    expect(result).toBeNull();
+    scope.done();
+  });
+
 });
 
 describe('ETag caching', () => {

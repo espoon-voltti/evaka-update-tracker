@@ -138,6 +138,18 @@ export async function getFileContent(
   });
 }
 
+interface GitHubUser {
+  login: string;
+  name: string | null;
+}
+
+export async function getUser(username: string): Promise<string | null> {
+  return withRetry(async () => {
+    const data = await ghGet<GitHubUser>(`/users/${username}`);
+    return data.name;
+  });
+}
+
 // Patterns: "Merge pull request #123 from ..." or "Title (#123)"
 const MERGE_PR_PATTERN = /Merge pull request #(\d+) from/;
 const SQUASH_PR_PATTERN = /\(#(\d+)\)$/;

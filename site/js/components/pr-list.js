@@ -49,7 +49,8 @@ export function renderPRList(prs, { showBots = false, showStatus = false, showRe
     const statusBadge = showStatus ? renderDeployBadge(pr._status) : '';
     const date = formatDate(pr.mergedAt);
 
-    const author = pr.author ? `<span class="pr-author">- ${escapeHtml(pr.author)}</span>` : '';
+    const authorDisplay = pr.authorName ?? pr.author;
+    const author = authorDisplay ? `<span class="pr-author">- ${escapeHtml(authorDisplay)}</span>` : '';
 
     return `
       <li class="pr-item${botClass}">

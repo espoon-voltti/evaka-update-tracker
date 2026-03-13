@@ -166,6 +166,7 @@ describe('buildChangeAnnouncement', () => {
       number: 8628,
       title: 'Testidatan refaktorointi - ei käytetä lateinit',
       author: 'Joosakur',
+      authorName: 'Joosa Kurvinen',
       mergedAt: '2026-03-08T10:00:00Z',
       repository: 'espoon-voltti/evaka',
       repoType: 'core',
@@ -177,6 +178,7 @@ describe('buildChangeAnnouncement', () => {
       number: 8629,
       title: 'Fix login redirect',
       author: 'developer2',
+      authorName: null,
       mergedAt: '2026-03-08T11:00:00Z',
       repository: 'espoon-voltti/evaka',
       repoType: 'core',
@@ -191,7 +193,7 @@ describe('buildChangeAnnouncement', () => {
     const now = new Date('2026-03-08T10:05:00Z');
     const text = buildChangeAnnouncement([mockPRs[0]], now);
     expect(text).toBe(
-      '<https://github.com/espoon-voltti/evaka/pull/8628|#8628> Testidatan refaktorointi - ei käytetä lateinit \u2014 Joosakur'
+      '<https://github.com/espoon-voltti/evaka/pull/8628|#8628> Testidatan refaktorointi - ei käytetä lateinit \u2014 Joosa Kurvinen'
     );
   });
 
@@ -201,7 +203,7 @@ describe('buildChangeAnnouncement', () => {
     const text = buildChangeAnnouncement([mockPRs[0]], now);
     // 2026-03-08T10:00:00Z = 12:00 Helsinki time (EET +2), Sunday
     expect(text).toBe(
-      '<https://github.com/espoon-voltti/evaka/pull/8628|#8628> Testidatan refaktorointi - ei käytetä lateinit \u2014 Joosakur \u2014 su 8.3. klo 12.00'
+      '<https://github.com/espoon-voltti/evaka/pull/8628|#8628> Testidatan refaktorointi - ei käytetä lateinit \u2014 Joosa Kurvinen \u2014 su 8.3. klo 12.00'
     );
   });
 
@@ -238,7 +240,7 @@ describe('buildChangeAnnouncement', () => {
   it('uses em dash between title and author', () => {
     const now = new Date('2026-03-08T10:05:00Z');
     const text = buildChangeAnnouncement([mockPRs[0]], now);
-    expect(text).toContain('\u2014 Joosakur');
+    expect(text).toContain('\u2014 Joosa Kurvinen');
   });
 
   it('returns single line for single PR', () => {
