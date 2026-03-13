@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-13T09:01:41.918Z",
+  "generatedAt": "2026-03-13T09:22:32.748Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T09:01:09.465Z",
+            "checkedAt": "2026-03-13T09:21:48.995Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-13T09:01:10.146Z",
+            "checkedAt": "2026-03-13T09:21:50.038Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -90,7 +90,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T09:01:12.241Z",
+            "checkedAt": "2026-03-13T09:21:52.748Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -115,7 +115,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-13T09:01:21.361Z",
+            "checkedAt": "2026-03-13T09:22:04.192Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -221,7 +221,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T09:01:31.464Z",
+            "checkedAt": "2026-03-13T09:22:18.575Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -246,7 +246,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-13T09:01:32.862Z",
+            "checkedAt": "2026-03-13T09:22:19.937Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "00373d9a8695994857e7e45aacf5c3d4c2e238ea",
@@ -273,6 +273,17 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 303,
+              "title": "Käytetään playwright runneria e2e-testeissä",
+              "author": "akheron",
+              "mergedAt": "2026-03-13T09:12:55Z",
+              "repository": "Oulunkaupunki/evakaoulu",
+              "repoType": "wrapper",
+              "isBot": false,
+              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/303",
+              "labels": []
+            },
             {
               "number": 300,
               "title": "Tekninen: CircleCI Slack-notifikaatiokanavan päivitys",
@@ -344,7 +355,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-13T09:01:37.380Z",
+            "checkedAt": "2026-03-13T09:22:25.966Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b0ad729bb9764af8b1def32010acdc626a9e852d",
@@ -369,7 +380,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-13T09:01:38.362Z",
+            "checkedAt": "2026-03-13T09:22:27.392Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
