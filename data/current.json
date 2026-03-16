@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-16T06:08:37.451Z",
+  "generatedAt": "2026-03-16T06:39:56.187Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-16T06:07:37.315Z",
+            "checkedAt": "2026-03-16T06:38:39.681Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-16T06:07:38.255Z",
+            "checkedAt": "2026-03-16T06:38:40.820Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-              "shortSha": "ba4c2f4",
-              "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-              "date": "2026-03-12T15:03:50Z",
-              "author": "akheron"
+              "sha": "eddf13ebc4ed00db9494d9b8a93ea94978a9da66",
+              "shortSha": "eddf13e",
+              "message": "Update dependency typescript-eslint to v8.57.0 (#8688)",
+              "date": "2026-03-16T05:55:27Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-16T06:07:45.857Z",
+            "checkedAt": "2026-03-16T06:38:58.663Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-16T06:07:53.309Z",
+            "checkedAt": "2026-03-16T06:39:08.563Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9efa74eb7c07b1bfc06afcc71280280fb63de1d0",
@@ -105,180 +105,8 @@
               "author": "renovate[bot]"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-03-16T06:07:53.309Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9efa74eb7c07b1bfc06afcc71280280fb63de1d0",
-                "shortSha": "9efa74e",
-                "message": "Merge pull request #2050 from Tampere/dependabot/submodules/evaka-78304ae",
-                "date": "2026-03-16T05:33:39Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "78304aea17b0aa978e84edc180e54aa61fe76cf8",
-                "shortSha": "78304ae",
-                "message": "Update dependency com.networknt:json-schema-validator to v3.0.1 (#8695)",
-                "date": "2026-03-15T21:02:06Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-03-16T06:07:54.103Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-03-16T06:07:55.033Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-03-16T06:07:55.975Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-03-16T06:07:56.961Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-03-16T06:07:57.840Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-03-16T06:07:58.820Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-03-16T06:07:59.804Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-03-16T06:08:00.711Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "39a0a796ef301ef46e34e54c7561caf3e98ff659",
-                "shortSha": "39a0a79",
-                "message": "Merge pull request #2047 from Tampere/dependabot/submodules/evaka-ba4c2f4",
-                "date": "2026-03-13T10:39:53Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ba4c2f4c840f04bf004341d9ee0ab401f459fdcb",
-                "shortSha": "ba4c2f4",
-                "message": "Merge pull request #8546 from espoon-voltti/playwright-runner",
-                "date": "2026-03-12T15:03:50Z",
-                "author": "akheron"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -366,7 +194,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-16T06:08:15.420Z",
+            "checkedAt": "2026-03-16T06:39:29.627Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -391,7 +219,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-16T06:08:16.458Z",
+            "checkedAt": "2026-03-16T06:39:30.791Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "835834cebe4992c5ed99874a7bc1c5c4bbf36a65",
@@ -499,7 +327,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-16T06:08:27.388Z",
+            "checkedAt": "2026-03-16T06:39:44.141Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6bcba1ff858a70ad9830370231b24886b228fce6",
@@ -524,7 +352,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-16T06:08:28.475Z",
+            "checkedAt": "2026-03-16T06:39:45.627Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a9d06e93f398a3251928dd8fee4c68fd3fede848",
