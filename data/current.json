@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-16T10:21:59.842Z",
+  "generatedAt": "2026-03-16T10:33:25.678Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-16T10:20:41.956Z",
+            "checkedAt": "2026-03-16T10:32:23.950Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-16T10:20:43.112Z",
+            "checkedAt": "2026-03-16T10:32:24.800Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -129,7 +129,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-16T10:20:54.675Z",
+            "checkedAt": "2026-03-16T10:32:35.430Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -154,7 +154,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-16T10:21:02.635Z",
+            "checkedAt": "2026-03-16T10:32:42.442Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9efa74eb7c07b1bfc06afcc71280280fb63de1d0",
@@ -338,7 +338,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-16T10:21:24.828Z",
+            "checkedAt": "2026-03-16T10:33:02.009Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -363,7 +363,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-16T10:21:26.014Z",
+            "checkedAt": "2026-03-16T10:33:02.902Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "835834cebe4992c5ed99874a7bc1c5c4bbf36a65",
@@ -412,7 +412,19 @@
               "labels": []
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 299,
+              "title": "Palvelusetelipäätöksen päivitys",
+              "author": "tomuli",
+              "mergedAt": "2026-03-16T10:29:54Z",
+              "repository": "Oulunkaupunki/evakaoulu",
+              "repoType": "wrapper",
+              "isBot": false,
+              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/299",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -537,7 +549,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-16T10:21:41.348Z",
+            "checkedAt": "2026-03-16T10:33:17.404Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a9d06e93f398a3251928dd8fee4c68fd3fede848",
@@ -562,7 +574,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-16T10:21:46.860Z",
+            "checkedAt": "2026-03-16T10:33:18.570Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a9d06e93f398a3251928dd8fee4c68fd3fede848",
