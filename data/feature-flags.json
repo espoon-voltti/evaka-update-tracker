@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-03-17T07:32:14.334Z",
+  "generatedAt": "2026-03-17T07:55:20.547Z",
   "cities": [
     {
       "id": "espoo",
       "name": "Espoo",
       "cityGroupId": "espoo",
-      "error": null
+      "error": "Request failed with status code 404"
     },
     {
       "id": "tampere",
@@ -84,7 +84,7 @@
           "label": "Poissaolohakemukset",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -103,7 +103,7 @@
           "label": "Arkistointi: lapsiasiakirjat",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -179,7 +179,7 @@
           "label": "Aromi-ruokatilausintegraatio",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": null,
             "kangasala": null,
@@ -198,7 +198,7 @@
           "label": "Tukitoimi: muu",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -217,7 +217,7 @@
           "label": "Kuntalaisen läsnäoloyhteenveto",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -236,7 +236,7 @@
           "label": "Kuntalaisen lapsiasiakirjatyypit",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -255,7 +255,7 @@
           "label": "Vuorohoidon poissaolot kuntalaisille",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -274,7 +274,7 @@
           "label": "Päivähoitohakemus: päivittäinen varhaiskasvatusaika",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -293,7 +293,7 @@
           "label": "Päivähoitohakemus: palveluntarpeen valinta",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -312,7 +312,7 @@
           "label": "Päätösasiakirjatyypit",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -331,7 +331,7 @@
           "label": "Sijoitushahmotelma: erilliset yksiköt",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -350,7 +350,7 @@
           "label": "Keskusteluvaraukset",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -388,7 +388,7 @@
           "label": "Laajennettu esiopetuskausi",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -407,7 +407,7 @@
           "label": "Maksupäätökset: esiopetuskerhon suodatus",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -426,7 +426,7 @@
           "label": "Talouspäätöksen käsittelijän valinta",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -445,7 +445,7 @@
           "label": "Asiakirjapohjien julkaisun peruminen",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -483,7 +483,7 @@
           "label": "Ajoittainen vuorohoito",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -495,25 +495,6 @@
             "hameenkyro": true,
             "oulu": false,
             "turku": false
-          }
-        },
-        {
-          "key": "invoiceDisplayAccountNumber",
-          "label": "Tilinumero laskun tiedoissa",
-          "type": "boolean",
-          "values": {
-            "espoo": true,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": null,
-            "turku": null
           }
         },
         {
@@ -540,7 +521,7 @@
           "label": "Puuttuvan kyselyvastauksen merkintä",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -559,7 +540,7 @@
           "label": "Monen lapsen lähtökirjaus",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -597,7 +578,7 @@
           "label": "Ei poissaolotyyppiä mobiilissa",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -616,7 +597,7 @@
           "label": "Sijoituksen työpöytänäkymä",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -635,7 +616,7 @@
           "label": "Varhaiskasvatuspaikkatakuu",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -654,7 +635,7 @@
           "label": "Valmistava opetus",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": true,
@@ -673,7 +654,7 @@
           "label": "Esiopetuksen tuki",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -692,7 +673,7 @@
           "label": "Esiopetushakemus: liittyvän varhaiskasvatuksen aloituspäivä",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -711,7 +692,7 @@
           "label": "Esiopetushakemus: palveluntarpeen valinta",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -749,7 +730,7 @@
           "label": "Palveluntarvemuutokset",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -768,7 +749,7 @@
           "label": "Esiopetuskauden tiedot hakemuksella",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -787,7 +768,7 @@
           "label": "Metatiedot kuntalaiselle",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -825,7 +806,7 @@
           "label": "Kiireellisyyden liitteet",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -844,7 +825,7 @@
           "label": "Palvelusetelimaksatus",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": false,
             "kangasala": false,
@@ -863,7 +844,7 @@
           "label": "Palveluseteliarvojen erittely",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -888,7 +869,7 @@
           "label": "Käytä aina yksikön talouskäsittelijää",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -907,7 +888,7 @@
           "label": "Sijoitusyksikkö päätöksestä",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -926,7 +907,7 @@
           "label": "Varausten lukitusraja (tuntia)",
           "type": "number",
           "values": {
-            "espoo": 150,
+            "espoo": null,
             "tampere": 144,
             "nokia": 159,
             "kangasala": 159,
@@ -945,7 +926,7 @@
           "label": "Sijoitussuunnitelman päättymispäivä",
           "type": "string",
           "values": {
-            "espoo": "07-31",
+            "espoo": null,
             "tampere": "08-15",
             "nokia": "08-15",
             "kangasala": "08-15",
@@ -964,7 +945,7 @@
           "label": "5-vuotiaiden päivähoitosijoitukset",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -983,7 +964,7 @@
           "label": "Vapaan poissaolon päiväkorvaus",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": true,
             "kangasala": true,
@@ -1002,7 +983,7 @@
           "label": "Maksuton heinäkuu syyskuun aloituksella",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -1021,7 +1002,7 @@
           "label": "Lomakyselyn tyyppi",
           "type": "enum",
           "values": {
-            "espoo": "FIXED_PERIOD",
+            "espoo": null,
             "tampere": "FIXED_PERIOD",
             "nokia": "FIXED_PERIOD",
             "kangasala": "FIXED_PERIOD",
@@ -1059,7 +1040,7 @@
           "label": "Laskun vähimmäissumma (senttejä)",
           "type": "number",
           "values": {
-            "espoo": 0,
+            "espoo": null,
             "tampere": 0,
             "nokia": 0,
             "kangasala": 0,
@@ -1078,7 +1059,7 @@
           "label": "Maksatusnumeroinnin aloitus",
           "type": "number",
           "values": {
-            "espoo": 1,
+            "espoo": null,
             "tampere": 1,
             "nokia": null,
             "kangasala": null,
@@ -1097,7 +1078,7 @@
           "label": "Sijoitustyökalun hakemusten tila",
           "type": "enum",
           "values": {
-            "espoo": "SENT",
+            "espoo": null,
             "tampere": "WAITING_DECISION",
             "nokia": "WAITING_DECISION",
             "kangasala": "WAITING_DECISION",
@@ -1116,7 +1097,7 @@
           "label": "Eräpäivä suhteessa toivottuun aloitukseen",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -1135,7 +1116,7 @@
           "label": "Aloituspäivän siirtorajat (päivää)",
           "type": "number",
           "values": {
-            "espoo": 14,
+            "espoo": null,
             "tampere": 14,
             "nokia": 14,
             "kangasala": 14,
@@ -1154,7 +1135,7 @@
           "label": "Ohita esiopetuspäätöksen huoltajan hyväksyntä",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": false,
             "nokia": false,
             "kangasala": false,
@@ -1173,7 +1154,7 @@
           "label": "Tilapäisen osapäiväisen poissaolokorvaus",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": false,
             "nokia": true,
             "kangasala": true,
@@ -1192,7 +1173,7 @@
           "label": "Suunnittelemattomat poissaolot sopimuspäivinä",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -1211,7 +1192,7 @@
           "label": "Sopimuspäivät päivähinta-jakajana",
           "type": "boolean",
           "values": {
-            "espoo": true,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
@@ -1230,7 +1211,7 @@
           "label": "Kapasiteettikerroin arvopäätöksissä",
           "type": "boolean",
           "values": {
-            "espoo": false,
+            "espoo": null,
             "tampere": true,
             "nokia": true,
             "kangasala": true,
