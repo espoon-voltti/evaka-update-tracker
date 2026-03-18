@@ -10,6 +10,7 @@
 ### Session 2026-03-18
 
 - Q: What format should the "Markdown snapshot" of each view be? → A: Markdown files containing text-based DOM content extraction (no images, text-only representation). Each view's rendered content is extracted as structured text and saved as a `.md` file committed to the repo.
+- Q: How much DOM structure should be preserved in the text extraction? → A: Structured text with Markdown formatting (headings, lists, tables) extracted from DOM hierarchy — not plain innerText or raw HTML.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -90,7 +91,7 @@ A developer specifies a custom output directory for the captured snapshots, e.g.
 - **FR-001**: System MUST capture text-based Markdown snapshots of all major dashboard routes: overview (`/`), features (`/features`), city detail (`/city/:id` for each city in test data), and city history (`/city/:id/history` for each city).
 - **FR-002**: System MUST generate test data and start a local server before capturing (reusing existing E2E test fixtures).
 - **FR-003**: System MUST save each snapshot as a Markdown file with a descriptive filename (e.g., `overview.md`, `features.md`, `city-tampere-region.md`, `city-tampere-region-history.md`).
-- **FR-004**: System MUST extract the rendered DOM content of each view as structured, human-readable text (not raw HTML).
+- **FR-004**: System MUST extract the rendered DOM content of each view as structured Markdown — preserving headings, lists, and tables from the DOM hierarchy — not plain innerText or raw HTML.
 - **FR-005**: System MUST support a `--filter` argument to capture only views whose names match the given pattern.
 - **FR-006**: System MUST support an `--output-dir` argument to specify where snapshots are saved, with a sensible default directory that is committed to the repo.
 - **FR-007**: System MUST log progress as it captures each view (view name and output path).
