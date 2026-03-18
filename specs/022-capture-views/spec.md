@@ -13,6 +13,7 @@
 - Q: How much DOM structure should be preserved in the text extraction? → A: Structured text with Markdown formatting (headings, lists, tables) extracted from DOM hierarchy — not plain innerText or raw HTML.
 - Q: Where should committed snapshots live in the repository? → A: `docs/snapshots/` — in a documentation directory.
 - Q: How should Slack message snapshots (environment updates & new feature announcements) be generated? → A: Call the existing Slack formatting functions directly with test data and convert their Block Kit / mrkdwn output to standard Markdown files. No browser rendering or Slack webhook needed.
+- Q: Where should Slack message snapshots be saved relative to dashboard view snapshots? → A: Same `docs/snapshots/` directory with a `slack-` filename prefix (e.g., `slack-deployment-espoo.md`, `slack-change-announcement-core.md`).
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -92,6 +93,7 @@ A developer specifies a custom output directory for the captured snapshots, e.g.
 
 - **FR-001**: System MUST capture text-based Markdown snapshots of all major dashboard routes: overview (`/`), features (`/features`), city detail (`/city/:id` for each city in test data), and city history (`/city/:id/history` for each city).
 - **FR-012**: System MUST capture Markdown snapshots of Slack messages by calling the existing formatting functions directly with test data: deployment notifications (environment update messages using Block Kit) and change announcements (new PR/feature announcements using plain mrkdwn). Block Kit and Slack mrkdwn output MUST be converted to standard Markdown format.
+- **FR-013**: Slack message snapshots MUST be saved in the same `docs/snapshots/` directory as dashboard view snapshots, using a `slack-` filename prefix (e.g., `slack-deployment-espoo.md`, `slack-change-announcement-core.md`).
 - **FR-002**: System MUST generate test data and start a local server before capturing (reusing existing E2E test fixtures).
 - **FR-003**: System MUST save each snapshot as a Markdown file with a descriptive filename (e.g., `overview.md`, `features.md`, `city-tampere-region.md`, `city-tampere-region-history.md`).
 - **FR-004**: System MUST extract the rendered DOM content of each view as structured Markdown — preserving headings, lists, and tables from the DOM hierarchy — not plain innerText or raw HTML.
