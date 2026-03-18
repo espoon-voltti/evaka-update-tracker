@@ -11,6 +11,7 @@
 
 - Q: What format should the "Markdown snapshot" of each view be? → A: Markdown files containing text-based DOM content extraction (no images, text-only representation). Each view's rendered content is extracted as structured text and saved as a `.md` file committed to the repo.
 - Q: How much DOM structure should be preserved in the text extraction? → A: Structured text with Markdown formatting (headings, lists, tables) extracted from DOM hierarchy — not plain innerText or raw HTML.
+- Q: Where should committed snapshots live in the repository? → A: `docs/snapshots/` — in a documentation directory.
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -74,7 +75,7 @@ A developer specifies a custom output directory for the captured snapshots, e.g.
 **Acceptance Scenarios**:
 
 1. **Given** the user passes `--output-dir ./custom-path`, **When** the tool runs, **Then** all snapshots are saved to `./custom-path/`.
-2. **Given** no output directory is specified, **When** the tool runs, **Then** snapshots are saved to the default committed directory.
+2. **Given** no output directory is specified, **When** the tool runs, **Then** snapshots are saved to the default directory (`docs/snapshots/`).
 
 ---
 
@@ -93,7 +94,7 @@ A developer specifies a custom output directory for the captured snapshots, e.g.
 - **FR-003**: System MUST save each snapshot as a Markdown file with a descriptive filename (e.g., `overview.md`, `features.md`, `city-tampere-region.md`, `city-tampere-region-history.md`).
 - **FR-004**: System MUST extract the rendered DOM content of each view as structured Markdown — preserving headings, lists, and tables from the DOM hierarchy — not plain innerText or raw HTML.
 - **FR-005**: System MUST support a `--filter` argument to capture only views whose names match the given pattern.
-- **FR-006**: System MUST support an `--output-dir` argument to specify where snapshots are saved, with a sensible default directory that is committed to the repo.
+- **FR-006**: System MUST support an `--output-dir` argument to specify where snapshots are saved, defaulting to `docs/snapshots/`.
 - **FR-007**: System MUST log progress as it captures each view (view name and output path).
 - **FR-008**: System MUST exit with a non-zero code if any view fails to render, after attempting all remaining views.
 - **FR-009**: System MUST be invocable via `npm run capture-views`.
