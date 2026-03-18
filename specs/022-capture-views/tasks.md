@@ -17,10 +17,10 @@
 
 **Purpose**: Export private Slack formatter, create converter utility, add npm script
 
-- [ ] T001 Export `buildSlackMessage` function from `src/api/slack.ts` (currently private — add `export` keyword)
-- [ ] T002 [P] Create `src/utils/slack-to-markdown.ts` with two exported functions: `blockKitToMarkdown(blocks: Block[]): string` to convert Slack Block Kit JSON to standard Markdown, and `slackMrkdwnToMarkdown(text: string): string` to convert Slack mrkdwn syntax (`<url|text>` → `[text](url)`, `*bold*` → `**bold**`, `_italic_` → `*italic*`) to standard Markdown
-- [ ] T003 [P] Create `tests/unit/slack-to-markdown.test.ts` with unit tests for both converter functions: test Block Kit header/section/context blocks, test mrkdwn link/bold/italic conversion, test em dash preservation, test multi-line PR lists
-- [ ] T004 Add `"capture-views": "npx tsx scripts/capture-views.ts"` to scripts section in `package.json`
+- [x] T001 Export `buildSlackMessage` function from `src/api/slack.ts` (currently private — add `export` keyword)
+- [x] T002 [P] Create `src/utils/slack-to-markdown.ts` with two exported functions: `blockKitToMarkdown(blocks: Block[]): string` to convert Slack Block Kit JSON to standard Markdown, and `slackMrkdwnToMarkdown(text: string): string` to convert Slack mrkdwn syntax (`<url|text>` → `[text](url)`, `*bold*` → `**bold**`, `_italic_` → `*italic*`) to standard Markdown
+- [x] T003 [P] Create `tests/unit/slack-to-markdown.test.ts` with unit tests for both converter functions: test Block Kit header/section/context blocks, test mrkdwn link/bold/italic conversion, test em dash preservation, test multi-line PR lists
+- [x] T004 Add `"capture-views": "npx tsx scripts/capture-views.ts"` to scripts section in `package.json`
 
 **Checkpoint**: Slack formatter exported, converter utility tested, npm script registered
 
@@ -32,8 +32,8 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Create `scripts/capture-views.ts` with: argument parsing (`--filter`, `--output-dir`), main entry point that calls `generateTestData()`, reads `current.json` to discover city IDs, builds the ViewRegistry (fixed routes + per-city routes + Slack message views per data-model.md), and orchestrates capture. Reuse imports from `tests/e2e/helpers/generate-test-data.ts` and `tests/e2e/helpers/server.ts`. Follow the pattern in `scripts/screenshot.ts`.
-- [ ] T006 Create `docs/snapshots/` output directory (empty `.gitkeep` file)
+- [x] T005 Create `scripts/capture-views.ts` with: argument parsing (`--filter`, `--output-dir`), main entry point that calls `generateTestData()`, reads `current.json` to discover city IDs, builds the ViewRegistry (fixed routes + per-city routes + Slack message views per data-model.md), and orchestrates capture. Reuse imports from `tests/e2e/helpers/generate-test-data.ts` and `tests/e2e/helpers/server.ts`. Follow the pattern in `scripts/screenshot.ts`.
+- [x] T006 Create `docs/snapshots/` output directory (empty `.gitkeep` file)
 
 **Checkpoint**: Script runs, builds view registry, but capture functions are stubs
 
@@ -47,10 +47,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T007 [US1] Implement browser view capture in `scripts/capture-views.ts`: for each browser-type ViewDefinition, navigate Playwright to `{baseUrl}/{route}`, wait for `waitFor` selector, then call `page.evaluate()` with a DOM-walking function that converts the rendered DOM to structured Markdown (h1-h6 → `#`-`######`, `<table>` → Markdown table, `<ul>/<li>` → `- item`, `<details>/<summary>` → heading + content, text nodes → text). Log progress for each view.
-- [ ] T008 [US1] Implement Slack deployment snapshot capture in `scripts/capture-views.ts`: for each city in the view registry, construct a representative `DeploymentEvent` with test data (using patterns from `tests/e2e/fixtures/mock-api-responses.ts`), call exported `buildSlackMessage()`, then convert the Block Kit output to Markdown using `blockKitToMarkdown()` from `src/utils/slack-to-markdown.ts`
-- [ ] T009 [US1] Implement Slack change announcement snapshot capture in `scripts/capture-views.ts`: for core and wrapper repo types, construct representative `PullRequest[]` test data, call `buildChangeAnnouncement()` from `src/services/change-announcer.ts`, then convert the mrkdwn output to Markdown using `slackMrkdwnToMarkdown()` from `src/utils/slack-to-markdown.ts`
-- [ ] T010 [US1] Implement file writing in `scripts/capture-views.ts`: write each CaptureResult's markdown content to `{outputDir}/{name}.md`, creating the output directory if it doesn't exist. Handle errors per-view (log warning, continue, exit non-zero at end if any failed). Ensure deterministic output (strip any timestamps from generated-at elements).
+- [x] T007 [US1] Implement browser view capture in `scripts/capture-views.ts`: for each browser-type ViewDefinition, navigate Playwright to `{baseUrl}/{route}`, wait for `waitFor` selector, then call `page.evaluate()` with a DOM-walking function that converts the rendered DOM to structured Markdown (h1-h6 → `#`-`######`, `<table>` → Markdown table, `<ul>/<li>` → `- item`, `<details>/<summary>` → heading + content, text nodes → text). Log progress for each view.
+- [x] T008 [US1] Implement Slack deployment snapshot capture in `scripts/capture-views.ts`: for each city in the view registry, construct a representative `DeploymentEvent` with test data (using patterns from `tests/e2e/fixtures/mock-api-responses.ts`), call exported `buildSlackMessage()`, then convert the Block Kit output to Markdown using `blockKitToMarkdown()` from `src/utils/slack-to-markdown.ts`
+- [x] T009 [US1] Implement Slack change announcement snapshot capture in `scripts/capture-views.ts`: for core and wrapper repo types, construct representative `PullRequest[]` test data, call `buildChangeAnnouncement()` from `src/services/change-announcer.ts`, then convert the mrkdwn output to Markdown using `slackMrkdwnToMarkdown()` from `src/utils/slack-to-markdown.ts`
+- [x] T010 [US1] Implement file writing in `scripts/capture-views.ts`: write each CaptureResult's markdown content to `{outputDir}/{name}.md`, creating the output directory if it doesn't exist. Handle errors per-view (log warning, continue, exit non-zero at end if any failed). Ensure deterministic output (strip any timestamps from generated-at elements).
 
 **Checkpoint**: `npm run capture-views` produces all expected snapshot files with meaningful content
 
@@ -64,7 +64,7 @@
 
 ### Implementation for User Story 2
 
-- [ ] T011 [US2] Implement `--filter` logic in `scripts/capture-views.ts`: filter the ViewRegistry by name substring match against the `--filter` argument value. If no views match, exit with error listing all available view names. The filter applies to both browser views and Slack views (e.g., `--filter slack` matches all Slack snapshots).
+- [x] T011 [US2] Implement `--filter` logic in `scripts/capture-views.ts`: filter the ViewRegistry by name substring match against the `--filter` argument value. If no views match, exit with error listing all available view names. The filter applies to both browser views and Slack views (e.g., `--filter slack` matches all Slack snapshots).
 
 **Checkpoint**: `--filter` works for any view name pattern including partial matches
 
@@ -78,7 +78,7 @@
 
 ### Implementation for User Story 3
 
-- [ ] T012 [US3] Add a `check-snapshots` CI step to `.github/workflows/monitor.yml`: run `npm run capture-views` then `git diff --exit-code docs/snapshots/` with a clear failure message identifying which snapshot files are stale. Place this after the existing test/lint steps.
+- [x] T012 [US3] Add a `check-snapshots` CI step to `.github/workflows/monitor.yml`: run `npm run capture-views` then `git diff --exit-code docs/snapshots/` with a clear failure message identifying which snapshot files are stale. Place this after the existing test/lint steps.
 
 **Checkpoint**: CI fails when committed snapshots don't match regenerated output
 
@@ -92,7 +92,7 @@
 
 ### Implementation for User Story 4
 
-- [ ] T013 [US4] Implement `--output-dir` logic in `scripts/capture-views.ts`: use the provided directory instead of the default `docs/snapshots/`. Create the directory if it doesn't exist. This should already be wired from T005 argument parsing — verify it works end-to-end.
+- [x] T013 [US4] Implement `--output-dir` logic in `scripts/capture-views.ts`: use the provided directory instead of the default `docs/snapshots/`. Create the directory if it doesn't exist. This should already be wired from T005 argument parsing — verify it works end-to-end.
 
 **Checkpoint**: Custom output directory works, default still uses `docs/snapshots/`
 
@@ -102,9 +102,9 @@
 
 **Purpose**: Generate initial committed snapshots, validate everything works
 
-- [ ] T014 Run `npm run capture-views` to generate the initial set of committed snapshots in `docs/snapshots/`
-- [ ] T015 Run `npm test` and `npm run lint` to verify no regressions from the changes (exported function, new utility, new tests)
-- [ ] T016 Verify all snapshot files are present and contain meaningful structured Markdown content (not empty or plain text)
+- [x] T014 Run `npm run capture-views` to generate the initial set of committed snapshots in `docs/snapshots/`
+- [x] T015 Run `npm test` and `npm run lint` to verify no regressions from the changes (exported function, new utility, new tests)
+- [x] T016 Verify all snapshot files are present and contain meaningful structured Markdown content (not empty or plain text)
 
 ---
 

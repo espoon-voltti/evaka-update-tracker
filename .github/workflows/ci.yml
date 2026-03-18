@@ -37,3 +37,12 @@ jobs:
 
       - name: E2E tests
         run: npm run test:e2e
+
+      - name: Check view snapshots are up-to-date
+        run: |
+          npm run capture-views
+          if ! git diff --exit-code docs/snapshots/; then
+            echo ""
+            echo "::error::View snapshots are stale! Run 'npm run capture-views' locally and commit the updated snapshots."
+            exit 1
+          fi
