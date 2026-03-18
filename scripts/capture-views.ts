@@ -344,7 +344,25 @@ async function main() {
   const config = parseArgs(process.argv.slice(2));
 
   console.log('[Capture] Generating test data...');
+  // Freeze Date to a fixed point so snapshots are deterministic
+  const FIXED_DATE = new Date('2026-03-03T10:00:00Z');
+  const RealDate = globalThis.Date;
+  globalThis.Date = class extends RealDate {
+    constructor(...args: any[]) {
+      if (args.length === 0) {
+        super(FIXED_DATE.getTime());
+      } else {
+        // @ts-ignore
+        super(...args);
+      }
+    }
+    static now() { return FIXED_DATE.getTime(); }
+  } as any;
+
   const testDataDir = await generateTestData();
+
+  // Restore real Date
+  globalThis.Date = RealDate;
 
   // Read current.json to discover cities
   const currentPath = path.join(testDataDir, 'current.json');
