@@ -31,5 +31,7 @@
 
 ## Notes
 
-- All items pass validation. Spec is ready for `/speckit.clarify` or `/speckit.plan`.
-- The spec references existing infrastructure concepts (test data, local server) at a requirements level without specifying implementation technology.
+- All items pass validation after clarification session (3 questions answered).
+- Clarified: text-based Markdown snapshots (not PNG), structured extraction with Markdown formatting, stored in `docs/snapshots/`.
+- CI freshness check and committed snapshots added as requirements.
+- Spec is ready for `/speckit.plan`.
