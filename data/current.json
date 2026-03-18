@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T10:00:49.716Z",
+  "generatedAt": "2026-03-18T10:28:23.342Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-18T09:59:16.393Z",
+            "checkedAt": "2026-03-18T10:27:09.371Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "184622c06f65a2285bf9204bf404b3f085a92e88",
-              "shortSha": "184622c",
-              "message": "Merge pull request #8697 from espoon-voltti/espoo-voucher-decision-texts-2026",
-              "date": "2026-03-16T16:32:18Z",
-              "author": "Joosakur"
+              "sha": "f58d417c3f67081bdf224d57184d922fe7505b65",
+              "shortSha": "f58d417",
+              "message": "Merge pull request #8704 from espoon-voltti/compose-postgres-path",
+              "date": "2026-03-18T07:18:09Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-18T09:59:17.547Z",
+            "checkedAt": "2026-03-18T10:27:12.731Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8708,
               "title": "Yksinkertaistetaan PDF-konfiguraatiota",
@@ -111,6 +110,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8700,
@@ -155,7 +155,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-18T09:59:22.763Z",
+            "checkedAt": "2026-03-18T10:27:17.179Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -180,7 +180,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-18T09:59:34.765Z",
+            "checkedAt": "2026-03-18T10:27:26.259Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -398,7 +398,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-18T10:00:13.288Z",
+            "checkedAt": "2026-03-18T10:27:54.686Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -423,7 +423,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-18T10:00:14.987Z",
+            "checkedAt": "2026-03-18T10:27:55.685Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9ea4eed02246a5be0c87ee4093fb56aff4cda19e",
@@ -628,7 +628,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-18T10:00:41.676Z",
+            "checkedAt": "2026-03-18T10:28:16.842Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c2bf27c85059c56d6f367fbbf753dbf11b915345",
@@ -653,7 +653,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-18T10:00:43.132Z",
+            "checkedAt": "2026-03-18T10:28:18.077Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f49e173e47f6f43137600ba2e80a41dbb257e303",
