@@ -1,6 +1,150 @@
 {
   "events": [
     {
+      "id": "2026-03-18T08:08:29.175Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-18T08:08:29.175Z",
+      "previousCommit": {
+        "sha": "0a7f72ca7c5ad84b73d54df8a4a28e7c1474d5c9",
+        "shortSha": "0a7f72c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+        "shortSha": "30d908b",
+        "message": "Merge pull request #2054 from Tampere/update-core",
+        "date": "2026-03-18T07:34:33Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2054,
+          "title": "Update evaka submodule to 7898bfd",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-18T07:34:34Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2054",
+          "labels": []
+        },
+        {
+          "number": 2053,
+          "title": "Bump evaka from `184622c` to `dc0fe75`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-18T05:23:20Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2053",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-18T08:08:29.175Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-18T08:08:29.175Z",
+      "previousCommit": {
+        "sha": "184622c06f65a2285bf9204bf404b3f085a92e88",
+        "shortSha": "184622c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+        "shortSha": "7898bfd",
+        "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+        "date": "2026-03-18T07:11:11Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8708,
+          "title": "Yksinkertaistetaan PDF-konfiguraatiota",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-18T07:11:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8708",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8663,
+          "title": "Järjestellään suljettujen ryhmien viestilaatikot alimmas",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-18T07:10:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8663",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8707,
+          "title": "Update dependency fast-xml-parser to v5.5.6 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-18T01:51:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8707",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8699,
+          "title": "Päivitys e2e-dokumenttiin",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-03-17T13:30:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8699",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8600,
+          "title": "Ytimen monen kunnan tuki",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-17T07:54:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8600",
+          "labels": [
+            "enhancement"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-18T07:53:50.200Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",

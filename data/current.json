@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-18T07:54:59.069Z",
+  "generatedAt": "2026-03-18T08:09:08.167Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-18T07:53:46.351Z",
+            "checkedAt": "2026-03-18T08:08:08.242Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-18T07:53:47.282Z",
+            "checkedAt": "2026-03-18T08:08:08.917Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -149,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-18T07:53:53.001Z",
+            "checkedAt": "2026-03-18T08:08:12.178Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f0d4ef461bbfee4610928aa5d8ba98f8dfb1f454",
@@ -174,21 +174,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-18T07:54:02.939Z",
+            "checkedAt": "2026-03-18T08:08:19.261Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "0a7f72ca7c5ad84b73d54df8a4a28e7c1474d5c9",
-              "shortSha": "0a7f72c",
-              "message": "Merge pull request #2052 from Tampere/dependabot/submodules/evaka-184622c",
-              "date": "2026-03-17T04:59:21Z",
-              "author": "ohinkinen"
+              "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+              "shortSha": "30d908b",
+              "message": "Merge pull request #2054 from Tampere/update-core",
+              "date": "2026-03-18T07:34:33Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "184622c06f65a2285bf9204bf404b3f085a92e88",
-              "shortSha": "184622c",
-              "message": "Merge pull request #8697 from espoon-voltti/espoo-voucher-decision-texts-2026",
-              "date": "2026-03-16T16:32:18Z",
-              "author": "Joosakur"
+              "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+              "shortSha": "7898bfd",
+              "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+              "date": "2026-03-18T07:11:11Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -200,6 +200,18 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 2054,
+              "title": "Update evaka submodule to 7898bfd",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-03-18T07:34:34Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2054",
+              "labels": []
+            },
             {
               "number": 2051,
               "title": "Ramp up Kangasala archival daily limit to 1000",
@@ -249,125 +261,12 @@
               "labels": []
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 2054,
-              "title": "Update evaka submodule to 7898bfd",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-18T07:34:34Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2054",
-              "labels": []
-            }
-          ]
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 8697,
-              "title": "Espoo: arvopäätösten uudet tekstit",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-16T16:32:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8697",
-              "labels": [
-                "no-changelog"
-              ]
-            },
-            {
-              "number": 8698,
-              "title": "Selkeytys sijoituslähteen tekstiin",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-16T09:52:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8698",
-              "labels": [
-                "no-changelog"
-              ]
-            },
-            {
-              "number": 8665,
-              "title": "Colima-virtuaalikonepohjainen sandbox",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-16T08:11:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8665",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8668,
-              "title": "Tekstimuutos espoon vaka-hakemukselle",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-16T07:01:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8668",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8667,
-              "title": "Espoon esiopetuspäätöksen pykälämuutokset",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-16T07:00:56Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8667",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ],
-          "pendingDeployment": [
-            {
-              "number": 8703,
-              "title": "Karttahaku toimii myös hakemalla muun kuin ensimmäisen sanan alusta",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-18T07:50:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8703",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8704,
-              "title": "Päivitetään postgres-volumen polku",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-18T07:18:09Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8704",
-              "labels": [
-                "no-changelog"
-              ]
-            },
             {
               "number": 8708,
               "title": "Yksinkertaistetaan PDF-konfiguraatiota",
@@ -409,6 +308,64 @@
               "labels": [
                 "tech"
               ]
+            },
+            {
+              "number": 8600,
+              "title": "Ytimen monen kunnan tuki",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-03-17T07:54:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8600",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
+              "number": 8697,
+              "title": "Espoo: arvopäätösten uudet tekstit",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-03-16T16:32:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8697",
+              "labels": [
+                "no-changelog"
+              ]
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 8703,
+              "title": "Karttahaku toimii myös hakemalla muun kuin ensimmäisen sanan alusta",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-03-18T07:50:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8703",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
+              "number": 8704,
+              "title": "Päivitetään postgres-volumen polku",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-03-18T07:18:09Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8704",
+              "labels": [
+                "no-changelog"
+              ]
             }
           ]
         }
@@ -423,7 +380,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-18T07:54:31.998Z",
+            "checkedAt": "2026-03-18T08:08:45.077Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a14b8a16702f65d22ec42bde50ded84d8b665633",
@@ -448,7 +405,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-18T07:54:33.280Z",
+            "checkedAt": "2026-03-18T08:08:45.926Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9ea4eed02246a5be0c87ee4093fb56aff4cda19e",
@@ -642,7 +599,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-18T07:54:53.038Z",
+            "checkedAt": "2026-03-18T08:09:03.313Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c2bf27c85059c56d6f367fbbf753dbf11b915345",
@@ -667,7 +624,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-18T07:54:54.302Z",
+            "checkedAt": "2026-03-18T08:09:04.129Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f49e173e47f6f43137600ba2e80a41dbb257e303",
