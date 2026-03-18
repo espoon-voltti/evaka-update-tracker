@@ -39,7 +39,7 @@ function buildVersionField(events: DeploymentEvent[]): string {
 
 function buildChangesSection(event: DeploymentEvent): { type: string; text: { type: string; text: string } } {
   const repoTypeDisplay = getRepoTypeDisplay(event.repoType);
-  const humanPRs = event.includedPRs.filter((pr) => !pr.isBot);
+  const humanPRs = event.includedPRs.filter((pr) => !pr.isHidden);
 
   const prLines = humanPRs.slice(0, 10).map((pr) => {
     const tags = formatLabelTags(pr.labels);

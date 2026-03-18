@@ -47,6 +47,7 @@ function makePR(number: number, repoType: 'core' | 'wrapper'): PullRequest {
     repository: 'owner/repo',
     repoType,
     isBot: false,
+    isHidden: false,
     url: `https://github.com/owner/repo/pull/${number}`,
     labels: [],
   };

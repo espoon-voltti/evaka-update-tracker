@@ -137,6 +137,7 @@ describe('formatPRLine', () => {
     repository: 'espoon-voltti/evaka',
     repoType: 'core',
     isBot: false,
+    isHidden: false,
     url: 'https://github.com/espoon-voltti/evaka/pull/8628',
     labels: [],
   };

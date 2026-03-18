@@ -21,6 +21,7 @@ function makePR(author: string, isBot: boolean = false): PullRequest {
     repository: 'espoon-voltti/evaka',
     repoType: 'core',
     isBot,
+    isHidden: isBot,
     url: `https://github.com/espoon-voltti/evaka/pull/1`,
     labels: [],
   };

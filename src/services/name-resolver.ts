@@ -30,7 +30,7 @@ export async function resolveNames(
   getUser: (username: string) => Promise<string | null>
 ): Promise<void> {
   for (const pr of prs) {
-    if (pr.isBot) {
+    if (pr.isHidden) {
       continue;
     }
 

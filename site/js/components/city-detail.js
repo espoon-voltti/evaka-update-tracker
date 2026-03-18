@@ -12,7 +12,7 @@ import { navigate, getQueryParam, setQueryParam } from '../router.js';
  */
 function mergeAndSortPRs(corePRs, wrapperPRs, { showBots = false } = {}) {
   const merged = [...corePRs, ...wrapperPRs];
-  const filtered = showBots ? merged : merged.filter((pr) => !pr.isBot);
+  const filtered = showBots ? merged : merged.filter((pr) => !pr.isHidden);
   return filtered.sort((a, b) => new Date(b.mergedAt) - new Date(a.mergedAt));
 }
 
@@ -72,11 +72,11 @@ function findLatestNonBotPRFromEvents(historyEvents, city, envType) {
     .sort((a, b) => new Date(b.detectedAt) - new Date(a.detectedAt));
   // Prefer core PRs
   for (const event of events) {
-    const corePR = (event.includedPRs || []).find((pr) => !pr.isBot && pr.repoType === 'core');
+    const corePR = (event.includedPRs || []).find((pr) => !pr.isHidden && pr.repoType === 'core');
     if (corePR) return corePR.title;
   }
   for (const event of events) {
-    const anyPR = (event.includedPRs || []).find((pr) => !pr.isBot);
+    const anyPR = (event.includedPRs || []).find((pr) => !pr.isHidden);
     if (anyPR) return anyPR.title;
   }
   return null;
@@ -85,13 +85,13 @@ function findLatestNonBotPRFromEvents(historyEvents, city, envType) {
 function findLatestPRTitle(city, envType, historyEvents) {
   if (envType === 'production') {
     const { core, wrapper } = getRecentProductionPRs(historyEvents, city);
-    const firstCore = core.find((pr) => !pr.isBot);
-    const firstWrapper = wrapper.find((pr) => !pr.isBot);
+    const firstCore = core.find((pr) => !pr.isHidden);
+    const firstWrapper = wrapper.find((pr) => !pr.isHidden);
     return (firstCore || firstWrapper)?.title || null;
   }
   // Staging: try inStaging track data first, fall back to history events
-  const coreInStaging = (city.prTracks?.core?.inStaging || []).find((pr) => !pr.isBot);
-  const wrapperInStaging = (city.prTracks?.wrapper?.inStaging || []).find((pr) => !pr.isBot);
+  const coreInStaging = (city.prTracks?.core?.inStaging || []).find((pr) => !pr.isHidden);
+  const wrapperInStaging = (city.prTracks?.wrapper?.inStaging || []).find((pr) => !pr.isHidden);
   return (coreInStaging || wrapperInStaging)?.title
     || findLatestNonBotPRFromEvents(historyEvents, city, 'staging');
 }

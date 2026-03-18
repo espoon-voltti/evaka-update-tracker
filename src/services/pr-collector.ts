@@ -34,6 +34,8 @@ async function extractPRsFromCommits(
       const ghPR = await getPullRequest(repo.owner, repo.name, prNumber);
       if (!ghPR.merged_at) continue;
 
+      const isBot = isBotPR(ghPR.user.login, ghPR.title);
+      const labels = (ghPR.labels || []).map((l) => l.name);
       prs.push({
         number: ghPR.number,
         title: ghPR.title,
@@ -42,9 +44,10 @@ async function extractPRsFromCommits(
         mergedAt: ghPR.merged_at,
         repository: `${repo.owner}/${repo.name}`,
         repoType: repo.type,
-        isBot: isBotPR(ghPR.user.login, ghPR.title),
+        isBot,
+        isHidden: isBot || labels.includes('no-changelog'),
         url: ghPR.html_url,
-        labels: (ghPR.labels || []).map((l) => l.name),
+        labels,
       });
     } catch {
       // Skip PRs that can't be fetched
@@ -87,7 +90,7 @@ export async function collectPendingPRs(
 }
 
 export function filterHumanPRs(prs: PullRequest[], limit: number = MAX_PRS_PER_TRACK): PullRequest[] {
-  return prs.filter((pr) => !pr.isBot).slice(0, limit);
+  return prs.filter((pr) => !pr.isHidden).slice(0, limit);
 }
 
 export function buildPRTrack(

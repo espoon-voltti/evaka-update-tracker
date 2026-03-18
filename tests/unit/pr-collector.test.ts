@@ -116,6 +116,7 @@ describe('pr-collector', () => {
         repository: 'Tampere/trevaka',
         repoType: 'wrapper',
         isBot,
+        isHidden: isBot,
         url: `https://github.com/Tampere/trevaka/pull/${number}`,
         labels: [],
       };
@@ -132,7 +133,7 @@ describe('pr-collector', () => {
       const result = filterHumanPRs(prs);
 
       expect(result).toHaveLength(2);
-      expect(result.every((pr) => !pr.isBot)).toBe(true);
+      expect(result.every((pr) => !pr.isHidden)).toBe(true);
       expect(result[0].number).toBe(1);
       expect(result[1].number).toBe(3);
     });
@@ -192,6 +193,7 @@ describe('pr-collector', () => {
         repository: 'Tampere/trevaka',
         repoType: 'wrapper',
         isBot,
+        isHidden: isBot,
         url: `https://github.com/Tampere/trevaka/pull/${number}`,
         labels: [],
       };
@@ -205,7 +207,7 @@ describe('pr-collector', () => {
       const result = buildPRTrack(deployed, inStaging, pending);
 
       expect(result.deployed).toHaveLength(2);
-      expect(result.deployed.every((pr) => !pr.isBot)).toBe(true);
+      expect(result.deployed.every((pr) => !pr.isHidden)).toBe(true);
       expect(result.inStaging).toHaveLength(1);
       expect(result.pendingDeployment).toHaveLength(1);
       expect(result.pendingDeployment[0].number).toBe(6);

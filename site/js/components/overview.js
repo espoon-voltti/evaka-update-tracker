@@ -39,12 +39,12 @@ function findEnvInfo(city, env, historyEvents) {
     // PR title: prefer core PRs
     let title = null;
     for (const event of prodEvents) {
-      const corePR = (event.includedPRs || []).find((pr) => !pr.isBot && pr.repoType === 'core');
+      const corePR = (event.includedPRs || []).find((pr) => !pr.isHidden && pr.repoType === 'core');
       if (corePR) { title = corePR.title; break; }
     }
     if (!title) {
       for (const event of prodEvents) {
-        const anyPR = (event.includedPRs || []).find((pr) => !pr.isBot);
+        const anyPR = (event.includedPRs || []).find((pr) => !pr.isHidden);
         if (anyPR) { title = anyPR.title; break; }
       }
     }
@@ -59,8 +59,8 @@ function findEnvInfo(city, env, historyEvents) {
     ? historyEvents.find((e) => e.cityGroupId === city.id && stagingEnvIds.includes(e.environmentId) && e.newCommit?.sha === commitSha)
     : null;
 
-  const coreInStaging = (city.prTracks?.core?.inStaging || []).find((pr) => !pr.isBot);
-  const wrapperInStaging = (city.prTracks?.wrapper?.inStaging || []).find((pr) => !pr.isBot);
+  const coreInStaging = (city.prTracks?.core?.inStaging || []).find((pr) => !pr.isHidden);
+  const wrapperInStaging = (city.prTracks?.wrapper?.inStaging || []).find((pr) => !pr.isHidden);
   let stagingTitle = (coreInStaging || wrapperInStaging)?.title || null;
 
   // Fall back to history events when inStaging is empty
@@ -69,12 +69,12 @@ function findEnvInfo(city, env, historyEvents) {
       .filter((e) => e.cityGroupId === city.id && stagingEnvIds.includes(e.environmentId))
       .sort((a, b) => new Date(b.detectedAt) - new Date(a.detectedAt));
     for (const event of stagingEvents) {
-      const corePR = (event.includedPRs || []).find((pr) => !pr.isBot && pr.repoType === 'core');
+      const corePR = (event.includedPRs || []).find((pr) => !pr.isHidden && pr.repoType === 'core');
       if (corePR) { stagingTitle = corePR.title; break; }
     }
     if (!stagingTitle) {
       for (const event of stagingEvents) {
-        const anyPR = (event.includedPRs || []).find((pr) => !pr.isBot);
+        const anyPR = (event.includedPRs || []).find((pr) => !pr.isHidden);
         if (anyPR) { stagingTitle = anyPR.title; break; }
       }
     }
@@ -87,7 +87,7 @@ function findEnvInfo(city, env, historyEvents) {
 }
 
 function countNonBot(arr) {
-  return (arr || []).filter((pr) => !pr.isBot).length;
+  return (arr || []).filter((pr) => !pr.isHidden).length;
 }
 
 function computeChangeCounts(prTracks) {

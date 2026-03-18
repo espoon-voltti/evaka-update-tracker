@@ -77,6 +77,7 @@ export interface PullRequest {
   repository: string; // e.g., "espoon-voltti/evaka"
   repoType: 'core' | 'wrapper';
   isBot: boolean;
+  isHidden: boolean;
   url: string;
   labels: string[];
 }

@@ -1,6 +1,6 @@
 /**
  * Render a list of PullRequest objects.
- * Filters out bot PRs by default (showBots=false).
+ * Filters out hidden PRs (bots, no-changelog) by default (showBots=false).
  */
 
 const LABEL_MAP = {
@@ -31,7 +31,7 @@ export function renderPRList(prs, { showBots = false, showStatus = false, showRe
     return '<div class="empty-state">Ei viimeaikaisia PR:iä</div>';
   }
 
-  let filtered = showBots ? prs : prs.filter((pr) => !pr.isBot);
+  let filtered = showBots ? prs : prs.filter((pr) => !pr.isHidden);
   if (filtered.length === 0) {
     return '<div class="empty-state">Ei viimeaikaisia manuaalisia PR:iä</div>';
   }

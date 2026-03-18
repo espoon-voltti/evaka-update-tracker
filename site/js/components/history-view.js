@@ -34,7 +34,7 @@ function groupIntoReleases(events) {
  */
 function releaseHasNonBotPRs(release) {
   return release.events.some((e) =>
-    (e.includedPRs || []).some((pr) => !pr.isBot)
+    (e.includedPRs || []).some((pr) => !pr.isHidden)
   );
 }
 
