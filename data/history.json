@@ -1,6 +1,59 @@
 {
   "events": [
     {
+      "id": "2026-03-19T06:32:44.984Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-03-19T06:32:44.984Z",
+      "previousCommit": {
+        "sha": "f58d417c3f67081bdf224d57184d922fe7505b65",
+        "shortSha": "f58d417",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "843892fb329c0002027cdd197c283a286620227b",
+        "shortSha": "843892f",
+        "message": "Merge pull request #8700 from espoon-voltti/restrict-admin-to-ad-users",
+        "date": "2026-03-18T08:33:22Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 8700,
+          "title": "Vain AD-kirjautunut käyttäjä voidaan asettaa pääkäyttäjäksi",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-03-18T08:33:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8700",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8703,
+          "title": "Karttahaku toimii myös hakemalla muun kuin ensimmäisen sanan alusta",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-03-18T07:50:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8703",
+          "labels": [
+            "enhancement"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-19T06:05:37.670Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
