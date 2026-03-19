@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-19T10:12:02.161Z",
+  "generatedAt": "2026-03-19T10:23:37.637Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-19T10:10:48.462Z",
+            "checkedAt": "2026-03-19T10:23:10.300Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-19T10:10:50.311Z",
+            "checkedAt": "2026-03-19T10:23:11.194Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,38 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8700,
-              "title": "Vain AD-kirjautunut käyttäjä voidaan asettaa pääkäyttäjäksi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-18T08:33:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8700",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8703,
-              "title": "Karttahaku toimii myös hakemalla muun kuin ensimmäisen sanan alusta",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-18T07:50:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8703",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -125,7 +94,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-19T10:10:53.026Z",
+            "checkedAt": "2026-03-19T10:23:12.967Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -150,7 +119,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-19T10:11:01.498Z",
+            "checkedAt": "2026-03-19T10:23:20.146Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "dfbdf66ded9056c8d41511c7d90475bda8627c9e",
@@ -257,7 +226,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-19T10:11:13.664Z",
+            "checkedAt": "2026-03-19T10:23:30.187Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e1cfb58e81b73bdd1c0c8442f239ac808f47c88",
@@ -282,7 +251,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-19T10:11:35.264Z",
+            "checkedAt": "2026-03-19T10:23:31.055Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e1cfb58e81b73bdd1c0c8442f239ac808f47c88",
@@ -306,155 +275,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "Oulunkaupunki/evakaoulu",
-          "deployed": [
-            {
-              "number": 310,
-              "title": "Päivitetään palvelusetelipäätöstä",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-19T07:20:24Z",
-              "repository": "Oulunkaupunki/evakaoulu",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/310",
-              "labels": []
-            },
-            {
-              "number": 308,
-              "title": "Perutaan palvelusetelipäätöksen päivitys",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-17T10:13:28Z",
-              "repository": "Oulunkaupunki/evakaoulu",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/308",
-              "labels": []
-            },
-            {
-              "number": 299,
-              "title": "Palvelusetelipäätöksen päivitys",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-16T10:29:54Z",
-              "repository": "Oulunkaupunki/evakaoulu",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/299",
-              "labels": []
-            },
-            {
-              "number": 303,
-              "title": "Käytetään playwright runneria e2e-testeissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-13T09:12:55Z",
-              "repository": "Oulunkaupunki/evakaoulu",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/303",
-              "labels": []
-            },
-            {
-              "number": 300,
-              "title": "Tekninen: CircleCI Slack-notifikaatiokanavan päivitys",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-03-11T10:18:58Z",
-              "repository": "Oulunkaupunki/evakaoulu",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/300",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8700,
-              "title": "Vain AD-kirjautunut käyttäjä voidaan asettaa pääkäyttäjäksi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-18T08:33:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8700",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8703,
-              "title": "Karttahaku toimii myös hakemalla muun kuin ensimmäisen sanan alusta",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-18T07:50:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8703",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8708,
-              "title": "Yksinkertaistetaan PDF-konfiguraatiota",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-18T07:11:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8708",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8663,
-              "title": "Järjestellään suljettujen ryhmien viestilaatikot alimmas",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-18T07:10:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8663",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8699,
-              "title": "Päivitys e2e-dokumenttiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-03-17T13:30:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8699",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -500,7 +327,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-19T10:11:56.395Z",
+            "checkedAt": "2026-03-19T10:23:32.843Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f49e173e47f6f43137600ba2e80a41dbb257e303",
@@ -525,7 +352,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-19T10:11:57.675Z",
+            "checkedAt": "2026-03-19T10:23:33.742Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8ce66458a3f380c5303760751892a13a23a6859c",
