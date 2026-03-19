@@ -63,7 +63,7 @@ function buildChangesSection(event: DeploymentEvent): { type: string; text: { ty
   };
 }
 
-function buildSlackMessage(events: DeploymentEvent[], dashboardBaseUrl: string) {
+export function buildSlackMessage(events: DeploymentEvent[], dashboardBaseUrl: string) {
   const firstEvent = events[0];
   const isProduction = firstEvent.environmentId.includes('prod');
   const emoji = isProduction ? '\ud83d\ude80' : '\ud83e\uddea';
