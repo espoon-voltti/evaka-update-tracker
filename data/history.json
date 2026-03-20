@@ -1,6 +1,108 @@
 {
   "events": [
     {
+      "id": "2026-03-20T10:35:01.929Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-20T10:35:01.929Z",
+      "previousCommit": {
+        "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
+        "shortSha": "d170c34",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "56928f817f58df42b76978f5c3fc727aad2a4954",
+        "shortSha": "56928f8",
+        "message": "Merge pull request #271 from City-of-Turku/build-from-core",
+        "date": "2026-03-20T10:16:37Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 271,
+          "title": "Poistetaan kustomoinnit, buildataan imaget suoraan ytimen koodista",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-20T10:16:37Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/271",
+          "labels": []
+        },
+        {
+          "number": 269,
+          "title": "Päivitetään postgres-volumen polku",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-03-20T08:42:24Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/269",
+          "labels": []
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-20T10:35:01.929Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-20T10:35:01.929Z",
+      "previousCommit": {
+        "sha": "56a8cb2bb1edf44160158e06a3627bf579fea952",
+        "shortSha": "56a8cb2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "428159b640a506df768b0494a9e3207cd63f5e3e",
+        "shortSha": "428159b",
+        "message": "Merge pull request #8712 from espoon-voltti/turku",
+        "date": "2026-03-20T10:00:49Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8712,
+          "title": "Siirretään Turku-koodi ytimeen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-20T10:00:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8712",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8715,
+          "title": "Lisätään kuntalaiselle ohjeteksti vastaamisesta talouden viestiketjuihin",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-20T08:09:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8715",
+          "labels": [
+            "enhancement"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-20T10:12:53.348Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
@@ -25264,70 +25366,6 @@
           ]
         }
       ],
-      "repoType": "core"
-    },
-    {
-      "id": "2026-02-18T10:29:06.065Z_turku-prod_wrapper",
-      "environmentId": "turku-prod",
-      "cityGroupId": "turku",
-      "detectedAt": "2026-02-18T10:29:06.065Z",
-      "previousCommit": null,
-      "newCommit": {
-        "sha": "13b33680cda0da2d9105eb6ee67a038f8b320669",
-        "shortSha": "13b3368",
-        "message": "Merge pull request #236 from City-of-Turku/dependabot/submodules/evaka-edb089c",
-        "date": "2026-02-18T02:14:24Z",
-        "author": "github-actions[bot]"
-      },
-      "includedPRs": [],
-      "repoType": "wrapper"
-    },
-    {
-      "id": "2026-02-18T10:29:06.065Z_turku-prod_core",
-      "environmentId": "turku-prod",
-      "cityGroupId": "turku",
-      "detectedAt": "2026-02-18T10:29:06.065Z",
-      "previousCommit": null,
-      "newCommit": {
-        "sha": "edb089cdd0cd121dc88589bdb386fe7be1379ac1",
-        "shortSha": "edb089c",
-        "message": "Merge pull request #8540 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/qs-6.14.2",
-        "date": "2026-02-17T05:51:16Z",
-        "author": "akheron"
-      },
-      "includedPRs": [],
-      "repoType": "core"
-    },
-    {
-      "id": "2026-02-18T10:26:53.504Z_oulu-prod_wrapper",
-      "environmentId": "oulu-prod",
-      "cityGroupId": "oulu",
-      "detectedAt": "2026-02-18T10:26:53.504Z",
-      "previousCommit": null,
-      "newCommit": {
-        "sha": "165ac9e94f7578afa9e100892b299277251f1319",
-        "shortSha": "165ac9e",
-        "message": "Merge pull request #276 from Oulunkaupunki/dependabot/submodules/evaka-edb089c",
-        "date": "2026-02-18T02:14:25Z",
-        "author": "github-actions[bot]"
-      },
-      "includedPRs": [],
-      "repoType": "wrapper"
-    },
-    {
-      "id": "2026-02-18T10:26:53.504Z_oulu-prod_core",
-      "environmentId": "oulu-prod",
-      "cityGroupId": "oulu",
-      "detectedAt": "2026-02-18T10:26:53.504Z",
-      "previousCommit": null,
-      "newCommit": {
-        "sha": "edb089cdd0cd121dc88589bdb386fe7be1379ac1",
-        "shortSha": "edb089c",
-        "message": "Merge pull request #8540 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/qs-6.14.2",
-        "date": "2026-02-17T05:51:16Z",
-        "author": "akheron"
-      },
-      "includedPRs": [],
       "repoType": "core"
     }
   ]
