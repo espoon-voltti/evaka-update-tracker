@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T10:01:29.341Z",
+  "generatedAt": "2026-03-20T10:13:42.131Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-20T10:00:48.855Z",
+            "checkedAt": "2026-03-20T10:12:49.888Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "843892fb329c0002027cdd197c283a286620227b",
-              "shortSha": "843892f",
-              "message": "Merge pull request #8700 from espoon-voltti/restrict-admin-to-ad-users",
-              "date": "2026-03-18T08:33:22Z",
-              "author": "Joosakur"
+              "sha": "56a8cb2bb1edf44160158e06a3627bf579fea952",
+              "shortSha": "56a8cb2",
+              "message": "Update dependency fast-xml-parser to v5.5.7 [SECURITY] (#8719)",
+              "date": "2026-03-20T01:23:49Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-20T10:00:49.693Z",
+            "checkedAt": "2026-03-20T10:12:53.348Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8702,
               "title": "Näytetään vuorohoitoryhmä henkilökunnan mobiilissa",
@@ -126,6 +125,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8712,
@@ -170,7 +170,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-20T10:00:54.383Z",
+            "checkedAt": "2026-03-20T10:12:57.807Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -195,7 +195,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-20T10:01:02.488Z",
+            "checkedAt": "2026-03-20T10:13:08.127Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -216,7 +216,7 @@
           "mismatchDetails": [
             {
               "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-03-20T10:01:02.488Z",
+              "checkedAt": "2026-03-20T10:13:08.127Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -235,7 +235,7 @@
             },
             {
               "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-03-20T10:01:03.308Z",
+              "checkedAt": "2026-03-20T10:13:09.238Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -254,7 +254,7 @@
             },
             {
               "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-03-20T10:01:04.241Z",
+              "checkedAt": "2026-03-20T10:13:10.369Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -273,7 +273,7 @@
             },
             {
               "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-03-20T10:01:05.212Z",
+              "checkedAt": "2026-03-20T10:13:11.590Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -292,7 +292,7 @@
             },
             {
               "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-03-20T10:01:06.056Z",
+              "checkedAt": "2026-03-20T10:13:12.768Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -311,7 +311,7 @@
             },
             {
               "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-03-20T10:01:06.994Z",
+              "checkedAt": "2026-03-20T10:13:13.951Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -330,7 +330,7 @@
             },
             {
               "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-03-20T10:01:07.835Z",
+              "checkedAt": "2026-03-20T10:13:15.174Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -349,7 +349,7 @@
             },
             {
               "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-03-20T10:01:08.895Z",
+              "checkedAt": "2026-03-20T10:13:16.317Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "ffe8b818c051846c1cd99afb8c57517f0fa0942a",
@@ -368,7 +368,7 @@
             },
             {
               "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-03-20T10:01:09.751Z",
+              "checkedAt": "2026-03-20T10:13:17.450Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
@@ -546,7 +546,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-20T10:01:16.640Z",
+            "checkedAt": "2026-03-20T10:13:24.824Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e1cfb58e81b73bdd1c0c8442f239ac808f47c88",
@@ -571,7 +571,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-20T10:01:17.586Z",
+            "checkedAt": "2026-03-20T10:13:26.150Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b990ad63a9c29d112f377ce1101eeb9bdbc9ac72",
@@ -737,21 +737,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-20T10:01:22.617Z",
+            "checkedAt": "2026-03-20T10:13:32.015Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "8ce66458a3f380c5303760751892a13a23a6859c",
-              "shortSha": "8ce6645",
-              "message": "Merge pull request #268 from City-of-Turku/dependabot/submodules/evaka-d7d2021",
-              "date": "2026-03-19T02:14:11Z",
+              "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
+              "shortSha": "d170c34",
+              "message": "Merge pull request #270 from City-of-Turku/dependabot/submodules/evaka-56a8cb2",
+              "date": "2026-03-20T02:13:59Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "d7d20210bb597472a8685e498603732b797682ef",
-              "shortSha": "d7d2021",
-              "message": "Merge pull request #8709 from espoon-voltti/espoo-preparatory-decision-texts-2026",
-              "date": "2026-03-18T10:36:25Z",
-              "author": "Joosakur"
+              "sha": "56a8cb2bb1edf44160158e06a3627bf579fea952",
+              "shortSha": "56a8cb2",
+              "message": "Update dependency fast-xml-parser to v5.5.7 [SECURITY] (#8719)",
+              "date": "2026-03-20T01:23:49Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -762,7 +762,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-20T10:01:24.357Z",
+            "checkedAt": "2026-03-20T10:13:36.104Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
@@ -806,8 +806,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8702,
               "title": "Näytetään vuorohoitoryhmä henkilökunnan mobiilissa",
@@ -884,6 +883,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8712,
