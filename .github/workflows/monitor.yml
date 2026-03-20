@@ -44,6 +44,9 @@ jobs:
             echo "- **Schedule:** every 5 minutes" >> $GITHUB_STEP_SUMMARY
           fi
 
+      - name: Pull latest data
+        run: git pull --ff-only
+
       - name: Run deployment monitor
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
