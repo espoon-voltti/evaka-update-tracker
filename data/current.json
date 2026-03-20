@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T05:41:18.717Z",
+  "generatedAt": "2026-03-20T06:04:38.652Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-20T05:40:40.696Z",
+            "checkedAt": "2026-03-20T06:03:59.104Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-20T05:40:41.426Z",
+            "checkedAt": "2026-03-20T06:03:59.747Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -139,7 +139,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-20T05:40:47.102Z",
+            "checkedAt": "2026-03-20T06:04:02.793Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -164,21 +164,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-20T05:40:55.737Z",
+            "checkedAt": "2026-03-20T06:04:10.283Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "dfbdf66ded9056c8d41511c7d90475bda8627c9e",
-              "shortSha": "dfbdf66",
-              "message": "Merge pull request #2055 from Tampere/dependabot/submodules/evaka-d7d2021",
-              "date": "2026-03-19T05:27:36Z",
+              "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
+              "shortSha": "f6932b6",
+              "message": "Merge pull request #2058 from Tampere/compose-postgres-path",
+              "date": "2026-03-20T05:13:18Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "d7d20210bb597472a8685e498603732b797682ef",
-              "shortSha": "d7d2021",
-              "message": "Merge pull request #8709 from espoon-voltti/espoo-preparatory-decision-texts-2026",
-              "date": "2026-03-18T10:36:25Z",
-              "author": "Joosakur"
+              "sha": "27d00d7c2d0a75aaaee8d2351e650c76b6f27df2",
+              "shortSha": "27d00d7",
+              "message": "Merge pull request #8702 from espoon-voltti/show-shift-care-group-mobile",
+              "date": "2026-03-19T14:09:49Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -189,8 +189,7 @@
         "wrapper": {
           "repository": "Tampere/trevaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 2058,
               "title": "Päivitetään postgres-volumen polku",
@@ -217,44 +216,13 @@
               "url": "https://github.com/Tampere/trevaka/pull/2057",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 8700,
-              "title": "Vain AD-kirjautunut käyttäjä voidaan asettaa pääkäyttäjäksi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-18T08:33:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8700",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8703,
-              "title": "Karttahaku toimii myös hakemalla muun kuin ensimmäisen sanan alusta",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-03-18T07:50:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8703",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 8702,
               "title": "Näytetään vuorohoitoryhmä henkilökunnan mobiilissa",
@@ -330,7 +298,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -343,7 +312,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-20T05:41:08.496Z",
+            "checkedAt": "2026-03-20T06:04:29.837Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e1cfb58e81b73bdd1c0c8442f239ac808f47c88",
@@ -368,7 +337,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-20T05:41:09.460Z",
+            "checkedAt": "2026-03-20T06:04:30.839Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b990ad63a9c29d112f377ce1101eeb9bdbc9ac72",
@@ -489,7 +458,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-20T05:41:13.270Z",
+            "checkedAt": "2026-03-20T06:04:34.415Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8ce66458a3f380c5303760751892a13a23a6859c",
@@ -514,7 +483,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-20T05:41:14.376Z",
+            "checkedAt": "2026-03-20T06:04:35.395Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d170c34af323236a6565252ab2ba95a314b7225d",

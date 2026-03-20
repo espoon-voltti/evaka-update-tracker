@@ -1,6 +1,169 @@
 {
   "events": [
     {
+      "id": "2026-03-20T06:04:25.184Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-20T06:04:25.184Z",
+      "previousCommit": {
+        "sha": "dfbdf66ded9056c8d41511c7d90475bda8627c9e",
+        "shortSha": "dfbdf66",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f6932b6342af212a0d03c2894fac2e0d96bc0866",
+        "shortSha": "f6932b6",
+        "message": "Merge pull request #2058 from Tampere/compose-postgres-path",
+        "date": "2026-03-20T05:13:18Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2058,
+          "title": "Päivitetään postgres-volumen polku",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-03-20T05:13:18Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2058",
+          "labels": []
+        },
+        {
+          "number": 2059,
+          "title": "Bump evaka from `d7d2021` to `27d00d7`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-20T05:13:09Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2059",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2057,
+          "title": "allow sfi admins on test envs",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-03-19T12:25:12Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2057",
+          "labels": []
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-20T06:04:25.184Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-20T06:04:25.184Z",
+      "previousCommit": {
+        "sha": "d7d20210bb597472a8685e498603732b797682ef",
+        "shortSha": "d7d2021",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "27d00d7c2d0a75aaaee8d2351e650c76b6f27df2",
+        "shortSha": "27d00d7",
+        "message": "Merge pull request #8702 from espoon-voltti/show-shift-care-group-mobile",
+        "date": "2026-03-19T14:09:49Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8702,
+          "title": "Näytetään vuorohoitoryhmä henkilökunnan mobiilissa",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-19T14:09:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8702",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8705,
+          "title": "Työntekijöiden viestiliitteet saavat olla video/audio-tiedostoja",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-03-19T11:21:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8705",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8710,
+          "title": "Virhelokitus tausta-ajon epäonnistumisesta",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-03-19T10:56:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8710",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8714,
+          "title": "Espoon sv-tekstikorjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-19T08:54:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8714",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8713,
+          "title": "Sandbox-siivous",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-19T07:38:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8713",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-20T05:40:44.574Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
