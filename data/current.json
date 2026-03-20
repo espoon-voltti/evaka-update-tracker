@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T04:48:19.322Z",
+  "generatedAt": "2026-03-20T05:19:04.308Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-20T04:47:48.378Z",
+            "checkedAt": "2026-03-20T05:18:19.664Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-20T04:47:49.221Z",
+            "checkedAt": "2026-03-20T05:18:20.561Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -139,7 +139,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-20T04:47:52.113Z",
+            "checkedAt": "2026-03-20T05:18:23.896Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -164,7 +164,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-20T04:47:59.570Z",
+            "checkedAt": "2026-03-20T05:18:33.248Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "dfbdf66ded9056c8d41511c7d90475bda8627c9e",
@@ -191,6 +191,19 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 2058,
+              "title": "Päivitetään postgres-volumen polku",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-03-20T05:13:18Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2058",
+              "labels": []
+            },
             {
               "number": 2057,
               "title": "allow sfi admins on test envs",
@@ -330,7 +343,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-20T04:48:10.576Z",
+            "checkedAt": "2026-03-20T05:18:48.068Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e1cfb58e81b73bdd1c0c8442f239ac808f47c88",
@@ -355,21 +368,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-20T04:48:11.476Z",
+            "checkedAt": "2026-03-20T05:18:49.297Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "7e1cfb58e81b73bdd1c0c8442f239ac808f47c88",
-              "shortSha": "7e1cfb5",
-              "message": "Merge pull request #310 from Oulunkaupunki/voucher-value-decision-update-2",
-              "date": "2026-03-19T07:20:24Z",
-              "author": "tomuli"
+              "sha": "b990ad63a9c29d112f377ce1101eeb9bdbc9ac72",
+              "shortSha": "b990ad6",
+              "message": "Merge pull request #313 from Oulunkaupunki/dependabot/submodules/evaka-56a8cb2",
+              "date": "2026-03-20T02:14:01Z",
+              "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "d7d20210bb597472a8685e498603732b797682ef",
-              "shortSha": "d7d2021",
-              "message": "Merge pull request #8709 from espoon-voltti/espoo-preparatory-decision-texts-2026",
-              "date": "2026-03-18T10:36:25Z",
-              "author": "Joosakur"
+              "sha": "56a8cb2bb1edf44160158e06a3627bf579fea952",
+              "shortSha": "56a8cb2",
+              "message": "Update dependency fast-xml-parser to v5.5.7 [SECURITY] (#8719)",
+              "date": "2026-03-20T01:23:49Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -386,8 +399,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8702,
               "title": "Näytetään vuorohoitoryhmä henkilökunnan mobiilissa",
@@ -463,7 +475,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -476,7 +489,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-20T04:48:15.330Z",
+            "checkedAt": "2026-03-20T05:18:56.147Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8ce66458a3f380c5303760751892a13a23a6859c",
@@ -501,21 +514,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-20T04:48:16.362Z",
+            "checkedAt": "2026-03-20T05:18:57.384Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "8ce66458a3f380c5303760751892a13a23a6859c",
-              "shortSha": "8ce6645",
-              "message": "Merge pull request #268 from City-of-Turku/dependabot/submodules/evaka-d7d2021",
-              "date": "2026-03-19T02:14:11Z",
+              "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
+              "shortSha": "d170c34",
+              "message": "Merge pull request #270 from City-of-Turku/dependabot/submodules/evaka-56a8cb2",
+              "date": "2026-03-20T02:13:59Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "d7d20210bb597472a8685e498603732b797682ef",
-              "shortSha": "d7d2021",
-              "message": "Merge pull request #8709 from espoon-voltti/espoo-preparatory-decision-texts-2026",
-              "date": "2026-03-18T10:36:25Z",
-              "author": "Joosakur"
+              "sha": "56a8cb2bb1edf44160158e06a3627bf579fea952",
+              "shortSha": "56a8cb2",
+              "message": "Update dependency fast-xml-parser to v5.5.7 [SECURITY] (#8719)",
+              "date": "2026-03-20T01:23:49Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -532,8 +545,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8702,
               "title": "Näytetään vuorohoitoryhmä henkilökunnan mobiilissa",
@@ -609,7 +621,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
