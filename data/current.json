@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-23T10:15:58.376Z",
+  "generatedAt": "2026-03-23T10:25:45.821Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-23T10:14:14.456Z",
+            "checkedAt": "2026-03-23T10:24:18.048Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-23T10:14:15.404Z",
+            "checkedAt": "2026-03-23T10:24:18.892Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -172,7 +172,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-23T10:14:27.747Z",
+            "checkedAt": "2026-03-23T10:24:30.604Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -197,7 +197,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-23T10:14:38.211Z",
+            "checkedAt": "2026-03-23T10:24:39.014Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f44bf40e23453abd1c1a66f73d0f958d00e1dcdd",
@@ -436,21 +436,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-23T10:15:06.085Z",
+            "checkedAt": "2026-03-23T10:25:03.843Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "b990ad63a9c29d112f377ce1101eeb9bdbc9ac72",
-              "shortSha": "b990ad6",
-              "message": "Merge pull request #313 from Oulunkaupunki/dependabot/submodules/evaka-56a8cb2",
-              "date": "2026-03-20T02:14:01Z",
+              "sha": "6dcef3a06e0691f94918cf702745e7086dc7bcfc",
+              "shortSha": "6dcef3a",
+              "message": "Merge pull request #316 from Oulunkaupunki/dependabot/submodules/evaka-82c5468",
+              "date": "2026-03-23T07:35:52Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "56a8cb2bb1edf44160158e06a3627bf579fea952",
-              "shortSha": "56a8cb2",
-              "message": "Update dependency fast-xml-parser to v5.5.7 [SECURITY] (#8719)",
-              "date": "2026-03-20T01:23:49Z",
-              "author": "renovate[bot]"
+              "sha": "82c5468b1a089f0fb0f0a932c1c2fc0ee3e9308e",
+              "shortSha": "82c5468",
+              "message": "Merge pull request #8716 from espoon-voltti/dependabot/npm_and_yarn/frontend/flatted-3.4.2",
+              "date": "2026-03-23T07:17:09Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -461,7 +461,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-23T10:15:07.471Z",
+            "checkedAt": "2026-03-23T10:25:17.489Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6dcef3a06e0691f94918cf702745e7086dc7bcfc",
@@ -485,8 +485,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Oulunkaupunki/evakaoulu",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 315,
               "title": "Fix build",
@@ -514,12 +513,12 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8749,
               "title": "Update Spring Boot to v4.0.4",
@@ -567,6 +566,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8751,
@@ -642,7 +642,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-23T10:15:31.484Z",
+            "checkedAt": "2026-03-23T10:25:31.315Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
@@ -667,7 +667,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-23T10:15:32.838Z",
+            "checkedAt": "2026-03-23T10:25:32.296Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "93c4374cc6cabcd3582f405ce6c9dadfd41cd1f6",
