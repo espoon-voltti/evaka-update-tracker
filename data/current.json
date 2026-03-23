@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-23T08:01:14.804Z",
+  "generatedAt": "2026-03-23T08:05:40.578Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-23T07:59:57.552Z",
+            "checkedAt": "2026-03-23T08:04:17.762Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-23T07:59:58.342Z",
+            "checkedAt": "2026-03-23T08:04:18.630Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -127,7 +127,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-23T08:00:15.362Z",
+            "checkedAt": "2026-03-23T08:04:29.162Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -152,7 +152,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-23T08:00:23.196Z",
+            "checkedAt": "2026-03-23T08:04:39.596Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f44bf40e23453abd1c1a66f73d0f958d00e1dcdd",
@@ -346,7 +346,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-23T08:00:44.750Z",
+            "checkedAt": "2026-03-23T08:05:04.551Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b990ad63a9c29d112f377ce1101eeb9bdbc9ac72",
@@ -371,7 +371,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-23T08:00:45.823Z",
+            "checkedAt": "2026-03-23T08:05:05.968Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6dcef3a06e0691f94918cf702745e7086dc7bcfc",
@@ -507,7 +507,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-23T08:01:02.009Z",
+            "checkedAt": "2026-03-23T08:05:20.177Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
@@ -532,21 +532,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-23T08:01:02.988Z",
+            "checkedAt": "2026-03-23T08:05:21.472Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "a7cd7ea655b6200719f9489de8b4aa84a47d44ce",
-              "shortSha": "a7cd7ea",
-              "message": "Merge pull request #272 from City-of-Turku/dependabot/submodules/evaka-7d4e575",
-              "date": "2026-03-23T02:17:58Z",
+              "sha": "93c4374cc6cabcd3582f405ce6c9dadfd41cd1f6",
+              "shortSha": "93c4374",
+              "message": "Merge pull request #273 from City-of-Turku/dependabot/submodules/evaka-eb09cba",
+              "date": "2026-03-23T07:36:33Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "7d4e575f1da27c6b1e96a3006d5ad40d632d6584",
-              "shortSha": "7d4e575",
-              "message": "Update flyway to v12.1.1 (#8746)",
-              "date": "2026-03-22T13:00:17Z",
-              "author": "renovate[bot]"
+              "sha": "eb09cba620dd21552ae83dcfded265c8a90b225a",
+              "shortSha": "eb09cba",
+              "message": "Merge pull request #8750 from espoon-voltti/vite-8",
+              "date": "2026-03-23T07:25:46Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -592,38 +592,6 @@
           "deployed": [],
           "inStaging": [
             {
-              "number": 8712,
-              "title": "Siirretään Turku-koodi ytimeen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-20T10:00:49Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8712",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8715,
-              "title": "Lisätään kuntalaiselle ohjeteksti vastaamisesta talouden viestiketjuihin",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-20T08:09:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8715",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ],
-          "pendingDeployment": [
-            {
               "number": 8750,
               "title": "Vite 8",
               "author": "akheron",
@@ -654,8 +622,39 @@
                 "dependencies",
                 "service"
               ]
+            },
+            {
+              "number": 8712,
+              "title": "Siirretään Turku-koodi ytimeen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-03-20T10:00:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8712",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8715,
+              "title": "Lisätään kuntalaiselle ohjeteksti vastaamisesta talouden viestiketjuihin",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-03-20T08:09:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8715",
+              "labels": [
+                "enhancement"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }

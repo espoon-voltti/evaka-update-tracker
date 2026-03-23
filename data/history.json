@@ -1,6 +1,306 @@
 {
   "events": [
     {
+      "id": "2026-03-23T08:05:28.508Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-23T08:05:28.508Z",
+      "previousCommit": {
+        "sha": "a7cd7ea655b6200719f9489de8b4aa84a47d44ce",
+        "shortSha": "a7cd7ea",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "93c4374cc6cabcd3582f405ce6c9dadfd41cd1f6",
+        "shortSha": "93c4374",
+        "message": "Merge pull request #273 from City-of-Turku/dependabot/submodules/evaka-eb09cba",
+        "date": "2026-03-23T07:36:33Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 273,
+          "title": "Bump evaka from `7d4e575` to `eb09cba`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T07:36:34Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/273",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-23T08:05:28.508Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-23T08:05:28.508Z",
+      "previousCommit": {
+        "sha": "7d4e575f1da27c6b1e96a3006d5ad40d632d6584",
+        "shortSha": "7d4e575",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "eb09cba620dd21552ae83dcfded265c8a90b225a",
+        "shortSha": "eb09cba",
+        "message": "Merge pull request #8750 from espoon-voltti/vite-8",
+        "date": "2026-03-23T07:25:46Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8750,
+          "title": "Vite 8",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-23T07:25:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8750",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8716,
+          "title": "Bump flatted from 3.3.1 to 3.4.2 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T07:17:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8716",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 8717,
+          "title": "Bump flatted from 3.3.1 to 3.4.2 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T07:14:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8717",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 8747,
+          "title": "Update valkey/valkey Docker tag to v9.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T06:55:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8747",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8724,
+          "title": "Update dependency com.github.mwiede:jsch to v2.27.9",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T06:27:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8724",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8744,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.42.15",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T06:27:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8744",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8730,
+          "title": "Update jaxb-ri monorepo to v4.0.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T06:26:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8730",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8745,
+          "title": "Update dependency uv to v0.10.11",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T06:25:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8745",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8749,
+          "title": "Update Spring Boot to v4.0.4",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-23T06:05:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8749",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8735,
+          "title": "Update mockito monorepo to v5.23.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T05:59:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8735",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8742,
+          "title": "Update dependency dd-trace to v5.90.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T05:56:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8742",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8748,
+          "title": "Update sentry-javascript monorepo to v10.44.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T05:44:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8748",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8734,
+          "title": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T05:38:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8734",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8733,
+          "title": "Update dependency org.jlleitschuh.gradle.ktlint to v14.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T05:38:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8733",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8732,
+          "title": "Update dependency ical-generator to v10.1.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-23T05:37:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8732",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-23T08:00:51.569Z_oulu-staging_wrapper",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
