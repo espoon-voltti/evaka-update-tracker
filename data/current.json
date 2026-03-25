@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-25T12:05:14.989Z",
+  "generatedAt": "2026-03-25T12:11:22.323Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-25T12:04:15.589Z",
+            "checkedAt": "2026-03-25T12:09:43.820Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-25T12:04:16.273Z",
+            "checkedAt": "2026-03-25T12:09:44.628Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -139,32 +139,204 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-25T12:04:20.016Z",
+            "checkedAt": "2026-03-25T12:09:48.932Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
-              "shortSha": "30d908b",
-              "message": "Merge pull request #2054 from Tampere/update-core",
-              "date": "2026-03-18T07:34:33Z",
-              "author": "akheron"
+              "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
+              "shortSha": "7c80ab8",
+              "message": "Merge pull request #2067 from Tampere/dependabot/submodules/evaka-5070b6f",
+              "date": "2026-03-25T05:49:49Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
-              "shortSha": "7898bfd",
-              "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
-              "date": "2026-03-18T07:11:11Z",
-              "author": "akheron"
+              "sha": "5070b6f50fec277ca33e3d591fc37b7b3d6a041b",
+              "shortSha": "5070b6f",
+              "message": "Merge pull request #8639 from jsarkiniemi/assistance-need-coefficient",
+              "date": "2026-03-24T12:35:28Z",
+              "author": "Wnt"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-03-25T12:09:48.932Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
+                "shortSha": "7c80ab8",
+                "message": "Merge pull request #2067 from Tampere/dependabot/submodules/evaka-5070b6f",
+                "date": "2026-03-25T05:49:49Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "5070b6f50fec277ca33e3d591fc37b7b3d6a041b",
+                "shortSha": "5070b6f",
+                "message": "Merge pull request #8639 from jsarkiniemi/assistance-need-coefficient",
+                "date": "2026-03-24T12:35:28Z",
+                "author": "Wnt"
+              }
+            },
+            {
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-03-25T12:09:49.923Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-03-25T12:09:50.914Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-03-25T12:09:51.905Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-03-25T12:09:52.853Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-03-25T12:09:53.787Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-03-25T12:09:54.661Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-03-25T12:09:55.644Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-03-25T12:09:56.601Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
+                "shortSha": "30d908b",
+                "message": "Merge pull request #2054 from Tampere/update-core",
+                "date": "2026-03-18T07:34:33Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7898bfd89c78f638f2fb7d5b9890697608a15a94",
+                "shortSha": "7898bfd",
+                "message": "Merge pull request #8708 from espoon-voltti/simplify-pdf-config",
+                "date": "2026-03-18T07:11:11Z",
+                "author": "akheron"
+              }
+            }
+          ]
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-25T12:04:27.140Z",
+            "checkedAt": "2026-03-25T12:10:15.963Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -188,8 +360,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 2056,
               "title": "Read-only filesystems for containers",
@@ -230,6 +401,7 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 2066,
@@ -248,8 +420,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8639,
               "title": "Muutetaan palvelusetelikertoimen desimaalien määrä neljään",
@@ -326,6 +497,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -339,21 +511,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-25T12:04:54.195Z",
+            "checkedAt": "2026-03-25T12:10:43.120Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "6dcef3a06e0691f94918cf702745e7086dc7bcfc",
-              "shortSha": "6dcef3a",
-              "message": "Merge pull request #316 from Oulunkaupunki/dependabot/submodules/evaka-82c5468",
-              "date": "2026-03-23T07:35:52Z",
+              "sha": "e4932f79a217588314428ce225557cbe19ce5bbc",
+              "shortSha": "e4932f7",
+              "message": "Merge pull request #320 from Oulunkaupunki/dependabot/submodules/evaka-5070b6f",
+              "date": "2026-03-25T02:14:17Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "82c5468b1a089f0fb0f0a932c1c2fc0ee3e9308e",
-              "shortSha": "82c5468",
-              "message": "Merge pull request #8716 from espoon-voltti/dependabot/npm_and_yarn/frontend/flatted-3.4.2",
-              "date": "2026-03-23T07:17:09Z",
-              "author": "akheron"
+              "sha": "5070b6f50fec277ca33e3d591fc37b7b3d6a041b",
+              "shortSha": "5070b6f",
+              "message": "Merge pull request #8639 from jsarkiniemi/assistance-need-coefficient",
+              "date": "2026-03-24T12:35:28Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -364,7 +536,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-25T12:04:55.397Z",
+            "checkedAt": "2026-03-25T12:10:47.950Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e4932f79a217588314428ce225557cbe19ce5bbc",
@@ -408,8 +580,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8639,
               "title": "Muutetaan palvelusetelikertoimen desimaalien määrä neljään",
@@ -486,6 +657,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -499,7 +671,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-25T12:04:59.944Z",
+            "checkedAt": "2026-03-25T12:10:53.127Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
@@ -524,7 +696,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-25T12:05:01.039Z",
+            "checkedAt": "2026-03-25T12:10:54.275Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3d8d977cc1d53fb5e8f3e038d9343a5ff328174c",
