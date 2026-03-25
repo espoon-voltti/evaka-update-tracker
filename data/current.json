@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-25T12:16:06.631Z",
+  "generatedAt": "2026-03-25T12:29:41.258Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-25T12:15:39.449Z",
+            "checkedAt": "2026-03-25T12:29:19.304Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-25T12:15:43.116Z",
+            "checkedAt": "2026-03-25T12:29:19.945Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,83 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8639,
-              "title": "Muutetaan palvelusetelikertoimen desimaalien määrä neljään",
-              "author": "jsarkiniemi",
-              "authorName": null,
-              "mergedAt": "2026-03-24T12:35:28Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8639",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8752,
-              "title": "Muutetaan DVV muutosrajapinta käyttämään vanhaa autentikointia",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-24T11:17:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8752",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8711,
-              "title": "Päivitä s3-downloader versioon 1.5.1",
-              "author": "ilja-git",
-              "authorName": "Ilja Pyykkönen",
-              "mergedAt": "2026-03-24T07:31:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8711",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8751,
-              "title": "Ei lisätä päämiestä lapselle hakemukselta, jos lapsella on sijaishuoltaja",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-23T09:24:33Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8751",
-              "labels": [
-                "bug"
-              ]
-            },
-            {
-              "number": 8720,
-              "title": "Jätetään ajamatta tilaus, kun ryhmälle ei löydy yhtään Nekku asiakasta",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-23T08:38:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8720",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -139,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-25T12:15:46.807Z",
+            "checkedAt": "2026-03-25T12:29:20.797Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -164,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-25T12:15:53.872Z",
+            "checkedAt": "2026-03-25T12:29:28.531Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -223,7 +147,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-25T12:16:01.736Z",
+            "checkedAt": "2026-03-25T12:29:36.473Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e4932f79a217588314428ce225557cbe19ce5bbc",
@@ -248,7 +172,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-25T12:16:02.620Z",
+            "checkedAt": "2026-03-25T12:29:37.495Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e4932f79a217588314428ce225557cbe19ce5bbc",
@@ -307,7 +231,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-25T12:16:04.315Z",
+            "checkedAt": "2026-03-25T12:29:39.084Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3d8d977cc1d53fb5e8f3e038d9343a5ff328174c",
@@ -332,7 +256,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-25T12:16:05.213Z",
+            "checkedAt": "2026-03-25T12:29:39.992Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3d8d977cc1d53fb5e8f3e038d9343a5ff328174c",
