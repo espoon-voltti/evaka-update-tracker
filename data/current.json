@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-25T05:57:39.585Z",
+  "generatedAt": "2026-03-25T06:30:06.524Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-25T05:56:43.810Z",
+            "checkedAt": "2026-03-25T06:29:00.631Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-25T05:56:44.573Z",
+            "checkedAt": "2026-03-25T06:29:01.476Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -139,7 +139,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-25T05:56:48.511Z",
+            "checkedAt": "2026-03-25T06:29:05.733Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "30d908b9fa803577a8a880eb76dd3b2d7c4f2249",
@@ -164,21 +164,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-25T05:56:56.962Z",
+            "checkedAt": "2026-03-25T06:29:15.100Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "6cec5283f8a5c3e0666a5b1043ba67f9095f8fa2",
-              "shortSha": "6cec528",
-              "message": "Merge pull request #2064 from Tampere/dependabot/submodules/evaka-df40f7a",
-              "date": "2026-03-24T06:16:59Z",
+              "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
+              "shortSha": "7c80ab8",
+              "message": "Merge pull request #2067 from Tampere/dependabot/submodules/evaka-5070b6f",
+              "date": "2026-03-25T05:49:49Z",
               "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "df40f7a45450f71641bd65a8f3ca578cd40d87f8",
-              "shortSha": "df40f7a",
-              "message": "Merge pull request #8751 from espoon-voltti/application-foster-parent-check",
-              "date": "2026-03-23T09:24:33Z",
-              "author": "akheron"
+              "sha": "5070b6f50fec277ca33e3d591fc37b7b3d6a041b",
+              "shortSha": "5070b6f",
+              "message": "Merge pull request #8639 from jsarkiniemi/assistance-need-coefficient",
+              "date": "2026-03-24T12:35:28Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -237,85 +237,6 @@
           "deployed": [],
           "inStaging": [
             {
-              "number": 8751,
-              "title": "Ei lisätä päämiestä lapselle hakemukselta, jos lapsella on sijaishuoltaja",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-23T09:24:33Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8751",
-              "labels": [
-                "bug"
-              ]
-            },
-            {
-              "number": 8720,
-              "title": "Jätetään ajamatta tilaus, kun ryhmälle ei löydy yhtään Nekku asiakasta",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-23T08:38:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8720",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8723,
-              "title": "Muutetaan DVV muutosrajapinta käyttämään Basic Authia",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-23T08:37:43Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8723",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8750,
-              "title": "Vite 8",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-23T07:25:46Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8750",
-              "labels": [
-                "dependencies",
-                "frontend"
-              ]
-            },
-            {
-              "number": 8749,
-              "title": "Update Spring Boot to v4.0.4",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-23T06:05:40Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8749",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            }
-          ],
-          "pendingDeployment": [
-            {
               "number": 8639,
               "title": "Muutetaan palvelusetelikertoimen desimaalien määrä neljään",
               "author": "jsarkiniemi",
@@ -359,8 +280,39 @@
               "labels": [
                 "tech"
               ]
+            },
+            {
+              "number": 8751,
+              "title": "Ei lisätä päämiestä lapselle hakemukselta, jos lapsella on sijaishuoltaja",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-03-23T09:24:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8751",
+              "labels": [
+                "bug"
+              ]
+            },
+            {
+              "number": 8720,
+              "title": "Jätetään ajamatta tilaus, kun ryhmälle ei löydy yhtään Nekku asiakasta",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-03-23T08:38:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8720",
+              "labels": [
+                "tech"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -373,7 +325,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-25T05:57:19.926Z",
+            "checkedAt": "2026-03-25T06:29:43.995Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6dcef3a06e0691f94918cf702745e7086dc7bcfc",
@@ -398,7 +350,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-25T05:57:20.811Z",
+            "checkedAt": "2026-03-25T06:29:45.169Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e4932f79a217588314428ce225557cbe19ce5bbc",
@@ -519,7 +471,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-25T05:57:25.339Z",
+            "checkedAt": "2026-03-25T06:29:50.281Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d170c34af323236a6565252ab2ba95a314b7225d",
@@ -544,7 +496,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-25T05:57:26.236Z",
+            "checkedAt": "2026-03-25T06:29:51.485Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3d8d977cc1d53fb5e8f3e038d9343a5ff328174c",

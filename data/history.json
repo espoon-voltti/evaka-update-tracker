@@ -1,6 +1,113 @@
 {
   "events": [
     {
+      "id": "2026-03-25T06:29:26.184Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-25T06:29:26.184Z",
+      "previousCommit": {
+        "sha": "6cec5283f8a5c3e0666a5b1043ba67f9095f8fa2",
+        "shortSha": "6cec528",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
+        "shortSha": "7c80ab8",
+        "message": "Merge pull request #2067 from Tampere/dependabot/submodules/evaka-5070b6f",
+        "date": "2026-03-25T05:49:49Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 2067,
+          "title": "Bump evaka from `df40f7a` to `5070b6f`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-25T05:49:49Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2067",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper"
+    },
+    {
+      "id": "2026-03-25T06:29:26.184Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-03-25T06:29:26.184Z",
+      "previousCommit": {
+        "sha": "df40f7a45450f71641bd65a8f3ca578cd40d87f8",
+        "shortSha": "df40f7a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5070b6f50fec277ca33e3d591fc37b7b3d6a041b",
+        "shortSha": "5070b6f",
+        "message": "Merge pull request #8639 from jsarkiniemi/assistance-need-coefficient",
+        "date": "2026-03-24T12:35:28Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 8639,
+          "title": "Muutetaan palvelusetelikertoimen desimaalien määrä neljään",
+          "author": "jsarkiniemi",
+          "authorName": null,
+          "mergedAt": "2026-03-24T12:35:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8639",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8752,
+          "title": "Muutetaan DVV muutosrajapinta käyttämään vanhaa autentikointia",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-24T11:17:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8752",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8711,
+          "title": "Päivitä s3-downloader versioon 1.5.1",
+          "author": "ilja-git",
+          "authorName": "Ilja Pyykkönen",
+          "mergedAt": "2026-03-24T07:31:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8711",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-25T05:56:45.513Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
