@@ -40,6 +40,7 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - Markdown files in `docs/snapshots/` (022-capture-views)
 - JSON files (`data/current.json`, `data/history.json`) — no changes needed (023-slack-staging-details)
 - TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test HTTP mocking) — no new dependencies (023-slack-staging-details)
+- N/A (no data changes) (023-slack-pr-limit)
 
 - TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend) + axios (HTTP client), @octokit/rest or direct fetch (GitHub API) — minimal dependency se (001-deployment-tracker)
 
@@ -60,8 +61,8 @@ npm test && npm run lint
 TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend): Follow standard conventions
 
 ## Recent Changes
+- 023-slack-pr-limit: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking)
 - 023-slack-staging-details: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test HTTP mocking) — no new dependencies
-- 023-slack-staging-details: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking)
 - 022-capture-views: Added TypeScript 5.x on Node.js 20+ (script); vanilla JavaScript ES modules (frontend) + Playwright (existing dev dependency), existing E2E test infrastructure (`generateTestData`, `startServer`)
 
 

@@ -37,11 +37,15 @@ function buildVersionField(events: DeploymentEvent[]): string {
   return `*Versio:*\n${parts.join(', ')}`;
 }
 
-function buildChangesSection(event: DeploymentEvent): { type: string; text: { type: string; text: string } } {
+function buildChangesSection(
+  event: DeploymentEvent,
+  dashboardBaseUrl: string,
+  cityGroupId: string
+): { type: string; text: { type: string; text: string } } {
   const repoTypeDisplay = getRepoTypeDisplay(event.repoType);
   const humanPRs = event.includedPRs.filter((pr) => !pr.isHidden);
 
-  const prLines = humanPRs.slice(0, 10).map((pr) => {
+  const prLines = humanPRs.slice(0, 50).map((pr) => {
     const tags = formatLabelTags(pr.labels);
     const tagPrefix = tags ? `${tags} ` : '';
     return `\u2022 <${pr.url}|#${pr.number}> ${tagPrefix}${pr.title} \u2014 _${pr.authorName ?? pr.author}_`;
@@ -50,6 +54,11 @@ function buildChangesSection(event: DeploymentEvent): { type: string; text: { ty
   let changesText: string;
   if (prLines.length > 0) {
     changesText = `*Muutokset (${repoTypeDisplay}):*\n${prLines.join('\n')}`;
+    const remaining = humanPRs.length - 50;
+    if (remaining > 0) {
+      const historyUrl = `${dashboardBaseUrl}#/city/${cityGroupId}/history`;
+      changesText += `\n_...ja <${historyUrl}|${remaining} muuta muutosta>_`;
+    }
   } else if (event.includedPRs.length > 0) {
     // Had PRs but all were bot-authored
     changesText = `*Muutokset (${repoTypeDisplay}):*\nEi merkittäviä muutoksia`;
@@ -72,7 +81,9 @@ export function buildSlackMessage(events: DeploymentEvent[], dashboardBaseUrl: s
 
   const detectedAt = formatFinnishDateTime(firstEvent.detectedAt);
 
-  const changesSections = events.map(buildChangesSection);
+  const changesSections = events.map((event) =>
+    buildChangesSection(event, dashboardBaseUrl, firstEvent.cityGroupId)
+  );
 
   return {
     blocks: [

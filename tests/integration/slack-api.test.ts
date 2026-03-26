@@ -438,6 +438,46 @@ describe('sendSlackNotification', () => {
     expect(scope.isDone()).toBe(true);
   });
 
+  it('displays all PRs when count is between 10 and 50', async () => {
+    const manyPRs = Array.from({ length: 17 }, (_, i) => ({
+      number: 100 + i,
+      title: `PR number ${100 + i}`,
+      author: 'dev',
+      authorName: `Developer ${i}`,
+      mergedAt: '2026-03-01T14:00:00Z',
+      repository: 'espoon-voltti/evaka',
+      repoType: 'core' as const,
+      isBot: false,
+      isHidden: false,
+      url: `https://github.com/espoon-voltti/evaka/pull/${100 + i}`,
+      labels: [],
+    }));
+
+    const eventWith17PRs: DeploymentEvent = {
+      ...mockCoreEvent,
+      includedPRs: manyPRs,
+    };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{ text?: { text: string } }>;
+        const changesText = blocks[2].text!.text;
+        // All 17 PRs should be listed
+        for (let i = 0; i < 17; i++) {
+          expect(changesText).toContain(`#${100 + i}`);
+        }
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [eventWith17PRs]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
   it('ignores unmapped labels in PR lines', async () => {
     const eventWithUnmappedLabels: DeploymentEvent = {
       ...mockCoreEvent,
@@ -471,6 +511,98 @@ describe('sendSlackNotification', () => {
     await sendSlackNotification(
       'https://hooks.slack.com/services/T00/B00/XXX',
       [eventWithUnmappedLabels]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  it('shows overflow link when more than 50 PRs exist', async () => {
+    const manyPRs = Array.from({ length: 55 }, (_, i) => ({
+      number: 200 + i,
+      title: `PR number ${200 + i}`,
+      author: 'dev',
+      authorName: `Developer ${i}`,
+      mergedAt: '2026-03-01T14:00:00Z',
+      repository: 'espoon-voltti/evaka',
+      repoType: 'core' as const,
+      isBot: false,
+      isHidden: false,
+      url: `https://github.com/espoon-voltti/evaka/pull/${200 + i}`,
+      labels: [],
+    }));
+
+    const overflowEvent: DeploymentEvent = {
+      ...mockCoreEvent,
+      cityGroupId: 'tampere-region',
+      environmentId: 'tampere-prod',
+      includedPRs: manyPRs,
+    };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{ text?: { text: string } }>;
+        const changesText = blocks[2].text!.text;
+        // First 50 PRs should be listed
+        for (let i = 0; i < 50; i++) {
+          expect(changesText).toContain(`#${200 + i}`);
+        }
+        // PRs beyond 50 should NOT be listed
+        expect(changesText).not.toContain('#250');
+        expect(changesText).not.toContain('#254');
+        // Overflow link with correct count and history URL
+        expect(changesText).toContain('5 muuta muutosta');
+        expect(changesText).toContain(
+          'https://espoon-voltti.github.io/evaka-update-tracker/#/city/tampere-region/history'
+        );
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [overflowEvent]
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  it('shows no overflow link when exactly 50 PRs exist', async () => {
+    const exactlyFiftyPRs = Array.from({ length: 50 }, (_, i) => ({
+      number: 300 + i,
+      title: `PR number ${300 + i}`,
+      author: 'dev',
+      authorName: `Developer ${i}`,
+      mergedAt: '2026-03-01T14:00:00Z',
+      repository: 'espoon-voltti/evaka',
+      repoType: 'core' as const,
+      isBot: false,
+      isHidden: false,
+      url: `https://github.com/espoon-voltti/evaka/pull/${300 + i}`,
+      labels: [],
+    }));
+
+    const fiftyEvent: DeploymentEvent = {
+      ...mockCoreEvent,
+      includedPRs: exactlyFiftyPRs,
+    };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{ text?: { text: string } }>;
+        const changesText = blocks[2].text!.text;
+        // All 50 PRs should be listed
+        for (let i = 0; i < 50; i++) {
+          expect(changesText).toContain(`#${300 + i}`);
+        }
+        // No overflow link
+        expect(changesText).not.toContain('muuta muutosta');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [fiftyEvent]
     );
 
     expect(scope.isDone()).toBe(true);
