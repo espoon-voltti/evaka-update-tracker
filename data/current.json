@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-26T10:39:18.401Z",
+  "generatedAt": "2026-03-26T10:40:55.005Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-26T10:38:47.576Z",
+            "checkedAt": "2026-03-26T10:40:27.470Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-26T10:38:48.247Z",
+            "checkedAt": "2026-03-26T10:40:28.070Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -110,7 +110,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-26T10:38:50.102Z",
+            "checkedAt": "2026-03-26T10:40:30.051Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -135,7 +135,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-26T10:38:57.669Z",
+            "checkedAt": "2026-03-26T10:40:37.139Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
@@ -241,21 +241,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-26T10:39:07.733Z",
+            "checkedAt": "2026-03-26T10:40:46.129Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "e4932f79a217588314428ce225557cbe19ce5bbc",
-              "shortSha": "e4932f7",
-              "message": "Merge pull request #320 from Oulunkaupunki/dependabot/submodules/evaka-5070b6f",
-              "date": "2026-03-25T02:14:17Z",
+              "sha": "8d0933b8b1b5da4cfd5b00780a1aed01a5c6489c",
+              "shortSha": "8d0933b",
+              "message": "Merge pull request #322 from Oulunkaupunki/dependabot/submodules/evaka-c20d117",
+              "date": "2026-03-26T02:14:08Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "5070b6f50fec277ca33e3d591fc37b7b3d6a041b",
-              "shortSha": "5070b6f",
-              "message": "Merge pull request #8639 from jsarkiniemi/assistance-need-coefficient",
-              "date": "2026-03-24T12:35:28Z",
-              "author": "Wnt"
+              "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+              "shortSha": "c20d117",
+              "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+              "date": "2026-03-25T13:03:55Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -266,7 +266,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-26T10:39:08.889Z",
+            "checkedAt": "2026-03-26T10:40:48.650Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8d0933b8b1b5da4cfd5b00780a1aed01a5c6489c",
@@ -290,8 +290,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Oulunkaupunki/evakaoulu",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 319,
               "title": "Satunnainen vuorohoito päälle stagingiin",
@@ -306,6 +305,7 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 317,
@@ -324,8 +324,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8755,
               "title": "Muutetaan DVV muutosrajapinta käyttämään basic authia",
@@ -357,6 +356,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8754,
@@ -386,7 +386,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-26T10:39:12.700Z",
+            "checkedAt": "2026-03-26T10:40:52.010Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "399213b34e16a6d3e69831d7c444269e5c97490d",
@@ -411,7 +411,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-26T10:39:14.949Z",
+            "checkedAt": "2026-03-26T10:40:53.227Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "399213b34e16a6d3e69831d7c444269e5c97490d",
@@ -455,38 +455,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8755,
-              "title": "Muutetaan DVV muutosrajapinta käyttämään basic authia",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-25T13:03:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8755",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8722,
-              "title": "Korjaus kansalaisen laitetunnistuksen keksien allekirjoitukseen",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-03-25T12:48:22Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8722",
-              "labels": [
-                "bug"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
