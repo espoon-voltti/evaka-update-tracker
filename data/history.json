@@ -1,6 +1,59 @@
 {
   "events": [
     {
+      "id": "2026-03-26T10:56:29.590Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-03-26T10:56:29.590Z",
+      "previousCommit": {
+        "sha": "5070b6f50fec277ca33e3d591fc37b7b3d6a041b",
+        "shortSha": "5070b6f",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+        "shortSha": "c20d117",
+        "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+        "date": "2026-03-25T13:03:55Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8755,
+          "title": "Muutetaan DVV muutosrajapinta käyttämään basic authia",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-25T13:03:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8755",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8722,
+          "title": "Korjaus kansalaisen laitetunnistuksen keksien allekirjoitukseen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-03-25T12:48:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8722",
+          "labels": [
+            "bug"
+          ]
+        }
+      ],
+      "repoType": "core"
+    },
+    {
       "id": "2026-03-26T10:40:48.650Z_oulu-prod_wrapper",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",
