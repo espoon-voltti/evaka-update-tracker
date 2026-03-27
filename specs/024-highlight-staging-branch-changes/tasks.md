@@ -19,9 +19,9 @@
 
 **Purpose**: Capture mockups and extend data model types before any implementation
 
-- [ ] T001-MK Capture "before" mockups of the GH Pages history view and Slack staging notifications. Run `npm run capture-views` or manually create mockups. Save to `specs/024-highlight-staging-branch-changes/mockups-before.md`. This MUST happen before any implementation changes.
-- [ ] T002 [P] Add `branch?: string | null` and `isDefaultBranch?: boolean` optional fields to `DeploymentEvent` interface in `src/types.ts`
-- [ ] T003 [P] Add `isBranchDeployment?: boolean` and `branchName?: string | null` optional fields to `StagingContext` interface in `src/types.ts`
+- [x] T001-MK Capture "before" mockups of the GH Pages history view and Slack staging notifications. Run `npm run capture-views` or manually create mockups. Save to `specs/024-highlight-staging-branch-changes/mockups-before.md`. This MUST happen before any implementation changes.
+- [x] T002 [P] Add `branch?: string | null` and `isDefaultBranch?: boolean` optional fields to `DeploymentEvent` interface in `src/types.ts`
+- [x] T003 [P] Add `isBranchDeployment?: boolean` and `branchName?: string | null` optional fields to `StagingContext` interface in `src/types.ts`
 
 ---
 
@@ -31,12 +31,12 @@
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Add `isCommitOnDefaultBranch(owner, repo, defaultBranch, commitSha)` function to `src/api/github.ts` — uses existing `compareShas()` to call `compare/{defaultBranch}...{commitSha}`, returns `{ onDefaultBranch: boolean, branchName: string | null }`. If compare returns >0 commits, commit is not on default branch. On API error, return `{ onDefaultBranch: true, branchName: null }` as safe fallback.
-- [ ] T005 Add `getBranchesWhereHead(owner, repo, sha)` helper to `src/api/github.ts` — calls `GET /repos/{owner}/{repo}/commits/{sha}/branches-where-head`, returns branch names. Used by `isCommitOnDefaultBranch` when commit is off default branch to find the branch name.
-- [ ] T006 Add integration tests for `isCommitOnDefaultBranch()` and `getBranchesWhereHead()` in `tests/integration/github-api.test.ts` — mock compare API responses (0 commits = on default, >0 = off default) and branches-where-head responses. Test API error fallback behavior.
-- [ ] T007 Wire branch detection into the event creation flow in `src/index.ts` — after detecting a staging environment change, call `isCommitOnDefaultBranch()` for each repo type (core/wrapper) and populate the `branch` and `isDefaultBranch` fields on the `DeploymentEvent` before sending Slack notifications
-- [ ] T008 Update `detectChanges()` in `src/services/change-detector.ts` to accept and pass through optional `branch` and `isDefaultBranch` parameters when creating `DeploymentEvent` objects
-- [ ] T009 Update unit tests in `tests/unit/change-detector.test.ts` — add test cases verifying that `branch` and `isDefaultBranch` fields are correctly included in events when provided, and absent/undefined when not provided
+- [x] T004 Add `isCommitOnDefaultBranch(owner, repo, defaultBranch, commitSha)` function to `src/api/github.ts` — uses existing `compareShas()` to call `compare/{defaultBranch}...{commitSha}`, returns `{ onDefaultBranch: boolean, branchName: string | null }`. If compare returns >0 commits, commit is not on default branch. On API error, return `{ onDefaultBranch: true, branchName: null }` as safe fallback.
+- [x] T005 Add `getBranchesWhereHead(owner, repo, sha)` helper to `src/api/github.ts` — calls `GET /repos/{owner}/{repo}/commits/{sha}/branches-where-head`, returns branch names. Used by `isCommitOnDefaultBranch` when commit is off default branch to find the branch name.
+- [x] T006 Add integration tests for `isCommitOnDefaultBranch()` and `getBranchesWhereHead()` in `tests/integration/github-api.test.ts` — mock compare API responses (0 commits = on default, >0 = off default) and branches-where-head responses. Test API error fallback behavior.
+- [x] T007 Wire branch detection into the event creation flow in `src/index.ts` — after detecting a staging environment change, call `isCommitOnDefaultBranch()` for each repo type (core/wrapper) and populate the `branch` and `isDefaultBranch` fields on the `DeploymentEvent` before sending Slack notifications
+- [x] T008 Update `detectChanges()` in `src/services/change-detector.ts` to accept and pass through optional `branch` and `isDefaultBranch` parameters when creating `DeploymentEvent` objects
+- [x] T009 Update unit tests in `tests/unit/change-detector.test.ts` — add test cases verifying that `branch` and `isDefaultBranch` fields are correctly included in events when provided, and absent/undefined when not provided
 
 **Checkpoint**: Branch detection works end-to-end — new deployment events include branch info for staging environments
 
@@ -50,13 +50,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T010 [US1] Populate `StagingContext.isBranchDeployment` and `StagingContext.branchName` in `src/index.ts` — set based on whether any event for the staging environment has `isDefaultBranch === false`, derive branch name from event's `branch` field
-- [ ] T011 [US1] Modify `buildSlackMessage()` in `src/api/slack.ts` to handle branch deployments — when `stagingContext?.isBranchDeployment` is true: change header emoji to 🔀, change env label to "Staging / haaran testaus", show branch name in version field, replace PR changes section with a note explaining this is a branch deployment
-- [ ] T012 [US1] Modify `buildVersionField()` in `src/api/slack.ts` to include branch name when `stagingContext?.branchName` is available — e.g. "Versio: `438b2c8` (haara: feature/my-change)"
-- [ ] T013 [US1] Modify `buildChangesSection()` in `src/api/slack.ts` to show "Haaran testaus — PR-muutokset eivät ole vertailukelpoisia" instead of the normal PR list when the event has `isDefaultBranch === false`
-- [ ] T014 [US1] Update Slack staging context section in `buildSlackMessage()` in `src/api/slack.ts` — when `isBranchDeployment` is true, replace the "+N changes vs production" text with branch-aware messaging (e.g. "Haaraa testataan staging-ympäristössä")
-- [ ] T015 [US1] Add/update integration tests in `tests/integration/slack-api.test.ts` — test `buildSlackMessage()` with branch deployment context: verify header, version field with branch name, changes section replacement, and context section. Also test that normal staging messages are unchanged when `isBranchDeployment` is false/undefined
-- [ ] T016 [US1] Verify existing Slack tests still pass for normal (non-branch) staging and production deployments — ensure no regressions in `tests/integration/slack-api.test.ts`
+- [x] T010 [US1] Populate `StagingContext.isBranchDeployment` and `StagingContext.branchName` in `src/index.ts` — set based on whether any event for the staging environment has `isDefaultBranch === false`, derive branch name from event's `branch` field
+- [x] T011 [US1] Modify `buildSlackMessage()` in `src/api/slack.ts` to handle branch deployments — when `stagingContext?.isBranchDeployment` is true: change header emoji to 🔀, change env label to "Staging / haaran testaus", show branch name in version field, replace PR changes section with a note explaining this is a branch deployment
+- [x] T012 [US1] Modify `buildVersionField()` in `src/api/slack.ts` to include branch name when `stagingContext?.branchName` is available — e.g. "Versio: `438b2c8` (haara: feature/my-change)"
+- [x] T013 [US1] Modify `buildChangesSection()` in `src/api/slack.ts` to show "Haaran testaus — PR-muutokset eivät ole vertailukelpoisia" instead of the normal PR list when the event has `isDefaultBranch === false`
+- [x] T014 [US1] Update Slack staging context section in `buildSlackMessage()` in `src/api/slack.ts` — when `isBranchDeployment` is true, replace the "+N changes vs production" text with branch-aware messaging (e.g. "Haaraa testataan staging-ympäristössä")
+- [x] T015 [US1] Add/update integration tests in `tests/integration/slack-api.test.ts` — test `buildSlackMessage()` with branch deployment context: verify header, version field with branch name, changes section replacement, and context section. Also test that normal staging messages are unchanged when `isBranchDeployment` is false/undefined
+- [x] T016 [US1] Verify existing Slack tests still pass for normal (non-branch) staging and production deployments — ensure no regressions in `tests/integration/slack-api.test.ts`
 
 **Checkpoint**: Slack notifications correctly differentiate branch deployments from normal staging updates. Run `npm test` to verify.
 

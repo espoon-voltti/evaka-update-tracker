@@ -199,6 +199,80 @@ describe('change-detector', () => {
 
       expect(events).toHaveLength(0);
     });
+
+    it('should include branch info when branchInfoByRepoType is provided', () => {
+      const newCoreSha = 'aabbccdd11223344556677889900aabbccddeeff';
+      const prevCoreSha = '1122334455667788990011223344556677889900';
+
+      const version = makeVersionSnapshot({
+        coreCommit: makeCommitInfo(newCoreSha),
+      });
+
+      const previous: PreviousVersionEntry = {
+        wrapperSha: null,
+        coreSha: prevCoreSha,
+      };
+
+      const events = detectChanges('espoo-staging', 'espoo', version, previous, [], {
+        core: { isDefaultBranch: false, branch: 'feature/test' },
+      });
+
+      expect(events).toHaveLength(1);
+      expect(events[0].isDefaultBranch).toBe(false);
+      expect(events[0].branch).toBe('feature/test');
+    });
+
+    it('should not include branch fields when branchInfoByRepoType is not provided', () => {
+      const newCoreSha = 'aabbccdd11223344556677889900aabbccddeeff';
+      const prevCoreSha = '1122334455667788990011223344556677889900';
+
+      const version = makeVersionSnapshot({
+        coreCommit: makeCommitInfo(newCoreSha),
+      });
+
+      const previous: PreviousVersionEntry = {
+        wrapperSha: null,
+        coreSha: prevCoreSha,
+      };
+
+      const events = detectChanges('espoo-prod', 'espoo', version, previous, []);
+
+      expect(events).toHaveLength(1);
+      expect(events[0].isDefaultBranch).toBeUndefined();
+      expect(events[0].branch).toBeUndefined();
+    });
+
+    it('should include branch info for both wrapper and core when provided', () => {
+      const newWrapperSha = 'aaaa000000000000000000000000000000000000';
+      const newCoreSha = 'bbbb000000000000000000000000000000000000';
+      const prevWrapperSha = 'cccc000000000000000000000000000000000000';
+      const prevCoreSha = 'dddd000000000000000000000000000000000000';
+
+      const version = makeVersionSnapshot({
+        wrapperCommit: makeCommitInfo(newWrapperSha),
+        coreCommit: makeCommitInfo(newCoreSha),
+      });
+
+      const previous: PreviousVersionEntry = {
+        wrapperSha: prevWrapperSha,
+        coreSha: prevCoreSha,
+      };
+
+      const events = detectChanges('tampere-staging', 'tampere-region', version, previous, [], {
+        core: { isDefaultBranch: false, branch: 'feature/core-test' },
+        wrapper: { isDefaultBranch: true },
+      });
+
+      expect(events).toHaveLength(2);
+
+      const wrapperEvent = events.find((e) => e.repoType === 'wrapper');
+      expect(wrapperEvent!.isDefaultBranch).toBe(true);
+      expect(wrapperEvent!.branch).toBeUndefined();
+
+      const coreEvent = events.find((e) => e.repoType === 'core');
+      expect(coreEvent!.isDefaultBranch).toBe(false);
+      expect(coreEvent!.branch).toBe('feature/core-test');
+    });
   });
 
   describe('buildUpdatedPrevious', () => {

@@ -904,6 +904,132 @@ describe('staging notification context', () => {
     expect(scope.isDone()).toBe(true);
   });
 
+  // Branch deployment: header, version, changes, and context
+  it('shows branch-specific header and context for branch deployments', async () => {
+    const stagingContext: StagingContext = {
+      inStagingCount: 0,
+      productionAvailable: true,
+      isBranchDeployment: true,
+      branchName: 'feature/my-branch',
+    };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{
+          type: string;
+          text?: { text: string };
+          fields?: Array<{ text: string }>;
+          elements?: Array<{ text: string }>;
+        }>;
+        // Header uses branch emoji and label
+        expect(blocks[0].text!.text).toContain('\ud83d\udd00');
+        expect(blocks[0].text!.text).toContain('haaran testaus');
+        expect(blocks[0].text!.text).not.toContain('testaus päivitetty');
+
+        // Version field includes branch name
+        const versionField = blocks[1].fields![0].text;
+        expect(versionField).toContain('haara: feature/my-branch');
+
+        // Changes section shows branch context, not PR list
+        const changesText = blocks[2].text!.text;
+        expect(changesText).toContain('Haaran testaus');
+        expect(changesText).toContain('PR-muutokset eivät ole vertailukelpoisia');
+        expect(changesText).not.toContain('#123'); // No PR numbers
+
+        // Context shows branch testing message instead of comparison
+        const contextBlock = blocks[blocks.length - 1];
+        const texts = contextBlock.elements!.map((e) => e.text).join(' ');
+        expect(texts).toContain('Haaraa testataan staging-ympäristössä');
+        expect(texts).not.toContain('muutosta verrattuna tuotantoon');
+        expect(texts).not.toContain('Sama versio');
+
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [mockStagingEvent],
+      undefined,
+      stagingContext
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  // Branch deployment without branch name
+  it('shows fallback text when branch name is unknown', async () => {
+    const stagingContext: StagingContext = {
+      inStagingCount: 0,
+      productionAvailable: true,
+      isBranchDeployment: true,
+      branchName: null,
+    };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{
+          type: string;
+          fields?: Array<{ text: string }>;
+        }>;
+        const versionField = blocks[1].fields![0].text;
+        expect(versionField).toContain('ei pääkehityshaarassa');
+        expect(versionField).not.toContain('haara:');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [mockStagingEvent],
+      undefined,
+      stagingContext
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
+  // Normal staging message is unchanged when isBranchDeployment is not set
+  it('shows normal staging message when isBranchDeployment is undefined', async () => {
+    const stagingContext: StagingContext = { inStagingCount: 3, productionAvailable: true };
+
+    const scope = nock('https://hooks.slack.com')
+      .post('/services/T00/B00/XXX', (body: Record<string, unknown>) => {
+        const blocks = body.blocks as Array<{
+          type: string;
+          text?: { text: string };
+          elements?: Array<{ text: string }>;
+        }>;
+        // Header uses normal staging emoji and label
+        expect(blocks[0].text!.text).toContain('\ud83e\uddea');
+        expect(blocks[0].text!.text).toContain('testaus päivitetty');
+        expect(blocks[0].text!.text).not.toContain('haaran testaus');
+
+        // Changes show normal PR list
+        const changesText = blocks[2].text!.text;
+        expect(changesText).toContain('#123');
+        expect(changesText).not.toContain('Haaran testaus');
+
+        // Context shows normal comparison
+        const contextBlock = blocks[blocks.length - 1];
+        const texts = contextBlock.elements!.map((e) => e.text).join(' ');
+        expect(texts).toContain('+3 muutosta verrattuna tuotantoon');
+        expect(texts).not.toContain('Haaraa testataan');
+
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await sendSlackNotification(
+      'https://hooks.slack.com/services/T00/B00/XXX',
+      [mockStagingEvent],
+      undefined,
+      stagingContext
+    );
+
+    expect(scope.isDone()).toBe(true);
+  });
+
   // T011: production keeps generic link text (FR-006)
   it('keeps generic link text for production notifications', async () => {
     const scope = nock('https://hooks.slack.com')

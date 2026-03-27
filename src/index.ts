@@ -2,10 +2,10 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { config as loadEnv } from 'dotenv';
 import { getCityGroups } from './config/instances.js';
-import { initGitHubClient } from './api/github.js';
+import { initGitHubClient, isCommitOnDefaultBranch } from './api/github.js';
 import { resolveEnvironment, ResolvedEnvironment } from './services/version-resolver.js';
 import { collectPRsBetween, collectPendingPRs, buildPRTrack } from './services/pr-collector.js';
-import { readPreviousData, detectChanges, buildUpdatedPrevious } from './services/change-detector.js';
+import { readPreviousData, detectChanges, buildUpdatedPrevious, BranchInfo } from './services/change-detector.js';
 import { deploySite } from './services/site-deployer.js';
 import { sendSlackNotification } from './api/slack.js';
 import { resolveWebhookUrl } from './config/slack-routing.js';
@@ -147,7 +147,27 @@ export async function run() {
           changePRs.push(...corePRs);
         }
 
-        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, changePRs);
+        // Detect branch info for staging environments
+        let branchInfoByRepoType: Record<string, BranchInfo> | undefined;
+        if (env.type === 'staging') {
+          branchInfoByRepoType = {};
+          if (coreSha && coreSha !== prevCoreSha) {
+            const result = await isCommitOnDefaultBranch(coreRepo.owner, coreRepo.name, coreRepo.defaultBranch, coreSha);
+            branchInfoByRepoType['core'] = {
+              isDefaultBranch: result.onDefaultBranch,
+              branch: result.branchName,
+            };
+          }
+          if (wrapperRepo && wrapperSha && wrapperSha !== prevWrapperSha) {
+            const result = await isCommitOnDefaultBranch(wrapperRepo.owner, wrapperRepo.name, wrapperRepo.defaultBranch, wrapperSha);
+            branchInfoByRepoType['wrapper'] = {
+              isDefaultBranch: result.onDefaultBranch,
+              branch: result.branchName,
+            };
+          }
+        }
+
+        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, changePRs, branchInfoByRepoType);
         allEvents.push(...events);
 
         updatedPrevious = buildUpdatedPrevious(updatedPrevious, env.id, rep);
@@ -262,9 +282,16 @@ export async function run() {
           const hasProduction = cityGroup.environments.some((e) => e.type === 'production');
           const coreInStaging = cityGroup.prTracks.core.inStaging.filter((pr) => !pr.isHidden);
           const wrapperInStaging = cityGroup.prTracks.wrapper?.inStaging.filter((pr) => !pr.isHidden) ?? [];
+
+          // Check if any event in this environment is a branch deployment
+          const branchEvent = envEvents.find((e) => e.isDefaultBranch === false);
+          const isBranchDeployment = branchEvent !== undefined;
+          const branchName = branchEvent?.branch ?? null;
+
           stagingContext = {
             inStagingCount: coreInStaging.length + wrapperInStaging.length,
             productionAvailable: hasProduction,
+            ...(isBranchDeployment ? { isBranchDeployment: true, branchName } : {}),
           };
         }
       }
