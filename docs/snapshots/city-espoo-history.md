@@ -10,7 +10,7 @@ Ydin
 - [Yksikkötestien korjaus](https://github.com/espoon-voltti/evaka/pull/8545) - Tero Laakso Tekninen 28.2.
 ### Testaus
 - pe 27.3. klo 10.00 [bbb1111](https://github.com/espoon-voltti/evaka/commit/bbb1111111111111111111111111111111111111) feature/test-branch
-PR-tietoja ei saatavilla
+Test branch commit
 - ti 3.3. klo 12.00 [5ff94c8](https://github.com/espoon-voltti/evaka/commit/5ff94c8cd104a2c4bd164c9f64f3c4455ac39370)
 Ydin
 - [Tekninen: minimatch-kirjaston haavoittuvuuspäivitys](https://github.com/espoon-voltti/evaka/pull/8629) - Tero Laakso Tekninen 2.3.
