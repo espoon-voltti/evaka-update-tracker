@@ -19,7 +19,54 @@
         "date": "2026-03-27T10:56:41Z",
         "author": "akheron"
       },
-      "includedPRs": [],
+      "includedPRs": [
+        {
+          "number": 8765,
+          "title": "CVE-korjaus",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-03-27T10:56:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8765",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8764,
+          "title": "Enable/disable test mode before/after all e2e tests instead of before/after each test",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-03-27T10:38:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8764",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8763,
+          "title": "Espoo: Hakemusten ja päätösten metadata näkyviin kuntalaisille tuotannossa",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-03-27T09:59:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8763",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
       "repoType": "core",
       "isDefaultBranch": true,
       "branch": null
@@ -44,6 +91,21 @@
         "author": "Wnt"
       },
       "includedPRs": [
+        {
+          "number": 8753,
+          "title": "Korjaa fork-PR:ien integraatiotestien shardaus",
+          "author": "Wnt",
+          "authorName": null,
+          "mergedAt": "",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8753",
+          "labels": [
+            "no-changelog"
+          ]
+        },
         {
           "number": 8765,
           "title": "CVE-korjaus",
@@ -1704,9 +1766,26 @@
         "date": "2026-03-25T10:52:51Z",
         "author": "ohinkinen"
       },
-      "includedPRs": [],
+      "includedPRs": [
+        {
+          "number": 8755,
+          "title": "Muutetaan DVV muutosrajapinta käyttämään basic authia",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-03-25T13:03:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8755",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
       "repoType": "core",
-      "isDefaultBranch": true
+      "isDefaultBranch": false,
+      "branch": "dvv-basic-auth"
     },
     {
       "id": "2026-03-25T12:15:43.116Z_espoo-prod_core",
@@ -3674,7 +3753,53 @@
         "date": "2026-03-24T12:35:28Z",
         "author": "Wnt"
       },
-      "includedPRs": [],
+      "includedPRs": [
+        {
+          "number": 8639,
+          "title": "Muutetaan palvelusetelikertoimen desimaalien määrä neljään",
+          "author": "jsarkiniemi",
+          "authorName": null,
+          "mergedAt": "2026-03-24T12:35:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8639",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8752,
+          "title": "Muutetaan DVV muutosrajapinta käyttämään vanhaa autentikointia",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-03-24T11:17:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8752",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8711,
+          "title": "Päivitä s3-downloader versioon 1.5.1",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-03-24T07:31:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8711",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
       "repoType": "core",
       "isDefaultBranch": true
     },
@@ -3917,6 +4042,21 @@
       },
       "includedPRs": [
         {
+          "number": 8722,
+          "title": "Korjaus kansalaisen laitetunnistuksen keksien allekirjoitukseen",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-03-25T12:48:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8722",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
           "number": 8639,
           "title": "Muutetaan palvelusetelikertoimen desimaalien määrä neljään",
           "author": "jsarkiniemi",
@@ -3963,7 +4103,8 @@
         }
       ],
       "repoType": "core",
-      "isDefaultBranch": true
+      "isDefaultBranch": false,
+      "branch": "device-auth-history-fixes"
     },
     {
       "id": "2026-03-24T06:39:56.524Z_tampere-test_wrapper",

@@ -169,6 +169,22 @@ export async function getBranchesWhereHead(
   });
 }
 
+/**
+ * Get the PRs associated with a commit (via the GitHub "list pull requests
+ * associated with a commit" API).
+ */
+export async function getPullRequestsForCommit(
+  owner: string,
+  repo: string,
+  commitSha: string
+): Promise<Array<{ number: number; merge_commit_sha: string | null; head: { ref: string } }>> {
+  return withRetry(async () => {
+    return ghGet<Array<{ number: number; merge_commit_sha: string | null; head: { ref: string } }>>(
+      `/repos/${owner}/${repo}/commits/${commitSha}/pulls`
+    );
+  });
+}
+
 export async function isCommitOnDefaultBranch(
   owner: string,
   repo: string,
@@ -180,6 +196,25 @@ export async function isCommitOnDefaultBranch(
     // If there are commits in commitSha not in defaultBranch, the commit is off the default branch.
     const aheadCommits = await compareShas(owner, repo, defaultBranch, commitSha);
     if (aheadCommits.length === 0) {
+      // The commit is reachable from the default branch. But it could be a
+      // feature branch commit that was later merged. Check if the commit is
+      // the actual merge/squash commit on the default branch, or a branch
+      // commit that became reachable after merge.
+      try {
+        const associatedPRs = await getPullRequestsForCommit(owner, repo, commitSha);
+        if (associatedPRs.length > 0) {
+          const pr = associatedPRs[0];
+          // If this commit is NOT the PR's merge_commit_sha, it's a branch
+          // commit that was later merged into the default branch
+          if (pr.merge_commit_sha && !pr.merge_commit_sha.startsWith(commitSha.substring(0, 7))
+              && !commitSha.startsWith(pr.merge_commit_sha.substring(0, 7))) {
+            const branchName = pr.head?.ref ?? null;
+            return { onDefaultBranch: false, branchName };
+          }
+        }
+      } catch {
+        // PR lookup failed — fall through to "on default branch"
+      }
       return { onDefaultBranch: true, branchName: null };
     }
 
@@ -195,6 +230,19 @@ export async function isCommitOnDefaultBranch(
       }
     } catch {
       // Branch name lookup failed — proceed without it
+    }
+
+    // If no branch found from branches-where-head (branch deleted after merge),
+    // try to get it from the associated PR
+    if (!branchName) {
+      try {
+        const associatedPRs = await getPullRequestsForCommit(owner, repo, commitSha);
+        if (associatedPRs.length > 0) {
+          branchName = associatedPRs[0].head?.ref ?? null;
+        }
+      } catch {
+        // PR lookup failed — proceed without branch name
+      }
     }
 
     return { onDefaultBranch: false, branchName };
