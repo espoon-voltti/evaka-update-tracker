@@ -71,6 +71,81 @@ export async function collectFeatureFlags(
   };
 }
 
+/**
+ * For cities that failed collection, fall back to previous successful data.
+ * Mutates `current` in place: restores flag values from `previous` and annotates
+ * the city error with the previous generation date.
+ */
+export function mergeFeatureFlagFallback(
+  current: FeatureFlagData,
+  previous: FeatureFlagData
+): void {
+  const errorCityIds = new Set(
+    current.cities.filter((c) => c.error).map((c) => c.id)
+  );
+  if (errorCityIds.size === 0) return;
+
+  // Build lookup of previous flag values by category+key
+  const prevByCategory = new Map<string, Map<string, Record<string, FeatureFlagValue>>>();
+  for (const cat of previous.categories) {
+    const flagMap = new Map<string, Record<string, FeatureFlagValue>>();
+    for (const flag of cat.flags) {
+      flagMap.set(flag.key, flag.values);
+    }
+    prevByCategory.set(cat.id, flagMap);
+  }
+
+  // Restore previous values for errored cities
+  for (const cat of current.categories) {
+    const prevFlags = prevByCategory.get(cat.id);
+    if (!prevFlags) continue;
+    for (const flag of cat.flags) {
+      const prevValues = prevFlags.get(flag.key);
+      if (!prevValues) continue;
+      for (const cityId of errorCityIds) {
+        if (prevValues[cityId] !== undefined) {
+          flag.values[cityId] = prevValues[cityId];
+        }
+      }
+    }
+    // Also add flags that exist in previous but not in current (only for errored cities)
+    for (const [key, prevValues] of prevFlags) {
+      if (cat.flags.some((f) => f.key === key)) continue;
+      // Check if this flag has any values for errored cities
+      const restoredValues: Record<string, FeatureFlagValue> = {};
+      let hasValue = false;
+      for (const cityId of errorCityIds) {
+        if (prevValues[cityId] !== undefined) {
+          restoredValues[cityId] = prevValues[cityId];
+          hasValue = true;
+        }
+      }
+      if (hasValue) {
+        // Need to also include null for non-errored cities
+        for (const city of current.cities) {
+          if (!errorCityIds.has(city.id) && !(city.id in restoredValues)) {
+            restoredValues[city.id] = null;
+          }
+        }
+        const prevFlag = previous.categories
+          .find((c) => c.id === cat.id)
+          ?.flags.find((f) => f.key === key);
+        if (prevFlag) {
+          cat.flags.push({
+            key,
+            label: prevFlag.label,
+            type: prevFlag.type,
+            values: restoredValues,
+          });
+        }
+      }
+    }
+  }
+
+  // Record the fallback date from the previous successful data
+  current.errorFallbackDate = previous.generatedAt;
+}
+
 function buildCategory(
   id: 'frontend' | 'backend',
   label: string,

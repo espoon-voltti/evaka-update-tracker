@@ -24,7 +24,9 @@ import {
   PullRequest,
   Repository,
   StagingContext,
+  FeatureFlagData,
 } from './types.js';
+import { mergeFeatureFlagFallback } from './services/feature-flag-collector.js';
 
 loadEnv();
 
@@ -338,6 +340,12 @@ export async function run() {
       console.warn(
         `Feature flag collection had errors for: ${citiesWithErrors.map((c) => c.name).join(', ')}`
       );
+      // Preserve previous data for cities that failed
+      const featureFlagPath = path.join(DATA_DIR, 'feature-flags.json');
+      if (fs.existsSync(featureFlagPath)) {
+        const previous: FeatureFlagData = JSON.parse(fs.readFileSync(featureFlagPath, 'utf-8'));
+        mergeFeatureFlagFallback(featureFlagData, previous);
+      }
     }
     const totalFlags =
       featureFlagData.categories.reduce((sum, cat) => sum + cat.flags.length, 0);

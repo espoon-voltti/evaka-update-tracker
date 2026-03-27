@@ -1,5 +1,6 @@
-import { collectFeatureFlags } from '../../src/services/feature-flag-collector';
+import { collectFeatureFlags, mergeFeatureFlagFallback } from '../../src/services/feature-flag-collector';
 import { FeatureFlagCityConfig } from '../../src/config/feature-flag-cities';
+import { FeatureFlagData } from '../../src/types';
 import * as github from '../../src/api/github';
 
 jest.mock('../../src/api/github');
@@ -210,5 +211,88 @@ describe('collectFeatureFlags', () => {
     const result = await collectFeatureFlags(cities);
     expect(result.generatedAt).toBeDefined();
     expect(new Date(result.generatedAt).getTime()).not.toBeNaN();
+  });
+});
+
+describe('mergeFeatureFlagFallback', () => {
+  it('restores previous flag values for errored cities', () => {
+    const current: FeatureFlagData = {
+      generatedAt: '2026-03-27T12:00:00Z',
+      cities: [
+        { id: 'espoo', name: 'Espoo', cityGroupId: 'espoo', error: 'HTTP 404' },
+        { id: 'tampere', name: 'Tampere', cityGroupId: 'tampere-region', error: null },
+      ],
+      categories: [
+        {
+          id: 'frontend',
+          label: 'Frontend',
+          flags: [
+            { key: 'flagA', label: 'Flag A', type: 'boolean', values: { espoo: null, tampere: true } },
+          ],
+        },
+      ],
+    };
+
+    const previous: FeatureFlagData = {
+      generatedAt: '2026-03-15T10:00:00Z',
+      cities: [
+        { id: 'espoo', name: 'Espoo', cityGroupId: 'espoo', error: null },
+        { id: 'tampere', name: 'Tampere', cityGroupId: 'tampere-region', error: null },
+      ],
+      categories: [
+        {
+          id: 'frontend',
+          label: 'Frontend',
+          flags: [
+            { key: 'flagA', label: 'Flag A', type: 'boolean', values: { espoo: false, tampere: true } },
+          ],
+        },
+      ],
+    };
+
+    mergeFeatureFlagFallback(current, previous);
+
+    expect(current.categories[0].flags[0].values.espoo).toBe(false);
+    expect(current.categories[0].flags[0].values.tampere).toBe(true);
+    expect(current.errorFallbackDate).toBe('2026-03-15T10:00:00Z');
+  });
+
+  it('does nothing when no cities have errors', () => {
+    const current: FeatureFlagData = {
+      generatedAt: '2026-03-27T12:00:00Z',
+      cities: [
+        { id: 'espoo', name: 'Espoo', cityGroupId: 'espoo', error: null },
+      ],
+      categories: [
+        {
+          id: 'frontend',
+          label: 'Frontend',
+          flags: [
+            { key: 'flagA', label: 'Flag A', type: 'boolean', values: { espoo: true } },
+          ],
+        },
+      ],
+    };
+
+    const previous: FeatureFlagData = {
+      generatedAt: '2026-03-15T10:00:00Z',
+      cities: [
+        { id: 'espoo', name: 'Espoo', cityGroupId: 'espoo', error: null },
+      ],
+      categories: [
+        {
+          id: 'frontend',
+          label: 'Frontend',
+          flags: [
+            { key: 'flagA', label: 'Flag A', type: 'boolean', values: { espoo: false } },
+          ],
+        },
+      ],
+    };
+
+    mergeFeatureFlagFallback(current, previous);
+
+    expect(current.categories[0].flags[0].values.espoo).toBe(true);
+    expect(current.errorFallbackDate).toBeUndefined();
   });
 });

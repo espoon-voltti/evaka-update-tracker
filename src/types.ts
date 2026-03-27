@@ -214,6 +214,7 @@ export interface FeatureFlagCity {
 
 export interface FeatureFlagData {
   generatedAt: string;
+  errorFallbackDate?: string | null;
   cities: FeatureFlagCity[];
   categories: FeatureFlagCategory[];
 }

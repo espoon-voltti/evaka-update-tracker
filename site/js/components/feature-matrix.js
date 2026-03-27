@@ -35,6 +35,24 @@ export function renderFeatureMatrix(data, { differencesOnly = false, showValues 
     return '<div class="empty-state">Ominaisuustietoja ei löytynyt.</div>';
   }
 
+  // Check for cities with errors
+  const errorCities = (data.cities || []).filter((c) => c.error);
+  const errorGroupIds = new Set(errorCities.map((c) => c.cityGroupId));
+
+  let errorBanner = '';
+  if (errorCities.length > 0) {
+    const cityNames = errorCities.map((c) => c.name).join(', ');
+    const fallbackDate = data.errorFallbackDate
+      ? `, ${formatFinnishDate(data.errorFallbackDate)},`
+      : '';
+    errorBanner = `
+      <div class="feature-error-banner">
+        Ominaisuuksien hakemisessa havaittiin ongelma (${escapeHtml(cityNames)}).
+        Näytetään edellisen onnistuneen${escapeHtml(fallbackDate)} haun tulokset.
+      </div>
+    `;
+  }
+
   const filterActive = differencesOnly ? ' active' : '';
   const valuesActive = showValues ? ' active' : '';
 
@@ -50,7 +68,7 @@ export function renderFeatureMatrix(data, { differencesOnly = false, showValues 
     const rows = category.flags.map((flag) => {
       const differs = doesFlagDiffer(flag, data.cities);
       const cells = CITY_GROUPS.map((group) =>
-        renderGroupCell(flag, group, data.cities)
+        renderGroupCell(flag, group, data.cities, errorGroupIds)
       ).join('');
 
       const diffClass = differs ? ' flag-differs' : '';
@@ -71,7 +89,10 @@ export function renderFeatureMatrix(data, { differencesOnly = false, showValues 
             <thead>
               <tr>
                 <th class="flag-label-header">Ominaisuus</th>
-                ${CITY_GROUPS.map((g) => `<th class="city-col-header">${escapeHtml(g.label)}</th>`).join('')}
+                ${CITY_GROUPS.map((g) => {
+                  const warn = errorGroupIds.has(g.id) ? ' city-col-warning' : '';
+                  return `<th class="city-col-header${warn}">${escapeHtml(g.label)}</th>`;
+                }).join('')}
               </tr>
             </thead>
             <tbody>
@@ -90,6 +111,7 @@ export function renderFeatureMatrix(data, { differencesOnly = false, showValues 
   return `
     <div class="feature-view">
       <h2>Ominaisuusvertailu</h2>
+      ${errorBanner}
       ${toolbar}
       ${sectionsHtml}
       <div class="empty-state" id="no-differences-msg" style="display:none">Ei eroja kaupunkien välillä</div>
@@ -97,10 +119,11 @@ export function renderFeatureMatrix(data, { differencesOnly = false, showValues 
   `;
 }
 
-function renderGroupCell(flag, group, cities) {
+function renderGroupCell(flag, group, cities, errorGroupIds) {
+  const warn = errorGroupIds.has(group.id) ? ' flag-cell-warning' : '';
   if (group.cities.length === 1) {
     const val = flag.values[group.cities[0]];
-    return `<td class="flag-cell">${renderValue(val, flag.type)}</td>`;
+    return `<td class="flag-cell${warn}">${renderValue(val, flag.type)}</td>`;
   }
 
   // Tampere-region aggregation
@@ -110,7 +133,7 @@ function renderGroupCell(flag, group, cities) {
   );
 
   if (allSame) {
-    return `<td class="flag-cell">${renderValue(values[0], flag.type)}</td>`;
+    return `<td class="flag-cell${warn}">${renderValue(values[0], flag.type)}</td>`;
   }
 
   // Divergent — show majority with indicator
@@ -119,7 +142,7 @@ function renderGroupCell(flag, group, cities) {
     .map((id) => `${cityNames[id] || id}: ${formatValue(flag.values[id], flag.type)}`)
     .join('\n');
 
-  return `<td class="flag-cell tampere-divergent" title="${escapeHtml(details)}">
+  return `<td class="flag-cell tampere-divergent${warn}" title="${escapeHtml(details)}">
     <span class="divergent-indicator">
       ${renderValue(values[0], flag.type)}
       <span class="divergent-marker" aria-label="Kaupunkien välillä on eroja">*</span>
@@ -275,6 +298,12 @@ function updateQuerySilent(name, value) {
   const qs = params.toString();
   const newHash = '#' + (pathPart || '/') + (qs ? '?' + qs : '');
   history.replaceState(null, '', newHash);
+}
+
+function formatFinnishDate(isoString) {
+  if (!isoString) return '';
+  const d = new Date(isoString);
+  return `${d.getDate()}.${d.getMonth() + 1}.`;
 }
 
 function escapeHtml(str) {
