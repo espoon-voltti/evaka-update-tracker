@@ -128,8 +128,10 @@ function renderEnvSection(label, releases, showBots) {
   const items = releases.map((release) => renderRelease(release, showBots)).join('');
   return `
     <div class="history-env-section">
-      <h3 class="history-env-heading ${cssClass}">${label}</h3>
-      <ul class="history-list">${items}</ul>
+      <details open>
+        <summary class="history-env-heading ${cssClass}">${label}</summary>
+        <ul class="history-list">${items}</ul>
+      </details>
     </div>
   `;
 }
@@ -201,7 +203,17 @@ function renderRelease(release, showBots) {
     `;
   }
   if (!prSections) {
-    prSections = '<div class="empty-state">PR-tietoja ei saatavilla</div>';
+    // Show commit message as fallback when no PR data is available
+    const commitDescs = release.events
+      .filter((e) => e.newCommit?.message)
+      .map((e) => {
+        const msg = e.newCommit.message;
+        const label = release.events.length > 1 ? (repoTypeLabels[e.repoType] || e.repoType) + ': ' : '';
+        return `<div class="history-commit-desc">${escapeHtml(label)}${escapeHtml(msg)}</div>`;
+      });
+    prSections = commitDescs.length > 0
+      ? commitDescs.join('')
+      : '<div class="empty-state">PR-tietoja ei saatavilla</div>';
   }
 
   return `

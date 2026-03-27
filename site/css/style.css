@@ -498,6 +498,16 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.75rem;
+  cursor: pointer;
+  list-style: none;
+}
+.history-env-heading::-webkit-details-marker { display: none; }
+.history-env-heading::before {
+  content: '▼ ';
+  font-size: 0.7rem;
+}
+details:not([open]) > .history-env-heading::before {
+  content: '▶ ';
 }
 
 .history-env-heading.production { color: #166534; }
@@ -546,6 +556,12 @@ main {
 
 .history-sha-transition .history-arrow {
   color: var(--color-text-muted);
+}
+
+.history-commit-desc {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  padding: 0.25rem 0;
 }
 
 .history-commit-link {
