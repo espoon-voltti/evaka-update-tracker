@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T10:23:50.833Z",
+  "generatedAt": "2026-03-27T10:25:15.796Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-27T10:23:19.546Z",
+            "checkedAt": "2026-03-27T10:24:47.739Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
-              "shortSha": "c20d117",
-              "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
-              "date": "2026-03-25T13:03:55Z",
-              "author": "ohinkinen"
+              "sha": "438b2c8c6af6470c624d3f3564defe1e36ef5c61",
+              "shortSha": "438b2c8",
+              "message": "Merge pull request #8759 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/picomatch-2.3.2",
+              "date": "2026-03-26T11:37:18Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-27T10:23:20.123Z",
+            "checkedAt": "2026-03-27T10:24:50.069Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8754,
               "title": "Korjataan Varda-virheraportin liian suurien päivälukumäärien näyttäminen",
@@ -66,6 +65,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -79,7 +79,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-27T10:23:22.932Z",
+            "checkedAt": "2026-03-27T10:24:52.695Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -104,7 +104,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-27T10:23:29.927Z",
+            "checkedAt": "2026-03-27T10:24:59.473Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "337cc2081e03b61da49511a2c0f27d511a3463cf",
@@ -209,7 +209,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-27T10:23:41.079Z",
+            "checkedAt": "2026-03-27T10:25:10.597Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fcd32fe79638092909c03bd0671fab45f2bf577e",
@@ -234,7 +234,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-27T10:23:42.202Z",
+            "checkedAt": "2026-03-27T10:25:11.416Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fcd32fe79638092909c03bd0671fab45f2bf577e",
@@ -279,7 +279,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-27T10:23:43.759Z",
+            "checkedAt": "2026-03-27T10:25:12.992Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fb8cd9a690839febfd49e95714a5cec855f0409e",
@@ -304,7 +304,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-27T10:23:47.085Z",
+            "checkedAt": "2026-03-27T10:25:13.945Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fb8cd9a690839febfd49e95714a5cec855f0409e",
@@ -328,43 +328,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "City-of-Turku/evakaturku",
-          "deployed": [
-            {
-              "number": 274,
-              "title": "Tiedostojärjestelmän kirjoitussuojaus docker-composessa",
-              "author": "ilja-git",
-              "authorName": "Ilja Pyykkönen",
-              "mergedAt": "2026-03-26T09:54:55Z",
-              "repository": "City-of-Turku/evakaturku",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/City-of-Turku/evakaturku/pull/274",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8754,
-              "title": "Korjataan Varda-virheraportin liian suurien päivälukumäärien näyttäminen",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-26T10:05:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8754",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
