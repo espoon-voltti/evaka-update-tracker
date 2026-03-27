@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { HistoryData, DeploymentEvent } from '../types.js';
+import { HistoryData, DeploymentEvent, Repository } from '../types.js';
 
 const ONE_MONTH_MS = 30 * 24 * 60 * 60 * 1000;
 
@@ -30,4 +30,48 @@ export function pruneOldEvents(history: HistoryData): HistoryData {
 
 export function writeHistory(filePath: string, history: HistoryData): void {
   fs.writeFileSync(filePath, JSON.stringify(history, null, 2));
+}
+
+type BranchDetectionFn = (
+  owner: string,
+  repo: string,
+  defaultBranch: string,
+  commitSha: string
+) => Promise<{ onDefaultBranch: boolean; branchName: string | null }>;
+
+export async function backfillBranchInfo(
+  history: HistoryData,
+  detectBranch: BranchDetectionFn,
+  repositories: Repository[]
+): Promise<number> {
+  let updated = 0;
+
+  for (const event of history.events) {
+    // Skip events that already have branch info
+    if (event.isDefaultBranch !== undefined) continue;
+
+    // Only backfill staging events (production is always default branch)
+    if (event.environmentId.includes('prod')) {
+      event.isDefaultBranch = true;
+      updated++;
+      continue;
+    }
+
+    // Find the matching repository for this event
+    const repo = repositories.find((r) => r.type === event.repoType);
+    if (!repo || !event.newCommit?.sha) continue;
+
+    try {
+      const result = await detectBranch(repo.owner, repo.name, repo.defaultBranch, event.newCommit.sha);
+      event.isDefaultBranch = result.onDefaultBranch;
+      if (result.branchName) {
+        event.branch = result.branchName;
+      }
+      updated++;
+    } catch {
+      // Skip events where detection fails — leave them as undefined
+    }
+  }
+
+  return updated;
 }

@@ -193,6 +193,29 @@ function setupGitHubMocks() {
   gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_STAGING_SHA}...main`)
     .reply(200, emptyCompareResponse);
 
+  // --- Branch detection responses (for staging environments) ---
+  // Espoo staging: commit is on default branch (0 ahead commits)
+  gh.get(`/repos/espoon-voltti/evaka/compare/master...${ESPOO_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+
+  // Tampere staging: wrapper and core on default branch
+  gh.get(`/repos/Tampere/trevaka/compare/main...${TAMPERE_WRAPPER_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+  gh.get(`/repos/espoon-voltti/evaka/compare/master...${TAMPERE_CORE_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+
+  // Oulu staging: wrapper and core on default branch
+  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/main...${OULU_WRAPPER_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+  gh.get(`/repos/espoon-voltti/evaka/compare/master...${OULU_CORE_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+
+  // Turku staging: wrapper and core on default branch
+  gh.get(`/repos/City-of-Turku/evakaturku/compare/main...${TURKU_WRAPPER_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+  gh.get(`/repos/espoon-voltti/evaka/compare/master...${TURKU_CORE_STAGING_SHA}`)
+    .reply(200, emptyCompareResponse);
+
   // --- User profile responses (for name resolution) ---
   gh.get('/users/terolaakso-reaktor').reply(200, { login: 'terolaakso-reaktor', name: 'Tero Laakso' });
   gh.get('/users/Joosakur').reply(200, { login: 'Joosakur', name: 'Joosa Kurvinen' });
@@ -322,6 +345,21 @@ export async function generateTestData(): Promise<string> {
   process.env.DIST_DIR = path.join(TEST_DATA_DIR, '..', 'test-dist');
   process.env.STAGING_INSTANCES = STAGING_INSTANCES_ENV;
 
+  // When running in a proxied environment (e.g. Claude Code web sessions),
+  // proxy env vars break nock HTTP interception. Set CLEAR_PROXY_FOR_TESTS=1
+  // to clear them before running the test data generator.
+  const clearProxy = process.env.CLEAR_PROXY_FOR_TESTS === '1';
+  const proxyVars = ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy', 'ALL_PROXY', 'all_proxy', 'GLOBAL_AGENT_HTTP_PROXY', 'GLOBAL_AGENT_HTTPS_PROXY', 'NO_PROXY', 'no_proxy'];
+  const savedProxy: Record<string, string | undefined> = {};
+  if (clearProxy) {
+    for (const key of proxyVars) {
+      savedProxy[key] = process.env[key];
+      delete process.env[key];
+    }
+    process.env.NO_PROXY = '*';
+    process.env.no_proxy = '*';
+  }
+
   // Disable all real HTTP and set up mocks
   nock.disableNetConnect();
   setupStatusMocks();
@@ -344,6 +382,23 @@ export async function generateTestData(): Promise<string> {
       (cg: { id: string }) => cg.id === 'espoo'
     )?.prTracks?.core?.deployed;
 
+    // Inject a branch deployment event into history for E2E testing of branch badges
+    const historyPath = path.join(TEST_DATA_DIR, 'history.json');
+    const history = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
+    history.events.unshift({
+      id: '2026-03-27T08:00:00Z_espoo-staging_core_branch',
+      environmentId: 'espoo-staging',
+      cityGroupId: 'espoo',
+      detectedAt: '2026-03-27T08:00:00Z',
+      previousCommit: { sha: 'aaa0000000000000000000000000000000000000', shortSha: 'aaa0000', message: '', date: '', author: '' },
+      newCommit: { sha: 'bbb1111111111111111111111111111111111111', shortSha: 'bbb1111', message: 'Test branch commit', date: '2026-03-27T07:00:00Z', author: 'developer1' },
+      includedPRs: [],
+      repoType: 'core',
+      isDefaultBranch: false,
+      branch: 'feature/test-branch',
+    });
+    fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
+
     // Write feature-flags.json AFTER pipeline (overwrite the empty one from failed collection)
     fs.writeFileSync(
       path.join(TEST_DATA_DIR, 'feature-flags.json'),
@@ -361,6 +416,14 @@ export async function generateTestData(): Promise<string> {
     delete process.env.DATA_DIR;
     delete process.env.DIST_DIR;
     delete process.env.STAGING_INSTANCES;
+    // Restore proxy env vars
+    if (clearProxy) {
+      for (const key of proxyVars) {
+        if (savedProxy[key] !== undefined) {
+          process.env[key] = savedProxy[key];
+        }
+      }
+    }
   }
 }
 

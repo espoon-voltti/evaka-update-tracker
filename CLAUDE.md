@@ -41,6 +41,7 @@ Auto-generated from all feature plans. Last updated: 2026-03-02
 - JSON files (`data/current.json`, `data/history.json`) — no changes needed (023-slack-staging-details)
 - TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test HTTP mocking) — no new dependencies (023-slack-staging-details)
 - N/A (no data changes) (023-slack-pr-limit)
+- TypeScript 5.x on Node.js 20+ (backend/data pipeline); vanilla JavaScript ES modules (frontend) + axios (HTTP), nock (test mocking), Playwright (E2E tests) — no new dependencies (024-highlight-staging-branch-changes)
 
 - TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend) + axios (HTTP client), @octokit/rest or direct fetch (GitHub API) — minimal dependency se (001-deployment-tracker)
 
@@ -56,14 +57,36 @@ tests/
 
 npm test && npm run lint
 
+## Playwright / E2E Test Setup
+
+Playwright version must match the cached Chromium browser revision in `~/.cache/ms-playwright/`.
+If you see "browser not found" errors, check the available revisions:
+```
+ls ~/.cache/ms-playwright/
+```
+Then install the matching Playwright version. For example, `chromium-1194` requires `@playwright/test@1.56.0`.
+Do **not** upgrade `@playwright/test` without also running `npx playwright install` to download the matching browser binary.
+
+## Proxy / Nock Compatibility
+
+The E2E test data generator and `capture-views` script use nock to mock HTTP requests.
+If `HTTP_PROXY`/`HTTPS_PROXY` environment variables are set (e.g. in Claude Code web sessions),
+nock interception breaks because axios routes through the proxy before nock can intercept.
+The test data generator clears proxy vars and sets `NO_PROXY=*` before running.
+If you see "Invalid URL" errors with mangled proxy+API URLs, set the following before running:
+```
+export CLEAR_PROXY_FOR_TESTS=1
+```
+This tells the test data generator to clear proxy vars and set `NO_PROXY=*` before running.
+
 ## Code Style
 
 TypeScript 5.x on Node.js 20+ (data fetcher); vanilla JavaScript ES modules (frontend): Follow standard conventions
 
 ## Recent Changes
+- 024-highlight-staging-branch-changes: Added TypeScript 5.x on Node.js 20+ (backend/data pipeline); vanilla JavaScript ES modules (frontend) + axios (HTTP), nock (test mocking), Playwright (E2E tests) — no new dependencies
 - 023-slack-pr-limit: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test mocking)
 - 023-slack-staging-details: Added TypeScript 5.x on Node.js 20+ + axios (HTTP), nock (test HTTP mocking) — no new dependencies
-- 022-capture-views: Added TypeScript 5.x on Node.js 20+ (script); vanilla JavaScript ES modules (frontend) + Playwright (existing dev dependency), existing E2E test infrastructure (`generateTestData`, `startServer`)
 
 
 <!-- MANUAL ADDITIONS START -->

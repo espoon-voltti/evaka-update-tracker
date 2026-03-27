@@ -83,7 +83,7 @@ function renderDeployBadge(status) {
 function formatDate(isoString) {
   if (!isoString) return '';
   const d = new Date(isoString);
-  return d.toLocaleDateString('fi', { month: 'short', day: 'numeric' });
+  return `${d.getDate()}.${d.getMonth() + 1}.`;
 }
 
 function escapeHtml(str) {

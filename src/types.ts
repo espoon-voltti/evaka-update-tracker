@@ -102,6 +102,8 @@ export interface DeploymentEvent {
   newCommit: CommitInfo;
   includedPRs: PullRequest[];
   repoType: 'core' | 'wrapper';
+  branch?: string | null; // Detected branch name, null if on default branch or unknown
+  isDefaultBranch?: boolean; // true if commit is on default branch, undefined for legacy events
 }
 
 // --- Slack Notification Context ---
@@ -109,6 +111,8 @@ export interface DeploymentEvent {
 export interface StagingContext {
   inStagingCount: number;
   productionAvailable: boolean;
+  isBranchDeployment?: boolean; // true if staging is running a non-default branch
+  branchName?: string | null; // Branch name if detected
 }
 
 // --- Data File Schemas (contracts/data-files.md) ---

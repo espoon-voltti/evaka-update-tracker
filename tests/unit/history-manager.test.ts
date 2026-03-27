@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import { readHistory, appendEvents, pruneOldEvents, writeHistory } from '../../src/services/history-manager';
-import { DeploymentEvent, HistoryData } from '../../src/types';
+import { readHistory, appendEvents, pruneOldEvents, writeHistory, backfillBranchInfo } from '../../src/services/history-manager';
+import { DeploymentEvent, HistoryData, Repository } from '../../src/types';
 
 jest.mock('fs');
 
@@ -108,5 +108,99 @@ describe('writeHistory', () => {
       '/data/history.json',
       expect.stringContaining('"events"')
     );
+  });
+});
+
+describe('backfillBranchInfo', () => {
+  const testRepo: Repository = {
+    owner: 'espoon-voltti',
+    name: 'evaka',
+    type: 'core',
+    submodulePath: null,
+    defaultBranch: 'master',
+  };
+
+  const makeStagingEvent = (id: string, detectedAt: string, overrides: Partial<DeploymentEvent> = {}): DeploymentEvent => ({
+    ...makeEvent(id, detectedAt),
+    environmentId: 'espoo-staging',
+    ...overrides,
+  });
+
+  it('enriches events with undefined isDefaultBranch', async () => {
+    const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z');
+    const history: HistoryData = { events: [event] };
+
+    const mockDetect = jest.fn().mockResolvedValue({ onDefaultBranch: true, branchName: null });
+
+    const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
+
+    expect(count).toBe(1);
+    expect(event.isDefaultBranch).toBe(true);
+    expect(mockDetect).toHaveBeenCalledWith('espoon-voltti', 'evaka', 'master', 'abc123def');
+  });
+
+  it('skips events that already have isDefaultBranch', async () => {
+    const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z', { isDefaultBranch: false, branch: 'feature/x' });
+    const history: HistoryData = { events: [event] };
+
+    const mockDetect = jest.fn();
+
+    const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
+
+    expect(count).toBe(0);
+    expect(mockDetect).not.toHaveBeenCalled();
+  });
+
+  it('sets isDefaultBranch=true for production events without calling API', async () => {
+    const event = makeEvent('p1', '2026-03-01T00:00:00Z'); // environmentId: 'espoo-prod'
+    const history: HistoryData = { events: [event] };
+
+    const mockDetect = jest.fn();
+
+    const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
+
+    expect(count).toBe(1);
+    expect(event.isDefaultBranch).toBe(true);
+    expect(mockDetect).not.toHaveBeenCalled();
+  });
+
+  it('sets branch name when detection finds a non-default branch', async () => {
+    const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z');
+    const history: HistoryData = { events: [event] };
+
+    const mockDetect = jest.fn().mockResolvedValue({ onDefaultBranch: false, branchName: 'feature/test' });
+
+    await backfillBranchInfo(history, mockDetect, [testRepo]);
+
+    expect(event.isDefaultBranch).toBe(false);
+    expect(event.branch).toBe('feature/test');
+  });
+
+  it('leaves event unchanged when detection throws', async () => {
+    const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z');
+    const history: HistoryData = { events: [event] };
+
+    const mockDetect = jest.fn().mockRejectedValue(new Error('API failure'));
+
+    const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
+
+    expect(count).toBe(0);
+    expect(event.isDefaultBranch).toBeUndefined();
+  });
+
+  it('returns correct count of updated events', async () => {
+    const events = [
+      makeStagingEvent('s1', '2026-03-01T00:00:00Z'),
+      makeStagingEvent('s2', '2026-03-02T00:00:00Z', { isDefaultBranch: true }), // already has info
+      makeEvent('p1', '2026-03-03T00:00:00Z'), // production event
+    ];
+    const history: HistoryData = { events };
+
+    const mockDetect = jest.fn().mockResolvedValue({ onDefaultBranch: true, branchName: null });
+
+    const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
+
+    expect(count).toBe(2); // s1 + p1 updated, s2 skipped
+    expect(mockDetect).toHaveBeenCalledTimes(1); // Only s1 calls API, p1 is production (no API call)
   });
 });

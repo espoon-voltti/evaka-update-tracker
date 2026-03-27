@@ -15,12 +15,18 @@ export function readPreviousData(filePath: string): PreviousData {
   }
 }
 
+export interface BranchInfo {
+  branch?: string | null;
+  isDefaultBranch?: boolean;
+}
+
 export function detectChanges(
   environmentId: string,
   cityGroupId: string,
   version: VersionSnapshot,
   previous: PreviousVersionEntry | undefined,
-  includedPRs: PullRequest[]
+  includedPRs: PullRequest[],
+  branchInfoByRepoType?: Record<string, BranchInfo>
 ): DeploymentEvent[] {
   const events: DeploymentEvent[] = [];
   const now = new Date().toISOString();
@@ -34,6 +40,7 @@ export function detectChanges(
 
   // Check wrapper change
   if (currentWrapperSha && currentWrapperSha !== prevWrapperSha) {
+    const wrapperBranch = branchInfoByRepoType?.['wrapper'];
     events.push({
       id: `${now}_${environmentId}_wrapper`,
       environmentId,
@@ -45,11 +52,14 @@ export function detectChanges(
       newCommit: version.wrapperCommit!,
       includedPRs: includedPRs.filter((pr) => pr.repoType === 'wrapper'),
       repoType: 'wrapper',
+      ...(wrapperBranch?.isDefaultBranch !== undefined ? { isDefaultBranch: wrapperBranch.isDefaultBranch } : {}),
+      ...(wrapperBranch?.branch !== undefined ? { branch: wrapperBranch.branch } : {}),
     });
   }
 
   // Check core change
   if (currentCoreSha && currentCoreSha !== prevCoreSha) {
+    const coreBranch = branchInfoByRepoType?.['core'];
     events.push({
       id: `${now}_${environmentId}_core`,
       environmentId,
@@ -61,6 +71,8 @@ export function detectChanges(
       newCommit: version.coreCommit!,
       includedPRs: includedPRs.filter((pr) => pr.repoType === 'core'),
       repoType: 'core',
+      ...(coreBranch?.isDefaultBranch !== undefined ? { isDefaultBranch: coreBranch.isDefaultBranch } : {}),
+      ...(coreBranch?.branch !== undefined ? { branch: coreBranch.branch } : {}),
     });
   }
 

@@ -7,6 +7,8 @@ import {
   getPullRequest,
   getUser,
   extractPRNumberFromCommitMessage,
+  isCommitOnDefaultBranch,
+  getBranchesWhereHead,
 } from '../../src/api/github.js';
 
 
@@ -225,6 +227,120 @@ describe('getUser', () => {
     scope.done();
   });
 
+});
+
+describe('getBranchesWhereHead', () => {
+  it('returns branch names where the commit is HEAD', async () => {
+    const sha = 'branchhead123456789012345678901234567890';
+    const scope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/commits/${sha}/branches-where-head`)
+      .reply(200, [
+        { name: 'feature/my-branch', commit: { sha }, protected: false },
+        { name: 'master', commit: { sha }, protected: true },
+      ]);
+
+    const result = await getBranchesWhereHead(OWNER, REPO, sha);
+
+    expect(result).toEqual(['feature/my-branch', 'master']);
+    scope.done();
+  });
+
+  it('returns empty array when no branches have this commit as HEAD', async () => {
+    const sha = 'nobranch12345678901234567890123456789012';
+    const scope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/commits/${sha}/branches-where-head`)
+      .reply(200, []);
+
+    const result = await getBranchesWhereHead(OWNER, REPO, sha);
+
+    expect(result).toEqual([]);
+    scope.done();
+  });
+});
+
+describe('isCommitOnDefaultBranch', () => {
+  it('returns onDefaultBranch=true when commit is on default branch (0 ahead commits)', async () => {
+    const sha = 'ondefault1234567890123456789012345678901';
+    const scope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .reply(200, { commits: [] });
+
+    const result = await isCommitOnDefaultBranch(OWNER, REPO, 'master', sha);
+
+    expect(result).toEqual({ onDefaultBranch: true, branchName: null });
+    scope.done();
+  });
+
+  it('returns onDefaultBranch=false with branch name when commit is off default branch', async () => {
+    const sha = 'offdefault123456789012345678901234567890';
+    const compareScope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .reply(200, {
+        commits: [{ sha, commit: { message: 'feat', author: { date: '', name: '' } } }],
+      });
+    const branchScope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/commits/${sha}/branches-where-head`)
+      .reply(200, [
+        { name: 'feature/test-branch', commit: { sha }, protected: false },
+      ]);
+
+    const result = await isCommitOnDefaultBranch(OWNER, REPO, 'master', sha);
+
+    expect(result).toEqual({ onDefaultBranch: false, branchName: 'feature/test-branch' });
+    compareScope.done();
+    branchScope.done();
+  });
+
+  it('returns onDefaultBranch=false with null branchName when branch lookup fails', async () => {
+    const sha = 'nolookup12345678901234567890123456789012';
+    const compareScope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .reply(200, {
+        commits: [{ sha, commit: { message: 'feat', author: { date: '', name: '' } } }],
+      });
+    const branchScope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/commits/${sha}/branches-where-head`)
+      .reply(500, 'Internal Server Error');
+
+    const result = await isCommitOnDefaultBranch(OWNER, REPO, 'master', sha);
+
+    expect(result).toEqual({ onDefaultBranch: false, branchName: null });
+    compareScope.done();
+    branchScope.done();
+  });
+
+  it('returns safe fallback (onDefaultBranch=true) when compare API fails', async () => {
+    const sha = 'apifail123456789012345678901234567890123';
+    const scope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .reply(500, 'Internal Server Error');
+
+    const result = await isCommitOnDefaultBranch(OWNER, REPO, 'master', sha);
+
+    expect(result).toEqual({ onDefaultBranch: true, branchName: null });
+    scope.done();
+  });
+
+  it('excludes default branch name when finding branch name', async () => {
+    const sha = 'multibrch12345678901234567890123456789012';
+    const compareScope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .reply(200, {
+        commits: [{ sha, commit: { message: 'feat', author: { date: '', name: '' } } }],
+      });
+    const branchScope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/commits/${sha}/branches-where-head`)
+      .reply(200, [
+        { name: 'master', commit: { sha }, protected: true },
+        { name: 'feature/my-feature', commit: { sha }, protected: false },
+      ]);
+
+    const result = await isCommitOnDefaultBranch(OWNER, REPO, 'master', sha);
+
+    expect(result).toEqual({ onDefaultBranch: false, branchName: 'feature/my-feature' });
+    compareScope.done();
+    branchScope.done();
+  });
 });
 
 describe('ETag caching', () => {

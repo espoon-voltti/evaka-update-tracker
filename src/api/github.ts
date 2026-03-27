@@ -150,6 +150,60 @@ export async function getUser(username: string): Promise<string | null> {
   });
 }
 
+interface BranchWhereHead {
+  name: string;
+  commit: { sha: string };
+  protected: boolean;
+}
+
+export async function getBranchesWhereHead(
+  owner: string,
+  repo: string,
+  sha: string
+): Promise<string[]> {
+  return withRetry(async () => {
+    const data = await ghGet<BranchWhereHead[]>(
+      `/repos/${owner}/${repo}/commits/${sha}/branches-where-head`
+    );
+    return data.map((b) => b.name);
+  });
+}
+
+export async function isCommitOnDefaultBranch(
+  owner: string,
+  repo: string,
+  defaultBranch: string,
+  commitSha: string
+): Promise<{ onDefaultBranch: boolean; branchName: string | null }> {
+  try {
+    // Compare default branch against the deployed commit.
+    // If there are commits in commitSha not in defaultBranch, the commit is off the default branch.
+    const aheadCommits = await compareShas(owner, repo, defaultBranch, commitSha);
+    if (aheadCommits.length === 0) {
+      return { onDefaultBranch: true, branchName: null };
+    }
+
+    // Commit is not on default branch — try to find the branch name
+    let branchName: string | null = null;
+    try {
+      const branches = await getBranchesWhereHead(owner, repo, commitSha);
+      const nonDefault = branches.filter((b) => b !== defaultBranch);
+      if (nonDefault.length === 1) {
+        branchName = nonDefault[0];
+      } else if (nonDefault.length > 1) {
+        branchName = nonDefault[0]; // Use first non-default branch
+      }
+    } catch {
+      // Branch name lookup failed — proceed without it
+    }
+
+    return { onDefaultBranch: false, branchName };
+  } catch {
+    // On API error, assume default branch (safe fallback — no false positives)
+    return { onDefaultBranch: true, branchName: null };
+  }
+}
+
 // Patterns: "Merge pull request #123 from ..." or "Title (#123)"
 const MERGE_PR_PATTERN = /Merge pull request #(\d+) from/;
 const SQUASH_PR_PATTERN = /\(#(\d+)\)$/;

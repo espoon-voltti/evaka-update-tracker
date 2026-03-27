@@ -144,6 +144,67 @@ test.describe('History View — Finnish Language & Navigation', () => {
   });
 });
 
+test.describe('History View — Commit Links', () => {
+  test('History entries display commit links with short SHAs', async ({ page, baseUrl }) => {
+    await page.goto(`${baseUrl}/#/city/espoo/history?showBots=true`);
+    await page.waitForSelector('.city-detail');
+
+    const commitLinks = page.locator('.history-commit-link');
+    const count = await commitLinks.count();
+    expect(count).toBeGreaterThan(0);
+
+    // Each commit link should have a short SHA (7 chars) and link to GitHub
+    const firstLink = commitLinks.first();
+    const text = await firstLink.textContent();
+    expect(text).toMatch(/^[a-f0-9]{7}$/);
+
+    const href = await firstLink.getAttribute('href');
+    expect(href).toContain('github.com');
+    expect(href).toContain('/commit/');
+  });
+
+  test('Multi-repo releases show repo type labels with commit links', async ({ page, baseUrl }) => {
+    await page.goto(`${baseUrl}/#/city/tampere-region/history?showBots=true`);
+    await page.waitForSelector('.city-detail');
+
+    // Tampere has both core and wrapper, so commit info should contain repo labels
+    const commitInfos = page.locator('.history-commit-info');
+    const count = await commitInfos.count();
+    expect(count).toBeGreaterThan(0);
+  });
+});
+
+test.describe('History View — Branch Badges', () => {
+  test('Branch deployment shows branch badge with name', async ({ page, baseUrl }) => {
+    await page.goto(`${baseUrl}/#/city/espoo/history?showBots=true`);
+    await page.waitForSelector('.city-detail');
+
+    const branchBadge = page.locator('.branch-badge');
+    const count = await branchBadge.count();
+    expect(count).toBeGreaterThan(0);
+
+    // The injected test event has branch: 'feature/test-branch'
+    const badgeText = await branchBadge.first().textContent();
+    expect(badgeText).toContain('feature/test-branch');
+  });
+
+  test('Normal deployments do not show branch badge', async ({ page, baseUrl }) => {
+    await page.goto(`${baseUrl}/#/city/espoo/history?showBots=true`);
+    await page.waitForSelector('.city-detail');
+
+    // Production events should not have branch badges
+    const prodEvents = page.locator('.history-event.production');
+    const prodCount = await prodEvents.count();
+    expect(prodCount).toBeGreaterThan(0);
+
+    // Check that none of the production events have branch badges
+    for (let i = 0; i < prodCount; i++) {
+      const badges = prodEvents.nth(i).locator('.branch-badge');
+      expect(await badges.count()).toBe(0);
+    }
+  });
+});
+
 test.describe('History View — Tampere (core + wrapper)', () => {
   test('Tampere releases show both Ydin and Kuntaimplementaatio sub-headers', async ({ page, baseUrl }) => {
     await page.goto(`${baseUrl}/#/city/tampere-region/history?showBots=true`);

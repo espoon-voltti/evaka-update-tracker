@@ -45,6 +45,21 @@ function releaseHasPRs(release) {
   return release.events.some((e) => e.includedPRs && e.includedPRs.length > 0);
 }
 
+/**
+ * Derive a GitHub commit URL from a deployment event.
+ * Mirrors the logic in src/api/slack.ts getCommitUrl().
+ */
+function getCommitUrl(event) {
+  if (event.repoType === 'core') {
+    return `https://github.com/espoon-voltti/evaka/commit/${event.newCommit.sha}`;
+  }
+  const wrapperPR = (event.includedPRs || []).find((pr) => pr.repoType === 'wrapper');
+  const repoPath = wrapperPR?.repository ?? `${event.cityGroupId}/evaka-wrapper`;
+  return `https://github.com/${repoPath}/commit/${event.newCommit.sha}`;
+}
+
+const repoTypeLabels = { core: 'ydin', wrapper: 'Kuntaimplementaatio' };
+
 export function renderHistoryView(city, historyData, { showBots = false } = {}) {
   const allEvents = (historyData?.events || [])
     .filter((e) => e.cityGroupId === city.id)
@@ -123,6 +138,37 @@ function renderRelease(release, showBots) {
   const timestamp = formatTime(release.detectedAt);
   const envClass = release.envType;
 
+  // Build commit links from all events in this release
+  let commitInfo = '';
+  if (release.events.length > 0) {
+    const commitParts = release.events.map((event) => {
+      const url = getCommitUrl(event);
+      const shortSha = event.newCommit?.shortSha ?? event.newCommit?.sha?.slice(0, 7);
+      if (!shortSha) return '';
+      const link = `<a href="${escapeHtml(url)}" class="history-commit-link" target="_blank" rel="noopener">${escapeHtml(shortSha)}</a>`;
+      if (release.events.length > 1) {
+        const label = repoTypeLabels[event.repoType] || event.repoType;
+        return `${escapeHtml(label)}: ${link}`;
+      }
+      return link;
+    }).filter(Boolean);
+    if (commitParts.length > 0) {
+      commitInfo = `<span class="history-commit-info">${commitParts.join(', ')}</span>`;
+    }
+  }
+
+  // Branch badge for non-default branch staging deployments
+  let branchBadge = '';
+  if (release.envType === 'staging') {
+    const branchEvent = release.events.find((e) => e.isDefaultBranch === false);
+    if (branchEvent) {
+      const branchText = branchEvent.branch
+        ? escapeHtml(branchEvent.branch)
+        : 'ei pääkehityshaarassa';
+      branchBadge = `<span class="branch-badge">${branchText}</span>`;
+    }
+  }
+
   // Collect PRs by repo type across all events in this release
   const corePRs = [];
   const wrapperPRs = [];
@@ -162,6 +208,8 @@ function renderRelease(release, showBots) {
     <li class="history-event ${envClass}">
       <div class="history-event-header">
         <span class="history-timestamp">${timestamp}</span>
+        ${commitInfo}
+        ${branchBadge}
       </div>
       ${prSections}
     </li>
