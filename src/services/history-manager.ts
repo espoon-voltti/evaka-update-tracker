@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { HistoryData, DeploymentEvent, Repository } from '../types.js';
+import { HistoryData, DeploymentEvent, PullRequest, Repository } from '../types.js';
 
 const ONE_MONTH_MS = 30 * 24 * 60 * 60 * 1000;
 
@@ -70,6 +70,82 @@ export async function backfillBranchInfo(
       updated++;
     } catch {
       // Skip events where detection fails — leave them as undefined
+    }
+  }
+
+  return updated;
+}
+
+/**
+ * Backfill PRs for history events where staging transitioned from a branch
+ * deployment back to the default branch with 0 PRs.
+ *
+ * When staging goes branch → default, the pipeline compared branch_sha...master_sha
+ * which gave empty/misleading results. The correct comparison is
+ * last_default_sha...current_default_sha (i.e. the last default-branch staging
+ * event before the branch deployment).
+ */
+type CollectPRsFn = (
+  repo: Repository,
+  baseSha: string,
+  headSha: string
+) => Promise<PullRequest[]>;
+
+export async function backfillBranchTransitionPRs(
+  history: HistoryData,
+  collectPRsBetween: CollectPRsFn,
+  repositories: Repository[]
+): Promise<number> {
+  let updated = 0;
+
+  // Group events by environmentId, preserving chronological order (newest first)
+  const byEnv = new Map<string, DeploymentEvent[]>();
+  for (const event of history.events) {
+    const list = byEnv.get(event.environmentId) ?? [];
+    list.push(event);
+    byEnv.set(event.environmentId, list);
+  }
+
+  for (const [, events] of byEnv) {
+    for (let i = 0; i < events.length; i++) {
+      const event = events[i];
+
+      // Look for: default-branch event with 0 PRs, preceded by a branch event
+      if (
+        event.isDefaultBranch !== true ||
+        event.includedPRs.length > 0 ||
+        !event.newCommit?.sha
+      ) continue;
+
+      // Check if the previous event (i+1, since newest first) was a branch deployment
+      const prevEvent = events[i + 1];
+      if (!prevEvent || prevEvent.isDefaultBranch !== false) continue;
+
+      // Find the last default-branch event before the branch deployment
+      let baseEvent: DeploymentEvent | undefined;
+      for (let j = i + 2; j < events.length; j++) {
+        if (events[j].isDefaultBranch === true && events[j].newCommit?.sha) {
+          baseEvent = events[j];
+          break;
+        }
+      }
+      if (!baseEvent) continue;
+
+      // Don't re-collect if base and head are the same
+      if (baseEvent.newCommit.sha === event.newCommit.sha) continue;
+
+      const repo = repositories.find((r) => r.type === event.repoType);
+      if (!repo) continue;
+
+      try {
+        const prs = await collectPRsBetween(repo, baseEvent.newCommit.sha, event.newCommit.sha);
+        if (prs.length > 0) {
+          event.includedPRs = prs;
+          updated++;
+        }
+      } catch {
+        // Skip on error
+      }
     }
   }
 

@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { config as loadEnv } from 'dotenv';
 import { getCityGroups } from './config/instances.js';
-import { initGitHubClient, isCommitOnDefaultBranch } from './api/github.js';
+import { initGitHubClient, isCommitOnDefaultBranch, getPullRequestsForCommit, getPullRequest } from './api/github.js';
 import { resolveEnvironment, ResolvedEnvironment } from './services/version-resolver.js';
 import { collectPRsBetween, collectPendingPRs, buildPRTrack } from './services/pr-collector.js';
 import { readPreviousData, detectChanges, buildUpdatedPrevious, BranchInfo } from './services/change-detector.js';
@@ -12,7 +12,7 @@ import { resolveWebhookUrl } from './config/slack-routing.js';
 import { announceChanges } from './services/change-announcer.js';
 import { loadNameCache, saveNameCache, resolveNames } from './services/name-resolver.js';
 import { getUser } from './api/github.js';
-import { readHistory, appendEvents, pruneOldEvents, writeHistory, backfillBranchInfo } from './services/history-manager.js';
+import { readHistory, appendEvents, pruneOldEvents, writeHistory, backfillBranchInfo, backfillBranchTransitionPRs } from './services/history-manager.js';
 import { collectFeatureFlags } from './services/feature-flag-collector.js';
 import { FEATURE_FLAG_CITIES } from './config/feature-flag-cities.js';
 import {
@@ -84,6 +84,49 @@ async function collectPRsForRepo(
   return buildPRTrack(deployed, inStaging, pendingDeployment);
 }
 
+/**
+ * For branch deployment events, look up the branch's own PR and add it to
+ * includedPRs if not already present. This surfaces the branch's purpose
+ * (e.g. "Korjaa fork-PR:ien integraatiotestien shardaus") alongside the
+ * PRs that happen to be included in the branch deployment.
+ */
+async function enrichBranchEventWithPR(
+  event: DeploymentEvent,
+  repo: Repository
+): Promise<void> {
+  try {
+    const associatedPRs = await getPullRequestsForCommit(repo.owner, repo.name, event.newCommit.sha);
+    if (associatedPRs.length === 0) return;
+
+    const pr = associatedPRs[0];
+    // Skip if this PR is already in includedPRs
+    if (event.includedPRs.some((p) => p.number === pr.number && p.repository === `${repo.owner}/${repo.name}`)) {
+      return;
+    }
+
+    const ghPR = await getPullRequest(repo.owner, repo.name, pr.number);
+    if (!ghPR.merged_at) return;
+
+    const labels = (ghPR.labels || []).map((l: { name: string }) => l.name);
+    // The branch's own PR is always visible — it's the reason the branch was deployed
+    event.includedPRs.unshift({
+      number: ghPR.number,
+      title: ghPR.title,
+      author: ghPR.user.login,
+      authorName: null,
+      mergedAt: ghPR.merged_at ?? '',
+      repository: `${repo.owner}/${repo.name}`,
+      repoType: repo.type,
+      isBot: false,
+      isHidden: false,
+      url: ghPR.html_url,
+      labels,
+    });
+  } catch {
+    // Non-fatal — proceed without branch PR
+  }
+}
+
 export async function run() {
   const ghToken = process.env.GH_TOKEN;
   if (!ghToken) {
@@ -140,17 +183,10 @@ export async function run() {
         const coreRepo = cityGroup.repositories.find((r) => r.type === 'core')!;
         const changePRs: PullRequest[] = [];
 
-        if (wrapperRepo && wrapperSha && prevWrapperSha && wrapperSha !== prevWrapperSha) {
-          const wrapperPRs = await collectPRsBetween(wrapperRepo, prevWrapperSha, wrapperSha);
-          changePRs.push(...wrapperPRs);
-        }
-        if (coreSha && prevCoreSha && coreSha !== prevCoreSha) {
-          const corePRs = await collectPRsBetween(coreRepo, prevCoreSha, coreSha);
-          changePRs.push(...corePRs);
-        }
-
-        // Detect branch info for staging environments
+        // Detect branch info for staging environments (needed before PR collection
+        // to determine if previous commit was a branch deployment)
         let branchInfoByRepoType: Record<string, BranchInfo> | undefined;
+        let prevWasBranchDeployment = false;
         if (env.type === 'staging') {
           branchInfoByRepoType = {};
           if (coreSha && coreSha !== prevCoreSha) {
@@ -159,6 +195,13 @@ export async function run() {
               isDefaultBranch: result.onDefaultBranch,
               branch: result.branchName,
             };
+            // Check if previous staging commit was a branch deployment
+            if (prevCoreSha) {
+              const prevResult = await isCommitOnDefaultBranch(coreRepo.owner, coreRepo.name, coreRepo.defaultBranch, prevCoreSha);
+              if (!prevResult.onDefaultBranch) {
+                prevWasBranchDeployment = true;
+              }
+            }
           }
           if (wrapperRepo && wrapperSha && wrapperSha !== prevWrapperSha) {
             const result = await isCommitOnDefaultBranch(wrapperRepo.owner, wrapperRepo.name, wrapperRepo.defaultBranch, wrapperSha);
@@ -169,7 +212,34 @@ export async function run() {
           }
         }
 
+        // When transitioning from a branch deployment back to default branch,
+        // use the production SHA as compare base instead of the branch SHA
+        // (cross-branch comparison gives misleading PR results)
+        const effectivePrevCoreSha = (prevWasBranchDeployment && branchInfoByRepoType?.['core']?.isDefaultBranch)
+          ? (prodSha['core'] ?? prevCoreSha)
+          : prevCoreSha;
+
+        if (wrapperRepo && wrapperSha && prevWrapperSha && wrapperSha !== prevWrapperSha) {
+          const wrapperPRs = await collectPRsBetween(wrapperRepo, prevWrapperSha, wrapperSha);
+          changePRs.push(...wrapperPRs);
+        }
+        if (coreSha && effectivePrevCoreSha && coreSha !== effectivePrevCoreSha) {
+          const corePRs = await collectPRsBetween(coreRepo, effectivePrevCoreSha, coreSha);
+          changePRs.push(...corePRs);
+        }
+
         const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, changePRs, branchInfoByRepoType);
+
+        // For branch deployment events, look up the branch's own PR and add it
+        for (const event of events) {
+          if (event.isDefaultBranch === false && event.newCommit?.sha) {
+            const repo = event.repoType === 'wrapper' ? wrapperRepo : coreRepo;
+            if (repo) {
+              await enrichBranchEventWithPR(event, repo);
+            }
+          }
+        }
+
         allEvents.push(...events);
 
         updatedPrevious = buildUpdatedPrevious(updatedPrevious, env.id, rep);
@@ -317,6 +387,12 @@ export async function run() {
   const backfillCount = await backfillBranchInfo(history, isCommitOnDefaultBranch, allRepos);
   if (backfillCount > 0) {
     console.log(`[BACKFILL] Enriched ${backfillCount} history event(s) with branch info.`);
+  }
+
+  // Backfill PRs for branch→default transitions that were recorded with 0 PRs
+  const prBackfillCount = await backfillBranchTransitionPRs(history, collectPRsBetween, allRepos);
+  if (prBackfillCount > 0) {
+    console.log(`[BACKFILL] Re-collected PRs for ${prBackfillCount} branch→default transition(s).`);
   }
 
   // Announce changes to repo default branches (independent from deployment notifications)
