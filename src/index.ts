@@ -140,17 +140,10 @@ export async function run() {
         const coreRepo = cityGroup.repositories.find((r) => r.type === 'core')!;
         const changePRs: PullRequest[] = [];
 
-        if (wrapperRepo && wrapperSha && prevWrapperSha && wrapperSha !== prevWrapperSha) {
-          const wrapperPRs = await collectPRsBetween(wrapperRepo, prevWrapperSha, wrapperSha);
-          changePRs.push(...wrapperPRs);
-        }
-        if (coreSha && prevCoreSha && coreSha !== prevCoreSha) {
-          const corePRs = await collectPRsBetween(coreRepo, prevCoreSha, coreSha);
-          changePRs.push(...corePRs);
-        }
-
-        // Detect branch info for staging environments
+        // Detect branch info for staging environments (needed before PR collection
+        // to determine if previous commit was a branch deployment)
         let branchInfoByRepoType: Record<string, BranchInfo> | undefined;
+        let prevWasBranchDeployment = false;
         if (env.type === 'staging') {
           branchInfoByRepoType = {};
           if (coreSha && coreSha !== prevCoreSha) {
@@ -159,6 +152,13 @@ export async function run() {
               isDefaultBranch: result.onDefaultBranch,
               branch: result.branchName,
             };
+            // Check if previous staging commit was a branch deployment
+            if (prevCoreSha) {
+              const prevResult = await isCommitOnDefaultBranch(coreRepo.owner, coreRepo.name, coreRepo.defaultBranch, prevCoreSha);
+              if (!prevResult.onDefaultBranch) {
+                prevWasBranchDeployment = true;
+              }
+            }
           }
           if (wrapperRepo && wrapperSha && wrapperSha !== prevWrapperSha) {
             const result = await isCommitOnDefaultBranch(wrapperRepo.owner, wrapperRepo.name, wrapperRepo.defaultBranch, wrapperSha);
@@ -167,6 +167,22 @@ export async function run() {
               branch: result.branchName,
             };
           }
+        }
+
+        // When transitioning from a branch deployment back to default branch,
+        // use the production SHA as compare base instead of the branch SHA
+        // (cross-branch comparison gives misleading PR results)
+        const effectivePrevCoreSha = (prevWasBranchDeployment && branchInfoByRepoType?.['core']?.isDefaultBranch)
+          ? (prodSha['core'] ?? prevCoreSha)
+          : prevCoreSha;
+
+        if (wrapperRepo && wrapperSha && prevWrapperSha && wrapperSha !== prevWrapperSha) {
+          const wrapperPRs = await collectPRsBetween(wrapperRepo, prevWrapperSha, wrapperSha);
+          changePRs.push(...wrapperPRs);
+        }
+        if (coreSha && effectivePrevCoreSha && coreSha !== effectivePrevCoreSha) {
+          const corePRs = await collectPRsBetween(coreRepo, effectivePrevCoreSha, coreSha);
+          changePRs.push(...corePRs);
         }
 
         const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, changePRs, branchInfoByRepoType);
