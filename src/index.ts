@@ -105,7 +105,7 @@ async function enrichBranchEventWithPR(
     }
 
     const ghPR = await getPullRequest(repo.owner, repo.name, pr.number);
-    if (!ghPR.merged_at && !ghPR.head) return;
+    if (!ghPR.merged_at) return;
 
     const labels = (ghPR.labels || []).map((l: { name: string }) => l.name);
     // The branch's own PR is always visible — it's the reason the branch was deployed
