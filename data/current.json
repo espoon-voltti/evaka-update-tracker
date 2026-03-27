@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-27T05:41:55.121Z",
+  "generatedAt": "2026-03-27T05:43:27.637Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-27T05:41:23.027Z",
+            "checkedAt": "2026-03-27T05:42:57.891Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-27T05:41:23.647Z",
+            "checkedAt": "2026-03-27T05:42:58.562Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -79,7 +79,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-27T05:41:25.639Z",
+            "checkedAt": "2026-03-27T05:43:00.828Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -104,25 +104,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-27T05:41:32.416Z",
+            "checkedAt": "2026-03-27T05:43:07.421Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
-              "shortSha": "960212e",
-              "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
-              "date": "2026-03-26T06:00:55Z",
+              "sha": "337cc2081e03b61da49511a2c0f27d511a3463cf",
+              "shortSha": "337cc20",
+              "message": "Merge pull request #2069 from Tampere/dependabot/submodules/evaka-438b2c8",
+              "date": "2026-03-27T05:27:56Z",
               "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
-              "shortSha": "c20d117",
-              "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
-              "date": "2026-03-25T13:03:55Z",
-              "author": "ohinkinen"
+              "sha": "438b2c8c6af6470c624d3f3564defe1e36ef5c61",
+              "shortSha": "438b2c8",
+              "message": "Merge pull request #8759 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/picomatch-2.3.2",
+              "date": "2026-03-26T11:37:18Z",
+              "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-03-27T05:43:07.421Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "337cc2081e03b61da49511a2c0f27d511a3463cf",
+                "shortSha": "337cc20",
+                "message": "Merge pull request #2069 from Tampere/dependabot/submodules/evaka-438b2c8",
+                "date": "2026-03-27T05:27:56Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "438b2c8c6af6470c624d3f3564defe1e36ef5c61",
+                "shortSha": "438b2c8",
+                "message": "Merge pull request #8759 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/picomatch-2.3.2",
+                "date": "2026-03-26T11:37:18Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-03-27T05:43:08.122Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-03-27T05:43:08.791Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-03-27T05:43:09.458Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-03-27T05:43:10.100Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-03-27T05:43:10.769Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-03-27T05:43:11.628Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-03-27T05:43:12.369Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-03-27T05:43:13.046Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "960212ef7c2ad766826f1a053c5376369d47cb22",
+                "shortSha": "960212e",
+                "message": "Merge pull request #2068 from Tampere/dependabot/submodules/evaka-c20d117",
+                "date": "2026-03-26T06:00:55Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "c20d1175594ba8dcf8baf87fe8ef0302ad048ca5",
+                "shortSha": "c20d117",
+                "message": "Merge pull request #8755 from espoon-voltti/dvv-basic-auth",
+                "date": "2026-03-25T13:03:55Z",
+                "author": "ohinkinen"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -150,6 +322,21 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8754,
+              "title": "Korjataan Varda-virheraportin liian suurien päivälukumäärien näyttäminen",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-03-26T10:05:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8754",
+              "labels": [
+                "enhancement"
+              ]
+            },
             {
               "number": 8755,
               "title": "Muutetaan DVV muutosrajapinta käyttämään basic authia",
@@ -181,23 +368,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8754,
-              "title": "Korjataan Varda-virheraportin liian suurien päivälukumäärien näyttäminen",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-26T10:05:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8754",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -210,7 +381,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-27T05:41:42.184Z",
+            "checkedAt": "2026-03-27T05:43:19.156Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8d0933b8b1b5da4cfd5b00780a1aed01a5c6489c",
@@ -235,7 +406,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-27T05:41:43.068Z",
+            "checkedAt": "2026-03-27T05:43:20.190Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fcd32fe79638092909c03bd0671fab45f2bf577e",
@@ -310,7 +481,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-27T05:41:48.526Z",
+            "checkedAt": "2026-03-27T05:43:23.517Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "399213b34e16a6d3e69831d7c444269e5c97490d",
@@ -335,7 +506,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-27T05:41:49.677Z",
+            "checkedAt": "2026-03-27T05:43:24.421Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fb8cd9a690839febfd49e95714a5cec855f0409e",
