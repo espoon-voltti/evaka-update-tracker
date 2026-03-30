@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T09:27:48.403Z",
+  "generatedAt": "2026-03-30T09:55:31.747Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T09:26:25.978Z",
+            "checkedAt": "2026-03-30T09:54:26.497Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T09:26:33.939Z",
+            "checkedAt": "2026-03-30T09:54:27.610Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,39 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8765,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:56:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8765",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            },
-            {
-              "number": 8764,
-              "title": "Enable/disable test mode before/after all e2e tests instead of before/after each test",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:38:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8764",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -95,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T09:26:48.187Z",
+            "checkedAt": "2026-03-30T09:54:34.967Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -120,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T09:26:59.583Z",
+            "checkedAt": "2026-03-30T09:54:44.984Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "49a53371b2b5b0448d2f45713631ca8664c5de59",
@@ -256,7 +224,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T09:27:28.842Z",
+            "checkedAt": "2026-03-30T09:55:12.864Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2c9f20d96d9a80db29f09d65611a5f429cd05e79",
@@ -281,7 +249,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T09:27:30.160Z",
+            "checkedAt": "2026-03-30T09:55:14.126Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2c9f20d96d9a80db29f09d65611a5f429cd05e79",
@@ -326,7 +294,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-30T09:27:38.501Z",
+            "checkedAt": "2026-03-30T09:55:22.075Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "916e6cf6b93545afc95ad3d2bab4db9ff7137c55",
@@ -351,7 +319,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-30T09:27:40.221Z",
+            "checkedAt": "2026-03-30T09:55:23.486Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "916e6cf6b93545afc95ad3d2bab4db9ff7137c55",
