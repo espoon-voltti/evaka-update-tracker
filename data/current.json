@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T09:25:37.825Z",
+  "generatedAt": "2026-03-30T09:27:48.403Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T09:23:59.752Z",
+            "checkedAt": "2026-03-30T09:26:25.978Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "438b2c8c6af6470c624d3f3564defe1e36ef5c61",
-              "shortSha": "438b2c8",
-              "message": "Merge pull request #8759 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/picomatch-2.3.2",
-              "date": "2026-03-26T11:37:18Z",
-              "author": "akheron"
+              "sha": "e04da2ad205a6a7e0307825828b11bd893652d79",
+              "shortSha": "e04da2a",
+              "message": "Update dependency io.kotest:kotest-property to v6.1.8 (#8799)",
+              "date": "2026-03-29T05:17:53Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T09:24:00.731Z",
+            "checkedAt": "2026-03-30T09:26:33.939Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8765,
               "title": "CVE-korjaus",
@@ -82,6 +81,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -95,7 +95,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T09:24:14.420Z",
+            "checkedAt": "2026-03-30T09:26:48.187Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -120,7 +120,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T09:24:24.890Z",
+            "checkedAt": "2026-03-30T09:26:59.583Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "49a53371b2b5b0448d2f45713631ca8664c5de59",
@@ -256,7 +256,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T09:24:52.133Z",
+            "checkedAt": "2026-03-30T09:27:28.842Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2c9f20d96d9a80db29f09d65611a5f429cd05e79",
@@ -281,7 +281,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T09:25:00.081Z",
+            "checkedAt": "2026-03-30T09:27:30.160Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2c9f20d96d9a80db29f09d65611a5f429cd05e79",
@@ -311,39 +311,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8765,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:56:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8765",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            },
-            {
-              "number": 8764,
-              "title": "Enable/disable test mode before/after all e2e tests instead of before/after each test",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:38:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8764",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -358,7 +326,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-30T09:25:14.876Z",
+            "checkedAt": "2026-03-30T09:27:38.501Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "916e6cf6b93545afc95ad3d2bab4db9ff7137c55",
@@ -383,7 +351,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-30T09:25:23.087Z",
+            "checkedAt": "2026-03-30T09:27:40.221Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "916e6cf6b93545afc95ad3d2bab4db9ff7137c55",
@@ -413,39 +381,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8765,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:56:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8765",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            },
-            {
-              "number": 8764,
-              "title": "Enable/disable test mode before/after all e2e tests instead of before/after each test",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:38:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8764",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
