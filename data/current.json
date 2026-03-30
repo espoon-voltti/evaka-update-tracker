@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T04:38:27.553Z",
+  "generatedAt": "2026-03-30T04:50:40.499Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T04:37:33.343Z",
+            "checkedAt": "2026-03-30T04:49:33.408Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T04:37:33.965Z",
+            "checkedAt": "2026-03-30T04:49:34.062Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -95,7 +95,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T04:37:42.510Z",
+            "checkedAt": "2026-03-30T04:49:44.405Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -120,21 +120,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T04:37:49.188Z",
+            "checkedAt": "2026-03-30T04:49:51.489Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "337cc2081e03b61da49511a2c0f27d511a3463cf",
-              "shortSha": "337cc20",
-              "message": "Merge pull request #2069 from Tampere/dependabot/submodules/evaka-438b2c8",
-              "date": "2026-03-27T05:27:56Z",
+              "sha": "49a53371b2b5b0448d2f45713631ca8664c5de59",
+              "shortSha": "49a5337",
+              "message": "Merge pull request #2071 from Tampere/dependabot/submodules/evaka-e04da2a",
+              "date": "2026-03-30T04:23:51Z",
               "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "438b2c8c6af6470c624d3f3564defe1e36ef5c61",
-              "shortSha": "438b2c8",
-              "message": "Merge pull request #8759 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/picomatch-2.3.2",
-              "date": "2026-03-26T11:37:18Z",
-              "author": "akheron"
+              "sha": "e04da2ad205a6a7e0307825828b11bd893652d79",
+              "shortSha": "e04da2a",
+              "message": "Update dependency io.kotest:kotest-property to v6.1.8 (#8799)",
+              "date": "2026-03-29T05:17:53Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -166,6 +166,37 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8765,
+              "title": "CVE-korjaus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-03-27T10:56:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8765",
+              "labels": [
+                "dependencies",
+                "service"
+              ]
+            },
+            {
+              "number": 8764,
+              "title": "Enable/disable test mode before/after all e2e tests instead of before/after each test",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-03-27T10:38:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8764",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8754,
               "title": "Korjataan Varda-virheraportin liian suurien päivälukumäärien näyttäminen",
@@ -212,39 +243,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8765,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:56:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8765",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            },
-            {
-              "number": 8764,
-              "title": "Enable/disable test mode before/after all e2e tests instead of before/after each test",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:38:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8764",
-              "labels": [
-                "tech"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -257,7 +256,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T04:38:07.388Z",
+            "checkedAt": "2026-03-30T04:50:18.289Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fcd32fe79638092909c03bd0671fab45f2bf577e",
@@ -282,7 +281,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T04:38:08.226Z",
+            "checkedAt": "2026-03-30T04:50:19.099Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2c9f20d96d9a80db29f09d65611a5f429cd05e79",
@@ -359,7 +358,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-30T04:38:17.642Z",
+            "checkedAt": "2026-03-30T04:50:29.296Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fb8cd9a690839febfd49e95714a5cec855f0409e",
@@ -384,7 +383,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-30T04:38:18.512Z",
+            "checkedAt": "2026-03-30T04:50:30.281Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "916e6cf6b93545afc95ad3d2bab4db9ff7137c55",
