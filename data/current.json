@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-30T03:49:16.929Z",
+  "generatedAt": "2026-03-30T04:36:50.021Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T03:48:34.417Z",
+            "checkedAt": "2026-03-30T04:35:39.290Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-30T03:48:34.972Z",
+            "checkedAt": "2026-03-30T04:35:40.060Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -95,7 +95,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T03:48:40.833Z",
+            "checkedAt": "2026-03-30T04:35:49.336Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -120,7 +120,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-30T03:48:47.625Z",
+            "checkedAt": "2026-03-30T04:35:56.427Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "337cc2081e03b61da49511a2c0f27d511a3463cf",
@@ -257,7 +257,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T03:49:02.710Z",
+            "checkedAt": "2026-03-30T04:36:15.537Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fcd32fe79638092909c03bd0671fab45f2bf577e",
@@ -282,21 +282,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-30T03:49:03.528Z",
+            "checkedAt": "2026-03-30T04:36:16.416Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "fcd32fe79638092909c03bd0671fab45f2bf577e",
-              "shortSha": "fcd32fe",
-              "message": "Merge pull request #323 from Oulunkaupunki/dependabot/submodules/evaka-438b2c8",
-              "date": "2026-03-27T02:14:09Z",
+              "sha": "2c9f20d96d9a80db29f09d65611a5f429cd05e79",
+              "shortSha": "2c9f20d",
+              "message": "Merge pull request #325 from Oulunkaupunki/dependabot/submodules/evaka-e04da2a",
+              "date": "2026-03-30T01:16:13Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "438b2c8c6af6470c624d3f3564defe1e36ef5c61",
-              "shortSha": "438b2c8",
-              "message": "Merge pull request #8759 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/picomatch-2.3.2",
-              "date": "2026-03-26T11:37:18Z",
-              "author": "akheron"
+              "sha": "e04da2ad205a6a7e0307825828b11bd893652d79",
+              "shortSha": "e04da2a",
+              "message": "Update dependency io.kotest:kotest-property to v6.1.8 (#8799)",
+              "date": "2026-03-29T05:17:53Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -313,8 +313,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8765,
               "title": "CVE-korjaus",
@@ -346,7 +345,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -359,7 +359,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-30T03:49:09.883Z",
+            "checkedAt": "2026-03-30T04:36:33.044Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fb8cd9a690839febfd49e95714a5cec855f0409e",
@@ -384,21 +384,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-30T03:49:10.721Z",
+            "checkedAt": "2026-03-30T04:36:33.895Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "fb8cd9a690839febfd49e95714a5cec855f0409e",
-              "shortSha": "fb8cd9a",
-              "message": "Merge pull request #279 from City-of-Turku/dependabot/submodules/evaka-438b2c8",
-              "date": "2026-03-27T02:14:03Z",
+              "sha": "916e6cf6b93545afc95ad3d2bab4db9ff7137c55",
+              "shortSha": "916e6cf",
+              "message": "Merge pull request #281 from City-of-Turku/dependabot/submodules/evaka-e04da2a",
+              "date": "2026-03-30T01:16:13Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "438b2c8c6af6470c624d3f3564defe1e36ef5c61",
-              "shortSha": "438b2c8",
-              "message": "Merge pull request #8759 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/picomatch-2.3.2",
-              "date": "2026-03-26T11:37:18Z",
-              "author": "akheron"
+              "sha": "e04da2ad205a6a7e0307825828b11bd893652d79",
+              "shortSha": "e04da2a",
+              "message": "Update dependency io.kotest:kotest-property to v6.1.8 (#8799)",
+              "date": "2026-03-29T05:17:53Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -415,8 +415,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8765,
               "title": "CVE-korjaus",
@@ -448,7 +447,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
