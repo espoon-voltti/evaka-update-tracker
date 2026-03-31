@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-31T10:00:34.003Z",
+  "generatedAt": "2026-03-31T10:06:16.290Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-31T09:58:59.967Z",
+            "checkedAt": "2026-03-31T10:05:24.997Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-03-31T09:59:07.120Z",
+            "checkedAt": "2026-03-31T10:05:25.801Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,23 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8766,
-              "title": "Espoo: Päivitetään oikaisuvaatimuslinkit esiopetuksen ja valmistavan päätöksiin",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-30T09:58:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8766",
-              "labels": [
-                "bug"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -112,7 +96,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-31T09:59:15.366Z",
+            "checkedAt": "2026-03-31T10:05:27.279Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7c80ab8ca9b2260d33bbbf7388c12fd372208114",
@@ -137,7 +121,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-03-31T09:59:26.097Z",
+            "checkedAt": "2026-03-31T10:05:35.462Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "76694065e176a79a7c4bd56921564529caed8388",
@@ -306,7 +290,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-31T10:00:02.268Z",
+            "checkedAt": "2026-03-31T10:05:59.807Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4f585de7af92cfc72081eab0c26cf9599f2377d5",
@@ -331,7 +315,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-03-31T10:00:12.072Z",
+            "checkedAt": "2026-03-31T10:06:00.797Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4f585de7af92cfc72081eab0c26cf9599f2377d5",
@@ -361,23 +345,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8766,
-              "title": "Espoo: Päivitetään oikaisuvaatimuslinkit esiopetuksen ja valmistavan päätöksiin",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-30T09:58:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8766",
-              "labels": [
-                "bug"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -425,7 +393,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-03-31T10:00:22.465Z",
+            "checkedAt": "2026-03-31T10:06:02.740Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "916e6cf6b93545afc95ad3d2bab4db9ff7137c55",
@@ -450,20 +418,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-03-31T10:00:23.423Z",
+            "checkedAt": "2026-03-31T10:06:03.637Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "659bd251be0108b3c267350a0581b41d5ce5d75c",
-              "shortSha": "659bd25",
-              "message": "Merge pull request #283 from City-of-Turku/dependabot/submodules/evaka-50605db",
-              "date": "2026-03-31T01:14:37Z",
-              "author": "github-actions[bot]"
+              "sha": "85568f1d920b1116efd6bcbbb0452041ab0b48b7",
+              "shortSha": "85568f1",
+              "message": "Update evaka submodule",
+              "date": "2026-03-31T09:45:16Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "50605db389f010c5835cec9ae6716d8497fff92a",
-              "shortSha": "50605db",
-              "message": "Merge pull request #8803 from espoon-voltti/sandbox-readme",
-              "date": "2026-03-30T11:49:50Z",
+              "sha": "4f0e47cc81d786cf5c5b67f79d6ac1389ee05a9a",
+              "shortSha": "4f0e47c",
+              "message": "Merge pull request #8807 from espoon-voltti/turku-text-changes",
+              "date": "2026-03-31T09:27:55Z",
               "author": "akheron"
             }
           },
@@ -482,23 +450,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 8766,
-              "title": "Espoo: Päivitetään oikaisuvaatimuslinkit esiopetuksen ja valmistavan päätöksiin",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-30T09:58:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8766",
-              "labels": [
-                "bug"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 8807,
               "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
@@ -530,8 +481,24 @@
                 "enhancement",
                 "espoo"
               ]
+            },
+            {
+              "number": 8766,
+              "title": "Espoo: Päivitetään oikaisuvaatimuslinkit esiopetuksen ja valmistavan päätöksiin",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-03-30T09:58:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8766",
+              "labels": [
+                "bug"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }

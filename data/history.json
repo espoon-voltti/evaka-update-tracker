@@ -1,6 +1,87 @@
 {
   "events": [
     {
+      "id": "2026-03-31T10:06:07.566Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-31T10:06:07.566Z",
+      "previousCommit": {
+        "sha": "659bd251be0108b3c267350a0581b41d5ce5d75c",
+        "shortSha": "659bd25",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "85568f1d920b1116efd6bcbbb0452041ab0b48b7",
+        "shortSha": "85568f1",
+        "message": "Update evaka submodule",
+        "date": "2026-03-31T09:45:16Z",
+        "author": "akheron"
+      },
+      "includedPRs": [],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-03-31T10:06:07.566Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-03-31T10:06:07.566Z",
+      "previousCommit": {
+        "sha": "50605db389f010c5835cec9ae6716d8497fff92a",
+        "shortSha": "50605db",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "4f0e47cc81d786cf5c5b67f79d6ac1389ee05a9a",
+        "shortSha": "4f0e47c",
+        "message": "Merge pull request #8807 from espoon-voltti/turku-text-changes",
+        "date": "2026-03-31T09:27:55Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8807,
+          "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:27:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8807",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8806,
+          "title": "Henkilökunnan käyttöliittymän SV-käännöskorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:17:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8806",
+          "labels": [
+            "enhancement",
+            "espoo"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-03-31T09:59:07.119Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
