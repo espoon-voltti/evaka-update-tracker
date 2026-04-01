@@ -1,6 +1,78 @@
 {
   "events": [
     {
+      "id": "2026-04-01T04:56:26.755Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-01T04:56:26.755Z",
+      "previousCommit": {
+        "sha": "50605db389f010c5835cec9ae6716d8497fff92a",
+        "shortSha": "50605db",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5428b96f9778e53e349167835d63224827f357f0",
+        "shortSha": "5428b96",
+        "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
+        "date": "2026-03-31T11:44:52Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8767,
+          "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-31T11:44:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8767",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8807,
+          "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:27:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8807",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8806,
+          "title": "Henkilökunnan käyttöliittymän SV-käännöskorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:17:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8806",
+          "labels": [
+            "enhancement",
+            "espoo"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-01T04:53:32.354Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
