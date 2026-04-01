@@ -1,6 +1,345 @@
 {
   "events": [
     {
+      "id": "2026-04-01T04:53:32.354Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-01T04:53:32.354Z",
+      "previousCommit": {
+        "sha": "76694065e176a79a7c4bd56921564529caed8388",
+        "shortSha": "7669406",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
+        "shortSha": "198a660",
+        "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
+        "date": "2026-04-01T04:31:37Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 2074,
+          "title": "Bump evaka from `50605db` to `5428b96`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-01T04:31:37Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2074",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2061,
+          "title": "Bump adobe/s3mock from 4.11.0 to 4.12.2",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-31T13:24:13Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2061",
+          "labels": [
+            "dependencies",
+            "docker_compose"
+          ]
+        },
+        {
+          "number": 2060,
+          "title": "Bump gradle-wrapper from 9.4.0 to 9.4.1 in /service",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-03-31T13:08:44Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2060",
+          "labels": [
+            "dependencies",
+            "java"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-01T04:53:32.354Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-01T04:53:32.354Z",
+      "previousCommit": {
+        "sha": "50605db389f010c5835cec9ae6716d8497fff92a",
+        "shortSha": "50605db",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5428b96f9778e53e349167835d63224827f357f0",
+        "shortSha": "5428b96",
+        "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
+        "date": "2026-03-31T11:44:52Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8767,
+          "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-31T11:44:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8767",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8807,
+          "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:27:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8807",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8806,
+          "title": "Henkilökunnan käyttöliittymän SV-käännöskorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:17:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8806",
+          "labels": [
+            "enhancement",
+            "espoo"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-01T04:53:54.280Z_oulu-staging_wrapper",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-01T04:53:54.280Z",
+      "previousCommit": {
+        "sha": "4f585de7af92cfc72081eab0c26cf9599f2377d5",
+        "shortSha": "4f585de",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f4d7785e6fdfd871b938adc8fdf84006112947a2",
+        "shortSha": "f4d7785",
+        "message": "Merge pull request #328 from Oulunkaupunki/dependabot/submodules/evaka-5428b96",
+        "date": "2026-04-01T01:16:50Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 328,
+          "title": "Bump evaka from `50605db` to `5428b96`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-01T01:16:50Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/328",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-01T04:53:54.280Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-01T04:53:54.280Z",
+      "previousCommit": {
+        "sha": "50605db389f010c5835cec9ae6716d8497fff92a",
+        "shortSha": "50605db",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5428b96f9778e53e349167835d63224827f357f0",
+        "shortSha": "5428b96",
+        "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
+        "date": "2026-03-31T11:44:52Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8767,
+          "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-31T11:44:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8767",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8807,
+          "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:27:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8807",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8806,
+          "title": "Henkilökunnan käyttöliittymän SV-käännöskorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-03-31T09:17:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8806",
+          "labels": [
+            "enhancement",
+            "espoo"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-01T04:53:59.937Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-01T04:53:59.937Z",
+      "previousCommit": {
+        "sha": "85568f1d920b1116efd6bcbbb0452041ab0b48b7",
+        "shortSha": "85568f1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1b12ac30f881c893e5693d759430cfc29a5cd071",
+        "shortSha": "1b12ac3",
+        "message": "Merge pull request #284 from City-of-Turku/dependabot/submodules/evaka-5428b96",
+        "date": "2026-04-01T01:17:03Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 284,
+          "title": "Bump evaka from `4f0e47c` to `5428b96`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-01T01:17:03Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/284",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-01T04:53:59.937Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-01T04:53:59.937Z",
+      "previousCommit": {
+        "sha": "4f0e47cc81d786cf5c5b67f79d6ac1389ee05a9a",
+        "shortSha": "4f0e47c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5428b96f9778e53e349167835d63224827f357f0",
+        "shortSha": "5428b96",
+        "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
+        "date": "2026-03-31T11:44:52Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8767,
+          "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-03-31T11:44:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8767",
+          "labels": [
+            "enhancement"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-03-31T10:19:39.243Z_turku-prod_wrapper",
       "environmentId": "turku-prod",
       "cityGroupId": "turku",
