@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-01T10:34:30.068Z",
+  "generatedAt": "2026-04-01T10:58:14.293Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-01T10:33:17.103Z",
+            "checkedAt": "2026-04-01T10:57:44.390Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-01T10:33:20.428Z",
+            "checkedAt": "2026-04-01T10:57:45.220Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,55 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8767,
-              "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-31T11:44:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8767",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8807,
-              "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-31T09:27:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8807",
-              "labels": [
-                "enhancement",
-                "turku"
-              ]
-            },
-            {
-              "number": 8806,
-              "title": "Henkilökunnan käyttöliittymän SV-käännöskorjauksia",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-31T09:17:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8806",
-              "labels": [
-                "enhancement",
-                "espoo"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -127,7 +79,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-01T10:33:23.379Z",
+            "checkedAt": "2026-04-01T10:57:47.166Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -152,7 +104,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-01T10:33:49.935Z",
+            "checkedAt": "2026-04-01T10:57:56.819Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -176,106 +128,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [
-            {
-              "number": 2066,
-              "title": "Palveluohjauksen työpöytä päälle testiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-03-25T10:03:00Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2066",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8767,
-              "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-31T11:44:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8767",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8807,
-              "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-31T09:27:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8807",
-              "labels": [
-                "enhancement",
-                "turku"
-              ]
-            },
-            {
-              "number": 8806,
-              "title": "Henkilökunnan käyttöliittymän SV-käännöskorjauksia",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-31T09:17:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8806",
-              "labels": [
-                "enhancement",
-                "espoo"
-              ]
-            },
-            {
-              "number": 8766,
-              "title": "Espoo: Päivitetään oikaisuvaatimuslinkit esiopetuksen ja valmistavan päätöksiin",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-03-30T09:58:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8766",
-              "labels": [
-                "bug"
-              ]
-            },
-            {
-              "number": 8765,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-27T10:56:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8765",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -306,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-01T10:34:16.463Z",
+            "checkedAt": "2026-04-01T10:58:07.022Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f4d7785e6fdfd871b938adc8fdf84006112947a2",
@@ -331,7 +190,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-01T10:34:20.319Z",
+            "checkedAt": "2026-04-01T10:58:08.305Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f4d7785e6fdfd871b938adc8fdf84006112947a2",
@@ -361,55 +220,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8767,
-              "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-31T11:44:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8767",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8807,
-              "title": "Turku: Tekstimuutoksia esiopetus- ja valmopäätöksille",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-31T09:27:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8807",
-              "labels": [
-                "enhancement",
-                "turku"
-              ]
-            },
-            {
-              "number": 8806,
-              "title": "Henkilökunnan käyttöliittymän SV-käännöskorjauksia",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-03-31T09:17:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8806",
-              "labels": [
-                "enhancement",
-                "espoo"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -440,7 +251,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-01T10:34:24.476Z",
+            "checkedAt": "2026-04-01T10:58:10.498Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1b12ac30f881c893e5693d759430cfc29a5cd071",
@@ -465,7 +276,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-01T10:34:26.774Z",
+            "checkedAt": "2026-04-01T10:58:11.624Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1b12ac30f881c893e5693d759430cfc29a5cd071",
@@ -495,23 +306,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8767,
-              "title": "Lisätään \"Muokattu\"-sarake työntekijän tuloselvitystaulukkoon",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-03-31T11:44:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8767",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
