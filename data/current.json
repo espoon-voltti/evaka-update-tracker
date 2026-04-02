@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T09:30:58.560Z",
+  "generatedAt": "2026-04-02T09:32:21.362Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-02T09:30:21.711Z",
+            "checkedAt": "2026-04-02T09:31:38.034Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-02T09:30:23.669Z",
+            "checkedAt": "2026-04-02T09:31:39.597Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,23 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8721,
-              "title": "Käytetään Playwright runnerin expect-toteutusta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-01T06:51:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8721",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -79,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-02T09:30:26.141Z",
+            "checkedAt": "2026-04-02T09:31:41.810Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -104,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-02T09:30:33.317Z",
+            "checkedAt": "2026-04-02T09:31:54.037Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e329c7f647413966bcdb4a534e1866f120236365",
@@ -165,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-02T09:30:44.300Z",
+            "checkedAt": "2026-04-02T09:32:11.548Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "43eae66e74dd682e42804f43504ffb213ded9d97",
@@ -190,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-02T09:30:47.308Z",
+            "checkedAt": "2026-04-02T09:32:13.267Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "43eae66e74dd682e42804f43504ffb213ded9d97",
@@ -214,43 +198,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "Oulunkaupunki/evakaoulu",
-          "deployed": [
-            {
-              "number": 330,
-              "title": "Fix tests",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-02T06:11:08Z",
-              "repository": "Oulunkaupunki/evakaoulu",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/330",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8721,
-              "title": "Käytetään Playwright runnerin expect-toteutusta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-01T06:51:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8721",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -265,7 +219,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-02T09:30:51.321Z",
+            "checkedAt": "2026-04-02T09:32:16.204Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cee2d881c9b15f0a9d824711a8b9cbd64ea4f7f7",
@@ -290,7 +244,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-02T09:30:54.415Z",
+            "checkedAt": "2026-04-02T09:32:18.081Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cee2d881c9b15f0a9d824711a8b9cbd64ea4f7f7",
@@ -314,43 +268,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "City-of-Turku/evakaturku",
-          "deployed": [
-            {
-              "number": 286,
-              "title": "Fix tests",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-02T06:15:35Z",
-              "repository": "City-of-Turku/evakaturku",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/City-of-Turku/evakaturku/pull/286",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8721,
-              "title": "Käytetään Playwright runnerin expect-toteutusta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-01T06:51:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8721",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
