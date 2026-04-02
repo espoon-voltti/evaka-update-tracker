@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T06:17:04.921Z",
+  "generatedAt": "2026-04-02T06:31:34.217Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-02T06:16:26.670Z",
+            "checkedAt": "2026-04-02T06:30:59.505Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-02T06:16:27.667Z",
+            "checkedAt": "2026-04-02T06:31:00.292Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -79,7 +79,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-02T06:16:29.667Z",
+            "checkedAt": "2026-04-02T06:31:01.768Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -104,7 +104,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-02T06:16:39.556Z",
+            "checkedAt": "2026-04-02T06:31:08.411Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e329c7f647413966bcdb4a534e1866f120236365",
@@ -121,180 +121,8 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-04-02T06:16:39.556Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "e329c7f647413966bcdb4a534e1866f120236365",
-                "shortSha": "e329c7f",
-                "message": "Merge pull request #2076 from Tampere/dependabot/submodules/evaka-f15555e",
-                "date": "2026-04-02T05:54:01Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
-                "shortSha": "f15555e",
-                "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
-                "date": "2026-04-01T06:51:58Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-04-02T06:16:41.414Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-04-02T06:16:42.602Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-04-02T06:16:43.683Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-04-02T06:16:44.767Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-04-02T06:16:45.968Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-04-02T06:16:47.166Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-04-02T06:16:48.236Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-04-02T06:16:49.296Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -337,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-02T06:16:55.543Z",
+            "checkedAt": "2026-04-02T06:31:19.280Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f4d7785e6fdfd871b938adc8fdf84006112947a2",
@@ -362,21 +190,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-02T06:16:56.761Z",
+            "checkedAt": "2026-04-02T06:31:20.301Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "f4d7785e6fdfd871b938adc8fdf84006112947a2",
-              "shortSha": "f4d7785",
-              "message": "Merge pull request #328 from Oulunkaupunki/dependabot/submodules/evaka-5428b96",
-              "date": "2026-04-01T01:16:50Z",
-              "author": "github-actions[bot]"
+              "sha": "43eae66e74dd682e42804f43504ffb213ded9d97",
+              "shortSha": "43eae66",
+              "message": "Merge pull request #330 from Oulunkaupunki/fix-build",
+              "date": "2026-04-02T06:11:08Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "5428b96f9778e53e349167835d63224827f357f0",
-              "shortSha": "5428b96",
-              "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-              "date": "2026-03-31T11:44:52Z",
-              "author": "ohinkinen"
+              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
+              "shortSha": "f15555e",
+              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
+              "date": "2026-04-01T06:51:58Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -387,8 +215,7 @@
         "wrapper": {
           "repository": "Oulunkaupunki/evakaoulu",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 330,
               "title": "Fix tests",
@@ -402,13 +229,13 @@
               "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/330",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8721,
               "title": "Käytetään Playwright runnerin expect-toteutusta",
@@ -424,7 +251,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -437,7 +265,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-02T06:17:00.114Z",
+            "checkedAt": "2026-04-02T06:31:26.914Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1b12ac30f881c893e5693d759430cfc29a5cd071",
@@ -462,21 +290,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-02T06:17:01.505Z",
+            "checkedAt": "2026-04-02T06:31:27.946Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "1b12ac30f881c893e5693d759430cfc29a5cd071",
-              "shortSha": "1b12ac3",
-              "message": "Merge pull request #284 from City-of-Turku/dependabot/submodules/evaka-5428b96",
-              "date": "2026-04-01T01:17:03Z",
-              "author": "github-actions[bot]"
+              "sha": "cee2d881c9b15f0a9d824711a8b9cbd64ea4f7f7",
+              "shortSha": "cee2d88",
+              "message": "Merge pull request #286 from City-of-Turku/fix-build",
+              "date": "2026-04-02T06:15:34Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "5428b96f9778e53e349167835d63224827f357f0",
-              "shortSha": "5428b96",
-              "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-              "date": "2026-03-31T11:44:52Z",
-              "author": "ohinkinen"
+              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
+              "shortSha": "f15555e",
+              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
+              "date": "2026-04-01T06:51:58Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -487,8 +315,7 @@
         "wrapper": {
           "repository": "City-of-Turku/evakaturku",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 286,
               "title": "Fix tests",
@@ -502,13 +329,13 @@
               "url": "https://github.com/City-of-Turku/evakaturku/pull/286",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8721,
               "title": "Käytetään Playwright runnerin expect-toteutusta",
@@ -524,7 +351,8 @@
                 "tech"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
