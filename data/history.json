@@ -1,6 +1,87 @@
 {
   "events": [
     {
+      "id": "2026-04-02T06:16:53.825Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-02T06:16:53.825Z",
+      "previousCommit": {
+        "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
+        "shortSha": "198a660",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e329c7f647413966bcdb4a534e1866f120236365",
+        "shortSha": "e329c7f",
+        "message": "Merge pull request #2076 from Tampere/dependabot/submodules/evaka-f15555e",
+        "date": "2026-04-02T05:54:01Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 2076,
+          "title": "Bump evaka from `5428b96` to `f15555e`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-02T05:54:02Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2076",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-02T06:16:53.825Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-02T06:16:53.825Z",
+      "previousCommit": {
+        "sha": "5428b96f9778e53e349167835d63224827f357f0",
+        "shortSha": "5428b96",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
+        "shortSha": "f15555e",
+        "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
+        "date": "2026-04-01T06:51:58Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8721,
+          "title": "Käytetään Playwright runnerin expect-toteutusta",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-01T06:51:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8721",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-01T10:33:20.428Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
