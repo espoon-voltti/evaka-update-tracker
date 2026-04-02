@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-02T09:03:50.273Z",
+  "generatedAt": "2026-04-02T09:30:58.560Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-02T09:03:14.367Z",
+            "checkedAt": "2026-04-02T09:30:21.711Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "5428b96f9778e53e349167835d63224827f357f0",
-              "shortSha": "5428b96",
-              "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-              "date": "2026-03-31T11:44:52Z",
-              "author": "ohinkinen"
+              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
+              "shortSha": "f15555e",
+              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
+              "date": "2026-04-01T06:51:58Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-02T09:03:15.118Z",
+            "checkedAt": "2026-04-02T09:30:23.669Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8721,
               "title": "Käytetään Playwright runnerin expect-toteutusta",
@@ -66,6 +65,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -79,7 +79,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-02T09:03:18.156Z",
+            "checkedAt": "2026-04-02T09:30:26.141Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -104,7 +104,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-02T09:03:26.080Z",
+            "checkedAt": "2026-04-02T09:30:33.317Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e329c7f647413966bcdb4a534e1866f120236365",
@@ -165,21 +165,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-02T09:03:39.578Z",
+            "checkedAt": "2026-04-02T09:30:44.300Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "f4d7785e6fdfd871b938adc8fdf84006112947a2",
-              "shortSha": "f4d7785",
-              "message": "Merge pull request #328 from Oulunkaupunki/dependabot/submodules/evaka-5428b96",
-              "date": "2026-04-01T01:16:50Z",
-              "author": "github-actions[bot]"
+              "sha": "43eae66e74dd682e42804f43504ffb213ded9d97",
+              "shortSha": "43eae66",
+              "message": "Merge pull request #330 from Oulunkaupunki/fix-build",
+              "date": "2026-04-02T06:11:08Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "5428b96f9778e53e349167835d63224827f357f0",
-              "shortSha": "5428b96",
-              "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-              "date": "2026-03-31T11:44:52Z",
-              "author": "ohinkinen"
+              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
+              "shortSha": "f15555e",
+              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
+              "date": "2026-04-01T06:51:58Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -190,7 +190,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-02T09:03:40.500Z",
+            "checkedAt": "2026-04-02T09:30:47.308Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "43eae66e74dd682e42804f43504ffb213ded9d97",
@@ -214,8 +214,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Oulunkaupunki/evakaoulu",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 330,
               "title": "Fix tests",
@@ -230,12 +229,12 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8721,
               "title": "Käytetään Playwright runnerin expect-toteutusta",
@@ -252,6 +251,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -265,21 +265,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-02T09:03:45.074Z",
+            "checkedAt": "2026-04-02T09:30:51.321Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "1b12ac30f881c893e5693d759430cfc29a5cd071",
-              "shortSha": "1b12ac3",
-              "message": "Merge pull request #284 from City-of-Turku/dependabot/submodules/evaka-5428b96",
-              "date": "2026-04-01T01:17:03Z",
-              "author": "github-actions[bot]"
+              "sha": "cee2d881c9b15f0a9d824711a8b9cbd64ea4f7f7",
+              "shortSha": "cee2d88",
+              "message": "Merge pull request #286 from City-of-Turku/fix-build",
+              "date": "2026-04-02T06:15:34Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "5428b96f9778e53e349167835d63224827f357f0",
-              "shortSha": "5428b96",
-              "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-              "date": "2026-03-31T11:44:52Z",
-              "author": "ohinkinen"
+              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
+              "shortSha": "f15555e",
+              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
+              "date": "2026-04-01T06:51:58Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -290,7 +290,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-02T09:03:46.101Z",
+            "checkedAt": "2026-04-02T09:30:54.415Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cee2d881c9b15f0a9d824711a8b9cbd64ea4f7f7",
@@ -314,8 +314,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "City-of-Turku/evakaturku",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 286,
               "title": "Fix tests",
@@ -330,12 +329,12 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8721,
               "title": "Käytetään Playwright runnerin expect-toteutusta",
@@ -352,6 +351,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
