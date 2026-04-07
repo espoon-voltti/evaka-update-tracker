@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T05:58:55.434Z",
+  "generatedAt": "2026-04-07T06:24:48.647Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-07T05:57:43.773Z",
+            "checkedAt": "2026-04-07T06:23:28.580Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-07T05:57:45.016Z",
+            "checkedAt": "2026-04-07T06:23:29.689Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -125,7 +125,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-07T05:57:55.764Z",
+            "checkedAt": "2026-04-07T06:23:40.417Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -150,21 +150,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-07T05:58:04.476Z",
+            "checkedAt": "2026-04-07T06:23:48.482Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "e329c7f647413966bcdb4a534e1866f120236365",
-              "shortSha": "e329c7f",
-              "message": "Merge pull request #2076 from Tampere/dependabot/submodules/evaka-f15555e",
-              "date": "2026-04-02T05:54:01Z",
+              "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
+              "shortSha": "7960248",
+              "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
+              "date": "2026-04-07T05:36:11Z",
               "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
-              "shortSha": "f15555e",
-              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
-              "date": "2026-04-01T06:51:58Z",
-              "author": "akheron"
+              "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
+              "shortSha": "9e65c83",
+              "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
+              "date": "2026-04-06T18:54:37Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -182,23 +182,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 8721,
-              "title": "Käytetään Playwright runnerin expect-toteutusta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-01T06:51:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8721",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 8818,
               "title": "Muutoksia lokaalin tietokannan käyttöoikeuksiin",
@@ -259,8 +242,24 @@
               "labels": [
                 "tech"
               ]
+            },
+            {
+              "number": 8721,
+              "title": "Käytetään Playwright runnerin expect-toteutusta",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-01T06:51:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8721",
+              "labels": [
+                "tech"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -273,7 +272,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-07T05:58:27.577Z",
+            "checkedAt": "2026-04-07T06:24:19.677Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "43eae66e74dd682e42804f43504ffb213ded9d97",
@@ -298,7 +297,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-07T05:58:29.092Z",
+            "checkedAt": "2026-04-07T06:24:21.187Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -405,7 +404,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-07T05:58:41.405Z",
+            "checkedAt": "2026-04-07T06:24:34.442Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cee2d881c9b15f0a9d824711a8b9cbd64ea4f7f7",
@@ -430,7 +429,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-07T05:58:42.941Z",
+            "checkedAt": "2026-04-07T06:24:35.724Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
