@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T08:46:06.082Z",
+  "generatedAt": "2026-04-07T09:10:53.968Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-07T08:44:45.881Z",
+            "checkedAt": "2026-04-07T09:09:03.253Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-07T08:44:46.870Z",
+            "checkedAt": "2026-04-07T09:09:04.579Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -171,7 +171,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-07T08:45:00.288Z",
+            "checkedAt": "2026-04-07T09:09:19.118Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -196,7 +196,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-07T08:45:08.115Z",
+            "checkedAt": "2026-04-07T09:09:29.843Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
@@ -222,7 +222,21 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 2080,
+              "title": "Palveluohjauksen työpöytä päälle tuotantoon kaikissa kunnissa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-07T09:06:47Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2080",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -364,21 +378,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-07T08:45:32.177Z",
+            "checkedAt": "2026-04-07T09:09:56.409Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "43eae66e74dd682e42804f43504ffb213ded9d97",
-              "shortSha": "43eae66",
-              "message": "Merge pull request #330 from Oulunkaupunki/fix-build",
-              "date": "2026-04-02T06:11:08Z",
-              "author": "ohinkinen"
+              "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
+              "shortSha": "e02b999",
+              "message": "Fix type errors",
+              "date": "2026-04-07T04:51:40Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
-              "shortSha": "f15555e",
-              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
-              "date": "2026-04-01T06:51:58Z",
-              "author": "akheron"
+              "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
+              "shortSha": "9e65c83",
+              "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
+              "date": "2026-04-06T18:54:37Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -389,7 +403,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-07T08:45:33.551Z",
+            "checkedAt": "2026-04-07T09:10:07.969Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -419,8 +433,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8818,
               "title": "Muutoksia lokaalin tietokannan käyttöoikeuksiin",
@@ -483,6 +496,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8760,
@@ -542,21 +556,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-07T08:45:49.458Z",
+            "checkedAt": "2026-04-07T09:10:25.504Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "cee2d881c9b15f0a9d824711a8b9cbd64ea4f7f7",
-              "shortSha": "cee2d88",
-              "message": "Merge pull request #286 from City-of-Turku/fix-build",
-              "date": "2026-04-02T06:15:34Z",
-              "author": "ohinkinen"
+              "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
+              "shortSha": "6c10ac2",
+              "message": "Merge pull request #289 from City-of-Turku/dependabot/submodules/evaka-9e65c83",
+              "date": "2026-04-07T01:14:34Z",
+              "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "f15555ec4661380b1439a2cabdf5031d355d0831",
-              "shortSha": "f15555e",
-              "message": "Merge pull request #8721 from espoon-voltti/playwright-expect",
-              "date": "2026-04-01T06:51:58Z",
-              "author": "akheron"
+              "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
+              "shortSha": "9e65c83",
+              "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
+              "date": "2026-04-06T18:54:37Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -567,7 +581,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-07T08:45:50.730Z",
+            "checkedAt": "2026-04-07T09:10:36.599Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
@@ -597,8 +611,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8818,
               "title": "Muutoksia lokaalin tietokannan käyttöoikeuksiin",
@@ -661,6 +674,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8760,
