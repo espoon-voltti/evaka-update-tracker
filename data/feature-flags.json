@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T09:44:31.839Z",
+  "generatedAt": "2026-04-07T10:12:38.707Z",
   "cities": [
     {
       "id": "espoo",
@@ -65,7 +65,7 @@
       "id": "oulu",
       "name": "Oulu",
       "cityGroupId": "oulu",
-      "error": null
+      "error": "Request failed with status code 404"
     },
     {
       "id": "turku",
@@ -574,25 +574,6 @@
           }
         },
         {
-          "key": "nekkuIntegration",
-          "label": "Nekku-ruokatilausintegraatio",
-          "type": "boolean",
-          "values": {
-            "espoo": null,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
-            "turku": null
-          }
-        },
-        {
           "key": "noAbsenceType",
           "label": "Ei poissaolotyyppiä mobiilissa",
           "type": "boolean",
@@ -875,6 +856,25 @@
             "hameenkyro": false,
             "oulu": false,
             "turku": false
+          }
+        },
+        {
+          "key": "nekkuIntegration",
+          "label": "Nekku-ruokatilausintegraatio",
+          "type": "boolean",
+          "values": {
+            "oulu": true,
+            "espoo": null,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "turku": null
           }
         }
       ]
@@ -1246,5 +1246,6 @@
         }
       ]
     }
-  ]
+  ],
+  "errorFallbackDate": "2026-04-07T09:44:31.839Z"
 }
