@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-07T09:14:57.457Z",
+  "generatedAt": "2026-04-07T09:44:26.972Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-07T09:13:48.559Z",
+            "checkedAt": "2026-04-07T09:43:11.733Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-07T09:13:56.333Z",
+            "checkedAt": "2026-04-07T09:43:12.762Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,71 +48,25 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8818,
-              "title": "Muutoksia lokaalin tietokannan käyttöoikeuksiin",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-02T12:17:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8818",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8817,
-              "title": "Titania / Linkity työaikaleimausten pyöristyksen aikaikkuna konfiguroitavaksi",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-02T11:47:49Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8817",
-              "labels": [
-                "enhancement",
-                "service"
-              ]
-            },
-            {
-              "number": 8801,
-              "title": "Jest -> vitest",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-02T10:54:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8801",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8768,
-              "title": "Sisäänkirjatumisen nopeuttaminen E2E-testeissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-02T10:21:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8768",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8805,
+              "title": "Siirretään Oulu-koodi ytimeen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-07T09:34:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8805",
+              "labels": [
+                "tech",
+                "oulu"
+              ]
+            },
             {
               "number": 8760,
               "title": "Nopeutetaan tietokannan tyhjennystä e2e-testeissä",
@@ -171,7 +125,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-07T09:14:11.330Z",
+            "checkedAt": "2026-04-07T09:43:20.753Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -196,7 +150,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-07T09:14:19.416Z",
+            "checkedAt": "2026-04-07T09:43:31.517Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
@@ -321,6 +275,22 @@
           ],
           "pendingDeployment": [
             {
+              "number": 8805,
+              "title": "Siirretään Oulu-koodi ytimeen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-07T09:34:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8805",
+              "labels": [
+                "tech",
+                "oulu"
+              ]
+            },
+            {
               "number": 8760,
               "title": "Nopeutetaan tietokannan tyhjennystä e2e-testeissä",
               "author": "akheron",
@@ -378,7 +348,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-07T09:14:42.495Z",
+            "checkedAt": "2026-04-07T09:43:59.324Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -403,21 +373,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-07T09:14:43.502Z",
+            "checkedAt": "2026-04-07T09:44:00.799Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
-              "shortSha": "e02b999",
-              "message": "Fix type errors",
-              "date": "2026-04-07T04:51:40Z",
+              "sha": "9c11c1f6600ce305e6655a4f40d24e9196b41980",
+              "shortSha": "9c11c1f",
+              "message": "Build from evaka/ submodule",
+              "date": "2026-04-02T06:55:44Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-              "shortSha": "9e65c83",
-              "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-              "date": "2026-04-06T18:54:37Z",
-              "author": "renovate[bot]"
+              "sha": "3b0bfcfb6d5b5f2fee44f92356590e26156bde11",
+              "shortSha": "3b0bfcf",
+              "message": "Remove unused OuluDevApi",
+              "date": "2026-03-31T09:48:37Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -434,8 +404,40 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 8811,
+              "title": "Korjataan kuntakohtaisten migraatioiden löytäminen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-07T06:27:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8811",
+              "labels": [
+                "bug"
+              ]
+            }
+          ],
           "pendingDeployment": [
+            {
+              "number": 8805,
+              "title": "Siirretään Oulu-koodi ytimeen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-07T09:34:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8805",
+              "labels": [
+                "tech",
+                "oulu"
+              ]
+            },
             {
               "number": 8760,
               "title": "Nopeutetaan tietokannan tyhjennystä e2e-testeissä",
@@ -465,21 +467,6 @@
               "labels": [
                 "enhancement"
               ]
-            },
-            {
-              "number": 8811,
-              "title": "Korjataan kuntakohtaisten migraatioiden löytäminen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T06:27:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8811",
-              "labels": [
-                "bug"
-              ]
             }
           ]
         }
@@ -494,7 +481,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-07T09:14:49.545Z",
+            "checkedAt": "2026-04-07T09:44:17.390Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
@@ -519,7 +506,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-07T09:14:50.662Z",
+            "checkedAt": "2026-04-07T09:44:18.890Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
@@ -552,6 +539,22 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8805,
+              "title": "Siirretään Oulu-koodi ytimeen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-07T09:34:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8805",
+              "labels": [
+                "tech",
+                "oulu"
+              ]
+            },
             {
               "number": 8760,
               "title": "Nopeutetaan tietokannan tyhjennystä e2e-testeissä",
