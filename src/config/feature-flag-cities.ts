@@ -92,9 +92,9 @@ export const FEATURE_FLAG_CITIES: FeatureFlagCityConfig[] = [
     id: 'oulu',
     name: 'Oulu',
     cityGroupId: 'oulu',
-    repository: { owner: 'Oulunkaupunki', name: 'evakaoulu' },
-    frontendPath: 'frontend/oulu/featureFlags.tsx',
-    backendPath: 'service/src/main/kotlin/fi/ouka/evakaoulu/EVakaOuluConfig.kt',
+    repository: { owner: 'espoon-voltti', name: 'evaka' },
+    frontendPath: 'frontend/src/lib-customizations/oulu/featureFlags.tsx',
+    backendPath: 'service/src/main/kotlin/fi/espoo/evaka/oulu/OuluConfig.kt',
   },
   {
     id: 'turku',
