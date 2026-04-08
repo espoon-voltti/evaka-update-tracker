@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T06:46:23.565Z",
+  "generatedAt": "2026-04-08T07:17:16.348Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T06:45:17.603Z",
+            "checkedAt": "2026-04-08T07:16:11.031Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T06:45:18.573Z",
+            "checkedAt": "2026-04-08T07:16:11.757Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,37 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8845,
+              "title": "Korjataan Spring component -konfliktit",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T07:11:29Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8845",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8844,
+              "title": "Espoo: Työntekijän kielivalinta päälle tuotantoon",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-08T07:09:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8844",
+              "labels": [
+                "enhancement",
+                "espoo"
+              ]
+            },
             {
               "number": 8814,
               "title": "Varmistetaan kuntakonffien toimivuus CI:ssä",
@@ -96,36 +127,6 @@
               "labels": [
                 "tech"
               ]
-            },
-            {
-              "number": 8812,
-              "title": "Kuntalaisen päätösten metatietojen näyttäminen",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-04-07T06:54:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8812",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8811,
-              "title": "Korjataan kuntakohtaisten migraatioiden löytäminen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T06:27:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8811",
-              "labels": [
-                "bug"
-              ]
             }
           ]
         }
@@ -140,7 +141,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T06:45:26.515Z",
+            "checkedAt": "2026-04-08T07:16:20.106Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -165,7 +166,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T06:45:36.194Z",
+            "checkedAt": "2026-04-08T07:16:28.534Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
@@ -290,6 +291,37 @@
           ],
           "pendingDeployment": [
             {
+              "number": 8845,
+              "title": "Korjataan Spring component -konfliktit",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T07:11:29Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8845",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8844,
+              "title": "Espoo: Työntekijän kielivalinta päälle tuotantoon",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-08T07:09:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8844",
+              "labels": [
+                "enhancement",
+                "espoo"
+              ]
+            },
+            {
               "number": 8814,
               "title": "Varmistetaan kuntakonffien toimivuus CI:ssä",
               "author": "akheron",
@@ -334,36 +366,6 @@
               "labels": [
                 "tech"
               ]
-            },
-            {
-              "number": 8812,
-              "title": "Kuntalaisen päätösten metatietojen näyttäminen",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-04-07T06:54:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8812",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8811,
-              "title": "Korjataan kuntakohtaisten migraatioiden löytäminen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T06:27:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8811",
-              "labels": [
-                "bug"
-              ]
             }
           ]
         }
@@ -378,7 +380,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T06:46:02.051Z",
+            "checkedAt": "2026-04-08T07:16:54.541Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -403,7 +405,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T06:46:03.747Z",
+            "checkedAt": "2026-04-08T07:16:55.712Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "439d5a37130975359cad2e855a61e9d735e37fed",
@@ -512,7 +514,39 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8845,
+              "title": "Korjataan Spring component -konfliktit",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T07:11:29Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8845",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8844,
+              "title": "Espoo: Työntekijän kielivalinta päälle tuotantoon",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-08T07:09:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8844",
+              "labels": [
+                "enhancement",
+                "espoo"
+              ]
+            }
+          ]
         }
       }
     },
@@ -525,7 +559,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-08T06:46:12.823Z",
+            "checkedAt": "2026-04-08T07:17:05.717Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
@@ -550,7 +584,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-08T06:46:14.547Z",
+            "checkedAt": "2026-04-08T07:17:06.812Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
@@ -659,7 +693,39 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8845,
+              "title": "Korjataan Spring component -konfliktit",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T07:11:29Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8845",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8844,
+              "title": "Espoo: Työntekijän kielivalinta päälle tuotantoon",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-08T07:09:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8844",
+              "labels": [
+                "enhancement",
+                "espoo"
+              ]
+            }
+          ]
         }
       }
     }
