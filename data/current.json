@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T11:16:08.398Z",
+  "generatedAt": "2026-04-08T11:31:18.032Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T11:15:15.288Z",
+            "checkedAt": "2026-04-08T11:30:44.189Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T11:15:16.259Z",
+            "checkedAt": "2026-04-08T11:30:44.827Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -94,7 +94,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T11:15:18.022Z",
+            "checkedAt": "2026-04-08T11:30:46.423Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
@@ -119,7 +119,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T11:15:27.127Z",
+            "checkedAt": "2026-04-08T11:30:53.585Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
@@ -195,7 +195,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T11:15:37.637Z",
+            "checkedAt": "2026-04-08T11:31:02.396Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -220,7 +220,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T11:15:38.941Z",
+            "checkedAt": "2026-04-08T11:31:03.594Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "439d5a37130975359cad2e855a61e9d735e37fed",
@@ -404,7 +404,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-08T11:15:49.929Z",
+            "checkedAt": "2026-04-08T11:31:13.820Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
@@ -429,7 +429,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-08T11:15:57.943Z",
+            "checkedAt": "2026-04-08T11:31:14.786Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
@@ -459,84 +459,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8814,
-              "title": "Varmistetaan kuntakonffien toimivuus CI:ssä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T10:28:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8814",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8805,
-              "title": "Siirretään Oulu-koodi ytimeen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T09:34:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8805",
-              "labels": [
-                "tech",
-                "oulu"
-              ]
-            },
-            {
-              "number": 8760,
-              "title": "Nopeutetaan tietokannan tyhjennystä e2e-testeissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T08:04:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8760",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8812,
-              "title": "Kuntalaisen päätösten metatietojen näyttäminen",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-04-07T06:54:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8812",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8811,
-              "title": "Korjataan kuntakohtaisten migraatioiden löytäminen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T06:27:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8811",
-              "labels": [
-                "bug"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
