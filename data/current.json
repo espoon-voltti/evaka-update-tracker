@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T11:10:19.978Z",
+  "generatedAt": "2026-04-08T11:16:08.398Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T11:09:09.109Z",
+            "checkedAt": "2026-04-08T11:15:15.288Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T11:09:09.981Z",
+            "checkedAt": "2026-04-08T11:15:16.259Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,21 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8848,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T11:12:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8848",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8847,
               "title": "Korjataan tyyppivirheet fronttikustomoinneissa",
@@ -79,7 +94,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T11:09:11.277Z",
+            "checkedAt": "2026-04-08T11:15:18.022Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
@@ -96,187 +111,15 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-04-08T11:09:11.277Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
-                "shortSha": "5ac0af3",
-                "message": "Use a dummy Varda API URL when Varda integration is not used",
-                "date": "2026-04-08T09:09:11Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.hameenkyro.fi",
-              "checkedAt": "2026-04-08T11:09:12.178Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "evaka.kangasala.fi",
-              "checkedAt": "2026-04-08T11:09:13.189Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "evaka.lempaala.fi",
-              "checkedAt": "2026-04-08T11:09:14.040Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-04-08T11:09:14.884Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "evaka.orivesi.fi",
-              "checkedAt": "2026-04-08T11:09:15.727Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "evaka.pirkkala.fi",
-              "checkedAt": "2026-04-08T11:09:16.601Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "evaka.vesilahti.fi",
-              "checkedAt": "2026-04-08T11:09:17.431Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "evaka.ylojarvi.fi",
-              "checkedAt": "2026-04-08T11:09:18.332Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
-                "shortSha": "198a660",
-                "message": "Merge pull request #2074 from Tampere/dependabot/submodules/evaka-5428b96",
-                "date": "2026-04-01T04:31:37Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5428b96f9778e53e349167835d63224827f357f0",
-                "shortSha": "5428b96",
-                "message": "Merge pull request #8767 from espoon-voltti/citizen-updated-income-statement-indication",
-                "date": "2026-03-31T11:44:52Z",
-                "author": "ohinkinen"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T11:09:34.074Z",
+            "checkedAt": "2026-04-08T11:15:27.127Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
@@ -300,107 +143,30 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [
-            {
-              "number": 2080,
-              "title": "Palveluohjauksen työpöytä päälle tuotantoon kaikissa kunnissa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T09:06:47Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2080",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8845,
-              "title": "Korjataan Spring component -konfliktit",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-08T07:11:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8845",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8844,
-              "title": "Espoo: Työntekijän kielivalinta päälle tuotantoon",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-08T07:09:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8844",
-              "labels": [
-                "enhancement",
-                "espoo"
-              ]
-            },
-            {
-              "number": 8814,
-              "title": "Varmistetaan kuntakonffien toimivuus CI:ssä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T10:28:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8814",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8805,
-              "title": "Siirretään Oulu-koodi ytimeen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T09:34:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8805",
-              "labels": [
-                "tech",
-                "oulu"
-              ]
-            },
-            {
-              "number": 8760,
-              "title": "Nopeutetaan tietokannan tyhjennystä e2e-testeissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-07T08:04:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8760",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8848,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T11:12:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8848",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8847,
               "title": "Korjataan tyyppivirheet fronttikustomoinneissa",
@@ -429,7 +195,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T11:09:57.532Z",
+            "checkedAt": "2026-04-08T11:15:37.637Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -454,7 +220,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T11:09:58.648Z",
+            "checkedAt": "2026-04-08T11:15:38.941Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "439d5a37130975359cad2e855a61e9d735e37fed",
@@ -565,6 +331,21 @@
           ],
           "pendingDeployment": [
             {
+              "number": 8848,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T11:12:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8848",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
               "number": 8847,
               "title": "Korjataan tyyppivirheet fronttikustomoinneissa",
               "author": "akheron",
@@ -623,21 +404,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-08T11:10:09.087Z",
+            "checkedAt": "2026-04-08T11:15:49.929Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
-              "shortSha": "6c10ac2",
-              "message": "Merge pull request #289 from City-of-Turku/dependabot/submodules/evaka-9e65c83",
-              "date": "2026-04-07T01:14:34Z",
+              "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
+              "shortSha": "34a0592",
+              "message": "Merge pull request #290 from City-of-Turku/dependabot/submodules/evaka-49307a1",
+              "date": "2026-04-08T01:14:35Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-              "shortSha": "9e65c83",
-              "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-              "date": "2026-04-06T18:54:37Z",
-              "author": "renovate[bot]"
+              "sha": "49307a11c78202a9c2e8001b58ab4c7f13898e69",
+              "shortSha": "49307a1",
+              "message": "Merge pull request #8814 from espoon-voltti/municipality-smoke-test",
+              "date": "2026-04-07T10:28:47Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -648,7 +429,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-08T11:10:10.178Z",
+            "checkedAt": "2026-04-08T11:15:57.943Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
@@ -678,8 +459,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8814,
               "title": "Varmistetaan kuntakonffien toimivuus CI:ssä",
@@ -757,7 +537,23 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8848,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-08T11:12:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8848",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8847,
               "title": "Korjataan tyyppivirheet fronttikustomoinneissa",
