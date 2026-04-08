@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T07:55:00.444Z",
+  "generatedAt": "2026-04-08T08:20:40.108Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T07:53:39.713Z",
+            "checkedAt": "2026-04-08T08:19:37.090Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T07:53:40.604Z",
+            "checkedAt": "2026-04-08T08:19:37.767Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -141,7 +141,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T07:53:56.927Z",
+            "checkedAt": "2026-04-08T08:19:45.888Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "198a660ef43d93efa24850623b249ab32e0f387f",
@@ -166,7 +166,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T07:54:06.068Z",
+            "checkedAt": "2026-04-08T08:19:53.714Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ee3ce526480a362eaf03a154e253a7f79b065298",
@@ -183,180 +183,8 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-04-08T07:54:06.068Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "ee3ce526480a362eaf03a154e253a7f79b065298",
-                "shortSha": "ee3ce52",
-                "message": "Merge pull request #2083 from Tampere/dependabot/submodules/evaka-5bceaea",
-                "date": "2026-04-08T07:34:18Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-04-08T07:54:07.155Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-04-08T07:54:08.322Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-04-08T07:54:09.147Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-04-08T07:54:10.193Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-04-08T07:54:11.148Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-04-08T07:54:12.098Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-04-08T07:54:12.978Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-04-08T07:54:13.868Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7960248f25192c90e94069c62031efd9e6e4e0b9",
-                "shortSha": "7960248",
-                "message": "Merge pull request #2079 from Tampere/dependabot/submodules/evaka-9e65c83",
-                "date": "2026-04-07T05:36:11Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "9e65c83ef95ee6b246d9519995d91c173b28ac42",
-                "shortSha": "9e65c83",
-                "message": "Update dependency vite to v8.0.5 [SECURITY] (#8840)",
-                "date": "2026-04-06T18:54:37Z",
-                "author": "renovate[bot]"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -475,7 +303,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T07:54:40.155Z",
+            "checkedAt": "2026-04-08T08:20:18.018Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -500,7 +328,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T07:54:41.695Z",
+            "checkedAt": "2026-04-08T08:20:19.270Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "439d5a37130975359cad2e855a61e9d735e37fed",
@@ -654,7 +482,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-08T07:54:50.779Z",
+            "checkedAt": "2026-04-08T08:20:29.504Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6c10ac2dd3d95eef7e9e33c36580481a3e2bf6ce",
@@ -679,7 +507,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-08T07:54:51.835Z",
+            "checkedAt": "2026-04-08T08:20:30.797Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
