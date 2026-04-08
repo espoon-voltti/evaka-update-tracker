@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T11:55:04.866Z",
+  "generatedAt": "2026-04-08T12:13:55.961Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T11:54:19.782Z",
+            "checkedAt": "2026-04-08T12:13:04.334Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-08T11:54:20.819Z",
+            "checkedAt": "2026-04-08T12:13:05.262Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -94,14 +94,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T11:54:22.683Z",
+            "checkedAt": "2026-04-08T12:13:07.378Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
-              "shortSha": "5ac0af3",
-              "message": "Use a dummy Varda API URL when Varda integration is not used",
-              "date": "2026-04-08T09:09:11Z",
-              "author": "akheron"
+              "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
+              "shortSha": "bcca5eb",
+              "message": "Add dummy Varda API URL to Tampere test",
+              "date": "2026-04-08T11:42:20Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
               "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
@@ -111,22 +111,194 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-04-08T12:13:07.378Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
+                "shortSha": "bcca5eb",
+                "message": "Add dummy Varda API URL to Tampere test",
+                "date": "2026-04-08T11:42:20Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-04-08T12:13:08.702Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-04-08T12:13:10.116Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-04-08T12:13:11.438Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-04-08T12:13:12.721Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-04-08T12:13:14.488Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-04-08T12:13:15.777Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-04-08T12:13:17.114Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-04-08T12:13:18.355Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
+                "shortSha": "5ac0af3",
+                "message": "Use a dummy Varda API URL when Varda integration is not used",
+                "date": "2026-04-08T09:09:11Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+                "shortSha": "5bceaea",
+                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
+                "date": "2026-04-08T07:11:28Z",
+                "author": "akheron"
+              }
+            }
+          ]
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-08T11:54:33.186Z",
+            "checkedAt": "2026-04-08T12:13:19.973Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "5ac0af349d6134e2d34e6928a10ccc23ffb80ff5",
-              "shortSha": "5ac0af3",
-              "message": "Use a dummy Varda API URL when Varda integration is not used",
-              "date": "2026-04-08T09:09:11Z",
-              "author": "akheron"
+              "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
+              "shortSha": "bcca5eb",
+              "message": "Add dummy Varda API URL to Tampere test",
+              "date": "2026-04-08T11:42:20Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
               "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
@@ -195,7 +367,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T11:54:44.613Z",
+            "checkedAt": "2026-04-08T12:13:34.919Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -220,7 +392,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-08T11:54:45.929Z",
+            "checkedAt": "2026-04-08T12:13:36.469Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "439d5a37130975359cad2e855a61e9d735e37fed",
@@ -404,7 +576,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-08T11:54:59.591Z",
+            "checkedAt": "2026-04-08T12:13:50.011Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
@@ -429,7 +601,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-08T11:55:00.947Z",
+            "checkedAt": "2026-04-08T12:13:51.574Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "34a0592c222f4dbdef1720867431f8dba939bb15",
