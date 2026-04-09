@@ -1,6 +1,75 @@
 {
   "events": [
     {
+      "id": "2026-04-09T09:10:48.465Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-09T09:10:48.465Z",
+      "previousCommit": {
+        "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+        "shortSha": "5bceaea",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "07eb452c64bdd110bc9991eff31909ea62096c40",
+        "shortSha": "07eb452",
+        "message": "Merge pull request #8843 from espoon-voltti/add-check-constraint-citizenModifiedAt",
+        "date": "2026-04-08T12:15:39Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8843,
+          "title": "Lisätään check constraint citizenModifiedAt kolumnille",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-08T12:15:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8843",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8848,
+          "title": "Korjataan flaky e2e",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-08T11:12:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8848",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8847,
+          "title": "Korjataan tyyppivirheet fronttikustomoinneissa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-08T09:49:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8847",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-04-09T09:08:41.181Z_oulu-staging_wrapper",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
