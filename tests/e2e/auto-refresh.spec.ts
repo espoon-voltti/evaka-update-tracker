@@ -117,6 +117,66 @@ test.describe('Auto-refresh', () => {
     fs.writeFileSync(path.join(TEST_DATA_DIR, 'current.json'), originalCurrent, 'utf-8');
   });
 
+  test('fullscreen state is preserved when auto-refresh detects data changes', async ({ page, baseUrl }) => {
+    await page.addInitScript(() => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).__autoRefreshInterval = 500;
+    });
+    await page.goto(`${baseUrl}/#/?fullscreen=true`);
+    await page.waitForSelector('body.fullscreen');
+
+    // Mark the DOM to detect full reload
+    await page.evaluate(() => {
+      document.body.setAttribute('data-no-reload', 'true');
+    });
+
+    // Get original generated-at text
+    const originalGeneratedAt = await page.locator('#generated-at').textContent();
+
+    // Simulate what happens in production: a new deployment cycle where data
+    // changes AND site-version.txt gets regenerated (currently the workflow
+    // uses a timestamp, so site-version.txt changes every deploy even when
+    // only data changed — the frontend should not treat this as a code change
+    // that requires a full reload, because that loses the user's fullscreen
+    // mode).
+    const currentData = readTestData('current.json');
+    currentData.generatedAt = new Date(Date.now() + 86400000).toISOString();
+    writeTestData('current.json', currentData);
+
+    // Simulate the deploy pipeline re-writing site-version.txt with a
+    // fresh build timestamp even though the site code hash is unchanged.
+    // (First line is the stable site-content hash; subsequent lines are
+    // metadata such as build timestamps.)
+    writeTestData(
+      'site-version.txt',
+      `test-version-stable\n${new Date().toISOString()}\n`
+    );
+
+    // Wait for the timestamp to change (auto-refresh should detect the change)
+    await page.waitForFunction(
+      (origText) => {
+        const el = document.getElementById('generated-at');
+        return el && el.textContent !== origText && el.textContent !== '';
+      },
+      originalGeneratedAt,
+      { timeout: 5000 }
+    );
+
+    // Verify NO full page reload happened
+    const marker = await page.evaluate(() =>
+      document.body.getAttribute('data-no-reload')
+    );
+    expect(marker).toBe('true');
+
+    // Verify fullscreen is still active
+    await expect(page.locator('body')).toHaveClass(/fullscreen/);
+    await expect(page.locator('header')).not.toBeVisible();
+
+    // Restore original data for next test
+    fs.writeFileSync(path.join(TEST_DATA_DIR, 'current.json'), originalCurrent, 'utf-8');
+    writeTestData('site-version.txt', 'test-version-stable');
+  });
+
   test('site-version.txt change triggers full page reload', async ({ page, baseUrl }) => {
     await page.addInitScript(() => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
