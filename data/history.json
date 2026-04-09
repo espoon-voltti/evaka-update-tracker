@@ -1,6 +1,117 @@
 {
   "events": [
     {
+      "id": "2026-04-09T06:23:41.370Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-09T06:23:41.370Z",
+      "previousCommit": {
+        "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
+        "shortSha": "bcca5eb",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "9d0ff73a4e341e1af7f1b899ebf96a1c8776b2f7",
+        "shortSha": "9d0ff73",
+        "message": "Merge pull request #2084 from Tampere/dependabot/submodules/evaka-07eb452",
+        "date": "2026-04-09T04:08:27Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2084,
+          "title": "Bump evaka from `5bceaea` to `07eb452`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-09T04:08:27Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2084",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-09T06:23:41.370Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-09T06:23:41.370Z",
+      "previousCommit": {
+        "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+        "shortSha": "5bceaea",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "07eb452c64bdd110bc9991eff31909ea62096c40",
+        "shortSha": "07eb452",
+        "message": "Merge pull request #8843 from espoon-voltti/add-check-constraint-citizenModifiedAt",
+        "date": "2026-04-08T12:15:39Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8843,
+          "title": "Lisätään check constraint citizenModifiedAt kolumnille",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-08T12:15:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8843",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8848,
+          "title": "Korjataan flaky e2e",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-08T11:12:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8848",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8847,
+          "title": "Korjataan tyyppivirheet fronttikustomoinneissa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-08T09:49:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8847",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-09T04:20:53.481Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
