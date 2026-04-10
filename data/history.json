@@ -1,6 +1,71 @@
 {
   "events": [
     {
+      "id": "2026-04-10T08:42:17.582Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-10T08:42:17.582Z",
+      "previousCommit": {
+        "sha": "cd3132e60e5eaafbe9feed0bfaf490e5e1c56ca8",
+        "shortSha": "cd3132e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5267f3001c9ce6cbc45a01302593a074eaf2cdae",
+        "shortSha": "5267f30",
+        "message": "Update evaka submodule",
+        "date": "2026-04-10T08:21:27Z",
+        "author": "akheron"
+      },
+      "includedPRs": [],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-10T08:42:17.582Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-10T08:42:17.582Z",
+      "previousCommit": {
+        "sha": "c0270f95a070e9b943e989de301bc5e5ba32ff27",
+        "shortSha": "c0270f9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "deb7e074b8bb8a11ad6a234b712fbc713c978ade",
+        "shortSha": "deb7e07",
+        "message": "Merge pull request #8859 from espoon-voltti/turku-assistance-option",
+        "date": "2026-04-10T08:15:15Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8859,
+          "title": "Turun tuentarpeen tekstikorjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-10T08:15:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8859",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-10T05:30:14.178Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",

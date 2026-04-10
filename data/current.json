@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T08:08:05.028Z",
+  "generatedAt": "2026-04-10T08:42:21.820Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-10T08:07:08.697Z",
+            "checkedAt": "2026-04-10T08:41:19.438Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-10T08:07:09.664Z",
+            "checkedAt": "2026-04-10T08:41:20.432Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8859,
+              "title": "Turun tuentarpeen tekstikorjaus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-10T08:15:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8859",
+              "labels": [
+                "enhancement",
+                "turku"
+              ]
+            }
+          ]
         }
       }
     },
@@ -94,7 +111,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-10T08:07:12.508Z",
+            "checkedAt": "2026-04-10T08:41:23.945Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -119,7 +136,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-10T08:07:25.064Z",
+            "checkedAt": "2026-04-10T08:41:35.502Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2ceb8041029b2077638e3d31056b5c0f9d295f87",
@@ -227,7 +244,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8859,
+              "title": "Turun tuentarpeen tekstikorjaus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-10T08:15:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8859",
+              "labels": [
+                "enhancement",
+                "turku"
+              ]
+            }
+          ]
         }
       }
     },
@@ -240,7 +274,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-10T08:07:41.782Z",
+            "checkedAt": "2026-04-10T08:41:52.883Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -265,7 +299,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-10T08:07:43.341Z",
+            "checkedAt": "2026-04-10T08:41:54.496Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "75b143542e1c98e4e97a87927479fc3d16693783",
@@ -373,7 +407,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8859,
+              "title": "Turun tuentarpeen tekstikorjaus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-10T08:15:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8859",
+              "labels": [
+                "enhancement",
+                "turku"
+              ]
+            }
+          ]
         }
       }
     },
@@ -386,7 +437,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-10T08:07:58.926Z",
+            "checkedAt": "2026-04-10T08:42:11.050Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "0c8e40a3313c4e78bae345beca82ad0b37e15d0d",
@@ -411,21 +462,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-10T08:08:00.451Z",
+            "checkedAt": "2026-04-10T08:42:12.705Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "cd3132e60e5eaafbe9feed0bfaf490e5e1c56ca8",
-              "shortSha": "cd3132e",
-              "message": "Merge pull request #294 from City-of-Turku/dependabot/submodules/evaka-c0270f9",
-              "date": "2026-04-10T01:14:44Z",
-              "author": "github-actions[bot]"
+              "sha": "5267f3001c9ce6cbc45a01302593a074eaf2cdae",
+              "shortSha": "5267f30",
+              "message": "Update evaka submodule",
+              "date": "2026-04-10T08:21:27Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "c0270f95a070e9b943e989de301bc5e5ba32ff27",
-              "shortSha": "c0270f9",
-              "message": "Merge pull request #8810 from espoon-voltti/toggle-for-sensitive-person-details",
-              "date": "2026-04-09T07:06:20Z",
-              "author": "ohinkinen"
+              "sha": "deb7e074b8bb8a11ad6a234b712fbc713c978ade",
+              "shortSha": "deb7e07",
+              "message": "Merge pull request #8859 from espoon-voltti/turku-assistance-option",
+              "date": "2026-04-10T08:15:15Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -443,6 +494,22 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8859,
+              "title": "Turun tuentarpeen tekstikorjaus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-10T08:15:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8859",
+              "labels": [
+                "enhancement",
+                "turku"
+              ]
+            },
             {
               "number": 8810,
               "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
