@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T04:54:57.721Z",
+  "generatedAt": "2026-04-10T05:30:33.290Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-10T04:54:14.451Z",
+            "checkedAt": "2026-04-10T05:29:54.111Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-10T04:54:15.246Z",
+            "checkedAt": "2026-04-10T05:29:54.732Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -94,7 +94,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-10T04:54:19.451Z",
+            "checkedAt": "2026-04-10T05:29:56.838Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -119,20 +119,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-10T04:54:27.266Z",
+            "checkedAt": "2026-04-10T05:30:03.904Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "9d0ff73a4e341e1af7f1b899ebf96a1c8776b2f7",
-              "shortSha": "9d0ff73",
-              "message": "Merge pull request #2084 from Tampere/dependabot/submodules/evaka-07eb452",
-              "date": "2026-04-09T04:08:27Z",
+              "sha": "2ceb8041029b2077638e3d31056b5c0f9d295f87",
+              "shortSha": "2ceb804",
+              "message": "Merge pull request #2086 from Tampere/dependabot/submodules/evaka-c0270f9",
+              "date": "2026-04-10T04:47:08Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "07eb452c64bdd110bc9991eff31909ea62096c40",
-              "shortSha": "07eb452",
-              "message": "Merge pull request #8843 from espoon-voltti/add-check-constraint-citizenModifiedAt",
-              "date": "2026-04-08T12:15:39Z",
+              "sha": "c0270f95a070e9b943e989de301bc5e5ba32ff27",
+              "shortSha": "c0270f9",
+              "message": "Merge pull request #8810 from espoon-voltti/toggle-for-sensitive-person-details",
+              "date": "2026-04-09T07:06:20Z",
               "author": "ohinkinen"
             }
           },
@@ -151,6 +151,36 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8810,
+              "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-04-09T07:06:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8810",
+              "labels": [
+                "enhancement"
+              ]
+            },
+            {
+              "number": 8846,
+              "title": "Korjataan sandbox-ympäristön kotihakemisto",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-04-09T05:55:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8846",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8843,
               "title": "Lisätään check constraint citizenModifiedAt kolumnille",
@@ -197,38 +227,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8810,
-              "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-09T07:06:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8810",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8846,
-              "title": "Korjataan sandbox-ympäristön kotihakemisto",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-04-09T05:55:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8846",
-              "labels": [
-                "tech"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -241,7 +240,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-10T04:54:38.690Z",
+            "checkedAt": "2026-04-10T05:30:17.527Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -266,7 +265,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-10T04:54:39.735Z",
+            "checkedAt": "2026-04-10T05:30:18.473Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "75b143542e1c98e4e97a87927479fc3d16693783",
@@ -387,7 +386,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-10T04:54:52.485Z",
+            "checkedAt": "2026-04-10T05:30:29.320Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "0c8e40a3313c4e78bae345beca82ad0b37e15d0d",
@@ -412,7 +411,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-10T04:54:53.927Z",
+            "checkedAt": "2026-04-10T05:30:30.202Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cd3132e60e5eaafbe9feed0bfaf490e5e1c56ca8",
