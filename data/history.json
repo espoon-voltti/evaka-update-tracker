@@ -1,6 +1,202 @@
 {
   "events": [
     {
+      "id": "2026-04-10T09:37:32.637Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-10T09:37:32.637Z",
+      "previousCommit": {
+        "sha": "07eb452c64bdd110bc9991eff31909ea62096c40",
+        "shortSha": "07eb452",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c0270f95a070e9b943e989de301bc5e5ba32ff27",
+        "shortSha": "c0270f9",
+        "message": "Merge pull request #8810 from espoon-voltti/toggle-for-sensitive-person-details",
+        "date": "2026-04-09T07:06:20Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8810,
+          "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-09T07:06:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8810",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8851,
+          "title": "Update dependency cryptography to v46.0.7 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-09T06:15:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8851",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8846,
+          "title": "Korjataan sandbox-ympäristön kotihakemisto",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-04-09T05:55:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8846",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-10T09:38:19.040Z_turku-prod_wrapper",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-10T09:38:19.040Z",
+      "previousCommit": {
+        "sha": "0c8e40a3313c4e78bae345beca82ad0b37e15d0d",
+        "shortSha": "0c8e40a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5267f3001c9ce6cbc45a01302593a074eaf2cdae",
+        "shortSha": "5267f30",
+        "message": "Update evaka submodule",
+        "date": "2026-04-10T08:21:27Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 294,
+          "title": "Bump evaka from `07eb452` to `c0270f9`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-10T01:14:45Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/294",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-10T09:38:19.040Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-10T09:38:19.040Z",
+      "previousCommit": {
+        "sha": "07eb452c64bdd110bc9991eff31909ea62096c40",
+        "shortSha": "07eb452",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "deb7e074b8bb8a11ad6a234b712fbc713c978ade",
+        "shortSha": "deb7e07",
+        "message": "Merge pull request #8859 from espoon-voltti/turku-assistance-option",
+        "date": "2026-04-10T08:15:15Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8859,
+          "title": "Turun tuentarpeen tekstikorjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-10T08:15:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8859",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8810,
+          "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-09T07:06:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8810",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8851,
+          "title": "Update dependency cryptography to v46.0.7 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-09T06:15:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8851",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8846,
+          "title": "Korjataan sandbox-ympäristön kotihakemisto",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-04-09T05:55:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8846",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-04-10T08:42:17.582Z_turku-staging_wrapper",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T09:13:55.608Z",
+  "generatedAt": "2026-04-10T09:38:22.996Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-10T09:12:55.259Z",
+            "checkedAt": "2026-04-10T09:37:30.170Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "07eb452c64bdd110bc9991eff31909ea62096c40",
-              "shortSha": "07eb452",
-              "message": "Merge pull request #8843 from espoon-voltti/add-check-constraint-citizenModifiedAt",
-              "date": "2026-04-08T12:15:39Z",
+              "sha": "c0270f95a070e9b943e989de301bc5e5ba32ff27",
+              "shortSha": "c0270f9",
+              "message": "Merge pull request #8810 from espoon-voltti/toggle-for-sensitive-person-details",
+              "date": "2026-04-09T07:06:20Z",
               "author": "ohinkinen"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-10T09:12:56.184Z",
+            "checkedAt": "2026-04-10T09:37:32.637Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8810,
               "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
@@ -81,6 +80,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8859,
@@ -111,7 +111,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-10T09:12:59.512Z",
+            "checkedAt": "2026-04-10T09:37:35.340Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -136,7 +136,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-10T09:13:11.596Z",
+            "checkedAt": "2026-04-10T09:37:45.392Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2ceb8041029b2077638e3d31056b5c0f9d295f87",
@@ -274,7 +274,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-10T09:13:29.382Z",
+            "checkedAt": "2026-04-10T09:37:59.941Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -299,7 +299,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-10T09:13:31.104Z",
+            "checkedAt": "2026-04-10T09:38:01.295Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "75b143542e1c98e4e97a87927479fc3d16693783",
@@ -437,21 +437,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-10T09:13:47.936Z",
+            "checkedAt": "2026-04-10T09:38:15.306Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "0c8e40a3313c4e78bae345beca82ad0b37e15d0d",
-              "shortSha": "0c8e40a",
-              "message": "Merge pull request #292 from City-of-Turku/dependabot/submodules/evaka-07eb452",
-              "date": "2026-04-09T01:14:30Z",
-              "author": "github-actions[bot]"
+              "sha": "5267f3001c9ce6cbc45a01302593a074eaf2cdae",
+              "shortSha": "5267f30",
+              "message": "Update evaka submodule",
+              "date": "2026-04-10T08:21:27Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "07eb452c64bdd110bc9991eff31909ea62096c40",
-              "shortSha": "07eb452",
-              "message": "Merge pull request #8843 from espoon-voltti/add-check-constraint-citizenModifiedAt",
-              "date": "2026-04-08T12:15:39Z",
-              "author": "ohinkinen"
+              "sha": "deb7e074b8bb8a11ad6a234b712fbc713c978ade",
+              "shortSha": "deb7e07",
+              "message": "Merge pull request #8859 from espoon-voltti/turku-assistance-option",
+              "date": "2026-04-10T08:15:15Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -462,7 +462,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-10T09:13:50.053Z",
+            "checkedAt": "2026-04-10T09:38:19.040Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5267f3001c9ce6cbc45a01302593a074eaf2cdae",
@@ -492,8 +492,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8859,
               "title": "Turun tuentarpeen tekstikorjaus",
@@ -541,6 +540,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
