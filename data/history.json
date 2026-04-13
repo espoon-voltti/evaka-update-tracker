@@ -1,6 +1,30 @@
 {
   "events": [
     {
+      "id": "2026-04-13T13:01:22.863Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-13T13:01:22.863Z",
+      "previousCommit": {
+        "sha": "75f0ff14148663a2adc63cb413b40bb93b32a6b3",
+        "shortSha": "75f0ff1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "72610d0ab4f09e4ff9724c48c6b097cd4479653a",
+        "shortSha": "72610d0",
+        "message": "Silence user-triggered SAML failures in apigw app log",
+        "date": "2026-04-13T10:32:56Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [],
+      "repoType": "core",
+      "isDefaultBranch": false,
+      "branch": "silence-saml-user-failures"
+    },
+    {
       "id": "2026-04-13T09:54:36.630Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
