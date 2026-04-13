@@ -3,6 +3,10 @@
  *
  * - Data changes: re-invokes the provided refresh callback to re-render the current view.
  * - Code changes: triggers a full page reload via site-version.txt comparison.
+ *   Only the first line of site-version.txt is the stable code hash; subsequent
+ *   lines are metadata (e.g. build timestamp) and are ignored so that data-only
+ *   deploys don't trigger a reload that would clobber user state like the
+ *   fullscreen overview mode.
  * - Silent on errors: logs to console, skips the cycle, retries next interval.
  * - Overlap guard: skips a cycle if the previous check is still in flight.
  */
@@ -21,8 +25,18 @@ const VERSION_FILE = 'data/site-version.txt';
 /** Cached response texts for change comparison. */
 const cachedTexts = new Map();
 
-/** Cached site version string. */
+/** Cached site version string (first line of site-version.txt only). */
 let cachedVersion = null;
+
+/**
+ * Extract the stable code hash from a site-version.txt body.
+ * Only the first non-empty line is significant; additional lines are
+ * treated as metadata (e.g. build timestamp) and ignored so that
+ * data-only deploys that re-stamp the file don't trigger reloads.
+ */
+function parseSiteVersion(text) {
+  return text.split('\n')[0].trim();
+}
 
 let intervalId = null;
 let inProgress = false;
@@ -52,7 +66,7 @@ export async function initCache() {
       try {
         const resp = await fetch(cacheBustUrl(VERSION_FILE));
         if (resp.ok) {
-          cachedVersion = (await resp.text()).trim();
+          cachedVersion = parseSiteVersion(await resp.text());
         }
       } catch {
         // Ignore
@@ -71,7 +85,7 @@ async function checkForChanges(refreshFn) {
   try {
     const versionResp = await fetch(cacheBustUrl(VERSION_FILE));
     if (versionResp.ok) {
-      const newVersion = (await versionResp.text()).trim();
+      const newVersion = parseSiteVersion(await versionResp.text());
       if (cachedVersion !== null && newVersion !== cachedVersion) {
         // Code changed — full reload
         window.location.reload();

@@ -96,7 +96,14 @@ jobs:
           cp -r data dist/data
 
       - name: Generate site version file
-        run: echo "$(date -u +%Y-%m-%dT%H:%M:%SZ)-$(git rev-parse --short HEAD)" > dist/data/site-version.txt
+        # First line is a stable hash of the site/ source tree — it only
+        # changes when site code actually changes, so data-only deploys
+        # don't force browser reloads that clobber user state (e.g. the
+        # overview fullscreen mode). Second line is the build timestamp
+        # for human observability and is ignored by the frontend.
+        run: |
+          SITE_HASH=$(find site -type f -print0 | LC_ALL=C sort -z | xargs -0 sha256sum | sha256sum | cut -c1-12)
+          printf '%s\n%s\n' "$SITE_HASH" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > dist/data/site-version.txt
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
