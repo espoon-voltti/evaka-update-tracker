@@ -1,6 +1,427 @@
 {
   "events": [
     {
+      "id": "2026-04-14T04:51:58.802Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-14T04:51:58.802Z",
+      "previousCommit": {
+        "sha": "75f0ff14148663a2adc63cb413b40bb93b32a6b3",
+        "shortSha": "75f0ff1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+        "shortSha": "02e2616",
+        "message": "Merge pull request #8881 from espoon-voltti/update-guardian-evaka-rights-info-text",
+        "date": "2026-04-13T12:29:28Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 8881,
+          "title": "Huoltajan eVaka-oikeudet tekstimuutos",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-13T12:29:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8881",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8816,
+          "title": "Ryhmän luonnissa alkamispäivämäärä tyhjäksi oletuksena",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-13T11:34:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8816",
+          "labels": [
+            "enhancement",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8857,
+          "title": "Piilotetaan hetu asiakastietohausta",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-13T09:51:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8857",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8856,
+          "title": "Update dependency axios to v1.15.0 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T08:11:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8856",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8872,
+          "title": "Update dependency dd-trace to v5.95.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T07:06:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8872",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8852,
+          "title": "Lisätään `sandbox apply` ja muutosten havaitseminen",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-04-13T06:56:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8852",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 8869,
+          "title": "Update dependency org.checkerframework:checker-qual to v3.55.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T06:47:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8869",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8879,
+          "title": "Käytetään mockattua aikaa flakyissä e2e-testeissä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-13T06:47:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8879",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8878,
+          "title": "Päivitetään tomcat-embed-core",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-13T05:46:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8878",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8866,
+          "title": "Update dependency nock to v14.0.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T05:16:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8866",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8875,
+          "title": "Update dependency vite to v8.0.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-12T21:00:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8875",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-14T04:52:20.751Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-14T04:52:20.751Z",
+      "previousCommit": {
+        "sha": "7cfd108432a69a444c0de3e133b6e24a3a20f396",
+        "shortSha": "7cfd108",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8afab819481b2eb7bfc9b016a0557242250925c5",
+        "shortSha": "8afab81",
+        "message": "Merge pull request #2089 from Tampere/dependabot/submodules/evaka-02e2616",
+        "date": "2026-04-14T04:16:33Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 2089,
+          "title": "Bump evaka from `a89d1dc` to `02e2616`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-14T04:16:33Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2089",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-14T04:52:20.751Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-14T04:52:20.751Z",
+      "previousCommit": {
+        "sha": "a89d1dcc52b4c1c0265ac150e403014998920c4d",
+        "shortSha": "a89d1dc",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+        "shortSha": "02e2616",
+        "message": "Merge pull request #8881 from espoon-voltti/update-guardian-evaka-rights-info-text",
+        "date": "2026-04-13T12:29:28Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 8881,
+          "title": "Huoltajan eVaka-oikeudet tekstimuutos",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-13T12:29:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8881",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8816,
+          "title": "Ryhmän luonnissa alkamispäivämäärä tyhjäksi oletuksena",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-13T11:34:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8816",
+          "labels": [
+            "enhancement",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8857,
+          "title": "Piilotetaan hetu asiakastietohausta",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-13T09:51:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8857",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8856,
+          "title": "Update dependency axios to v1.15.0 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T08:11:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8856",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8872,
+          "title": "Update dependency dd-trace to v5.95.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T07:06:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8872",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8852,
+          "title": "Lisätään `sandbox apply` ja muutosten havaitseminen",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-04-13T06:56:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8852",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 8869,
+          "title": "Update dependency org.checkerframework:checker-qual to v3.55.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T06:47:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8869",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8879,
+          "title": "Käytetään mockattua aikaa flakyissä e2e-testeissä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-13T06:47:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8879",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8878,
+          "title": "Päivitetään tomcat-embed-core",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-13T05:46:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8878",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8866,
+          "title": "Update dependency nock to v14.0.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T05:16:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8866",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-14T04:23:47.492Z_oulu-staging_wrapper",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",

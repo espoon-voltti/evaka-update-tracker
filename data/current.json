@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T04:26:22.454Z",
+  "generatedAt": "2026-04-14T04:52:57.028Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T04:25:01.456Z",
+            "checkedAt": "2026-04-14T04:51:53.363Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T04:25:02.434Z",
+            "checkedAt": "2026-04-14T04:51:53.955Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "75f0ff14148663a2adc63cb413b40bb93b32a6b3",
-              "shortSha": "75f0ff1",
-              "message": "Update adobe/s3mock Docker tag to v4.12.4 (#8877)",
-              "date": "2026-04-12T17:24:50Z",
-              "author": "renovate[bot]"
+              "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+              "shortSha": "02e2616",
+              "message": "Merge pull request #8881 from espoon-voltti/update-guardian-evaka-rights-info-text",
+              "date": "2026-04-13T12:29:28Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8881,
               "title": "Huoltajan eVaka-oikeudet tekstimuutos",
@@ -128,7 +127,8 @@
                 "service"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -141,7 +141,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T04:25:08.261Z",
+            "checkedAt": "2026-04-14T04:52:01.913Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -166,21 +166,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T04:25:19.786Z",
+            "checkedAt": "2026-04-14T04:52:08.880Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "7cfd108432a69a444c0de3e133b6e24a3a20f396",
-              "shortSha": "7cfd108",
-              "message": "Merge pull request #2088 from Tampere/dependabot/submodules/evaka-a89d1dc",
-              "date": "2026-04-13T04:19:20Z",
-              "author": "akheron"
+              "sha": "8afab819481b2eb7bfc9b016a0557242250925c5",
+              "shortSha": "8afab81",
+              "message": "Merge pull request #2089 from Tampere/dependabot/submodules/evaka-02e2616",
+              "date": "2026-04-14T04:16:33Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "a89d1dcc52b4c1c0265ac150e403014998920c4d",
-              "shortSha": "a89d1dc",
-              "message": "Update dependency vite to v8.0.7 (#8875)",
-              "date": "2026-04-12T21:00:42Z",
-              "author": "renovate[bot]"
+              "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+              "shortSha": "02e2616",
+              "message": "Merge pull request #8881 from espoon-voltti/update-guardian-evaka-rights-info-text",
+              "date": "2026-04-13T12:29:28Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -198,84 +198,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 8859,
-              "title": "Turun tuentarpeen tekstikorjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-10T08:15:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8859",
-              "labels": [
-                "enhancement",
-                "turku"
-              ]
-            },
-            {
-              "number": 8810,
-              "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-09T07:06:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8810",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8846,
-              "title": "Korjataan sandbox-ympäristön kotihakemisto",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-04-09T05:55:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8846",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8843,
-              "title": "Lisätään check constraint citizenModifiedAt kolumnille",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-08T12:15:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8843",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8848,
-              "title": "Korjataan flaky e2e",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-08T11:12:49Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8848",
-              "labels": [
-                "tech"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 8881,
               "title": "Huoltajan eVaka-oikeudet tekstimuutos",
@@ -353,7 +275,8 @@
                 "service"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -366,7 +289,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T04:25:46.607Z",
+            "checkedAt": "2026-04-14T04:52:31.796Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -391,7 +314,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T04:25:48.232Z",
+            "checkedAt": "2026-04-14T04:52:32.809Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
@@ -514,7 +437,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-14T04:26:13.918Z",
+            "checkedAt": "2026-04-14T04:52:51.291Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1e3b30cad6cb52c7e81a737a14e5241dbf95fe20",
@@ -539,7 +462,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-14T04:26:15.453Z",
+            "checkedAt": "2026-04-14T04:52:52.192Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
