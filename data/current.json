@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T06:18:17.864Z",
+  "generatedAt": "2026-04-14T07:00:37.658Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T06:17:19.035Z",
+            "checkedAt": "2026-04-14T06:59:06.492Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T06:17:19.732Z",
+            "checkedAt": "2026-04-14T06:59:07.517Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -141,7 +141,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T06:17:24.235Z",
+            "checkedAt": "2026-04-14T06:59:14.302Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -166,7 +166,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T06:17:31.612Z",
+            "checkedAt": "2026-04-14T06:59:26.557Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8afab819481b2eb7bfc9b016a0557242250925c5",
@@ -192,7 +192,21 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 2087,
+              "title": "Primus-tiedonsiirtointegraatio kehyskuntiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-14T06:47:24Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2087",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -380,7 +394,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T06:17:50.452Z",
+            "checkedAt": "2026-04-14T06:59:55.562Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e02b999e607be7557da8574cc20162fbaf9c63c6",
@@ -405,7 +419,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T06:17:51.583Z",
+            "checkedAt": "2026-04-14T06:59:57.439Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
@@ -726,7 +740,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-14T06:18:11.356Z",
+            "checkedAt": "2026-04-14T07:00:28.098Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1e3b30cad6cb52c7e81a737a14e5241dbf95fe20",
@@ -751,7 +765,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-14T06:18:12.579Z",
+            "checkedAt": "2026-04-14T07:00:29.890Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
