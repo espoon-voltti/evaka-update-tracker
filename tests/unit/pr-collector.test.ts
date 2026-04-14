@@ -212,5 +212,17 @@ describe('pr-collector', () => {
       expect(result.pendingDeployment).toHaveLength(1);
       expect(result.pendingDeployment[0].number).toBe(6);
     });
+
+    it('should cap deployed at 5 but not cap inStaging or pendingDeployment', () => {
+      const deployed = Array.from({ length: 10 }, (_, i) => makePR(i + 1, false));
+      const inStaging = Array.from({ length: 10 }, (_, i) => makePR(i + 100, false));
+      const pending = Array.from({ length: 10 }, (_, i) => makePR(i + 200, false));
+
+      const result = buildPRTrack(deployed, inStaging, pending);
+
+      expect(result.deployed).toHaveLength(5);
+      expect(result.inStaging).toHaveLength(10);
+      expect(result.pendingDeployment).toHaveLength(10);
+    });
   });
 });

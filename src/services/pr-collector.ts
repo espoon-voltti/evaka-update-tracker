@@ -100,7 +100,7 @@ export function buildPRTrack(
 ): PRCollectionResult {
   return {
     deployed: filterHumanPRs(allDeployed),
-    inStaging: filterHumanPRs(allInStaging),
-    pendingDeployment: filterHumanPRs(allPending),
+    inStaging: filterHumanPRs(allInStaging, Infinity),
+    pendingDeployment: filterHumanPRs(allPending, Infinity),
   };
 }
