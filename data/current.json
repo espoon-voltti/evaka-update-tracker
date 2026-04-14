@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T09:28:22.287Z",
+  "generatedAt": "2026-04-14T09:59:58.708Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T09:27:45.782Z",
+            "checkedAt": "2026-04-14T09:59:22.845Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T09:27:46.524Z",
+            "checkedAt": "2026-04-14T09:59:23.547Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T09:27:47.571Z",
+            "checkedAt": "2026-04-14T09:59:24.421Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -88,14 +88,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T09:27:55.516Z",
+            "checkedAt": "2026-04-14T09:59:32.153Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "8afab819481b2eb7bfc9b016a0557242250925c5",
-              "shortSha": "8afab81",
-              "message": "Merge pull request #2089 from Tampere/dependabot/submodules/evaka-02e2616",
-              "date": "2026-04-14T04:16:33Z",
-              "author": "ohinkinen"
+              "sha": "8c84fa7c145699110ec8a4bdc95a817099ed635d",
+              "shortSha": "8c84fa7",
+              "message": "Merge pull request #2090 from Tampere/enable-preschool-export-for-testing",
+              "date": "2026-04-14T09:22:28Z",
+              "author": "terolaakso-reaktor"
             },
             "coreCommit": {
               "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
@@ -113,8 +113,7 @@
         "wrapper": {
           "repository": "Tampere/trevaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 2090,
               "title": "Hämeenkyrö, Kangasala & Lempäälä: Primus-integraation aktivointi testiin",
@@ -141,7 +140,8 @@
               "url": "https://github.com/Tampere/trevaka/pull/2087",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -329,7 +329,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T09:28:16.989Z",
+            "checkedAt": "2026-04-14T09:59:54.128Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
@@ -354,7 +354,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T09:28:18.210Z",
+            "checkedAt": "2026-04-14T09:59:55.060Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
@@ -399,7 +399,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-14T09:28:19.634Z",
+            "checkedAt": "2026-04-14T09:59:56.483Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
@@ -424,7 +424,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-14T09:28:20.712Z",
+            "checkedAt": "2026-04-14T09:59:57.413Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
