@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T09:18:05.795Z",
+  "generatedAt": "2026-04-14T09:28:22.287Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T09:17:05.155Z",
+            "checkedAt": "2026-04-14T09:27:45.782Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-14T09:17:11.344Z",
+            "checkedAt": "2026-04-14T09:27:46.524Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,85 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8881,
-              "title": "Huoltajan eVaka-oikeudet tekstimuutos",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-13T12:29:28Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8881",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8816,
-              "title": "Ryhmän luonnissa alkamispäivämäärä tyhjäksi oletuksena",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-13T11:34:26Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8816",
-              "labels": [
-                "enhancement",
-                "frontend"
-              ]
-            },
-            {
-              "number": 8857,
-              "title": "Piilotetaan hetu asiakastietohausta",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-13T09:51:16Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8857",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8879,
-              "title": "Käytetään mockattua aikaa flakyissä e2e-testeissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-13T06:47:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8879",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8878,
-              "title": "Päivitetään tomcat-embed-core",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-13T05:46:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8878",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -141,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T09:17:17.435Z",
+            "checkedAt": "2026-04-14T09:27:47.571Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -166,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-14T09:17:29.099Z",
+            "checkedAt": "2026-04-14T09:27:55.516Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8afab819481b2eb7bfc9b016a0557242250925c5",
@@ -193,6 +115,19 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 2090,
+              "title": "Hämeenkyrö, Kangasala & Lempäälä: Primus-integraation aktivointi testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-14T09:22:29Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2090",
+              "labels": []
+            },
             {
               "number": 2087,
               "title": "Primus-tiedonsiirtointegraatio kehyskuntiin",
@@ -394,7 +329,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T09:17:58.419Z",
+            "checkedAt": "2026-04-14T09:28:16.989Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
@@ -419,7 +354,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-14T09:17:59.972Z",
+            "checkedAt": "2026-04-14T09:28:18.210Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
@@ -464,7 +399,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-14T09:18:02.061Z",
+            "checkedAt": "2026-04-14T09:28:19.634Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
@@ -489,7 +424,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-14T09:18:03.531Z",
+            "checkedAt": "2026-04-14T09:28:20.712Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
