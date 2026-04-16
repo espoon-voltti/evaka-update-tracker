@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T07:09:28.457Z",
+  "generatedAt": "2026-04-16T07:51:10.430Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-16T07:08:36.741Z",
+            "checkedAt": "2026-04-16T07:50:14.568Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-16T07:08:37.626Z",
+            "checkedAt": "2026-04-16T07:50:15.654Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
-              "shortSha": "e8e90b8",
-              "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
-              "date": "2026-04-15T09:05:29Z",
-              "author": "akheron"
+              "sha": "f165374b5ba57be904ae709a348725f88f5b0d93",
+              "shortSha": "f165374",
+              "message": "feat(video-call): 1:1 WebRTC video calls from employee to child's guardians",
+              "date": "2026-04-16T07:15:22Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -49,7 +49,8 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [
+          "inStaging": [],
+          "pendingDeployment": [
             {
               "number": 8887,
               "title": "Tietoturvapäivitys",
@@ -66,8 +67,7 @@
                 "service"
               ]
             }
-          ],
-          "pendingDeployment": []
+          ]
         }
       }
     },
@@ -80,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-16T07:08:39.513Z",
+            "checkedAt": "2026-04-16T07:50:23.051Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -105,7 +105,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-16T07:08:50.951Z",
+            "checkedAt": "2026-04-16T07:50:32.868Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -362,7 +362,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-16T07:09:19.201Z",
+            "checkedAt": "2026-04-16T07:50:59.284Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
@@ -387,7 +387,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-16T07:09:20.536Z",
+            "checkedAt": "2026-04-16T07:51:00.961Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d8e8dbdc49ba631a92667c000ff53dd553e217d0",
@@ -449,7 +449,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-16T07:09:23.919Z",
+            "checkedAt": "2026-04-16T07:51:04.680Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
@@ -474,7 +474,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-16T07:09:25.205Z",
+            "checkedAt": "2026-04-16T07:51:06.775Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ca7140dd6b6f660907e181b67ddeeb9de36db33e",
