@@ -1,6 +1,88 @@
 {
   "events": [
     {
+      "id": "2026-04-16T05:08:54.558Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-16T05:08:54.558Z",
+      "previousCommit": {
+        "sha": "8c84fa7c145699110ec8a4bdc95a817099ed635d",
+        "shortSha": "8c84fa7",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+        "shortSha": "07a6fad",
+        "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+        "date": "2026-04-16T04:30:08Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 2092,
+          "title": "Bump evaka from `02e2616` to `e8e90b8`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-16T04:30:09Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2092",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-16T05:08:54.558Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-16T05:08:54.558Z",
+      "previousCommit": {
+        "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+        "shortSha": "02e2616",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+        "shortSha": "e8e90b8",
+        "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+        "date": "2026-04-15T09:05:29Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8887,
+          "title": "Tietoturvapäivitys",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-15T09:05:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8887",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-16T04:40:51.293Z_turku-staging_wrapper",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
