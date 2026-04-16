@@ -1,6 +1,88 @@
 {
   "events": [
     {
+      "id": "2026-04-16T04:40:51.293Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-16T04:40:51.293Z",
+      "previousCommit": {
+        "sha": "a389b5afecf670cd2c0eaf0bd727b2fa791671d0",
+        "shortSha": "a389b5a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ca7140dd6b6f660907e181b67ddeeb9de36db33e",
+        "shortSha": "ca7140d",
+        "message": "Merge pull request #298 from City-of-Turku/dependabot/submodules/evaka-e8e90b8",
+        "date": "2026-04-16T01:14:40Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 298,
+          "title": "Bump evaka from `02e2616` to `e8e90b8`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-16T01:14:40Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/298",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-16T04:40:51.293Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-16T04:40:51.293Z",
+      "previousCommit": {
+        "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+        "shortSha": "02e2616",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+        "shortSha": "e8e90b8",
+        "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+        "date": "2026-04-15T09:05:29Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8887,
+          "title": "Tietoturvapäivitys",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-15T09:05:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8887",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-16T04:32:36.550Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
