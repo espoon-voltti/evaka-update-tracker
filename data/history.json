@@ -1,6 +1,129 @@
 {
   "events": [
     {
+      "id": "2026-04-16T04:32:36.550Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-16T04:32:36.550Z",
+      "previousCommit": {
+        "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+        "shortSha": "02e2616",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+        "shortSha": "e8e90b8",
+        "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+        "date": "2026-04-15T09:05:29Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8887,
+          "title": "Tietoturvapäivitys",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-15T09:05:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8887",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-16T04:33:10.992Z_oulu-staging_wrapper",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-16T04:33:10.992Z",
+      "previousCommit": {
+        "sha": "972b528a446720b1ef1078b20dda0f3e499c7a95",
+        "shortSha": "972b528",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "d8e8dbdc49ba631a92667c000ff53dd553e217d0",
+        "shortSha": "d8e8dbd",
+        "message": "Merge pull request #342 from Oulunkaupunki/dependabot/submodules/evaka-e8e90b8",
+        "date": "2026-04-16T01:14:48Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 342,
+          "title": "Bump evaka from `02e2616` to `e8e90b8`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-16T01:14:48Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/342",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-16T04:33:10.992Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-16T04:33:10.992Z",
+      "previousCommit": {
+        "sha": "02e2616ee0da6815298e30a26e67c676d95ba2a7",
+        "shortSha": "02e2616",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+        "shortSha": "e8e90b8",
+        "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+        "date": "2026-04-15T09:05:29Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8887,
+          "title": "Tietoturvapäivitys",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-15T09:05:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8887",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-15T20:46:25.608Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
