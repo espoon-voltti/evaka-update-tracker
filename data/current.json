@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T11:49:13.628Z",
+  "generatedAt": "2026-04-17T12:08:39.983Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-17T11:48:27.178Z",
+            "checkedAt": "2026-04-17T12:07:44.695Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-17T11:48:27.880Z",
+            "checkedAt": "2026-04-17T12:07:45.460Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -140,7 +140,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-17T11:48:32.668Z",
+            "checkedAt": "2026-04-17T12:07:50.629Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -165,7 +165,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-17T11:48:40.112Z",
+            "checkedAt": "2026-04-17T12:07:59.896Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -219,6 +219,19 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 2094,
+              "title": "Poistetaan kustomoinnit, buildataan kaikki ytimestä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-17T11:56:41Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2094",
+              "labels": []
+            },
             {
               "number": 2093,
               "title": "Korjaus päivitysilmoitusten lähetykseen heti asennuksen jälkeen",
@@ -497,7 +510,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-17T11:49:04.248Z",
+            "checkedAt": "2026-04-17T12:08:28.257Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d8e8dbdc49ba631a92667c000ff53dd553e217d0",
@@ -522,7 +535,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-17T11:49:05.132Z",
+            "checkedAt": "2026-04-17T12:08:29.741Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d8e8dbdc49ba631a92667c000ff53dd553e217d0",
@@ -628,7 +641,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-17T11:49:08.708Z",
+            "checkedAt": "2026-04-17T12:08:33.980Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ca7140dd6b6f660907e181b67ddeeb9de36db33e",
@@ -653,7 +666,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-17T11:49:09.974Z",
+            "checkedAt": "2026-04-17T12:08:35.394Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ca7140dd6b6f660907e181b67ddeeb9de36db33e",
