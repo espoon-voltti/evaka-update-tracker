@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T09:13:13.308Z",
+  "generatedAt": "2026-04-20T09:16:31.785Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-20T09:11:31.535Z",
+            "checkedAt": "2026-04-20T09:15:20.851Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-20T09:11:32.140Z",
+            "checkedAt": "2026-04-20T09:15:21.628Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,21 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8924,
+              "title": "Eksplisiittisempi VTJ-konfiguraatio",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-20T09:14:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8924",
+              "labels": [
+                "bug"
+              ]
+            },
             {
               "number": 8884,
               "title": "Siirretään Tampereen seudun koodi ytimeen",
@@ -140,7 +155,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-20T09:11:44.220Z",
+            "checkedAt": "2026-04-20T09:15:35.713Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -165,7 +180,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-20T09:11:52.024Z",
+            "checkedAt": "2026-04-20T09:15:44.510Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "75ee43e8110f4e07dc14fd737754d30499a99704",
@@ -186,7 +201,7 @@
           "mismatchDetails": [
             {
               "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-04-20T09:11:52.024Z",
+              "checkedAt": "2026-04-20T09:15:44.510Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "75ee43e8110f4e07dc14fd737754d30499a99704",
@@ -205,7 +220,7 @@
             },
             {
               "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-04-20T09:11:52.965Z",
+              "checkedAt": "2026-04-20T09:15:45.405Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -224,7 +239,7 @@
             },
             {
               "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-04-20T09:11:53.887Z",
+              "checkedAt": "2026-04-20T09:15:46.295Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -243,7 +258,7 @@
             },
             {
               "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-04-20T09:11:54.694Z",
+              "checkedAt": "2026-04-20T09:15:47.257Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -262,7 +277,7 @@
             },
             {
               "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-04-20T09:11:55.542Z",
+              "checkedAt": "2026-04-20T09:15:48.167Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -281,7 +296,7 @@
             },
             {
               "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-04-20T09:11:56.331Z",
+              "checkedAt": "2026-04-20T09:15:49.034Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -300,7 +315,7 @@
             },
             {
               "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-04-20T09:11:57.197Z",
+              "checkedAt": "2026-04-20T09:15:49.942Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -319,7 +334,7 @@
             },
             {
               "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-04-20T09:11:58.061Z",
+              "checkedAt": "2026-04-20T09:15:50.810Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -338,7 +353,7 @@
             },
             {
               "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-04-20T09:11:58.854Z",
+              "checkedAt": "2026-04-20T09:15:51.770Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
@@ -667,7 +682,23 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8924,
+              "title": "Eksplisiittisempi VTJ-konfiguraatio",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-20T09:14:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8924",
+              "labels": [
+                "bug"
+              ]
+            }
+          ]
         }
       }
     },
@@ -680,7 +711,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-20T09:12:26.311Z",
+            "checkedAt": "2026-04-20T09:16:24.469Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "354d0728a9c565e6a757da30b1f213754000b7e7",
@@ -705,7 +736,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-20T09:12:37.714Z",
+            "checkedAt": "2026-04-20T09:16:25.543Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "354d0728a9c565e6a757da30b1f213754000b7e7",
@@ -735,70 +766,25 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 8884,
-              "title": "Siirretään Tampereen seudun koodi ytimeen",
+              "number": 8924,
+              "title": "Eksplisiittisempi VTJ-konfiguraatio",
               "author": "akheron",
               "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-17T11:43:30Z",
+              "mergedAt": "2026-04-20T09:14:33Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8884",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8890,
-              "title": "CVE varoituksen korjaus: Thymeleaf 3.1.4",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-17T09:18:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8890",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 8882,
-              "title": "Tyyppitarkistukset kustomisaatioille",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-04-17T06:32:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8882",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8886,
-              "title": "Korjataan kuntalaisen kevytkirjautumistunnuksen luominen sähköposteilla joissa on isoja kirjaimia",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-17T05:17:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8886",
+              "url": "https://github.com/espoon-voltti/evaka/pull/8924",
               "labels": [
                 "bug"
               ]
             }
-          ],
-          "inStaging": [],
-          "pendingDeployment": []
+          ]
         }
       }
     },
@@ -811,7 +797,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-20T09:12:49.768Z",
+            "checkedAt": "2026-04-20T09:16:28.096Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "72c631ba80cb3e0b4f265301ff1e8e54876c2e3c",
@@ -836,7 +822,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-20T09:13:00.880Z",
+            "checkedAt": "2026-04-20T09:16:29.251Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "72c631ba80cb3e0b4f265301ff1e8e54876c2e3c",
@@ -866,70 +852,25 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 8884,
-              "title": "Siirretään Tampereen seudun koodi ytimeen",
+              "number": 8924,
+              "title": "Eksplisiittisempi VTJ-konfiguraatio",
               "author": "akheron",
               "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-17T11:43:30Z",
+              "mergedAt": "2026-04-20T09:14:33Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8884",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8890,
-              "title": "CVE varoituksen korjaus: Thymeleaf 3.1.4",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-17T09:18:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8890",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 8882,
-              "title": "Tyyppitarkistukset kustomisaatioille",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-04-17T06:32:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8882",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8886,
-              "title": "Korjataan kuntalaisen kevytkirjautumistunnuksen luominen sähköposteilla joissa on isoja kirjaimia",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-17T05:17:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8886",
+              "url": "https://github.com/espoon-voltti/evaka/pull/8924",
               "labels": [
                 "bug"
               ]
             }
-          ],
-          "inStaging": [],
-          "pendingDeployment": []
+          ]
         }
       }
     }
