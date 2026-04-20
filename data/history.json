@@ -1,6 +1,103 @@
 {
   "events": [
     {
+      "id": "2026-04-20T10:05:08.976Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-20T10:05:08.976Z",
+      "previousCommit": {
+        "sha": "75ee43e8110f4e07dc14fd737754d30499a99704",
+        "shortSha": "75ee43e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "07dbe7c2adcd34eae189cb2ab50468e91452e03c",
+        "shortSha": "07dbe7c",
+        "message": "Merge pull request #2097 from Tampere/dependabot/submodules/evaka-915baa4",
+        "date": "2026-04-20T09:42:07Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 2097,
+          "title": "Bump evaka from `4bdfefd` to `915baa4`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T09:42:07Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2097",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-20T10:05:08.976Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-20T10:05:08.976Z",
+      "previousCommit": {
+        "sha": "4bdfefda41f2a985a02a7fd5cd97ae3cfd8e6f75",
+        "shortSha": "4bdfefd",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "915baa48ee0d6f8b785b4d3700d7d56e02774966",
+        "shortSha": "915baa4",
+        "message": "Merge pull request #8924 from espoon-voltti/explicit-vtj-client-config",
+        "date": "2026-04-20T09:14:33Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8924,
+          "title": "Eksplisiittisempi VTJ-konfiguraatio",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-20T09:14:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8924",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 8920,
+          "title": "Update bouncycastle to v1.84",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T06:29:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8920",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-20T09:12:37.714Z_oulu-prod_wrapper",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",
