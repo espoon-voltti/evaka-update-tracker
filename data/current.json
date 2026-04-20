@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T03:59:48.339Z",
+  "generatedAt": "2026-04-20T05:13:06.495Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-20T03:58:40.104Z",
+            "checkedAt": "2026-04-20T05:11:37.794Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-20T03:58:40.784Z",
+            "checkedAt": "2026-04-20T05:11:38.635Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -140,7 +140,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-20T03:58:50.585Z",
+            "checkedAt": "2026-04-20T05:11:49.590Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -165,25 +165,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-20T03:58:57.913Z",
+            "checkedAt": "2026-04-20T05:11:57.920Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
-              "shortSha": "07a6fad",
-              "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
-              "date": "2026-04-16T04:30:08Z",
-              "author": "terolaakso-reaktor"
+              "sha": "75ee43e8110f4e07dc14fd737754d30499a99704",
+              "shortSha": "75ee43e",
+              "message": "Merge pull request #2095 from Tampere/dependabot/submodules/evaka-4bdfefd",
+              "date": "2026-04-20T04:11:52Z",
+              "author": "ohinkinen"
             },
             "coreCommit": {
-              "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
-              "shortSha": "e8e90b8",
-              "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
-              "date": "2026-04-15T09:05:29Z",
-              "author": "akheron"
+              "sha": "4bdfefda41f2a985a02a7fd5cd97ae3cfd8e6f75",
+              "shortSha": "4bdfefd",
+              "message": "Update dependency typescript-eslint to v8.58.2 (#8918)",
+              "date": "2026-04-19T10:22:21Z",
+              "author": "renovate[bot]"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-04-20T05:11:57.920Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "75ee43e8110f4e07dc14fd737754d30499a99704",
+                "shortSha": "75ee43e",
+                "message": "Merge pull request #2095 from Tampere/dependabot/submodules/evaka-4bdfefd",
+                "date": "2026-04-20T04:11:52Z",
+                "author": "ohinkinen"
+              },
+              "coreCommit": {
+                "sha": "4bdfefda41f2a985a02a7fd5cd97ae3cfd8e6f75",
+                "shortSha": "4bdfefd",
+                "message": "Update dependency typescript-eslint to v8.58.2 (#8918)",
+                "date": "2026-04-19T10:22:21Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-04-20T05:11:58.944Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-04-20T05:11:59.996Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-04-20T05:12:00.947Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-04-20T05:12:01.826Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-04-20T05:12:02.774Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-04-20T05:12:03.653Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-04-20T05:12:04.629Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-04-20T05:12:05.488Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "07a6fad36b7d0d2f26b1e4e5de063f9db9bef1e0",
+                "shortSha": "07a6fad",
+                "message": "Merge pull request #2092 from Tampere/dependabot/submodules/evaka-e8e90b8",
+                "date": "2026-04-16T04:30:08Z",
+                "author": "terolaakso-reaktor"
+              },
+              "coreCommit": {
+                "sha": "e8e90b8af9ba649d1b2a577cc9b45772bf2c39d0",
+                "shortSha": "e8e90b8",
+                "message": "Merge pull request #8887 from espoon-voltti/cve-fix",
+                "date": "2026-04-15T09:05:29Z",
+                "author": "akheron"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -191,6 +363,32 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 2094,
+              "title": "Poistetaan kustomoinnit, buildataan kaikki ytimestä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-17T11:56:41Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2094",
+              "labels": []
+            },
+            {
+              "number": 2093,
+              "title": "Korjaus päivitysilmoitusten lähetykseen heti asennuksen jälkeen",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-16T13:11:58Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2093",
+              "labels": []
+            },
             {
               "number": 2090,
               "title": "Hämeenkyrö, Kangasala & Lempäälä: Primus-integraation aktivointi testiin",
@@ -218,39 +416,72 @@
               "labels": []
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 2094,
-              "title": "Poistetaan kustomoinnit, buildataan kaikki ytimestä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-17T11:56:41Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2094",
-              "labels": []
-            },
-            {
-              "number": 2093,
-              "title": "Korjaus päivitysilmoitusten lähetykseen heti asennuksen jälkeen",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-16T13:11:58Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2093",
-              "labels": []
-            }
-          ]
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8884,
+              "title": "Siirretään Tampereen seudun koodi ytimeen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-17T11:43:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8884",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8890,
+              "title": "CVE varoituksen korjaus: Thymeleaf 3.1.4",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-04-17T09:18:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8890",
+              "labels": [
+                "dependencies"
+              ]
+            },
+            {
+              "number": 8882,
+              "title": "Tyyppitarkistukset kustomisaatioille",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-04-17T06:32:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8882",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
+              "number": 8886,
+              "title": "Korjataan kuntalaisen kevytkirjautumistunnuksen luominen sähköposteilla joissa on isoja kirjaimia",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-04-17T05:17:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8886",
+              "labels": [
+                "bug"
+              ]
+            },
             {
               "number": 8887,
               "title": "Tietoturvapäivitys",
@@ -436,68 +667,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8884,
-              "title": "Siirretään Tampereen seudun koodi ytimeen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-17T11:43:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8884",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8890,
-              "title": "CVE varoituksen korjaus: Thymeleaf 3.1.4",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-17T09:18:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8890",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 8882,
-              "title": "Tyyppitarkistukset kustomisaatioille",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-04-17T06:32:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8882",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8886,
-              "title": "Korjataan kuntalaisen kevytkirjautumistunnuksen luominen sähköposteilla joissa on isoja kirjaimia",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-17T05:17:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8886",
-              "labels": [
-                "bug"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -510,7 +680,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-20T03:59:26.914Z",
+            "checkedAt": "2026-04-20T05:12:42.625Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d8e8dbdc49ba631a92667c000ff53dd553e217d0",
@@ -535,7 +705,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-20T03:59:27.868Z",
+            "checkedAt": "2026-04-20T05:12:43.688Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "354d0728a9c565e6a757da30b1f213754000b7e7",
@@ -641,7 +811,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-20T03:59:37.566Z",
+            "checkedAt": "2026-04-20T05:12:54.403Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ca7140dd6b6f660907e181b67ddeeb9de36db33e",
@@ -666,7 +836,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-20T03:59:38.658Z",
+            "checkedAt": "2026-04-20T05:12:55.482Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "72c631ba80cb3e0b4f265301ff1e8e54876c2e3c",
