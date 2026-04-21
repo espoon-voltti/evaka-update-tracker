@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-21T04:41:48.496Z",
+  "generatedAt": "2026-04-21T04:56:24.552Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-21T04:40:27.070Z",
+            "checkedAt": "2026-04-21T04:54:55.080Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-21T04:40:27.758Z",
+            "checkedAt": "2026-04-21T04:54:55.766Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f165374b5ba57be904ae709a348725f88f5b0d93",
-              "shortSha": "f165374",
-              "message": "feat(video-call): 1:1 WebRTC video calls from employee to child's guardians",
-              "date": "2026-04-16T07:15:22Z",
-              "author": "Wnt"
+              "sha": "3c0872b59e2ab4ac650d8f7c896654b0a859142a",
+              "shortSha": "3c0872b",
+              "message": "Merge pull request #8915 from espoon-voltti/renovate/actions-github-script-9.x",
+              "date": "2026-04-20T12:55:33Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8924,
               "title": "Eksplisiittisempi VTJ-konfiguraatio",
@@ -142,7 +141,8 @@
                 "service"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -155,7 +155,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-21T04:40:42.836Z",
+            "checkedAt": "2026-04-21T04:55:24.807Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
@@ -180,7 +180,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-21T04:40:50.298Z",
+            "checkedAt": "2026-04-21T04:55:33.063Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "62ec155d84ad871a71c4863ed2f949410b4a6a75",
@@ -538,7 +538,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-21T04:41:32.836Z",
+            "checkedAt": "2026-04-21T04:56:08.353Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "354d0728a9c565e6a757da30b1f213754000b7e7",
@@ -563,7 +563,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-21T04:41:33.741Z",
+            "checkedAt": "2026-04-21T04:56:09.394Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "552ec4b29795fd58591aa64631d82c1fc9392147",
@@ -624,7 +624,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-21T04:41:40.530Z",
+            "checkedAt": "2026-04-21T04:56:16.248Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "72c631ba80cb3e0b4f265301ff1e8e54876c2e3c",
@@ -649,7 +649,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-21T04:41:41.533Z",
+            "checkedAt": "2026-04-21T04:56:17.363Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "823eb6aa972a4b9ecc6636874676d50259282e75",
