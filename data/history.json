@@ -1,6 +1,62 @@
 {
   "events": [
     {
+      "id": "2026-04-22T05:01:48.942Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-22T05:01:48.942Z",
+      "previousCommit": {
+        "sha": "3c0872b59e2ab4ac650d8f7c896654b0a859142a",
+        "shortSha": "3c0872b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+        "date": "2026-04-21T06:22:17Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8880,
+          "title": "Logitetaan Suomi.fi / SAML kirjautumisen peruutus info-tasolla",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8880",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8892,
+          "title": "Oulun vanhan Fabric-koodin poisto & Tampereen BI:n siirto ytimeen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-21T06:20:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8892",
+          "labels": [
+            "enhancement",
+            "oulu"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-22T01:25:17.697Z_oulu-staging_wrapper",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
