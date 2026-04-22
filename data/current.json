@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-22T09:18:18.211Z",
+  "generatedAt": "2026-04-22T09:21:54.873Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-22T09:16:28.822Z",
+            "checkedAt": "2026-04-22T09:21:28.188Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-22T09:16:29.755Z",
+            "checkedAt": "2026-04-22T09:21:28.919Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -79,7 +79,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-22T09:16:31.459Z",
+            "checkedAt": "2026-04-22T09:21:30.280Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -96,187 +96,15 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-04-22T09:16:31.459Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
-                "shortSha": "5013ca1",
-                "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
-                "date": "2026-04-22T04:51:02Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
-                "shortSha": "a220e0e",
-                "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
-                "date": "2026-04-21T06:22:17Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.hameenkyro.fi",
-              "checkedAt": "2026-04-22T09:16:32.942Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.kangasala.fi",
-              "checkedAt": "2026-04-22T09:16:34.209Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.lempaala.fi",
-              "checkedAt": "2026-04-22T09:16:35.652Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-04-22T09:16:36.832Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.orivesi.fi",
-              "checkedAt": "2026-04-22T09:16:38.009Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.pirkkala.fi",
-              "checkedAt": "2026-04-22T09:16:39.117Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.vesilahti.fi",
-              "checkedAt": "2026-04-22T09:16:40.334Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.ylojarvi.fi",
-              "checkedAt": "2026-04-22T09:16:41.590Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
-                "shortSha": "bcca5eb",
-                "message": "Add dummy Varda API URL to Tampere test",
-                "date": "2026-04-08T11:42:20Z",
-                "author": "ohinkinen"
-              },
-              "coreCommit": {
-                "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
-                "shortSha": "5bceaea",
-                "message": "Merge pull request #8845 from espoon-voltti/fix-component-conflict",
-                "date": "2026-04-08T07:11:28Z",
-                "author": "akheron"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-22T09:17:20.406Z",
+            "checkedAt": "2026-04-22T09:21:38.711Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -300,143 +128,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [
-            {
-              "number": 2094,
-              "title": "Poistetaan kustomoinnit, buildataan kaikki ytimestä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-17T11:56:41Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2094",
-              "labels": []
-            },
-            {
-              "number": 2093,
-              "title": "Korjaus päivitysilmoitusten lähetykseen heti asennuksen jälkeen",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-16T13:11:58Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2093",
-              "labels": []
-            },
-            {
-              "number": 2090,
-              "title": "Hämeenkyrö, Kangasala & Lempäälä: Primus-integraation aktivointi testiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-14T09:22:29Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2090",
-              "labels": []
-            },
-            {
-              "number": 2087,
-              "title": "Primus-tiedonsiirtointegraatio kehyskuntiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-14T06:47:24Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2087",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8880,
-              "title": "Logitetaan Suomi.fi / SAML kirjautumisen peruutus info-tasolla",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-21T06:22:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8880",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8892,
-              "title": "Oulun vanhan Fabric-koodin poisto & Tampereen BI:n siirto ytimeen",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-21T06:20:04Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8892",
-              "labels": [
-                "enhancement",
-                "oulu"
-              ]
-            },
-            {
-              "number": 8924,
-              "title": "Eksplisiittisempi VTJ-konfiguraatio",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-20T09:14:33Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8924",
-              "labels": [
-                "bug"
-              ]
-            },
-            {
-              "number": 8884,
-              "title": "Siirretään Tampereen seudun koodi ytimeen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-17T11:43:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8884",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8890,
-              "title": "CVE varoituksen korjaus: Thymeleaf 3.1.4",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-04-17T09:18:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8890",
-              "labels": [
-                "dependencies"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -467,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-22T09:18:09.259Z",
+            "checkedAt": "2026-04-22T09:21:48.590Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fed4a1b4c55e186c5ef7bd96d86dc1988344ebd1",
@@ -492,7 +190,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-22T09:18:11.131Z",
+            "checkedAt": "2026-04-22T09:21:49.557Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fed4a1b4c55e186c5ef7bd96d86dc1988344ebd1",
@@ -553,7 +251,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-22T09:18:14.208Z",
+            "checkedAt": "2026-04-22T09:21:51.608Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "af2c9ec0c3961ba7ee2d1d10075fda89cb96dec2",
@@ -578,7 +276,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-22T09:18:15.730Z",
+            "checkedAt": "2026-04-22T09:21:52.708Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "af2c9ec0c3961ba7ee2d1d10075fda89cb96dec2",
