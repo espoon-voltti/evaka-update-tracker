@@ -1,6 +1,1385 @@
 {
   "events": [
     {
+      "id": "2026-04-22T09:17:20.405Z_tampere-prod_wrapper",
+      "environmentId": "tampere-prod",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-22T09:17:20.405Z",
+      "previousCommit": {
+        "sha": "bcca5ebac20fb17d6dc585cec2156051cf63c405",
+        "shortSha": "bcca5eb",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
+        "shortSha": "5013ca1",
+        "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
+        "date": "2026-04-22T04:51:02Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2100,
+          "title": "Bump evaka from `3c0872b` to `a220e0e`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-22T04:51:02Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2100",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2098,
+          "title": "Bump evaka from `915baa4` to `3c0872b`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-21T04:16:44Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2098",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2097,
+          "title": "Bump evaka from `4bdfefd` to `915baa4`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T09:42:07Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2097",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2095,
+          "title": "Bump evaka from `71c7a27` to `4bdfefd`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T04:11:53Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2095",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2094,
+          "title": "Poistetaan kustomoinnit, buildataan kaikki ytimestä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-17T11:56:41Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2094",
+          "labels": []
+        },
+        {
+          "number": 2093,
+          "title": "Korjaus päivitysilmoitusten lähetykseen heti asennuksen jälkeen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-16T13:11:58Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2093",
+          "labels": []
+        },
+        {
+          "number": 2092,
+          "title": "Bump evaka from `02e2616` to `e8e90b8`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-16T04:30:09Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2092",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2090,
+          "title": "Hämeenkyrö, Kangasala & Lempäälä: Primus-integraation aktivointi testiin",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-14T09:22:29Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2090",
+          "labels": []
+        },
+        {
+          "number": 2087,
+          "title": "Primus-tiedonsiirtointegraatio kehyskuntiin",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-14T06:47:24Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2087",
+          "labels": []
+        },
+        {
+          "number": 2089,
+          "title": "Bump evaka from `a89d1dc` to `02e2616`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-14T04:16:33Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2089",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2088,
+          "title": "Bump evaka from `c0270f9` to `a89d1dc`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T04:19:20Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2088",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2086,
+          "title": "Bump evaka from `07eb452` to `c0270f9`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-10T04:47:08Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2086",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2084,
+          "title": "Bump evaka from `5bceaea` to `07eb452`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-09T04:08:27Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2084",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-22T09:17:20.405Z_tampere-prod_core",
+      "environmentId": "tampere-prod",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-22T09:17:20.405Z",
+      "previousCommit": {
+        "sha": "5bceaea0d176a71315aa7b0caaf3ecb4d65abe8d",
+        "shortSha": "5bceaea",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+        "date": "2026-04-21T06:22:17Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8880,
+          "title": "Logitetaan Suomi.fi / SAML kirjautumisen peruutus info-tasolla",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8880",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8892,
+          "title": "Oulun vanhan Fabric-koodin poisto & Tampereen BI:n siirto ytimeen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-21T06:20:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8892",
+          "labels": [
+            "enhancement",
+            "oulu"
+          ]
+        },
+        {
+          "number": 8915,
+          "title": "Update actions/github-script action to v9",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T12:55:34Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8915",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8923,
+          "title": "Update dependency redis to v5.12.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T12:46:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8923",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8922,
+          "title": "Update flyway to v12.4.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T12:45:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8922",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8916,
+          "title": "Update adobe/s3mock Docker tag to v5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T12:23:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8916",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8917,
+          "title": "Update dependency org.checkerframework:checker-qual to v4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T12:21:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8917",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8914,
+          "title": "Update sentry-javascript monorepo to v10.48.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T12:21:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8914",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8912,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T12:00:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8912",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8910,
+          "title": "Update dependency dd-trace to v5.97.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T11:58:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8910",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8908,
+          "title": "Update dependency @tanstack/react-query to v5.99.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T11:39:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8908",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8909,
+          "title": "Update dependency com.datadoghq:dd-java-agent to v1.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T11:38:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8909",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8891,
+          "title": "Bump follow-redirects from 1.15.11 to 1.16.0 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T11:19:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8891",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 8889,
+          "title": "Bump follow-redirects from 1.15.11 to 1.16.0 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T11:18:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8889",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 8925,
+          "title": "Nostetaan rinnakkaisten integraatiotestiajojen määrää CI:ssä",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-04-20T10:22:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8925",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 8924,
+          "title": "Eksplisiittisempi VTJ-konfiguraatio",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-20T09:14:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8924",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 8920,
+          "title": "Update bouncycastle to v1.84",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-20T06:29:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8920",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8918,
+          "title": "Update dependency typescript-eslint to v8.58.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-19T10:22:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8918",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8919,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.42.34",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-19T08:51:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8919",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8898,
+          "title": "Update dependency postcss-preset-env to v11.2.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T09:31:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8898",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8901,
+          "title": "Update dependency tools.jackson:jackson-bom to v3.1.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T09:30:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8901",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8904,
+          "title": "Update dependency vite to v8.0.8",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T09:29:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8904",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8911,
+          "title": "Update dependency globals to v17.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:28:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8911",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8906,
+          "title": "Update react monorepo to v19.2.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:27:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8906",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8907,
+          "title": "Update dependency @sentry/vite-plugin to v5.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:26:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8907",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8905,
+          "title": "Update dependency vitest to v4.1.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:26:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8905",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8902,
+          "title": "Update dependency typescript-eslint to v8.58.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:20:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8902",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8899,
+          "title": "Update dependency prettier to v3.8.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:19:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8899",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8895,
+          "title": "Update dependency org.jdbi:jdbi3-bom to v3.52.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:18:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8895",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8894,
+          "title": "Update dependency fast-xml-parser to v5.5.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:18:34Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8894",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8897,
+          "title": "Update dependency postcss to v8.5.9",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:18:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8897",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8893,
+          "title": "Update dependency @eslint/compat to v2.0.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:17:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8893",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8900,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.42.33",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:17:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8900",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8896,
+          "title": "Update dependency org.owasp.dependencycheck to v12.2.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T06:17:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8896",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8903,
+          "title": "Update dependency uv to v0.11.6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-18T02:18:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8903",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8884,
+          "title": "Siirretään Tampereen seudun koodi ytimeen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-17T11:43:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8884",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8890,
+          "title": "CVE varoituksen korjaus: Thymeleaf 3.1.4",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-17T09:18:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8890",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8882,
+          "title": "Tyyppitarkistukset kustomisaatioille",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-04-17T06:32:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8882",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8886,
+          "title": "Korjataan kuntalaisen kevytkirjautumistunnuksen luominen sähköposteilla joissa on isoja kirjaimia",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-17T05:17:51Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8886",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 8887,
+          "title": "Tietoturvapäivitys",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-15T09:05:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8887",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8881,
+          "title": "Huoltajan eVaka-oikeudet tekstimuutos",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-13T12:29:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8881",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8816,
+          "title": "Ryhmän luonnissa alkamispäivämäärä tyhjäksi oletuksena",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-13T11:34:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8816",
+          "labels": [
+            "enhancement",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8857,
+          "title": "Piilotetaan hetu asiakastietohausta",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-13T09:51:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8857",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8856,
+          "title": "Update dependency axios to v1.15.0 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T08:11:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8856",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8872,
+          "title": "Update dependency dd-trace to v5.95.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T07:06:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8872",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8852,
+          "title": "Lisätään `sandbox apply` ja muutosten havaitseminen",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-04-13T06:56:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8852",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 8869,
+          "title": "Update dependency org.checkerframework:checker-qual to v3.55.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T06:47:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8869",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8879,
+          "title": "Käytetään mockattua aikaa flakyissä e2e-testeissä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-13T06:47:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8879",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8878,
+          "title": "Päivitetään tomcat-embed-core",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-13T05:46:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8878",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8866,
+          "title": "Update dependency nock to v14.0.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-13T05:16:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8866",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8875,
+          "title": "Update dependency vite to v8.0.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-12T21:00:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8875",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8877,
+          "title": "Update adobe/s3mock Docker tag to v4.12.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-12T17:24:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8877",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8876,
+          "title": "Update dependency vitest to v4.1.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-12T13:25:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8876",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8874,
+          "title": "Update dependency jsdom to v29.0.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-12T06:06:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8874",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8873,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.42.29",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-12T01:28:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8873",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8864,
+          "title": "Update dependency fast-xml-parser to v5.5.10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T13:05:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8864",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8865,
+          "title": "Update dependency io.kotest:kotest-property to v6.1.11",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T13:03:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8865",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8870,
+          "title": "Update playwright monorepo to v1.59.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T12:43:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8870",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8867,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.42.28",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T12:43:34Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8867",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8868,
+          "title": "Update dependency uv to v0.11.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T12:43:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8868",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8863,
+          "title": "Update dependency com.datadoghq:dd-java-agent to v1.60.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T12:42:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8863",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8862,
+          "title": "Update dependency @types/node to v24.12.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T12:42:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8862",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8861,
+          "title": "Update dependency @tanstack/react-query to v5.96.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T12:41:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8861",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8860,
+          "title": "Update dependency @eslint/compat to v2.0.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T12:41:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8860",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 8871,
+          "title": "Update dependency lefthook to v2.1.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-11T10:12:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8871",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 8859,
+          "title": "Turun tuentarpeen tekstikorjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-10T08:15:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8859",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8810,
+          "title": "Piilotetaan henkilön arkaluontoiset tiedot klikkauksen taakse",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-09T07:06:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8810",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8851,
+          "title": "Update dependency cryptography to v46.0.7 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-09T06:15:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8851",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8846,
+          "title": "Korjataan sandbox-ympäristön kotihakemisto",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-04-09T05:55:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8846",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8843,
+          "title": "Lisätään check constraint citizenModifiedAt kolumnille",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-08T12:15:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8843",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8848,
+          "title": "Korjataan flaky e2e",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-08T11:12:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8848",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8847,
+          "title": "Korjataan tyyppivirheet fronttikustomoinneissa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-08T09:49:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8847",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-04-22T09:13:16.321Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
