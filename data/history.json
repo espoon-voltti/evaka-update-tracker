@@ -1,6 +1,251 @@
 {
   "events": [
     {
+      "id": "2026-04-22T09:13:16.321Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-22T09:13:16.321Z",
+      "previousCommit": {
+        "sha": "3c0872b59e2ab4ac650d8f7c896654b0a859142a",
+        "shortSha": "3c0872b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+        "date": "2026-04-21T06:22:17Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8880,
+          "title": "Logitetaan Suomi.fi / SAML kirjautumisen peruutus info-tasolla",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8880",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8892,
+          "title": "Oulun vanhan Fabric-koodin poisto & Tampereen BI:n siirto ytimeen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-21T06:20:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8892",
+          "labels": [
+            "enhancement",
+            "oulu"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-22T09:14:10.887Z_oulu-prod_wrapper",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-22T09:14:10.887Z",
+      "previousCommit": {
+        "sha": "552ec4b29795fd58591aa64631d82c1fc9392147",
+        "shortSha": "552ec4b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fed4a1b4c55e186c5ef7bd96d86dc1988344ebd1",
+        "shortSha": "fed4a1b",
+        "message": "Merge pull request #348 from Oulunkaupunki/dependabot/submodules/evaka-a220e0e",
+        "date": "2026-04-22T01:14:43Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 348,
+          "title": "Bump evaka from `3c0872b` to `a220e0e`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-22T01:14:43Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/348",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-22T09:14:10.887Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-22T09:14:10.887Z",
+      "previousCommit": {
+        "sha": "3c0872b59e2ab4ac650d8f7c896654b0a859142a",
+        "shortSha": "3c0872b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+        "date": "2026-04-21T06:22:17Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8880,
+          "title": "Logitetaan Suomi.fi / SAML kirjautumisen peruutus info-tasolla",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8880",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8892,
+          "title": "Oulun vanhan Fabric-koodin poisto & Tampereen BI:n siirto ytimeen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-21T06:20:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8892",
+          "labels": [
+            "enhancement",
+            "oulu"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-22T09:14:17.497Z_turku-prod_wrapper",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-22T09:14:17.497Z",
+      "previousCommit": {
+        "sha": "823eb6aa972a4b9ecc6636874676d50259282e75",
+        "shortSha": "823eb6a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "af2c9ec0c3961ba7ee2d1d10075fda89cb96dec2",
+        "shortSha": "af2c9ec",
+        "message": "Merge pull request #304 from City-of-Turku/dependabot/submodules/evaka-a220e0e",
+        "date": "2026-04-22T01:14:39Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 304,
+          "title": "Bump evaka from `3c0872b` to `a220e0e`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-22T01:14:39Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/304",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-22T09:14:17.497Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-22T09:14:17.497Z",
+      "previousCommit": {
+        "sha": "3c0872b59e2ab4ac650d8f7c896654b0a859142a",
+        "shortSha": "3c0872b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+        "date": "2026-04-21T06:22:17Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8880,
+          "title": "Logitetaan Suomi.fi / SAML kirjautumisen peruutus info-tasolla",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-04-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8880",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8892,
+          "title": "Oulun vanhan Fabric-koodin poisto & Tampereen BI:n siirto ytimeen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-21T06:20:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8892",
+          "labels": [
+            "enhancement",
+            "oulu"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-04-22T05:23:34.680Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
