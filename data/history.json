@@ -1,6 +1,133 @@
 {
   "events": [
     {
+      "id": "2026-04-23T05:48:19.110Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-23T05:48:19.110Z",
+      "previousCommit": {
+        "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
+        "shortSha": "5013ca1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a98a5ee0941e0ffa8d0ca3c0bd501d7f2a75cbb2",
+        "shortSha": "a98a5ee",
+        "message": "Merge pull request #2102 from Tampere/dependabot/submodules/evaka-2708955",
+        "date": "2026-04-23T04:46:49Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2102,
+          "title": "Bump evaka from `a220e0e` to `2708955`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T04:46:49Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2102",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-23T05:48:19.110Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-23T05:48:19.110Z",
+      "previousCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+        "date": "2026-04-22T12:42:54Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 8928,
+          "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-04-22T12:42:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8928",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8927,
+          "title": "CVE-korjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T12:18:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8927",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8930,
+          "title": "Korjataan service-kontin käyttäjän luonti",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T11:59:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8930",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8926,
+          "title": "Korjataan kesäajan maksuttomien poissaolojen luonti monen palveluntarpeen tapauksessa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T05:16:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8926",
+          "labels": [
+            "bug"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-23T05:05:08.739Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",

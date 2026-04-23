@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T05:05:37.639Z",
+  "generatedAt": "2026-04-23T05:48:36.350Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-23T05:05:04.581Z",
+            "checkedAt": "2026-04-23T05:47:45.519Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-23T05:05:05.270Z",
+            "checkedAt": "2026-04-23T05:47:46.471Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -125,7 +125,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-23T05:05:10.143Z",
+            "checkedAt": "2026-04-23T05:47:49.854Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -150,21 +150,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-23T05:05:18.136Z",
+            "checkedAt": "2026-04-23T05:48:01.956Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
-              "shortSha": "5013ca1",
-              "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
-              "date": "2026-04-22T04:51:02Z",
+              "sha": "a98a5ee0941e0ffa8d0ca3c0bd501d7f2a75cbb2",
+              "shortSha": "a98a5ee",
+              "message": "Merge pull request #2102 from Tampere/dependabot/submodules/evaka-2708955",
+              "date": "2026-04-23T04:46:49Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
-              "shortSha": "a220e0e",
-              "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
-              "date": "2026-04-21T06:22:17Z",
-              "author": "akheron"
+              "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+              "shortSha": "2708955",
+              "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+              "date": "2026-04-22T12:42:54Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -181,8 +181,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8928,
               "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
@@ -244,7 +243,8 @@
                 "bug"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -257,7 +257,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-23T05:05:28.516Z",
+            "checkedAt": "2026-04-23T05:48:22.524Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "fed4a1b4c55e186c5ef7bd96d86dc1988344ebd1",
@@ -282,7 +282,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-23T05:05:29.440Z",
+            "checkedAt": "2026-04-23T05:48:23.929Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
@@ -389,7 +389,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-23T05:05:32.857Z",
+            "checkedAt": "2026-04-23T05:48:28.846Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "af2c9ec0c3961ba7ee2d1d10075fda89cb96dec2",
@@ -414,7 +414,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-23T05:05:33.777Z",
+            "checkedAt": "2026-04-23T05:48:30.564Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
