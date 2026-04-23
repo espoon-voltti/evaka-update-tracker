@@ -1,6 +1,341 @@
 {
   "events": [
     {
+      "id": "2026-04-23T09:58:44.628Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-23T09:58:44.628Z",
+      "previousCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+        "date": "2026-04-22T12:42:54Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 8928,
+          "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-04-22T12:42:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8928",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8927,
+          "title": "CVE-korjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T12:18:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8927",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8930,
+          "title": "Korjataan service-kontin käyttäjän luonti",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T11:59:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8930",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8926,
+          "title": "Korjataan kesäajan maksuttomien poissaolojen luonti monen palveluntarpeen tapauksessa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T05:16:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8926",
+          "labels": [
+            "bug"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-23T09:59:18.539Z_oulu-prod_wrapper",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-23T09:59:18.539Z",
+      "previousCommit": {
+        "sha": "fed4a1b4c55e186c5ef7bd96d86dc1988344ebd1",
+        "shortSha": "fed4a1b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
+        "shortSha": "129330b",
+        "message": "Merge pull request #350 from Oulunkaupunki/dependabot/submodules/evaka-2708955",
+        "date": "2026-04-23T01:14:24Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 350,
+          "title": "Bump evaka from `a220e0e` to `2708955`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T01:14:24Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/350",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-23T09:59:18.539Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-23T09:59:18.539Z",
+      "previousCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+        "date": "2026-04-22T12:42:54Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 8928,
+          "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-04-22T12:42:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8928",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8927,
+          "title": "CVE-korjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T12:18:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8927",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8930,
+          "title": "Korjataan service-kontin käyttäjän luonti",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T11:59:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8930",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8926,
+          "title": "Korjataan kesäajan maksuttomien poissaolojen luonti monen palveluntarpeen tapauksessa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T05:16:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8926",
+          "labels": [
+            "bug"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-23T09:59:28.291Z_turku-prod_wrapper",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-23T09:59:28.291Z",
+      "previousCommit": {
+        "sha": "af2c9ec0c3961ba7ee2d1d10075fda89cb96dec2",
+        "shortSha": "af2c9ec",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
+        "shortSha": "8fc3080",
+        "message": "Merge pull request #306 from City-of-Turku/dependabot/submodules/evaka-2708955",
+        "date": "2026-04-23T01:14:22Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 306,
+          "title": "Bump evaka from `a220e0e` to `2708955`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T01:14:22Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/306",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-04-23T09:59:28.291Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-23T09:59:28.291Z",
+      "previousCommit": {
+        "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+        "shortSha": "a220e0e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+        "date": "2026-04-22T12:42:54Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 8928,
+          "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-04-22T12:42:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8928",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8927,
+          "title": "CVE-korjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T12:18:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8927",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 8930,
+          "title": "Korjataan service-kontin käyttäjän luonti",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T11:59:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8930",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8926,
+          "title": "Korjataan kesäajan maksuttomien poissaolojen luonti monen palveluntarpeen tapauksessa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-22T05:16:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8926",
+          "labels": [
+            "bug"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-04-23T05:48:19.110Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T09:54:29.676Z",
+  "generatedAt": "2026-04-23T09:59:34.395Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-23T09:53:52.175Z",
+            "checkedAt": "2026-04-23T09:58:41.876Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
-              "shortSha": "a220e0e",
-              "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
-              "date": "2026-04-21T06:22:17Z",
-              "author": "akheron"
+              "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+              "shortSha": "2708955",
+              "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+              "date": "2026-04-22T12:42:54Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-23T09:53:52.914Z",
+            "checkedAt": "2026-04-23T09:58:44.628Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8928,
               "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
@@ -112,6 +111,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8934,
@@ -142,7 +142,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-23T09:53:57.036Z",
+            "checkedAt": "2026-04-23T09:58:48.866Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -167,7 +167,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-23T09:54:04.479Z",
+            "checkedAt": "2026-04-23T09:58:59.530Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a98a5ee0941e0ffa8d0ca3c0bd501d7f2a75cbb2",
@@ -291,21 +291,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-23T09:54:16.909Z",
+            "checkedAt": "2026-04-23T09:59:14.530Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "fed4a1b4c55e186c5ef7bd96d86dc1988344ebd1",
-              "shortSha": "fed4a1b",
-              "message": "Merge pull request #348 from Oulunkaupunki/dependabot/submodules/evaka-a220e0e",
-              "date": "2026-04-22T01:14:43Z",
+              "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
+              "shortSha": "129330b",
+              "message": "Merge pull request #350 from Oulunkaupunki/dependabot/submodules/evaka-2708955",
+              "date": "2026-04-23T01:14:24Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
-              "shortSha": "a220e0e",
-              "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
-              "date": "2026-04-21T06:22:17Z",
-              "author": "akheron"
+              "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+              "shortSha": "2708955",
+              "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+              "date": "2026-04-22T12:42:54Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -316,7 +316,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-23T09:54:18.035Z",
+            "checkedAt": "2026-04-23T09:59:18.539Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
@@ -346,8 +346,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8928,
               "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
@@ -410,6 +409,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8934,
@@ -440,21 +440,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-23T09:54:23.448Z",
+            "checkedAt": "2026-04-23T09:59:24.489Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "af2c9ec0c3961ba7ee2d1d10075fda89cb96dec2",
-              "shortSha": "af2c9ec",
-              "message": "Merge pull request #304 from City-of-Turku/dependabot/submodules/evaka-a220e0e",
-              "date": "2026-04-22T01:14:39Z",
+              "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
+              "shortSha": "8fc3080",
+              "message": "Merge pull request #306 from City-of-Turku/dependabot/submodules/evaka-2708955",
+              "date": "2026-04-23T01:14:22Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
-              "shortSha": "a220e0e",
-              "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
-              "date": "2026-04-21T06:22:17Z",
-              "author": "akheron"
+              "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+              "shortSha": "2708955",
+              "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
+              "date": "2026-04-22T12:42:54Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -465,7 +465,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-23T09:54:24.624Z",
+            "checkedAt": "2026-04-23T09:59:28.291Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
@@ -495,8 +495,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8928,
               "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
@@ -559,6 +558,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8934,
