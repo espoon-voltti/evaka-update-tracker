@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T10:56:58.829Z",
+  "generatedAt": "2026-04-23T11:28:59.882Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-23T10:56:28.536Z",
+            "checkedAt": "2026-04-23T11:28:21.799Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-23T10:56:29.185Z",
+            "checkedAt": "2026-04-23T11:28:22.676Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,21 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8935,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-23T11:11:40Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8934,
               "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
@@ -80,7 +95,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-23T10:56:31.815Z",
+            "checkedAt": "2026-04-23T11:28:25.177Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -105,7 +120,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-23T10:56:39.604Z",
+            "checkedAt": "2026-04-23T11:28:35.021Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a98a5ee0941e0ffa8d0ca3c0bd501d7f2a75cbb2",
@@ -201,6 +216,21 @@
           ],
           "pendingDeployment": [
             {
+              "number": 8935,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-23T11:11:40Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
               "number": 8934,
               "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
               "author": "akheron",
@@ -229,7 +259,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-23T10:56:51.279Z",
+            "checkedAt": "2026-04-23T11:28:50.166Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
@@ -254,7 +284,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-23T10:56:52.328Z",
+            "checkedAt": "2026-04-23T11:28:51.451Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
@@ -288,6 +318,21 @@
           "inStaging": [],
           "pendingDeployment": [
             {
+              "number": 8935,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-23T11:11:40Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+              "labels": [
+                "tech"
+              ]
+            },
+            {
               "number": 8934,
               "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
               "author": "akheron",
@@ -316,7 +361,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-23T10:56:54.870Z",
+            "checkedAt": "2026-04-23T11:28:54.787Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
@@ -341,7 +386,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-23T10:56:55.997Z",
+            "checkedAt": "2026-04-23T11:28:56.604Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
@@ -374,6 +419,21 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 8935,
+              "title": "Korjataan flaky e2e",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-23T11:11:40Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+              "labels": [
+                "tech"
+              ]
+            },
             {
               "number": 8934,
               "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
