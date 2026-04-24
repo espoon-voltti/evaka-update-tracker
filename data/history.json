@@ -1,6 +1,294 @@
 {
   "events": [
     {
+      "id": "2026-04-24T01:24:47.587Z_oulu-staging_wrapper",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-24T01:24:47.587Z",
+      "previousCommit": {
+        "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
+        "shortSha": "129330b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
+        "shortSha": "1439942",
+        "message": "Merge pull request #351 from Oulunkaupunki/dependabot/submodules/evaka-5bd6f72",
+        "date": "2026-04-24T01:14:51Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 351,
+          "title": "Bump evaka from `2708955` to `5bd6f72`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-24T01:14:51Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/351",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-24T01:24:47.587Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-24T01:24:47.587Z",
+      "previousCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+        "date": "2026-04-23T12:36:53Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8931,
+          "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-23T12:36:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8931",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8935,
+          "title": "Korjataan flaky e2e",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T11:11:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8934,
+          "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T08:00:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8934",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8933,
+          "title": "Update dependency fast-xml-parser to v5.7.0 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:30:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8933",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8932,
+          "title": "Bump @xmldom/xmldom from 0.8.12 to 0.8.13 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:10:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8932",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-24T01:24:57.576Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-24T01:24:57.576Z",
+      "previousCommit": {
+        "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
+        "shortSha": "8fc3080",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
+        "shortSha": "205088c",
+        "message": "Merge pull request #307 from City-of-Turku/dependabot/submodules/evaka-5bd6f72",
+        "date": "2026-04-24T01:14:56Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 307,
+          "title": "Bump evaka from `2708955` to `5bd6f72`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-24T01:14:57Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/307",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-24T01:24:57.576Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-24T01:24:57.576Z",
+      "previousCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+        "date": "2026-04-23T12:36:53Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8931,
+          "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-23T12:36:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8931",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8935,
+          "title": "Korjataan flaky e2e",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T11:11:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8934,
+          "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T08:00:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8934",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8933,
+          "title": "Update dependency fast-xml-parser to v5.7.0 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:30:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8933",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8932,
+          "title": "Bump @xmldom/xmldom from 0.8.12 to 0.8.13 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:10:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8932",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-23T09:58:44.628Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
