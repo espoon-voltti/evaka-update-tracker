@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T13:04:50.274Z",
+  "generatedAt": "2026-04-24T13:44:09.016Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-24T13:04:20.669Z",
+            "checkedAt": "2026-04-24T13:43:34.686Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-24T13:04:21.378Z",
+            "checkedAt": "2026-04-24T13:43:35.381Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "de3e1d54ee1e0e2013a0b74ed0b5617d639ca39a",
-              "shortSha": "de3e1d5",
-              "message": "Add support for english language units to use any language document templates",
-              "date": "2026-04-22T12:59:17Z",
-              "author": "ohinkinen"
+              "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+              "shortSha": "5bd6f72",
+              "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+              "date": "2026-04-23T12:36:53Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -97,7 +97,23 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8939,
+              "title": "CVE-hälyn korjaus (Spring Boot)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-24T13:17:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ]
         }
       }
     },
@@ -110,7 +126,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-24T13:04:24.428Z",
+            "checkedAt": "2026-04-24T13:43:42.012Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -135,7 +151,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-24T13:04:32.425Z",
+            "checkedAt": "2026-04-24T13:43:49.881Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
@@ -275,7 +291,23 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8939,
+              "title": "CVE-hälyn korjaus (Spring Boot)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-24T13:17:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ]
         }
       }
     },
@@ -288,7 +320,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-24T13:04:45.466Z",
+            "checkedAt": "2026-04-24T13:44:02.887Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
@@ -313,7 +345,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-24T13:04:46.340Z",
+            "checkedAt": "2026-04-24T13:44:04.002Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
@@ -345,7 +377,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8939,
+              "title": "CVE-hälyn korjaus (Spring Boot)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-24T13:17:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ]
         }
       }
     },
@@ -358,7 +406,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-24T13:04:47.854Z",
+            "checkedAt": "2026-04-24T13:44:05.934Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
@@ -383,7 +431,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-24T13:04:48.754Z",
+            "checkedAt": "2026-04-24T13:44:07.002Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
@@ -415,7 +463,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8939,
+              "title": "CVE-hälyn korjaus (Spring Boot)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-24T13:17:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ]
         }
       }
     }
