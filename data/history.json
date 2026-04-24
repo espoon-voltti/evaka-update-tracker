@@ -1,6 +1,253 @@
 {
   "events": [
     {
+      "id": "2026-04-24T04:59:23.685Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-24T04:59:23.685Z",
+      "previousCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+        "date": "2026-04-23T12:36:53Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8931,
+          "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-23T12:36:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8931",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8935,
+          "title": "Korjataan flaky e2e",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T11:11:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8934,
+          "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T08:00:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8934",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8933,
+          "title": "Update dependency fast-xml-parser to v5.7.0 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:30:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8933",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8932,
+          "title": "Bump @xmldom/xmldom from 0.8.12 to 0.8.13 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:10:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8932",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-24T04:59:44.397Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-24T04:59:44.397Z",
+      "previousCommit": {
+        "sha": "a98a5ee0941e0ffa8d0ca3c0bd501d7f2a75cbb2",
+        "shortSha": "a98a5ee",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+        "shortSha": "eb36e8a",
+        "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+        "date": "2026-04-24T04:16:35Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2103,
+          "title": "Bump evaka from `2708955` to `5bd6f72`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-24T04:16:36Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2103",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-24T04:59:44.397Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-24T04:59:44.397Z",
+      "previousCommit": {
+        "sha": "270895576f67053927d63556973b6fbe15d73e4d",
+        "shortSha": "2708955",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+        "date": "2026-04-23T12:36:53Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8931,
+          "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-23T12:36:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8931",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8935,
+          "title": "Korjataan flaky e2e",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T11:11:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8935",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8934,
+          "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-23T08:00:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8934",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        },
+        {
+          "number": 8933,
+          "title": "Update dependency fast-xml-parser to v5.7.0 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:30:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8933",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8932,
+          "title": "Bump @xmldom/xmldom from 0.8.12 to 0.8.13 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-23T06:10:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8932",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-24T01:24:47.587Z_oulu-staging_wrapper",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
