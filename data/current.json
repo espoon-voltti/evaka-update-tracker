@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T10:19:40.929Z",
+  "generatedAt": "2026-04-24T10:27:28.878Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-24T10:18:49.697Z",
+            "checkedAt": "2026-04-24T10:26:41.466Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-24T10:18:50.679Z",
+            "checkedAt": "2026-04-24T10:26:42.339Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -110,7 +110,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-24T10:18:54.600Z",
+            "checkedAt": "2026-04-24T10:26:45.568Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -135,7 +135,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-24T10:19:06.768Z",
+            "checkedAt": "2026-04-24T10:26:55.540Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
@@ -288,21 +288,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-24T10:19:25.647Z",
+            "checkedAt": "2026-04-24T10:27:10.227Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "129330bf2fc3ae108cc7e6a32bb3a34c6d9404c7",
-              "shortSha": "129330b",
-              "message": "Merge pull request #350 from Oulunkaupunki/dependabot/submodules/evaka-2708955",
-              "date": "2026-04-23T01:14:24Z",
+              "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
+              "shortSha": "1439942",
+              "message": "Merge pull request #351 from Oulunkaupunki/dependabot/submodules/evaka-5bd6f72",
+              "date": "2026-04-24T01:14:51Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "270895576f67053927d63556973b6fbe15d73e4d",
-              "shortSha": "2708955",
-              "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
-              "date": "2026-04-22T12:42:54Z",
-              "author": "tomuli"
+              "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+              "shortSha": "5bd6f72",
+              "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+              "date": "2026-04-23T12:36:53Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -313,7 +313,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-24T10:19:27.358Z",
+            "checkedAt": "2026-04-24T10:27:14.965Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
@@ -343,8 +343,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8931,
               "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
@@ -392,6 +391,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -405,21 +405,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-24T10:19:33.062Z",
+            "checkedAt": "2026-04-24T10:27:19.705Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "8fc30800574fe49f1d630cba6a234ee2219510c5",
-              "shortSha": "8fc3080",
-              "message": "Merge pull request #306 from City-of-Turku/dependabot/submodules/evaka-2708955",
-              "date": "2026-04-23T01:14:22Z",
+              "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
+              "shortSha": "205088c",
+              "message": "Merge pull request #307 from City-of-Turku/dependabot/submodules/evaka-5bd6f72",
+              "date": "2026-04-24T01:14:56Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "270895576f67053927d63556973b6fbe15d73e4d",
-              "shortSha": "2708955",
-              "message": "Merge pull request #8928 from espoon-voltti/fix-no-open-income-statements-filter",
-              "date": "2026-04-22T12:42:54Z",
-              "author": "tomuli"
+              "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+              "shortSha": "5bd6f72",
+              "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+              "date": "2026-04-23T12:36:53Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -430,7 +430,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-24T10:19:35.347Z",
+            "checkedAt": "2026-04-24T10:27:23.783Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
@@ -460,8 +460,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8931,
               "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
@@ -509,6 +508,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
