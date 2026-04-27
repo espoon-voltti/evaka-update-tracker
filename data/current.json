@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T04:02:40.698Z",
+  "generatedAt": "2026-04-27T05:15:44.903Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-27T04:02:09.205Z",
+            "checkedAt": "2026-04-27T05:15:04.831Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,14 +29,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-27T04:02:09.915Z",
+            "checkedAt": "2026-04-27T05:15:05.627Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
-              "shortSha": "5bd6f72",
-              "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
-              "date": "2026-04-23T12:36:53Z",
+              "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+              "shortSha": "fb8cf1a",
+              "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+              "date": "2026-04-24T13:17:19Z",
               "author": "terolaakso-reaktor"
             }
           },
@@ -50,6 +50,21 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8939,
+              "title": "CVE-hälyn korjaus (Spring Boot)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-24T13:17:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+              "labels": [
+                "dependencies"
+              ]
+            },
             {
               "number": 8931,
               "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
@@ -97,23 +112,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8939,
-              "title": "CVE-hälyn korjaus (Spring Boot)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-24T13:17:19Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
-              "labels": [
-                "dependencies"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -126,7 +125,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-27T04:02:13.362Z",
+            "checkedAt": "2026-04-27T05:15:10.765Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -151,25 +150,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-27T04:02:21.970Z",
+            "checkedAt": "2026-04-27T05:15:19.793Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
-              "shortSha": "eb36e8a",
-              "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
-              "date": "2026-04-24T04:16:35Z",
+              "sha": "f6ca0270ff33ce93edebcaf15bc1e1a463f116fa",
+              "shortSha": "f6ca027",
+              "message": "Merge pull request #2104 from Tampere/dependabot/submodules/evaka-fb8cf1a",
+              "date": "2026-04-27T04:22:25Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
-              "shortSha": "5bd6f72",
-              "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
-              "date": "2026-04-23T12:36:53Z",
+              "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+              "shortSha": "fb8cf1a",
+              "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+              "date": "2026-04-24T13:17:19Z",
               "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-04-27T05:15:19.793Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "f6ca0270ff33ce93edebcaf15bc1e1a463f116fa",
+                "shortSha": "f6ca027",
+                "message": "Merge pull request #2104 from Tampere/dependabot/submodules/evaka-fb8cf1a",
+                "date": "2026-04-27T04:22:25Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+                "shortSha": "fb8cf1a",
+                "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+                "date": "2026-04-24T13:17:19Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-04-27T05:15:20.694Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-04-27T05:15:21.805Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-04-27T05:15:22.725Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-04-27T05:15:23.633Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-04-27T05:15:24.532Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-04-27T05:15:25.520Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-04-27T05:15:26.599Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-04-27T05:15:27.612Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+                "shortSha": "eb36e8a",
+                "message": "Merge pull request #2103 from Tampere/dependabot/submodules/evaka-5bd6f72",
+                "date": "2026-04-24T04:16:35Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+                "shortSha": "5bd6f72",
+                "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
+                "date": "2026-04-23T12:36:53Z",
+                "author": "terolaakso-reaktor"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -183,6 +354,21 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8939,
+              "title": "CVE-hälyn korjaus (Spring Boot)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-04-24T13:17:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+              "labels": [
+                "dependencies"
+              ]
+            },
             {
               "number": 8931,
               "title": "Henkilötietojen ja käyttämättömien kenttien konfigurointi BI-datan siirtoon",
@@ -291,23 +477,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8939,
-              "title": "CVE-hälyn korjaus (Spring Boot)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-24T13:17:19Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8939",
-              "labels": [
-                "dependencies"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -320,7 +490,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-27T04:02:34.044Z",
+            "checkedAt": "2026-04-27T05:15:37.108Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
@@ -345,7 +515,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-27T04:02:35.105Z",
+            "checkedAt": "2026-04-27T05:15:38.314Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e1b926c919133e16b3242cdb999a960cd5a8023",
@@ -406,7 +576,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-27T04:02:37.398Z",
+            "checkedAt": "2026-04-27T05:15:41.006Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
@@ -431,7 +601,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-27T04:02:38.276Z",
+            "checkedAt": "2026-04-27T05:15:42.221Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1825867c0b5b7221f83eecf3858f675dbeb1847f",

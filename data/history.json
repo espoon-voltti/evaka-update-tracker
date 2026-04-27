@@ -1,6 +1,127 @@
 {
   "events": [
     {
+      "id": "2026-04-27T05:15:08.256Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-04-27T05:15:08.256Z",
+      "previousCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+        "shortSha": "fb8cf1a",
+        "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+        "date": "2026-04-24T13:17:19Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8939,
+          "title": "CVE-hälyn korjaus (Spring Boot)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-24T13:17:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-27T05:15:31.883Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-27T05:15:31.883Z",
+      "previousCommit": {
+        "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
+        "shortSha": "eb36e8a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f6ca0270ff33ce93edebcaf15bc1e1a463f116fa",
+        "shortSha": "f6ca027",
+        "message": "Merge pull request #2104 from Tampere/dependabot/submodules/evaka-fb8cf1a",
+        "date": "2026-04-27T04:22:25Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 2104,
+          "title": "Bump evaka from `5bd6f72` to `fb8cf1a`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-27T04:22:25Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2104",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-27T05:15:31.883Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-04-27T05:15:31.883Z",
+      "previousCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+        "shortSha": "fb8cf1a",
+        "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+        "date": "2026-04-24T13:17:19Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8939,
+          "title": "CVE-hälyn korjaus (Spring Boot)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-24T13:17:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-27T01:26:25.229Z_oulu-staging_wrapper",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
