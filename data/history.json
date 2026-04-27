@@ -1,6 +1,168 @@
 {
   "events": [
     {
+      "id": "2026-04-27T01:26:25.229Z_oulu-staging_wrapper",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-27T01:26:25.229Z",
+      "previousCommit": {
+        "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
+        "shortSha": "1439942",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "7e1b926c919133e16b3242cdb999a960cd5a8023",
+        "shortSha": "7e1b926",
+        "message": "Merge pull request #352 from Oulunkaupunki/dependabot/submodules/evaka-fb8cf1a",
+        "date": "2026-04-27T01:16:29Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 352,
+          "title": "Bump evaka from `5bd6f72` to `fb8cf1a`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-27T01:16:29Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/352",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-27T01:26:25.229Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-27T01:26:25.229Z",
+      "previousCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+        "shortSha": "fb8cf1a",
+        "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+        "date": "2026-04-24T13:17:19Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8939,
+          "title": "CVE-hälyn korjaus (Spring Boot)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-24T13:17:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-27T01:26:31.006Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-27T01:26:31.006Z",
+      "previousCommit": {
+        "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
+        "shortSha": "205088c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1825867c0b5b7221f83eecf3858f675dbeb1847f",
+        "shortSha": "1825867",
+        "message": "Merge pull request #308 from City-of-Turku/dependabot/submodules/evaka-fb8cf1a",
+        "date": "2026-04-27T01:16:26Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 308,
+          "title": "Bump evaka from `5bd6f72` to `fb8cf1a`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-27T01:16:27Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/308",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-27T01:26:31.006Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-27T01:26:31.006Z",
+      "previousCommit": {
+        "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
+        "shortSha": "5bd6f72",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+        "shortSha": "fb8cf1a",
+        "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+        "date": "2026-04-24T13:17:19Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 8939,
+          "title": "CVE-hälyn korjaus (Spring Boot)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-24T13:17:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8939",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-24T13:43:39.591Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",

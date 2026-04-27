@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T00:59:29.251Z",
+  "generatedAt": "2026-04-27T01:26:32.163Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-27T00:58:53.514Z",
+            "checkedAt": "2026-04-27T01:25:56.840Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-27T00:58:54.421Z",
+            "checkedAt": "2026-04-27T01:25:58.146Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -126,7 +126,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-27T00:58:58.123Z",
+            "checkedAt": "2026-04-27T01:26:01.270Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -151,7 +151,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-27T00:59:08.285Z",
+            "checkedAt": "2026-04-27T01:26:08.623Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb36e8a0b27fefd475f0d4ecab243cb27428da9a",
@@ -320,7 +320,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-27T00:59:22.706Z",
+            "checkedAt": "2026-04-27T01:26:20.430Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
@@ -345,20 +345,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-27T00:59:23.840Z",
+            "checkedAt": "2026-04-27T01:26:21.464Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "143994227083c1d8ef583e78f26e6b0d371616f6",
-              "shortSha": "1439942",
-              "message": "Merge pull request #351 from Oulunkaupunki/dependabot/submodules/evaka-5bd6f72",
-              "date": "2026-04-24T01:14:51Z",
+              "sha": "7e1b926c919133e16b3242cdb999a960cd5a8023",
+              "shortSha": "7e1b926",
+              "message": "Merge pull request #352 from Oulunkaupunki/dependabot/submodules/evaka-fb8cf1a",
+              "date": "2026-04-27T01:16:29Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
-              "shortSha": "5bd6f72",
-              "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
-              "date": "2026-04-23T12:36:53Z",
+              "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+              "shortSha": "fb8cf1a",
+              "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+              "date": "2026-04-24T13:17:19Z",
               "author": "terolaakso-reaktor"
             }
           },
@@ -376,8 +376,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8939,
               "title": "CVE-hälyn korjaus (Spring Boot)",
@@ -393,7 +392,8 @@
                 "dependencies"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -406,7 +406,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-27T00:59:25.857Z",
+            "checkedAt": "2026-04-27T01:26:26.381Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
@@ -431,20 +431,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-27T00:59:27.250Z",
+            "checkedAt": "2026-04-27T01:26:27.352Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "205088c8a0c6981dd5866dcc05e5954323778867",
-              "shortSha": "205088c",
-              "message": "Merge pull request #307 from City-of-Turku/dependabot/submodules/evaka-5bd6f72",
-              "date": "2026-04-24T01:14:56Z",
+              "sha": "1825867c0b5b7221f83eecf3858f675dbeb1847f",
+              "shortSha": "1825867",
+              "message": "Merge pull request #308 from City-of-Turku/dependabot/submodules/evaka-fb8cf1a",
+              "date": "2026-04-27T01:16:26Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "5bd6f720880493672f8432aa50bf9887e6a37af1",
-              "shortSha": "5bd6f72",
-              "message": "Merge pull request #8931 from espoon-voltti/fabric-part-2",
-              "date": "2026-04-23T12:36:53Z",
+              "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
+              "shortSha": "fb8cf1a",
+              "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
+              "date": "2026-04-24T13:17:19Z",
               "author": "terolaakso-reaktor"
             }
           },
@@ -462,8 +462,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8939,
               "title": "CVE-hälyn korjaus (Spring Boot)",
@@ -479,7 +478,8 @@
                 "dependencies"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
