@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T09:04:33.834Z",
+  "generatedAt": "2026-04-28T09:16:03.329Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-28T09:02:52.368Z",
+            "checkedAt": "2026-04-28T09:14:32.734Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-28T09:02:53.430Z",
+            "checkedAt": "2026-04-28T09:14:33.387Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-28T09:03:08.640Z",
+            "checkedAt": "2026-04-28T09:14:44.892Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-28T09:03:22.178Z",
+            "checkedAt": "2026-04-28T09:14:52.934Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "48e975a691f716e30b2f25cc9bba0294b80f3d83",
@@ -166,22 +166,6 @@
               ]
             },
             {
-              "number": 8934,
-              "title": "Poistetaan S3-tuki Turun DW-integraatiosta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-23T08:00:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8934",
-              "labels": [
-                "enhancement",
-                "turku"
-              ]
-            },
-            {
               "number": 8928,
               "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
               "author": "tomuli",
@@ -256,20 +240,20 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-28T09:03:55.874Z",
+            "checkedAt": "2026-04-28T09:15:18.185Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "7e1b926c919133e16b3242cdb999a960cd5a8023",
-              "shortSha": "7e1b926",
-              "message": "Merge pull request #352 from Oulunkaupunki/dependabot/submodules/evaka-fb8cf1a",
-              "date": "2026-04-27T01:16:29Z",
+              "sha": "5046d10771a6640363ee64c9b0a3e343a36568b4",
+              "shortSha": "5046d10",
+              "message": "Merge pull request #353 from Oulunkaupunki/dependabot/submodules/evaka-dcf85d7",
+              "date": "2026-04-28T03:15:49Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
-              "shortSha": "fb8cf1a",
-              "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
-              "date": "2026-04-24T13:17:19Z",
+              "sha": "dcf85d7180cf31d263de2e16b57bba1f91bcd86a",
+              "shortSha": "dcf85d7",
+              "message": "Merge pull request #8968 from espoon-voltti/dependabot/npm_and_yarn/frontend/postcss-8.5.10",
+              "date": "2026-04-27T13:06:36Z",
               "author": "terolaakso-reaktor"
             }
           },
@@ -281,7 +265,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-28T09:03:57.603Z",
+            "checkedAt": "2026-04-28T09:15:28.125Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5046d10771a6640363ee64c9b0a3e343a36568b4",
@@ -326,20 +310,20 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-28T09:04:15.481Z",
+            "checkedAt": "2026-04-28T09:15:40.621Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "1825867c0b5b7221f83eecf3858f675dbeb1847f",
-              "shortSha": "1825867",
-              "message": "Merge pull request #308 from City-of-Turku/dependabot/submodules/evaka-fb8cf1a",
-              "date": "2026-04-27T01:16:26Z",
+              "sha": "eb7cd5c51dd0c7402a48bc3553f45717dfaeca6f",
+              "shortSha": "eb7cd5c",
+              "message": "Merge pull request #309 from City-of-Turku/dependabot/submodules/evaka-dcf85d7",
+              "date": "2026-04-28T03:15:53Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "fb8cf1a00ed026ad1d0e1596ad5a8fbd28d5435b",
-              "shortSha": "fb8cf1a",
-              "message": "Merge pull request #8939 from espoon-voltti/update-spring-for-cve-fix",
-              "date": "2026-04-24T13:17:19Z",
+              "sha": "dcf85d7180cf31d263de2e16b57bba1f91bcd86a",
+              "shortSha": "dcf85d7",
+              "message": "Merge pull request #8968 from espoon-voltti/dependabot/npm_and_yarn/frontend/postcss-8.5.10",
+              "date": "2026-04-27T13:06:36Z",
               "author": "terolaakso-reaktor"
             }
           },
@@ -351,7 +335,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-28T09:04:17.216Z",
+            "checkedAt": "2026-04-28T09:15:50.290Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb7cd5c51dd0c7402a48bc3553f45717dfaeca6f",

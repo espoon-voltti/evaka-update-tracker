@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T09:06:07.289Z",
+  "generatedAt": "2026-04-28T09:16:28.298Z",
   "cities": [
     {
       "id": "espoo",
@@ -11,55 +11,55 @@
       "id": "tampere",
       "name": "Tampere",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "nokia",
       "name": "Nokia",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "kangasala",
       "name": "Kangasala",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "lempaala",
       "name": "Lempäälä",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "orivesi",
       "name": "Orivesi",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "pirkkala",
       "name": "Pirkkala",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "vesilahti",
       "name": "Vesilahti",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "ylojarvi",
       "name": "Ylöjärvi",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "hameenkyro",
       "name": "Hämeenkyrö",
       "cityGroupId": "tampere-region",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "oulu",
@@ -731,6 +731,8 @@
           "type": "boolean",
           "values": {
             "espoo": true,
+            "oulu": true,
+            "turku": true,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -739,9 +741,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
-            "turku": true
+            "hameenkyro": null
           }
         },
         {
@@ -750,6 +750,8 @@
           "type": "boolean",
           "values": {
             "espoo": true,
+            "oulu": null,
+            "turku": false,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -758,9 +760,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": null,
-            "turku": false
+            "hameenkyro": null
           }
         },
         {
@@ -769,6 +769,8 @@
           "type": "boolean",
           "values": {
             "espoo": false,
+            "oulu": false,
+            "turku": false,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -777,9 +779,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": false,
-            "turku": false
+            "hameenkyro": null
           }
         },
         {
@@ -788,6 +788,8 @@
           "type": "boolean",
           "values": {
             "espoo": true,
+            "oulu": null,
+            "turku": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -796,9 +798,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": null,
-            "turku": null
+            "hameenkyro": null
           }
         },
         {
@@ -807,6 +807,8 @@
           "type": "boolean",
           "values": {
             "espoo": false,
+            "oulu": true,
+            "turku": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -815,9 +817,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
-            "turku": null
+            "hameenkyro": null
           }
         },
         {
@@ -826,6 +826,8 @@
           "type": "boolean",
           "values": {
             "espoo": null,
+            "oulu": true,
+            "turku": null,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -834,9 +836,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
-            "turku": null
+            "hameenkyro": null
           }
         },
         {
@@ -845,6 +845,8 @@
           "type": "boolean",
           "values": {
             "espoo": true,
+            "oulu": true,
+            "turku": true,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -853,9 +855,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
-            "turku": true
+            "hameenkyro": null
           }
         },
         {
@@ -864,6 +864,8 @@
           "type": "boolean",
           "values": {
             "espoo": null,
+            "oulu": true,
+            "turku": false,
             "tampere": null,
             "nokia": null,
             "kangasala": null,
@@ -872,9 +874,7 @@
             "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
-            "turku": false
+            "hameenkyro": null
           }
         }
       ]
@@ -1247,5 +1247,5 @@
       ]
     }
   ],
-  "errorFallbackDate": "2026-04-28T08:06:27.034Z"
+  "errorFallbackDate": "2026-04-28T09:06:07.289Z"
 }
