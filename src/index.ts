@@ -27,6 +27,7 @@ import {
   FeatureFlagData,
 } from './types.js';
 import { mergeFeatureFlagFallback } from './services/feature-flag-collector.js';
+import { prBelongsToCity } from './utils/municipality-labels.js';
 
 loadEnv();
 
@@ -228,7 +229,10 @@ export async function run() {
           changePRs.push(...corePRs);
         }
 
-        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, changePRs, branchInfoByRepoType);
+        const filteredChangePRs = changePRs.filter(
+          (pr) => pr.repoType !== 'core' || prBelongsToCity(pr.labels, cityGroup.id)
+        );
+        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, filteredChangePRs, branchInfoByRepoType);
 
         // For branch deployment events, look up the branch's own PR and add it
         for (const event of events) {
@@ -265,13 +269,18 @@ export async function run() {
       ? prevVersions[cityGroup.environments.find((e) => e.type === 'staging')!.id]?.coreSha ?? null
       : null;
 
-    const coreTrack = await collectPRsForRepo(
+    const rawCoreTrack = await collectPRsForRepo(
       coreRepo,
       coreProdSha,
       coreStagingSha,
       prevCoreProd,
       prevCoreStaging
     );
+    const coreTrack = {
+      deployed: rawCoreTrack.deployed.filter((pr) => prBelongsToCity(pr.labels, cityGroup.id)),
+      inStaging: rawCoreTrack.inStaging.filter((pr) => prBelongsToCity(pr.labels, cityGroup.id)),
+      pendingDeployment: rawCoreTrack.pendingDeployment.filter((pr) => prBelongsToCity(pr.labels, cityGroup.id)),
+    };
 
     let wrapperTrack = null;
     if (wrapperRepo) {
