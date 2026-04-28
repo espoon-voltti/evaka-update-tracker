@@ -1,6 +1,54 @@
 {
   "events": [
     {
+      "id": "2026-04-28T10:57:02.201Z_oulu-staging_wrapper",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-28T10:57:02.201Z",
+      "previousCommit": {
+        "sha": "5046d10771a6640363ee64c9b0a3e343a36568b4",
+        "shortSha": "5046d10",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "0b2adcdbd4f44957de8e4f72aa8a60d2d92d0bb4",
+        "shortSha": "0b2adcd",
+        "message": "Demo build of the pwa-passkeys-push-poc branch (incl. WebRTC video",
+        "date": "2026-04-28T10:33:02Z",
+        "author": "jonni-reaktor"
+      },
+      "includedPRs": [],
+      "repoType": "wrapper",
+      "isDefaultBranch": false,
+      "branch": "pwa-passkeys-push-poc"
+    },
+    {
+      "id": "2026-04-28T10:57:02.201Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-28T10:57:02.201Z",
+      "previousCommit": {
+        "sha": "dcf85d7180cf31d263de2e16b57bba1f91bcd86a",
+        "shortSha": "dcf85d7",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f165374b5ba57be904ae709a348725f88f5b0d93",
+        "shortSha": "f165374",
+        "message": "feat(video-call): 1:1 WebRTC video calls from employee to child's guardians",
+        "date": "2026-04-16T07:15:22Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [],
+      "repoType": "core",
+      "isDefaultBranch": false,
+      "branch": "pwa-passkeys-push-poc"
+    },
+    {
       "id": "2026-04-28T09:17:12.769Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
