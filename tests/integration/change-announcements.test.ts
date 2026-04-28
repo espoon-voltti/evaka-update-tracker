@@ -23,6 +23,7 @@ const CHANGE_ENV_VARS = [
   'SLACK_CHANGE_WEBHOOK_TAMPERE_REGION',
   'SLACK_CHANGE_WEBHOOK_OULU',
   'SLACK_CHANGE_WEBHOOK_TURKU',
+  'SLACK_CHANGE_WEBHOOK_ESPOO',
   'DRY_RUN',
 ];
 const savedEnv: Record<string, string | undefined> = {};
@@ -714,5 +715,249 @@ describe('announceChanges - end-to-end', () => {
     expect(heads.repos['espoon-voltti/evaka'].sha).toBe(oldCoreSha);
     // Wrapper HEAD SHOULD be updated (Slack succeeded)
     expect(heads.repos['Tampere/trevaka'].sha).toBe(newWrapperSha);
+  });
+});
+
+describe('announceChanges - municipality label routing', () => {
+  const OLD_CORE_SHA = 'old_core_sha_111111111111111111111111';
+  const NEW_CORE_SHA = 'new_core_sha_222222222222222222222222';
+
+  const municipalityCityGroups: CityGroup[] = [
+    {
+      id: 'espoo',
+      name: 'Espoo',
+      repositories: [CORE_REPO],
+      environments: [],
+    },
+    {
+      id: 'turku',
+      name: 'Turku',
+      repositories: [CORE_REPO],
+      environments: [],
+    },
+    {
+      id: 'oulu',
+      name: 'Oulu',
+      repositories: [CORE_REPO],
+      environments: [],
+    },
+  ];
+
+  function writeOldHead() {
+    fs.writeFileSync(
+      path.join(TEST_DATA_DIR, 'repo-heads.json'),
+      JSON.stringify({
+        checkedAt: '2026-03-09T09:00:00Z',
+        repos: {
+          'espoon-voltti/evaka': { sha: OLD_CORE_SHA, branch: 'master' },
+        },
+      })
+    );
+  }
+
+  function mockCoreHeadChanged() {
+    mockedGetCommit.mockResolvedValue({
+      sha: NEW_CORE_SHA,
+      shortSha: NEW_CORE_SHA.slice(0, 7),
+      message: 'commit',
+      date: '2026-03-09T10:00:00Z',
+      author: 'dev',
+    });
+  }
+
+  it('sends shared PR only to core webhook, no prefix', async () => {
+    writeOldHead();
+    mockCoreHeadChanged();
+
+    process.env.SLACK_CHANGE_WEBHOOK_CORE = 'https://hooks.slack.com/services/T00/CORE/XXX';
+
+    mockedCompareShas.mockResolvedValue([
+      {
+        sha: 'commit1',
+        commit: {
+          message: 'Shared feature (#200)',
+          author: { date: '2026-03-09T09:30:00Z', name: 'dev1' },
+        },
+        author: { login: 'dev1' },
+      },
+    ]);
+
+    mockedGetPullRequest.mockResolvedValue({
+      number: 200,
+      title: 'Shared feature',
+      user: { login: 'dev1' },
+      merged_at: '2026-03-09T09:30:00Z',
+      html_url: 'https://github.com/espoon-voltti/evaka/pull/200',
+      labels: [],
+    });
+
+    const coreScope = nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('#200');
+        expect(body.text).toContain('Shared feature');
+        expect(body.text).not.toMatch(/^\[/);
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await announceChanges(municipalityCityGroups, TEST_DATA_DIR, {}, async () => null);
+
+    expect(coreScope.isDone()).toBe(true);
+    expect(nock.activeMocks()).toHaveLength(0);
+  });
+
+  it('sends turku PR to core webhook with [Turku] prefix AND to turku webhook with [Turku] prefix', async () => {
+    writeOldHead();
+    mockCoreHeadChanged();
+
+    process.env.SLACK_CHANGE_WEBHOOK_CORE = 'https://hooks.slack.com/services/T00/CORE/XXX';
+    process.env.SLACK_CHANGE_WEBHOOK_TURKU = 'https://hooks.slack.com/services/T00/TURKU/XXX';
+
+    mockedCompareShas.mockResolvedValue([
+      {
+        sha: 'commit1',
+        commit: {
+          message: 'Turku specific fix (#300)',
+          author: { date: '2026-03-09T09:30:00Z', name: 'dev1' },
+        },
+        author: { login: 'dev1' },
+      },
+    ]);
+
+    mockedGetPullRequest.mockResolvedValue({
+      number: 300,
+      title: 'Turku specific fix',
+      user: { login: 'dev1' },
+      merged_at: '2026-03-09T09:30:00Z',
+      html_url: 'https://github.com/espoon-voltti/evaka/pull/300',
+      labels: [{ name: 'turku' }],
+    });
+
+    const coreScope = nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('[Turku]');
+        expect(body.text).toContain('#300');
+        expect(body.text).toContain('Turku specific fix');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    const turkuScope = nock('https://hooks.slack.com')
+      .post('/services/T00/TURKU/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('[Turku]');
+        expect(body.text).toContain('#300');
+        expect(body.text).toContain('Turku specific fix');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await announceChanges(municipalityCityGroups, TEST_DATA_DIR, {}, async () => null);
+
+    expect(coreScope.isDone()).toBe(true);
+    expect(turkuScope.isDone()).toBe(true);
+  });
+
+  it('sends multi-label PR to core, turku, and oulu webhooks with combined prefix', async () => {
+    writeOldHead();
+    mockCoreHeadChanged();
+
+    process.env.SLACK_CHANGE_WEBHOOK_CORE = 'https://hooks.slack.com/services/T00/CORE/XXX';
+    process.env.SLACK_CHANGE_WEBHOOK_TURKU = 'https://hooks.slack.com/services/T00/TURKU/XXX';
+    process.env.SLACK_CHANGE_WEBHOOK_OULU = 'https://hooks.slack.com/services/T00/OULU/XXX';
+
+    mockedCompareShas.mockResolvedValue([
+      {
+        sha: 'commit1',
+        commit: {
+          message: 'Turku and Oulu fix (#400)',
+          author: { date: '2026-03-09T09:30:00Z', name: 'dev1' },
+        },
+        author: { login: 'dev1' },
+      },
+    ]);
+
+    mockedGetPullRequest.mockResolvedValue({
+      number: 400,
+      title: 'Turku and Oulu fix',
+      user: { login: 'dev1' },
+      merged_at: '2026-03-09T09:30:00Z',
+      html_url: 'https://github.com/espoon-voltti/evaka/pull/400',
+      labels: [{ name: 'turku' }, { name: 'oulu' }],
+    });
+
+    const coreScope = nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('[Turku]');
+        expect(body.text).toContain('[Oulu]');
+        expect(body.text).toContain('#400');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    const turkuScope = nock('https://hooks.slack.com')
+      .post('/services/T00/TURKU/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('[Turku]');
+        expect(body.text).toContain('[Oulu]');
+        expect(body.text).toContain('#400');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    const ouluScope = nock('https://hooks.slack.com')
+      .post('/services/T00/OULU/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('[Turku]');
+        expect(body.text).toContain('[Oulu]');
+        expect(body.text).toContain('#400');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await announceChanges(municipalityCityGroups, TEST_DATA_DIR, {}, async () => null);
+
+    expect(coreScope.isDone()).toBe(true);
+    expect(turkuScope.isDone()).toBe(true);
+    expect(ouluScope.isDone()).toBe(true);
+  });
+
+  it('does not send to city webhook when it is not configured', async () => {
+    writeOldHead();
+    mockCoreHeadChanged();
+
+    process.env.SLACK_CHANGE_WEBHOOK_CORE = 'https://hooks.slack.com/services/T00/CORE/XXX';
+    // SLACK_CHANGE_WEBHOOK_TURKU intentionally not set
+
+    mockedCompareShas.mockResolvedValue([
+      {
+        sha: 'commit1',
+        commit: {
+          message: 'Turku fix (#500)',
+          author: { date: '2026-03-09T09:30:00Z', name: 'dev1' },
+        },
+        author: { login: 'dev1' },
+      },
+    ]);
+
+    mockedGetPullRequest.mockResolvedValue({
+      number: 500,
+      title: 'Turku fix',
+      user: { login: 'dev1' },
+      merged_at: '2026-03-09T09:30:00Z',
+      html_url: 'https://github.com/espoon-voltti/evaka/pull/500',
+      labels: [{ name: 'turku' }],
+    });
+
+    const coreScope = nock('https://hooks.slack.com')
+      .post('/services/T00/CORE/XXX', (body: { text: string }) => {
+        expect(body.text).toContain('[Turku]');
+        expect(body.text).toContain('#500');
+        return true;
+      })
+      .reply(200, 'ok');
+
+    await announceChanges(municipalityCityGroups, TEST_DATA_DIR, {}, async () => null);
+
+    expect(coreScope.isDone()).toBe(true);
+    // No other nock interceptors pending (city webhook was not called)
+    expect(nock.activeMocks()).toHaveLength(0);
   });
 });

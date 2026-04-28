@@ -11,6 +11,7 @@ import { getCommit } from '../api/github.js';
 import { collectPRsBetween, filterHumanPRs } from '../services/pr-collector.js';
 import { resolveChangeWebhookUrl } from '../config/change-routing.js';
 import { formatLabelTags } from '../config/label-map.js';
+import { getMunicipalityCityGroups, getMunicipalityNames } from '../utils/municipality-labels.js';
 import { UserNameCache, resolveNames } from '../services/name-resolver.js';
 
 /**
@@ -174,11 +175,30 @@ export async function announceChanges(
     // Send one message per PR — only update HEAD if all succeed
     let allSuccess = true;
     for (const pr of humanPRs) {
-      const text = formatPRLine(pr);
-      const success = await sendChangeAnnouncement(webhookUrl, text);
-      if (!success) {
+      const municipalityNames = getMunicipalityNames(pr.labels);
+      const prefix = municipalityNames.length > 0
+        ? municipalityNames.map((n) => `[${n}]`).join(' ') + ' '
+        : '';
+      const text = prefix + formatPRLine(pr);
+
+      const coreSuccess = await sendChangeAnnouncement(webhookUrl, text);
+      if (!coreSuccess) {
         allSuccess = false;
         break;
+      }
+
+      if (municipalityNames.length > 0) {
+        const cityGroupIds = getMunicipalityCityGroups(pr.labels) ?? [];
+        for (const cityGroupId of cityGroupIds) {
+          const cityWebhookUrl = resolveChangeWebhookUrl('wrapper', cityGroupId);
+          if (!cityWebhookUrl) continue;
+          const citySuccess = await sendChangeAnnouncement(cityWebhookUrl, text);
+          if (!citySuccess) {
+            allSuccess = false;
+            break;
+          }
+        }
+        if (!allSuccess) break;
       }
     }
     if (allSuccess) {
