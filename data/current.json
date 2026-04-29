@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T04:16:25.826Z",
+  "generatedAt": "2026-04-29T05:31:16.072Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-29T04:15:23.697Z",
+            "checkedAt": "2026-04-29T05:30:15.234Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,14 +29,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-29T04:15:24.437Z",
+            "checkedAt": "2026-04-29T05:30:15.972Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "dcf85d7180cf31d263de2e16b57bba1f91bcd86a",
-              "shortSha": "dcf85d7",
-              "message": "Merge pull request #8968 from espoon-voltti/dependabot/npm_and_yarn/frontend/postcss-8.5.10",
-              "date": "2026-04-27T13:06:36Z",
+              "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
+              "shortSha": "c3c51c4",
+              "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
+              "date": "2026-04-28T11:51:29Z",
               "author": "terolaakso-reaktor"
             }
           },
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8762,
               "title": "Päätöksen yleisten ja yksilöllisten perustelujen hallintatyökalu pääkäyttäjälle",
@@ -66,6 +65,23 @@
                 "enhancement"
               ]
             }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 8929,
+              "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-29T05:22:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8929",
+              "labels": [
+                "breaking"
+              ]
+            }
           ]
         }
       }
@@ -79,7 +95,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-29T04:15:29.557Z",
+            "checkedAt": "2026-04-29T05:30:27.506Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -104,7 +120,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-29T04:15:36.707Z",
+            "checkedAt": "2026-04-29T05:30:34.860Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "48e975a691f716e30b2f25cc9bba0294b80f3d83",
@@ -259,6 +275,21 @@
           ],
           "pendingDeployment": [
             {
+              "number": 8929,
+              "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-29T05:22:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8929",
+              "labels": [
+                "breaking"
+              ]
+            },
+            {
               "number": 8762,
               "title": "Päätöksen yleisten ja yksilöllisten perustelujen hallintatyökalu pääkäyttäjälle",
               "author": "Joosakur",
@@ -286,7 +317,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-29T04:16:12.204Z",
+            "checkedAt": "2026-04-29T05:30:59.167Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5046d10771a6640363ee64c9b0a3e343a36568b4",
@@ -311,7 +342,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-29T04:16:13.092Z",
+            "checkedAt": "2026-04-29T05:31:00.286Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5bcbc5f2b1605c0de01510a16bc7efd138f77748",
@@ -359,7 +390,23 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8929,
+              "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-29T05:22:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8929",
+              "labels": [
+                "breaking"
+              ]
+            }
+          ]
         }
       }
     },
@@ -372,7 +419,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-29T04:16:18.976Z",
+            "checkedAt": "2026-04-29T05:31:07.880Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb7cd5c51dd0c7402a48bc3553f45717dfaeca6f",
@@ -397,7 +444,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-29T04:16:19.978Z",
+            "checkedAt": "2026-04-29T05:31:08.963Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1977dd0b96103fd06d7e9a152777e992287b699b",
@@ -445,7 +492,23 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 8929,
+              "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-29T05:22:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8929",
+              "labels": [
+                "breaking"
+              ]
+            }
+          ]
         }
       }
     }
