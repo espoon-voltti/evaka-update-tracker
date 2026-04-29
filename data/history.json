@@ -1,6 +1,85 @@
 {
   "events": [
     {
+      "id": "2026-04-29T05:57:56.079Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-29T05:57:56.079Z",
+      "previousCommit": {
+        "sha": "1977dd0b96103fd06d7e9a152777e992287b699b",
+        "shortSha": "1977dd0",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "7fa20e974abc1c850da9ed9a3a8a512ad68b4c49",
+        "shortSha": "7fa20e9",
+        "message": "Update evaka submodule",
+        "date": "2026-04-29T05:41:39Z",
+        "author": "akheron"
+      },
+      "includedPRs": [],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-29T05:57:56.079Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-29T05:57:56.079Z",
+      "previousCommit": {
+        "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
+        "shortSha": "c3c51c4",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "be10ea31d5552f6aa3ae4a2c098cec64b2845506",
+        "shortSha": "be10ea3",
+        "message": "Merge pull request #8929 from espoon-voltti/worktree-multi-municipality-proxy-image",
+        "date": "2026-04-29T05:22:40Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 8929,
+          "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-29T05:22:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8929",
+          "labels": [
+            "breaking"
+          ]
+        },
+        {
+          "number": 8979,
+          "title": "Remove autodeploy",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-04-29T05:03:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8979",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-29T05:40:06.702Z_oulu-staging_wrapper",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
