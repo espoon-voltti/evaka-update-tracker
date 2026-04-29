@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T11:38:00.269Z",
+  "generatedAt": "2026-04-29T11:52:03.377Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-29T11:36:34.691Z",
+            "checkedAt": "2026-04-29T11:50:19.455Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-29T11:36:35.453Z",
+            "checkedAt": "2026-04-29T11:50:20.217Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -125,32 +125,204 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-29T11:36:39.751Z",
+            "checkedAt": "2026-04-29T11:50:24.203Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
-              "shortSha": "5013ca1",
-              "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
-              "date": "2026-04-22T04:51:02Z",
-              "author": "akheron"
+              "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
+              "shortSha": "6414905",
+              "message": "refactor: upload SFI IDP certs directly to S3, bypassing SSM (#2107)",
+              "date": "2026-04-29T06:05:30Z",
+              "author": "japsu"
             },
             "coreCommit": {
-              "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
-              "shortSha": "a220e0e",
-              "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
-              "date": "2026-04-21T06:22:17Z",
-              "author": "akheron"
+              "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
+              "shortSha": "c3c51c4",
+              "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
+              "date": "2026-04-28T11:51:29Z",
+              "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-04-29T11:50:24.203Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
+                "shortSha": "6414905",
+                "message": "refactor: upload SFI IDP certs directly to S3, bypassing SSM (#2107)",
+                "date": "2026-04-29T06:05:30Z",
+                "author": "japsu"
+              },
+              "coreCommit": {
+                "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
+                "shortSha": "c3c51c4",
+                "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
+                "date": "2026-04-28T11:51:29Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-04-29T11:50:25.127Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
+                "shortSha": "5013ca1",
+                "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
+                "date": "2026-04-22T04:51:02Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+                "shortSha": "a220e0e",
+                "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+                "date": "2026-04-21T06:22:17Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-04-29T11:50:26.148Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
+                "shortSha": "6414905",
+                "message": "refactor: upload SFI IDP certs directly to S3, bypassing SSM (#2107)",
+                "date": "2026-04-29T06:05:30Z",
+                "author": "japsu"
+              },
+              "coreCommit": {
+                "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
+                "shortSha": "c3c51c4",
+                "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
+                "date": "2026-04-28T11:51:29Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-04-29T11:50:27.093Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
+                "shortSha": "5013ca1",
+                "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
+                "date": "2026-04-22T04:51:02Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+                "shortSha": "a220e0e",
+                "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+                "date": "2026-04-21T06:22:17Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-04-29T11:50:28.126Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
+                "shortSha": "5013ca1",
+                "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
+                "date": "2026-04-22T04:51:02Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+                "shortSha": "a220e0e",
+                "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+                "date": "2026-04-21T06:22:17Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-04-29T11:50:29.029Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
+                "shortSha": "5013ca1",
+                "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
+                "date": "2026-04-22T04:51:02Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+                "shortSha": "a220e0e",
+                "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+                "date": "2026-04-21T06:22:17Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-04-29T11:50:29.865Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
+                "shortSha": "5013ca1",
+                "message": "Merge pull request #2100 from Tampere/dependabot/submodules/evaka-a220e0e",
+                "date": "2026-04-22T04:51:02Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "a220e0e113007630c1d60a20603e33e81c64f6a7",
+                "shortSha": "a220e0e",
+                "message": "Merge pull request #8880 from espoon-voltti/silence-saml-user-failures",
+                "date": "2026-04-21T06:22:17Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-04-29T11:50:30.736Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
+                "shortSha": "6414905",
+                "message": "refactor: upload SFI IDP certs directly to S3, bypassing SSM (#2107)",
+                "date": "2026-04-29T06:05:30Z",
+                "author": "japsu"
+              },
+              "coreCommit": {
+                "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
+                "shortSha": "c3c51c4",
+                "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
+                "date": "2026-04-28T11:51:29Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-04-29T11:50:31.644Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
+                "shortSha": "6414905",
+                "message": "refactor: upload SFI IDP certs directly to S3, bypassing SSM (#2107)",
+                "date": "2026-04-29T06:05:30Z",
+                "author": "japsu"
+              },
+              "coreCommit": {
+                "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
+                "shortSha": "c3c51c4",
+                "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
+                "date": "2026-04-28T11:51:29Z",
+                "author": "terolaakso-reaktor"
+              }
+            }
+          ]
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-29T11:36:47.660Z",
+            "checkedAt": "2026-04-29T11:50:50.774Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -174,8 +346,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 2107,
               "title": "refactor: upload SFI IDP certs directly to S3, bypassing SSM",
@@ -203,12 +374,12 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8762,
               "title": "Päätöksen yleisten ja yksilöllisten perustelujen hallintatyökalu pääkäyttäjälle",
@@ -268,69 +439,9 @@
               "labels": [
                 "tech"
               ]
-            },
-            {
-              "number": 8928,
-              "title": "\"Ei avoimia tuloselvityksiä\"-suodatus ottaa huomioon myös maksupäätöksen ajanjakson",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-04-22T12:42:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8928",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8927,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-22T12:18:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8927",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            },
-            {
-              "number": 8930,
-              "title": "Korjataan service-kontin käyttäjän luonti",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-22T11:59:06Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8930",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8926,
-              "title": "Korjataan kesäajan maksuttomien poissaolojen luonti monen palveluntarpeen tapauksessa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-22T05:16:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8926",
-              "labels": [
-                "bug"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8937,
@@ -422,7 +533,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-29T11:37:17.779Z",
+            "checkedAt": "2026-04-29T11:51:21.691Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4a8411eb6ea5e07b842313684ea4aade1beed39c",
@@ -447,7 +558,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-29T11:37:18.615Z",
+            "checkedAt": "2026-04-29T11:51:22.738Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "899a4fe4529f20391b09f7003807e48c62a5176b",
@@ -829,7 +940,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-29T11:37:54.724Z",
+            "checkedAt": "2026-04-29T11:51:58.461Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7fa20e974abc1c850da9ed9a3a8a512ad68b4c49",
@@ -854,7 +965,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-29T11:37:56.054Z",
+            "checkedAt": "2026-04-29T11:51:59.411Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7fa20e974abc1c850da9ed9a3a8a512ad68b4c49",
