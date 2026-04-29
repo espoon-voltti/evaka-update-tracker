@@ -14,7 +14,7 @@ export const FEATURE_FLAG_CITIES: FeatureFlagCityConfig[] = [
     cityGroupId: 'espoo',
     repository: { owner: 'espoon-voltti', name: 'evaka' },
     frontendPath: 'frontend/src/lib-customizations/espoo/featureFlags.tsx',
-    backendPath: 'service/src/main/kotlin/fi/espoo/evaka/espoo/EspooConfig.kt',
+    backendPath: 'service/src/main/kotlin/evaka/instance/espoo/EspooConfig.kt',
   },
   {
     id: 'tampere',
@@ -94,7 +94,7 @@ export const FEATURE_FLAG_CITIES: FeatureFlagCityConfig[] = [
     cityGroupId: 'oulu',
     repository: { owner: 'espoon-voltti', name: 'evaka' },
     frontendPath: 'frontend/src/lib-customizations/oulu/featureFlags.tsx',
-    backendPath: 'service/src/main/kotlin/fi/espoo/evaka/oulu/OuluConfig.kt',
+    backendPath: 'service/src/main/kotlin/evaka/instance/oulu/OuluConfig.kt',
   },
   {
     id: 'turku',
@@ -102,6 +102,6 @@ export const FEATURE_FLAG_CITIES: FeatureFlagCityConfig[] = [
     cityGroupId: 'turku',
     repository: { owner: 'espoon-voltti', name: 'evaka' },
     frontendPath: 'frontend/src/lib-customizations/turku/featureFlags.tsx',
-    backendPath: 'service/src/main/kotlin/fi/espoo/evaka/turku/TurkuConfig.kt',
+    backendPath: 'service/src/main/kotlin/evaka/instance/turku/TurkuConfig.kt',
   },
 ];
