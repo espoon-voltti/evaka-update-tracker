@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-04-29T11:14:39.778Z",
+  "generatedAt": "2026-04-29T11:38:02.377Z",
   "cities": [
     {
       "id": "espoo",
       "name": "Espoo",
       "cityGroupId": "espoo",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "tampere",
@@ -65,13 +65,13 @@
       "id": "oulu",
       "name": "Oulu",
       "cityGroupId": "oulu",
-      "error": "Request failed with status code 404"
+      "error": null
     },
     {
       "id": "turku",
       "name": "Turku",
       "cityGroupId": "turku",
-      "error": "Request failed with status code 404"
+      "error": null
     }
   ],
   "categories": [
@@ -232,6 +232,25 @@
           }
         },
         {
+          "key": "citizenChildDocumentTypes",
+          "label": "Kuntalaisen lapsiasiakirjatyypit",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
           "key": "citizenShiftCareAbsence",
           "label": "Vuorohoidon poissaolot kuntalaisille",
           "type": "boolean",
@@ -346,6 +365,25 @@
           }
         },
         {
+          "key": "employeeLanguageSelection",
+          "label": "employeeLanguageSelection",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": false
+          }
+        },
+        {
           "key": "extendedPreschoolTerm",
           "label": "Laajennettu esiopetuskausi",
           "type": "boolean",
@@ -403,6 +441,25 @@
           }
         },
         {
+          "key": "forceUnpublishDocumentTemplate",
+          "label": "Asiakirjapohjien julkaisun peruminen",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": false,
+            "turku": false
+          }
+        },
+        {
           "key": "hideClubApplication",
           "label": "Piilota kerhohakemus",
           "type": "boolean",
@@ -441,6 +498,25 @@
           }
         },
         {
+          "key": "invoiceDisplayAccountNumber",
+          "label": "Tilinumero laskun tiedoissa",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": null,
+            "turku": null
+          }
+        },
+        {
           "key": "jamixIntegration",
           "label": "Jamix-ruokatilausintegraatio",
           "type": "boolean",
@@ -456,6 +532,25 @@
             "ylojarvi": true,
             "hameenkyro": true,
             "oulu": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "missingQuestionnaireAnswerMarkerEnabled",
+          "label": "Puuttuvan kyselyvastauksen merkintä",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
             "turku": null
           }
         },
@@ -476,6 +571,25 @@
             "hameenkyro": true,
             "oulu": true,
             "turku": true
+          }
+        },
+        {
+          "key": "nekkuIntegration",
+          "label": "Nekku-ruokatilausintegraatio",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": null
           }
         },
         {
@@ -532,7 +646,7 @@
             "ylojarvi": true,
             "hameenkyro": true,
             "oulu": false,
-            "turku": false
+            "turku": true
           }
         },
         {
@@ -669,6 +783,44 @@
           }
         },
         {
+          "key": "showMetadataToCitizen",
+          "label": "Metatiedot kuntalaiselle",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": true
+          }
+        },
+        {
+          "key": "titaniaErrorsReport",
+          "label": "Titania-virheraportit",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": null,
+            "kangasala": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "hameenkyro": null,
+            "oulu": true,
+            "turku": false
+          }
+        },
+        {
           "key": "urgencyAttachments",
           "label": "Kiireellisyyden liitteet",
           "type": "boolean",
@@ -723,158 +875,6 @@
             "hameenkyro": false,
             "oulu": false,
             "turku": false
-          }
-        },
-        {
-          "key": "citizenChildDocumentTypes",
-          "label": "Kuntalaisen lapsiasiakirjatyypit",
-          "type": "boolean",
-          "values": {
-            "espoo": true,
-            "oulu": true,
-            "turku": true,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
-          }
-        },
-        {
-          "key": "employeeLanguageSelection",
-          "label": "employeeLanguageSelection",
-          "type": "boolean",
-          "values": {
-            "espoo": true,
-            "oulu": null,
-            "turku": false,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
-          }
-        },
-        {
-          "key": "forceUnpublishDocumentTemplate",
-          "label": "Asiakirjapohjien julkaisun peruminen",
-          "type": "boolean",
-          "values": {
-            "espoo": false,
-            "oulu": false,
-            "turku": false,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
-          }
-        },
-        {
-          "key": "invoiceDisplayAccountNumber",
-          "label": "Tilinumero laskun tiedoissa",
-          "type": "boolean",
-          "values": {
-            "espoo": true,
-            "oulu": null,
-            "turku": null,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
-          }
-        },
-        {
-          "key": "missingQuestionnaireAnswerMarkerEnabled",
-          "label": "Puuttuvan kyselyvastauksen merkintä",
-          "type": "boolean",
-          "values": {
-            "espoo": false,
-            "oulu": true,
-            "turku": null,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
-          }
-        },
-        {
-          "key": "nekkuIntegration",
-          "label": "Nekku-ruokatilausintegraatio",
-          "type": "boolean",
-          "values": {
-            "espoo": null,
-            "oulu": true,
-            "turku": null,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
-          }
-        },
-        {
-          "key": "showMetadataToCitizen",
-          "label": "Metatiedot kuntalaiselle",
-          "type": "boolean",
-          "values": {
-            "espoo": true,
-            "oulu": true,
-            "turku": true,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
-          }
-        },
-        {
-          "key": "titaniaErrorsReport",
-          "label": "Titania-virheraportit",
-          "type": "boolean",
-          "values": {
-            "espoo": null,
-            "oulu": true,
-            "turku": false,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null
           }
         }
       ]
@@ -1038,7 +1038,7 @@
         {
           "key": "maxContractDaySurplusThreshold",
           "label": "Sopimuspäivien ylitysraja",
-          "type": "boolean",
+          "type": "number",
           "values": {
             "espoo": null,
             "tampere": null,
@@ -1246,6 +1246,5 @@
         }
       ]
     }
-  ],
-  "errorFallbackDate": "2026-04-29T11:11:31.556Z"
+  ]
 }
