@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T05:31:16.072Z",
+  "generatedAt": "2026-04-29T05:40:20.649Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-29T05:30:15.234Z",
+            "checkedAt": "2026-04-29T05:39:23.636Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-29T05:30:15.972Z",
+            "checkedAt": "2026-04-29T05:39:24.217Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -95,7 +95,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-29T05:30:27.506Z",
+            "checkedAt": "2026-04-29T05:39:30.355Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5013ca1f826e2b4e0faebe8a86d854fca5606a0e",
@@ -120,7 +120,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-29T05:30:34.860Z",
+            "checkedAt": "2026-04-29T05:39:37.937Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "48e975a691f716e30b2f25cc9bba0294b80f3d83",
@@ -317,7 +317,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-29T05:30:59.167Z",
+            "checkedAt": "2026-04-29T05:40:01.992Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5046d10771a6640363ee64c9b0a3e343a36568b4",
@@ -342,21 +342,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-29T05:31:00.286Z",
+            "checkedAt": "2026-04-29T05:40:02.956Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "5bcbc5f2b1605c0de01510a16bc7efd138f77748",
-              "shortSha": "5bcbc5f",
-              "message": "Merge pull request #355 from Oulunkaupunki/dependabot/submodules/evaka-c3c51c4",
-              "date": "2026-04-29T01:14:58Z",
-              "author": "github-actions[bot]"
+              "sha": "8d48aecf255521197ad1d7be7c5a7daa9f70361e",
+              "shortSha": "8d48aec",
+              "message": "Update evaka submodule",
+              "date": "2026-04-29T05:26:06Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
-              "shortSha": "c3c51c4",
-              "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
-              "date": "2026-04-28T11:51:29Z",
-              "author": "terolaakso-reaktor"
+              "sha": "be10ea31d5552f6aa3ae4a2c098cec64b2845506",
+              "shortSha": "be10ea3",
+              "message": "Merge pull request #8929 from espoon-voltti/worktree-multi-municipality-proxy-image",
+              "date": "2026-04-29T05:22:40Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -375,6 +375,21 @@
           "deployed": [],
           "inStaging": [
             {
+              "number": 8929,
+              "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-04-29T05:22:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8929",
+              "labels": [
+                "breaking"
+              ]
+            },
+            {
               "number": 8762,
               "title": "Päätöksen yleisten ja yksilöllisten perustelujen hallintatyökalu pääkäyttäjälle",
               "author": "Joosakur",
@@ -390,23 +405,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 8929,
-              "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-29T05:22:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8929",
-              "labels": [
-                "breaking"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -419,7 +418,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-29T05:31:07.880Z",
+            "checkedAt": "2026-04-29T05:40:12.599Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb7cd5c51dd0c7402a48bc3553f45717dfaeca6f",
@@ -444,7 +443,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-29T05:31:08.963Z",
+            "checkedAt": "2026-04-29T05:40:13.582Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1977dd0b96103fd06d7e9a152777e992287b699b",
