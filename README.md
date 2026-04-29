@@ -38,7 +38,7 @@ Seurantanäkymä, joka näyttää mitkä Pull Requestit on asennettu eri eVaka-i
 
 ## Edellytykset
 
-- Node.js 20+
+- Node.js 24+
 - GitHub PAT `public_repo`-oikeudella (5 000 pyyntöä/tunti)
 
 ## Asennus
