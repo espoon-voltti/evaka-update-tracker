@@ -1,6 +1,338 @@
 {
   "events": [
     {
+      "id": "2026-04-30T01:25:46.075Z_oulu-staging_wrapper",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-30T01:25:46.075Z",
+      "previousCommit": {
+        "sha": "899a4fe4529f20391b09f7003807e48c62a5176b",
+        "shortSha": "899a4fe",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "7e267fd2392e8d903ab7ab8b7fa0858db5c3ce8c",
+        "shortSha": "7e267fd",
+        "message": "Merge pull request #356 from Oulunkaupunki/dependabot/submodules/evaka-bb995f0",
+        "date": "2026-04-30T01:14:42Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 356,
+          "title": "Bump evaka from `05723fb` to `bb995f0`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-30T01:14:42Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/356",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 355,
+          "title": "Bump evaka from `dcf85d7` to `c3c51c4`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-29T01:14:58Z",
+          "repository": "Oulunkaupunki/evakaoulu",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Oulunkaupunki/evakaoulu/pull/355",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-30T01:25:46.075Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-04-30T01:25:46.075Z",
+      "previousCommit": {
+        "sha": "3d926ae83736b888fa7a0cdfd3773630c66a2f2a",
+        "shortSha": "3d926ae",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "bb995f0b5b98864342a2026faa9a2c1cd4a62a49",
+        "shortSha": "bb995f0",
+        "message": "Merge pull request #8969 from espoon-voltti/read-units-report-permissions",
+        "date": "2026-04-29T12:50:57Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8969,
+          "title": "Lisätään katseluoikeus yksiköt-raportille hallinto- ja raportointi-rooleille",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-29T12:50:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8969",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8971,
+          "title": "Korjataan \"Perheen tietojen kooste\"-näkymän datan päivittyminen",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-29T12:50:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8971",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 8937,
+          "title": "Lisätään henkilökunnan läsnäolojen reaaliaikaiset kirjaukset & lasten läsnäolovarauksien muutokset BI-siirtoon + muutosaikaikkunan pituuden parametrisointi",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-29T10:06:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8937",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8975,
+          "title": "Lisätään Oulun BI-datan sftp-vienti",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-04-29T09:16:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8975",
+          "labels": [
+            "enhancement",
+            "oulu"
+          ]
+        },
+        {
+          "number": 8981,
+          "title": "Haavoittuvuuskorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-29T07:59:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8981",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 8974,
+          "title": "Poistetaan OSS index käytöstä",
+          "author": "ilja-git",
+          "authorName": "Ilja Pyykkönen",
+          "mergedAt": "2026-04-29T06:53:34Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8974",
+          "labels": [
+            "tech"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-30T01:25:58.675Z_turku-staging_wrapper",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-30T01:25:58.675Z",
+      "previousCommit": {
+        "sha": "7fa20e974abc1c850da9ed9a3a8a512ad68b4c49",
+        "shortSha": "7fa20e9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a7bc2ec6e88cb45e4ac12e77571300e0eeb751f6",
+        "shortSha": "a7bc2ec",
+        "message": "Merge pull request #311 from City-of-Turku/dependabot/submodules/evaka-bb995f0",
+        "date": "2026-04-30T01:14:48Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 311,
+          "title": "Bump evaka from `be10ea3` to `bb995f0`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-04-30T01:14:48Z",
+          "repository": "City-of-Turku/evakaturku",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/City-of-Turku/evakaturku/pull/311",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-04-30T01:25:58.675Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-04-30T01:25:58.675Z",
+      "previousCommit": {
+        "sha": "be10ea31d5552f6aa3ae4a2c098cec64b2845506",
+        "shortSha": "be10ea3",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "bb995f0b5b98864342a2026faa9a2c1cd4a62a49",
+        "shortSha": "bb995f0",
+        "message": "Merge pull request #8969 from espoon-voltti/read-units-report-permissions",
+        "date": "2026-04-29T12:50:57Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 8969,
+          "title": "Lisätään katseluoikeus yksiköt-raportille hallinto- ja raportointi-rooleille",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-29T12:50:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8969",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8971,
+          "title": "Korjataan \"Perheen tietojen kooste\"-näkymän datan päivittyminen",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-29T12:50:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8971",
+          "labels": [
+            "bug"
+          ]
+        },
+        {
+          "number": 8937,
+          "title": "Lisätään henkilökunnan läsnäolojen reaaliaikaiset kirjaukset & lasten läsnäolovarauksien muutokset BI-siirtoon + muutosaikaikkunan pituuden parametrisointi",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-04-29T10:06:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8937",
+          "labels": [
+            "enhancement"
+          ]
+        },
+        {
+          "number": 8981,
+          "title": "Haavoittuvuuskorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-04-29T07:59:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8981",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 8974,
+          "title": "Poistetaan OSS index käytöstä",
+          "author": "ilja-git",
+          "authorName": "Ilja Pyykkönen",
+          "mergedAt": "2026-04-29T06:53:34Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8974",
+          "labels": [
+            "tech"
+          ]
+        },
+        {
+          "number": 8972,
+          "title": "Varhaiskasvatuspaikkatakuu päälle tuotantoon Turussa",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-04-29T06:27:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8972",
+          "labels": [
+            "enhancement",
+            "turku"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-04-29T11:50:50.774Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
