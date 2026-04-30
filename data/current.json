@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T10:34:24.864Z",
+  "generatedAt": "2026-04-30T11:13:56.456Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-30T10:33:35.298Z",
+            "checkedAt": "2026-04-30T11:13:07.053Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-30T10:33:40.495Z",
+            "checkedAt": "2026-04-30T11:13:08.197Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,53 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8969,
-              "title": "Lisätään katseluoikeus yksiköt-raportille hallinto- ja raportointi-rooleille",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-29T12:50:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8969",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8971,
-              "title": "Korjataan \"Perheen tietojen kooste\"-näkymän datan päivittyminen",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-29T12:50:09Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8971",
-              "labels": [
-                "bug"
-              ]
-            },
-            {
-              "number": 8937,
-              "title": "Lisätään henkilökunnan läsnäolojen reaaliaikaiset kirjaukset & lasten läsnäolovarauksien muutokset BI-siirtoon + muutosaikaikkunan pituuden parametrisointi",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-29T10:06:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8937",
-              "labels": [
-                "enhancement"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -110,7 +64,8 @@
               "url": "https://github.com/espoon-voltti/evaka/pull/8984",
               "labels": [
                 "enhancement",
-                "core"
+                "core",
+                "not-visible"
               ]
             },
             {
@@ -141,7 +96,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-30T10:33:46.628Z",
+            "checkedAt": "2026-04-30T11:13:10.681Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -166,7 +121,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-30T10:33:56.592Z",
+            "checkedAt": "2026-04-30T11:13:23.142Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7953f76cceb76d55da0e394c2c9289ac1ee97de0",
@@ -239,7 +194,7 @@
               "isHidden": false,
               "url": "https://github.com/espoon-voltti/evaka/pull/8971",
               "labels": [
-                "bug"
+                "bugfix"
               ]
             },
             {
@@ -255,7 +210,8 @@
               "url": "https://github.com/espoon-voltti/evaka/pull/8983",
               "labels": [
                 "enhancement",
-                "seutu"
+                "seutu",
+                "employee"
               ]
             },
             {
@@ -350,7 +306,8 @@
               "url": "https://github.com/espoon-voltti/evaka/pull/8984",
               "labels": [
                 "enhancement",
-                "core"
+                "core",
+                "not-visible"
               ]
             },
             {
@@ -381,7 +338,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-30T10:34:13.530Z",
+            "checkedAt": "2026-04-30T11:13:43.583Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4a8411eb6ea5e07b842313684ea4aade1beed39c",
@@ -406,7 +363,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-30T10:34:14.570Z",
+            "checkedAt": "2026-04-30T11:13:44.990Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e267fd2392e8d903ab7ab8b7fa0858db5c3ce8c",
@@ -465,7 +422,7 @@
               "isHidden": false,
               "url": "https://github.com/espoon-voltti/evaka/pull/8971",
               "labels": [
-                "bug"
+                "bugfix"
               ]
             },
             {
@@ -545,7 +502,8 @@
               "url": "https://github.com/espoon-voltti/evaka/pull/8984",
               "labels": [
                 "enhancement",
-                "core"
+                "core",
+                "not-visible"
               ]
             },
             {
@@ -576,7 +534,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-30T10:34:20.962Z",
+            "checkedAt": "2026-04-30T11:13:52.016Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a7bc2ec6e88cb45e4ac12e77571300e0eeb751f6",
@@ -601,7 +559,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-30T10:34:22.019Z",
+            "checkedAt": "2026-04-30T11:13:53.317Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a7bc2ec6e88cb45e4ac12e77571300e0eeb751f6",
@@ -647,7 +605,8 @@
               "url": "https://github.com/espoon-voltti/evaka/pull/8984",
               "labels": [
                 "enhancement",
-                "core"
+                "core",
+                "not-visible"
               ]
             },
             {
