@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T04:25:10.715Z",
+  "generatedAt": "2026-04-30T05:05:06.435Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-30T04:24:25.642Z",
+            "checkedAt": "2026-04-30T05:04:09.477Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-04-30T04:24:26.693Z",
+            "checkedAt": "2026-04-30T05:04:10.657Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
-              "shortSha": "c3c51c4",
-              "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
-              "date": "2026-04-28T11:51:29Z",
-              "author": "terolaakso-reaktor"
+              "sha": "bb995f0b5b98864342a2026faa9a2c1cd4a62a49",
+              "shortSha": "bb995f0",
+              "message": "Merge pull request #8969 from espoon-voltti/read-units-report-permissions",
+              "date": "2026-04-29T12:50:57Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8969,
               "title": "Lisätään katseluoikeus yksiköt-raportille hallinto- ja raportointi-rooleille",
@@ -142,7 +141,8 @@
                 "breaking"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -155,7 +155,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-30T04:24:31.692Z",
+            "checkedAt": "2026-04-30T05:04:21.156Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -180,21 +180,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-04-30T04:24:41.327Z",
+            "checkedAt": "2026-04-30T05:04:31.679Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
-              "shortSha": "6414905",
-              "message": "refactor: upload SFI IDP certs directly to S3, bypassing SSM (#2107)",
-              "date": "2026-04-29T06:05:30Z",
-              "author": "japsu"
+              "sha": "7953f76cceb76d55da0e394c2c9289ac1ee97de0",
+              "shortSha": "7953f76",
+              "message": "Merge pull request #2109 from Tampere/dependabot/submodules/evaka-bb995f0",
+              "date": "2026-04-30T04:36:03Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
-              "shortSha": "c3c51c4",
-              "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
-              "date": "2026-04-28T11:51:29Z",
-              "author": "terolaakso-reaktor"
+              "sha": "bb995f0b5b98864342a2026faa9a2c1cd4a62a49",
+              "shortSha": "bb995f0",
+              "message": "Merge pull request #8969 from espoon-voltti/read-units-report-permissions",
+              "date": "2026-04-29T12:50:57Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -211,8 +211,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 8969,
               "title": "Lisätään katseluoikeus yksiköt-raportille hallinto- ja raportointi-rooleille",
@@ -336,7 +335,8 @@
                 "breaking"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -349,7 +349,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-30T04:24:56.865Z",
+            "checkedAt": "2026-04-30T05:04:53.540Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4a8411eb6ea5e07b842313684ea4aade1beed39c",
@@ -374,7 +374,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-04-30T04:24:58.398Z",
+            "checkedAt": "2026-04-30T05:04:54.868Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7e267fd2392e8d903ab7ab8b7fa0858db5c3ce8c",
@@ -512,7 +512,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-04-30T04:25:03.325Z",
+            "checkedAt": "2026-04-30T05:04:59.717Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7fa20e974abc1c850da9ed9a3a8a512ad68b4c49",
@@ -537,7 +537,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-04-30T04:25:04.499Z",
+            "checkedAt": "2026-04-30T05:05:00.972Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a7bc2ec6e88cb45e4ac12e77571300e0eeb751f6",
