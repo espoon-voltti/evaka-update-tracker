@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T08:34:48.714Z",
+  "generatedAt": "2026-05-04T09:28:14.683Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-04T08:33:22.242Z",
+            "checkedAt": "2026-05-04T09:26:51.273Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-04T08:33:23.423Z",
+            "checkedAt": "2026-05-04T09:26:51.982Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ed7f7ab11906138272ebd47a3830ca4b682f8291",
-              "shortSha": "ed7f7ab",
-              "message": "Update dependency jsdom to v29.1.0 (#9001)",
-              "date": "2026-05-02T21:10:23Z",
-              "author": "renovate[bot]"
+              "sha": "15602fde2c6b1ee3397732259c8c62b4162a2810",
+              "shortSha": "15602fd",
+              "message": "Separate ECR push (#8987)",
+              "date": "2026-05-04T08:50:09Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -50,6 +50,22 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9009,
+              "title": "CVE-korjaus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-04T07:33:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9009",
+              "labels": [
+                "dependencies",
+                "service"
+              ]
+            },
             {
               "number": 8984,
               "title": "Päivitetään Font Awesome ja käytetään pro-ikoneja kaikissa kunnissa",
@@ -83,24 +99,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9009,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-05-04T07:33:43Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9009",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -113,7 +112,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-04T08:33:34.820Z",
+            "checkedAt": "2026-05-04T09:27:08.052Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -138,7 +137,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-04T08:33:48.988Z",
+            "checkedAt": "2026-05-04T09:27:17.711Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "002bab4c2c73a7e2bef6193201ed2a50b1e38783",
@@ -371,7 +370,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-04T08:34:16.930Z",
+            "checkedAt": "2026-05-04T09:27:42.486Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4a8411eb6ea5e07b842313684ea4aade1beed39c",
@@ -396,7 +395,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-04T08:34:18.263Z",
+            "checkedAt": "2026-05-04T09:27:43.470Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a652cb909e524b4cad80672c23ec2133a9b0a759",
@@ -600,7 +599,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-04T08:34:34.381Z",
+            "checkedAt": "2026-05-04T09:27:59.732Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a7bc2ec6e88cb45e4ac12e77571300e0eeb751f6",
@@ -625,7 +624,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-04T08:34:35.925Z",
+            "checkedAt": "2026-05-04T09:28:01.262Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "358e9de72ae198fe1ecc816271092e5aea7cfb6a",

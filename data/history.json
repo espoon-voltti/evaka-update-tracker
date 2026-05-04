@@ -1,6 +1,189 @@
 {
   "events": [
     {
+      "id": "2026-05-04T09:26:57.911Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-05-04T09:26:57.911Z",
+      "previousCommit": {
+        "sha": "ed7f7ab11906138272ebd47a3830ca4b682f8291",
+        "shortSha": "ed7f7ab",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "15602fde2c6b1ee3397732259c8c62b4162a2810",
+        "shortSha": "15602fd",
+        "message": "Separate ECR push (#8987)",
+        "date": "2026-05-04T08:50:09Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 8987,
+          "title": "Erillinen ECR-push",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-05-04T08:50:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8987",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 9009,
+          "title": "CVE-korjaus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-05-04T07:33:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9009",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9007,
+          "title": "Update Gradle to v9.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-04T06:15:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9007",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9006,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.43.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-04T06:12:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9006",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9005,
+          "title": "Update dependency org.jdbi:jdbi3-bom to v3.53.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-04T06:12:34Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9005",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9002,
+          "title": "Update flyway to v12.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-04T06:12:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9002",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9000,
+          "title": "Update dependency cryptography to v47",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-04T06:12:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9000",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 8999,
+          "title": "Update sentry-javascript monorepo to v10.50.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-04T06:11:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8999",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9008,
+          "title": "Poistetaan viittaukset devcontaineriin",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-05-04T06:11:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9008",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 8996,
+          "title": "Update dependency @tanstack/react-query to v5.100.6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-04T04:32:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8996",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-05-04T05:34:53.053Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
