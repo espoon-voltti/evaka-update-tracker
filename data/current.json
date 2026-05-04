@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T09:50:10.401Z",
+  "generatedAt": "2026-05-04T10:18:40.853Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-04T09:49:13.942Z",
+            "checkedAt": "2026-05-04T10:17:18.344Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "bb995f0b5b98864342a2026faa9a2c1cd4a62a49",
-              "shortSha": "bb995f0",
-              "message": "Merge pull request #8969 from espoon-voltti/read-units-report-permissions",
-              "date": "2026-04-29T12:50:57Z",
-              "author": "ohinkinen"
+              "sha": "15602fde2c6b1ee3397732259c8c62b4162a2810",
+              "shortSha": "15602fd",
+              "message": "Separate ECR push (#8987)",
+              "date": "2026-05-04T08:50:09Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-04T09:49:14.678Z",
+            "checkedAt": "2026-05-04T10:17:29.959Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9009,
               "title": "CVE-korjaus",
@@ -99,6 +98,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 8988,
@@ -147,7 +147,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-04T09:49:24.754Z",
+            "checkedAt": "2026-05-04T10:17:42.489Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -172,7 +172,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-04T09:49:34.526Z",
+            "checkedAt": "2026-05-04T10:17:54.611Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "002bab4c2c73a7e2bef6193201ed2a50b1e38783",
@@ -439,7 +439,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-04T09:49:56.788Z",
+            "checkedAt": "2026-05-04T10:18:23.789Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a652cb909e524b4cad80672c23ec2133a9b0a759",
@@ -464,7 +464,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-04T09:49:57.791Z",
+            "checkedAt": "2026-05-04T10:18:25.255Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a652cb909e524b4cad80672c23ec2133a9b0a759",
@@ -560,7 +560,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-04T09:50:03.222Z",
+            "checkedAt": "2026-05-04T10:18:32.212Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "358e9de72ae198fe1ecc816271092e5aea7cfb6a",
@@ -585,7 +585,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-04T09:50:04.829Z",
+            "checkedAt": "2026-05-04T10:18:33.843Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "358e9de72ae198fe1ecc816271092e5aea7cfb6a",
