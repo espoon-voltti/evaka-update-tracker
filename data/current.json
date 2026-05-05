@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T05:13:57.219Z",
+  "generatedAt": "2026-05-05T06:03:59.637Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-05T05:13:08.470Z",
+            "checkedAt": "2026-05-05T06:03:06.957Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-05T05:13:09.150Z",
+            "checkedAt": "2026-05-05T06:03:07.654Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-05T05:13:11.411Z",
+            "checkedAt": "2026-05-05T06:03:10.280Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-05T05:13:20.145Z",
+            "checkedAt": "2026-05-05T06:03:19.746Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cc8940a6f4039e5bd6d9f2b5212961e3c7a3f623",
@@ -389,7 +389,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-05T05:13:42.037Z",
+            "checkedAt": "2026-05-05T06:03:43.066Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a652cb909e524b4cad80672c23ec2133a9b0a759",
@@ -414,7 +414,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-05T05:13:43.127Z",
+            "checkedAt": "2026-05-05T06:03:44.459Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ea09fe8527d39aa61e56425d9e8845b2683353b7",
@@ -510,7 +510,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-05T05:13:49.595Z",
+            "checkedAt": "2026-05-05T06:03:51.484Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "358e9de72ae198fe1ecc816271092e5aea7cfb6a",
@@ -535,7 +535,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-05T05:13:50.942Z",
+            "checkedAt": "2026-05-05T06:03:52.658Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c641366225d93b5313905bb026429e167fb04b62",
@@ -618,7 +618,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9011,
+              "title": "Näytetään suomenkielinen paikkapäätös englanninkieliselle yksikölle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-05-05T05:59:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9011",
+              "labels": [
+                "bugfix",
+                "turku",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     }
