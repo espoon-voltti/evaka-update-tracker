@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T12:47:37.848Z",
+  "generatedAt": "2026-05-05T13:16:59.505Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-05T12:46:45.119Z",
+            "checkedAt": "2026-05-05T13:15:47.584Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-05T12:46:45.922Z",
+            "checkedAt": "2026-05-05T13:15:48.634Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -114,7 +114,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-05T12:46:49.101Z",
+            "checkedAt": "2026-05-05T13:15:53.553Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -139,7 +139,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-05T12:46:58.385Z",
+            "checkedAt": "2026-05-05T13:16:07.066Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cc8940a6f4039e5bd6d9f2b5212961e3c7a3f623",
@@ -453,7 +453,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-05T12:47:26.564Z",
+            "checkedAt": "2026-05-05T13:16:44.296Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ea09fe8527d39aa61e56425d9e8845b2683353b7",
@@ -478,7 +478,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-05T12:47:27.976Z",
+            "checkedAt": "2026-05-05T13:16:46.390Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ea09fe8527d39aa61e56425d9e8845b2683353b7",
@@ -511,6 +511,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9015,
+              "title": "Poistetaan tiedostojen zippaus Oulu Fabric-siirrossa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-05T12:51:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9015",
+              "labels": [
+                "enhancement",
+                "oulu",
+                "not-visible"
+              ]
+            },
             {
               "number": 8977,
               "title": "Salli käyttämättömien asiakirjapohjien poistaminen",
@@ -557,7 +574,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-05T12:47:32.053Z",
+            "checkedAt": "2026-05-05T13:16:52.255Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c641366225d93b5313905bb026429e167fb04b62",
@@ -582,7 +599,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-05T12:47:33.598Z",
+            "checkedAt": "2026-05-05T13:16:53.997Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c641366225d93b5313905bb026429e167fb04b62",
