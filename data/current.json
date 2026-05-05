@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T10:33:22.390Z",
+  "generatedAt": "2026-05-05T10:47:47.873Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-05T10:32:22.079Z",
+            "checkedAt": "2026-05-05T10:46:47.196Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-05T10:32:23.159Z",
+            "checkedAt": "2026-05-05T10:46:48.083Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -80,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-05T10:32:25.091Z",
+            "checkedAt": "2026-05-05T10:46:50.360Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -105,7 +105,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-05T10:32:38.040Z",
+            "checkedAt": "2026-05-05T10:47:03.719Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cc8940a6f4039e5bd6d9f2b5212961e3c7a3f623",
@@ -145,7 +145,21 @@
               "labels": []
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 2116,
+              "title": "chore: add 2026 SFI IDP certificate to production",
+              "author": "japsu",
+              "authorName": "Luka Pajukanta",
+              "mergedAt": "2026-05-05T10:40:18Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2116",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -388,7 +402,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-05T10:33:09.231Z",
+            "checkedAt": "2026-05-05T10:47:37.423Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ea09fe8527d39aa61e56425d9e8845b2683353b7",
@@ -413,7 +427,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-05T10:33:10.657Z",
+            "checkedAt": "2026-05-05T10:47:39.515Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ea09fe8527d39aa61e56425d9e8845b2683353b7",
@@ -475,7 +489,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-05T10:33:13.470Z",
+            "checkedAt": "2026-05-05T10:47:42.743Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c641366225d93b5313905bb026429e167fb04b62",
@@ -500,7 +514,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-05T10:33:19.527Z",
+            "checkedAt": "2026-05-05T10:47:44.479Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c641366225d93b5313905bb026429e167fb04b62",
