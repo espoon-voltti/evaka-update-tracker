@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T10:48:33.157Z",
+  "generatedAt": "2026-05-06T11:11:17.155Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T10:47:26.374Z",
+            "checkedAt": "2026-05-06T11:09:56.981Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T10:47:27.220Z",
+            "checkedAt": "2026-05-06T11:09:57.933Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -149,21 +149,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T10:47:33.815Z",
+            "checkedAt": "2026-05-06T11:10:03.666Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
-              "shortSha": "6414905",
-              "message": "refactor: upload SFI IDP certs directly to S3, bypassing SSM (#2107)",
-              "date": "2026-04-29T06:05:30Z",
-              "author": "japsu"
+              "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+              "shortSha": "9d08db0",
+              "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+              "date": "2026-05-06T04:42:23Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "c3c51c475147d4451a891ec809ff195b1aa41e8a",
-              "shortSha": "c3c51c4",
-              "message": "Merge pull request #8781 from espoon-voltti/renovate/ktfmt",
-              "date": "2026-04-28T11:51:29Z",
-              "author": "terolaakso-reaktor"
+              "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+              "shortSha": "c319237",
+              "message": "Fix re-tag on CI re-run (#9018)",
+              "date": "2026-05-05T14:06:05Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -174,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T10:47:47.557Z",
+            "checkedAt": "2026-05-06T11:10:36.897Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -198,8 +198,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 2116,
               "title": "chore: add 2026 SFI IDP certificate to production",
@@ -227,6 +226,7 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 2118,
@@ -245,8 +245,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8977,
               "title": "Salli käyttämättömien asiakirjapohjien poistaminen",
@@ -279,214 +278,9 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 8988,
-              "title": "Lisätään varhaiskasvatussihteerin roolille lapsen lisätietojen muokkausoikeudet",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-05-04T09:34:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8988",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 8985,
-              "title": "Muutetaan tuloselvityksien yksikköfiltteri multiselect-kentäksi",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-05-04T09:33:27Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8985",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9009,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-05-04T07:33:43Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9009",
-              "labels": [
-                "dependencies",
-                "service"
-              ]
-            },
-            {
-              "number": 8984,
-              "title": "Päivitetään Font Awesome ja käytetään pro-ikoneja kaikissa kunnissa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-30T09:16:37Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8984",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 8973,
-              "title": "Korostetaan automaattikatkaistut henkilökunnan läsnäolot",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-30T06:14:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8973",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8969,
-              "title": "Lisätään katseluoikeus yksiköt-raportille hallinto- ja raportointi-rooleille",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-29T12:50:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8969",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8971,
-              "title": "Korjataan \"Perheen tietojen kooste\"-näkymän datan päivittyminen",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-04-29T12:50:09Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8971",
-              "labels": [
-                "bugfix"
-              ]
-            },
-            {
-              "number": 8983,
-              "title": "Päätöksen yleisten ja yksilöllisten perustelujen hallintatyökalu päälle seudun testiympäristöihin",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-29T11:59:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8983",
-              "labels": [
-                "enhancement",
-                "seutu",
-                "employee"
-              ]
-            },
-            {
-              "number": 8937,
-              "title": "Lisätään henkilökunnan läsnäolojen reaaliaikaiset kirjaukset & lasten läsnäolovarauksien muutokset BI-siirtoon + muutosaikaikkunan pituuden parametrisointi",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-04-29T10:06:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8937",
-              "labels": [
-                "enhancement"
-              ]
-            },
-            {
-              "number": 8981,
-              "title": "Haavoittuvuuskorjauksia",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-29T07:59:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8981",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 8974,
-              "title": "Poistetaan OSS index käytöstä",
-              "author": "ilja-git",
-              "authorName": "Ilja Pyykkönen",
-              "mergedAt": "2026-04-29T06:53:34Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8974",
-              "labels": [
-                "tech"
-              ]
-            },
-            {
-              "number": 8970,
-              "title": "Poistetaan Pirkkalasta esiopetustuki",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-04-29T06:42:22Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8970",
-              "labels": [
-                "enhancement",
-                "seutu"
-              ]
-            },
-            {
-              "number": 8929,
-              "title": "Tuetaan kaikkien kuntakustomointien leipomista proxy-imagen sisään",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-29T05:22:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8929",
-              "labels": [
-                "breaking"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9014,
@@ -518,7 +312,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T10:48:26.691Z",
+            "checkedAt": "2026-05-06T11:11:11.671Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -537,7 +331,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T10:48:28.013Z",
+            "checkedAt": "2026-05-06T11:11:12.681Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -571,7 +365,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-06T10:48:29.918Z",
+            "checkedAt": "2026-05-06T11:11:14.500Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -590,7 +384,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-06T10:48:31.104Z",
+            "checkedAt": "2026-05-06T11:11:15.490Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
