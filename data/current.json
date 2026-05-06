@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T09:16:12.332Z",
+  "generatedAt": "2026-05-06T09:22:02.072Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T09:14:52.997Z",
+            "checkedAt": "2026-05-06T09:20:53.971Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T09:14:53.710Z",
+            "checkedAt": "2026-05-06T09:20:54.661Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -132,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T09:14:58.850Z",
+            "checkedAt": "2026-05-06T09:20:59.441Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -157,7 +157,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T09:15:08.889Z",
+            "checkedAt": "2026-05-06T09:21:09.343Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -501,10 +501,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T09:15:41.314Z",
-            "status": "unavailable",
+            "checkedAt": "2026-05-06T09:21:39.006Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "1b3ef79dc75486fb0164787af3950096fdcfac24",
+              "shortSha": "1b3ef79",
+              "message": "Merge pull request #9014 from espoon-voltti/employee-mobile-staff-occupancy-effect",
+              "date": "2026-05-06T04:56:23Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -514,25 +520,94 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T09:15:49.571Z",
-            "status": "unavailable",
+            "checkedAt": "2026-05-06T09:21:43.469Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "1b3ef79dc75486fb0164787af3950096fdcfac24",
+              "shortSha": "1b3ef79",
+              "message": "Merge pull request #9014 from espoon-voltti/employee-mobile-staff-occupancy-effect",
+              "date": "2026-05-06T04:56:23Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
         }
       ],
       "prTracks": {
-        "wrapper": {
-          "repository": "Oulunkaupunki/evakaoulu",
-          "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": []
-        },
+        "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
+          "deployed": [
+            {
+              "number": 9014,
+              "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-06T04:56:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9014",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9015,
+              "title": "Poistetaan tiedostojen zippaus Oulu Fabric-siirrossa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-05T12:51:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9015",
+              "labels": [
+                "enhancement",
+                "oulu",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 8977,
+              "title": "Salli käyttämättömien asiakirjapohjien poistaminen",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-05-05T10:56:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8977",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9012,
+              "title": "Vähennetään SAML-virhelokitusta",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-05T08:53:34Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9012",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -547,21 +622,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-06T09:15:57.852Z",
+            "checkedAt": "2026-05-06T09:21:50.671Z",
             "status": "ok",
-            "wrapperCommit": {
-              "sha": "c641366225d93b5313905bb026429e167fb04b62",
-              "shortSha": "c641366",
-              "message": "Merge pull request #315 from City-of-Turku/dependabot/submodules/evaka-62bc80b",
-              "date": "2026-05-05T03:40:17Z",
-              "author": "github-actions[bot]"
-            },
+            "wrapperCommit": null,
             "coreCommit": {
-              "sha": "62bc80ba952c34f3b78060167fc8f14597e1a891",
-              "shortSha": "62bc80b",
-              "message": "Merge pull request #8988 from espoon-voltti/update-additional-information-permissions",
-              "date": "2026-05-04T09:34:18Z",
-              "author": "ohinkinen"
+              "sha": "1b3ef79dc75486fb0164787af3950096fdcfac24",
+              "shortSha": "1b3ef79",
+              "message": "Merge pull request #9014 from espoon-voltti/employee-mobile-staff-occupancy-effect",
+              "date": "2026-05-06T04:56:23Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -572,27 +641,26 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-06T09:15:58.910Z",
-            "status": "unavailable",
+            "checkedAt": "2026-05-06T09:21:55.390Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "1b3ef79dc75486fb0164787af3950096fdcfac24",
+              "shortSha": "1b3ef79",
+              "message": "Merge pull request #9014 from espoon-voltti/employee-mobile-staff-occupancy-effect",
+              "date": "2026-05-06T04:56:23Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
         }
       ],
       "prTracks": {
-        "wrapper": {
-          "repository": "City-of-Turku/evakaturku",
-          "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": []
-        },
+        "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "deployed": [
             {
               "number": 9014,
               "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
@@ -642,25 +710,10 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 9011,
-              "title": "Näytetään suomenkielinen paikkapäätös englanninkieliselle yksikölle",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-05-05T05:59:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9011",
-              "labels": [
-                "bugfix",
-                "turku",
-                "citizen"
-              ]
             }
-          ]
+          ],
+          "inStaging": [],
+          "pendingDeployment": []
         }
       }
     }
