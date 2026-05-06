@@ -7,20 +7,14 @@
 // Production SHAs (current)
 export const ESPOO_PROD_SHA = 'aa22da22851dbf376bf83b457ee646da5ddfd702';
 export const TAMPERE_WRAPPER_PROD_SHA = 'bb33eb33962ecg487cg94c568ff757eb6eegf813';
-export const OULU_WRAPPER_PROD_SHA = 'cc44fc44a73fah598dh05d679gg868fc7ffhg924';
-export const TURKU_WRAPPER_PROD_SHA = 'dd55gd55b84gbi609ei16e78ahh979gd8ggih035';
 
 // Staging SHAs (ahead of production)
 export const ESPOO_STAGING_SHA = '5ff94c8cd104a2c4bd164c9f64f3c4455ac39370';
 export const TAMPERE_WRAPPER_STAGING_SHA = 'ee66he66c95hcj710fj27f89bii080he9hhjia46';
-export const OULU_WRAPPER_STAGING_SHA = 'ff77if77d06idk821gk38g90cjj191if0iikjb57';
-export const TURKU_WRAPPER_STAGING_SHA = 'gg88jg88e17jel932hl49h01dkk202jg1jjlkc68';
 
 // Previous production SHAs (what previous.json had — different from current, so deployed PRs are detected)
 export const ESPOO_PREV_PROD_SHA = '1111111111111111111111111111111111111111';
 export const TAMPERE_WRAPPER_PREV_PROD_SHA = '2222222222222222222222222222222222222222';
-export const OULU_WRAPPER_PREV_PROD_SHA = '3333333333333333333333333333333333333333';
-export const TURKU_WRAPPER_PREV_PROD_SHA = '4444444444444444444444444444444444444444';
 
 // Core SHAs for wrapper cities (resolved via submodule)
 export const TAMPERE_CORE_PROD_SHA = 'aa22da22851dbf376bf83b457ee646da5ddfd702'; // same as Espoo prod
@@ -341,42 +335,6 @@ export const wrapperCommitResponses: Record<string, ReturnType<typeof commitResp
     '2026-02-25T08:00:00Z',
     'tampere-dev'
   ),
-  [OULU_WRAPPER_PROD_SHA]: commitResponse(
-    OULU_WRAPPER_PROD_SHA,
-    'Merge pull request #200 from Oulunkaupunki/update-oulu',
-    '2026-03-01T09:00:00Z',
-    'oulu-dev'
-  ),
-  [OULU_WRAPPER_STAGING_SHA]: commitResponse(
-    OULU_WRAPPER_STAGING_SHA,
-    'Merge pull request #205 from Oulunkaupunki/fix-oulu',
-    '2026-03-02T16:00:00Z',
-    'oulu-dev'
-  ),
-  [OULU_WRAPPER_PREV_PROD_SHA]: commitResponse(
-    OULU_WRAPPER_PREV_PROD_SHA,
-    'Previous Oulu wrapper commit',
-    '2026-02-25T09:00:00Z',
-    'oulu-dev'
-  ),
-  [TURKU_WRAPPER_PROD_SHA]: commitResponse(
-    TURKU_WRAPPER_PROD_SHA,
-    'Merge pull request #300 from City-of-Turku/update-turku',
-    '2026-03-01T10:00:00Z',
-    'turku-dev'
-  ),
-  [TURKU_WRAPPER_STAGING_SHA]: commitResponse(
-    TURKU_WRAPPER_STAGING_SHA,
-    'Merge pull request #305 from City-of-Turku/fix-turku',
-    '2026-03-02T17:00:00Z',
-    'turku-dev'
-  ),
-  [TURKU_WRAPPER_PREV_PROD_SHA]: commitResponse(
-    TURKU_WRAPPER_PREV_PROD_SHA,
-    'Previous Turku wrapper commit',
-    '2026-02-25T10:00:00Z',
-    'turku-dev'
-  ),
 };
 
 // --- Previous.json fixture ---
@@ -401,19 +359,19 @@ export const previousJsonFixture = {
       coreSha: PREV_CORE_STAGING_SHA,
     },
     'oulu-prod': {
-      wrapperSha: OULU_WRAPPER_PREV_PROD_SHA,
+      wrapperSha: null,
       coreSha: PREV_CORE_PROD_SHA,
     },
     'oulu-staging': {
-      wrapperSha: OULU_WRAPPER_STAGING_SHA,
+      wrapperSha: null,
       coreSha: PREV_CORE_STAGING_SHA,
     },
     'turku-prod': {
-      wrapperSha: TURKU_WRAPPER_PREV_PROD_SHA,
+      wrapperSha: null,
       coreSha: PREV_CORE_PROD_SHA,
     },
     'turku-staging': {
-      wrapperSha: TURKU_WRAPPER_STAGING_SHA,
+      wrapperSha: null,
       coreSha: PREV_CORE_STAGING_SHA,
     },
   },

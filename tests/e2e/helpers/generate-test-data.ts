@@ -14,19 +14,13 @@ import {
   TAMPERE_WRAPPER_STAGING_SHA,
   TAMPERE_CORE_PROD_SHA,
   TAMPERE_CORE_STAGING_SHA,
-  OULU_WRAPPER_PROD_SHA,
-  OULU_WRAPPER_STAGING_SHA,
   OULU_CORE_PROD_SHA,
   OULU_CORE_STAGING_SHA,
-  TURKU_WRAPPER_PROD_SHA,
-  TURKU_WRAPPER_STAGING_SHA,
   TURKU_CORE_PROD_SHA,
   TURKU_CORE_STAGING_SHA,
   PREV_CORE_PROD_SHA,
   PREV_CORE_STAGING_SHA,
   TAMPERE_WRAPPER_PREV_PROD_SHA,
-  OULU_WRAPPER_PREV_PROD_SHA,
-  TURKU_WRAPPER_PREV_PROD_SHA,
   statusResponse,
   coreCommitResponses,
   wrapperCommitResponses,
@@ -81,22 +75,22 @@ function setupStatusMocks() {
   // Oulu production
   nock('https://varhaiskasvatus.ouka.fi')
     .get('/api/citizen/auth/status')
-    .reply(200, statusResponse(OULU_WRAPPER_PROD_SHA));
+    .reply(200, statusResponse(OULU_CORE_PROD_SHA));
 
   // Oulu staging
   nock('https://staging-varhaiskasvatus.ouka.fi')
     .get('/api/citizen/auth/status')
-    .reply(200, statusResponse(OULU_WRAPPER_STAGING_SHA));
+    .reply(200, statusResponse(OULU_CORE_STAGING_SHA));
 
   // Turku production
   nock('https://evaka.turku.fi')
     .get('/api/citizen/auth/status')
-    .reply(200, statusResponse(TURKU_WRAPPER_PROD_SHA));
+    .reply(200, statusResponse(TURKU_CORE_PROD_SHA));
 
   // Turku staging
   nock('https://staging-evaka.turku.fi')
     .get('/api/citizen/auth/status')
-    .reply(200, statusResponse(TURKU_WRAPPER_STAGING_SHA));
+    .reply(200, statusResponse(TURKU_CORE_STAGING_SHA));
 }
 
 function setupGitHubMocks() {
@@ -109,14 +103,9 @@ function setupGitHubMocks() {
     gh.get(`/repos/espoon-voltti/evaka/commits/${sha}`).reply(200, response);
   }
 
-  // Wrapper commits (all wrapper repos)
+  // Wrapper commits (Tampere only)
   for (const [sha, response] of Object.entries(wrapperCommitResponses)) {
-    // Tampere
     gh.get(`/repos/Tampere/trevaka/commits/${sha}`).reply(200, response);
-    // Oulu
-    gh.get(`/repos/Oulunkaupunki/evakaoulu/commits/${sha}`).reply(200, response);
-    // Turku
-    gh.get(`/repos/City-of-Turku/evakaturku/commits/${sha}`).reply(200, response);
   }
 
   // --- Submodule references (wrapper → core SHA) ---
@@ -126,18 +115,6 @@ function setupGitHubMocks() {
     .reply(200, submoduleResponse(TAMPERE_CORE_PROD_SHA));
   gh.get(`/repos/Tampere/trevaka/contents/evaka?ref=${TAMPERE_WRAPPER_STAGING_SHA}`)
     .reply(200, submoduleResponse(TAMPERE_CORE_STAGING_SHA));
-
-  // Oulu submodule
-  gh.get(`/repos/Oulunkaupunki/evakaoulu/contents/evaka?ref=${OULU_WRAPPER_PROD_SHA}`)
-    .reply(200, submoduleResponse(OULU_CORE_PROD_SHA));
-  gh.get(`/repos/Oulunkaupunki/evakaoulu/contents/evaka?ref=${OULU_WRAPPER_STAGING_SHA}`)
-    .reply(200, submoduleResponse(OULU_CORE_STAGING_SHA));
-
-  // Turku submodule
-  gh.get(`/repos/City-of-Turku/evakaturku/contents/evaka?ref=${TURKU_WRAPPER_PROD_SHA}`)
-    .reply(200, submoduleResponse(TURKU_CORE_PROD_SHA));
-  gh.get(`/repos/City-of-Turku/evakaturku/contents/evaka?ref=${TURKU_WRAPPER_STAGING_SHA}`)
-    .reply(200, submoduleResponse(TURKU_CORE_STAGING_SHA));
 
   // --- Compare responses (for PR extraction) ---
 
@@ -169,30 +146,6 @@ function setupGitHubMocks() {
   gh.get(`/repos/Tampere/trevaka/compare/${TAMPERE_WRAPPER_STAGING_SHA}...main`)
     .reply(200, emptyCompareResponse);
 
-  // Oulu wrapper: deployed
-  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/${OULU_WRAPPER_PREV_PROD_SHA}...${OULU_WRAPPER_PROD_SHA}`)
-    .reply(200, emptyCompareResponse);
-
-  // Oulu wrapper: staging
-  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/${OULU_WRAPPER_PROD_SHA}...${OULU_WRAPPER_STAGING_SHA}`)
-    .reply(200, emptyCompareResponse);
-
-  // Oulu wrapper: pending
-  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/${OULU_WRAPPER_STAGING_SHA}...main`)
-    .reply(200, emptyCompareResponse);
-
-  // Turku wrapper: deployed
-  gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_PREV_PROD_SHA}...${TURKU_WRAPPER_PROD_SHA}`)
-    .reply(200, emptyCompareResponse);
-
-  // Turku wrapper: staging
-  gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_PROD_SHA}...${TURKU_WRAPPER_STAGING_SHA}`)
-    .reply(200, emptyCompareResponse);
-
-  // Turku wrapper: pending
-  gh.get(`/repos/City-of-Turku/evakaturku/compare/${TURKU_WRAPPER_STAGING_SHA}...main`)
-    .reply(200, emptyCompareResponse);
-
   // --- Branch detection responses (for staging environments) ---
   // Espoo staging: commit is on default branch (0 ahead commits)
   gh.get(`/repos/espoon-voltti/evaka/compare/master...${ESPOO_STAGING_SHA}`)
@@ -202,18 +155,6 @@ function setupGitHubMocks() {
   gh.get(`/repos/Tampere/trevaka/compare/main...${TAMPERE_WRAPPER_STAGING_SHA}`)
     .reply(200, emptyCompareResponse);
   gh.get(`/repos/espoon-voltti/evaka/compare/master...${TAMPERE_CORE_STAGING_SHA}`)
-    .reply(200, emptyCompareResponse);
-
-  // Oulu staging: wrapper and core on default branch
-  gh.get(`/repos/Oulunkaupunki/evakaoulu/compare/main...${OULU_WRAPPER_STAGING_SHA}`)
-    .reply(200, emptyCompareResponse);
-  gh.get(`/repos/espoon-voltti/evaka/compare/master...${OULU_CORE_STAGING_SHA}`)
-    .reply(200, emptyCompareResponse);
-
-  // Turku staging: wrapper and core on default branch
-  gh.get(`/repos/City-of-Turku/evakaturku/compare/main...${TURKU_WRAPPER_STAGING_SHA}`)
-    .reply(200, emptyCompareResponse);
-  gh.get(`/repos/espoon-voltti/evaka/compare/master...${TURKU_CORE_STAGING_SHA}`)
     .reply(200, emptyCompareResponse);
 
   // --- User profile responses (for name resolution) ---
@@ -237,10 +178,8 @@ function setupGitHubMocks() {
     const num = parseInt(number, 10);
     // Core PRs
     gh.get(`/repos/espoon-voltti/evaka/pulls/${num}`).reply(200, response);
-    // Wrapper PRs (respond on all wrapper repos)
+    // Wrapper PRs (Tampere only)
     gh.get(`/repos/Tampere/trevaka/pulls/${num}`).reply(200, response);
-    gh.get(`/repos/Oulunkaupunki/evakaoulu/pulls/${num}`).reply(200, response);
-    gh.get(`/repos/City-of-Turku/evakaturku/pulls/${num}`).reply(200, response);
   }
 }
 

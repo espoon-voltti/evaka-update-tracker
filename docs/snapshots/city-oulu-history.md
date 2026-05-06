@@ -2,7 +2,7 @@
 
 ← Oulu
 ### Tuotanto
-- ti 3.3. klo 12.00 Kuntaimplementaatio: [cc44fc4](https://github.com/oulu/evaka-wrapper/commit/cc44fc44a73fah598dh05d679gg868fc7ffhg924) , ydin: [aa22da2](https://github.com/espoon-voltti/evaka/commit/aa22da22851dbf376bf83b457ee646da5ddfd702)
+- ti 3.3. klo 12.00 [aa22da2](https://github.com/espoon-voltti/evaka/commit/aa22da22851dbf376bf83b457ee646da5ddfd702)
 Ydin
 - [Aikaleiman käsittelyn korjaus tietokannassa](https://github.com/espoon-voltti/evaka/pull/8573) - Tero Laakso Korjaus 2.3.
 - [Hakutoiminnon parannukset](https://github.com/espoon-voltti/evaka/pull/8560) - Joosa Kurvinen Parannus 1.3.
