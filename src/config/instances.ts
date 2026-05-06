@@ -56,16 +56,7 @@ const PRODUCTION_CITY_GROUPS: CityGroup[] = [
   {
     id: 'oulu',
     name: 'Oulu',
-    repositories: [
-      {
-        owner: 'Oulunkaupunki',
-        name: 'evakaoulu',
-        type: 'wrapper',
-        submodulePath: 'evaka',
-        defaultBranch: 'main',
-      },
-      CORE_REPO,
-    ],
+    repositories: [CORE_REPO],
     environments: [
       {
         id: 'oulu-prod',
@@ -77,16 +68,7 @@ const PRODUCTION_CITY_GROUPS: CityGroup[] = [
   {
     id: 'turku',
     name: 'Turku',
-    repositories: [
-      {
-        owner: 'City-of-Turku',
-        name: 'evakaturku',
-        type: 'wrapper',
-        submodulePath: 'evaka',
-        defaultBranch: 'main',
-      },
-      CORE_REPO,
-    ],
+    repositories: [CORE_REPO],
     environments: [
       {
         id: 'turku-prod',
