@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T11:28:39.441Z",
+  "generatedAt": "2026-05-06T12:11:40.129Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T11:28:09.455Z",
+            "checkedAt": "2026-05-06T12:11:06.402Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "62bc80ba952c34f3b78060167fc8f14597e1a891",
-              "shortSha": "62bc80b",
-              "message": "Merge pull request #8988 from espoon-voltti/update-additional-information-permissions",
-              "date": "2026-05-04T09:34:18Z",
-              "author": "ohinkinen"
+              "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+              "shortSha": "c319237",
+              "message": "Fix re-tag on CI re-run (#9018)",
+              "date": "2026-05-05T14:06:05Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T11:28:10.261Z",
+            "checkedAt": "2026-05-06T12:11:10.447Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 8804,
               "title": "Palautetaan Espoon Särmäintegraatio; metadata generointi pure Kotlin-toteutuksella",
@@ -101,6 +100,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9019,
@@ -149,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T11:28:15.782Z",
+            "checkedAt": "2026-05-06T12:11:15.631Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -174,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T11:28:24.625Z",
+            "checkedAt": "2026-05-06T12:11:24.352Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -251,7 +251,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T11:28:34.937Z",
+            "checkedAt": "2026-05-06T12:11:34.564Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -270,7 +270,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T11:28:35.657Z",
+            "checkedAt": "2026-05-06T12:11:35.531Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -304,7 +304,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-06T11:28:37.164Z",
+            "checkedAt": "2026-05-06T12:11:37.491Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -323,7 +323,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-06T11:28:37.989Z",
+            "checkedAt": "2026-05-06T12:11:38.274Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
