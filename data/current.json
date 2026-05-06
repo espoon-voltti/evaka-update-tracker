@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T11:11:17.155Z",
+  "generatedAt": "2026-05-06T11:28:39.441Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T11:09:56.981Z",
+            "checkedAt": "2026-05-06T11:28:09.455Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T11:09:57.933Z",
+            "checkedAt": "2026-05-06T11:28:10.261Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -149,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T11:10:03.666Z",
+            "checkedAt": "2026-05-06T11:28:15.782Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -174,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T11:10:36.897Z",
+            "checkedAt": "2026-05-06T11:28:24.625Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -198,34 +198,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [
-            {
-              "number": 2116,
-              "title": "chore: add 2026 SFI IDP certificate to production",
-              "author": "japsu",
-              "authorName": "Luka Pajukanta",
-              "mergedAt": "2026-05-05T10:40:18Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2116",
-              "labels": []
-            },
-            {
-              "number": 2110,
-              "title": "Fix script path & update fontawesome",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-04-30T09:41:46Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2110",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -245,41 +218,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 8977,
-              "title": "Salli käyttämättömien asiakirjapohjien poistaminen",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-05-05T10:56:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8977",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9012,
-              "title": "Vähennetään SAML-virhelokitusta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-05-05T08:53:34Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9012",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -312,7 +251,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T11:11:11.671Z",
+            "checkedAt": "2026-05-06T11:28:34.937Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -331,7 +270,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T11:11:12.681Z",
+            "checkedAt": "2026-05-06T11:28:35.657Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -365,7 +304,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-06T11:11:14.500Z",
+            "checkedAt": "2026-05-06T11:28:37.164Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -384,7 +323,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-06T11:11:15.490Z",
+            "checkedAt": "2026-05-06T11:28:37.989Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
