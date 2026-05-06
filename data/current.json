@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T04:08:34.435Z",
+  "generatedAt": "2026-05-06T05:06:00.413Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T04:07:39.253Z",
+            "checkedAt": "2026-05-06T05:04:46.775Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-06T04:07:39.986Z",
+            "checkedAt": "2026-05-06T05:04:47.648Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9014,
+              "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-06T04:56:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9014",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
             {
               "number": 8804,
               "title": "Palautetaan Espoon Särmäintegraatio; metadata generointi pure Kotlin-toteutuksella",
@@ -114,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T04:07:43.981Z",
+            "checkedAt": "2026-05-06T05:04:52.286Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "64149052da1a820da38cfcdf7d2e11e74b80be0b",
@@ -139,21 +156,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-06T04:07:53.706Z",
+            "checkedAt": "2026-05-06T05:05:04.505Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "cc8940a6f4039e5bd6d9f2b5212961e3c7a3f623",
-              "shortSha": "cc8940a",
-              "message": "Merge pull request #2115 from Tampere/dependabot/submodules/evaka-62bc80b",
-              "date": "2026-05-05T04:26:20Z",
+              "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+              "shortSha": "9d08db0",
+              "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+              "date": "2026-05-06T04:42:23Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "62bc80ba952c34f3b78060167fc8f14597e1a891",
-              "shortSha": "62bc80b",
-              "message": "Merge pull request #8988 from espoon-voltti/update-additional-information-permissions",
-              "date": "2026-05-04T09:34:18Z",
-              "author": "ohinkinen"
+              "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+              "shortSha": "c319237",
+              "message": "Fix re-tag on CI re-run (#9018)",
+              "date": "2026-05-05T14:06:05Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -165,6 +182,19 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 2116,
+              "title": "chore: add 2026 SFI IDP certificate to production",
+              "author": "japsu",
+              "authorName": "Luka Pajukanta",
+              "mergedAt": "2026-05-05T10:40:18Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2116",
+              "labels": []
+            },
             {
               "number": 2110,
               "title": "Fix script path & update fontawesome",
@@ -179,26 +209,45 @@
               "labels": []
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 2116,
-              "title": "chore: add 2026 SFI IDP certificate to production",
-              "author": "japsu",
-              "authorName": "Luka Pajukanta",
-              "mergedAt": "2026-05-05T10:40:18Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2116",
-              "labels": []
-            }
-          ]
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 8977,
+              "title": "Salli käyttämättömien asiakirjapohjien poistaminen",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-05-05T10:56:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8977",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9012,
+              "title": "Vähennetään SAML-virhelokitusta",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-05T08:53:34Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9012",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 8988,
               "title": "Lisätään varhaiskasvatussihteerin roolille lapsen lisätietojen muokkausoikeudet",
@@ -408,36 +457,20 @@
           ],
           "pendingDeployment": [
             {
-              "number": 8977,
-              "title": "Salli käyttämättömien asiakirjapohjien poistaminen",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-05-05T10:56:00Z",
+              "number": 9014,
+              "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-06T04:56:24Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/8977",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9014",
               "labels": [
                 "enhancement",
                 "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9012,
-              "title": "Vähennetään SAML-virhelokitusta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-05-05T08:53:34Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9012",
-              "labels": [
-                "tech",
-                "core"
+                "employee-mobile"
               ]
             }
           ]
@@ -453,7 +486,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T04:08:20.560Z",
+            "checkedAt": "2026-05-06T05:05:43.744Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ea09fe8527d39aa61e56425d9e8845b2683353b7",
@@ -478,7 +511,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-06T04:08:22.560Z",
+            "checkedAt": "2026-05-06T05:05:45.631Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d4110b152d08d1d03ced28166eda48e2b9ab94e",
@@ -561,7 +594,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9014,
+              "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-06T04:56:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9014",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            }
+          ]
         }
       }
     },
@@ -574,7 +625,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-06T04:08:27.887Z",
+            "checkedAt": "2026-05-06T05:05:52.149Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c641366225d93b5313905bb026429e167fb04b62",
@@ -599,7 +650,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-06T04:08:29.062Z",
+            "checkedAt": "2026-05-06T05:05:53.580Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3553ad92ce2a9964cdecb1994b12dda638c4e06f",
@@ -682,7 +733,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9014,
+              "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-06T04:56:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9014",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            }
+          ]
         }
       }
     }
