@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import { PullRequest } from '../types.js';
+import { writeJsonFile } from '../utils/json-io.js';
 
 export type UserNameCache = Record<string, string | null>;
 
@@ -13,7 +14,7 @@ export function loadNameCache(filePath: string): UserNameCache {
 }
 
 export function saveNameCache(filePath: string, cache: UserNameCache): void {
-  fs.writeFileSync(filePath, JSON.stringify(cache, null, 2));
+  writeJsonFile(filePath, cache);
 }
 
 /**

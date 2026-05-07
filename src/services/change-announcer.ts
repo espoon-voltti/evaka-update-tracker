@@ -14,6 +14,7 @@ import { formatLabelTags } from '../config/label-map.js';
 import { getMunicipalityCityGroups, getMunicipalityNames } from '../utils/municipality-labels.js';
 import { UserNameCache, resolveNames } from '../services/name-resolver.js';
 import { toShortSha } from '../utils/sha.js';
+import { writeJsonFile } from '../utils/json-io.js';
 
 /**
  * Extracts unique repositories from city group configuration.
@@ -52,7 +53,7 @@ export function readRepoHeads(filePath: string): RepoHeadsData {
 }
 
 export function writeRepoHeads(filePath: string, data: RepoHeadsData): void {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+  writeJsonFile(filePath, data);
 }
 
 /**

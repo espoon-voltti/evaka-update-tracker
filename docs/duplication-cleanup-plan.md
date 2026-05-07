@@ -50,10 +50,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Action: moved to `site/js/utils.js`; both consumers now import. Local copies deleted.
 - **Test gate done:** added `tests/unit/cache-bust-url.test.ts` (3 cases) — uses `jest.spyOn(Date, 'now')` to lock in the exact `?t=<ms>` shape and that each call reads a fresh `Date.now()`. The existing `tests/e2e/auto-refresh.spec.ts` exercises the runtime path indirectly (data-change detection only works if cache-busting works), but doesn't directly assert the URL — the unit test now does. 337 unit + 63 E2E passing; lint clean.
 
-### 8. [ ] Extract `writeJsonFile` helper
-- Sites: `src/services/change-announcer.ts:54`, `src/services/history-manager.ts:32`, `src/services/name-resolver.ts:16`
-- Action: add `src/utils/json-io.ts` with `writeJsonFile(path, data)`; standardize formatting.
-- **Test gate:** make sure unit tests for `history-manager`, `change-announcer`, and `name-resolver` cover their write paths (check generated JSON content). Add coverage if missing before swapping the call.
+### 8. [x] Extract `writeJsonFile` helper
+- Sites originally listed: `src/services/change-announcer.ts:54`, `src/services/history-manager.ts:32`, `src/services/name-resolver.ts:16`. Discovered 3 more during the refactor: `src/index.ts:442,457,461` (writes for `feature-flags.json`, `current.json`, `previous.json`). All 6 sites migrated.
+- Action: added `src/utils/json-io.ts` with `writeJsonFile<T>(filePath, data)`. The only remaining `JSON.stringify(_, null, 2)` in `src/` is the DRY_RUN stdout dump (`console.log` — not a file write).
+- **Test gate done:** existing tests covered `writeHistory` (loose `stringContaining` check) and `saveNameCache` (exact `JSON.stringify(cache, null, 2)` match). Added a new `writeRepoHeads` test in `change-announcer.test.ts` (was the only uncovered service write path) before refactoring. Added `tests/unit/json-io.test.ts` (3 cases including a literal-string check that locks indentation/newlines so future drift trips the test). The E2E pipeline exercises `current.json`, `previous.json`, `feature-flags.json` write paths and stayed green. 341 unit + 63 E2E passing; lint + typecheck clean.
 
 ### 9. [ ] Replace ad-hoc `pr.repoType` filters with a partition helper
 - Sites: `src/services/change-detector.ts:53,72`, `src/index.ts:240`

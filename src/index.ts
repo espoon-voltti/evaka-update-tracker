@@ -28,6 +28,7 @@ import {
 } from './types.js';
 import { mergeFeatureFlagFallback } from './services/feature-flag-collector.js';
 import { prBelongsToCity } from './utils/municipality-labels.js';
+import { writeJsonFile } from './utils/json-io.js';
 
 loadEnv();
 
@@ -439,10 +440,7 @@ export async function run() {
     );
 
     if (!DRY_RUN) {
-      fs.writeFileSync(
-        path.join(DATA_DIR, 'feature-flags.json'),
-        JSON.stringify(featureFlagData, null, 2)
-      );
+      writeJsonFile(path.join(DATA_DIR, 'feature-flags.json'), featureFlagData);
     }
   } catch (err) {
     console.warn('Feature flag collection failed (non-fatal):', err);
@@ -454,14 +452,8 @@ export async function run() {
   } else {
     // Write data files
     fs.mkdirSync(DATA_DIR, { recursive: true });
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'current.json'),
-      JSON.stringify(currentData, null, 2)
-    );
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'previous.json'),
-      JSON.stringify(updatedPrevious, null, 2)
-    );
+    writeJsonFile(path.join(DATA_DIR, 'current.json'), currentData);
+    writeJsonFile(path.join(DATA_DIR, 'previous.json'), updatedPrevious);
     writeHistory(historyPath, history);
     console.log('\nData files written.');
 
