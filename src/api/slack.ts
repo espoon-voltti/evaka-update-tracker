@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { DeploymentEvent, StagingContext } from '../types.js';
-import { withRetry } from '../utils/retry.js';
+import { withRetry, RETRY_WEBHOOK } from '../utils/retry.js';
 import { formatFinnishDateTime } from '../utils/date-format.js';
 import { formatLabelTags } from '../config/label-map.js';
 
@@ -182,7 +182,7 @@ export async function sendSlackNotification(
         headers: { 'Content-Type': 'application/json' },
         timeout: 10000,
       }),
-      { maxRetries: 3, baseDelayMs: 1000 }
+      RETRY_WEBHOOK
     );
     const repoTypes = eventArray.map((e) => e.repoType).join('+');
     console.log(`[SLACK] Sent notification for ${firstEvent.environmentId} (${repoTypes})`);

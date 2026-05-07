@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios';
 import { CommitInfo } from '../types.js';
-import { withRetry } from '../utils/retry.js';
+import { withRetry, RETRY_GITHUB } from '../utils/retry.js';
 
 // ETag cache: url -> { etag, data }
 const etagCache = new Map<string, { etag: string; data: unknown }>();
@@ -59,7 +59,7 @@ export async function getCommit(
       date: data.commit.author.date,
       author: data.author?.login ?? data.commit.author.name,
     };
-  });
+  }, RETRY_GITHUB);
 }
 
 export async function getSubmoduleRef(
@@ -76,7 +76,7 @@ export async function getSubmoduleRef(
       throw new Error(`Expected submodule at ${path}, got ${data.type}`);
     }
     return data.sha;
-  });
+  }, RETRY_GITHUB);
 }
 
 interface CompareResponse {
@@ -101,7 +101,7 @@ export async function compareShas(
       `/repos/${owner}/${repo}/compare/${base}...${head}`
     );
     return data.commits;
-  });
+  }, RETRY_GITHUB);
 }
 
 interface GitHubPR {
@@ -120,7 +120,7 @@ export async function getPullRequest(
 ): Promise<GitHubPR> {
   return withRetry(async () => {
     return ghGet<GitHubPR>(`/repos/${owner}/${repo}/pulls/${number}`);
-  });
+  }, RETRY_GITHUB);
 }
 
 export async function getFileContent(
@@ -135,7 +135,7 @@ export async function getFileContent(
       : `/repos/${owner}/${repo}/contents/${path}`;
     const data = await ghGet<{ content: string; encoding: string }>(url);
     return Buffer.from(data.content, 'base64').toString('utf-8');
-  });
+  }, RETRY_GITHUB);
 }
 
 interface GitHubUser {
@@ -147,7 +147,7 @@ export async function getUser(username: string): Promise<string | null> {
   return withRetry(async () => {
     const data = await ghGet<GitHubUser>(`/users/${username}`);
     return data.name;
-  });
+  }, RETRY_GITHUB);
 }
 
 interface BranchWhereHead {
@@ -166,7 +166,7 @@ export async function getBranchesWhereHead(
       `/repos/${owner}/${repo}/commits/${sha}/branches-where-head`
     );
     return data.map((b) => b.name);
-  });
+  }, RETRY_GITHUB);
 }
 
 /**
@@ -182,7 +182,7 @@ export async function getPullRequestsForCommit(
     return ghGet<Array<{ number: number; merge_commit_sha: string | null; head: { ref: string } }>>(
       `/repos/${owner}/${repo}/commits/${commitSha}/pulls`
     );
-  });
+  }, RETRY_GITHUB);
 }
 
 export async function isCommitOnDefaultBranch(

@@ -10,6 +10,25 @@ const DEFAULT_OPTIONS: RetryOptions = {
   maxDelayMs: 10000,
 };
 
+/** GitHub API calls: 4 total attempts, 1s base, exponential up to 10s. */
+export const RETRY_GITHUB: RetryOptions = {
+  maxRetries: 3,
+  baseDelayMs: 1000,
+  maxDelayMs: 10000,
+};
+
+/** Slack / generic webhook deliveries: 4 total attempts, 1s base. */
+export const RETRY_WEBHOOK: RetryOptions = {
+  maxRetries: 3,
+  baseDelayMs: 1000,
+};
+
+/** Per-instance status endpoint probes: 3 total attempts, 2s base. */
+export const RETRY_STATUS_PROBE: RetryOptions = {
+  maxRetries: 2,
+  baseDelayMs: 2000,
+};
+
 export async function withRetry<T>(
   fn: () => Promise<T>,
   options: Partial<RetryOptions> = {}

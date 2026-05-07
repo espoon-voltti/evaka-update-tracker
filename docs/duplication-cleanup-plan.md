@@ -21,10 +21,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Action: moved to `site/js/utils.js`; both components now import it. Local copies deleted.
 - **Test gate done:** added `tests/unit/find-staging-branch-info.test.ts` (10 cases: no staging envs, no matching events, default-branch, undefined `isDefaultBranch`, branch-with-name, null branch field, latest-wins ordering, cross-city isolation, production-event isolation). E2E coverage already existed: `status-badge.spec.ts` exercises the side effect (no newer-commit pill on branch deployment) on both overview and city detail; `history-view.spec.ts` asserts `feature/test-branch` rendering; the test data generator injects a branch deployment fixture. Full suite: 305 unit + 63 E2E passing.
 
-### 3. [ ] Define named retry profiles
+### 3. [x] Define named retry profiles
 - Sites: `src/utils/retry.ts`, `src/api/{github,slack,status}.ts`
-- Action: export `RETRY_GITHUB`, `RETRY_WEBHOOK`, `RETRY_STATUS_PROBE` (or similar) from `src/utils/retry.ts`; replace inline option objects.
-- **Test gate:** unit-test `withRetry` with each profile (retry counts, delays, terminal failure). Confirm `tests/unit/retry*.test.ts` (or add one) asserts the expected `maxRetries` and `baseDelayMs` per call site before changing values.
+- Action: exported `RETRY_GITHUB`, `RETRY_WEBHOOK`, `RETRY_STATUS_PROBE` from `src/utils/retry.ts`. All 11 call sites (8 in github.ts, 2 in status.ts, 1 in slack.ts) now pass the named profile. No inline option objects remain in `src/api/*.ts`.
+- **Test gate done:** added `tests/unit/retry.test.ts` (10 cases) — first asserts each profile's concrete shape against the values previously inlined at the call sites (so any future drift trips the test), then exercises `withRetry` semantics: first-try success, eventual success after retries, terminal failure after `maxRetries+1` attempts per profile, default options behavior, non-Error throwable wrapping. 315 unit + 63 E2E passing; lint + typecheck clean.
 
 ### 4. [ ] Extract env-var save/restore helper for tests
 - Sites: `tests/unit/slack-routing.test.ts:3-28`, `tests/unit/change-routing.test.ts:3-28`
