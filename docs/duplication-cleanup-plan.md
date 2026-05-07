@@ -26,10 +26,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Action: exported `RETRY_GITHUB`, `RETRY_WEBHOOK`, `RETRY_STATUS_PROBE` from `src/utils/retry.ts`. All 11 call sites (8 in github.ts, 2 in status.ts, 1 in slack.ts) now pass the named profile. No inline option objects remain in `src/api/*.ts`.
 - **Test gate done:** added `tests/unit/retry.test.ts` (10 cases) — first asserts each profile's concrete shape against the values previously inlined at the call sites (so any future drift trips the test), then exercises `withRetry` semantics: first-try success, eventual success after retries, terminal failure after `maxRetries+1` attempts per profile, default options behavior, non-Error throwable wrapping. 315 unit + 63 E2E passing; lint + typecheck clean.
 
-### 4. [ ] Extract env-var save/restore helper for tests
+### 4. [x] Extract env-var save/restore helper for tests
 - Sites: `tests/unit/slack-routing.test.ts:3-28`, `tests/unit/change-routing.test.ts:3-28`
-- Action: add `tests/helpers/env-setup.ts` exporting `setupEnvCleanup(vars: string[])`; replace duplicated blocks.
-- **Test gate:** the existing test files already cover the behavior; just confirm both suites still pass after the helper extraction.
+- Action: added `tests/helpers/env-setup.ts` exporting `setupEnvCleanup(vars: readonly string[])` which wires `beforeEach`/`afterEach` from jest globals. Both test files now call it instead of defining the same 26-line block. ~46 lines of duplicated boilerplate removed.
+- **Test gate done:** both suites' 16 cases still pass; full suite remains green (315 tests / 26 suites). Lint clean.
 
 ### 5. [ ] Consolidate date formatters
 - Sites: `site/js/components/pr-list.js:83` (`formatDate`), `site/js/components/status-badge.js:74` (`formatTime`, already exported), `site/js/components/feature-matrix.js:303` (`formatFinnishDate`)

@@ -1,31 +1,13 @@
 import { resolveChangeWebhookUrl } from '../../src/config/change-routing';
+import { setupEnvCleanup } from '../helpers/env-setup';
 
-const ENV_VARS_TO_CLEAN = [
+setupEnvCleanup([
   'SLACK_CHANGE_WEBHOOK_CORE',
   'SLACK_CHANGE_WEBHOOK_ESPOO',
   'SLACK_CHANGE_WEBHOOK_TAMPERE_REGION',
   'SLACK_CHANGE_WEBHOOK_OULU',
   'SLACK_CHANGE_WEBHOOK_TURKU',
-];
-
-const savedEnv: Record<string, string | undefined> = {};
-
-beforeEach(() => {
-  for (const key of ENV_VARS_TO_CLEAN) {
-    savedEnv[key] = process.env[key];
-    delete process.env[key];
-  }
-});
-
-afterEach(() => {
-  for (const key of ENV_VARS_TO_CLEAN) {
-    if (savedEnv[key] === undefined) {
-      delete process.env[key];
-    } else {
-      process.env[key] = savedEnv[key];
-    }
-  }
-});
+]);
 
 describe('resolveChangeWebhookUrl', () => {
   it('returns SLACK_CHANGE_WEBHOOK_CORE for core repo type', () => {
