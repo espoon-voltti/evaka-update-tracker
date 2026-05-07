@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T08:30:16.285Z",
+  "generatedAt": "2026-05-07T11:00:28.210Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-07T08:29:35.990Z",
+            "checkedAt": "2026-05-07T10:59:58.491Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-              "shortSha": "c319237",
-              "message": "Fix re-tag on CI re-run (#9018)",
-              "date": "2026-05-05T14:06:05Z",
-              "author": "ilja-git"
+              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
+              "shortSha": "fc4b304",
+              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
+              "date": "2026-05-06T09:42:15Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-07T08:29:36.996Z",
+            "checkedAt": "2026-05-07T11:00:00.351Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9019,
               "title": "Aseta sarma use_mock_client oletukseksi false",
@@ -85,6 +84,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-07T08:29:39.641Z",
+            "checkedAt": "2026-05-07T11:00:02.257Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-07T08:29:52.623Z",
+            "checkedAt": "2026-05-07T11:00:10.813Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bbdfdb928e7f82f632574bbd42427beb77e29971",
@@ -200,14 +200,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-07T08:30:08.817Z",
+            "checkedAt": "2026-05-07T11:00:22.719Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1b3ef79dc75486fb0164787af3950096fdcfac24",
-              "shortSha": "1b3ef79",
-              "message": "Merge pull request #9014 from espoon-voltti/employee-mobile-staff-occupancy-effect",
-              "date": "2026-05-06T04:56:23Z",
+              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
+              "shortSha": "fc4b304",
+              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
+              "date": "2026-05-06T09:42:15Z",
               "author": "akheron"
             }
           },
@@ -219,7 +219,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-07T08:30:10.075Z",
+            "checkedAt": "2026-05-07T11:00:24.233Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -253,14 +253,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-07T08:30:13.094Z",
+            "checkedAt": "2026-05-07T11:00:25.650Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1b3ef79dc75486fb0164787af3950096fdcfac24",
-              "shortSha": "1b3ef79",
-              "message": "Merge pull request #9014 from espoon-voltti/employee-mobile-staff-occupancy-effect",
-              "date": "2026-05-06T04:56:23Z",
+              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
+              "shortSha": "fc4b304",
+              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
+              "date": "2026-05-06T09:42:15Z",
               "author": "akheron"
             }
           },
@@ -272,7 +272,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-07T08:30:14.045Z",
+            "checkedAt": "2026-05-07T11:00:26.910Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
