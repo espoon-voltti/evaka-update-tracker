@@ -5,7 +5,7 @@
 import { renderStatusBadge } from './status-badge.js';
 import { renderPRList } from './pr-list.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
-import { escapeHtml } from '../utils.js';
+import { escapeHtml, findStagingBranchInfo } from '../utils.js';
 
 /**
  * Merge PRs from core and wrapper repos into a single chronological list.
@@ -27,27 +27,6 @@ function findDetectedAt(events, environmentId, commitSha) {
     (e) => e.environmentId === environmentId && e.newCommit?.sha === commitSha
   );
   return event ? event.detectedAt : null;
-}
-
-/**
- * Find branch deployment info for the current staging commit.
- * Returns { isBranch: true, branchName } if the latest staging event is a branch deployment, null otherwise.
- */
-function findStagingBranchInfo(historyEvents, city) {
-  const stagingEnvIds = city.environments
-    .filter((e) => e.type === 'staging')
-    .map((e) => e.id);
-  if (stagingEnvIds.length === 0) return null;
-
-  // Find the latest staging event for this city
-  const latestEvent = historyEvents
-    .filter((e) => e.cityGroupId === city.id && stagingEnvIds.includes(e.environmentId))
-    .sort((a, b) => new Date(b.detectedAt) - new Date(a.detectedAt))[0];
-
-  if (latestEvent && latestEvent.isDefaultBranch === false) {
-    return { isBranch: true, branchName: latestEvent.branch || null };
-  }
-  return null;
 }
 
 /**

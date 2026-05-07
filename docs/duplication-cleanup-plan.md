@@ -16,10 +16,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Canonical implementation now escapes `& < > "` (unifies the 5 three-char copies and the 2 four-char copies; `"` escaping is strictly safer for attribute interpolation contexts that already existed in some callers).
 - **Test gate done:** added `tests/unit/escape-html.test.ts` (12 cases: nullish handling, each entity, ampersand-first ordering, script/attribute injection payloads). Required jest config tweaks: a custom `tests/jest-js-transformer.cjs` (uses the existing `typescript` devDep) so jest can load ESM `.js` from `site/`. Full suite: 295 unit tests + 63 E2E tests passing; lint clean.
 
-### 2. [ ] Extract shared `findStagingBranchInfo`
-- Sites: `site/js/components/overview.js:118`, `site/js/components/city-detail.js:35`
-- Action: move to a shared module (same `utils.js`); import in both.
-- **Test gate:** verify E2E coverage exists for staging branch display on both the overview and the city detail view. Add fixture data with a non-default staging branch if not already present, then refactor.
+### 2. [x] Extract shared `findStagingBranchInfo`
+- Sites: `site/js/components/overview.js`, `site/js/components/city-detail.js`
+- Action: moved to `site/js/utils.js`; both components now import it. Local copies deleted.
+- **Test gate done:** added `tests/unit/find-staging-branch-info.test.ts` (10 cases: no staging envs, no matching events, default-branch, undefined `isDefaultBranch`, branch-with-name, null branch field, latest-wins ordering, cross-city isolation, production-event isolation). E2E coverage already existed: `status-badge.spec.ts` exercises the side effect (no newer-commit pill on branch deployment) on both overview and city detail; `history-view.spec.ts` asserts `feature/test-branch` rendering; the test data generator injects a branch deployment fixture. Full suite: 305 unit + 63 E2E passing.
 
 ### 3. [ ] Define named retry profiles
 - Sites: `src/utils/retry.ts`, `src/api/{github,slack,status}.ts`

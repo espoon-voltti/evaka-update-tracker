@@ -4,7 +4,7 @@
 
 import { renderStatusBadge } from './status-badge.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
-import { escapeHtml } from '../utils.js';
+import { escapeHtml, findStagingBranchInfo } from '../utils.js';
 
 export function renderOverview(data, historyEvents = []) {
   if (!data || !data.cityGroups) {
@@ -111,25 +111,6 @@ function computeChangeCounts(prTracks) {
   const stagingCount = countNonBot(prTracks?.core?.inStaging) + countNonBot(prTracks?.wrapper?.inStaging);
   const pendingCount = countNonBot(prTracks?.core?.pendingDeployment) + countNonBot(prTracks?.wrapper?.pendingDeployment);
   return { stagingCount, pendingCount };
-}
-
-/**
- * Find branch deployment info for the current staging from history events.
- */
-function findStagingBranchInfo(historyEvents, city) {
-  const stagingEnvIds = city.environments
-    .filter((e) => e.type === 'staging')
-    .map((e) => e.id);
-  if (stagingEnvIds.length === 0) return null;
-
-  const latestEvent = historyEvents
-    .filter((e) => e.cityGroupId === city.id && stagingEnvIds.includes(e.environmentId))
-    .sort((a, b) => new Date(b.detectedAt) - new Date(a.detectedAt))[0];
-
-  if (latestEvent && latestEvent.isDefaultBranch === false) {
-    return { isBranch: true, branchName: latestEvent.branch || null };
-  }
-  return null;
 }
 
 function renderCityCard(city, historyEvents) {
