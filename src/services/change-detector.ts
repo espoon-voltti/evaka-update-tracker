@@ -1,5 +1,7 @@
 import * as fs from 'fs';
 import { DeploymentEvent, PreviousData, PreviousVersionEntry, VersionSnapshot, PullRequest } from '../types.js';
+import { toShortSha } from '../utils/sha.js';
+import { partitionByRepoType } from '../utils/repo-type.js';
 
 export interface DetectionResult {
   events: DeploymentEvent[];
@@ -38,6 +40,8 @@ export function detectChanges(
   const prevWrapperSha = previous?.wrapperSha ?? null;
   const prevCoreSha = previous?.coreSha ?? null;
 
+  const prsByRepoType = partitionByRepoType(includedPRs);
+
   // Check wrapper change
   if (currentWrapperSha && currentWrapperSha !== prevWrapperSha) {
     const wrapperBranch = branchInfoByRepoType?.['wrapper'];
@@ -47,10 +51,10 @@ export function detectChanges(
       cityGroupId,
       detectedAt: now,
       previousCommit: prevWrapperSha
-        ? { sha: prevWrapperSha, shortSha: prevWrapperSha.slice(0, 7), message: '', date: '', author: '' }
+        ? { sha: prevWrapperSha, shortSha: toShortSha(prevWrapperSha), message: '', date: '', author: '' }
         : null,
       newCommit: version.wrapperCommit!,
-      includedPRs: includedPRs.filter((pr) => pr.repoType === 'wrapper'),
+      includedPRs: prsByRepoType.wrapper,
       repoType: 'wrapper',
       ...(wrapperBranch?.isDefaultBranch !== undefined ? { isDefaultBranch: wrapperBranch.isDefaultBranch } : {}),
       ...(wrapperBranch?.branch !== undefined ? { branch: wrapperBranch.branch } : {}),
@@ -66,10 +70,10 @@ export function detectChanges(
       cityGroupId,
       detectedAt: now,
       previousCommit: prevCoreSha
-        ? { sha: prevCoreSha, shortSha: prevCoreSha.slice(0, 7), message: '', date: '', author: '' }
+        ? { sha: prevCoreSha, shortSha: toShortSha(prevCoreSha), message: '', date: '', author: '' }
         : null,
       newCommit: version.coreCommit!,
-      includedPRs: includedPRs.filter((pr) => pr.repoType === 'core'),
+      includedPRs: prsByRepoType.core,
       repoType: 'core',
       ...(coreBranch?.isDefaultBranch !== undefined ? { isDefaultBranch: coreBranch.isDefaultBranch } : {}),
       ...(coreBranch?.branch !== undefined ? { branch: coreBranch.branch } : {}),

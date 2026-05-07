@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { BasicAuth, VersionSnapshot } from '../types.js';
-import { withRetry } from '../utils/retry.js';
+import { withRetry, RETRY_STATUS_PROBE } from '../utils/retry.js';
 
 export async function fetchVersion(
   domain: string,
@@ -18,7 +18,7 @@ export async function fetchVersion(
             ? { auth: { username: auth.username, password: auth.password } }
             : {}),
         }),
-      { maxRetries: 2, baseDelayMs: 2000 }
+      RETRY_STATUS_PROBE
     );
 
     const sha = response.data.apiVersion;
@@ -76,7 +76,7 @@ export async function fetchDeployedSha(
             ? { auth: { username: auth.username, password: auth.password } }
             : {}),
         }),
-      { maxRetries: 2, baseDelayMs: 2000 }
+      RETRY_STATUS_PROBE
     );
 
     const sha = response.data.apiVersion;

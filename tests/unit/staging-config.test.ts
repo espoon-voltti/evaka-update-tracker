@@ -1,11 +1,12 @@
+import type { MockInstance } from 'vitest';
 import { parseStagingInstances, mergeStagingEnvironments } from '../../src/config/staging';
 import { CityGroup } from '../../src/types';
 
 describe('parseStagingInstances', () => {
-  let warnSpy: jest.SpyInstance;
+  let warnSpy: MockInstance;
 
   beforeEach(() => {
-    warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    warnSpy = vi.spyOn(console, 'warn').mockImplementation();
   });
 
   afterEach(() => {
@@ -120,7 +121,7 @@ describe('parseStagingInstances', () => {
 });
 
 describe('mergeStagingEnvironments', () => {
-  let warnSpy: jest.SpyInstance;
+  let warnSpy: MockInstance;
 
   const baseCityGroups: CityGroup[] = [
     {
@@ -155,7 +156,7 @@ describe('mergeStagingEnvironments', () => {
   ];
 
   beforeEach(() => {
-    warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    warnSpy = vi.spyOn(console, 'warn').mockImplementation();
   });
 
   afterEach(() => {

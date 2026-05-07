@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "npx tsx src/index.ts",
-    "test": "jest",
+    "test": "vitest run",
     "test:e2e": "playwright test",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src/ tests/",
@@ -24,17 +24,15 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.56.0",
-    "@types/jest": "^30.0.0",
     "@types/node": "^25.3.3",
     "@typescript-eslint/eslint-plugin": "^8.56.1",
     "@typescript-eslint/parser": "^8.56.1",
     "eslint": "^10.0.2",
-    "jest": "^30.2.0",
     "nock": "^14.0.11",
     "prettier": "^3.8.1",
-    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.5"
   }
 }

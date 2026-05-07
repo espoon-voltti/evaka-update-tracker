@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { DeploymentEvent, StagingContext } from '../types.js';
-import { withRetry } from '../utils/retry.js';
+import { withRetry, RETRY_WEBHOOK } from '../utils/retry.js';
 import { formatFinnishDateTime } from '../utils/date-format.js';
 import { formatLabelTags } from '../config/label-map.js';
+import { getVisiblePRs } from '../services/pr-collector.js';
 
 const repoTypeDisplayNames: Record<string, string> = {
   core: 'ydin',
@@ -60,7 +61,7 @@ function buildChangesSection(
     };
   }
 
-  const humanPRs = event.includedPRs.filter((pr) => !pr.isHidden);
+  const humanPRs = getVisiblePRs(event.includedPRs);
 
   const prLines = humanPRs.slice(0, 50).map((pr) => {
     const tags = formatLabelTags(pr.labels);
@@ -182,7 +183,7 @@ export async function sendSlackNotification(
         headers: { 'Content-Type': 'application/json' },
         timeout: 10000,
       }),
-      { maxRetries: 3, baseDelayMs: 1000 }
+      RETRY_WEBHOOK
     );
     const repoTypes = eventArray.map((e) => e.repoType).join('+');
     console.log(`[SLACK] Sent notification for ${firstEvent.environmentId} (${repoTypes})`);

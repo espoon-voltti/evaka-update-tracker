@@ -4,7 +4,7 @@ import { config as loadEnv } from 'dotenv';
 import { getCityGroups } from './config/instances.js';
 import { initGitHubClient, isCommitOnDefaultBranch, getPullRequestsForCommit, getPullRequest } from './api/github.js';
 import { resolveEnvironment, ResolvedEnvironment } from './services/version-resolver.js';
-import { collectPRsBetween, collectPendingPRs, buildPRTrack } from './services/pr-collector.js';
+import { collectPRsBetween, collectPendingPRs, buildPRTrack, getVisiblePRs } from './services/pr-collector.js';
 import { readPreviousData, detectChanges, buildUpdatedPrevious, BranchInfo } from './services/change-detector.js';
 import { deploySite } from './services/site-deployer.js';
 import { sendSlackNotification } from './api/slack.js';
@@ -28,6 +28,7 @@ import {
 } from './types.js';
 import { mergeFeatureFlagFallback } from './services/feature-flag-collector.js';
 import { prBelongsToCity } from './utils/municipality-labels.js';
+import { writeJsonFile } from './utils/json-io.js';
 
 loadEnv();
 
@@ -361,8 +362,8 @@ export async function run() {
         const cityGroup = cityGroupsData.find((cg) => cg.id === firstEvent.cityGroupId);
         if (cityGroup) {
           const hasProduction = cityGroup.environments.some((e) => e.type === 'production');
-          const coreInStaging = cityGroup.prTracks.core.inStaging.filter((pr) => !pr.isHidden);
-          const wrapperInStaging = cityGroup.prTracks.wrapper?.inStaging.filter((pr) => !pr.isHidden) ?? [];
+          const coreInStaging = getVisiblePRs(cityGroup.prTracks.core.inStaging);
+          const wrapperInStaging = cityGroup.prTracks.wrapper ? getVisiblePRs(cityGroup.prTracks.wrapper.inStaging) : [];
 
           // Check if any event in this environment is a branch deployment
           const branchEvent = envEvents.find((e) => e.isDefaultBranch === false);
@@ -439,10 +440,7 @@ export async function run() {
     );
 
     if (!DRY_RUN) {
-      fs.writeFileSync(
-        path.join(DATA_DIR, 'feature-flags.json'),
-        JSON.stringify(featureFlagData, null, 2)
-      );
+      writeJsonFile(path.join(DATA_DIR, 'feature-flags.json'), featureFlagData);
     }
   } catch (err) {
     console.warn('Feature flag collection failed (non-fatal):', err);
@@ -454,14 +452,8 @@ export async function run() {
   } else {
     // Write data files
     fs.mkdirSync(DATA_DIR, { recursive: true });
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'current.json'),
-      JSON.stringify(currentData, null, 2)
-    );
-    fs.writeFileSync(
-      path.join(DATA_DIR, 'previous.json'),
-      JSON.stringify(updatedPrevious, null, 2)
-    );
+    writeJsonFile(path.join(DATA_DIR, 'current.json'), currentData);
+    writeJsonFile(path.join(DATA_DIR, 'previous.json'), updatedPrevious);
     writeHistory(historyPath, history);
     console.log('\nData files written.');
 

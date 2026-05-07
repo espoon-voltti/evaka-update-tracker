@@ -3,6 +3,8 @@
  * Accepts a VersionSnapshot object.
  */
 
+import { escapeHtml, formatTime } from '../utils.js';
+
 export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = null, nonVisibleCommitCount = 0 } = {}) {
   if (!version) {
     return '<span class="status-badge"><span class="status-dot unavailable"></span>Ei tietoja</span>';
@@ -49,11 +51,6 @@ export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = 
   `;
 }
 
-function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
-
 function guessRepoPath(domain, type) {
   if (domain.includes('tampere') || domain.includes('hameenkyro') ||
       domain.includes('kangasala') || domain.includes('lempaala') ||
@@ -71,12 +68,3 @@ function guessRepoPath(domain, type) {
   return 'espoon-voltti/evaka';
 }
 
-export function formatTime(isoString) {
-  if (!isoString) return '';
-  const d = new Date(isoString);
-  const weekday = d.toLocaleDateString('fi', { weekday: 'short' });
-  const day = d.getDate();
-  const month = d.getMonth() + 1;
-  const hours = d.toLocaleTimeString('fi', { hour: '2-digit', minute: '2-digit', hour12: false });
-  return `${weekday} ${day}.${month}. klo ${hours}`;
-}

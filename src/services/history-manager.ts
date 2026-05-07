@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import { HistoryData, DeploymentEvent, PullRequest, Repository } from '../types.js';
+import { writeJsonFile } from '../utils/json-io.js';
 
 const ONE_MONTH_MS = 30 * 24 * 60 * 60 * 1000;
 
@@ -29,7 +30,7 @@ export function pruneOldEvents(history: HistoryData): HistoryData {
 }
 
 export function writeHistory(filePath: string, history: HistoryData): void {
-  fs.writeFileSync(filePath, JSON.stringify(history, null, 2));
+  writeJsonFile(filePath, history);
 }
 
 type BranchDetectionFn = (

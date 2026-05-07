@@ -3,6 +3,8 @@
  * Filters out hidden PRs (bots, no-changelog) by default (showBots=false).
  */
 
+import { escapeHtml, formatDate } from '../utils.js';
+
 const LABEL_MAP = {
   bugfix: { text: 'Korjaus', cssClass: 'label-bug' },
   enhancement: { text: 'Parannus', cssClass: 'label-enhancement' },
@@ -80,13 +82,4 @@ function renderDeployBadge(status) {
   return `<span class="deploy-badge ${status}">${labels[status] || status}</span>`;
 }
 
-function formatDate(isoString) {
-  if (!isoString) return '';
-  const d = new Date(isoString);
-  return `${d.getDate()}.${d.getMonth() + 1}.`;
-}
 
-function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}

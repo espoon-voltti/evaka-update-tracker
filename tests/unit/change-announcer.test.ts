@@ -1,13 +1,16 @@
+import type { MockedFunction } from 'vitest';
 import * as fs from 'fs';
 import {
   getTrackedRepositories,
   readRepoHeads,
+  writeRepoHeads,
   formatPRLine,
 } from '../../src/services/change-announcer';
-import { CityGroup, PullRequest } from '../../src/types';
+import { CityGroup, PullRequest, RepoHeadsData } from '../../src/types';
 
-jest.mock('fs');
-const mockedReadFileSync = fs.readFileSync as jest.MockedFunction<typeof fs.readFileSync>;
+vi.mock('fs');
+const mockedReadFileSync = fs.readFileSync as MockedFunction<typeof fs.readFileSync>;
+const mockedWriteFileSync = fs.writeFileSync as MockedFunction<typeof fs.writeFileSync>;
 
 const CORE_REPO = {
   owner: 'espoon-voltti',
@@ -124,6 +127,28 @@ describe('readRepoHeads', () => {
     const result = readRepoHeads('/some/path.json');
     expect(result.checkedAt).toBe('2026-03-09T10:00:00.000Z');
     expect(result.repos['espoon-voltti/evaka'].sha).toBe('abc123');
+  });
+});
+
+describe('writeRepoHeads', () => {
+  beforeEach(() => {
+    mockedWriteFileSync.mockReset();
+  });
+
+  it('writes repo-heads as 2-space-indented JSON', () => {
+    const data: RepoHeadsData = {
+      checkedAt: '2026-03-09T10:00:00.000Z',
+      repos: {
+        'espoon-voltti/evaka': { sha: 'abc123', branch: 'master' },
+      },
+    };
+
+    writeRepoHeads('/data/repo-heads.json', data);
+
+    expect(mockedWriteFileSync).toHaveBeenCalledWith(
+      '/data/repo-heads.json',
+      JSON.stringify(data, null, 2)
+    );
   });
 });
 

@@ -1,14 +1,15 @@
+import type { MockedFunction } from 'vitest';
 import { resolveEnvironment } from '../../src/services/version-resolver';
 import { fetchDeployedSha } from '../../src/api/status';
 import { getCommit, getSubmoduleRef } from '../../src/api/github';
 import { CityGroup, Environment, CommitInfo } from '../../src/types';
 
-jest.mock('../../src/api/status');
-jest.mock('../../src/api/github');
+vi.mock('../../src/api/status');
+vi.mock('../../src/api/github');
 
-const mockedFetchDeployedSha = fetchDeployedSha as jest.MockedFunction<typeof fetchDeployedSha>;
-const mockedGetCommit = getCommit as jest.MockedFunction<typeof getCommit>;
-const mockedGetSubmoduleRef = getSubmoduleRef as jest.MockedFunction<typeof getSubmoduleRef>;
+const mockedFetchDeployedSha = fetchDeployedSha as MockedFunction<typeof fetchDeployedSha>;
+const mockedGetCommit = getCommit as MockedFunction<typeof getCommit>;
+const mockedGetSubmoduleRef = getSubmoduleRef as MockedFunction<typeof getSubmoduleRef>;
 
 function makeCommitInfo(sha: string, overrides?: Partial<CommitInfo>): CommitInfo {
   return {
@@ -23,7 +24,7 @@ function makeCommitInfo(sha: string, overrides?: Partial<CommitInfo>): CommitInf
 
 describe('version-resolver', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
+    vi.resetAllMocks();
   });
 
   describe('resolveEnvironment', () => {

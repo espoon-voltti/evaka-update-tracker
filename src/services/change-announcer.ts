@@ -13,6 +13,8 @@ import { resolveChangeWebhookUrl } from '../config/change-routing.js';
 import { formatLabelTags } from '../config/label-map.js';
 import { getMunicipalityCityGroups, getMunicipalityNames } from '../utils/municipality-labels.js';
 import { UserNameCache, resolveNames } from '../services/name-resolver.js';
+import { toShortSha } from '../utils/sha.js';
+import { writeJsonFile } from '../utils/json-io.js';
 
 /**
  * Extracts unique repositories from city group configuration.
@@ -51,7 +53,7 @@ export function readRepoHeads(filePath: string): RepoHeadsData {
 }
 
 export function writeRepoHeads(filePath: string, data: RepoHeadsData): void {
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+  writeJsonFile(filePath, data);
 }
 
 /**
@@ -132,7 +134,7 @@ export async function announceChanges(
 
     // First run for this repo: store HEAD without announcing
     if (!previousSha) {
-      console.log(`[CHANGE] First run for ${repoKey}, storing HEAD ${currentHead.slice(0, 7)}`);
+      console.log(`[CHANGE] First run for ${repoKey}, storing HEAD ${toShortSha(currentHead)}`);
       updateHead();
       continue;
     }
@@ -142,7 +144,7 @@ export async function announceChanges(
       continue;
     }
 
-    console.log(`[CHANGE] ${repoKey}: ${previousSha.slice(0, 7)} → ${currentHead.slice(0, 7)}`);
+    console.log(`[CHANGE] ${repoKey}: ${toShortSha(previousSha)} → ${toShortSha(currentHead)}`);
 
     // Collect PRs between old and new HEAD
     const repoConfig = { owner: repo.owner, name: repo.name, type: repo.type, submodulePath: null, defaultBranch: repo.defaultBranch };

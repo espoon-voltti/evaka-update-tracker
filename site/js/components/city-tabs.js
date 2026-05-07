@@ -3,6 +3,8 @@
  * Renders tab for each city group plus Overview tab.
  */
 
+import { escapeHtml } from '../utils.js';
+
 export function renderCityTabs(cityGroups, activeCityId) {
   const overviewActive = activeCityId === null || activeCityId === undefined;
 
@@ -19,7 +21,3 @@ export function renderCityTabs(cityGroups, activeCityId) {
   return overviewTab + cityTabs.join('') + featuresTab;
 }
 
-function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}

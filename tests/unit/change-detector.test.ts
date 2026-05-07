@@ -1,3 +1,4 @@
+import type { MockedFunction } from 'vitest';
 import {
   readPreviousData,
   detectChanges,
@@ -12,9 +13,9 @@ import {
 } from '../../src/types';
 import * as fs from 'fs';
 
-jest.mock('fs');
+vi.mock('fs');
 
-const mockedReadFileSync = fs.readFileSync as jest.MockedFunction<typeof fs.readFileSync>;
+const mockedReadFileSync = fs.readFileSync as MockedFunction<typeof fs.readFileSync>;
 
 function makeCommitInfo(sha: string): CommitInfo {
   return {
@@ -55,7 +56,7 @@ function makePR(number: number, repoType: 'core' | 'wrapper'): PullRequest {
 
 describe('change-detector', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
+    vi.resetAllMocks();
   });
 
   describe('readPreviousData', () => {
@@ -110,6 +111,7 @@ describe('change-detector', () => {
       expect(events[0].cityGroupId).toBe('espoo');
       expect(events[0].newCommit.sha).toBe(newCoreSha);
       expect(events[0].previousCommit?.sha).toBe(prevCoreSha);
+      expect(events[0].previousCommit?.shortSha).toBe(prevCoreSha.slice(0, 7));
       expect(events[0].includedPRs).toHaveLength(1);
       expect(events[0].includedPRs[0].number).toBe(42);
     });
@@ -174,12 +176,14 @@ describe('change-detector', () => {
       expect(wrapperEvent).toBeDefined();
       expect(wrapperEvent!.newCommit.sha).toBe(newWrapperSha);
       expect(wrapperEvent!.previousCommit?.sha).toBe(prevWrapperSha);
+      expect(wrapperEvent!.previousCommit?.shortSha).toBe(prevWrapperSha.slice(0, 7));
       expect(wrapperEvent!.includedPRs).toHaveLength(1);
       expect(wrapperEvent!.includedPRs[0].number).toBe(10);
 
       expect(coreEvent).toBeDefined();
       expect(coreEvent!.newCommit.sha).toBe(newCoreSha);
       expect(coreEvent!.previousCommit?.sha).toBe(prevCoreSha);
+      expect(coreEvent!.previousCommit?.shortSha).toBe(prevCoreSha.slice(0, 7));
       expect(coreEvent!.includedPRs).toHaveLength(1);
       expect(coreEvent!.includedPRs[0].number).toBe(20);
     });

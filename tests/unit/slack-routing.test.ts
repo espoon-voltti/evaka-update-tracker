@@ -1,31 +1,13 @@
 import { resolveWebhookUrl, cityGroupIdToEnvVar } from '../../src/config/slack-routing';
+import { setupEnvCleanup } from '../helpers/env-setup';
 
-const ENV_VARS_TO_CLEAN = [
+setupEnvCleanup([
   'SLACK_WEBHOOK_URL',
   'SLACK_WEBHOOK_URL_ESPOO',
   'SLACK_WEBHOOK_URL_TAMPERE_REGION',
   'SLACK_WEBHOOK_URL_OULU',
   'SLACK_WEBHOOK_URL_TURKU',
-];
-
-const savedEnv: Record<string, string | undefined> = {};
-
-beforeEach(() => {
-  for (const key of ENV_VARS_TO_CLEAN) {
-    savedEnv[key] = process.env[key];
-    delete process.env[key];
-  }
-});
-
-afterEach(() => {
-  for (const key of ENV_VARS_TO_CLEAN) {
-    if (savedEnv[key] === undefined) {
-      delete process.env[key];
-    } else {
-      process.env[key] = savedEnv[key];
-    }
-  }
-});
+]);
 
 describe('cityGroupIdToEnvVar', () => {
   it('converts simple city group ID', () => {

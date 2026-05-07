@@ -1,3 +1,4 @@
+import type { MockedFunction } from 'vitest';
 import * as fs from 'fs';
 import {
   loadNameCache,
@@ -7,9 +8,9 @@ import {
 } from '../../src/services/name-resolver';
 import { PullRequest } from '../../src/types';
 
-jest.mock('fs');
-const mockedReadFileSync = fs.readFileSync as jest.MockedFunction<typeof fs.readFileSync>;
-const mockedWriteFileSync = fs.writeFileSync as jest.MockedFunction<typeof fs.writeFileSync>;
+vi.mock('fs');
+const mockedReadFileSync = fs.readFileSync as MockedFunction<typeof fs.readFileSync>;
+const mockedWriteFileSync = fs.writeFileSync as MockedFunction<typeof fs.writeFileSync>;
 
 function makePR(author: string, isBot: boolean = false): PullRequest {
   return {
@@ -58,7 +59,7 @@ describe('resolveNames', () => {
   it('uses cached name when available', async () => {
     const pr = makePR('akheron');
     const cache: UserNameCache = { akheron: 'Petri Lehtinen' };
-    const getUser = jest.fn();
+    const getUser = vi.fn();
 
     await resolveNames([pr], cache, getUser);
 
@@ -69,7 +70,7 @@ describe('resolveNames', () => {
   it('uses cached null (no profile name) without re-fetching', async () => {
     const pr = makePR('noname-user');
     const cache: UserNameCache = { 'noname-user': null };
-    const getUser = jest.fn();
+    const getUser = vi.fn();
 
     await resolveNames([pr], cache, getUser);
 
@@ -80,7 +81,7 @@ describe('resolveNames', () => {
   it('fetches name from API for uncached author and updates cache', async () => {
     const pr = makePR('newdev');
     const cache: UserNameCache = {};
-    const getUser = jest.fn().mockResolvedValue('New Developer');
+    const getUser = vi.fn().mockResolvedValue('New Developer');
 
     await resolveNames([pr], cache, getUser);
 
@@ -92,7 +93,7 @@ describe('resolveNames', () => {
   it('caches null when API returns null (no profile name)', async () => {
     const pr = makePR('anonymous');
     const cache: UserNameCache = {};
-    const getUser = jest.fn().mockResolvedValue(null);
+    const getUser = vi.fn().mockResolvedValue(null);
 
     await resolveNames([pr], cache, getUser);
 
@@ -103,7 +104,7 @@ describe('resolveNames', () => {
   it('skips bot PRs without API call', async () => {
     const pr = makePR('dependabot[bot]', true);
     const cache: UserNameCache = {};
-    const getUser = jest.fn();
+    const getUser = vi.fn();
 
     await resolveNames([pr], cache, getUser);
 
@@ -115,8 +116,8 @@ describe('resolveNames', () => {
   it('leaves authorName null and does not cache on API failure', async () => {
     const pr = makePR('failuser');
     const cache: UserNameCache = {};
-    const getUser = jest.fn().mockRejectedValue(new Error('Network error'));
-    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    const getUser = vi.fn().mockRejectedValue(new Error('Network error'));
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation();
 
     await resolveNames([pr], cache, getUser);
 
@@ -134,7 +135,7 @@ describe('resolveNames', () => {
       makePR('new-dev'), // duplicate author
     ];
     const cache: UserNameCache = { 'cached-dev': 'Cached Developer' };
-    const getUser = jest.fn().mockResolvedValue('New Dev Name');
+    const getUser = vi.fn().mockResolvedValue('New Dev Name');
 
     await resolveNames(prs, cache, getUser);
 
