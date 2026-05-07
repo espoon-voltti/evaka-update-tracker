@@ -588,6 +588,18 @@ details:not([open]) > .history-env-heading::before {
   border: 1px solid #fed7aa;
 }
 
+.newer-commit-sha {
+  font-family: 'SF Mono', SFMono-Regular, Consolas, monospace;
+  font-size: 0.6875rem;
+  padding: 1px 5px;
+  border-radius: 0.25rem;
+  background: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
 .history-pr-count {
   font-size: 0.8125rem;
   font-weight: 500;

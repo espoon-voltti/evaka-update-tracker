@@ -3,7 +3,7 @@
  * Accepts a VersionSnapshot object.
  */
 
-export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = null } = {}) {
+export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = null, nonVisibleCommitCount = 0 } = {}) {
   if (!version) {
     return '<span class="status-badge"><span class="status-dot unavailable"></span>Ei tietoja</span>';
   }
@@ -35,10 +35,15 @@ export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = 
     ? `<span class="pr-description">${escapeHtml(latestPRTitle)}</span>`
     : commit.shortSha;
 
+  const newerBadge = nonVisibleCommitCount > 0
+    ? `<span class="newer-commit-sha" title="Uudempi versio, ei näkyviä muutoksia tälle kaupungille">+${nonVisibleCommitCount}</span>`
+    : '';
+
   return `
     <span class="status-badge">
       ${dot}
       <a class="commit-link" href="${commitUrl}" target="_blank" rel="noopener">${linkText}</a>
+      ${newerBadge}
       <span class="checked-at">${displayTime}</span>
     </span>
   `;

@@ -117,6 +117,30 @@ function findLatestPRTitle(city, envType, historyEvents) {
     || findLatestNonBotPRFromEvents(historyEvents, city, 'staging');
 }
 
+/**
+ * Count distinct staging commits (by SHA) that have no visible PRs for this city,
+ * starting from the current commit back to the last commit that did have visible PRs.
+ * Returns 0 when the current commit itself introduced a visible change.
+ */
+function countNonVisibleStagingCommits(historyEvents, city, envType, commitSha) {
+  if (!commitSha) return 0;
+  const envIds = city.environments.filter((e) => e.type === envType).map((e) => e.id);
+  const events = historyEvents
+    .filter((e) => e.cityGroupId === city.id && envIds.includes(e.environmentId))
+    .sort((a, b) => new Date(b.detectedAt) - new Date(a.detectedAt));
+
+  const seenShas = new Set();
+  let count = 0;
+  for (const event of events) {
+    const sha = event.newCommit?.sha;
+    if (!sha || seenShas.has(sha)) continue;
+    seenShas.add(sha);
+    if ((event.includedPRs || []).some((pr) => !pr.isHidden)) break;
+    count++;
+  }
+  return count;
+}
+
 export function renderCityDetail(city, { showBots = false } = {}, historyEvents = [], featureData = null) {
   const branchInfo = findStagingBranchInfo(historyEvents, city);
 
@@ -128,12 +152,16 @@ export function renderCityDetail(city, { showBots = false } = {}, historyEvents 
 
     // For branch deployments, show branch name instead of PR title in staging badge
     let latestPRTitle;
+    let nonVisibleCommitCount = 0;
     if (env.type === 'staging' && branchInfo) {
       latestPRTitle = null; // Don't show misleading PR title
     } else {
       latestPRTitle = findLatestPRTitle(city, env.type, historyEvents);
+      if (env.type === 'staging' && latestPRTitle) {
+        nonVisibleCommitCount = countNonVisibleStagingCommits(historyEvents, city, 'staging', commitSha);
+      }
     }
-    const badge = renderStatusBadge(env.version, { detectedAt, latestPRTitle });
+    const badge = renderStatusBadge(env.version, { detectedAt, latestPRTitle, nonVisibleCommitCount });
 
     // Branch indicator for staging
     let branchIndicator = '';

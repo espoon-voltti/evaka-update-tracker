@@ -80,9 +80,25 @@ function findEnvInfo(city, env, historyEvents) {
     }
   }
 
+  // Count distinct staging commits with no visible PRs since the last relevant one.
+  let nonVisibleCommitCount = 0;
+  if (stagingTitle) {
+    const seenShas = new Set();
+    for (const event of historyEvents
+      .filter((e) => e.cityGroupId === city.id && stagingEnvIds.includes(e.environmentId))
+      .sort((a, b) => new Date(b.detectedAt) - new Date(a.detectedAt))) {
+      const sha = event.newCommit?.sha;
+      if (!sha || seenShas.has(sha)) continue;
+      seenShas.add(sha);
+      if ((event.includedPRs || []).some((pr) => !pr.isHidden)) break;
+      nonVisibleCommitCount++;
+    }
+  }
+
   return {
     latestPRTitle: stagingTitle,
     detectedAt: stagingEvent?.detectedAt || null,
+    nonVisibleCommitCount,
   };
 }
 
@@ -120,13 +136,14 @@ function renderCityCard(city, historyEvents) {
 
   const envSections = city.environments.map((env) => {
     const label = env.type === 'production' ? 'Tuotanto' : 'Testaus';
-    let { latestPRTitle, detectedAt } = findEnvInfo(city, env, historyEvents);
+    let { latestPRTitle, detectedAt, nonVisibleCommitCount } = findEnvInfo(city, env, historyEvents);
 
     // For branch deployments, don't show misleading PR title
     if (env.type === 'staging' && branchInfo) {
       latestPRTitle = null;
+      nonVisibleCommitCount = 0;
     }
-    const badge = renderStatusBadge(env.version, { latestPRTitle, detectedAt });
+    const badge = renderStatusBadge(env.version, { latestPRTitle, detectedAt, nonVisibleCommitCount });
 
     let branchIndicator = '';
     if (env.type === 'staging' && branchInfo) {

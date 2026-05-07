@@ -336,6 +336,38 @@ export async function generateTestData(): Promise<string> {
       isDefaultBranch: false,
       branch: 'feature/test-branch',
     });
+
+    // Inject two non-visible staging events for Oulu to test the +N newer-commit pill.
+    // These must be timestamped AFTER the pipeline-generated Oulu staging event so that
+    // countNonVisibleStagingCommits sees them as the most recent commits (no visible PRs).
+    // The older pipeline event (5ff94c8) has visible PRs, so the count should be 2.
+    const futureDate1 = new Date(Date.now() + 2 * 24 * 3600 * 1000).toISOString();
+    const futureDate2 = new Date(Date.now() + 3 * 24 * 3600 * 1000).toISOString();
+    history.events.push(
+      {
+        id: `${futureDate1}_oulu-staging_core_nopr1`,
+        environmentId: 'oulu-staging',
+        cityGroupId: 'oulu',
+        detectedAt: futureDate1,
+        previousCommit: { sha: OULU_CORE_STAGING_SHA, shortSha: '5ff94c8', message: '', date: '', author: '' },
+        newCommit: { sha: 'ccc2222222222222222222222222222222222222', shortSha: 'ccc2222', message: 'Dependency bump', date: futureDate1, author: 'dependabot[bot]' },
+        includedPRs: [],
+        repoType: 'core',
+        isDefaultBranch: true,
+      },
+      {
+        id: `${futureDate2}_oulu-staging_core_nopr2`,
+        environmentId: 'oulu-staging',
+        cityGroupId: 'oulu',
+        detectedAt: futureDate2,
+        previousCommit: { sha: 'ccc2222222222222222222222222222222222222', shortSha: 'ccc2222', message: '', date: '', author: '' },
+        newCommit: { sha: 'ddd3333333333333333333333333333333333333', shortSha: 'ddd3333', message: 'Config update', date: futureDate2, author: 'oulu-dev' },
+        includedPRs: [],
+        repoType: 'core',
+        isDefaultBranch: true,
+      }
+    );
+
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
 
     // Write feature-flags.json AFTER pipeline (overwrite the empty one from failed collection)
