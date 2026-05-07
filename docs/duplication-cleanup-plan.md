@@ -45,10 +45,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Action: added `src/utils/sha.ts` exporting `SHORT_SHA_LENGTH = 7` and `toShortSha(sha)`. All 5 inline `sha.slice(0, 7)` call sites in `src/` now use `toShortSha()`. `tests/` keeps its own `sha.slice(0, 7)` calls — those are fixture/expected-value construction, not production logic, so the helper isn't needed there.
 - **Test gate done:** added `tests/unit/sha.test.ts` (5 cases: truncation, length constant, exact 7-char output, short-input passthrough, exact-length passthrough). Added two new assertions to existing `change-detector.test.ts` (`previousCommit?.shortSha` for both core and wrapper synthesized commits) — these passed against the pre-refactor code, locking in the truncation value before the change. github.ts:57 was already covered by `tests/integration/github-api.test.ts:46`. 334 unit + 63 E2E passing; lint clean.
 
-### 7. [ ] Move `cacheBustUrl` to a shared module
+### 7. [x] Move `cacheBustUrl` to a shared module
 - Sites: `site/js/app.js:13`, `site/js/auto-refresh.js:44`
-- Action: export from a shared `utils.js`; import in both.
-- **Test gate:** confirm `tests/e2e/auto-refresh.spec.ts` exercises the cache-busted fetch path; if not, add an assertion that the fetched URL contains a `?t=` query parameter.
+- Action: moved to `site/js/utils.js`; both consumers now import. Local copies deleted.
+- **Test gate done:** added `tests/unit/cache-bust-url.test.ts` (3 cases) — uses `jest.spyOn(Date, 'now')` to lock in the exact `?t=<ms>` shape and that each call reads a fresh `Date.now()`. The existing `tests/e2e/auto-refresh.spec.ts` exercises the runtime path indirectly (data-change detection only works if cache-busting works), but doesn't directly assert the URL — the unit test now does. 337 unit + 63 E2E passing; lint clean.
 
 ### 8. [ ] Extract `writeJsonFile` helper
 - Sites: `src/services/change-announcer.ts:54`, `src/services/history-manager.ts:32`, `src/services/name-resolver.ts:16`

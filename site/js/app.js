@@ -5,14 +5,11 @@
 import { addRoute, setNotFound, startRouter, navigate, handleRoute } from './router.js';
 import { renderOverview, bindOverviewEvents } from './components/overview.js';
 import { initCache, startAutoRefresh } from './auto-refresh.js';
+import { cacheBustUrl } from './utils.js';
 
 let currentData = null;
 const appEl = () => document.getElementById('app');
 const generatedAtEl = () => document.getElementById('generated-at');
-
-function cacheBustUrl(url) {
-  return `${url}?t=${Date.now()}`;
-}
 
 function updateGeneratedAt() {
   if (generatedAtEl() && currentData?.generatedAt) {

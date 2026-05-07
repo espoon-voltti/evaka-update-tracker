@@ -1,5 +1,7 @@
 export function escapeHtml(value: unknown): string;
 
+export function cacheBustUrl(url: string): string;
+
 export function formatDate(isoString: string | null | undefined): string;
 
 export function formatTime(isoString: string | null | undefined): string;

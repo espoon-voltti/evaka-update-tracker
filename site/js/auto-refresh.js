@@ -11,6 +11,8 @@
  * - Overlap guard: skips a cycle if the previous check is still in flight.
  */
 
+import { cacheBustUrl } from './utils.js';
+
 /** Polling interval in milliseconds. Override via window.__autoRefreshInterval for testing. */
 export const DEFAULT_INTERVAL = 30_000;
 
@@ -40,10 +42,6 @@ function parseSiteVersion(text) {
 
 let intervalId = null;
 let inProgress = false;
-
-function cacheBustUrl(url) {
-  return `${url}?t=${Date.now()}`;
-}
 
 /**
  * Initialize the cache with the current data file contents.

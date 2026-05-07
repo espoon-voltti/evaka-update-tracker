@@ -8,6 +8,15 @@ export function escapeHtml(str) {
 }
 
 /**
+ * Append a cache-busting `?t=<Date.now()>` query parameter to `url`.
+ * Used for fetches that need to bypass the browser HTTP cache (e.g. polled
+ * data files where stale responses would defeat auto-refresh).
+ */
+export function cacheBustUrl(url) {
+  return `${url}?t=${Date.now()}`;
+}
+
+/**
  * Format an ISO date string as Finnish short date "D.M." (no zero padding).
  * Returns '' for nullish/empty input.
  */
