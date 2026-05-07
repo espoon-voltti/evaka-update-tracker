@@ -2,6 +2,7 @@ import {
   collectPRsBetween,
   collectPendingPRs,
   filterHumanPRs,
+  getVisiblePRs,
   buildPRTrack,
 } from '../../src/services/pr-collector';
 import {
@@ -146,6 +147,56 @@ describe('pr-collector', () => {
       expect(result).toHaveLength(5);
       expect(result[0].number).toBe(1);
       expect(result[4].number).toBe(5);
+    });
+
+    it('should filter out non-bot PRs marked hidden (e.g. no-changelog label)', () => {
+      const noChangelogPR: PullRequest = {
+        ...makePR(99, false),
+        isHidden: true,
+        labels: ['no-changelog'],
+      };
+      const result = filterHumanPRs([noChangelogPR, makePR(1, false)]);
+      expect(result.map((pr) => pr.number)).toEqual([1]);
+    });
+  });
+
+  describe('getVisiblePRs', () => {
+    function makePR(number: number, isHidden: boolean): PullRequest {
+      return {
+        number,
+        title: `PR #${number}`,
+        author: 'developer',
+        authorName: null,
+        mergedAt: '2026-03-01T12:00:00Z',
+        repository: 'Tampere/trevaka',
+        repoType: 'wrapper',
+        isBot: false,
+        isHidden,
+        url: `https://github.com/Tampere/trevaka/pull/${number}`,
+        labels: [],
+      };
+    }
+
+    it('returns visible PRs and drops hidden ones', () => {
+      const prs = [makePR(1, false), makePR(2, true), makePR(3, false)];
+      expect(getVisiblePRs(prs).map((pr) => pr.number)).toEqual([1, 3]);
+    });
+
+    it('does not slice or limit (returns all visible PRs)', () => {
+      const prs = Array.from({ length: 20 }, (_, i) => makePR(i + 1, false));
+      expect(getVisiblePRs(prs)).toHaveLength(20);
+    });
+
+    it('preserves input order and item identity', () => {
+      const a = makePR(1, false);
+      const b = makePR(2, false);
+      const result = getVisiblePRs([a, b]);
+      expect(result[0]).toBe(a);
+      expect(result[1]).toBe(b);
+    });
+
+    it('returns empty array for empty input', () => {
+      expect(getVisiblePRs([])).toEqual([]);
     });
   });
 

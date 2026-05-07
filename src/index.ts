@@ -4,7 +4,7 @@ import { config as loadEnv } from 'dotenv';
 import { getCityGroups } from './config/instances.js';
 import { initGitHubClient, isCommitOnDefaultBranch, getPullRequestsForCommit, getPullRequest } from './api/github.js';
 import { resolveEnvironment, ResolvedEnvironment } from './services/version-resolver.js';
-import { collectPRsBetween, collectPendingPRs, buildPRTrack } from './services/pr-collector.js';
+import { collectPRsBetween, collectPendingPRs, buildPRTrack, getVisiblePRs } from './services/pr-collector.js';
 import { readPreviousData, detectChanges, buildUpdatedPrevious, BranchInfo } from './services/change-detector.js';
 import { deploySite } from './services/site-deployer.js';
 import { sendSlackNotification } from './api/slack.js';
@@ -362,8 +362,8 @@ export async function run() {
         const cityGroup = cityGroupsData.find((cg) => cg.id === firstEvent.cityGroupId);
         if (cityGroup) {
           const hasProduction = cityGroup.environments.some((e) => e.type === 'production');
-          const coreInStaging = cityGroup.prTracks.core.inStaging.filter((pr) => !pr.isHidden);
-          const wrapperInStaging = cityGroup.prTracks.wrapper?.inStaging.filter((pr) => !pr.isHidden) ?? [];
+          const coreInStaging = getVisiblePRs(cityGroup.prTracks.core.inStaging);
+          const wrapperInStaging = cityGroup.prTracks.wrapper ? getVisiblePRs(cityGroup.prTracks.wrapper.inStaging) : [];
 
           // Check if any event in this environment is a branch deployment
           const branchEvent = envEvents.find((e) => e.isDefaultBranch === false);

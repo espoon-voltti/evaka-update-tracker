@@ -64,10 +64,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Action: added `src/utils/repo-type.ts` with `partitionByRepoType<T extends { repoType: 'core' \| 'wrapper' }>(items)` returning `{ core: T[], wrapper: T[] }`. Single forward pass; preserves order; doesn't mutate input.
 - **Test gate done:** added `tests/unit/repo-type.test.ts` (6 cases — empty, mixed, order preservation, single-bucket, no-mutation, identity preservation). Existing `change-detector.test.ts:165–185` already asserts that wrapper PR `#10` lands in the wrapper event and core PR `#20` lands in the core event with `.toHaveLength(1)` on each — that implicit cross-contamination check carries forward. 347 unit + 63 E2E passing; lint + typecheck clean.
 
-### 10. [ ] Replace `!pr.isHidden` checks with `getVisiblePRs`
-- Sites: `src/services/pr-collector.ts:93`, `src/api/slack.ts:63`, `src/index.ts:364-365`, `src/services/name-resolver.ts:33`
-- Action: add a single `getVisiblePRs(prs)` (or `isVisiblePR(pr)`) helper; route all callers through it.
-- **Test gate:** verify `tests/unit/pr-collector.test.ts` covers the visibility filter for both bot PRs and `no-changelog` labelled PRs. Add a Slack-side test asserting hidden PRs do not appear in messages.
+### 10. [x] Replace `!pr.isHidden` checks with `getVisiblePRs`
+- Sites migrated: `src/api/slack.ts:63`, `src/index.ts:365-366`, `src/services/name-resolver.ts:33-36` (rewrote the for-loop's `if (pr.isHidden) continue;` as `for (const pr of getVisiblePRs(prs))`).
+- Action: added `getVisiblePRs(prs)` to `src/services/pr-collector.ts` (alongside the existing `filterHumanPRs`, which now delegates: `getVisiblePRs(prs).slice(0, limit)`). Single source of truth for "what counts as a visible PR" lives next to `extractPRsFromCommits` where the `isHidden` flag is set. Only one `pr.isHidden` reference remains in `src/`: the canonical implementation inside `getVisiblePRs`.
+- **Test gate done:** added a `no-changelog`-labelled PR test to `filterHumanPRs` describe block (the existing tests only varied `isBot`/`isHidden` together; this case verifies the second reason a PR is hidden — labels). Added a `getVisiblePRs` describe block (4 cases: filter, no-limit, identity preservation, empty). `slack-api.test.ts:252` already asserted hidden PRs are absent from Slack messages — kept as is. 352 unit + 63 E2E passing; lint + typecheck clean.
 
 ---
 

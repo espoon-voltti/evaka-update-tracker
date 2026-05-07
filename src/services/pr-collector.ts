@@ -89,8 +89,16 @@ export async function collectPendingPRs(
   }
 }
 
+/**
+ * Drop PRs that are hidden from end-user views (bots, no-changelog labels, etc).
+ * `isHidden` is the canonical visibility flag, set in `extractPRsFromCommits`.
+ */
+export function getVisiblePRs(prs: ReadonlyArray<PullRequest>): PullRequest[] {
+  return prs.filter((pr) => !pr.isHidden);
+}
+
 export function filterHumanPRs(prs: PullRequest[], limit: number = MAX_PRS_PER_TRACK): PullRequest[] {
-  return prs.filter((pr) => !pr.isHidden).slice(0, limit);
+  return getVisiblePRs(prs).slice(0, limit);
 }
 
 export function buildPRTrack(

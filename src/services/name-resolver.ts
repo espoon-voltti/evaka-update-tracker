@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import { PullRequest } from '../types.js';
 import { writeJsonFile } from '../utils/json-io.js';
+import { getVisiblePRs } from './pr-collector.js';
 
 export type UserNameCache = Record<string, string | null>;
 
@@ -30,11 +31,7 @@ export async function resolveNames(
   cache: UserNameCache,
   getUser: (username: string) => Promise<string | null>
 ): Promise<void> {
-  for (const pr of prs) {
-    if (pr.isHidden) {
-      continue;
-    }
-
+  for (const pr of getVisiblePRs(prs)) {
     if (pr.author in cache) {
       pr.authorName = cache[pr.author];
       continue;

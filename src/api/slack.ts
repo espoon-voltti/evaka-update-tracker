@@ -3,6 +3,7 @@ import { DeploymentEvent, StagingContext } from '../types.js';
 import { withRetry, RETRY_WEBHOOK } from '../utils/retry.js';
 import { formatFinnishDateTime } from '../utils/date-format.js';
 import { formatLabelTags } from '../config/label-map.js';
+import { getVisiblePRs } from '../services/pr-collector.js';
 
 const repoTypeDisplayNames: Record<string, string> = {
   core: 'ydin',
@@ -60,7 +61,7 @@ function buildChangesSection(
     };
   }
 
-  const humanPRs = event.includedPRs.filter((pr) => !pr.isHidden);
+  const humanPRs = getVisiblePRs(event.includedPRs);
 
   const prLines = humanPRs.slice(0, 50).map((pr) => {
     const tags = formatLabelTags(pr.labels);
