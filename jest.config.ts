@@ -9,6 +9,7 @@ const config: Config = {
     '^.+\\.ts$': ['ts-jest', {
       diagnostics: { ignoreCodes: [151002] },
     }],
+    '^.+\\.js$': '<rootDir>/tests/jest-js-transformer.cjs',
   },
   testMatch: ['**/*.test.ts'],
   setupFiles: ['<rootDir>/tests/setup.ts'],

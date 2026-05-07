@@ -3,6 +3,8 @@
  * Accepts a VersionSnapshot object.
  */
 
+import { escapeHtml } from '../utils.js';
+
 export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = null, nonVisibleCommitCount = 0 } = {}) {
   if (!version) {
     return '<span class="status-badge"><span class="status-dot unavailable"></span>Ei tietoja</span>';
@@ -47,11 +49,6 @@ export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = 
       <span class="checked-at">${displayTime}</span>
     </span>
   `;
-}
-
-function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
 function guessRepoPath(domain, type) {

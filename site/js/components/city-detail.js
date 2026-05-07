@@ -5,6 +5,7 @@
 import { renderStatusBadge } from './status-badge.js';
 import { renderPRList } from './pr-list.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
+import { escapeHtml } from '../utils.js';
 
 /**
  * Merge PRs from core and wrapper repos into a single chronological list.
@@ -353,9 +354,4 @@ function renderFeatureSummary(city, featureData) {
       </details>
     </div>
   `;
-}
-
-function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }

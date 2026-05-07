@@ -7,6 +7,7 @@
 import { renderPRList } from './pr-list.js';
 import { formatTime } from './status-badge.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
+import { escapeHtml } from '../utils.js';
 
 /**
  * Group events into releases: events sharing the same detectedAt + env type
@@ -243,9 +244,4 @@ export function bindHistoryViewEvents(city) {
       setQueryParam('showBots', current ? null : 'true');
     });
   }
-}
-
-function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }

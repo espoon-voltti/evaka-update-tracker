@@ -4,6 +4,7 @@
  */
 
 import { getQueryParam } from '../router.js';
+import { escapeHtml } from '../utils.js';
 
 /**
  * City groups to display as columns.
@@ -304,13 +305,4 @@ function formatFinnishDate(isoString) {
   if (!isoString) return '';
   const d = new Date(isoString);
   return `${d.getDate()}.${d.getMonth() + 1}.`;
-}
-
-function escapeHtml(str) {
-  if (!str) return '';
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
 }

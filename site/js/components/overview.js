@@ -4,6 +4,7 @@
 
 import { renderStatusBadge } from './status-badge.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
+import { escapeHtml } from '../utils.js';
 
 export function renderOverview(data, historyEvents = []) {
   if (!data || !data.cityGroups) {
@@ -184,11 +185,6 @@ function renderCityCard(city, historyEvents) {
       ${envSections.join('')}
     </div>
   `;
-}
-
-function escapeHtml(str) {
-  if (!str) return '';
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
 export function bindOverviewEvents() {
