@@ -356,7 +356,7 @@ describe('sendSlackNotification', () => {
           isBot: false,
       isHidden: false,
           url: 'https://github.com/espoon-voltti/evaka/pull/123',
-          labels: ['bug'],
+          labels: ['bugfix'],
         },
       ],
     };
@@ -395,7 +395,7 @@ describe('sendSlackNotification', () => {
           isBot: false,
       isHidden: false,
           url: 'https://github.com/espoon-voltti/evaka/pull/124',
-          labels: ['bug', 'frontend'],
+          labels: ['bugfix', 'frontend'],
         },
       ],
     };

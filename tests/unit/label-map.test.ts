@@ -5,8 +5,8 @@ describe('SLACK_LABEL_MAP', () => {
     expect(Object.keys(SLACK_LABEL_MAP)).toHaveLength(11);
   });
 
-  it('maps bug to Korjaus', () => {
-    expect(SLACK_LABEL_MAP['bug']).toBe('Korjaus');
+  it('maps bugfix to Korjaus', () => {
+    expect(SLACK_LABEL_MAP['bugfix']).toBe('Korjaus');
   });
 
   it('maps tech to Tekninen', () => {
@@ -20,11 +20,11 @@ describe('SLACK_LABEL_MAP', () => {
 
 describe('formatLabelTags', () => {
   it('formats a single mapped label', () => {
-    expect(formatLabelTags(['bug'])).toBe('[Korjaus]');
+    expect(formatLabelTags(['bugfix'])).toBe('[Korjaus]');
   });
 
   it('formats multiple mapped labels with space separation', () => {
-    expect(formatLabelTags(['bug', 'frontend'])).toBe('[Korjaus] [Käyttöliittymä]');
+    expect(formatLabelTags(['bugfix', 'frontend'])).toBe('[Korjaus] [Käyttöliittymä]');
   });
 
   it('returns empty string for empty array', () => {
@@ -36,7 +36,7 @@ describe('formatLabelTags', () => {
   });
 
   it('ignores unmapped labels', () => {
-    expect(formatLabelTags(['wontfix', 'bug'])).toBe('[Korjaus]');
+    expect(formatLabelTags(['wontfix', 'bugfix'])).toBe('[Korjaus]');
   });
 
   it('returns empty string when all labels are unmapped', () => {

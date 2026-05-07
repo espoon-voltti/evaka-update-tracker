@@ -4,7 +4,7 @@
  */
 
 const LABEL_MAP = {
-  bug: { text: 'Korjaus', cssClass: 'label-bug' },
+  bugfix: { text: 'Korjaus', cssClass: 'label-bug' },
   enhancement: { text: 'Parannus', cssClass: 'label-enhancement' },
   tech: { text: 'Tekninen', cssClass: 'label-tech' },
   breaking: { text: 'Päivitystoimia', cssClass: 'label-breaking' },

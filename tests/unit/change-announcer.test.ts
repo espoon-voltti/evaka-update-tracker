@@ -166,7 +166,7 @@ describe('formatPRLine', () => {
   });
 
   it('includes label tags for PRs with a single label', () => {
-    const pr: PullRequest = { ...basePR, labels: ['bug'] };
+    const pr: PullRequest = { ...basePR, labels: ['bugfix'] };
     const text = formatPRLine(pr);
     expect(text).toContain('[Korjaus]');
     expect(text).toContain('#8628> [Korjaus] Testidatan');

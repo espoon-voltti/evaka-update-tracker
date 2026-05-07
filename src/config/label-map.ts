@@ -4,7 +4,7 @@
  * (enforced by tests/cross-check/label-map-sync.test.ts).
  */
 export const SLACK_LABEL_MAP: Record<string, string> = {
-  bug: 'Korjaus',
+  bugfix: 'Korjaus',
   enhancement: 'Parannus',
   tech: 'Tekninen',
   breaking: 'Päivitystoimia',
