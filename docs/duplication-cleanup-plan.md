@@ -55,10 +55,14 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Action: added `src/utils/json-io.ts` with `writeJsonFile<T>(filePath, data)`. The only remaining `JSON.stringify(_, null, 2)` in `src/` is the DRY_RUN stdout dump (`console.log` — not a file write).
 - **Test gate done:** existing tests covered `writeHistory` (loose `stringContaining` check) and `saveNameCache` (exact `JSON.stringify(cache, null, 2)` match). Added a new `writeRepoHeads` test in `change-announcer.test.ts` (was the only uncovered service write path) before refactoring. Added `tests/unit/json-io.test.ts` (3 cases including a literal-string check that locks indentation/newlines so future drift trips the test). The E2E pipeline exercises `current.json`, `previous.json`, `feature-flags.json` write paths and stayed green. 341 unit + 63 E2E passing; lint + typecheck clean.
 
-### 9. [ ] Replace ad-hoc `pr.repoType` filters with a partition helper
-- Sites: `src/services/change-detector.ts:53,72`, `src/index.ts:240`
-- Action: add `partitionByRepoType(prs)` returning `{ wrapper, core }` in `src/utils/` or `src/services/pr-collector.ts`.
-- **Test gate:** `tests/unit/change-detector.test.ts` should already exercise wrapper/core separation. Verify the test asserts the right PRs land on the right side; extend if not.
+### 9. [x] Replace ad-hoc `pr.repoType` filters with a partition helper
+- Sites refactored: `src/services/change-detector.ts:54,73` — both filter calls collapsed to a single `partitionByRepoType(includedPRs)` at the top of `detectChanges`.
+- Sites NOT refactored (different patterns the original audit conflated):
+  - `src/index.ts:241` — `event.repoType === 'wrapper' ? wrapperRepo : coreRepo` is a single-event *selector*, not an array partition. Would need a different helper; not worth abstracting one ternary.
+  - `src/api/slack.ts:17,20` — branch + `find()` on a single event's PRs.
+  - `src/config/change-routing.ts:13` — branch on a single value.
+- Action: added `src/utils/repo-type.ts` with `partitionByRepoType<T extends { repoType: 'core' \| 'wrapper' }>(items)` returning `{ core: T[], wrapper: T[] }`. Single forward pass; preserves order; doesn't mutate input.
+- **Test gate done:** added `tests/unit/repo-type.test.ts` (6 cases — empty, mixed, order preservation, single-bucket, no-mutation, identity preservation). Existing `change-detector.test.ts:165–185` already asserts that wrapper PR `#10` lands in the wrapper event and core PR `#20` lands in the core event with `.toHaveLength(1)` on each — that implicit cross-contamination check carries forward. 347 unit + 63 E2E passing; lint + typecheck clean.
 
 ### 10. [ ] Replace `!pr.isHidden` checks with `getVisiblePRs`
 - Sites: `src/services/pr-collector.ts:93`, `src/api/slack.ts:63`, `src/index.ts:364-365`, `src/services/name-resolver.ts:33`
