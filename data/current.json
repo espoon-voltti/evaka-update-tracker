@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T05:39:19.361Z",
+  "generatedAt": "2026-05-07T05:58:26.322Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-07T05:38:42.425Z",
+            "checkedAt": "2026-05-07T05:57:54.989Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-07T05:38:43.418Z",
+            "checkedAt": "2026-05-07T05:57:55.844Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-07T05:38:47.909Z",
+            "checkedAt": "2026-05-07T05:57:57.790Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -123,21 +123,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-07T05:38:59.190Z",
+            "checkedAt": "2026-05-07T05:58:06.328Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-              "shortSha": "9d08db0",
-              "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-              "date": "2026-05-06T04:42:23Z",
+              "sha": "bbdfdb928e7f82f632574bbd42427beb77e29971",
+              "shortSha": "bbdfdb9",
+              "message": "Merge pull request #2119 from Tampere/dependabot/submodules/evaka-fc4b304",
+              "date": "2026-05-07T04:38:02Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-              "shortSha": "c319237",
-              "message": "Fix re-tag on CI re-run (#9018)",
-              "date": "2026-05-05T14:06:05Z",
-              "author": "ilja-git"
+              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
+              "shortSha": "fc4b304",
+              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
+              "date": "2026-05-06T09:42:15Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -148,8 +148,7 @@
         "wrapper": {
           "repository": "Tampere/trevaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 2118,
               "title": "Disable tampere-dev employee AD login by pointing at a fake SAML entrypoint",
@@ -163,13 +162,13 @@
               "url": "https://github.com/Tampere/trevaka/pull/2118",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9014,
               "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
@@ -187,7 +186,8 @@
                 "employee-mobile"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -200,7 +200,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-07T05:39:13.475Z",
+            "checkedAt": "2026-05-07T05:58:21.041Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -219,7 +219,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-07T05:39:14.379Z",
+            "checkedAt": "2026-05-07T05:58:21.946Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -253,7 +253,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-07T05:39:16.209Z",
+            "checkedAt": "2026-05-07T05:58:23.590Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -272,7 +272,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-07T05:39:17.275Z",
+            "checkedAt": "2026-05-07T05:58:24.393Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
