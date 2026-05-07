@@ -1,6 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 import { CommitInfo } from '../types.js';
 import { withRetry, RETRY_GITHUB } from '../utils/retry.js';
+import { toShortSha } from '../utils/sha.js';
 
 // ETag cache: url -> { etag, data }
 const etagCache = new Map<string, { etag: string; data: unknown }>();
@@ -54,7 +55,7 @@ export async function getCommit(
 
     return {
       sha: data.sha,
-      shortSha: data.sha.slice(0, 7),
+      shortSha: toShortSha(data.sha),
       message: data.commit.message.split('\n')[0],
       date: data.commit.author.date,
       author: data.author?.login ?? data.commit.author.name,

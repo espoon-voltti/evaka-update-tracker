@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import { DeploymentEvent, PreviousData, PreviousVersionEntry, VersionSnapshot, PullRequest } from '../types.js';
+import { toShortSha } from '../utils/sha.js';
 
 export interface DetectionResult {
   events: DeploymentEvent[];
@@ -47,7 +48,7 @@ export function detectChanges(
       cityGroupId,
       detectedAt: now,
       previousCommit: prevWrapperSha
-        ? { sha: prevWrapperSha, shortSha: prevWrapperSha.slice(0, 7), message: '', date: '', author: '' }
+        ? { sha: prevWrapperSha, shortSha: toShortSha(prevWrapperSha), message: '', date: '', author: '' }
         : null,
       newCommit: version.wrapperCommit!,
       includedPRs: includedPRs.filter((pr) => pr.repoType === 'wrapper'),
@@ -66,7 +67,7 @@ export function detectChanges(
       cityGroupId,
       detectedAt: now,
       previousCommit: prevCoreSha
-        ? { sha: prevCoreSha, shortSha: prevCoreSha.slice(0, 7), message: '', date: '', author: '' }
+        ? { sha: prevCoreSha, shortSha: toShortSha(prevCoreSha), message: '', date: '', author: '' }
         : null,
       newCommit: version.coreCommit!,
       includedPRs: includedPRs.filter((pr) => pr.repoType === 'core'),

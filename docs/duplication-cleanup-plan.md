@@ -40,10 +40,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 
 ## Medium severity
 
-### 6. [ ] Centralize short-SHA truncation
+### 6. [x] Centralize short-SHA truncation
 - Sites: `src/api/github.ts:57`, `src/services/change-announcer.ts:135,145`, `src/services/change-detector.ts:50,69`
-- Action: rely on `CommitInfo.shortSha` everywhere, or extract `toShortSha(sha)` in `src/utils/`.
-- **Test gate:** unit-test that `change-detector` and `change-announcer` produce the expected short-SHA strings for known inputs (existing `change-detector.test.ts` likely covers part of this — verify before refactoring).
+- Action: added `src/utils/sha.ts` exporting `SHORT_SHA_LENGTH = 7` and `toShortSha(sha)`. All 5 inline `sha.slice(0, 7)` call sites in `src/` now use `toShortSha()`. `tests/` keeps its own `sha.slice(0, 7)` calls — those are fixture/expected-value construction, not production logic, so the helper isn't needed there.
+- **Test gate done:** added `tests/unit/sha.test.ts` (5 cases: truncation, length constant, exact 7-char output, short-input passthrough, exact-length passthrough). Added two new assertions to existing `change-detector.test.ts` (`previousCommit?.shortSha` for both core and wrapper synthesized commits) — these passed against the pre-refactor code, locking in the truncation value before the change. github.ts:57 was already covered by `tests/integration/github-api.test.ts:46`. 334 unit + 63 E2E passing; lint clean.
 
 ### 7. [ ] Move `cacheBustUrl` to a shared module
 - Sites: `site/js/app.js:13`, `site/js/auto-refresh.js:44`
