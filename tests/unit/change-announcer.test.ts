@@ -1,3 +1,4 @@
+import type { MockedFunction } from 'vitest';
 import * as fs from 'fs';
 import {
   getTrackedRepositories,
@@ -7,9 +8,9 @@ import {
 } from '../../src/services/change-announcer';
 import { CityGroup, PullRequest, RepoHeadsData } from '../../src/types';
 
-jest.mock('fs');
-const mockedReadFileSync = fs.readFileSync as jest.MockedFunction<typeof fs.readFileSync>;
-const mockedWriteFileSync = fs.writeFileSync as jest.MockedFunction<typeof fs.writeFileSync>;
+vi.mock('fs');
+const mockedReadFileSync = fs.readFileSync as MockedFunction<typeof fs.readFileSync>;
+const mockedWriteFileSync = fs.writeFileSync as MockedFunction<typeof fs.writeFileSync>;
 
 const CORE_REPO = {
   owner: 'espoon-voltti',

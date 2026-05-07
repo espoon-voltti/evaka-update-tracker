@@ -1,3 +1,4 @@
+import type { MockedFunction } from 'vitest';
 import {
   collectPRsBetween,
   collectPendingPRs,
@@ -13,14 +14,22 @@ import {
 import { isBotPR } from '../../src/utils/pr-classifier';
 import { PullRequest, Repository } from '../../src/types';
 
-jest.mock('../../src/api/github');
-jest.mock('../../src/utils/pr-classifier');
+vi.mock('../../src/api/github');
+vi.mock('../../src/utils/pr-classifier');
 
-const mockedCompareShas = compareShas as jest.MockedFunction<typeof compareShas>;
+// Top-level reference to the real github module so individual tests
+// can exercise the actual extractPRNumberFromCommitMessage even though
+// the module is mocked (vi.importActual is async and would not work
+// inside synchronous test bodies otherwise).
+const actualGitHub = await vi.importActual<typeof import('../../src/api/github')>(
+  '../../src/api/github'
+);
+
+const mockedCompareShas = compareShas as MockedFunction<typeof compareShas>;
 const mockedExtractPRNumberFromCommitMessage =
-  extractPRNumberFromCommitMessage as jest.MockedFunction<typeof extractPRNumberFromCommitMessage>;
-const mockedGetPullRequest = getPullRequest as jest.MockedFunction<typeof getPullRequest>;
-const mockedIsBotPR = isBotPR as jest.MockedFunction<typeof isBotPR>;
+  extractPRNumberFromCommitMessage as MockedFunction<typeof extractPRNumberFromCommitMessage>;
+const mockedGetPullRequest = getPullRequest as MockedFunction<typeof getPullRequest>;
+const mockedIsBotPR = isBotPR as MockedFunction<typeof isBotPR>;
 
 const testRepo: Repository = {
   owner: 'Tampere',
@@ -54,7 +63,7 @@ function makeCommit(sha: string, message: string, author: string = 'dev') {
 
 describe('pr-collector', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
+    vi.resetAllMocks();
     // Default: extractPRNumberFromCommitMessage uses real implementation
     // We mock it to control PR number extraction
   });
@@ -90,19 +99,11 @@ describe('pr-collector', () => {
 
   describe('extractPRNumberFromCommitMessage patterns', () => {
     it('should parse merge commit message: "Merge pull request #123 from ..."', () => {
-      const github = jest.requireActual<{ extractPRNumberFromCommitMessage: (msg: string) => number | null }>(
-        '../../src/api/github'
-      );
-
-      expect(github.extractPRNumberFromCommitMessage('Merge pull request #123 from feature/branch')).toBe(123);
+      expect(actualGitHub.extractPRNumberFromCommitMessage('Merge pull request #123 from feature/branch')).toBe(123);
     });
 
     it('should parse squash merge message: "Title (#123)"', () => {
-      const github = jest.requireActual<{ extractPRNumberFromCommitMessage: (msg: string) => number | null }>(
-        '../../src/api/github'
-      );
-
-      expect(github.extractPRNumberFromCommitMessage('Fix the login page (#456)')).toBe(456);
+      expect(actualGitHub.extractPRNumberFromCommitMessage('Fix the login page (#456)')).toBe(456);
     });
   });
 

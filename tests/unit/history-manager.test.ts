@@ -2,9 +2,9 @@ import * as fs from 'fs';
 import { readHistory, appendEvents, pruneOldEvents, writeHistory, backfillBranchInfo } from '../../src/services/history-manager';
 import { DeploymentEvent, HistoryData, Repository } from '../../src/types';
 
-jest.mock('fs');
+vi.mock('fs');
 
-const mockedFs = jest.mocked(fs);
+const mockedFs = vi.mocked(fs);
 
 const makeEvent = (id: string, detectedAt: string): DeploymentEvent => ({
   id,
@@ -130,7 +130,7 @@ describe('backfillBranchInfo', () => {
     const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z');
     const history: HistoryData = { events: [event] };
 
-    const mockDetect = jest.fn().mockResolvedValue({ onDefaultBranch: true, branchName: null });
+    const mockDetect = vi.fn().mockResolvedValue({ onDefaultBranch: true, branchName: null });
 
     const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
 
@@ -143,7 +143,7 @@ describe('backfillBranchInfo', () => {
     const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z', { isDefaultBranch: false, branch: 'feature/x' });
     const history: HistoryData = { events: [event] };
 
-    const mockDetect = jest.fn();
+    const mockDetect = vi.fn();
 
     const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
 
@@ -155,7 +155,7 @@ describe('backfillBranchInfo', () => {
     const event = makeEvent('p1', '2026-03-01T00:00:00Z'); // environmentId: 'espoo-prod'
     const history: HistoryData = { events: [event] };
 
-    const mockDetect = jest.fn();
+    const mockDetect = vi.fn();
 
     const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
 
@@ -168,7 +168,7 @@ describe('backfillBranchInfo', () => {
     const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z');
     const history: HistoryData = { events: [event] };
 
-    const mockDetect = jest.fn().mockResolvedValue({ onDefaultBranch: false, branchName: 'feature/test' });
+    const mockDetect = vi.fn().mockResolvedValue({ onDefaultBranch: false, branchName: 'feature/test' });
 
     await backfillBranchInfo(history, mockDetect, [testRepo]);
 
@@ -180,7 +180,7 @@ describe('backfillBranchInfo', () => {
     const event = makeStagingEvent('s1', '2026-03-01T00:00:00Z');
     const history: HistoryData = { events: [event] };
 
-    const mockDetect = jest.fn().mockRejectedValue(new Error('API failure'));
+    const mockDetect = vi.fn().mockRejectedValue(new Error('API failure'));
 
     const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
 
@@ -196,7 +196,7 @@ describe('backfillBranchInfo', () => {
     ];
     const history: HistoryData = { events };
 
-    const mockDetect = jest.fn().mockResolvedValue({ onDefaultBranch: true, branchName: null });
+    const mockDetect = vi.fn().mockResolvedValue({ onDefaultBranch: true, branchName: null });
 
     const count = await backfillBranchInfo(history, mockDetect, [testRepo]);
 

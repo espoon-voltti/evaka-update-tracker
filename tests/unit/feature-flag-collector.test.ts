@@ -1,11 +1,12 @@
+import type { MockedFunction } from 'vitest';
 import { collectFeatureFlags, mergeFeatureFlagFallback } from '../../src/services/feature-flag-collector';
 import { FeatureFlagCityConfig } from '../../src/config/feature-flag-cities';
 import { FeatureFlagData } from '../../src/types';
 import * as github from '../../src/api/github';
 
-jest.mock('../../src/api/github');
+vi.mock('../../src/api/github');
 
-const mockGetFileContent = github.getFileContent as jest.MockedFunction<
+const mockGetFileContent = github.getFileContent as MockedFunction<
   typeof github.getFileContent
 >;
 
@@ -101,7 +102,7 @@ const cities: FeatureFlagCityConfig[] = [
 
 describe('collectFeatureFlags', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   it('collects flags from multiple cities', async () => {

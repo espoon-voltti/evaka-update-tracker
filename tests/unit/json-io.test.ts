@@ -1,8 +1,9 @@
+import type { MockedFunction } from 'vitest';
 import * as fs from 'fs';
 import { writeJsonFile } from '../../src/utils/json-io';
 
-jest.mock('fs');
-const mockedWriteFileSync = fs.writeFileSync as jest.MockedFunction<typeof fs.writeFileSync>;
+vi.mock('fs');
+const mockedWriteFileSync = fs.writeFileSync as MockedFunction<typeof fs.writeFileSync>;
 
 describe('writeJsonFile', () => {
   beforeEach(() => {

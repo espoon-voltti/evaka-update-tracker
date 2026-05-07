@@ -1,22 +1,26 @@
+import type { MockedFunction } from 'vitest';
 import nock from 'nock';
 import * as fs from 'fs';
 import * as path from 'path';
 import { announceChanges } from '../../src/services/change-announcer';
 import { CityGroup } from '../../src/types';
 
-// Mock the GitHub client module
-jest.mock('../../src/api/github', () => ({
-  getCommit: jest.fn(),
-  compareShas: jest.fn(),
-  getPullRequest: jest.fn(),
-  extractPRNumberFromCommitMessage: jest.requireActual('../../src/api/github').extractPRNumberFromCommitMessage,
-}));
+// Mock the GitHub client module — keep extractPRNumberFromCommitMessage real
+vi.mock('../../src/api/github', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../../src/api/github')>();
+  return {
+    getCommit: vi.fn(),
+    compareShas: vi.fn(),
+    getPullRequest: vi.fn(),
+    extractPRNumberFromCommitMessage: actual.extractPRNumberFromCommitMessage,
+  };
+});
 
 import { getCommit, compareShas, getPullRequest } from '../../src/api/github';
 
-const mockedGetCommit = getCommit as jest.MockedFunction<typeof getCommit>;
-const mockedCompareShas = compareShas as jest.MockedFunction<typeof compareShas>;
-const mockedGetPullRequest = getPullRequest as jest.MockedFunction<typeof getPullRequest>;
+const mockedGetCommit = getCommit as MockedFunction<typeof getCommit>;
+const mockedCompareShas = compareShas as MockedFunction<typeof compareShas>;
+const mockedGetPullRequest = getPullRequest as MockedFunction<typeof getPullRequest>;
 
 const CHANGE_ENV_VARS = [
   'SLACK_CHANGE_WEBHOOK_CORE',
@@ -77,7 +81,7 @@ beforeEach(() => {
     // File doesn't exist
   }
 
-  jest.clearAllMocks();
+  vi.clearAllMocks();
 });
 
 afterEach(() => {
@@ -505,7 +509,7 @@ describe('announceChanges - end-to-end', () => {
       .post('/services/T00/CORE/XXX')
       .reply(500, 'Internal Server Error');
 
-    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation();
 
     // Should not throw
     await announceChanges(mockCityGroups, TEST_DATA_DIR, {}, async () => null);
@@ -566,7 +570,7 @@ describe('announceChanges - end-to-end', () => {
       .post('/services/T00/CORE/XXX')
       .reply(404, 'Not Found');
 
-    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation();
     await announceChanges(mockCityGroups, TEST_DATA_DIR, {}, async () => null);
     warnSpy.mockRestore();
 
@@ -624,7 +628,7 @@ describe('announceChanges - end-to-end', () => {
       .post('/services/T00/CORE/XXX')
       .reply(500, 'Internal Server Error');
 
-    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation();
     await announceChanges(mockCityGroups, TEST_DATA_DIR, {}, async () => null);
     warnSpy.mockRestore();
 
@@ -706,7 +710,7 @@ describe('announceChanges - end-to-end', () => {
       .post('/services/T00/TAMPERE/XXX')
       .reply(200, 'ok');
 
-    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation();
     await announceChanges(mockCityGroups, TEST_DATA_DIR, {}, async () => null);
     warnSpy.mockRestore();
 

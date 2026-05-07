@@ -1,10 +1,11 @@
+import type { MockInstance } from 'vitest';
 import { cacheBustUrl } from '../../site/js/utils.js';
 
 describe('cacheBustUrl', () => {
-  let nowSpy: jest.SpyInstance;
+  let nowSpy: MockInstance;
 
   beforeEach(() => {
-    nowSpy = jest.spyOn(Date, 'now').mockReturnValue(1700000000000);
+    nowSpy = vi.spyOn(Date, 'now').mockReturnValue(1700000000000);
   });
 
   afterEach(() => {

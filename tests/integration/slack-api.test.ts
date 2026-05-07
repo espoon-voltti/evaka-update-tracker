@@ -624,7 +624,7 @@ describe('sendSlackNotification', () => {
   });
 
   it('skips when webhook URL is empty', async () => {
-    const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
+    const consoleSpy = vi.spyOn(console, 'log').mockImplementation();
     await sendSlackNotification('', [mockCoreEvent]);
     expect(consoleSpy).toHaveBeenCalledWith(expect.stringContaining('SKIP'));
     consoleSpy.mockRestore();
@@ -632,7 +632,7 @@ describe('sendSlackNotification', () => {
 
   it('skips in DRY_RUN mode', async () => {
     process.env.DRY_RUN = 'true';
-    const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
+    const consoleSpy = vi.spyOn(console, 'log').mockImplementation();
     await sendSlackNotification(
       'https://hooks.slack.com/services/T00/B00/XXX',
       [mockCoreEvent]
@@ -647,7 +647,7 @@ describe('sendSlackNotification', () => {
       .times(4) // initial + 3 retries
       .reply(404, 'not found');
 
-    const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
+    const warnSpy = vi.spyOn(console, 'warn').mockImplementation();
     await sendSlackNotification(
       'https://hooks.slack.com/services/T00/B00/XXX',
       [mockCoreEvent]

@@ -1,3 +1,4 @@
+import type { MockedFunction } from 'vitest';
 import {
   readPreviousData,
   detectChanges,
@@ -12,9 +13,9 @@ import {
 } from '../../src/types';
 import * as fs from 'fs';
 
-jest.mock('fs');
+vi.mock('fs');
 
-const mockedReadFileSync = fs.readFileSync as jest.MockedFunction<typeof fs.readFileSync>;
+const mockedReadFileSync = fs.readFileSync as MockedFunction<typeof fs.readFileSync>;
 
 function makeCommitInfo(sha: string): CommitInfo {
   return {
@@ -55,7 +56,7 @@ function makePR(number: number, repoType: 'core' | 'wrapper'): PullRequest {
 
 describe('change-detector', () => {
   beforeEach(() => {
-    jest.resetAllMocks();
+    vi.resetAllMocks();
   });
 
   describe('readPreviousData', () => {

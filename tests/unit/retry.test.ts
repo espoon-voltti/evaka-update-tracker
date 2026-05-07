@@ -41,14 +41,14 @@ describe('withRetry', () => {
   });
 
   it('returns the result on first success without retrying', async () => {
-    const fn = jest.fn().mockResolvedValue('ok');
+    const fn = vi.fn().mockResolvedValue('ok');
     const result = await withRetry(fn, RETRY_STATUS_PROBE);
     expect(result).toBe('ok');
     expect(fn).toHaveBeenCalledTimes(1);
   });
 
   it('retries until success', async () => {
-    const fn = jest
+    const fn = vi
       .fn()
       .mockRejectedValueOnce(new Error('boom1'))
       .mockRejectedValueOnce(new Error('boom2'))
@@ -59,31 +59,31 @@ describe('withRetry', () => {
   });
 
   it('throws the last error after exhausting maxRetries (RETRY_GITHUB → 4 total attempts)', async () => {
-    const fn = jest.fn().mockRejectedValue(new Error('persistent'));
+    const fn = vi.fn().mockRejectedValue(new Error('persistent'));
     await expect(withRetry(fn, RETRY_GITHUB)).rejects.toThrow('persistent');
     expect(fn).toHaveBeenCalledTimes(RETRY_GITHUB.maxRetries + 1);
   });
 
   it('honors RETRY_STATUS_PROBE (3 total attempts)', async () => {
-    const fn = jest.fn().mockRejectedValue(new Error('probe-fail'));
+    const fn = vi.fn().mockRejectedValue(new Error('probe-fail'));
     await expect(withRetry(fn, RETRY_STATUS_PROBE)).rejects.toThrow('probe-fail');
     expect(fn).toHaveBeenCalledTimes(RETRY_STATUS_PROBE.maxRetries + 1);
   });
 
   it('honors RETRY_WEBHOOK (4 total attempts)', async () => {
-    const fn = jest.fn().mockRejectedValue(new Error('hook-fail'));
+    const fn = vi.fn().mockRejectedValue(new Error('hook-fail'));
     await expect(withRetry(fn, RETRY_WEBHOOK)).rejects.toThrow('hook-fail');
     expect(fn).toHaveBeenCalledTimes(RETRY_WEBHOOK.maxRetries + 1);
   });
 
   it('preserves the existing default of 4 total attempts when called without options', async () => {
-    const fn = jest.fn().mockRejectedValue(new Error('default-fail'));
+    const fn = vi.fn().mockRejectedValue(new Error('default-fail'));
     await expect(withRetry(fn)).rejects.toThrow('default-fail');
     expect(fn).toHaveBeenCalledTimes(4);
   });
 
   it('wraps non-Error throwables', async () => {
-    const fn = jest.fn().mockRejectedValue('string-thrown');
+    const fn = vi.fn().mockRejectedValue('string-thrown');
     await expect(withRetry(fn, RETRY_STATUS_PROBE)).rejects.toThrow('string-thrown');
   });
 });
