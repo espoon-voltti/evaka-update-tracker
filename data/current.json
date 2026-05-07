@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T03:01:51.346Z",
+  "generatedAt": "2026-05-07T04:12:29.190Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-07T03:01:07.130Z",
+            "checkedAt": "2026-05-07T04:11:46.957Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-07T03:01:07.986Z",
+            "checkedAt": "2026-05-07T04:11:47.907Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-07T03:01:09.780Z",
+            "checkedAt": "2026-05-07T04:11:49.913Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-07T03:01:19.603Z",
+            "checkedAt": "2026-05-07T04:12:02.403Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -200,7 +200,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-07T03:01:31.265Z",
+            "checkedAt": "2026-05-07T04:12:16.454Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -219,10 +219,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-07T03:01:32.106Z",
-            "status": "unavailable",
+            "checkedAt": "2026-05-07T04:12:18.025Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
+              "shortSha": "fc4b304",
+              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
+              "date": "2026-05-06T09:42:15Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -247,7 +253,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-07T03:01:41.155Z",
+            "checkedAt": "2026-05-07T04:12:22.586Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -266,10 +272,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-07T03:01:42.154Z",
-            "status": "unavailable",
+            "checkedAt": "2026-05-07T04:12:24.377Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
+              "shortSha": "fc4b304",
+              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
+              "date": "2026-05-06T09:42:15Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
