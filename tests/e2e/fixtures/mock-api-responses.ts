@@ -215,7 +215,7 @@ export const prResponses: Record<number, {
     user: { login: 'terolaakso-reaktor' },
     merged_at: '2026-03-02T09:53:35Z',
     html_url: 'https://github.com/espoon-voltti/evaka/pull/8573',
-    labels: [{ name: 'bug' }],
+    labels: [{ name: 'bugfix' }],
   },
   8560: {
     number: 8560,
@@ -298,7 +298,7 @@ export const prResponses: Record<number, {
     user: { login: 'tampere-dev' },
     merged_at: '2026-03-02T15:00:00Z',
     html_url: 'https://github.com/Tampere/trevaka/pull/415',
-    labels: [{ name: 'bug' }],
+    labels: [{ name: 'bugfix' }],
   },
 };
 

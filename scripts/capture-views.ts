@@ -258,7 +258,7 @@ function buildTestDeploymentEvent(cityGroupId: string, cityName: string): Deploy
         repoType: 'core',
         isBot: false,
         url: 'https://github.com/espoon-voltti/evaka/pull/8573',
-        labels: ['bug'],
+        labels: ['bugfix'],
       },
       {
         number: 8560,

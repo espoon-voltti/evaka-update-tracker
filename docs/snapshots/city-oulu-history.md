@@ -9,6 +9,10 @@ Ydin
 - [Käännösten päivitys](https://github.com/espoon-voltti/evaka/pull/8555) - Tomi Mulari Parannus 1.3.
 - [Yksikkötestien korjaus](https://github.com/espoon-voltti/evaka/pull/8545) - Tero Laakso Tekninen 28.2.
 ### Testaus
+- pe 6.3. klo 12.00 [ddd3333](https://github.com/espoon-voltti/evaka/commit/ddd3333333333333333333333333333333333333)
+Config update
+- to 5.3. klo 12.00 [ccc2222](https://github.com/espoon-voltti/evaka/commit/ccc2222222222222222222222222222222222222)
+Dependency bump
 - ti 3.3. klo 12.00 [5ff94c8](https://github.com/espoon-voltti/evaka/commit/5ff94c8cd104a2c4bd164c9f64f3c4455ac39370)
 Ydin
 - [Tekninen: minimatch-kirjaston haavoittuvuuspäivitys](https://github.com/espoon-voltti/evaka/pull/8629) - Tero Laakso Tekninen 2.3.
