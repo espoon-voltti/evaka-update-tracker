@@ -3,7 +3,7 @@
  * Accepts a VersionSnapshot object.
  */
 
-import { escapeHtml } from '../utils.js';
+import { escapeHtml, formatTime } from '../utils.js';
 
 export function renderStatusBadge(version, { detectedAt = null, latestPRTitle = null, nonVisibleCommitCount = 0 } = {}) {
   if (!version) {
@@ -68,12 +68,3 @@ function guessRepoPath(domain, type) {
   return 'espoon-voltti/evaka';
 }
 
-export function formatTime(isoString) {
-  if (!isoString) return '';
-  const d = new Date(isoString);
-  const weekday = d.toLocaleDateString('fi', { weekday: 'short' });
-  const day = d.getDate();
-  const month = d.getMonth() + 1;
-  const hours = d.toLocaleTimeString('fi', { hour: '2-digit', minute: '2-digit', hour12: false });
-  return `${weekday} ${day}.${month}. klo ${hours}`;
-}

@@ -4,7 +4,7 @@
  */
 
 import { getQueryParam } from '../router.js';
-import { escapeHtml } from '../utils.js';
+import { escapeHtml, formatDate } from '../utils.js';
 
 /**
  * City groups to display as columns.
@@ -44,7 +44,7 @@ export function renderFeatureMatrix(data, { differencesOnly = false, showValues 
   if (errorCities.length > 0) {
     const cityNames = errorCities.map((c) => c.name).join(', ');
     const fallbackDate = data.errorFallbackDate
-      ? `, ${formatFinnishDate(data.errorFallbackDate)},`
+      ? `, ${formatDate(data.errorFallbackDate)},`
       : '';
     errorBanner = `
       <div class="feature-error-banner">
@@ -301,8 +301,3 @@ function updateQuerySilent(name, value) {
   history.replaceState(null, '', newHash);
 }
 
-function formatFinnishDate(isoString) {
-  if (!isoString) return '';
-  const d = new Date(isoString);
-  return `${d.getDate()}.${d.getMonth() + 1}.`;
-}

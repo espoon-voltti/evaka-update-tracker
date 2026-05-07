@@ -8,6 +8,30 @@ export function escapeHtml(str) {
 }
 
 /**
+ * Format an ISO date string as Finnish short date "D.M." (no zero padding).
+ * Returns '' for nullish/empty input.
+ */
+export function formatDate(isoString) {
+  if (!isoString) return '';
+  const d = new Date(isoString);
+  return `${d.getDate()}.${d.getMonth() + 1}.`;
+}
+
+/**
+ * Format an ISO date string as Finnish short weekday + date + time:
+ * "pe 13.3. klo 14:30". Returns '' for nullish/empty input.
+ */
+export function formatTime(isoString) {
+  if (!isoString) return '';
+  const d = new Date(isoString);
+  const weekday = d.toLocaleDateString('fi', { weekday: 'short' });
+  const day = d.getDate();
+  const month = d.getMonth() + 1;
+  const hours = d.toLocaleTimeString('fi', { hour: '2-digit', minute: '2-digit', hour12: false });
+  return `${weekday} ${day}.${month}. klo ${hours}`;
+}
+
+/**
  * Find branch deployment info for the latest staging event of `city`.
  * Returns { isBranch: true, branchName } when the most recent staging
  * event for the city is a non-default-branch deployment; otherwise null.

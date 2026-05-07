@@ -5,9 +5,8 @@
  */
 
 import { renderPRList } from './pr-list.js';
-import { formatTime } from './status-badge.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
-import { escapeHtml } from '../utils.js';
+import { escapeHtml, formatTime } from '../utils.js';
 
 /**
  * Group events into releases: events sharing the same detectedAt + env type

@@ -31,10 +31,10 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 - Action: added `tests/helpers/env-setup.ts` exporting `setupEnvCleanup(vars: readonly string[])` which wires `beforeEach`/`afterEach` from jest globals. Both test files now call it instead of defining the same 26-line block. ~46 lines of duplicated boilerplate removed.
 - **Test gate done:** both suites' 16 cases still pass; full suite remains green (315 tests / 26 suites). Lint clean.
 
-### 5. [ ] Consolidate date formatters
-- Sites: `site/js/components/pr-list.js:83` (`formatDate`), `site/js/components/status-badge.js:74` (`formatTime`, already exported), `site/js/components/feature-matrix.js:303` (`formatFinnishDate`)
-- Action: pick canonical functions in `status-badge.js` (or `utils.js`); have callers import; delete the duplicates.
-- **Test gate:** add unit tests for each formatter (boundary cases: midnight, year boundary, locale-specific formatting). The frontend currently has minimal direct unit coverage — at minimum, ensure E2E specs assert the rendered date strings on PR list, status badge, and feature matrix.
+### 5. [x] Consolidate date formatters
+- Sites: `site/js/components/pr-list.js` (`formatDate`), `site/js/components/feature-matrix.js` (`formatFinnishDate` — was byte-identical to `formatDate`), `site/js/components/status-badge.js` (`formatTime`)
+- Action: moved `formatDate` and `formatTime` to `site/js/utils.js`. `formatFinnishDate` was a duplicate of `formatDate` and is now collapsed into a single function. `pr-list.js`, `feature-matrix.js`, `status-badge.js`, and `history-view.js` (which previously imported `formatTime` from `status-badge.js`) all import from `utils.js`.
+- **Test gate done:** added `tests/unit/date-formatters.test.ts` (14 cases) — covers nullish input, single/double-digit day & month, year boundaries (Dec 31, Jan 1) for `formatDate`; weekday + date + 24-hour time, midnight, padding rules for `formatTime`. Tests construct dates from local-time components (`new Date(y, m, d, ...)`) so they're stable across runner timezones. **Documented behavior surprise:** the Finnish locale uses `.` (not `:`) as the time separator — so `formatTime` produces `"klo 14.30"`, not `"klo 14:30"`. This was the existing production behavior; my initial test expectations were wrong and exposed it. 329 unit + 63 E2E passing; lint clean.
 
 ---
 

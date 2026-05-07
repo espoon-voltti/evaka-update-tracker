@@ -1,5 +1,9 @@
 export function escapeHtml(value: unknown): string;
 
+export function formatDate(isoString: string | null | undefined): string;
+
+export function formatTime(isoString: string | null | undefined): string;
+
 export interface StagingBranchInfo {
   isBranch: true;
   branchName: string | null;
