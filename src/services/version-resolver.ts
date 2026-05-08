@@ -51,8 +51,11 @@ export async function resolveEnvironment(
               sha
             );
             coreCommit = await getCommit(coreRepo.owner, coreRepo.name, coreSha);
-          } catch {
-            // Submodule resolution failed — flag core as unknown
+          } catch (error) {
+            console.error(
+              `[${instance.domain}] github submodule resolution failed (${wrapperRepo.owner}/${wrapperRepo.name}@${sha} ${wrapperRepo.submodulePath}):`,
+              error
+            );
             coreCommit = null;
           }
         }
@@ -68,7 +71,8 @@ export async function resolveEnvironment(
         wrapperCommit,
         coreCommit,
       });
-    } catch {
+    } catch (error) {
+      console.error(`[${instance.domain}] github commit resolution failed:`, error);
       versions.push({
         instanceDomain: instance.domain,
         checkedAt,
@@ -79,6 +83,9 @@ export async function resolveEnvironment(
     }
   }
 
+  if (versions.length === 0) {
+    console.error(`[${environment.id}] no instances configured for environment`);
+  }
   const representative = versions[0] ?? {
     instanceDomain: environment.instances[0]?.domain ?? 'unknown',
     checkedAt: new Date().toISOString(),

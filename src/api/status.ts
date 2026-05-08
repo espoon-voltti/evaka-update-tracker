@@ -52,6 +52,7 @@ export async function fetchVersion(
         };
       }
     }
+    console.error(`[${domain}] status probe failed:`, error);
     return {
       instanceDomain: domain,
       checkedAt,
@@ -91,6 +92,7 @@ export async function fetchDeployedSha(
         return { sha: null, status: 'auth-error' };
       }
     }
+    console.error(`[${domain}] status probe failed:`, error);
     return { sha: null, status: 'unavailable' };
   }
 }
