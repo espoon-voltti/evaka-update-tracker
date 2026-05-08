@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-08T06:49:50.936Z",
+  "generatedAt": "2026-05-08T07:23:04.406Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-08T06:49:11.691Z",
+            "checkedAt": "2026-05-08T07:22:14.974Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-08T06:49:12.591Z",
+            "checkedAt": "2026-05-08T07:22:15.970Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -83,7 +83,23 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9026,
+              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-08T07:12:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ]
         }
       }
     },
@@ -96,7 +112,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-08T06:49:15.939Z",
+            "checkedAt": "2026-05-08T07:22:20.875Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
@@ -121,7 +137,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-08T06:49:26.625Z",
+            "checkedAt": "2026-05-08T07:22:33.688Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "13625ba410f9ce5d2ff1b70416801ddb85ae39da",
@@ -217,7 +233,23 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9026,
+              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-08T07:12:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ]
         }
       }
     },
@@ -230,7 +262,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-08T06:49:42.128Z",
+            "checkedAt": "2026-05-08T07:22:52.905Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -249,93 +281,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-08T06:49:43.116Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "ef5dda3347c3931a3ef21c26d43a8ef73b2fde66",
-              "shortSha": "ef5dda3",
-              "message": "Merge pull request #9025 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/path-to-regexp-8.4.2",
-              "date": "2026-05-07T13:42:13Z",
-              "author": "terolaakso-reaktor"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        }
-      ],
-      "prTracks": {
-        "wrapper": null,
-        "core": {
-          "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
-            {
-              "number": 9017,
-              "title": "Perustelueditori - yleisten perustelujen poisto",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-05-07T13:15:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9017",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9024,
-              "title": "Haavoittuvuuskorjaus: minimatch",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-07T12:53:40Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9024",
-              "labels": [
-                "dependencies"
-              ]
-            }
-          ],
-          "pendingDeployment": []
-        }
-      }
-    },
-    {
-      "id": "turku",
-      "name": "Turku",
-      "environments": [
-        {
-          "id": "turku-prod",
-          "type": "production",
-          "version": {
-            "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-08T06:49:46.508Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
-              "shortSha": "fc4b304",
-              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
-              "date": "2026-05-06T09:42:15Z",
-              "author": "akheron"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        },
-        {
-          "id": "turku-staging",
-          "type": "staging",
-          "version": {
-            "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-08T06:49:47.487Z",
+            "checkedAt": "2026-05-08T07:22:54.154Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -390,6 +336,123 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9026,
+              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-08T07:12:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "turku",
+      "name": "Turku",
+      "environments": [
+        {
+          "id": "turku-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "evaka.turku.fi",
+            "checkedAt": "2026-05-08T07:22:58.718Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "fc4b304704056a52191d5617fec3f60e44b4d5b7",
+              "shortSha": "fc4b304",
+              "message": "Merge pull request #9019 from espoon-voltti/sarma-use-mock-client-default",
+              "date": "2026-05-06T09:42:15Z",
+              "author": "akheron"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "turku-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging-evaka.turku.fi",
+            "checkedAt": "2026-05-08T07:22:59.757Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "ef5dda3347c3931a3ef21c26d43a8ef73b2fde66",
+              "shortSha": "ef5dda3",
+              "message": "Merge pull request #9025 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/path-to-regexp-8.4.2",
+              "date": "2026-05-07T13:42:13Z",
+              "author": "terolaakso-reaktor"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": null,
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
+          "inStaging": [
+            {
+              "number": 9017,
+              "title": "Perustelueditori - yleisten perustelujen poisto",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-05-07T13:15:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9017",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9024,
+              "title": "Haavoittuvuuskorjaus: minimatch",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-07T12:53:40Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9024",
+              "labels": [
+                "dependencies"
+              ]
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 9026,
+              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-08T07:12:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
+              "labels": [
+                "dependencies"
+              ]
+            },
             {
               "number": 9021,
               "title": "Näytetään vain suomen- ja englanninkieliset asiakirjapohjat englanninkieliselle yksikölle",
