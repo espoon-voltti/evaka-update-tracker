@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T09:09:36.271Z",
+  "generatedAt": "2026-05-11T09:11:08.793Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-11T09:07:47.952Z",
+            "checkedAt": "2026-05-11T09:10:25.423Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-11T09:07:56.467Z",
+            "checkedAt": "2026-05-11T09:10:26.089Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,23 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9026,
-              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-08T07:12:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
-              "labels": [
-                "dependencies"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -79,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-11T09:08:09.200Z",
+            "checkedAt": "2026-05-11T09:10:30.938Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
@@ -96,187 +80,15 @@
               "author": "renovate[bot]"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-05-11T09:08:09.200Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
-                "shortSha": "7d75350",
-                "message": "Merge pull request #2123 from Tampere/dependabot/submodules/evaka-ed09711",
-                "date": "2026-05-11T04:24:44Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
-                "shortSha": "ed09711",
-                "message": "Update dependency uv to v0.11.10 (#9060)",
-                "date": "2026-05-10T20:48:24Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "evaka.hameenkyro.fi",
-              "checkedAt": "2026-05-11T09:08:10.301Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "evaka.kangasala.fi",
-              "checkedAt": "2026-05-11T09:08:11.487Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "evaka.lempaala.fi",
-              "checkedAt": "2026-05-11T09:08:12.318Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-05-11T09:08:13.152Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "evaka.orivesi.fi",
-              "checkedAt": "2026-05-11T09:08:13.985Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "evaka.pirkkala.fi",
-              "checkedAt": "2026-05-11T09:08:14.858Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "evaka.vesilahti.fi",
-              "checkedAt": "2026-05-11T09:08:15.747Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "evaka.ylojarvi.fi",
-              "checkedAt": "2026-05-11T09:08:16.801Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-                "shortSha": "9d08db0",
-                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-                "date": "2026-05-06T04:42:23Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-                "shortSha": "c319237",
-                "message": "Fix re-tag on CI re-run (#9018)",
-                "date": "2026-05-05T14:06:05Z",
-                "author": "ilja-git"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-11T09:08:29.654Z",
+            "checkedAt": "2026-05-11T09:10:41.055Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
@@ -300,88 +112,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [
-            {
-              "number": 2121,
-              "title": "Enable Primus integrations in prod",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-08T12:38:33Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2121",
-              "labels": []
-            },
-            {
-              "number": 2118,
-              "title": "Disable tampere-dev employee AD login by pointing at a fake SAML entrypoint",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-05-06T08:13:11Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2118",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9026,
-              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-08T07:12:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 9017,
-              "title": "Perustelueditori - yleisten perustelujen poisto",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-05-07T13:15:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9017",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9024,
-              "title": "Haavoittuvuuskorjaus: minimatch",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-07T12:53:40Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9024",
-              "labels": [
-                "dependencies"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -396,7 +133,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-11T09:08:53.737Z",
+            "checkedAt": "2026-05-11T09:10:57.728Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -415,7 +152,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-11T09:09:02.681Z",
+            "checkedAt": "2026-05-11T09:10:58.393Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -434,23 +171,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9026,
-              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-08T07:12:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
-              "labels": [
-                "dependencies"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -465,7 +186,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-11T09:09:14.854Z",
+            "checkedAt": "2026-05-11T09:11:03.202Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -484,7 +205,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-11T09:09:23.799Z",
+            "checkedAt": "2026-05-11T09:11:03.970Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -503,40 +224,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9026,
-              "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-08T07:12:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9026",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 9021,
-              "title": "Näytetään vain suomen- ja englanninkieliset asiakirjapohjat englanninkieliselle yksikölle",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-05-08T05:21:08Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9021",
-              "labels": [
-                "bugfix",
-                "turku",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
