@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T08:42:49.505Z",
+  "generatedAt": "2026-05-11T09:09:36.271Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-11T08:41:39.279Z",
+            "checkedAt": "2026-05-11T09:07:47.952Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ef5dda3347c3931a3ef21c26d43a8ef73b2fde66",
-              "shortSha": "ef5dda3",
-              "message": "Merge pull request #9025 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/path-to-regexp-8.4.2",
-              "date": "2026-05-07T13:42:13Z",
-              "author": "terolaakso-reaktor"
+              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
+              "shortSha": "ed09711",
+              "message": "Update dependency uv to v0.11.10 (#9060)",
+              "date": "2026-05-10T20:48:24Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-11T08:41:40.029Z",
+            "checkedAt": "2026-05-11T09:07:56.467Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9026,
               "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
@@ -66,6 +65,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -79,32 +79,204 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-11T08:41:52.141Z",
+            "checkedAt": "2026-05-11T09:08:09.200Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
-              "shortSha": "9d08db0",
-              "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
-              "date": "2026-05-06T04:42:23Z",
+              "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
+              "shortSha": "7d75350",
+              "message": "Merge pull request #2123 from Tampere/dependabot/submodules/evaka-ed09711",
+              "date": "2026-05-11T04:24:44Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-              "shortSha": "c319237",
-              "message": "Fix re-tag on CI re-run (#9018)",
-              "date": "2026-05-05T14:06:05Z",
-              "author": "ilja-git"
+              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
+              "shortSha": "ed09711",
+              "message": "Update dependency uv to v0.11.10 (#9060)",
+              "date": "2026-05-10T20:48:24Z",
+              "author": "renovate[bot]"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-05-11T09:08:09.200Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
+                "shortSha": "7d75350",
+                "message": "Merge pull request #2123 from Tampere/dependabot/submodules/evaka-ed09711",
+                "date": "2026-05-11T04:24:44Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
+                "shortSha": "ed09711",
+                "message": "Update dependency uv to v0.11.10 (#9060)",
+                "date": "2026-05-10T20:48:24Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-05-11T09:08:10.301Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-05-11T09:08:11.487Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-05-11T09:08:12.318Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-05-11T09:08:13.152Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-05-11T09:08:13.985Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-05-11T09:08:14.858Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-05-11T09:08:15.747Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-05-11T09:08:16.801Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9d08db00f65f51d9402ab756e6ff1adb7faaca11",
+                "shortSha": "9d08db0",
+                "message": "Merge pull request #2117 from Tampere/dependabot/submodules/evaka-c319237",
+                "date": "2026-05-06T04:42:23Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
+                "shortSha": "c319237",
+                "message": "Fix re-tag on CI re-run (#9018)",
+                "date": "2026-05-05T14:06:05Z",
+                "author": "ilja-git"
+              }
+            }
+          ]
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-11T08:42:00.256Z",
+            "checkedAt": "2026-05-11T09:08:29.654Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
@@ -128,8 +300,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 2121,
               "title": "Enable Primus integrations in prod",
@@ -157,12 +328,12 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9026,
               "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
@@ -209,25 +380,9 @@
               "labels": [
                 "dependencies"
               ]
-            },
-            {
-              "number": 9014,
-              "title": "Näytetään kasvatusvastuullisuus mobiilissa kirjauksen perusteella",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-05-06T04:56:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9014",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee-mobile"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -241,15 +396,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-11T08:42:24.301Z",
+            "checkedAt": "2026-05-11T09:08:53.737Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ef5dda3347c3931a3ef21c26d43a8ef73b2fde66",
-              "shortSha": "ef5dda3",
-              "message": "Merge pull request #9025 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/path-to-regexp-8.4.2",
-              "date": "2026-05-07T13:42:13Z",
-              "author": "terolaakso-reaktor"
+              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
+              "shortSha": "ed09711",
+              "message": "Update dependency uv to v0.11.10 (#9060)",
+              "date": "2026-05-10T20:48:24Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -260,7 +415,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-11T08:42:25.084Z",
+            "checkedAt": "2026-05-11T09:09:02.681Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -279,8 +434,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9026,
               "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
@@ -297,6 +451,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -310,15 +465,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-11T08:42:37.063Z",
+            "checkedAt": "2026-05-11T09:09:14.854Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ef5dda3347c3931a3ef21c26d43a8ef73b2fde66",
-              "shortSha": "ef5dda3",
-              "message": "Merge pull request #9025 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/path-to-regexp-8.4.2",
-              "date": "2026-05-07T13:42:13Z",
-              "author": "terolaakso-reaktor"
+              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
+              "shortSha": "ed09711",
+              "message": "Update dependency uv to v0.11.10 (#9060)",
+              "date": "2026-05-10T20:48:24Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -329,7 +484,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-11T08:42:37.632Z",
+            "checkedAt": "2026-05-11T09:09:23.799Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -348,8 +503,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9026,
               "title": "Vanhentuneen kirjaston korjaus: @types/rollup -> rollup",
@@ -383,6 +537,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
