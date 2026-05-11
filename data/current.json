@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T11:15:05.274Z",
+  "generatedAt": "2026-05-11T12:23:01.425Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-11T11:14:26.422Z",
+            "checkedAt": "2026-05-11T12:22:08.883Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-11T11:14:27.211Z",
+            "checkedAt": "2026-05-11T12:22:09.967Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -80,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-11T11:14:32.140Z",
+            "checkedAt": "2026-05-11T12:22:17.049Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
@@ -105,7 +105,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-11T11:14:40.806Z",
+            "checkedAt": "2026-05-11T12:22:28.403Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
@@ -131,7 +131,21 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 2124,
+              "title": "Kehyskuntien Primus-integraation ajastus 13. toukokuuta klo 13.00",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-05-11T12:19:59Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2124",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -167,7 +181,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-11T11:14:53.809Z",
+            "checkedAt": "2026-05-11T12:22:46.071Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -186,7 +200,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-11T11:14:54.575Z",
+            "checkedAt": "2026-05-11T12:22:47.024Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -208,6 +222,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9062,
+              "title": "Ei lähetetä Nekku-tilauksia jotka epäonnistuvat varmasti",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-11T11:42:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9062",
+              "labels": [
+                "tech",
+                "oulu",
+                "core"
+              ]
+            },
             {
               "number": 9027,
               "title": "Korjauksia virheenkäsittelyyn",
@@ -237,7 +268,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-11T11:14:59.466Z",
+            "checkedAt": "2026-05-11T12:22:53.789Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -256,7 +287,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-11T11:15:00.328Z",
+            "checkedAt": "2026-05-11T12:22:54.648Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
