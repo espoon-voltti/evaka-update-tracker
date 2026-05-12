@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-12T08:36:44.489Z",
+  "generatedAt": "2026-05-12T09:17:35.759Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-12T08:35:43.421Z",
+            "checkedAt": "2026-05-12T09:16:35.585Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
-              "shortSha": "ed09711",
-              "message": "Update dependency uv to v0.11.10 (#9060)",
-              "date": "2026-05-10T20:48:24Z",
-              "author": "renovate[bot]"
+              "sha": "6d061d61deeb45072e0be8cd5267f58bbad7dc97",
+              "shortSha": "6d061d6",
+              "message": "Merge pull request #9062 from espoon-voltti/nekku-filtering",
+              "date": "2026-05-11T11:42:43Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-12T08:35:44.558Z",
+            "checkedAt": "2026-05-12T09:16:41.285Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9027,
               "title": "Korjauksia virheenkäsittelyyn",
@@ -67,6 +66,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -80,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-12T08:35:52.348Z",
+            "checkedAt": "2026-05-12T09:16:47.466Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
@@ -105,7 +105,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-12T08:36:03.873Z",
+            "checkedAt": "2026-05-12T09:16:56.200Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "53afd6d432406a6714c1c4df5679fce18dbe20cc",
@@ -181,15 +181,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-12T08:36:25.229Z",
+            "checkedAt": "2026-05-12T09:17:11.850Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
-              "shortSha": "ed09711",
-              "message": "Update dependency uv to v0.11.10 (#9060)",
-              "date": "2026-05-10T20:48:24Z",
-              "author": "renovate[bot]"
+              "sha": "6d061d61deeb45072e0be8cd5267f58bbad7dc97",
+              "shortSha": "6d061d6",
+              "message": "Merge pull request #9062 from espoon-voltti/nekku-filtering",
+              "date": "2026-05-11T11:42:43Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -200,7 +200,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-12T08:36:26.516Z",
+            "checkedAt": "2026-05-12T09:17:17.540Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -219,8 +219,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9062,
               "title": "Ei lähetetä Nekku-tilauksia jotka epäonnistuvat varmasti",
@@ -255,6 +254,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -268,15 +268,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-12T08:36:34.916Z",
+            "checkedAt": "2026-05-12T09:17:23.638Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
-              "shortSha": "ed09711",
-              "message": "Update dependency uv to v0.11.10 (#9060)",
-              "date": "2026-05-10T20:48:24Z",
-              "author": "renovate[bot]"
+              "sha": "6d061d61deeb45072e0be8cd5267f58bbad7dc97",
+              "shortSha": "6d061d6",
+              "message": "Merge pull request #9062 from espoon-voltti/nekku-filtering",
+              "date": "2026-05-11T11:42:43Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -287,7 +287,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-12T08:36:36.995Z",
+            "checkedAt": "2026-05-12T09:17:29.236Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -306,8 +306,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9027,
               "title": "Korjauksia virheenkäsittelyyn",
@@ -325,6 +324,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
