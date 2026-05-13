@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T07:03:29.080Z",
+  "generatedAt": "2026-05-13T08:09:16.268Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-13T07:02:54.377Z",
+            "checkedAt": "2026-05-13T08:08:41.247Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-13T07:02:55.082Z",
+            "checkedAt": "2026-05-13T08:08:41.920Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -50,7 +50,42 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9067,
+              "title": "Ei lisätä lapsia `varda_state` -tauluun jos ei ole hetua eikä oidia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:38:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9067",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9061,
+              "title": "Ei yritetä lähettää sähköpostia poistetuista kalenteritapahtumista",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:25:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9061",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -63,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-13T07:02:57.103Z",
+            "checkedAt": "2026-05-13T08:08:44.710Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
@@ -88,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-13T07:03:06.269Z",
+            "checkedAt": "2026-05-13T08:08:52.655Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8220536f93d71412951b9d22ef86eb1c6ad755e7",
@@ -151,7 +186,42 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9067,
+              "title": "Ei lisätä lapsia `varda_state` -tauluun jos ei ole hetua eikä oidia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:38:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9067",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9061,
+              "title": "Ei yritetä lähettää sähköpostia poistetuista kalenteritapahtumista",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:25:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9061",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -164,7 +234,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-13T07:03:23.400Z",
+            "checkedAt": "2026-05-13T08:09:09.402Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -183,7 +253,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-13T07:03:24.269Z",
+            "checkedAt": "2026-05-13T08:09:10.002Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -205,6 +275,40 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9067,
+              "title": "Ei lisätä lapsia `varda_state` -tauluun jos ei ole hetua eikä oidia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:38:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9067",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9061,
+              "title": "Ei yritetä lähettää sähköpostia poistetuista kalenteritapahtumista",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:25:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9061",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9064,
               "title": "Nekku: Ei sallita vegaani + erityisruokavalio -kombinaatiota",
@@ -235,7 +339,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-13T07:03:26.410Z",
+            "checkedAt": "2026-05-13T08:09:12.730Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -254,7 +358,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-13T07:03:27.058Z",
+            "checkedAt": "2026-05-13T08:09:13.554Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -275,7 +379,42 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9067,
+              "title": "Ei lisätä lapsia `varda_state` -tauluun jos ei ole hetua eikä oidia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:38:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9067",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9061,
+              "title": "Ei yritetä lähettää sähköpostia poistetuista kalenteritapahtumista",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-13T07:25:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9061",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     }
