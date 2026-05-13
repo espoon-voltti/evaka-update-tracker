@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T08:09:16.268Z",
+  "generatedAt": "2026-05-13T09:15:23.155Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-13T08:08:41.247Z",
+            "checkedAt": "2026-05-13T09:14:35.276Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-13T08:08:41.920Z",
+            "checkedAt": "2026-05-13T09:14:35.956Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,21 +98,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-13T08:08:44.710Z",
+            "checkedAt": "2026-05-13T09:14:39.099Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "7d7535081c8e2f8a32c7c29ae85f95c1040e43be",
-              "shortSha": "7d75350",
-              "message": "Merge pull request #2123 from Tampere/dependabot/submodules/evaka-ed09711",
-              "date": "2026-05-11T04:24:44Z",
+              "sha": "8220536f93d71412951b9d22ef86eb1c6ad755e7",
+              "shortSha": "8220536",
+              "message": "Merge pull request #2126 from Tampere/dependabot/submodules/evaka-d98dea0",
+              "date": "2026-05-13T04:20:25Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "ed09711413d692121ea757d467f788a4f4d573cd",
-              "shortSha": "ed09711",
-              "message": "Update dependency uv to v0.11.10 (#9060)",
-              "date": "2026-05-10T20:48:24Z",
-              "author": "renovate[bot]"
+              "sha": "d98dea01f9377d5cee14f0c9ccd6bbeaa622d7e9",
+              "shortSha": "d98dea0",
+              "message": "Merge pull request #9063 from espoon-voltti/sandbox-fixes",
+              "date": "2026-05-12T04:22:09Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-13T08:08:52.655Z",
+            "checkedAt": "2026-05-13T09:14:55.469Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8220536f93d71412951b9d22ef86eb1c6ad755e7",
@@ -147,8 +147,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 2124,
               "title": "Kehyskuntien Primus-integraation ajastus 13. toukokuuta klo 13.00",
@@ -163,12 +162,12 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9027,
               "title": "Korjauksia virheenkäsittelyyn",
@@ -186,6 +185,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9067,
@@ -234,14 +234,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-13T08:09:09.402Z",
+            "checkedAt": "2026-05-13T09:15:14.346Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "6d061d61deeb45072e0be8cd5267f58bbad7dc97",
-              "shortSha": "6d061d6",
-              "message": "Merge pull request #9062 from espoon-voltti/nekku-filtering",
-              "date": "2026-05-11T11:42:43Z",
+              "sha": "d98dea01f9377d5cee14f0c9ccd6bbeaa622d7e9",
+              "shortSha": "d98dea0",
+              "message": "Merge pull request #9063 from espoon-voltti/sandbox-fixes",
+              "date": "2026-05-12T04:22:09Z",
               "author": "akheron"
             }
           },
@@ -253,7 +253,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-13T08:09:10.002Z",
+            "checkedAt": "2026-05-13T09:15:15.964Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -339,14 +339,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-13T08:09:12.730Z",
+            "checkedAt": "2026-05-13T09:15:18.966Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "6d061d61deeb45072e0be8cd5267f58bbad7dc97",
-              "shortSha": "6d061d6",
-              "message": "Merge pull request #9062 from espoon-voltti/nekku-filtering",
-              "date": "2026-05-11T11:42:43Z",
+              "sha": "d98dea01f9377d5cee14f0c9ccd6bbeaa622d7e9",
+              "shortSha": "d98dea0",
+              "message": "Merge pull request #9063 from espoon-voltti/sandbox-fixes",
+              "date": "2026-05-12T04:22:09Z",
               "author": "akheron"
             }
           },
@@ -358,7 +358,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-13T08:09:13.554Z",
+            "checkedAt": "2026-05-13T09:15:20.431Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
