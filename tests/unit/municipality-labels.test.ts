@@ -2,7 +2,26 @@ import {
   getMunicipalityCityGroups,
   prBelongsToCity,
   getMunicipalityNames,
+  hideForeignCorePRs,
 } from '../../src/utils/municipality-labels';
+import { PullRequest } from '../../src/types';
+
+function makePR(overrides: Partial<PullRequest> = {}): PullRequest {
+  return {
+    number: 1,
+    title: 'Test PR',
+    author: 'dev',
+    authorName: null,
+    mergedAt: '2026-05-18T10:00:00Z',
+    repository: 'espoon-voltti/evaka',
+    repoType: 'core',
+    isBot: false,
+    isHidden: false,
+    url: 'https://github.com/espoon-voltti/evaka/pull/1',
+    labels: [],
+    ...overrides,
+  };
+}
 
 describe('getMunicipalityCityGroups', () => {
   it('returns null for a PR with no labels', () => {
@@ -119,5 +138,43 @@ describe('getMunicipalityNames', () => {
 
   it('ignores non-municipality labels', () => {
     expect(getMunicipalityNames(['bug', 'turku'])).toEqual(['Turku']);
+  });
+});
+
+describe('hideForeignCorePRs', () => {
+  it('marks a core PR with a foreign municipality label as hidden', () => {
+    const prs = [makePR({ repoType: 'core', labels: ['espoo'] })];
+    const result = hideForeignCorePRs(prs, 'tampere-region');
+    expect(result[0].isHidden).toBe(true);
+  });
+
+  it('leaves a core PR that belongs to the city unchanged', () => {
+    const prs = [makePR({ repoType: 'core', labels: ['seutu'], isHidden: false })];
+    const result = hideForeignCorePRs(prs, 'tampere-region');
+    expect(result[0].isHidden).toBe(false);
+  });
+
+  it('leaves a shared core PR (no municipality labels) unchanged', () => {
+    const prs = [makePR({ repoType: 'core', labels: ['bugfix'], isHidden: false })];
+    const result = hideForeignCorePRs(prs, 'tampere-region');
+    expect(result[0].isHidden).toBe(false);
+  });
+
+  it('keeps an already-hidden foreign core PR hidden', () => {
+    const prs = [makePR({ repoType: 'core', labels: ['espoo'], isHidden: true })];
+    const result = hideForeignCorePRs(prs, 'tampere-region');
+    expect(result[0].isHidden).toBe(true);
+  });
+
+  it('does not touch wrapper PRs', () => {
+    const prs = [makePR({ repoType: 'wrapper', labels: ['espoo'], isHidden: false })];
+    const result = hideForeignCorePRs(prs, 'tampere-region');
+    expect(result[0].isHidden).toBe(false);
+  });
+
+  it('does not mutate the input PRs', () => {
+    const pr = makePR({ repoType: 'core', labels: ['espoo'], isHidden: false });
+    hideForeignCorePRs([pr], 'tampere-region');
+    expect(pr.isHidden).toBe(false);
   });
 });

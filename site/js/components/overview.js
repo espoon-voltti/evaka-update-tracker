@@ -4,7 +4,7 @@
 
 import { renderStatusBadge } from './status-badge.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
-import { escapeHtml, findStagingBranchInfo } from '../utils.js';
+import { escapeHtml, findStagingBranchInfo, countNonVisibleStagingCommits } from '../utils.js';
 
 export function renderOverview(data, historyEvents = []) {
   if (!data || !data.cityGroups) {
@@ -81,20 +81,10 @@ function findEnvInfo(city, env, historyEvents) {
     }
   }
 
-  // Count distinct staging commits with no visible PRs since the last relevant one.
-  let nonVisibleCommitCount = 0;
-  if (stagingTitle) {
-    const seenShas = new Set();
-    for (const event of historyEvents
-      .filter((e) => e.cityGroupId === city.id && stagingEnvIds.includes(e.environmentId))
-      .sort((a, b) => new Date(b.detectedAt) - new Date(a.detectedAt))) {
-      const sha = event.newCommit?.sha;
-      if (!sha || seenShas.has(sha)) continue;
-      seenShas.add(sha);
-      if ((event.includedPRs || []).some((pr) => !pr.isHidden)) break;
-      nonVisibleCommitCount++;
-    }
-  }
+  // Count staging changes with no visible PR since the last city-relevant one.
+  const nonVisibleCommitCount = stagingTitle
+    ? countNonVisibleStagingCommits(historyEvents, city)
+    : 0;
 
   return {
     latestPRTitle: stagingTitle,
