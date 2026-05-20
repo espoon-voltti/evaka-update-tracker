@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T10:29:58.144Z",
+  "generatedAt": "2026-05-20T11:10:59.862Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-20T10:28:50.429Z",
+            "checkedAt": "2026-05-20T11:10:25.753Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-20T10:28:51.347Z",
+            "checkedAt": "2026-05-20T11:10:26.628Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-20T10:28:52.996Z",
+            "checkedAt": "2026-05-20T11:10:28.616Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "abd21493d8fb6739b51152a2716950c812dfc8fc",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-20T10:29:23.185Z",
+            "checkedAt": "2026-05-20T11:10:40.505Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "abd21493d8fb6739b51152a2716950c812dfc8fc",
@@ -130,96 +130,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [
-            {
-              "number": 2131,
-              "title": "Poistetaan Primus-exportin poikkeusajastukset",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-18T07:49:12Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2131",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9101,
-              "title": "Poistetaan riippuvuus through2",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-05-18T11:39:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9101",
-              "labels": [
-                "dependencies",
-                "apigw"
-              ]
-            },
-            {
-              "number": 9071,
-              "title": "Lisätään kuntien Y-tunnukset metadataan",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-05-18T10:34:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9071",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee"
-              ]
-            },
-            {
-              "number": 9069,
-              "title": "Metadatan käännöksiä",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-05-18T08:54:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9069",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee"
-              ]
-            },
-            {
-              "number": 9068,
-              "title": "CVE-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-05-13T12:57:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9068",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -234,7 +151,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-20T10:29:52.644Z",
+            "checkedAt": "2026-05-20T11:10:53.938Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -253,7 +170,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-20T10:29:53.646Z",
+            "checkedAt": "2026-05-20T11:10:54.991Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -287,7 +204,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-20T10:29:55.451Z",
+            "checkedAt": "2026-05-20T11:10:57.104Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -306,7 +223,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-20T10:29:56.378Z",
+            "checkedAt": "2026-05-20T11:10:58.014Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
