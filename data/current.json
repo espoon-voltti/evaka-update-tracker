@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20T11:10:59.862Z",
+  "generatedAt": "2026-05-20T12:07:51.396Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-20T11:10:25.753Z",
+            "checkedAt": "2026-05-20T12:07:24.126Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-20T11:10:26.628Z",
+            "checkedAt": "2026-05-20T12:07:24.844Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9103,
+              "title": "Synkataan Espoon tuotannon ja stagingin feature flagit",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-20T11:59:57Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9103",
+              "labels": [
+                "enhancement",
+                "espoo",
+                "not-visible"
+              ]
+            },
             {
               "number": 9102,
               "title": "Korjauksia ruotsinkielisiin teksteihin",
@@ -81,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-20T11:10:28.616Z",
+            "checkedAt": "2026-05-20T12:07:26.713Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "abd21493d8fb6739b51152a2716950c812dfc8fc",
@@ -106,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-20T11:10:40.505Z",
+            "checkedAt": "2026-05-20T12:07:35.502Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "abd21493d8fb6739b51152a2716950c812dfc8fc",
@@ -151,7 +168,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-20T11:10:53.938Z",
+            "checkedAt": "2026-05-20T12:07:46.124Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -170,7 +187,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-20T11:10:54.991Z",
+            "checkedAt": "2026-05-20T12:07:46.879Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -204,7 +221,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-20T11:10:57.104Z",
+            "checkedAt": "2026-05-20T12:07:48.847Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -223,7 +240,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-20T11:10:58.014Z",
+            "checkedAt": "2026-05-20T12:07:49.518Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
