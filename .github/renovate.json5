@@ -28,12 +28,6 @@
   packageRules: [
     {
       // Automerge patch versions of all dependencies
-      matchUpdateTypes: ['patch'],
-      automerge: true,
-    },
-    {
-      // Automerge minor and patch versions for devDependencies
-      matchDepTypes: ['devDependencies'],
       matchUpdateTypes: ['minor', 'patch'],
       automerge: true,
     },
