@@ -78,7 +78,7 @@ function buildChangesSection(
       changesText += `\n_...ja <${historyUrl}|${remaining} muuta muutosta>_`;
     }
   } else if (event.includedPRs.length > 0) {
-    // Had PRs but all were bot-authored
+    // Had PRs but all were hidden (bots, no-changelog, or other cities)
     changesText = `*Muutokset (${repoTypeDisplay}):*\nEi merkittäviä muutoksia`;
   } else {
     changesText = `*PR-tietoja ei saatavilla tälle ${repoTypeDisplay}-päivitykselle*`;

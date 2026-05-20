@@ -27,7 +27,7 @@ import {
   FeatureFlagData,
 } from './types.js';
 import { mergeFeatureFlagFallback } from './services/feature-flag-collector.js';
-import { prBelongsToCity } from './utils/municipality-labels.js';
+import { prBelongsToCity, hideForeignCorePRs } from './utils/municipality-labels.js';
 import { writeJsonFile } from './utils/json-io.js';
 
 loadEnv();
@@ -230,10 +230,10 @@ export async function run() {
           changePRs.push(...corePRs);
         }
 
-        const filteredChangePRs = changePRs.filter(
-          (pr) => pr.repoType !== 'core' || prBelongsToCity(pr.labels, cityGroup.id)
-        );
-        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, filteredChangePRs, branchInfoByRepoType);
+        // Keep city-irrelevant core PRs as hidden (rather than dropping them)
+        // so the frontend can tell a non-city change advanced the environment.
+        const changeEventPRs = hideForeignCorePRs(changePRs, cityGroup.id);
+        const events = detectChanges(env.id, cityGroup.id, rep, prevEntry, changeEventPRs, branchInfoByRepoType);
 
         // For branch deployment events, look up the branch's own PR and add it
         for (const event of events) {

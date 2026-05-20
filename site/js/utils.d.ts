@@ -28,3 +28,17 @@ export function findStagingBranchInfo(
   historyEvents: ReadonlyArray<StagingBranchEvent>,
   city: StagingBranchCity
 ): StagingBranchInfo | null;
+
+export interface NonVisibleStagingEvent {
+  cityGroupId: string;
+  environmentId: string;
+  detectedAt: string;
+  isDefaultBranch?: boolean;
+  newCommit?: { date?: string } | null;
+  includedPRs?: ReadonlyArray<{ mergedAt?: string; isHidden?: boolean }>;
+}
+
+export function countNonVisibleStagingCommits(
+  historyEvents: ReadonlyArray<NonVisibleStagingEvent>,
+  city: StagingBranchCity
+): number;

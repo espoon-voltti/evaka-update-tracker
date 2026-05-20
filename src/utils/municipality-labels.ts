@@ -1,3 +1,5 @@
+import { PullRequest } from '../types.js';
+
 const MUNICIPALITY_LABEL_TO_CITY_GROUP: Record<string, string> = {
   turku: 'turku',
   espoo: 'espoo',
@@ -28,4 +30,18 @@ export function getMunicipalityNames(labels: string[]): string[] {
   return labels
     .map((l) => MUNICIPALITY_LABEL_NAMES[l])
     .filter((n): n is string => n !== undefined);
+}
+
+/**
+ * Mark core PRs that don't belong to the given city as hidden, rather than
+ * dropping them. Wrapper PRs and city-relevant core PRs pass through
+ * unchanged. Used for deployment-event PR lists so the frontend can still
+ * tell that a city-irrelevant change advanced the environment.
+ */
+export function hideForeignCorePRs(prs: PullRequest[], cityGroupId: string): PullRequest[] {
+  return prs.map((pr) =>
+    pr.repoType === 'core' && !prBelongsToCity(pr.labels, cityGroupId)
+      ? { ...pr, isHidden: true }
+      : pr
+  );
 }
