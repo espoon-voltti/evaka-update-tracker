@@ -1,6 +1,48 @@
 {
   "events": [
     {
+      "id": "2026-05-21T06:06:50.411Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-05-21T06:06:50.411Z",
+      "previousCommit": {
+        "sha": "14c4c91d782f9a52a6ccfa4b99c766db643d5375",
+        "shortSha": "14c4c91",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a573cb8e2f1ebb32deee0f63b5af787151f97fd0",
+        "shortSha": "a573cb8",
+        "message": "Merge pull request #9104 from espoon-voltti/fix-business-id-vesilahti",
+        "date": "2026-05-21T05:32:21Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9104,
+          "title": "Korjataan Vesilahden Y-tunnus",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-05-21T05:32:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9104",
+          "labels": [
+            "bugfix",
+            "seutu",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-05-21T05:39:39.027Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
