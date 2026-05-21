@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T08:57:05.132Z",
+  "generatedAt": "2026-05-21T09:34:28.100Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-21T08:56:32.209Z",
+            "checkedAt": "2026-05-21T09:33:55.443Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "fe120611320cf097430b7857e4981f1d5600f3e0",
-              "shortSha": "fe12061",
-              "message": "Merge pull request #9072 from espoon-voltti/fix-swedish-employee-translations",
-              "date": "2026-05-18T13:31:42Z",
-              "author": "terolaakso-reaktor"
+              "sha": "a573cb8e2f1ebb32deee0f63b5af787151f97fd0",
+              "shortSha": "a573cb8",
+              "message": "Merge pull request #9104 from espoon-voltti/fix-business-id-vesilahti",
+              "date": "2026-05-21T05:32:21Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-21T08:56:33.119Z",
+            "checkedAt": "2026-05-21T09:33:57.730Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9103,
               "title": "Synkataan Espoon tuotannon ja stagingin feature flagit",
@@ -85,6 +84,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-21T08:56:35.900Z",
+            "checkedAt": "2026-05-21T09:34:00.261Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "abd21493d8fb6739b51152a2716950c812dfc8fc",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-21T08:56:45.124Z",
+            "checkedAt": "2026-05-21T09:34:08.472Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b00b860896431c024639ee014b3a7a29a61e6247",
@@ -186,15 +186,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-21T08:56:57.964Z",
+            "checkedAt": "2026-05-21T09:34:19.723Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "fe120611320cf097430b7857e4981f1d5600f3e0",
-              "shortSha": "fe12061",
-              "message": "Merge pull request #9072 from espoon-voltti/fix-swedish-employee-translations",
-              "date": "2026-05-18T13:31:42Z",
-              "author": "terolaakso-reaktor"
+              "sha": "14c4c91d782f9a52a6ccfa4b99c766db643d5375",
+              "shortSha": "14c4c91",
+              "message": "Merge pull request #9103 from espoon-voltti/espoo-staging-features",
+              "date": "2026-05-20T11:59:56Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -205,7 +205,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-21T08:56:58.811Z",
+            "checkedAt": "2026-05-21T09:34:21.492Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -239,15 +239,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-21T08:57:01.860Z",
+            "checkedAt": "2026-05-21T09:34:23.836Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "fe120611320cf097430b7857e4981f1d5600f3e0",
-              "shortSha": "fe12061",
-              "message": "Merge pull request #9072 from espoon-voltti/fix-swedish-employee-translations",
-              "date": "2026-05-18T13:31:42Z",
-              "author": "terolaakso-reaktor"
+              "sha": "14c4c91d782f9a52a6ccfa4b99c766db643d5375",
+              "shortSha": "14c4c91",
+              "message": "Merge pull request #9103 from espoon-voltti/espoo-staging-features",
+              "date": "2026-05-20T11:59:56Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -258,7 +258,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-21T08:57:02.648Z",
+            "checkedAt": "2026-05-21T09:34:25.609Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
