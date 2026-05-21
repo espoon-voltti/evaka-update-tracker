@@ -5,7 +5,7 @@ on:
     - cron: '*/5 * * * *'
   workflow_dispatch:
   repository_dispatch:
-    types: [evaka-pr-merged, evakaoulu-deployed, evakaturku-deployed, trevaka-deployed]
+    types: [evaka-pr-merged, espoo-deployed, evakaoulu-deployed, evakaturku-deployed, trevaka-deployed]
 
 permissions:
   contents: write
