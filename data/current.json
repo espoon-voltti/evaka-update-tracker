@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T06:38:27.496Z",
+  "generatedAt": "2026-05-27T08:05:08.710Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-27T06:37:43.986Z",
+            "checkedAt": "2026-05-27T08:04:21.676Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-27T06:37:44.706Z",
+            "checkedAt": "2026-05-27T08:04:22.243Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -68,7 +68,41 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9070,
+              "title": "Päätössivun muokkaus",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-05-27T07:09:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9070",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9139,
+              "title": "Käytetään multi-arch sftp imagea composessa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-27T07:01:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9139",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -81,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-27T06:37:46.936Z",
+            "checkedAt": "2026-05-27T08:04:25.719Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "abd21493d8fb6739b51152a2716950c812dfc8fc",
@@ -106,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-27T06:37:55.751Z",
+            "checkedAt": "2026-05-27T08:04:33.822Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
@@ -189,7 +223,41 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9070,
+              "title": "Päätössivun muokkaus",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-05-27T07:09:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9070",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9139,
+              "title": "Käytetään multi-arch sftp imagea composessa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-27T07:01:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9139",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -202,7 +270,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-27T06:38:20.664Z",
+            "checkedAt": "2026-05-27T08:05:00.377Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -221,60 +289,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-27T06:38:21.383Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "54608eaa93477a42b9e2972619f8a46836ab32e6",
-              "shortSha": "54608ea",
-              "message": "Merge pull request #9136 from espoon-voltti/espoo-sv-decision-links",
-              "date": "2026-05-26T06:28:35Z",
-              "author": "terolaakso-reaktor"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        }
-      ],
-      "prTracks": {
-        "wrapper": null,
-        "core": {
-          "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": []
-        }
-      }
-    },
-    {
-      "id": "turku",
-      "name": "Turku",
-      "environments": [
-        {
-          "id": "turku-prod",
-          "type": "production",
-          "version": {
-            "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-27T06:38:24.578Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "fde7883b0e042dd898d517af71d44cd455621075",
-              "shortSha": "fde7883",
-              "message": "Merge pull request #9126 from espoon-voltti/renovate/date-fns-4.x",
-              "date": "2026-05-25T05:21:54Z",
-              "author": "akheron"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        },
-        {
-          "id": "turku-staging",
-          "type": "staging",
-          "version": {
-            "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-27T06:38:25.303Z",
+            "checkedAt": "2026-05-27T08:05:01.151Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -296,6 +311,126 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9070,
+              "title": "Päätössivun muokkaus",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-05-27T07:09:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9070",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9139,
+              "title": "Käytetään multi-arch sftp imagea composessa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-27T07:01:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9139",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "turku",
+      "name": "Turku",
+      "environments": [
+        {
+          "id": "turku-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "evaka.turku.fi",
+            "checkedAt": "2026-05-27T08:05:04.543Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "fde7883b0e042dd898d517af71d44cd455621075",
+              "shortSha": "fde7883",
+              "message": "Merge pull request #9126 from espoon-voltti/renovate/date-fns-4.x",
+              "date": "2026-05-25T05:21:54Z",
+              "author": "akheron"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "turku-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging-evaka.turku.fi",
+            "checkedAt": "2026-05-27T08:05:05.226Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "54608eaa93477a42b9e2972619f8a46836ab32e6",
+              "shortSha": "54608ea",
+              "message": "Merge pull request #9136 from espoon-voltti/espoo-sv-decision-links",
+              "date": "2026-05-26T06:28:35Z",
+              "author": "terolaakso-reaktor"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": null,
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 9070,
+              "title": "Päätössivun muokkaus",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-05-27T07:09:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9070",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9139,
+              "title": "Käytetään multi-arch sftp imagea composessa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-27T07:01:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9139",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9138,
               "title": "Ilmoittamattoman poissaolon-infotekstin muutos Turulle",
