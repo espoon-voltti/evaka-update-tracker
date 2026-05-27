@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T09:25:33.709Z",
+  "generatedAt": "2026-05-27T10:46:09.639Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-27T09:24:31.429Z",
+            "checkedAt": "2026-05-27T10:44:46.404Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-27T09:24:32.359Z",
+            "checkedAt": "2026-05-27T10:44:47.322Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -115,21 +115,21 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-27T09:24:36.804Z",
+            "checkedAt": "2026-05-27T10:44:51.677Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "abd21493d8fb6739b51152a2716950c812dfc8fc",
-              "shortSha": "abd2149",
-              "message": "Update core",
-              "date": "2026-05-19T04:36:42Z",
+              "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
+              "shortSha": "5450551",
+              "message": "Update evaka submodule",
+              "date": "2026-05-27T05:36:11Z",
               "author": "akheron"
             },
             "coreCommit": {
-              "sha": "fe120611320cf097430b7857e4981f1d5600f3e0",
-              "shortSha": "fe12061",
-              "message": "Merge pull request #9072 from espoon-voltti/fix-swedish-employee-translations",
-              "date": "2026-05-18T13:31:42Z",
-              "author": "terolaakso-reaktor"
+              "sha": "0f2f641488b32ad7b5fb889106c24153c24aebfc",
+              "shortSha": "0f2f641",
+              "message": "Merge pull request #9140 from espoon-voltti/tampere-unit-acl-export-oid",
+              "date": "2026-05-27T05:35:18Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -140,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-27T09:24:49.480Z",
+            "checkedAt": "2026-05-27T10:45:25.101Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
@@ -170,8 +170,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9140,
               "title": "Lisätään unit oid Tampereen ACL export -aineistoon",
@@ -223,6 +222,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9070,
@@ -270,7 +270,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-27T09:25:23.036Z",
+            "checkedAt": "2026-05-27T10:45:58.482Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -289,7 +289,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-27T09:25:24.053Z",
+            "checkedAt": "2026-05-27T10:45:59.584Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -357,7 +357,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-27T09:25:28.836Z",
+            "checkedAt": "2026-05-27T10:46:04.036Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -376,7 +376,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-27T09:25:29.620Z",
+            "checkedAt": "2026-05-27T10:46:05.225Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
