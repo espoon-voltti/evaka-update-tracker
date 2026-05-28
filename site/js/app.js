@@ -55,7 +55,7 @@ function handleOverview(_params, queryParams) {
     return;
   }
   document.title = 'Yleiskatsaus - eVaka muutostenseuranta';
-  fetch('data/history.json').then((r) => r.ok ? r.json() : { events: [] }).catch(() => ({ events: [] }))
+  fetch(cacheBustUrl('data/history.json')).then((r) => r.ok ? r.json() : { events: [] }).catch(() => ({ events: [] }))
     .then((historyData) => {
       renderView(renderOverview(currentData, historyData.events || []));
       bindOverviewEvents();
@@ -84,8 +84,8 @@ function handleCityDetail({ id }, queryParams) {
   // Dynamically import city-detail and load history + feature flags
   Promise.all([
     import('./components/city-detail.js'),
-    fetch('data/history.json').then((r) => r.ok ? r.json() : { events: [] }).catch(() => ({ events: [] })),
-    fetch('data/feature-flags.json').then((r) => r.ok ? r.json() : null).catch(() => null),
+    fetch(cacheBustUrl('data/history.json')).then((r) => r.ok ? r.json() : { events: [] }).catch(() => ({ events: [] })),
+    fetch(cacheBustUrl('data/feature-flags.json')).then((r) => r.ok ? r.json() : null).catch(() => null),
   ]).then(([{ renderCityDetail, bindCityDetailEvents }, historyData, featureData]) => {
     const city = currentData.cityGroups.find((c) => c.id === id);
     if (!city) {
@@ -116,7 +116,7 @@ function handleCityHistory({ id }, queryParams) {
     document.title = `Muutoshistoria - ${city.name} - eVaka muutostenseuranta`;
     const showBots = queryParams?.get('showBots') === 'true';
     try {
-      const resp = await fetch('data/history.json');
+      const resp = await fetch(cacheBustUrl('data/history.json'));
       const historyData = resp.ok ? await resp.json() : { events: [] };
       renderView(renderHistoryView(city, historyData, { showBots }));
       bindHistoryViewEvents(city);
@@ -134,7 +134,7 @@ function handleFeatures(_params, queryParams) {
   exitFullscreen();
   document.title = 'Ominaisuudet - eVaka muutostenseuranta';
   renderView('<div class="loading">Ladataan...</div>');
-  fetch('data/feature-flags.json')
+  fetch(cacheBustUrl('data/feature-flags.json'))
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return r.json();
