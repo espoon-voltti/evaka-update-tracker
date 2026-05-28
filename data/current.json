@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T06:01:28.674Z",
+  "generatedAt": "2026-05-28T07:39:16.787Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-28T06:00:57.748Z",
+            "checkedAt": "2026-05-28T07:38:44.448Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-05-28T06:00:58.433Z",
+            "checkedAt": "2026-05-28T07:38:45.138Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -97,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-28T06:01:01.333Z",
+            "checkedAt": "2026-05-28T07:38:48.433Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
@@ -122,7 +122,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-05-28T06:01:09.717Z",
+            "checkedAt": "2026-05-28T07:38:56.218Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ed9b86175181daa6897b6e3d14daa2c0e91f624c",
@@ -188,7 +188,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9105,
+              "title": "Korjaa Lempäälän takautuvan DAYCARE_ONLY-maksupäätöksen päättymispäivämäärä",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-05-28T07:33:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9105",
+              "labels": [
+                "bugfix",
+                "seutu",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -201,7 +219,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-28T06:01:21.553Z",
+            "checkedAt": "2026-05-28T07:39:08.157Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -220,7 +238,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-05-28T06:01:22.225Z",
+            "checkedAt": "2026-05-28T07:39:09.186Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -288,7 +306,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-05-28T06:01:25.328Z",
+            "checkedAt": "2026-05-28T07:39:12.473Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -307,7 +325,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-05-28T06:01:25.908Z",
+            "checkedAt": "2026-05-28T07:39:13.243Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
