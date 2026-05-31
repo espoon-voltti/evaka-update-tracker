@@ -1,6 +1,48 @@
 {
   "events": [
     {
+      "id": "2026-05-31T03:37:20.923Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-05-31T03:37:20.923Z",
+      "previousCommit": {
+        "sha": "8900c42f1148f93f8dfed4328f1ec73b668bab10",
+        "shortSha": "8900c42",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "0133860872180c00acc132a80a51f61892c7a965",
+        "shortSha": "0133860",
+        "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+        "date": "2026-05-30T21:47:42Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9166,
+          "title": "Update dependency typescript-eslint to v8.60.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-05-30T21:47:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9166",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-05-30T03:21:04.974Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
