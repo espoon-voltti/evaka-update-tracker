@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T05:20:02.651Z",
+  "generatedAt": "2026-06-01T05:35:42.676Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-01T05:17:01.787Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-01T05:34:42.077Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "cabb606105e56a010bc81e9d952db3a81b7dedf9",
+              "shortSha": "cabb606",
+              "message": "Merge pull request #9105 from espoon-voltti/fix-lempaala-fee-decision-retroactive-end-date",
+              "date": "2026-05-28T07:33:27Z",
+              "author": "Wnt"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,10 +29,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-01T05:17:09.327Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-01T05:34:42.783Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "0133860872180c00acc132a80a51f61892c7a965",
+              "shortSha": "0133860",
+              "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+              "date": "2026-05-30T21:47:42Z",
+              "author": "renovate[bot]"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -37,7 +49,25 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9143,
+              "title": "Poistetaan käyttämätön wrapResult funktio",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-05-29T05:58:31Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9143",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -51,10 +81,22 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-01T05:17:16.815Z",
-            "status": "unavailable",
-            "wrapperCommit": null,
-            "coreCommit": null
+            "checkedAt": "2026-06-01T05:34:48.582Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
+              "shortSha": "5450551",
+              "message": "Update evaka submodule",
+              "date": "2026-05-27T05:36:11Z",
+              "author": "akheron"
+            },
+            "coreCommit": {
+              "sha": "0f2f641488b32ad7b5fb889106c24153c24aebfc",
+              "shortSha": "0f2f641",
+              "message": "Merge pull request #9140 from espoon-voltti/tampere-unit-acl-export-oid",
+              "date": "2026-05-27T05:35:18Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -64,10 +106,22 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-01T05:18:24.458Z",
-            "status": "unavailable",
-            "wrapperCommit": null,
-            "coreCommit": null
+            "checkedAt": "2026-06-01T05:34:56.004Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+              "shortSha": "9722638",
+              "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+              "date": "2026-05-31T21:12:54Z",
+              "author": "github-actions[bot]"
+            },
+            "coreCommit": {
+              "sha": "0133860872180c00acc132a80a51f61892c7a965",
+              "shortSha": "0133860",
+              "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+              "date": "2026-05-30T21:47:42Z",
+              "author": "renovate[bot]"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -83,7 +137,92 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9146,
+              "title": "Palveluohjaus vakapäätösten päättäjäksi Tampereella",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-29T12:26:56Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9146",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9143,
+              "title": "Poistetaan käyttämätön wrapResult funktio",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-05-29T05:58:31Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9143",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9105,
+              "title": "Korjaa Lempäälän takautuvan DAYCARE_ONLY-maksupäätöksen päättymispäivämäärä",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-05-28T07:33:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9105",
+              "labels": [
+                "bugfix",
+                "seutu",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9070,
+              "title": "Päätössivun muokkaus",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-05-27T07:09:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9070",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9139,
+              "title": "Käytetään multi-arch sftp imagea composessa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-05-27T07:01:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9139",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -97,10 +236,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-01T05:19:32.199Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-01T05:35:18.226Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "cabb606105e56a010bc81e9d952db3a81b7dedf9",
+              "shortSha": "cabb606",
+              "message": "Merge pull request #9105 from espoon-voltti/fix-lempaala-fee-decision-retroactive-end-date",
+              "date": "2026-05-28T07:33:27Z",
+              "author": "Wnt"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -110,10 +255,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-01T05:19:39.769Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-01T05:35:19.120Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "0133860872180c00acc132a80a51f61892c7a965",
+              "shortSha": "0133860",
+              "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+              "date": "2026-05-30T21:47:42Z",
+              "author": "renovate[bot]"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -124,7 +275,25 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9143,
+              "title": "Poistetaan käyttämätön wrapResult funktio",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-05-29T05:58:31Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9143",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -138,10 +307,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-01T05:19:47.294Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-01T05:35:30.764Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "cabb606105e56a010bc81e9d952db3a81b7dedf9",
+              "shortSha": "cabb606",
+              "message": "Merge pull request #9105 from espoon-voltti/fix-lempaala-fee-decision-retroactive-end-date",
+              "date": "2026-05-28T07:33:27Z",
+              "author": "Wnt"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -151,10 +326,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-01T05:19:54.877Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-01T05:35:31.459Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "0133860872180c00acc132a80a51f61892c7a965",
+              "shortSha": "0133860",
+              "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+              "date": "2026-05-30T21:47:42Z",
+              "author": "renovate[bot]"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -165,7 +346,25 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9143,
+              "title": "Poistetaan käyttämätön wrapResult funktio",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-05-29T05:58:31Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9143",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
