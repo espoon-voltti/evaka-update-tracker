@@ -1,6 +1,194 @@
 {
   "events": [
     {
+      "id": "2026-06-02T12:54:38.295Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-02T12:54:38.295Z",
+      "previousCommit": {
+        "sha": "0133860872180c00acc132a80a51f61892c7a965",
+        "shortSha": "0133860",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "be926362134ec252676fd412ee0924f37469ab78",
+        "shortSha": "be92636",
+        "message": "Merge pull request #9144 from espoon-voltti/more-data-removal",
+        "date": "2026-06-01T09:09:19Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9144,
+          "title": "Lisää dataa automaattipoiston piiriin (ei vielä käytössä)",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-01T09:09:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9144",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9160,
+          "title": "Update dependency dd-trace to v5.104.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T07:02:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9160",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9158,
+          "title": "Update dependency com.github.kagkarlsson:db-scheduler to v16.11.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T07:02:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9158",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9167,
+          "title": "Update sentry-javascript monorepo to v10.54.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T05:56:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9167",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9165,
+          "title": "Update Yarn to v4.15.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T05:39:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9165",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9164,
+          "title": "Update Node.js to v24.16.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T05:39:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9164",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9163,
+          "title": "Update dependency wouter to v3.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T05:39:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9163",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9161,
+          "title": "Update dependency helmet to v8.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T05:39:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9161",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9159,
+          "title": "Update dependency date-fns to v4.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T05:38:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9159",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9157,
+          "title": "Update dependency @react-spring/web to v10.1.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-01T05:37:36Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9157",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-06-02T11:40:27.628Z_oulu-prod_core",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",

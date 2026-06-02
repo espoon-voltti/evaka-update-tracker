@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T11:42:00.088Z",
+  "generatedAt": "2026-06-02T12:55:20.364Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-02T11:41:25.982Z",
+            "checkedAt": "2026-06-02T12:54:32.832Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0133860872180c00acc132a80a51f61892c7a965",
-              "shortSha": "0133860",
-              "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
-              "date": "2026-05-30T21:47:42Z",
-              "author": "renovate[bot]"
+              "sha": "be926362134ec252676fd412ee0924f37469ab78",
+              "shortSha": "be92636",
+              "message": "Merge pull request #9144 from espoon-voltti/more-data-removal",
+              "date": "2026-06-01T09:09:19Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-02T11:41:26.574Z",
+            "checkedAt": "2026-06-02T12:54:38.295Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9144,
               "title": "Lisää dataa automaattipoiston piiriin (ei vielä käytössä)",
@@ -68,6 +67,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-02T11:41:30.720Z",
+            "checkedAt": "2026-06-02T12:54:43.097Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-02T11:41:38.571Z",
+            "checkedAt": "2026-06-02T12:54:52.046Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -253,7 +253,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-02T11:41:56.846Z",
+            "checkedAt": "2026-06-02T12:55:16.169Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -272,7 +272,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-02T11:41:57.484Z",
+            "checkedAt": "2026-06-02T12:55:17.121Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -306,7 +306,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-02T11:41:58.367Z",
+            "checkedAt": "2026-06-02T12:55:18.518Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -325,7 +325,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-02T11:41:59.181Z",
+            "checkedAt": "2026-06-02T12:55:19.085Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
