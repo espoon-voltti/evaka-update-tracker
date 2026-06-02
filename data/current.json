@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T04:16:55.670Z",
+  "generatedAt": "2026-06-02T05:22:44.536Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-02T04:16:05.765Z",
+            "checkedAt": "2026-06-02T05:21:39.772Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-02T04:16:06.779Z",
+            "checkedAt": "2026-06-02T05:21:41.004Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-02T04:16:11.249Z",
+            "checkedAt": "2026-06-02T05:21:46.316Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
@@ -106,25 +106,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-02T04:16:20.725Z",
+            "checkedAt": "2026-06-02T05:21:59.390Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
-              "shortSha": "9722638",
-              "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
-              "date": "2026-05-31T21:12:54Z",
+              "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
+              "shortSha": "5a66ddb",
+              "message": "Merge pull request #2142 from Tampere/dependabot/submodules/evaka-be92636",
+              "date": "2026-06-02T04:49:56Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "0133860872180c00acc132a80a51f61892c7a965",
-              "shortSha": "0133860",
-              "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
-              "date": "2026-05-30T21:47:42Z",
-              "author": "renovate[bot]"
+              "sha": "be926362134ec252676fd412ee0924f37469ab78",
+              "shortSha": "be92636",
+              "message": "Merge pull request #9144 from espoon-voltti/more-data-removal",
+              "date": "2026-06-01T09:09:19Z",
+              "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-06-02T05:21:59.390Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
+                "shortSha": "5a66ddb",
+                "message": "Merge pull request #2142 from Tampere/dependabot/submodules/evaka-be92636",
+                "date": "2026-06-02T04:49:56Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "be926362134ec252676fd412ee0924f37469ab78",
+                "shortSha": "be92636",
+                "message": "Merge pull request #9144 from espoon-voltti/more-data-removal",
+                "date": "2026-06-01T09:09:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-06-02T05:22:00.978Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-06-02T05:22:02.367Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-06-02T05:22:03.637Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-06-02T05:22:04.924Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-06-02T05:22:06.223Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-06-02T05:22:07.491Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-06-02T05:22:08.763Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-06-02T05:22:10.077Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "97226386ac7d30f1d50673a4da0e55e9c8bb07a3",
+                "shortSha": "9722638",
+                "message": "Merge pull request #2140 from Tampere/dependabot/submodules/evaka-0133860",
+                "date": "2026-05-31T21:12:54Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0133860872180c00acc132a80a51f61892c7a965",
+                "shortSha": "0133860",
+                "message": "Update dependency typescript-eslint to v8.60.0 (#9166)",
+                "date": "2026-05-30T21:47:42Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -138,6 +310,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9144,
+              "title": "Lisää dataa automaattipoiston piiriin (ei vielä käytössä)",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-01T09:09:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9144",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9146,
               "title": "Palveluohjaus vakapäätösten päättäjäksi Tampereella",
@@ -223,25 +412,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9144,
-              "title": "Lisää dataa automaattipoiston piiriin (ei vielä käytössä)",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-01T09:09:19Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9144",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -254,7 +425,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-02T04:16:40.872Z",
+            "checkedAt": "2026-06-02T05:22:32.198Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -273,7 +444,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-02T04:16:41.608Z",
+            "checkedAt": "2026-06-02T05:22:33.258Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -325,7 +496,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-02T04:16:46.376Z",
+            "checkedAt": "2026-06-02T05:22:38.678Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -344,7 +515,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-02T04:16:47.015Z",
+            "checkedAt": "2026-06-02T05:22:39.602Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
