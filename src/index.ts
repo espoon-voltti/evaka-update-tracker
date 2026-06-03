@@ -15,6 +15,7 @@ import { getUser } from './api/github.js';
 import { readHistory, appendEvents, pruneOldEvents, writeHistory, backfillBranchInfo, backfillBranchTransitionPRs } from './services/history-manager.js';
 import { collectFeatureFlags } from './services/feature-flag-collector.js';
 import { FEATURE_FLAG_CITIES } from './config/feature-flag-cities.js';
+import { collectPermissions, mergePermissionsFallback, PermissionsData } from './services/permissions-collector.js';
 import {
   CityGroupData,
   CurrentData,
@@ -444,6 +445,35 @@ export async function run() {
     }
   } catch (err) {
     console.warn('Feature flag collection failed (non-fatal):', err);
+  }
+
+  // Collect permissions matrix (non-blocking — errors don't fail the pipeline)
+  try {
+    console.log('\nCollecting permissions matrix...');
+    const permissionsData = await collectPermissions();
+    const erroredCities = permissionsData.cities.filter((c) => c.error);
+    if (erroredCities.length > 0) {
+      console.warn(
+        `Permissions collection had errors for: ${erroredCities.map((c) => c.name).join(', ')}`
+      );
+      const permissionsPath = path.join(DATA_DIR, 'permissions.json');
+      if (fs.existsSync(permissionsPath)) {
+        const previous: PermissionsData = JSON.parse(fs.readFileSync(permissionsPath, 'utf-8'));
+        mergePermissionsFallback(permissionsData, previous);
+      }
+    }
+    const totalActions = permissionsData.categories.reduce(
+      (sum, cat) => sum + cat.actions.length,
+      0
+    );
+    console.log(
+      `Permissions collected: ${totalActions} actions across ${permissionsData.cities.length} instances`
+    );
+    if (!DRY_RUN) {
+      writeJsonFile(path.join(DATA_DIR, 'permissions.json'), permissionsData);
+    }
+  } catch (err) {
+    console.warn('Permissions collection failed (non-fatal):', err);
   }
 
   if (DRY_RUN) {

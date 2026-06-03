@@ -18,6 +18,9 @@ export function renderCityTabs(cityGroups, activeCityId) {
   const featuresActive = activeCityId === 'features';
   const featuresTab = `<span class="tab${featuresActive ? ' active' : ''}" data-city-id="features">Ominaisuudet</span>`;
 
-  return overviewTab + cityTabs.join('') + featuresTab;
+  const permissionsActive = activeCityId === 'permissions';
+  const permissionsTab = `<span class="tab${permissionsActive ? ' active' : ''}" data-city-id="permissions">Käyttäjäoikeudet</span>`;
+
+  return overviewTab + cityTabs.join('') + featuresTab + permissionsTab;
 }
 
