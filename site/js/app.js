@@ -129,6 +129,49 @@ function handleCityHistory({ id }, queryParams) {
   });
 }
 
+// Route: Permissions (#/permissions)
+function handlePermissions(_params, queryParams) {
+  exitFullscreen();
+  document.title = 'Käyttäjäoikeudet - eVaka muutostenseuranta';
+  renderView('<div class="loading">Ladataan...</div>');
+  fetch(cacheBustUrl('data/permissions.json'))
+    .then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
+    .then((permData) => {
+      import('./components/permissions-matrix.js').then(
+        ({ renderPermissionsMatrix, bindPermissionsMatrixEvents }) => {
+          const cityGroup = queryParams?.get('city') || 'espoo';
+          const differencesOnly = queryParams?.get('differencesOnly') === 'true';
+          const filterText = queryParams?.get('q') || '';
+          const crudParam = queryParams?.get('crud');
+          const crudFilter = crudParam ? crudParam.split(',').filter(Boolean) : null;
+          const ctxParam = queryParams?.get('ctx');
+          const ctxFilter = ctxParam ? ctxParam.split(',').filter(Boolean) : null;
+          renderView(
+            renderPermissionsMatrix(permData, {
+              cityGroup,
+              differencesOnly,
+              filterText,
+              crudFilter,
+              ctxFilter,
+            })
+          );
+          bindPermissionsMatrixEvents();
+          updateTabs('permissions');
+        }
+      );
+    })
+    .catch((err) => {
+      console.error('Failed to load permissions:', err);
+      renderView(
+        '<div class="empty-state">Käyttäjäoikeustietojen lataaminen epäonnistui.</div>'
+      );
+      updateTabs('permissions');
+    });
+}
+
 // Route: Features (#/features)
 function handleFeatures(_params, queryParams) {
   exitFullscreen();
@@ -171,6 +214,8 @@ function updateTabs(activeCityId) {
           const cityId = tab.dataset.cityId;
           if (cityId === 'features') {
             navigate('/features');
+          } else if (cityId === 'permissions') {
+            navigate('/permissions');
           } else if (cityId) {
             navigate(`/city/${cityId}`);
           } else {
@@ -196,6 +241,7 @@ export async function refreshCurrentView() {
 // Register routes
 addRoute('/', handleOverview);
 addRoute('/features', handleFeatures);
+addRoute('/permissions', handlePermissions);
 addRoute('/city/:id', handleCityDetail);
 addRoute('/city/:id/history', handleCityHistory);
 setNotFound(() => navigate('/'));
