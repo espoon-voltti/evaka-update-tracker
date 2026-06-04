@@ -1,6 +1,63 @@
 {
   "events": [
     {
+      "id": "2026-06-04T03:53:21.122Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-04T03:53:21.122Z",
+      "previousCommit": {
+        "sha": "be926362134ec252676fd412ee0924f37469ab78",
+        "shortSha": "be92636",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
+        "shortSha": "ee8fd6f",
+        "message": "CI: push single-arch image to ECR instead of image index (#9170)",
+        "date": "2026-06-03T07:38:13Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 9170,
+          "title": "Viedään docker kuvat ECR repositoryyn ilman indeksiä",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-06-03T07:38:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9170",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 9137,
+          "title": "Työntekijän oman viestin poisto",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-03T06:29:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9137",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-03T09:48:12.636Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
@@ -25188,279 +25245,6 @@
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
       "detectedAt": "2026-05-05T03:57:44.899Z",
-      "previousCommit": {
-        "sha": "ed7f7ab11906138272ebd47a3830ca4b682f8291",
-        "shortSha": "ed7f7ab",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "62bc80ba952c34f3b78060167fc8f14597e1a891",
-        "shortSha": "62bc80b",
-        "message": "Merge pull request #8988 from espoon-voltti/update-additional-information-permissions",
-        "date": "2026-05-04T09:34:18Z",
-        "author": "ohinkinen"
-      },
-      "includedPRs": [
-        {
-          "number": 8988,
-          "title": "Lisätään varhaiskasvatussihteerin roolille lapsen lisätietojen muokkausoikeudet",
-          "author": "ohinkinen",
-          "authorName": "Olli-Heikki Inkinen",
-          "mergedAt": "2026-05-04T09:34:18Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8988",
-          "labels": [
-            "enhancement",
-            "core",
-            "employee"
-          ]
-        },
-        {
-          "number": 8985,
-          "title": "Muutetaan tuloselvityksien yksikköfiltteri multiselect-kentäksi",
-          "author": "ohinkinen",
-          "authorName": "Olli-Heikki Inkinen",
-          "mergedAt": "2026-05-04T09:33:27Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8985",
-          "labels": [
-            "enhancement",
-            "core",
-            "employee"
-          ]
-        },
-        {
-          "number": 9010,
-          "title": "Käytä voltti-actioneita master haarasta",
-          "author": "ilja-git",
-          "authorName": null,
-          "mergedAt": "2026-05-04T09:27:18Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9010",
-          "labels": [
-            "no-changelog"
-          ]
-        },
-        {
-          "number": 8987,
-          "title": "Erillinen ECR-push",
-          "author": "ilja-git",
-          "authorName": null,
-          "mergedAt": "2026-05-04T08:50:09Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8987",
-          "labels": [
-            "no-changelog"
-          ]
-        },
-        {
-          "number": 9009,
-          "title": "CVE-korjaus",
-          "author": "akheron",
-          "authorName": "Petri Lehtinen",
-          "mergedAt": "2026-05-04T07:33:43Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9009",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9007,
-          "title": "Update Gradle to v9.5.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-04T06:15:29Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9007",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9006,
-          "title": "Update dependency software.amazon.awssdk:bom to v2.43.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-04T06:12:45Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9006",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9005,
-          "title": "Update dependency org.jdbi:jdbi3-bom to v3.53.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-04T06:12:34Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9005",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9002,
-          "title": "Update flyway to v12.5.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-04T06:12:20Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9002",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9000,
-          "title": "Update dependency cryptography to v47",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-04T06:12:07Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9000",
-          "labels": [
-            "dependencies",
-            "apigw"
-          ]
-        },
-        {
-          "number": 8999,
-          "title": "Update sentry-javascript monorepo to v10.50.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-04T06:11:52Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8999",
-          "labels": [
-            "dependencies",
-            "frontend"
-          ]
-        },
-        {
-          "number": 9008,
-          "title": "Poistetaan viittaukset devcontaineriin",
-          "author": "akheron",
-          "authorName": null,
-          "mergedAt": "2026-05-04T06:11:38Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9008",
-          "labels": [
-            "no-changelog"
-          ]
-        },
-        {
-          "number": 8996,
-          "title": "Update dependency @tanstack/react-query to v5.100.6",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-04T04:32:31Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8996",
-          "labels": [
-            "dependencies",
-            "frontend"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-05-05T03:50:48.258Z_turku-staging_wrapper",
-      "environmentId": "turku-staging",
-      "cityGroupId": "turku",
-      "detectedAt": "2026-05-05T03:50:48.258Z",
-      "previousCommit": {
-        "sha": "358e9de72ae198fe1ecc816271092e5aea7cfb6a",
-        "shortSha": "358e9de",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "c641366225d93b5313905bb026429e167fb04b62",
-        "shortSha": "c641366",
-        "message": "Merge pull request #315 from City-of-Turku/dependabot/submodules/evaka-62bc80b",
-        "date": "2026-05-05T03:40:17Z",
-        "author": "github-actions[bot]"
-      },
-      "includedPRs": [
-        {
-          "number": 315,
-          "title": "Bump evaka from `ed7f7ab` to `62bc80b`",
-          "author": "dependabot[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-05T03:40:17Z",
-          "repository": "City-of-Turku/evakaturku",
-          "repoType": "wrapper",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/City-of-Turku/evakaturku/pull/315",
-          "labels": [
-            "dependencies",
-            "submodules"
-          ]
-        }
-      ],
-      "repoType": "wrapper",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-05-05T03:50:48.258Z_turku-staging_core",
-      "environmentId": "turku-staging",
-      "cityGroupId": "turku",
-      "detectedAt": "2026-05-05T03:50:48.258Z",
       "previousCommit": {
         "sha": "ed7f7ab11906138272ebd47a3830ca4b682f8291",
         "shortSha": "ed7f7ab",
