@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T08:36:21.732Z",
+  "generatedAt": "2026-06-04T09:26:27.005Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-04T08:35:47.392Z",
+            "checkedAt": "2026-06-04T09:25:57.123Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-04T08:35:48.339Z",
+            "checkedAt": "2026-06-04T09:25:57.931Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-04T08:35:50.757Z",
+            "checkedAt": "2026-06-04T09:26:00.292Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-04T08:36:01.822Z",
+            "checkedAt": "2026-06-04T09:26:09.025Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d2655ef1c0dfeeea42667ab1e3c5128e0632ed95",
@@ -169,15 +169,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-04T08:36:15.324Z",
+            "checkedAt": "2026-06-04T09:26:20.178Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "be926362134ec252676fd412ee0924f37469ab78",
-              "shortSha": "be92636",
-              "message": "Merge pull request #9144 from espoon-voltti/more-data-removal",
-              "date": "2026-06-01T09:09:19Z",
-              "author": "akheron"
+              "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
+              "shortSha": "ee8fd6f",
+              "message": "CI: push single-arch image to ECR instead of image index (#9170)",
+              "date": "2026-06-03T07:38:13Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -188,7 +188,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-04T08:36:16.254Z",
+            "checkedAt": "2026-06-04T09:26:21.782Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -207,8 +207,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9137,
               "title": "Työntekijän oman viestin poisto",
@@ -227,6 +226,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -240,15 +240,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-04T08:36:18.792Z",
+            "checkedAt": "2026-06-04T09:26:23.544Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "be926362134ec252676fd412ee0924f37469ab78",
-              "shortSha": "be92636",
-              "message": "Merge pull request #9144 from espoon-voltti/more-data-removal",
-              "date": "2026-06-01T09:09:19Z",
-              "author": "akheron"
+              "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
+              "shortSha": "ee8fd6f",
+              "message": "CI: push single-arch image to ECR instead of image index (#9170)",
+              "date": "2026-06-03T07:38:13Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -259,7 +259,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-04T08:36:19.678Z",
+            "checkedAt": "2026-06-04T09:26:25.180Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -278,8 +278,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9137,
               "title": "Työntekijän oman viestin poisto",
@@ -298,6 +297,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
