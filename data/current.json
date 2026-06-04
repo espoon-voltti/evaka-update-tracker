@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T09:26:27.005Z",
+  "generatedAt": "2026-06-04T09:27:51.660Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,16 +10,10 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-04T09:25:57.123Z",
-            "status": "ok",
+            "checkedAt": "2026-06-04T09:27:14.409Z",
+            "status": "unavailable",
             "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "be926362134ec252676fd412ee0924f37469ab78",
-              "shortSha": "be92636",
-              "message": "Merge pull request #9144 from espoon-voltti/more-data-removal",
-              "date": "2026-06-01T09:09:19Z",
-              "author": "akheron"
-            }
+            "coreCommit": null
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -29,7 +23,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-04T09:25:57.931Z",
+            "checkedAt": "2026-06-04T09:27:21.338Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -49,25 +43,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [
-            {
-              "number": 9137,
-              "title": "Työntekijän oman viestin poisto",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-03T06:29:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9137",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -81,7 +57,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-04T09:26:00.292Z",
+            "checkedAt": "2026-06-04T09:27:22.577Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -106,7 +82,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-04T09:26:09.025Z",
+            "checkedAt": "2026-06-04T09:27:34.113Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d2655ef1c0dfeeea42667ab1e3c5128e0632ed95",
@@ -169,7 +145,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-04T09:26:20.178Z",
+            "checkedAt": "2026-06-04T09:27:47.378Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -188,7 +164,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-04T09:26:21.782Z",
+            "checkedAt": "2026-06-04T09:27:48.263Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -207,25 +183,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9137,
-              "title": "Työntekijän oman viestin poisto",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-03T06:29:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9137",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -240,7 +198,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-04T09:26:23.544Z",
+            "checkedAt": "2026-06-04T09:27:49.616Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -259,7 +217,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-04T09:26:25.180Z",
+            "checkedAt": "2026-06-04T09:27:50.514Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -278,25 +236,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9137,
-              "title": "Työntekijän oman viestin poisto",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-03T06:29:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9137",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
