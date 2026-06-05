@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T00:08:20.642Z",
+  "generatedAt": "2026-06-05T01:20:46.046Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T00:07:51.245Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-05T01:20:23.209Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
+              "shortSha": "ee8fd6f",
+              "message": "CI: push single-arch image to ECR instead of image index (#9170)",
+              "date": "2026-06-03T07:38:13Z",
+              "author": "ilja-git"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T00:07:57.911Z",
+            "checkedAt": "2026-06-05T01:20:23.857Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -75,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T00:07:59.008Z",
+            "checkedAt": "2026-06-05T01:20:24.936Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -100,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T00:08:06.756Z",
+            "checkedAt": "2026-06-05T01:20:32.425Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d2655ef1c0dfeeea42667ab1e3c5128e0632ed95",
@@ -181,7 +187,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T00:08:16.822Z",
+            "checkedAt": "2026-06-05T01:20:42.376Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -200,7 +206,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T00:08:17.626Z",
+            "checkedAt": "2026-06-05T01:20:43.148Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -252,7 +258,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-05T00:08:18.750Z",
+            "checkedAt": "2026-06-05T01:20:44.327Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -271,7 +277,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-05T00:08:19.411Z",
+            "checkedAt": "2026-06-05T01:20:45.023Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
