@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T12:18:06.683Z",
+  "generatedAt": "2026-06-05T12:48:05.425Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T12:17:35.427Z",
+            "checkedAt": "2026-06-05T12:47:33.187Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T12:17:36.839Z",
+            "checkedAt": "2026-06-05T12:47:34.047Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,27 +48,27 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9174,
-              "title": "Päivitetään thread-stream versioon 4.2.0",
+              "number": 9171,
+              "title": "Lisätään perhekoko näkyviin kuntalaiselle",
               "author": "ohinkinen",
               "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-04T11:45:43Z",
+              "mergedAt": "2026-06-05T12:25:48Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9174",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9171",
               "labels": [
-                "dependencies",
-                "apigw",
-                "not-visible"
+                "enhancement",
+                "core",
+                "citizen"
               ]
             }
-          ],
-          "inStaging": [],
-          "pendingDeployment": []
+          ]
         }
       }
     },
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T12:17:38.530Z",
+            "checkedAt": "2026-06-05T12:47:35.557Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T12:17:49.240Z",
+            "checkedAt": "2026-06-05T12:47:45.938Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f59a0be6ab3b93f2efc480dd89cfe2804d8920e6",
@@ -173,7 +173,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9171,
+              "title": "Lisätään perhekoko näkyviin kuntalaiselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-05T12:25:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9171",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -186,7 +204,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T12:18:02.185Z",
+            "checkedAt": "2026-06-05T12:48:00.070Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -205,7 +223,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T12:18:03.172Z",
+            "checkedAt": "2026-06-05T12:48:01.005Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -226,7 +244,25 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9171,
+              "title": "Lisätään perhekoko näkyviin kuntalaiselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-05T12:25:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9171",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -239,7 +275,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-05T12:18:04.699Z",
+            "checkedAt": "2026-06-05T12:48:02.834Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -258,7 +294,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-05T12:18:05.566Z",
+            "checkedAt": "2026-06-05T12:48:03.872Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -279,7 +315,25 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9171,
+              "title": "Lisätään perhekoko näkyviin kuntalaiselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-05T12:25:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9171",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     }
