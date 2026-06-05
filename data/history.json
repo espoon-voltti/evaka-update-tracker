@@ -1,6 +1,88 @@
 {
   "events": [
     {
+      "id": "2026-06-05T12:16:43.642Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-06-05T12:16:43.642Z",
+      "previousCommit": {
+        "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
+        "shortSha": "ee8fd6f",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "11202c728ba1c44e56fa6899d6df6c7c2bc948e1",
+        "shortSha": "11202c7",
+        "message": "Merge pull request #9174 from espoon-voltti/bump-thread-stream-version",
+        "date": "2026-06-04T11:45:42Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9174,
+          "title": "Päivitetään thread-stream versioon 4.2.0",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-04T11:45:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9174",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-06-05T12:16:47.209Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-06-05T12:16:47.209Z",
+      "previousCommit": {
+        "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
+        "shortSha": "ee8fd6f",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "11202c728ba1c44e56fa6899d6df6c7c2bc948e1",
+        "shortSha": "11202c7",
+        "message": "Merge pull request #9174 from espoon-voltti/bump-thread-stream-version",
+        "date": "2026-06-04T11:45:42Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9174,
+          "title": "Päivitetään thread-stream versioon 4.2.0",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-04T11:45:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9174",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-06-05T06:37:17.879Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
@@ -22862,140 +22944,6 @@
       "repoType": "core",
       "isDefaultBranch": true,
       "branch": null
-    },
-    {
-      "id": "2026-05-06T12:11:10.446Z_espoo-prod_core",
-      "environmentId": "espoo-prod",
-      "cityGroupId": "espoo",
-      "detectedAt": "2026-05-06T12:11:10.446Z",
-      "previousCommit": {
-        "sha": "62bc80ba952c34f3b78060167fc8f14597e1a891",
-        "shortSha": "62bc80b",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "c31923785f9febd1d3cbf8c088a0632b19a45961",
-        "shortSha": "c319237",
-        "message": "Fix re-tag on CI re-run (#9018)",
-        "date": "2026-05-05T14:06:05Z",
-        "author": "ilja-git"
-      },
-      "includedPRs": [
-        {
-          "number": 9018,
-          "title": "Korjaa uudelleentagitus CI uudelleenajossa",
-          "author": "ilja-git",
-          "authorName": null,
-          "mergedAt": "2026-05-05T14:06:06Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9018",
-          "labels": [
-            "no-changelog"
-          ]
-        },
-        {
-          "number": 9016,
-          "title": "Kevätsiivous: Poistettujen Gradle-alimoduulien viittaukset pois .dockerignoresta ja .gitignoresta",
-          "author": "Wnt",
-          "authorName": null,
-          "mergedAt": "2026-05-05T12:53:25Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9016",
-          "labels": [
-            "no-changelog"
-          ]
-        },
-        {
-          "number": 9013,
-          "title": "Käytä latest docker-tagia master buildelle",
-          "author": "ilja-git",
-          "authorName": null,
-          "mergedAt": "2026-05-05T12:08:13Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9013",
-          "labels": [
-            "no-changelog"
-          ]
-        },
-        {
-          "number": 8938,
-          "title": "Korvaa OWASP dependency-check Dependabotilla / dependency-review-actionilla",
-          "author": "Wnt",
-          "authorName": null,
-          "mergedAt": "2026-05-05T11:49:59Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8938",
-          "labels": [
-            "no-changelog"
-          ]
-        },
-        {
-          "number": 8804,
-          "title": "Palautetaan Espoon Särmäintegraatio; metadata generointi pure Kotlin-toteutuksella",
-          "author": "Wnt",
-          "authorName": "Jonni Madekivi",
-          "mergedAt": "2026-05-05T11:25:03Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8804",
-          "labels": [
-            "enhancement",
-            "espoo",
-            "employee"
-          ]
-        },
-        {
-          "number": 8977,
-          "title": "Salli käyttämättömien asiakirjapohjien poistaminen",
-          "author": "Wnt",
-          "authorName": "Jonni Madekivi",
-          "mergedAt": "2026-05-05T10:56:00Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/8977",
-          "labels": [
-            "enhancement",
-            "core",
-            "employee"
-          ]
-        },
-        {
-          "number": 9012,
-          "title": "Vähennetään SAML-virhelokitusta",
-          "author": "akheron",
-          "authorName": "Petri Lehtinen",
-          "mergedAt": "2026-05-05T08:53:34Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9012",
-          "labels": [
-            "tech",
-            "core"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true
     }
   ]
 }

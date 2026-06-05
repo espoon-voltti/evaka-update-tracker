@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T11:49:26.838Z",
+  "generatedAt": "2026-06-05T12:16:49.082Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T11:48:53.372Z",
+            "checkedAt": "2026-06-05T12:16:10.469Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T11:48:54.259Z",
+            "checkedAt": "2026-06-05T12:16:11.366Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T11:48:55.904Z",
+            "checkedAt": "2026-06-05T12:16:13.213Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T11:49:07.237Z",
+            "checkedAt": "2026-06-05T12:16:25.787Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f59a0be6ab3b93f2efc480dd89cfe2804d8920e6",
@@ -186,15 +186,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T11:49:21.486Z",
+            "checkedAt": "2026-06-05T12:16:41.778Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
-              "shortSha": "ee8fd6f",
-              "message": "CI: push single-arch image to ECR instead of image index (#9170)",
-              "date": "2026-06-03T07:38:13Z",
-              "author": "ilja-git"
+              "sha": "11202c728ba1c44e56fa6899d6df6c7c2bc948e1",
+              "shortSha": "11202c7",
+              "message": "Merge pull request #9174 from espoon-voltti/bump-thread-stream-version",
+              "date": "2026-06-04T11:45:42Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -205,7 +205,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T11:49:22.461Z",
+            "checkedAt": "2026-06-05T12:16:43.642Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -224,8 +224,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9174,
               "title": "Päivitetään thread-stream versioon 4.2.0",
@@ -244,6 +243,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -257,15 +257,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-05T11:49:24.353Z",
+            "checkedAt": "2026-06-05T12:16:45.744Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
-              "shortSha": "ee8fd6f",
-              "message": "CI: push single-arch image to ECR instead of image index (#9170)",
-              "date": "2026-06-03T07:38:13Z",
-              "author": "ilja-git"
+              "sha": "11202c728ba1c44e56fa6899d6df6c7c2bc948e1",
+              "shortSha": "11202c7",
+              "message": "Merge pull request #9174 from espoon-voltti/bump-thread-stream-version",
+              "date": "2026-06-04T11:45:42Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -276,7 +276,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-05T11:49:25.128Z",
+            "checkedAt": "2026-06-05T12:16:47.209Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -295,8 +295,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9174,
               "title": "Päivitetään thread-stream versioon 4.2.0",
@@ -315,6 +314,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
