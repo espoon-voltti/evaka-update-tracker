@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T04:17:52.899Z",
+  "generatedAt": "2026-06-05T04:57:54.879Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,16 +10,10 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T04:17:15.994Z",
-            "status": "ok",
+            "checkedAt": "2026-06-05T04:57:22.248Z",
+            "status": "unavailable",
             "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
-              "shortSha": "ee8fd6f",
-              "message": "CI: push single-arch image to ECR instead of image index (#9170)",
-              "date": "2026-06-03T07:38:13Z",
-              "author": "ilja-git"
-            }
+            "coreCommit": null
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -29,7 +23,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-05T04:17:16.876Z",
+            "checkedAt": "2026-06-05T04:57:28.961Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -49,25 +43,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [
-            {
-              "number": 9174,
-              "title": "Päivitetään thread-stream versioon 4.2.0",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-04T11:45:43Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9174",
-              "labels": [
-                "dependencies",
-                "apigw",
-                "not-visible"
-              ]
-            }
-          ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -81,7 +57,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T04:17:18.685Z",
+            "checkedAt": "2026-06-05T04:57:29.839Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -106,21 +82,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-05T04:17:30.929Z",
+            "checkedAt": "2026-06-05T04:57:38.236Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "d2655ef1c0dfeeea42667ab1e3c5128e0632ed95",
-              "shortSha": "d2655ef",
-              "message": "Merge pull request #2143 from Tampere/dependabot/submodules/evaka-ee8fd6f",
-              "date": "2026-06-03T08:34:19Z",
+              "sha": "f59a0be6ab3b93f2efc480dd89cfe2804d8920e6",
+              "shortSha": "f59a0be",
+              "message": "Merge pull request #2144 from Tampere/dependabot/submodules/evaka-11202c7",
+              "date": "2026-06-04T21:12:28Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "ee8fd6fdf0a337cdd63edf7e0aa2e331ada508a9",
-              "shortSha": "ee8fd6f",
-              "message": "CI: push single-arch image to ECR instead of image index (#9170)",
-              "date": "2026-06-03T07:38:13Z",
-              "author": "ilja-git"
+              "sha": "11202c728ba1c44e56fa6899d6df6c7c2bc948e1",
+              "shortSha": "11202c7",
+              "message": "Merge pull request #9174 from espoon-voltti/bump-thread-stream-version",
+              "date": "2026-06-04T11:45:42Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -139,6 +115,23 @@
           "deployed": [],
           "inStaging": [
             {
+              "number": 9174,
+              "title": "Päivitetään thread-stream versioon 4.2.0",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-04T11:45:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9174",
+              "labels": [
+                "dependencies",
+                "apigw",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9137,
               "title": "Työntekijän oman viestin poisto",
               "author": "ohinkinen",
@@ -156,25 +149,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9174,
-              "title": "Päivitetään thread-stream versioon 4.2.0",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-04T11:45:43Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9174",
-              "labels": [
-                "dependencies",
-                "apigw",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -187,7 +162,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T04:17:45.891Z",
+            "checkedAt": "2026-06-05T04:57:50.784Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -206,7 +181,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-05T04:17:46.921Z",
+            "checkedAt": "2026-06-05T04:57:51.730Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -258,7 +233,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-05T04:17:48.378Z",
+            "checkedAt": "2026-06-05T04:57:52.842Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -277,7 +252,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-05T04:17:49.157Z",
+            "checkedAt": "2026-06-05T04:57:53.533Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
