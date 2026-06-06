@@ -1,6 +1,159 @@
 {
   "events": [
     {
+      "id": "2026-06-06T03:19:00.656Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-06T03:19:00.656Z",
+      "previousCommit": {
+        "sha": "11202c728ba1c44e56fa6899d6df6c7c2bc948e1",
+        "shortSha": "11202c7",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "cd814d3817a8530e0777b8cc38f032c147d6c3fe",
+        "shortSha": "cd814d3",
+        "message": "Update jackson monorepo to v3.1.4 (#9185)",
+        "date": "2026-06-06T01:09:29Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9185,
+          "title": "Update jackson monorepo to v3.1.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T01:09:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9185",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9180,
+          "title": "Update dependency eslint-plugin-prettier to v5.5.6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T01:09:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9180",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9181,
+          "title": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T01:09:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9181",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9184,
+          "title": "Update dependency uv to v0.11.17",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T01:08:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9184",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9182,
+          "title": "Update dependency lefthook to v2.1.9",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T01:08:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9182",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9183,
+          "title": "Update dependency tsx to v4.22.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T01:08:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9183",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9179,
+          "title": "Update dependency com.networknt:json-schema-validator to v3.0.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T01:07:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9179",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9171,
+          "title": "Lisätään perhekoko näkyviin kuntalaiselle",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-05T12:25:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9171",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-05T12:17:36.838Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
