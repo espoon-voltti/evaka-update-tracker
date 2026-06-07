@@ -1,6 +1,63 @@
 {
   "events": [
     {
+      "id": "2026-06-07T03:43:34.970Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-07T03:43:34.970Z",
+      "previousCommit": {
+        "sha": "cd814d3817a8530e0777b8cc38f032c147d6c3fe",
+        "shortSha": "cd814d3",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "53cf01dd2867607cd1e71fd45735021e200ad5b3",
+        "shortSha": "53cf01d",
+        "message": "Update dependency rollup to v4.61.0 (#9197)",
+        "date": "2026-06-06T06:17:56Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9197,
+          "title": "Update dependency rollup to v4.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T06:17:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9197",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9186,
+          "title": "Update jaxb-ri monorepo to v4.0.9",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-06T06:15:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9186",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-06T03:19:00.656Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
