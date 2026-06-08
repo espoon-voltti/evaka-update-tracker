@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T05:07:42.862Z",
+  "generatedAt": "2026-06-08T06:48:30.932Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-08T05:06:58.384Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-08T06:47:44.915Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "11202c728ba1c44e56fa6899d6df6c7c2bc948e1",
+              "shortSha": "11202c7",
+              "message": "Merge pull request #9174 from espoon-voltti/bump-thread-stream-version",
+              "date": "2026-06-04T11:45:42Z",
+              "author": "ohinkinen"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-08T05:07:05.058Z",
+            "checkedAt": "2026-06-08T06:47:45.580Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -43,7 +49,25 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9171,
+              "title": "Lisätään perhekoko näkyviin kuntalaiselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-05T12:25:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9171",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -57,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-08T05:07:07.752Z",
+            "checkedAt": "2026-06-08T06:47:52.398Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -82,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-08T05:07:15.716Z",
+            "checkedAt": "2026-06-08T06:47:59.894Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7602b5cd8ea8c4447366e130b9801c891bf0ced0",
@@ -179,7 +203,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-08T05:07:30.408Z",
+            "checkedAt": "2026-06-08T06:48:16.508Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -198,7 +222,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-08T05:07:31.308Z",
+            "checkedAt": "2026-06-08T06:48:17.190Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -250,7 +274,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-08T05:07:36.969Z",
+            "checkedAt": "2026-06-08T06:48:23.684Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -269,7 +293,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-08T05:07:37.521Z",
+            "checkedAt": "2026-06-08T06:48:24.368Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
