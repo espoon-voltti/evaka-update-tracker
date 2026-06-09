@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T03:04:36.980Z",
+  "generatedAt": "2026-06-09T03:22:58.706Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-09T03:03:42.292Z",
+            "checkedAt": "2026-06-09T03:21:33.001Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-09T03:03:43.053Z",
+            "checkedAt": "2026-06-09T03:21:34.024Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "53cf01dd2867607cd1e71fd45735021e200ad5b3",
-              "shortSha": "53cf01d",
-              "message": "Update dependency rollup to v4.61.0 (#9197)",
-              "date": "2026-06-06T06:17:56Z",
-              "author": "renovate[bot]"
+              "sha": "106d1232a126e8c778dfd7216bc6584fcb0b1d6f",
+              "shortSha": "106d123",
+              "message": "Merge pull request #9212 from espoon-voltti/email-tel-input-types",
+              "date": "2026-06-08T13:01:33Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9212,
               "title": "Muuta sähköposti- ja puhelinnumerokenttien tyypit",
@@ -152,7 +151,8 @@
                 "employee"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -165,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-09T03:03:52.088Z",
+            "checkedAt": "2026-06-09T03:21:57.195Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -190,7 +190,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-09T03:04:00.287Z",
+            "checkedAt": "2026-06-09T03:22:09.379Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7602b5cd8ea8c4447366e130b9801c891bf0ced0",
@@ -372,7 +372,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-09T03:04:22.435Z",
+            "checkedAt": "2026-06-09T03:22:39.130Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -391,7 +391,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-09T03:04:23.168Z",
+            "checkedAt": "2026-06-09T03:22:40.136Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -510,7 +510,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-09T03:04:29.749Z",
+            "checkedAt": "2026-06-09T03:22:49.160Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -529,7 +529,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-09T03:04:30.362Z",
+            "checkedAt": "2026-06-09T03:22:50.400Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
