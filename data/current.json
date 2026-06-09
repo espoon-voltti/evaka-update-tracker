@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09T08:46:47.765Z",
+  "generatedAt": "2026-06-09T10:05:57.318Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-09T08:45:47.061Z",
+            "checkedAt": "2026-06-09T10:04:18.936Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "53cf01dd2867607cd1e71fd45735021e200ad5b3",
-              "shortSha": "53cf01d",
-              "message": "Update dependency rollup to v4.61.0 (#9197)",
-              "date": "2026-06-06T06:17:56Z",
-              "author": "renovate[bot]"
+              "sha": "106d1232a126e8c778dfd7216bc6584fcb0b1d6f",
+              "shortSha": "106d123",
+              "message": "Merge pull request #9212 from espoon-voltti/email-tel-input-types",
+              "date": "2026-06-08T13:01:33Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-09T08:45:47.695Z",
+            "checkedAt": "2026-06-09T10:04:30.087Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9212,
               "title": "Muuta sähköposti- ja puhelinnumerokenttien tyypit",
@@ -133,26 +132,28 @@
                 "tech",
                 "core"
               ]
-            },
+            }
+          ],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9145,
-              "title": "Ruotsinkieliset käännökset palveluntarpeille",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-08T10:11:58Z",
+              "number": 9177,
+              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-09T09:56:45Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9145",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
               "labels": [
                 "enhancement",
-                "espoo",
-                "employee"
+                "core",
+                "not-visible"
               ]
             }
-          ],
-          "pendingDeployment": []
+          ]
         }
       }
     },
@@ -165,7 +166,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-09T08:45:58.434Z",
+            "checkedAt": "2026-06-09T10:04:41.844Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -190,7 +191,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-09T08:46:06.510Z",
+            "checkedAt": "2026-06-09T10:04:52.698Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "538d03bcc80fce86357c02ef5fa66a6c52de8b6e",
@@ -358,7 +359,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9177,
+              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-09T09:56:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -371,15 +390,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-09T08:46:31.051Z",
+            "checkedAt": "2026-06-09T10:05:21.888Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "6af7f605af67c76ae0266d9f4d7d62d008168b20",
-              "shortSha": "6af7f60",
-              "message": "Update dependency vite to v8.0.15 (#9196)",
-              "date": "2026-06-07T14:08:16Z",
-              "author": "renovate[bot]"
+              "sha": "106d1232a126e8c778dfd7216bc6584fcb0b1d6f",
+              "shortSha": "106d123",
+              "message": "Merge pull request #9212 from espoon-voltti/email-tel-input-types",
+              "date": "2026-06-08T13:01:33Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -390,7 +409,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-09T08:46:31.826Z",
+            "checkedAt": "2026-06-09T10:05:30.621Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -409,8 +428,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9212,
               "title": "Muuta sähköposti- ja puhelinnumerokenttien tyypit",
@@ -496,7 +514,26 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 9177,
+              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-09T09:56:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -509,15 +546,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-09T08:46:39.366Z",
+            "checkedAt": "2026-06-09T10:05:40.079Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "6af7f605af67c76ae0266d9f4d7d62d008168b20",
-              "shortSha": "6af7f60",
-              "message": "Update dependency vite to v8.0.15 (#9196)",
-              "date": "2026-06-07T14:08:16Z",
-              "author": "renovate[bot]"
+              "sha": "106d1232a126e8c778dfd7216bc6584fcb0b1d6f",
+              "shortSha": "106d123",
+              "message": "Merge pull request #9212 from espoon-voltti/email-tel-input-types",
+              "date": "2026-06-08T13:01:33Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -528,7 +565,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-09T08:46:39.983Z",
+            "checkedAt": "2026-06-09T10:05:48.049Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -547,8 +584,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9212,
               "title": "Muuta sähköposti- ja puhelinnumerokenttien tyypit",
@@ -634,7 +670,26 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 9177,
+              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-09T09:56:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     }
