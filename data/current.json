@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T11:40:20.738Z",
+  "generatedAt": "2026-06-10T11:41:45.668Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-10T11:39:10.274Z",
+            "checkedAt": "2026-06-10T11:41:07.633Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-10T11:39:13.115Z",
+            "checkedAt": "2026-06-10T11:41:08.543Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,74 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9216,
-              "title": "Aggressiivisempi Postgres autovacuum analyze Espoossa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-10T05:41:43Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9216",
-              "labels": [
-                "tech",
-                "espoo"
-              ]
-            },
-            {
-              "number": 9219,
-              "title": "Korjaus flakyyn testiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-10T05:22:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9218,
-              "title": "vitest-version pinnaus apigw:ssä",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-09T12:43:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9218",
-              "labels": [
-                "dependencies",
-                "apigw",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9177,
-              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-09T09:56:45Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -148,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-10T11:39:16.477Z",
+            "checkedAt": "2026-06-10T11:41:10.367Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -169,7 +102,7 @@
           "mismatchDetails": [
             {
               "instanceDomain": "varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-06-10T11:39:16.477Z",
+              "checkedAt": "2026-06-10T11:41:10.367Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -188,7 +121,7 @@
             },
             {
               "instanceDomain": "evaka.hameenkyro.fi",
-              "checkedAt": "2026-06-10T11:39:17.396Z",
+              "checkedAt": "2026-06-10T11:41:12.010Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -207,7 +140,7 @@
             },
             {
               "instanceDomain": "evaka.kangasala.fi",
-              "checkedAt": "2026-06-10T11:39:18.578Z",
+              "checkedAt": "2026-06-10T11:41:13.903Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -226,7 +159,7 @@
             },
             {
               "instanceDomain": "evaka.lempaala.fi",
-              "checkedAt": "2026-06-10T11:39:19.425Z",
+              "checkedAt": "2026-06-10T11:41:15.553Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -245,7 +178,7 @@
             },
             {
               "instanceDomain": "evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-06-10T11:39:20.491Z",
+              "checkedAt": "2026-06-10T11:41:17.298Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -264,7 +197,7 @@
             },
             {
               "instanceDomain": "evaka.orivesi.fi",
-              "checkedAt": "2026-06-10T11:39:21.440Z",
+              "checkedAt": "2026-06-10T11:41:18.589Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -283,7 +216,7 @@
             },
             {
               "instanceDomain": "evaka.pirkkala.fi",
-              "checkedAt": "2026-06-10T11:39:22.190Z",
+              "checkedAt": "2026-06-10T11:41:19.900Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -302,7 +235,7 @@
             },
             {
               "instanceDomain": "evaka.vesilahti.fi",
-              "checkedAt": "2026-06-10T11:39:23.102Z",
+              "checkedAt": "2026-06-10T11:41:21.741Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -321,7 +254,7 @@
             },
             {
               "instanceDomain": "evaka.ylojarvi.fi",
-              "checkedAt": "2026-06-10T11:39:24.044Z",
+              "checkedAt": "2026-06-10T11:41:23.045Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -345,7 +278,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-10T11:39:44.050Z",
+            "checkedAt": "2026-06-10T11:41:24.622Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -375,93 +308,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9218,
-              "title": "vitest-version pinnaus apigw:ssä",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-09T12:43:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9218",
-              "labels": [
-                "dependencies",
-                "apigw",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9177,
-              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-09T09:56:45Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9212,
-              "title": "Muuta sähköposti- ja puhelinnumerokenttien tyypit",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-06-08T13:01:33Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9212",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9173,
-              "title": "Lisätään työntekijöiden oman tiedotteen poisto",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-08T12:35:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9173",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9175,
-              "title": "Lisätään toisen huoltajan hakemukselle ilmoitus yhdessä sovitusta hakemuksesta",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-08T12:34:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9175",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -510,7 +357,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-10T11:40:10.608Z",
+            "checkedAt": "2026-06-10T11:41:38.690Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -529,7 +376,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-10T11:40:12.505Z",
+            "checkedAt": "2026-06-10T11:41:39.693Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -548,42 +395,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9218,
-              "title": "vitest-version pinnaus apigw:ssä",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-09T12:43:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9218",
-              "labels": [
-                "dependencies",
-                "apigw",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9177,
-              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-09T09:56:45Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -632,7 +444,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-10T11:40:15.806Z",
+            "checkedAt": "2026-06-10T11:41:42.335Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -651,7 +463,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-10T11:40:17.624Z",
+            "checkedAt": "2026-06-10T11:41:43.192Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -670,42 +482,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9218,
-              "title": "vitest-version pinnaus apigw:ssä",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-09T12:43:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9218",
-              "labels": [
-                "dependencies",
-                "apigw",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9177,
-              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-09T09:56:45Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
