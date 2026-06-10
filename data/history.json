@@ -1,6 +1,80 @@
 {
   "events": [
     {
+      "id": "2026-06-10T03:21:58.986Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-10T03:21:58.986Z",
+      "previousCommit": {
+        "sha": "106d1232a126e8c778dfd7216bc6584fcb0b1d6f",
+        "shortSha": "106d123",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
+        "shortSha": "01b7c14",
+        "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
+        "date": "2026-06-09T12:43:15Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9218,
+          "title": "vitest-version pinnaus apigw:ssä",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-06-09T12:43:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9218",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9177,
+          "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-09T09:56:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9177",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9215,
+          "title": "Don't pin GitHub Actions versions",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-06-09T05:05:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9215",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-09T10:04:30.087Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
