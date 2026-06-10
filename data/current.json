@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T21:41:43.680Z",
+  "generatedAt": "2026-06-10T22:16:11.891Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-10T21:27:19.054Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-10T22:15:39.494Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "8159c7bcc3e47499fc443ef0cd5ee58c46fe0726",
+              "shortSha": "8159c7b",
+              "message": "Merge pull request #9216 from espoon-voltti/espoo-autoanalyze-config",
+              "date": "2026-06-10T05:41:42Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,10 +29,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-10T21:27:55.106Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-10T22:15:40.400Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "8159c7bcc3e47499fc443ef0cd5ee58c46fe0726",
+              "shortSha": "8159c7b",
+              "message": "Merge pull request #9216 from espoon-voltti/espoo-autoanalyze-config",
+              "date": "2026-06-10T05:41:42Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -38,7 +50,25 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9217,
+              "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T06:44:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9217",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            }
+          ]
         }
       }
     },
@@ -51,10 +81,22 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-10T21:28:31.129Z",
-            "status": "unavailable",
-            "wrapperCommit": null,
-            "coreCommit": null
+            "checkedAt": "2026-06-10T22:15:41.855Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
+              "shortSha": "2a79736",
+              "message": "Merge pull request #2147 from Tampere/dependabot/submodules/evaka-01b7c14",
+              "date": "2026-06-09T21:12:44Z",
+              "author": "github-actions[bot]"
+            },
+            "coreCommit": {
+              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
+              "shortSha": "01b7c14",
+              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
+              "date": "2026-06-09T12:43:15Z",
+              "author": "terolaakso-reaktor"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -64,10 +106,22 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-10T21:33:55.345Z",
-            "status": "unavailable",
-            "wrapperCommit": null,
-            "coreCommit": null
+            "checkedAt": "2026-06-10T22:15:53.166Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
+              "shortSha": "2a79736",
+              "message": "Merge pull request #2147 from Tampere/dependabot/submodules/evaka-01b7c14",
+              "date": "2026-06-09T21:12:44Z",
+              "author": "github-actions[bot]"
+            },
+            "coreCommit": {
+              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
+              "shortSha": "01b7c14",
+              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
+              "date": "2026-06-09T12:43:15Z",
+              "author": "terolaakso-reaktor"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -84,7 +138,41 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9217,
+              "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T06:44:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9217",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -97,10 +185,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-10T21:39:19.576Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-10T22:16:05.456Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
+              "shortSha": "01b7c14",
+              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
+              "date": "2026-06-09T12:43:15Z",
+              "author": "terolaakso-reaktor"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -110,10 +204,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-10T21:39:55.603Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-10T22:16:06.378Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
+              "shortSha": "01b7c14",
+              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
+              "date": "2026-06-09T12:43:15Z",
+              "author": "terolaakso-reaktor"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -125,7 +225,41 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9217,
+              "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T06:44:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9217",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -138,10 +272,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-10T21:40:31.629Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-10T22:16:08.797Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
+              "shortSha": "01b7c14",
+              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
+              "date": "2026-06-09T12:43:15Z",
+              "author": "terolaakso-reaktor"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -151,10 +291,16 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-10T21:41:07.654Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-10T22:16:09.724Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
+              "shortSha": "01b7c14",
+              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
+              "date": "2026-06-09T12:43:15Z",
+              "author": "terolaakso-reaktor"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -166,7 +312,41 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9217,
+              "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T06:44:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9217",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     }
