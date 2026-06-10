@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-10T04:56:36.873Z",
+  "generatedAt": "2026-06-10T06:32:13.147Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-10T04:55:54.733Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-10T06:31:19.372Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "106d1232a126e8c778dfd7216bc6584fcb0b1d6f",
+              "shortSha": "106d123",
+              "message": "Merge pull request #9212 from espoon-voltti/email-tel-input-types",
+              "date": "2026-06-08T13:01:33Z",
+              "author": "juakiv"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-10T04:56:01.414Z",
+            "checkedAt": "2026-06-10T06:31:20.219Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
-              "shortSha": "01b7c14",
-              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
-              "date": "2026-06-09T12:43:15Z",
-              "author": "terolaakso-reaktor"
+              "sha": "8159c7bcc3e47499fc443ef0cd5ee58c46fe0726",
+              "shortSha": "8159c7b",
+              "message": "Merge pull request #9216 from espoon-voltti/espoo-autoanalyze-config",
+              "date": "2026-06-10T05:41:42Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -43,7 +49,74 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9216,
+              "title": "Aggressiivisempi Postgres autovacuum analyze Espoossa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-10T05:41:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9216",
+              "labels": [
+                "tech",
+                "espoo"
+              ]
+            },
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9218,
+              "title": "vitest-version pinnaus apigw:ssä",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-09T12:43:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9218",
+              "labels": [
+                "dependencies",
+                "apigw",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9177,
+              "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-09T09:56:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9177",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -57,7 +130,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-10T04:56:02.204Z",
+            "checkedAt": "2026-06-10T06:31:25.518Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "5a66ddbb1bf960f778c84bfa00ec57754ad58964",
@@ -82,7 +155,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-10T04:56:10.153Z",
+            "checkedAt": "2026-06-10T06:31:36.180Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -284,7 +357,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -297,7 +387,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-10T04:56:32.033Z",
+            "checkedAt": "2026-06-10T06:32:05.278Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -316,7 +406,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-10T04:56:32.941Z",
+            "checkedAt": "2026-06-10T06:32:06.207Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -372,7 +462,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -385,7 +492,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-10T04:56:34.786Z",
+            "checkedAt": "2026-06-10T06:32:09.206Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -404,7 +511,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-10T04:56:35.395Z",
+            "checkedAt": "2026-06-10T06:32:09.990Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -460,7 +567,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     }
