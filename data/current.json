@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T08:24:34.941Z",
+  "generatedAt": "2026-06-11T09:28:53.325Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T08:24:06.369Z",
+            "checkedAt": "2026-06-11T09:28:03.930Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T08:24:06.953Z",
+            "checkedAt": "2026-06-11T09:28:04.837Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9225,
+              "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-11T09:26:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9225",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9222,
               "title": "Vaihdetaan Espoon asiakasmaksutiimin puhelinnumero sähköpostiin perhekoko komponentissa",
@@ -114,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T08:24:09.022Z",
+            "checkedAt": "2026-06-11T09:28:07.875Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -139,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T08:24:17.141Z",
+            "checkedAt": "2026-06-11T09:28:22.337Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "62cfcdfe2205f30395f91622e564f87e012cfc46",
@@ -207,6 +224,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9225,
+              "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-11T09:26:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9225",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9220,
               "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
               "author": "akheron",
@@ -235,15 +269,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T08:24:28.031Z",
+            "checkedAt": "2026-06-11T09:28:39.087Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
-              "shortSha": "01b7c14",
-              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
-              "date": "2026-06-09T12:43:15Z",
-              "author": "terolaakso-reaktor"
+              "sha": "8159c7bcc3e47499fc443ef0cd5ee58c46fe0726",
+              "shortSha": "8159c7b",
+              "message": "Merge pull request #9216 from espoon-voltti/espoo-autoanalyze-config",
+              "date": "2026-06-10T05:41:42Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -254,7 +288,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T08:24:28.688Z",
+            "checkedAt": "2026-06-11T09:28:41.262Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -273,8 +307,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9219,
               "title": "Korjaus flakyyn testiin",
@@ -292,7 +325,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9225,
+              "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-11T09:26:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9225",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9220,
               "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
@@ -339,15 +390,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-11T08:24:31.529Z",
+            "checkedAt": "2026-06-11T09:28:45.501Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
-              "shortSha": "01b7c14",
-              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
-              "date": "2026-06-09T12:43:15Z",
-              "author": "terolaakso-reaktor"
+              "sha": "5acd69181608a6be4d708d658b19b26cf993db0a",
+              "shortSha": "5acd691",
+              "message": "Merge pull request #9220 from espoon-voltti/clean-up-query",
+              "date": "2026-06-11T04:58:44Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -358,7 +409,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-11T08:24:32.143Z",
+            "checkedAt": "2026-06-11T09:28:48.484Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -377,8 +428,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9220,
               "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
@@ -429,7 +479,26 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 9225,
+              "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-11T09:26:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9225",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     }
