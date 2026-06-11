@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T05:06:28.995Z",
+  "generatedAt": "2026-06-11T06:03:43.447Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T05:05:45.426Z",
+            "checkedAt": "2026-06-11T06:03:14.419Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T05:05:46.231Z",
+            "checkedAt": "2026-06-11T06:03:15.027Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -97,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T05:05:47.682Z",
+            "checkedAt": "2026-06-11T06:03:16.741Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -122,7 +122,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T05:06:06.306Z",
+            "checkedAt": "2026-06-11T06:03:24.491Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "62cfcdfe2205f30395f91622e564f87e012cfc46",
@@ -218,7 +218,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T05:06:22.489Z",
+            "checkedAt": "2026-06-11T06:03:35.246Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -237,7 +237,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T05:06:23.834Z",
+            "checkedAt": "2026-06-11T06:03:35.916Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -322,7 +322,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-11T05:06:26.183Z",
+            "checkedAt": "2026-06-11T06:03:38.347Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -341,14 +341,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-11T05:06:26.875Z",
+            "checkedAt": "2026-06-11T06:03:39.015Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8159c7bcc3e47499fc443ef0cd5ee58c46fe0726",
-              "shortSha": "8159c7b",
-              "message": "Merge pull request #9216 from espoon-voltti/espoo-autoanalyze-config",
-              "date": "2026-06-10T05:41:42Z",
+              "sha": "5acd69181608a6be4d708d658b19b26cf993db0a",
+              "shortSha": "5acd691",
+              "message": "Merge pull request #9220 from espoon-voltti/clean-up-query",
+              "date": "2026-06-11T04:58:44Z",
               "author": "akheron"
             }
           },
@@ -362,24 +362,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 9219,
-              "title": "Korjaus flakyyn testiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-10T05:22:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 9220,
               "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
@@ -412,8 +394,25 @@
                 "core",
                 "employee"
               ]
+            },
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
