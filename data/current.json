@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T04:57:43.328Z",
+  "generatedAt": "2026-06-11T05:06:28.995Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T04:57:16.259Z",
+            "checkedAt": "2026-06-11T05:05:45.426Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T04:57:16.898Z",
+            "checkedAt": "2026-06-11T05:05:46.231Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,22 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9220,
+              "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T04:58:44Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9220",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9217,
               "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
@@ -81,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T04:57:17.985Z",
+            "checkedAt": "2026-06-11T05:05:47.682Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -106,7 +122,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T04:57:25.601Z",
+            "checkedAt": "2026-06-11T05:06:06.306Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "62cfcdfe2205f30395f91622e564f87e012cfc46",
@@ -172,7 +188,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9220,
+              "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T04:58:44Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9220",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -185,7 +218,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T04:57:38.140Z",
+            "checkedAt": "2026-06-11T05:06:22.489Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -204,7 +237,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T04:57:39.045Z",
+            "checkedAt": "2026-06-11T05:06:23.834Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -243,6 +276,22 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9220,
+              "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T04:58:44Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9220",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9217,
               "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
@@ -273,7 +322,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-11T04:57:40.842Z",
+            "checkedAt": "2026-06-11T05:06:26.183Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -292,7 +341,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-11T04:57:41.575Z",
+            "checkedAt": "2026-06-11T05:06:26.875Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -331,6 +380,22 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9220,
+              "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T04:58:44Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9220",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9217,
               "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
