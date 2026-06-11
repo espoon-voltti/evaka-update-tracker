@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T03:28:05.699Z",
+  "generatedAt": "2026-06-11T04:14:16.536Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T03:27:40.735Z",
+            "checkedAt": "2026-06-11T04:13:37.688Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T03:27:41.379Z",
+            "checkedAt": "2026-06-11T04:13:38.616Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T03:27:42.662Z",
+            "checkedAt": "2026-06-11T04:13:40.545Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T03:27:51.156Z",
+            "checkedAt": "2026-06-11T04:13:53.188Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -185,7 +185,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T03:28:00.858Z",
+            "checkedAt": "2026-06-11T04:14:06.876Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -204,15 +204,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T03:28:01.619Z",
+            "checkedAt": "2026-06-11T04:14:07.991Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
-              "shortSha": "01b7c14",
-              "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
-              "date": "2026-06-09T12:43:15Z",
-              "author": "terolaakso-reaktor"
+              "sha": "8159c7bcc3e47499fc443ef0cd5ee58c46fe0726",
+              "shortSha": "8159c7b",
+              "message": "Merge pull request #9216 from espoon-voltti/espoo-autoanalyze-config",
+              "date": "2026-06-10T05:41:42Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -224,7 +224,24 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ],
           "pendingDeployment": [
             {
               "number": 9217,
@@ -242,22 +259,6 @@
                 "core",
                 "employee"
               ]
-            },
-            {
-              "number": 9219,
-              "title": "Korjaus flakyyn testiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-10T05:22:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ]
         }
@@ -272,7 +273,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-11T03:28:03.321Z",
+            "checkedAt": "2026-06-11T04:14:13.403Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -291,7 +292,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-11T03:28:04.099Z",
+            "checkedAt": "2026-06-11T04:14:14.268Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
