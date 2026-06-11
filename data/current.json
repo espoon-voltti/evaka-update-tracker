@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T09:30:49.554Z",
+  "generatedAt": "2026-06-11T09:53:19.116Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T09:30:11.679Z",
+            "checkedAt": "2026-06-11T09:52:48.506Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-11T09:30:12.664Z",
+            "checkedAt": "2026-06-11T09:52:49.136Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,39 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9223,
+              "title": "Korjataan flaky e2e-testi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:50:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9223",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9226,
+              "title": "Korjataan kirjoitusvirhe: Toteunut -> Toteutunut",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:33:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9226",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9225,
               "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
@@ -131,7 +164,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T09:30:15.498Z",
+            "checkedAt": "2026-06-11T09:52:52.400Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -156,7 +189,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-11T09:30:28.044Z",
+            "checkedAt": "2026-06-11T09:52:59.954Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "62cfcdfe2205f30395f91622e564f87e012cfc46",
@@ -224,6 +257,56 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9223,
+              "title": "Korjataan flaky e2e-testi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:50:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9223",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9224,
+              "title": "Korjataan Nokian Y-tunnus",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-11T09:40:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9224",
+              "labels": [
+                "bugfix",
+                "seutu",
+                "employee"
+              ]
+            },
+            {
+              "number": 9226,
+              "title": "Korjataan kirjoitusvirhe: Toteunut -> Toteutunut",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:33:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9226",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
               "number": 9225,
               "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
               "author": "terolaakso-reaktor",
@@ -269,7 +352,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T09:30:42.790Z",
+            "checkedAt": "2026-06-11T09:53:12.290Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -288,7 +371,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-11T09:30:43.735Z",
+            "checkedAt": "2026-06-11T09:53:12.957Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -310,6 +393,39 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9223,
+              "title": "Korjataan flaky e2e-testi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:50:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9223",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9226,
+              "title": "Korjataan kirjoitusvirhe: Toteunut -> Toteutunut",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:33:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9226",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9225,
               "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
@@ -373,7 +489,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-11T09:30:46.686Z",
+            "checkedAt": "2026-06-11T09:53:15.947Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -392,7 +508,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-11T09:30:47.558Z",
+            "checkedAt": "2026-06-11T09:53:16.605Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -414,6 +530,39 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9223,
+              "title": "Korjataan flaky e2e-testi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:50:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9223",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9226,
+              "title": "Korjataan kirjoitusvirhe: Toteunut -> Toteutunut",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-11T09:33:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9226",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9225,
               "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
