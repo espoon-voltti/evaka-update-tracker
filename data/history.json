@@ -1,6 +1,217 @@
 {
   "events": [
     {
+      "id": "2026-06-12T03:09:46.347Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-12T03:09:46.347Z",
+      "previousCommit": {
+        "sha": "8159c7bcc3e47499fc443ef0cd5ee58c46fe0726",
+        "shortSha": "8159c7b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
+        "shortSha": "cd5ab9c",
+        "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
+        "date": "2026-06-11T13:16:01Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9229,
+          "title": "Kuntalaisen Lapsen asiakirjat -osion näkyvyys sijoituksen perusteella",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-06-11T13:16:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9229",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9169,
+          "title": "Pidetään kalenterin kuukausinavigoinnin napit paikallaan kuukausia vaihdettaessa",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-06-11T12:57:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9169",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9228,
+          "title": "Ei lähetetä johtajan/kunnan viestikopioita ryhmiin jotka eivät ole auki vielä",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-11T10:51:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9228",
+          "labels": [
+            "bugfix",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9221,
+          "title": "Korjataan ylivuotavat monivalintakenttien tekstit",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-06-11T10:43:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9221",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen",
+            "employee"
+          ]
+        },
+        {
+          "number": 9223,
+          "title": "Korjataan flaky e2e-testi",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-11T09:50:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9223",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9224,
+          "title": "Korjataan Nokian Y-tunnus",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-06-11T09:40:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9224",
+          "labels": [
+            "bugfix",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9226,
+          "title": "Korjataan kirjoitusvirhe: Toteunut -> Toteutunut",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-11T09:33:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9226",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9225,
+          "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-06-11T09:26:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9225",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9222,
+          "title": "Vaihdetaan Espoon asiakasmaksutiimin puhelinnumero sähköpostiin perhekoko komponentissa",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-11T07:13:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9222",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9220,
+          "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-11T04:58:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9220",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9217,
+          "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-06-10T06:44:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9217",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-11T09:28:41.262Z_oulu-prod_core",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",
