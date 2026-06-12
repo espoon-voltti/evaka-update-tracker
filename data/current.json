@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T04:15:17.982Z",
+  "generatedAt": "2026-06-12T04:39:22.240Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-12T04:14:27.782Z",
+            "checkedAt": "2026-06-12T04:38:34.832Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-12T04:14:28.684Z",
+            "checkedAt": "2026-06-12T04:38:35.674Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -233,7 +233,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-12T04:14:34.319Z",
+            "checkedAt": "2026-06-12T04:38:40.018Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -258,20 +258,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-12T04:14:46.397Z",
+            "checkedAt": "2026-06-12T04:38:50.654Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "62cfcdfe2205f30395f91622e564f87e012cfc46",
-              "shortSha": "62cfcdf",
-              "message": "Merge pull request #2148 from Tampere/dependabot/submodules/evaka-c15c70d",
-              "date": "2026-06-11T04:20:47Z",
-              "author": "akheron"
+              "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
+              "shortSha": "86517d1",
+              "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
+              "date": "2026-06-11T21:12:12Z",
+              "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "c15c70d1263fac0af1ecf04dad84718434b65c91",
-              "shortSha": "c15c70d",
-              "message": "Merge pull request #9217 from espoon-voltti/citizen-basic-creation",
-              "date": "2026-06-10T06:44:44Z",
+              "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
+              "shortSha": "cd5ab9c",
+              "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
+              "date": "2026-06-11T13:16:01Z",
               "author": "terolaakso-reaktor"
             }
           },
@@ -290,41 +290,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 9217,
-              "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-10T06:44:45Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9217",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9219,
-              "title": "Korjaus flakyyn testiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-10T05:22:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 9229,
               "title": "Kuntalaisen Lapsen asiakirjat -osion näkyvyys sijoituksen perusteella",
@@ -476,8 +441,42 @@
                 "tech",
                 "core"
               ]
+            },
+            {
+              "number": 9217,
+              "title": "Sallitaan huoltajien täytettävien asiakirjojen avaaminen 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T06:44:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9217",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9219,
+              "title": "Korjaus flakyyn testiin",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-10T05:22:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9219",
+              "labels": [
+                "tech",
+                "core"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -490,7 +489,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-12T04:15:04.795Z",
+            "checkedAt": "2026-06-12T04:39:12.132Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -509,7 +508,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-12T04:15:06.426Z",
+            "checkedAt": "2026-06-12T04:39:13.072Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -696,7 +695,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-12T04:15:11.830Z",
+            "checkedAt": "2026-06-12T04:39:17.500Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -715,7 +714,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-12T04:15:13.276Z",
+            "checkedAt": "2026-06-12T04:39:18.405Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {

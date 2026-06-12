@@ -1,6 +1,241 @@
 {
   "events": [
     {
+      "id": "2026-06-12T04:39:06.648Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-06-12T04:39:06.648Z",
+      "previousCommit": {
+        "sha": "62cfcdfe2205f30395f91622e564f87e012cfc46",
+        "shortSha": "62cfcdf",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
+        "shortSha": "86517d1",
+        "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
+        "date": "2026-06-11T21:12:12Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2149,
+          "title": "Bump evaka from `c15c70d` to `cd5ab9c`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-11T21:12:12Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2149",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-06-12T04:39:06.648Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-06-12T04:39:06.648Z",
+      "previousCommit": {
+        "sha": "c15c70d1263fac0af1ecf04dad84718434b65c91",
+        "shortSha": "c15c70d",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
+        "shortSha": "cd5ab9c",
+        "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
+        "date": "2026-06-11T13:16:01Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9229,
+          "title": "Kuntalaisen Lapsen asiakirjat -osion näkyvyys sijoituksen perusteella",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-06-11T13:16:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9229",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9169,
+          "title": "Pidetään kalenterin kuukausinavigoinnin napit paikallaan kuukausia vaihdettaessa",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-06-11T12:57:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9169",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9228,
+          "title": "Ei lähetetä johtajan/kunnan viestikopioita ryhmiin jotka eivät ole auki vielä",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-11T10:51:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9228",
+          "labels": [
+            "bugfix",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9221,
+          "title": "Korjataan ylivuotavat monivalintakenttien tekstit",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-06-11T10:43:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9221",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen",
+            "employee"
+          ]
+        },
+        {
+          "number": 9223,
+          "title": "Korjataan flaky e2e-testi",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-11T09:50:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9223",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9224,
+          "title": "Korjataan Nokian Y-tunnus",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-11T09:40:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9224",
+          "labels": [
+            "bugfix",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9226,
+          "title": "Korjataan kirjoitusvirhe: Toteunut -> Toteutunut",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-11T09:33:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9226",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9225,
+          "title": "Tietojen poisto: Kevytkirjautumistiedot (ei vielä kytketty päälle)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-06-11T09:26:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9225",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9222,
+          "title": "Vaihdetaan Espoon asiakasmaksutiimin puhelinnumero sähköpostiin perhekoko komponentissa",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-06-11T07:13:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9222",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9220,
+          "title": "Refaktoroidaan SQL-query käyttämään `bind()`:ia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-11T04:58:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9220",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-12T04:12:32.686Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
@@ -24429,46 +24664,6 @@
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
       "detectedAt": "2026-05-13T05:17:01.527Z",
-      "previousCommit": {
-        "sha": "6d061d61deeb45072e0be8cd5267f58bbad7dc97",
-        "shortSha": "6d061d6",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "d98dea01f9377d5cee14f0c9ccd6bbeaa622d7e9",
-        "shortSha": "d98dea0",
-        "message": "Merge pull request #9063 from espoon-voltti/sandbox-fixes",
-        "date": "2026-05-12T04:22:09Z",
-        "author": "akheron"
-      },
-      "includedPRs": [
-        {
-          "number": 9063,
-          "title": "Sandbox-korjauksia",
-          "author": "akheron",
-          "authorName": null,
-          "mergedAt": "2026-05-12T04:22:10Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9063",
-          "labels": [
-            "no-changelog"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-05-13T04:34:03.386Z_espoo-staging_core",
-      "environmentId": "espoo-staging",
-      "cityGroupId": "espoo",
-      "detectedAt": "2026-05-13T04:34:03.386Z",
       "previousCommit": {
         "sha": "6d061d61deeb45072e0be8cd5267f58bbad7dc97",
         "shortSha": "6d061d6",
