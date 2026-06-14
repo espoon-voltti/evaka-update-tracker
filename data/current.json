@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T20:30:47.185Z",
+  "generatedAt": "2026-06-14T20:56:13.311Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-14T20:30:00.910Z",
-            "status": "unavailable",
+            "checkedAt": "2026-06-14T20:55:14.250Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
+              "shortSha": "cd5ab9c",
+              "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
+              "date": "2026-06-11T13:16:01Z",
+              "author": "terolaakso-reaktor"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-14T20:30:07.613Z",
+            "checkedAt": "2026-06-14T20:55:15.257Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -125,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-14T20:30:12.256Z",
+            "checkedAt": "2026-06-14T20:55:21.383Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -150,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-14T20:30:20.536Z",
+            "checkedAt": "2026-06-14T20:55:33.949Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
@@ -449,7 +455,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-14T20:30:36.864Z",
+            "checkedAt": "2026-06-14T20:55:57.710Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -468,7 +474,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-14T20:30:37.538Z",
+            "checkedAt": "2026-06-14T20:55:58.820Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -570,7 +576,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-14T20:30:42.027Z",
+            "checkedAt": "2026-06-14T20:56:05.732Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -589,7 +595,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-14T20:30:42.817Z",
+            "checkedAt": "2026-06-14T20:56:06.970Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
