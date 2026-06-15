@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T04:18:35.650Z",
+  "generatedAt": "2026-06-15T04:28:04.547Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-15T04:17:35.223Z",
+            "checkedAt": "2026-06-15T04:27:18.994Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-15T04:17:36.398Z",
+            "checkedAt": "2026-06-15T04:27:19.657Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -131,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-15T04:17:43.042Z",
+            "checkedAt": "2026-06-15T04:27:25.601Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -156,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-15T04:17:55.733Z",
+            "checkedAt": "2026-06-15T04:27:33.656Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "787861b7c3f02c11957de3ab0e1421cdceab007d",
@@ -173,180 +173,8 @@
               "author": "renovate[bot]"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-06-15T04:17:55.733Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "787861b7c3f02c11957de3ab0e1421cdceab007d",
-                "shortSha": "787861b",
-                "message": "Merge pull request #2150 from Tampere/dependabot/submodules/evaka-8525ac7",
-                "date": "2026-06-14T21:12:02Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
-                "shortSha": "8525ac7",
-                "message": "Update dependency prettier to v3.8.4 (#9255)",
-                "date": "2026-06-14T13:35:32Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-06-15T04:17:57.047Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-06-15T04:17:58.344Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-06-15T04:17:59.624Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-06-15T04:18:01.280Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-06-15T04:18:02.573Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-06-15T04:18:03.960Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-06-15T04:18:05.376Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-06-15T04:18:06.783Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
-                "shortSha": "86517d1",
-                "message": "Merge pull request #2149 from Tampere/dependabot/submodules/evaka-cd5ab9c",
-                "date": "2026-06-11T21:12:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
-                "shortSha": "cd5ab9c",
-                "message": "Merge pull request #9229 from espoon-voltti/citizen-document-visibility-fix",
-                "date": "2026-06-11T13:16:01Z",
-                "author": "terolaakso-reaktor"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -626,7 +454,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-15T04:18:20.368Z",
+            "checkedAt": "2026-06-15T04:27:51.486Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -645,7 +473,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-15T04:18:21.912Z",
+            "checkedAt": "2026-06-15T04:27:52.442Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -747,7 +575,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-15T04:18:28.323Z",
+            "checkedAt": "2026-06-15T04:27:58.214Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -766,7 +594,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-15T04:18:29.226Z",
+            "checkedAt": "2026-06-15T04:27:58.808Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
