@@ -1,6 +1,761 @@
 {
   "events": [
     {
+      "id": "2026-06-15T04:15:01.057Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-06-15T04:15:01.057Z",
+      "previousCommit": {
+        "sha": "86517d195c9711ca6c0433d3720b5d2872d27e39",
+        "shortSha": "86517d1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "787861b7c3f02c11957de3ab0e1421cdceab007d",
+        "shortSha": "787861b",
+        "message": "Merge pull request #2150 from Tampere/dependabot/submodules/evaka-8525ac7",
+        "date": "2026-06-14T21:12:02Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2150,
+          "title": "Bump evaka from `cd5ab9c` to `8525ac7`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-14T21:12:03Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2150",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-06-15T04:15:01.057Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-06-15T04:15:01.057Z",
+      "previousCommit": {
+        "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
+        "shortSha": "cd5ab9c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
+        "shortSha": "8525ac7",
+        "message": "Update dependency prettier to v3.8.4 (#9255)",
+        "date": "2026-06-14T13:35:32Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9255,
+          "title": "Update dependency prettier to v3.8.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-14T13:35:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9255",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9252,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-14T01:59:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9252",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9250,
+          "title": "Update typescript-eslint monorepo to v8.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-13T18:50:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9250",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9243,
+          "title": "Update dependency @types/node to v24.13.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:33:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9243",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9242,
+          "title": "Update react monorepo to v19.2.17",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:31:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9242",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9241,
+          "title": "Update dependency uv to v0.11.19",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9241",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9238,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9238",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9239,
+          "title": "Update dependency org.apache.cxf:cxf-bom to v4.2.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9239",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9240,
+          "title": "Update dependency rollup to v4.61.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:29:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9240",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9232,
+          "title": "Vaihdetaan Kaikki -> Kaikki ryhmät kasvattajan mobiilissa",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-06-12T09:25:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9232",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9211,
+          "title": "Korjataan bugeja ja epäloogisuuksia käyttöliittymän luvitusten hallinnassa",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-12T08:52:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9211",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9231,
+          "title": "Vältetään Postgres deadlock",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-12T08:21:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9231",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9168,
+          "title": "Päätösten muokkausten refaktorointi",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-12T06:37:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9168",
+          "labels": [
+            "tech",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-06-15T04:15:18.112Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-06-15T04:15:18.112Z",
+      "previousCommit": {
+        "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
+        "shortSha": "cd5ab9c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
+        "shortSha": "8525ac7",
+        "message": "Update dependency prettier to v3.8.4 (#9255)",
+        "date": "2026-06-14T13:35:32Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9255,
+          "title": "Update dependency prettier to v3.8.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-14T13:35:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9255",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9252,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-14T01:59:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9252",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9250,
+          "title": "Update typescript-eslint monorepo to v8.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-13T18:50:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9250",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9243,
+          "title": "Update dependency @types/node to v24.13.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:33:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9243",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9242,
+          "title": "Update react monorepo to v19.2.17",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:31:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9242",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9241,
+          "title": "Update dependency uv to v0.11.19",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9241",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9238,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9238",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9239,
+          "title": "Update dependency org.apache.cxf:cxf-bom to v4.2.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9239",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9240,
+          "title": "Update dependency rollup to v4.61.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:29:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9240",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9232,
+          "title": "Vaihdetaan Kaikki -> Kaikki ryhmät kasvattajan mobiilissa",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-06-12T09:25:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9232",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9211,
+          "title": "Korjataan bugeja ja epäloogisuuksia käyttöliittymän luvitusten hallinnassa",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-12T08:52:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9211",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9231,
+          "title": "Vältetään Postgres deadlock",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-12T08:21:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9231",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9168,
+          "title": "Päätösten muokkausten refaktorointi",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-12T06:37:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9168",
+          "labels": [
+            "tech",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-06-15T04:15:29.529Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-06-15T04:15:29.529Z",
+      "previousCommit": {
+        "sha": "cd5ab9c0bfd9253b6462371aa448cd9fa208c009",
+        "shortSha": "cd5ab9c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
+        "shortSha": "8525ac7",
+        "message": "Update dependency prettier to v3.8.4 (#9255)",
+        "date": "2026-06-14T13:35:32Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9255,
+          "title": "Update dependency prettier to v3.8.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-14T13:35:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9255",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9252,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-14T01:59:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9252",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9250,
+          "title": "Update typescript-eslint monorepo to v8.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-13T18:50:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9250",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9243,
+          "title": "Update dependency @types/node to v24.13.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:33:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9243",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9242,
+          "title": "Update react monorepo to v19.2.17",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:31:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9242",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9241,
+          "title": "Update dependency uv to v0.11.19",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9241",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9238,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9238",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9239,
+          "title": "Update dependency org.apache.cxf:cxf-bom to v4.2.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:30:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9239",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9240,
+          "title": "Update dependency rollup to v4.61.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-12T23:29:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9240",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9232,
+          "title": "Vaihdetaan Kaikki -> Kaikki ryhmät kasvattajan mobiilissa",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-06-12T09:25:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9232",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9211,
+          "title": "Korjataan bugeja ja epäloogisuuksia käyttöliittymän luvitusten hallinnassa",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-12T08:52:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9211",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9231,
+          "title": "Vältetään Postgres deadlock",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-12T08:21:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9231",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9168,
+          "title": "Päätösten muokkausten refaktorointi",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-12T06:37:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9168",
+          "labels": [
+            "tech",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-15T03:11:20.523Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
