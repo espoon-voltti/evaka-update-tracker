@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T14:52:21.305Z",
+  "generatedAt": "2026-06-16T16:27:51.882Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,16 +10,10 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-16T14:49:36.430Z",
-            "status": "ok",
+            "checkedAt": "2026-06-16T16:23:54.558Z",
+            "status": "unavailable",
             "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
-              "shortSha": "8525ac7",
-              "message": "Update dependency prettier to v3.8.4 (#9255)",
-              "date": "2026-06-14T13:35:32Z",
-              "author": "renovate[bot]"
-            }
+            "coreCommit": null
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -29,7 +23,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-16T14:49:37.223Z",
+            "checkedAt": "2026-06-16T16:24:01.658Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -49,24 +43,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [
-            {
-              "number": 9257,
-              "title": "Add resolution for styled-components/postcss",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-15T05:13:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9257",
-              "labels": [
-                "dependencies",
-                "frontend"
-              ]
-            }
-          ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9237,
@@ -149,7 +126,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-16T14:49:55.887Z",
+            "checkedAt": "2026-06-16T16:24:28.495Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -174,7 +151,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-16T14:50:05.227Z",
+            "checkedAt": "2026-06-16T16:24:41.814Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ff2972f65d6742e63f4b810c4fcb0a5efa1b52e5",
@@ -557,7 +534,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-16T14:51:29.429Z",
+            "checkedAt": "2026-06-16T16:26:30.966Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -576,7 +553,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-16T14:51:30.582Z",
+            "checkedAt": "2026-06-16T16:26:32.681Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -696,7 +673,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-16T14:51:59.553Z",
+            "checkedAt": "2026-06-16T16:27:13.410Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -715,7 +692,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-16T14:52:00.390Z",
+            "checkedAt": "2026-06-16T16:27:14.444Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
