@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T09:05:55.405Z",
+  "generatedAt": "2026-06-17T09:32:28.159Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-17T09:04:42.586Z",
+            "checkedAt": "2026-06-17T09:29:57.445Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
-              "shortSha": "8525ac7",
-              "message": "Update dependency prettier to v3.8.4 (#9255)",
-              "date": "2026-06-14T13:35:32Z",
-              "author": "renovate[bot]"
+              "sha": "0faf8e232bb26d621d8d8fb682bd7f86425dc589",
+              "shortSha": "0faf8e2",
+              "message": "Merge pull request #9237 from espoon-voltti/finance-notes-deletion",
+              "date": "2026-06-16T06:01:14Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-17T09:04:43.287Z",
+            "checkedAt": "2026-06-17T09:30:39.616Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9237,
               "title": "Tietojen poisto: talouden muistiinpanot (ei vielä kytketty päälle)",
@@ -117,24 +116,9 @@
                 "core",
                 "employee-mobile"
               ]
-            },
-            {
-              "number": 9257,
-              "title": "Add resolution for styled-components/postcss",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-15T05:13:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9257",
-              "labels": [
-                "dependencies",
-                "frontend"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -148,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-17T09:04:53.716Z",
+            "checkedAt": "2026-06-17T09:30:52.539Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -173,7 +157,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-17T09:05:01.787Z",
+            "checkedAt": "2026-06-17T09:31:03.681Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -555,15 +539,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-17T09:05:35.254Z",
+            "checkedAt": "2026-06-17T09:31:45.420Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
-              "shortSha": "8525ac7",
-              "message": "Update dependency prettier to v3.8.4 (#9255)",
-              "date": "2026-06-14T13:35:32Z",
-              "author": "renovate[bot]"
+              "sha": "0faf8e232bb26d621d8d8fb682bd7f86425dc589",
+              "shortSha": "0faf8e2",
+              "message": "Merge pull request #9237 from espoon-voltti/finance-notes-deletion",
+              "date": "2026-06-16T06:01:14Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -574,7 +558,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-17T09:05:35.848Z",
+            "checkedAt": "2026-06-17T09:31:55.485Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -593,8 +577,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9237,
               "title": "Tietojen poisto: talouden muistiinpanot (ei vielä kytketty päälle)",
@@ -662,24 +645,9 @@
                 "core",
                 "employee-mobile"
               ]
-            },
-            {
-              "number": 9257,
-              "title": "Add resolution for styled-components/postcss",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-15T05:13:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9257",
-              "labels": [
-                "dependencies",
-                "frontend"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -693,15 +661,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-17T09:05:45.278Z",
+            "checkedAt": "2026-06-17T09:32:06.291Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8525ac79f3f8bc13943f779bf60b04c8f956e9bd",
-              "shortSha": "8525ac7",
-              "message": "Update dependency prettier to v3.8.4 (#9255)",
-              "date": "2026-06-14T13:35:32Z",
-              "author": "renovate[bot]"
+              "sha": "0faf8e232bb26d621d8d8fb682bd7f86425dc589",
+              "shortSha": "0faf8e2",
+              "message": "Merge pull request #9237 from espoon-voltti/finance-notes-deletion",
+              "date": "2026-06-16T06:01:14Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -712,7 +680,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-17T09:05:46.011Z",
+            "checkedAt": "2026-06-17T09:32:16.902Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -731,8 +699,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9237,
               "title": "Tietojen poisto: talouden muistiinpanot (ei vielä kytketty päälle)",
@@ -817,41 +784,9 @@
                 "turku",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9257,
-              "title": "Add resolution for styled-components/postcss",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-15T05:13:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9257",
-              "labels": [
-                "dependencies",
-                "frontend"
-              ]
-            },
-            {
-              "number": 9236,
-              "title": "Turku: Henkilökunnan kirjautumissivun tekstimuutos",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-15T04:50:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9236",
-              "labels": [
-                "enhancement",
-                "turku",
-                "employee"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
