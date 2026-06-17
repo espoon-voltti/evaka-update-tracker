@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T02:25:25.022Z",
+  "generatedAt": "2026-06-17T03:12:06.293Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-17T02:24:24.570Z",
+            "checkedAt": "2026-06-17T03:10:43.696Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-17T02:24:25.450Z",
+            "checkedAt": "2026-06-17T03:10:44.657Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "ce4e5af41ea5fed2a9694c13875c0c2b0056ecaa",
-              "shortSha": "ce4e5af",
-              "message": "Merge pull request #9253 from espoon-voltti/renovate/jackson-monorepo",
-              "date": "2026-06-15T06:39:04Z",
-              "author": "akheron"
+              "sha": "0faf8e232bb26d621d8d8fb682bd7f86425dc589",
+              "shortSha": "0faf8e2",
+              "message": "Merge pull request #9237 from espoon-voltti/finance-notes-deletion",
+              "date": "2026-06-16T06:01:14Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -50,24 +50,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 9257,
-              "title": "Add resolution for styled-components/postcss",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-15T05:13:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9257",
-              "labels": [
-                "dependencies",
-                "frontend"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 9237,
               "title": "Tietojen poisto: talouden muistiinpanot (ei vielä kytketty päälle)",
@@ -135,8 +117,25 @@
                 "core",
                 "employee-mobile"
               ]
+            },
+            {
+              "number": 9257,
+              "title": "Add resolution for styled-components/postcss",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-15T05:13:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9257",
+              "labels": [
+                "dependencies",
+                "frontend"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -149,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-17T02:24:33.969Z",
+            "checkedAt": "2026-06-17T03:10:59.418Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
@@ -174,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-17T02:24:42.033Z",
+            "checkedAt": "2026-06-17T03:11:11.265Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ff2972f65d6742e63f4b810c4fcb0a5efa1b52e5",
@@ -557,7 +556,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-17T02:25:07.804Z",
+            "checkedAt": "2026-06-17T03:11:44.774Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -576,7 +575,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-17T02:25:08.635Z",
+            "checkedAt": "2026-06-17T03:11:45.758Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -696,7 +695,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-17T02:25:16.535Z",
+            "checkedAt": "2026-06-17T03:11:55.509Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -715,7 +714,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-17T02:25:17.366Z",
+            "checkedAt": "2026-06-17T03:11:56.560Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
