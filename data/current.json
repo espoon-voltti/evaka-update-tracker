@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T12:16:17.705Z",
+  "generatedAt": "2026-06-17T13:34:48.372Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-17T12:15:56.348Z",
+            "checkedAt": "2026-06-17T13:33:58.002Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-17T12:15:56.989Z",
+            "checkedAt": "2026-06-17T13:33:58.692Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -50,7 +50,42 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9230,
+              "title": "Espoon arvo- ja maksupäätösten tekstimuutokset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-17T12:25:55Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9230",
+              "labels": [
+                "enhancement",
+                "espoo",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9260,
+              "title": "Espoon oikaisuvaatimusten muokkaukset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-17T12:25:38Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9260",
+              "labels": [
+                "enhancement",
+                "espoo",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -63,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-17T12:15:57.837Z",
+            "checkedAt": "2026-06-17T13:34:10.462Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -88,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-17T12:16:06.177Z",
+            "checkedAt": "2026-06-17T13:34:20.105Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -133,7 +168,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-17T12:16:14.607Z",
+            "checkedAt": "2026-06-17T13:34:36.640Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -152,7 +187,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-17T12:16:15.182Z",
+            "checkedAt": "2026-06-17T13:34:37.396Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -186,7 +221,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-17T12:16:16.019Z",
+            "checkedAt": "2026-06-17T13:34:45.725Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -205,7 +240,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-17T12:16:16.724Z",
+            "checkedAt": "2026-06-17T13:34:46.443Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
