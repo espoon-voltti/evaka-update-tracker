@@ -1,6 +1,124 @@
 {
   "events": [
     {
+      "id": "2026-06-18T04:14:04.006Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-06-18T04:14:04.006Z",
+      "previousCommit": {
+        "sha": "0faf8e232bb26d621d8d8fb682bd7f86425dc589",
+        "shortSha": "0faf8e2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "46397ff5d554f401413a53ef271bd0a35dd59f9f",
+        "shortSha": "46397ff",
+        "message": "Merge pull request #9230 from espoon-voltti/fee-and-value-decision-text-changes-espoo",
+        "date": "2026-06-17T12:25:54Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9230,
+          "title": "Espoon arvo- ja maksupäätösten tekstimuutokset",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-06-17T12:25:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9230",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9260,
+          "title": "Espoon oikaisuvaatimusten muokkaukset",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-06-17T12:25:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9260",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-06-18T04:14:08.688Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-06-18T04:14:08.688Z",
+      "previousCommit": {
+        "sha": "0faf8e232bb26d621d8d8fb682bd7f86425dc589",
+        "shortSha": "0faf8e2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "46397ff5d554f401413a53ef271bd0a35dd59f9f",
+        "shortSha": "46397ff",
+        "message": "Merge pull request #9230 from espoon-voltti/fee-and-value-decision-text-changes-espoo",
+        "date": "2026-06-17T12:25:54Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9230,
+          "title": "Espoon arvo- ja maksupäätösten tekstimuutokset",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-06-17T12:25:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9230",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9260,
+          "title": "Espoon oikaisuvaatimusten muokkaukset",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-06-17T12:25:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9260",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-18T03:10:23.070Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
@@ -26470,210 +26588,6 @@
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
       "detectedAt": "2026-05-19T04:16:42.738Z",
-      "previousCommit": {
-        "sha": "3728fcedca0833aa264a958b9d9ee121afaa3823",
-        "shortSha": "3728fce",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "017e9cd582470eaa7ce2bfee8bb1c2f1e3236446",
-        "shortSha": "017e9cd",
-        "message": "Merge pull request #9101 from espoon-voltti/remove-through2",
-        "date": "2026-05-18T11:39:34Z",
-        "author": "terolaakso-reaktor"
-      },
-      "includedPRs": [
-        {
-          "number": 9101,
-          "title": "Poistetaan riippuvuus through2",
-          "author": "terolaakso-reaktor",
-          "authorName": "Tero Laakso",
-          "mergedAt": "2026-05-18T11:39:35Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9101",
-          "labels": [
-            "dependencies",
-            "apigw"
-          ]
-        },
-        {
-          "number": 9088,
-          "title": "Update dependency react-day-picker to v10",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T11:04:27Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9088",
-          "labels": [
-            "dependencies",
-            "frontend"
-          ]
-        },
-        {
-          "number": 9071,
-          "title": "Lisätään kuntien Y-tunnukset metadataan",
-          "author": "ohinkinen",
-          "authorName": "Olli-Heikki Inkinen",
-          "mergedAt": "2026-05-18T10:34:12Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9071",
-          "labels": [
-            "enhancement",
-            "core",
-            "citizen",
-            "employee"
-          ]
-        },
-        {
-          "number": 9097,
-          "title": "Update dependency fast-xml-parser to v5.8.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T09:35:28Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9097",
-          "labels": [
-            "dependencies",
-            "apigw"
-          ]
-        },
-        {
-          "number": 9087,
-          "title": "Update actions/dependency-review-action action to v5",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T09:34:14Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9087",
-          "labels": [
-            "dependencies"
-          ]
-        },
-        {
-          "number": 9086,
-          "title": "Update sentry-javascript monorepo to v10.53.1",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T09:31:16Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9086",
-          "labels": [
-            "dependencies",
-            "frontend"
-          ]
-        },
-        {
-          "number": 9085,
-          "title": "Update flyway to v12.6.1",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T09:28:00Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9085",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9083,
-          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.62.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T09:27:12Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9083",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9082,
-          "title": "Update dependency dd-trace to v5.102.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T09:21:46Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9082",
-          "labels": [
-            "dependencies",
-            "apigw"
-          ]
-        },
-        {
-          "number": 9081,
-          "title": "Update dependency com.github.kagkarlsson:db-scheduler to v16.9.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-18T09:20:45Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9081",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9069,
-          "title": "Metadatan käännöksiä",
-          "author": "ohinkinen",
-          "authorName": "Olli-Heikki Inkinen",
-          "mergedAt": "2026-05-18T08:54:39Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9069",
-          "labels": [
-            "enhancement",
-            "core",
-            "citizen",
-            "employee"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-05-19T04:12:55.173Z_oulu-staging_core",
-      "environmentId": "oulu-staging",
-      "cityGroupId": "oulu",
-      "detectedAt": "2026-05-19T04:12:55.173Z",
       "previousCommit": {
         "sha": "3728fcedca0833aa264a958b9d9ee121afaa3823",
         "shortSha": "3728fce",
