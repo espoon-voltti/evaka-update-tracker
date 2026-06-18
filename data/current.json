@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T10:33:32.917Z",
+  "generatedAt": "2026-06-18T11:55:39.459Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-18T10:32:55.329Z",
+            "checkedAt": "2026-06-18T11:55:10.185Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-18T10:32:57.441Z",
+            "checkedAt": "2026-06-18T11:55:10.846Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,42 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9230,
-              "title": "Espoon arvo- ja maksupäätösten tekstimuutokset",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-17T12:25:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9230",
-              "labels": [
-                "enhancement",
-                "espoo",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9260,
-              "title": "Espoon oikaisuvaatimusten muokkaukset",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-17T12:25:38Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9260",
-              "labels": [
-                "enhancement",
-                "espoo",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -116,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-18T10:32:59.870Z",
+            "checkedAt": "2026-06-18T11:55:12.099Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -141,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-18T10:33:11.694Z",
+            "checkedAt": "2026-06-18T11:55:20.211Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "265011f73f18b321096ce0160a13218da5019786",
@@ -167,7 +132,21 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 2122,
+              "title": "enable removing generic reasoning from decision in dev and test",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-06-18T11:24:30Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2122",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -204,7 +183,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-18T10:33:25.449Z",
+            "checkedAt": "2026-06-18T11:55:33.887Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -223,7 +202,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-18T10:33:26.524Z",
+            "checkedAt": "2026-06-18T11:55:34.460Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -275,7 +254,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-18T10:33:29.163Z",
+            "checkedAt": "2026-06-18T11:55:36.785Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -294,7 +273,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-18T10:33:30.370Z",
+            "checkedAt": "2026-06-18T11:55:37.371Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
