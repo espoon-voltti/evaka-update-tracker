@@ -1,6 +1,65 @@
 {
   "events": [
     {
+      "id": "2026-06-18T03:10:23.070Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-18T03:10:23.070Z",
+      "previousCommit": {
+        "sha": "0faf8e232bb26d621d8d8fb682bd7f86425dc589",
+        "shortSha": "0faf8e2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "46397ff5d554f401413a53ef271bd0a35dd59f9f",
+        "shortSha": "46397ff",
+        "message": "Merge pull request #9230 from espoon-voltti/fee-and-value-decision-text-changes-espoo",
+        "date": "2026-06-17T12:25:54Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9230,
+          "title": "Espoon arvo- ja maksupäätösten tekstimuutokset",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-17T12:25:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9230",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9260,
+          "title": "Espoon oikaisuvaatimusten muokkaukset",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-17T12:25:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9260",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-17T10:24:50.147Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
