@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T04:12:14.979Z",
+  "generatedAt": "2026-06-19T04:15:07.426Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-19T04:11:42.009Z",
+            "checkedAt": "2026-06-19T04:14:27.352Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-19T04:11:42.573Z",
+            "checkedAt": "2026-06-19T04:14:28.215Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-19T04:11:44.047Z",
+            "checkedAt": "2026-06-19T04:14:30.083Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-19T04:11:52.713Z",
+            "checkedAt": "2026-06-19T04:14:41.907Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "265011f73f18b321096ce0160a13218da5019786",
@@ -196,7 +196,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-19T04:12:07.620Z",
+            "checkedAt": "2026-06-19T04:14:58.697Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -215,7 +215,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-19T04:12:08.490Z",
+            "checkedAt": "2026-06-19T04:14:59.648Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -267,7 +267,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-19T04:12:12.233Z",
+            "checkedAt": "2026-06-19T04:15:02.106Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -286,14 +286,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-19T04:12:12.905Z",
+            "checkedAt": "2026-06-19T04:15:02.915Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "46397ff5d554f401413a53ef271bd0a35dd59f9f",
-              "shortSha": "46397ff",
-              "message": "Merge pull request #9230 from espoon-voltti/fee-and-value-decision-text-changes-espoo",
-              "date": "2026-06-17T12:25:54Z",
+              "sha": "62562d2edacc9c826a1bc0752c4f7fcb246f26aa",
+              "shortSha": "62562d2",
+              "message": "Merge pull request #9270 from espoon-voltti/person-email-verification-deletion",
+              "date": "2026-06-18T05:47:36Z",
               "author": "ohinkinen"
             }
           },
@@ -306,8 +306,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9270,
               "title": "Lisätään yöllinen ajo vanhentuneiden sähköpostivahvistuskoodien siivoamiselle",
@@ -325,7 +324,8 @@
                 "not-visible"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
