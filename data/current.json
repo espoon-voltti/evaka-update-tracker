@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T05:45:12.396Z",
+  "generatedAt": "2026-06-22T07:40:11.753Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-22T05:44:16.911Z",
+            "checkedAt": "2026-06-22T07:38:35.750Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-22T05:44:17.570Z",
+            "checkedAt": "2026-06-22T07:38:36.910Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -68,7 +68,43 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9272,
+              "title": "Muutetaan sijoituksen irtisanominen poistamaan vain saman toimintamuodon siirtohakemukset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-22T05:46:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9272",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen",
+                "employee"
+              ]
+            },
+            {
+              "number": 9269,
+              "title": "Tehdään poistetun viestin ruotsinkielisten tekstien näkyvyys kuntakohtaisesti konfiguroitavaksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-06-22T05:45:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9269",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -81,7 +117,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-22T05:44:25.622Z",
+            "checkedAt": "2026-06-22T07:38:53.760Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -106,7 +142,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-22T05:44:33.620Z",
+            "checkedAt": "2026-06-22T07:39:06.028Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a4fc4fc805e1fed865622722e0dd0057a257627a",
@@ -183,7 +219,60 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9271,
+              "title": "Huoltajien täytettävät asiakirjat käyttöön Tampereen seudun tuotannossa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-22T06:10:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9271",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "employee"
+              ]
+            },
+            {
+              "number": 9272,
+              "title": "Muutetaan sijoituksen irtisanominen poistamaan vain saman toimintamuodon siirtohakemukset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-22T05:46:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9272",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen",
+                "employee"
+              ]
+            },
+            {
+              "number": 9269,
+              "title": "Tehdään poistetun viestin ruotsinkielisten tekstien näkyvyys kuntakohtaisesti konfiguroitavaksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-06-22T05:45:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9269",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -196,7 +285,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-22T05:44:53.582Z",
+            "checkedAt": "2026-06-22T07:39:39.469Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -215,7 +304,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-22T05:44:54.449Z",
+            "checkedAt": "2026-06-22T07:39:40.646Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -254,7 +343,43 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9272,
+              "title": "Muutetaan sijoituksen irtisanominen poistamaan vain saman toimintamuodon siirtohakemukset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-22T05:46:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9272",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen",
+                "employee"
+              ]
+            },
+            {
+              "number": 9269,
+              "title": "Tehdään poistetun viestin ruotsinkielisten tekstien näkyvyys kuntakohtaisesti konfiguroitavaksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-06-22T05:45:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9269",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -267,7 +392,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-22T05:45:03.152Z",
+            "checkedAt": "2026-06-22T07:39:55.732Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -286,7 +411,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-22T05:45:03.891Z",
+            "checkedAt": "2026-06-22T07:39:56.686Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -325,7 +450,43 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9272,
+              "title": "Muutetaan sijoituksen irtisanominen poistamaan vain saman toimintamuodon siirtohakemukset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-22T05:46:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9272",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen",
+                "employee"
+              ]
+            },
+            {
+              "number": 9269,
+              "title": "Tehdään poistetun viestin ruotsinkielisten tekstien näkyvyys kuntakohtaisesti konfiguroitavaksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-06-22T05:45:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9269",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     }
