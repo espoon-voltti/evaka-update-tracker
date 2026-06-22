@@ -1,6 +1,444 @@
 {
   "events": [
     {
+      "id": "2026-06-22T04:14:01.358Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-06-22T04:14:01.358Z",
+      "previousCommit": {
+        "sha": "62562d2edacc9c826a1bc0752c4f7fcb246f26aa",
+        "shortSha": "62562d2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c609a358e51a29e1cbb799454e64e97bfdb5f600",
+        "shortSha": "c609a35",
+        "message": "Update aws-java-sdk-v2 monorepo to v2.46.11 (#9293)",
+        "date": "2026-06-22T01:18:54Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9293,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-22T01:18:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9293",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9292,
+          "title": "Update typescript-eslint monorepo to v8.61.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T21:32:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9292",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9289,
+          "title": "Update playwright monorepo to v1.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T12:51:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9289",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9288,
+          "title": "Update vitest monorepo to v4.1.9",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T09:02:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9288",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9279,
+          "title": "Update react-spring monorepo to v10.1.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T02:03:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9279",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9276,
+          "title": "Update dependency com.networknt:json-schema-validator to v3.0.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T02:01:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9276",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9283,
+          "title": "Update dependency rollup to v4.62.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:09:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9283",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9278,
+          "title": "Update dependency uv to v0.11.21",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:08:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9278",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9277,
+          "title": "Update dependency postcss-preset-env to v11.3.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:08:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9277",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9275,
+          "title": "Update dependency com.github.mwiede:jsch to v2.28.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:07:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9275",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9274,
+          "title": "Update dependency @types/node to v24.13.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:07:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9274",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9273,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:06:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9273",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-06-22T04:14:14.069Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-06-22T04:14:14.069Z",
+      "previousCommit": {
+        "sha": "62562d2edacc9c826a1bc0752c4f7fcb246f26aa",
+        "shortSha": "62562d2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c609a358e51a29e1cbb799454e64e97bfdb5f600",
+        "shortSha": "c609a35",
+        "message": "Update aws-java-sdk-v2 monorepo to v2.46.11 (#9293)",
+        "date": "2026-06-22T01:18:54Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9293,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-22T01:18:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9293",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9292,
+          "title": "Update typescript-eslint monorepo to v8.61.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T21:32:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9292",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9289,
+          "title": "Update playwright monorepo to v1.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T12:51:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9289",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9288,
+          "title": "Update vitest monorepo to v4.1.9",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T09:02:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9288",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9279,
+          "title": "Update react-spring monorepo to v10.1.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T02:03:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9279",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9276,
+          "title": "Update dependency com.networknt:json-schema-validator to v3.0.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T02:01:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9276",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9283,
+          "title": "Update dependency rollup to v4.62.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:09:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9283",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9278,
+          "title": "Update dependency uv to v0.11.21",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:08:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9278",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9277,
+          "title": "Update dependency postcss-preset-env to v11.3.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:08:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9277",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9275,
+          "title": "Update dependency com.github.mwiede:jsch to v2.28.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:07:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9275",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9274,
+          "title": "Update dependency @types/node to v24.13.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:07:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9274",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9273,
+          "title": "Update aws-java-sdk-v2 monorepo to v2.46.10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-20T00:06:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9273",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-22T03:11:16.034Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
