@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T07:40:11.753Z",
+  "generatedAt": "2026-06-22T09:39:00.205Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-22T07:38:35.750Z",
+            "checkedAt": "2026-06-22T09:37:21.608Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-22T07:38:36.910Z",
+            "checkedAt": "2026-06-22T09:37:22.820Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -117,7 +117,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-22T07:38:53.760Z",
+            "checkedAt": "2026-06-22T09:37:38.867Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -142,7 +142,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-22T07:39:06.028Z",
+            "checkedAt": "2026-06-22T09:37:51.459Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a4fc4fc805e1fed865622722e0dd0057a257627a",
@@ -221,6 +221,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9299,
+              "title": "TRE: Kirjaamon osoitteen muutos",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-22T09:11:01Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9299",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "citizen"
+              ]
+            },
+            {
               "number": 9271,
               "title": "Huoltajien täytettävät asiakirjat käyttöön Tampereen seudun tuotannossa",
               "author": "terolaakso-reaktor",
@@ -285,7 +302,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-22T07:39:39.469Z",
+            "checkedAt": "2026-06-22T09:38:26.527Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -304,7 +321,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-22T07:39:40.646Z",
+            "checkedAt": "2026-06-22T09:38:27.543Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -392,7 +409,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-22T07:39:55.732Z",
+            "checkedAt": "2026-06-22T09:38:43.366Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -411,7 +428,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-22T07:39:56.686Z",
+            "checkedAt": "2026-06-22T09:38:44.255Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -451,6 +468,23 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9296,
+              "title": "Lisätään Turkuun Lisämaksu-laskutustuote",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-22T09:01:06Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9296",
+              "labels": [
+                "enhancement",
+                "turku",
+                "employee"
+              ]
+            },
             {
               "number": 9272,
               "title": "Muutetaan sijoituksen irtisanominen poistamaan vain saman toimintamuodon siirtohakemukset",
