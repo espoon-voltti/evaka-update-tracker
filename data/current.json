@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T02:09:03.558Z",
+  "generatedAt": "2026-06-24T03:09:08.700Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T02:08:22.153Z",
+            "checkedAt": "2026-06-24T03:08:24.557Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T02:08:22.799Z",
+            "checkedAt": "2026-06-24T03:08:25.247Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "06c32603f0b3729d39a46c6dbff609760afd3919",
-              "shortSha": "06c3260",
-              "message": "Merge pull request #9299 from espoon-voltti/appeal-section-address-change-tampere",
-              "date": "2026-06-22T09:11:01Z",
-              "author": "ohinkinen"
+              "sha": "0b4f9bb090d6813ecfc20006b6be3d0ce5b2ca9c",
+              "shortSha": "0b4f9bb",
+              "message": "Merge pull request #9261 from espoon-voltti/decision-reasoning-optional-sv-2",
+              "date": "2026-06-23T06:38:15Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9261,
               "title": "Päätösten perustelujen ruotsiversiot vain kunnissa, joissa päätöksiä tehdään ruotsiksi",
@@ -85,7 +84,8 @@
                 "citizen"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T02:08:24.522Z",
+            "checkedAt": "2026-06-24T03:08:29.509Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T02:08:32.686Z",
+            "checkedAt": "2026-06-24T03:08:38.162Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a7856646041ad41878e32e4efacb59bead3beb14",
@@ -317,7 +317,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T02:08:58.711Z",
+            "checkedAt": "2026-06-24T03:09:03.974Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -336,7 +336,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T02:08:59.459Z",
+            "checkedAt": "2026-06-24T03:09:04.701Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -405,7 +405,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-24T02:09:01.277Z",
+            "checkedAt": "2026-06-24T03:09:06.504Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -424,7 +424,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-24T02:09:01.892Z",
+            "checkedAt": "2026-06-24T03:09:07.152Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
