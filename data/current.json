@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T07:33:03.558Z",
+  "generatedAt": "2026-06-24T08:39:00.805Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T07:32:18.096Z",
+            "checkedAt": "2026-06-24T08:37:55.364Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T07:32:18.800Z",
+            "checkedAt": "2026-06-24T08:37:56.362Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T07:32:21.141Z",
+            "checkedAt": "2026-06-24T08:37:59.669Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T07:32:29.261Z",
+            "checkedAt": "2026-06-24T08:38:11.861Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -316,7 +316,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T07:32:56.982Z",
+            "checkedAt": "2026-06-24T08:38:50.361Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -335,7 +335,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T07:32:58.009Z",
+            "checkedAt": "2026-06-24T08:38:51.512Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -404,7 +404,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-24T07:33:00.630Z",
+            "checkedAt": "2026-06-24T08:38:54.484Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -423,15 +423,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-24T07:33:01.309Z",
+            "checkedAt": "2026-06-24T08:38:55.459Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0b4f9bb090d6813ecfc20006b6be3d0ce5b2ca9c",
-              "shortSha": "0b4f9bb",
-              "message": "Merge pull request #9261 from espoon-voltti/decision-reasoning-optional-sv-2",
-              "date": "2026-06-23T06:38:15Z",
-              "author": "Joosakur"
+              "sha": "5ef28edf8cf16a01e48cc9696fd8db75ca00ecba",
+              "shortSha": "5ef28ed",
+              "message": "Merge pull request #9306 from espoon-voltti/turku-product-code",
+              "date": "2026-06-24T07:25:23Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -444,6 +444,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9306,
+              "title": "Vaihdetaan Turun Lisämaksu-tuotteen tuotekoodi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-24T07:25:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9306",
+              "labels": [
+                "enhancement",
+                "turku",
+                "not-visible"
+              ]
+            },
             {
               "number": 9261,
               "title": "Päätösten perustelujen ruotsiversiot vain kunnissa, joissa päätöksiä tehdään ruotsiksi",
@@ -479,25 +496,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9306,
-              "title": "Vaihdetaan Turun Lisämaksu-tuotteen tuotekoodi",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-24T07:25:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9306",
-              "labels": [
-                "enhancement",
-                "turku",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     }

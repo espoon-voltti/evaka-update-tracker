@@ -1,6 +1,48 @@
 {
   "events": [
     {
+      "id": "2026-06-24T08:38:58.669Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-06-24T08:38:58.669Z",
+      "previousCommit": {
+        "sha": "0b4f9bb090d6813ecfc20006b6be3d0ce5b2ca9c",
+        "shortSha": "0b4f9bb",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5ef28edf8cf16a01e48cc9696fd8db75ca00ecba",
+        "shortSha": "5ef28ed",
+        "message": "Merge pull request #9306 from espoon-voltti/turku-product-code",
+        "date": "2026-06-24T07:25:23Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9306,
+          "title": "Vaihdetaan Turun Lisämaksu-tuotteen tuotekoodi",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-24T07:25:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9306",
+          "labels": [
+            "enhancement",
+            "turku",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-24T04:50:27.849Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
