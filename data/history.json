@@ -1,6 +1,139 @@
 {
   "events": [
     {
+      "id": "2026-06-24T09:26:05.590Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-06-24T09:26:05.590Z",
+      "previousCommit": {
+        "sha": "06c32603f0b3729d39a46c6dbff609760afd3919",
+        "shortSha": "06c3260",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "0b4f9bb090d6813ecfc20006b6be3d0ce5b2ca9c",
+        "shortSha": "0b4f9bb",
+        "message": "Merge pull request #9261 from espoon-voltti/decision-reasoning-optional-sv-2",
+        "date": "2026-06-23T06:38:15Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 9261,
+          "title": "Päätösten perustelujen ruotsiversiot vain kunnissa, joissa päätöksiä tehdään ruotsiksi",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-23T06:38:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9261",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9301,
+          "title": "Lisätään yöllinen ajo varhaiskasvatusajan muutosilmoitusten siivoamiselle",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-23T05:52:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9301",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-06-24T09:26:10.370Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-06-24T09:26:10.370Z",
+      "previousCommit": {
+        "sha": "06c32603f0b3729d39a46c6dbff609760afd3919",
+        "shortSha": "06c3260",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5ef28edf8cf16a01e48cc9696fd8db75ca00ecba",
+        "shortSha": "5ef28ed",
+        "message": "Merge pull request #9306 from espoon-voltti/turku-product-code",
+        "date": "2026-06-24T07:25:23Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9306,
+          "title": "Vaihdetaan Turun Lisämaksu-tuotteen tuotekoodi",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-24T07:25:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9306",
+          "labels": [
+            "enhancement",
+            "turku",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9261,
+          "title": "Päätösten perustelujen ruotsiversiot vain kunnissa, joissa päätöksiä tehdään ruotsiksi",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-06-23T06:38:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9261",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9301,
+          "title": "Lisätään yöllinen ajo varhaiskasvatusajan muutosilmoitusten siivoamiselle",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-23T05:52:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9301",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-06-24T08:38:58.669Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
