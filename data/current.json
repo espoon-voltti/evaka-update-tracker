@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T11:57:31.369Z",
+  "generatedAt": "2026-06-24T12:53:54.706Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T11:56:59.453Z",
+            "checkedAt": "2026-06-24T12:53:09.701Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T11:57:00.197Z",
+            "checkedAt": "2026-06-24T12:53:10.673Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -113,7 +113,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T11:57:03.079Z",
+            "checkedAt": "2026-06-24T12:53:15.197Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -138,7 +138,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T11:57:13.560Z",
+            "checkedAt": "2026-06-24T12:53:27.506Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -171,6 +171,24 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9307,
+              "title": "Muutetaan maksupäätösten teksteistä Vanhempien tulot -> Aikuisten tulot",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-06-24T12:05:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9307",
+              "labels": [
+                "bugfix",
+                "seutu",
+                "citizen",
+                "employee"
+              ]
+            },
             {
               "number": 9304,
               "title": "frontend: Korvataan eslint + prettier -> oxlint + oxfmt",
@@ -233,7 +251,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T11:57:25.223Z",
+            "checkedAt": "2026-06-24T12:53:43.914Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -252,7 +270,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T11:57:26.116Z",
+            "checkedAt": "2026-06-24T12:53:45.120Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -336,7 +354,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-24T11:57:28.543Z",
+            "checkedAt": "2026-06-24T12:53:49.623Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -355,7 +373,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-24T11:57:29.189Z",
+            "checkedAt": "2026-06-24T12:53:50.501Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
