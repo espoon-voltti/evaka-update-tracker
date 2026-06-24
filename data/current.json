@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T09:26:12.923Z",
+  "generatedAt": "2026-06-24T09:28:08.941Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T09:25:25.408Z",
+            "checkedAt": "2026-06-24T09:27:08.340Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-24T09:25:25.977Z",
+            "checkedAt": "2026-06-24T09:27:09.400Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T09:25:28.377Z",
+            "checkedAt": "2026-06-24T09:27:12.556Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "192269fe167e26c57b2bdba900de29ab3edcce54",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-24T09:25:36.373Z",
+            "checkedAt": "2026-06-24T09:27:24.721Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -316,7 +316,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T09:26:03.889Z",
+            "checkedAt": "2026-06-24T09:28:03.640Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -335,7 +335,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-24T09:26:05.590Z",
+            "checkedAt": "2026-06-24T09:28:04.701Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -354,42 +354,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9261,
-              "title": "Päätösten perustelujen ruotsiversiot vain kunnissa, joissa päätöksiä tehdään ruotsiksi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-06-23T06:38:16Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9261",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9301,
-              "title": "Lisätään yöllinen ajo varhaiskasvatusajan muutosilmoitusten siivoamiselle",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-23T05:52:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9301",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -404,7 +369,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-24T09:26:08.130Z",
+            "checkedAt": "2026-06-24T09:28:06.632Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -423,7 +388,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-24T09:26:10.370Z",
+            "checkedAt": "2026-06-24T09:28:07.457Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -442,59 +407,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9306,
-              "title": "Vaihdetaan Turun Lisämaksu-tuotteen tuotekoodi",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-24T07:25:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9306",
-              "labels": [
-                "enhancement",
-                "turku",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9261,
-              "title": "Päätösten perustelujen ruotsiversiot vain kunnissa, joissa päätöksiä tehdään ruotsiksi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-06-23T06:38:16Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9261",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9301,
-              "title": "Lisätään yöllinen ajo varhaiskasvatusajan muutosilmoitusten siivoamiselle",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-23T05:52:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9301",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
