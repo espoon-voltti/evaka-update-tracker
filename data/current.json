@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T06:26:22.420Z",
+  "generatedAt": "2026-06-26T07:41:16.660Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T06:25:30.833Z",
+            "checkedAt": "2026-06-26T07:40:25.095Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T06:25:31.749Z",
+            "checkedAt": "2026-06-26T07:40:26.122Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -119,6 +119,57 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9310,
+              "title": "Lisää kalenteriin-toiminnallisuuden parannukset",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-06-26T07:39:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9310",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9308,
+              "title": "Vanhentuneiden tukiasioiden poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:36:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9308",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9305,
+              "title": "Tietojen poistoista auditlokimerkinnät",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:34:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9311,
               "title": "Enemmän oxlint-sääntöjä päälle",
               "author": "akheron",
@@ -147,7 +198,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T06:25:37.235Z",
+            "checkedAt": "2026-06-26T07:40:32.584Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -172,7 +223,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T06:25:49.892Z",
+            "checkedAt": "2026-06-26T07:40:43.434Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
@@ -291,6 +342,57 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9310,
+              "title": "Lisää kalenteriin-toiminnallisuuden parannukset",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-06-26T07:39:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9310",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9308,
+              "title": "Vanhentuneiden tukiasioiden poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:36:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9308",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9305,
+              "title": "Tietojen poistoista auditlokimerkinnät",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:34:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9311,
               "title": "Enemmän oxlint-sääntöjä päälle",
               "author": "akheron",
@@ -319,7 +421,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T06:26:08.612Z",
+            "checkedAt": "2026-06-26T07:41:01.084Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -338,7 +440,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T06:26:09.660Z",
+            "checkedAt": "2026-06-26T07:41:01.980Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -427,6 +529,74 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9268,
+              "title": "Näytetään lapsen asiakirjat henkilökuntaroolille 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:40:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9268",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9310,
+              "title": "Lisää kalenteriin-toiminnallisuuden parannukset",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-06-26T07:39:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9310",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9308,
+              "title": "Vanhentuneiden tukiasioiden poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:36:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9308",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9305,
+              "title": "Tietojen poistoista auditlokimerkinnät",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:34:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9311,
               "title": "Enemmän oxlint-sääntöjä päälle",
@@ -456,7 +626,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-26T06:26:16.286Z",
+            "checkedAt": "2026-06-26T07:41:08.586Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -475,7 +645,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-26T06:26:17.271Z",
+            "checkedAt": "2026-06-26T07:41:09.431Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -564,6 +734,74 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9268,
+              "title": "Näytetään lapsen asiakirjat henkilökuntaroolille 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:40:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9268",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9310,
+              "title": "Lisää kalenteriin-toiminnallisuuden parannukset",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-06-26T07:39:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9310",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9308,
+              "title": "Vanhentuneiden tukiasioiden poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:36:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9308",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9305,
+              "title": "Tietojen poistoista auditlokimerkinnät",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:34:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9311,
               "title": "Enemmän oxlint-sääntöjä päälle",
