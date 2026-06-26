@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T04:54:21.384Z",
+  "generatedAt": "2026-06-26T06:21:18.349Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T04:53:39.364Z",
+            "checkedAt": "2026-06-26T06:20:37.244Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T04:53:40.314Z",
+            "checkedAt": "2026-06-26T06:20:38.088Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -117,7 +117,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9311,
+              "title": "Enemmän oxlint-sääntöjä päälle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-26T05:05:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -130,7 +147,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T04:53:44.558Z",
+            "checkedAt": "2026-06-26T06:20:42.608Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -155,25 +172,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T04:53:56.147Z",
+            "checkedAt": "2026-06-26T06:20:51.473Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
-              "shortSha": "d886e11",
-              "message": "Merge pull request #2163 from Tampere/dependabot/submodules/evaka-8c7a693",
-              "date": "2026-06-25T04:33:39Z",
+              "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
+              "shortSha": "caabbf5",
+              "message": "Merge pull request #2164 from Tampere/dependabot/submodules/evaka-1f3ad3e",
+              "date": "2026-06-25T21:12:18Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
-              "shortSha": "8c7a693",
-              "message": "Merge pull request #9309 from espoon-voltti/dependabot/npm_and_yarn/frontend/brace-expansion-1.1.15",
-              "date": "2026-06-24T12:20:06Z",
-              "author": "akheron"
+              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+              "shortSha": "1f3ad3e",
+              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+              "date": "2026-06-25T10:33:10Z",
+              "author": "ohinkinen"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-06-26T06:20:51.473Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
+                "shortSha": "caabbf5",
+                "message": "Merge pull request #2164 from Tampere/dependabot/submodules/evaka-1f3ad3e",
+                "date": "2026-06-25T21:12:18Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+                "shortSha": "1f3ad3e",
+                "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+                "date": "2026-06-25T10:33:10Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-06-26T06:20:52.455Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
+                "shortSha": "d886e11",
+                "message": "Merge pull request #2163 from Tampere/dependabot/submodules/evaka-8c7a693",
+                "date": "2026-06-25T04:33:39Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
+                "shortSha": "8c7a693",
+                "message": "Merge pull request #9309 from espoon-voltti/dependabot/npm_and_yarn/frontend/brace-expansion-1.1.15",
+                "date": "2026-06-24T12:20:06Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-06-26T06:20:53.553Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
+                "shortSha": "caabbf5",
+                "message": "Merge pull request #2164 from Tampere/dependabot/submodules/evaka-1f3ad3e",
+                "date": "2026-06-25T21:12:18Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+                "shortSha": "1f3ad3e",
+                "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+                "date": "2026-06-25T10:33:10Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-06-26T06:20:54.570Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
+                "shortSha": "caabbf5",
+                "message": "Merge pull request #2164 from Tampere/dependabot/submodules/evaka-1f3ad3e",
+                "date": "2026-06-25T21:12:18Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+                "shortSha": "1f3ad3e",
+                "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+                "date": "2026-06-25T10:33:10Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-06-26T06:20:55.501Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
+                "shortSha": "d886e11",
+                "message": "Merge pull request #2163 from Tampere/dependabot/submodules/evaka-8c7a693",
+                "date": "2026-06-25T04:33:39Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
+                "shortSha": "8c7a693",
+                "message": "Merge pull request #9309 from espoon-voltti/dependabot/npm_and_yarn/frontend/brace-expansion-1.1.15",
+                "date": "2026-06-24T12:20:06Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-06-26T06:20:56.503Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
+                "shortSha": "caabbf5",
+                "message": "Merge pull request #2164 from Tampere/dependabot/submodules/evaka-1f3ad3e",
+                "date": "2026-06-25T21:12:18Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+                "shortSha": "1f3ad3e",
+                "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+                "date": "2026-06-25T10:33:10Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-06-26T06:20:57.591Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
+                "shortSha": "d886e11",
+                "message": "Merge pull request #2163 from Tampere/dependabot/submodules/evaka-8c7a693",
+                "date": "2026-06-25T04:33:39Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
+                "shortSha": "8c7a693",
+                "message": "Merge pull request #9309 from espoon-voltti/dependabot/npm_and_yarn/frontend/brace-expansion-1.1.15",
+                "date": "2026-06-24T12:20:06Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-06-26T06:20:58.533Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
+                "shortSha": "d886e11",
+                "message": "Merge pull request #2163 from Tampere/dependabot/submodules/evaka-8c7a693",
+                "date": "2026-06-25T04:33:39Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
+                "shortSha": "8c7a693",
+                "message": "Merge pull request #9309 from espoon-voltti/dependabot/npm_and_yarn/frontend/brace-expansion-1.1.15",
+                "date": "2026-06-24T12:20:06Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-06-26T06:20:59.576Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
+                "shortSha": "d886e11",
+                "message": "Merge pull request #2163 from Tampere/dependabot/submodules/evaka-8c7a693",
+                "date": "2026-06-25T04:33:39Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
+                "shortSha": "8c7a693",
+                "message": "Merge pull request #9309 from espoon-voltti/dependabot/npm_and_yarn/frontend/brace-expansion-1.1.15",
+                "date": "2026-06-24T12:20:06Z",
+                "author": "akheron"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -187,6 +376,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9312,
+              "title": "Korjataan tuloilmoitustesti",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-25T10:33:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9312",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9307,
               "title": "Muutetaan maksupäätösten teksteistä Vanhempien tulot -> Aikuisten tulot",
@@ -257,20 +463,19 @@
           ],
           "pendingDeployment": [
             {
-              "number": 9312,
-              "title": "Korjataan tuloilmoitustesti",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-25T10:33:11Z",
+              "number": 9311,
+              "title": "Enemmän oxlint-sääntöjä päälle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-26T05:05:35Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9312",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
               "labels": [
                 "tech",
-                "core",
-                "not-visible"
+                "core"
               ]
             }
           ]
@@ -286,7 +491,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T04:54:11.420Z",
+            "checkedAt": "2026-06-26T06:21:08.892Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -305,7 +510,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T04:54:12.653Z",
+            "checkedAt": "2026-06-26T06:21:09.659Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -393,7 +598,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9311,
+              "title": "Enemmän oxlint-sääntöjä päälle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-26T05:05:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -406,7 +628,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-26T04:54:16.671Z",
+            "checkedAt": "2026-06-26T06:21:13.968Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -425,7 +647,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-26T04:54:17.615Z",
+            "checkedAt": "2026-06-26T06:21:14.667Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -513,7 +735,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9311,
+              "title": "Enemmän oxlint-sääntöjä päälle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-26T05:05:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     }

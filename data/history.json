@@ -1,6 +1,89 @@
 {
   "events": [
     {
+      "id": "2026-06-26T06:21:03.754Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-06-26T06:21:03.754Z",
+      "previousCommit": {
+        "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
+        "shortSha": "d886e11",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
+        "shortSha": "caabbf5",
+        "message": "Merge pull request #2164 from Tampere/dependabot/submodules/evaka-1f3ad3e",
+        "date": "2026-06-25T21:12:18Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2164,
+          "title": "Bump evaka from `8c7a693` to `1f3ad3e`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-25T21:12:19Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2164",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-06-26T06:21:03.754Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-06-26T06:21:03.754Z",
+      "previousCommit": {
+        "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
+        "shortSha": "8c7a693",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+        "shortSha": "1f3ad3e",
+        "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+        "date": "2026-06-25T10:33:10Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9312,
+          "title": "Korjataan tuloilmoitustesti",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-25T10:33:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9312",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-26T04:13:55.090Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
@@ -26379,106 +26462,6 @@
       ],
       "repoType": "core",
       "isDefaultBranch": true
-    },
-    {
-      "id": "2026-05-27T06:00:41.307Z_tampere-test_wrapper",
-      "environmentId": "tampere-test",
-      "cityGroupId": "tampere-region",
-      "detectedAt": "2026-05-27T06:00:41.307Z",
-      "previousCommit": {
-        "sha": "4bebc1fd06a43f54d6f0bf53b2c8c814ea182151",
-        "shortSha": "4bebc1f",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "5450551a571c87a087a76682594e2c5ef5ca60f7",
-        "shortSha": "5450551",
-        "message": "Update evaka submodule",
-        "date": "2026-05-27T05:36:11Z",
-        "author": "akheron"
-      },
-      "includedPRs": [
-        {
-          "number": 2137,
-          "title": "Bump evaka from `fde7883` to `54608ea`",
-          "author": "dependabot[bot]",
-          "authorName": null,
-          "mergedAt": "2026-05-27T01:20:06Z",
-          "repository": "Tampere/trevaka",
-          "repoType": "wrapper",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/Tampere/trevaka/pull/2137",
-          "labels": [
-            "dependencies",
-            "submodules"
-          ]
-        }
-      ],
-      "repoType": "wrapper",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-05-27T06:00:41.307Z_tampere-test_core",
-      "environmentId": "tampere-test",
-      "cityGroupId": "tampere-region",
-      "detectedAt": "2026-05-27T06:00:41.307Z",
-      "previousCommit": {
-        "sha": "fde7883b0e042dd898d517af71d44cd455621075",
-        "shortSha": "fde7883",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "0f2f641488b32ad7b5fb889106c24153c24aebfc",
-        "shortSha": "0f2f641",
-        "message": "Merge pull request #9140 from espoon-voltti/tampere-unit-acl-export-oid",
-        "date": "2026-05-27T05:35:18Z",
-        "author": "akheron"
-      },
-      "includedPRs": [
-        {
-          "number": 9140,
-          "title": "Lisätään unit oid Tampereen ACL export -aineistoon",
-          "author": "akheron",
-          "authorName": "Petri Lehtinen",
-          "mergedAt": "2026-05-27T05:35:18Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9140",
-          "labels": [
-            "enhancement",
-            "seutu",
-            "not-visible"
-          ]
-        },
-        {
-          "number": 9136,
-          "title": "Päätösten linkkien korjauksia",
-          "author": "terolaakso-reaktor",
-          "authorName": null,
-          "mergedAt": "2026-05-26T06:28:35Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9136",
-          "labels": [
-            "enhancement",
-            "espoo",
-            "citizen"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
     }
   ]
 }
