@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T02:10:58.905Z",
+  "generatedAt": "2026-06-26T03:09:26.665Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T02:10:11.384Z",
+            "checkedAt": "2026-06-26T03:08:46.742Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T02:10:12.344Z",
+            "checkedAt": "2026-06-26T03:08:47.507Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
-              "shortSha": "8c7a693",
-              "message": "Merge pull request #9309 from espoon-voltti/dependabot/npm_and_yarn/frontend/brace-expansion-1.1.15",
-              "date": "2026-06-24T12:20:06Z",
-              "author": "akheron"
+              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+              "shortSha": "1f3ad3e",
+              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+              "date": "2026-06-25T10:33:10Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -50,6 +50,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9312,
+              "title": "Korjataan tuloilmoitustesti",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-25T10:33:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9312",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9304,
               "title": "frontend: Korvataan eslint + prettier -> oxlint + oxfmt",
@@ -100,25 +117,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9312,
-              "title": "Korjataan tuloilmoitustesti",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-25T10:33:11Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9312",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -131,7 +130,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T02:10:17.634Z",
+            "checkedAt": "2026-06-26T03:08:53.683Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -156,7 +155,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T02:10:30.179Z",
+            "checkedAt": "2026-06-26T03:09:02.718Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d886e11712096f68cdec5e5e98c9ebdd81d233f7",
@@ -287,7 +286,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T02:10:48.017Z",
+            "checkedAt": "2026-06-26T03:09:17.110Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -306,7 +305,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T02:10:49.029Z",
+            "checkedAt": "2026-06-26T03:09:18.095Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -408,7 +407,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-26T02:10:53.776Z",
+            "checkedAt": "2026-06-26T03:09:22.196Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -427,7 +426,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-26T02:10:54.657Z",
+            "checkedAt": "2026-06-26T03:09:22.951Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {

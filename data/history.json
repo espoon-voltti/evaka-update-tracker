@@ -1,6 +1,48 @@
 {
   "events": [
     {
+      "id": "2026-06-26T03:08:50.161Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-06-26T03:08:50.161Z",
+      "previousCommit": {
+        "sha": "8c7a693a3c9386c2a3d4d89812791e532a3bbb83",
+        "shortSha": "8c7a693",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+        "shortSha": "1f3ad3e",
+        "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+        "date": "2026-06-25T10:33:10Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9312,
+          "title": "Korjataan tuloilmoitustesti",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-06-25T10:33:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9312",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-25T08:38:01.250Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
