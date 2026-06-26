@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T09:58:03.067Z",
+  "generatedAt": "2026-06-26T10:52:11.896Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T09:57:01.111Z",
+            "checkedAt": "2026-06-26T10:51:12.900Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0b4f9bb090d6813ecfc20006b6be3d0ce5b2ca9c",
-              "shortSha": "0b4f9bb",
-              "message": "Merge pull request #9261 from espoon-voltti/decision-reasoning-optional-sv-2",
-              "date": "2026-06-23T06:38:15Z",
-              "author": "Joosakur"
+              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+              "shortSha": "1f3ad3e",
+              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+              "date": "2026-06-25T10:33:10Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-26T09:57:02.009Z",
+            "checkedAt": "2026-06-26T10:51:16.799Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9312,
               "title": "Korjataan tuloilmoitustesti",
@@ -117,6 +116,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9314,
@@ -249,7 +249,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T09:57:10.705Z",
+            "checkedAt": "2026-06-26T10:51:22.941Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -274,7 +274,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-26T09:57:23.250Z",
+            "checkedAt": "2026-06-26T10:51:31.989Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
@@ -523,15 +523,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T09:57:44.447Z",
+            "checkedAt": "2026-06-26T10:51:48.514Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0b4f9bb090d6813ecfc20006b6be3d0ce5b2ca9c",
-              "shortSha": "0b4f9bb",
-              "message": "Merge pull request #9261 from espoon-voltti/decision-reasoning-optional-sv-2",
-              "date": "2026-06-23T06:38:15Z",
-              "author": "Joosakur"
+              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+              "shortSha": "1f3ad3e",
+              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+              "date": "2026-06-25T10:33:10Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -542,7 +542,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-26T09:57:45.609Z",
+            "checkedAt": "2026-06-26T10:51:52.234Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -561,8 +561,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9312,
               "title": "Korjataan tuloilmoitustesti",
@@ -630,6 +629,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9314,
@@ -762,15 +762,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-26T09:57:54.523Z",
+            "checkedAt": "2026-06-26T10:51:58.628Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "5ef28edf8cf16a01e48cc9696fd8db75ca00ecba",
-              "shortSha": "5ef28ed",
-              "message": "Merge pull request #9306 from espoon-voltti/turku-product-code",
-              "date": "2026-06-24T07:25:23Z",
-              "author": "akheron"
+              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
+              "shortSha": "1f3ad3e",
+              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
+              "date": "2026-06-25T10:33:10Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -781,7 +781,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-26T09:57:55.418Z",
+            "checkedAt": "2026-06-26T10:52:06.003Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -800,8 +800,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9312,
               "title": "Korjataan tuloilmoitustesti",
@@ -869,6 +868,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9314,
