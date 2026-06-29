@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T04:16:27.372Z",
+  "generatedAt": "2026-06-29T04:38:51.425Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-29T04:15:15.838Z",
+            "checkedAt": "2026-06-29T04:37:19.994Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-29T04:15:16.465Z",
+            "checkedAt": "2026-06-29T04:37:20.776Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -169,7 +169,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9317,
+              "title": "TypeScript 6 -konffipäivityksiä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-29T04:22:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -182,7 +199,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-29T04:15:25.986Z",
+            "checkedAt": "2026-06-29T04:37:34.347Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -207,21 +224,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-29T04:15:34.011Z",
+            "checkedAt": "2026-06-29T04:37:44.469Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "caabbf5342baed1b27f98d3a2e1fa6dca94e3fcd",
-              "shortSha": "caabbf5",
-              "message": "Merge pull request #2164 from Tampere/dependabot/submodules/evaka-1f3ad3e",
-              "date": "2026-06-25T21:12:18Z",
+              "sha": "8b17684617c99bfcc00d29e9b9be8dcdd20b0e73",
+              "shortSha": "8b17684",
+              "message": "Merge pull request #2165 from Tampere/dependabot/submodules/evaka-1bd4ea8",
+              "date": "2026-06-28T21:11:23Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
-              "shortSha": "1f3ad3e",
-              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
-              "date": "2026-06-25T10:33:10Z",
-              "author": "ohinkinen"
+              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
+              "shortSha": "1bd4ea8",
+              "message": "Update dependency vite to v8.1.0 (#9346)",
+              "date": "2026-06-28T13:24:05Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -239,6 +256,124 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9314,
+              "title": "Vanhentuneiden sijoituspohjaisten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-26T09:40:34Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9314",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9313,
+              "title": "Poistetaan deprekoidut tuen tarpeen päätös taulut",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-26T09:39:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9313",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9268,
+              "title": "Näytetään lapsen asiakirjat henkilökuntaroolille 60 päivää ennen sijoitusta",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:40:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9268",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9310,
+              "title": "Lisää kalenteriin-toiminnallisuuden parannukset",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-06-26T07:39:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9310",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9308,
+              "title": "Vanhentuneiden tukiasioiden poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:36:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9308",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9305,
+              "title": "Tietojen poistoista auditlokimerkinnät",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-06-26T07:34:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9311,
+              "title": "Enemmän oxlint-sääntöjä päälle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-26T05:05:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9312,
               "title": "Korjataan tuloilmoitustesti",
@@ -326,118 +461,16 @@
           ],
           "pendingDeployment": [
             {
-              "number": 9314,
-              "title": "Vanhentuneiden sijoituspohjaisten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-26T09:40:34Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9314",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9313,
-              "title": "Poistetaan deprekoidut tuen tarpeen päätös taulut",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-26T09:39:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9313",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9268,
-              "title": "Näytetään lapsen asiakirjat henkilökuntaroolille 60 päivää ennen sijoitusta",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-26T07:40:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9268",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9310,
-              "title": "Lisää kalenteriin-toiminnallisuuden parannukset",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-06-26T07:39:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9310",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9308,
-              "title": "Vanhentuneiden tukiasioiden poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-26T07:36:11Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9308",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9305,
-              "title": "Tietojen poistoista auditlokimerkinnät",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-26T07:34:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9311,
-              "title": "Enemmän oxlint-sääntöjä päälle",
+              "number": 9317,
+              "title": "TypeScript 6 -konffipäivityksiä",
               "author": "akheron",
               "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-26T05:05:35Z",
+              "mergedAt": "2026-06-29T04:22:48Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
               "labels": [
                 "tech",
                 "core"
@@ -456,7 +489,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-29T04:15:57.764Z",
+            "checkedAt": "2026-06-29T04:38:23.513Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -475,7 +508,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-29T04:15:58.725Z",
+            "checkedAt": "2026-06-29T04:38:24.353Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -615,7 +648,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9317,
+              "title": "TypeScript 6 -konffipäivityksiä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-29T04:22:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -628,7 +678,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-29T04:16:08.078Z",
+            "checkedAt": "2026-06-29T04:38:37.612Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -647,7 +697,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-29T04:16:08.743Z",
+            "checkedAt": "2026-06-29T04:38:38.319Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -787,7 +837,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9317,
+              "title": "TypeScript 6 -konffipäivityksiä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-29T04:22:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     }
