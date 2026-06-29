@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T08:34:48.983Z",
+  "generatedAt": "2026-06-29T09:56:37.872Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-29T08:33:29.148Z",
+            "checkedAt": "2026-06-29T09:54:31.248Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
-              "shortSha": "1f3ad3e",
-              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
-              "date": "2026-06-25T10:33:10Z",
-              "author": "ohinkinen"
+              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
+              "shortSha": "1bd4ea8",
+              "message": "Update dependency vite to v8.1.0 (#9346)",
+              "date": "2026-06-28T13:24:05Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-29T08:33:29.830Z",
+            "checkedAt": "2026-06-29T09:54:42.134Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9314,
               "title": "Vanhentuneiden sijoituspohjaisten tietojen poisto (ei vielä käytössä)",
@@ -134,41 +133,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9305,
-              "title": "Tietojen poistoista auditlokimerkinnät",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-26T07:34:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9311,
-              "title": "Enemmän oxlint-sääntöjä päälle",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-26T05:05:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9315,
@@ -216,7 +183,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-29T08:33:44.124Z",
+            "checkedAt": "2026-06-29T09:54:58.699Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -241,7 +208,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-29T08:33:53.407Z",
+            "checkedAt": "2026-06-29T09:55:10.189Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8b17684617c99bfcc00d29e9b9be8dcdd20b0e73",
@@ -523,15 +490,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-29T08:34:19.987Z",
+            "checkedAt": "2026-06-29T09:55:42.882Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
-              "shortSha": "1f3ad3e",
-              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
-              "date": "2026-06-25T10:33:10Z",
-              "author": "ohinkinen"
+              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
+              "shortSha": "1bd4ea8",
+              "message": "Update dependency vite to v8.1.0 (#9346)",
+              "date": "2026-06-28T13:24:05Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -542,7 +509,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-29T08:34:20.653Z",
+            "checkedAt": "2026-06-29T09:55:53.227Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -561,8 +528,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9314,
               "title": "Vanhentuneiden sijoituspohjaisten tietojen poisto (ei vielä käytössä)",
@@ -647,41 +613,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9305,
-              "title": "Tietojen poistoista auditlokimerkinnät",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-26T07:34:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9311,
-              "title": "Enemmän oxlint-sääntöjä päälle",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-26T05:05:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9315,
@@ -729,15 +663,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-29T08:34:34.638Z",
+            "checkedAt": "2026-06-29T09:56:10.220Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1f3ad3e4700fddf42a23c0540637026cf8199590",
-              "shortSha": "1f3ad3e",
-              "message": "Merge pull request #9312 from espoon-voltti/fix-flaky-income-statement-test",
-              "date": "2026-06-25T10:33:10Z",
-              "author": "ohinkinen"
+              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
+              "shortSha": "1bd4ea8",
+              "message": "Update dependency vite to v8.1.0 (#9346)",
+              "date": "2026-06-28T13:24:05Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -748,7 +682,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-29T08:34:35.390Z",
+            "checkedAt": "2026-06-29T09:56:20.681Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -767,8 +701,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9314,
               "title": "Vanhentuneiden sijoituspohjaisten tietojen poisto (ei vielä käytössä)",
@@ -853,41 +786,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9305,
-              "title": "Tietojen poistoista auditlokimerkinnät",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-06-26T07:34:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9305",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9311,
-              "title": "Enemmän oxlint-sääntöjä päälle",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-26T05:05:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9311",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9315,
