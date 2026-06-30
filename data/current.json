@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T08:46:34.470Z",
+  "generatedAt": "2026-06-30T09:58:13.960Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,16 +10,10 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-30T08:45:13.399Z",
-            "status": "ok",
+            "checkedAt": "2026-06-30T09:56:37.690Z",
+            "status": "unavailable",
             "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
-              "shortSha": "1bd4ea8",
-              "message": "Update dependency vite to v8.1.0 (#9346)",
-              "date": "2026-06-28T13:24:05Z",
-              "author": "renovate[bot]"
-            }
+            "coreCommit": null
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -29,7 +23,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-30T08:45:14.341Z",
+            "checkedAt": "2026-06-30T09:56:44.430Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -49,126 +43,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [
-            {
-              "number": 9233,
-              "title": "Päätösten perustelut pdf-tiedostoon (yleinen tuki, Espoo)",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-06-29T11:44:14Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9233",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee"
-              ]
-            },
-            {
-              "number": 9349,
-              "title": "Lisätään maininta aktiivisesta liikunnasta muistiinpanon ohjetekstiin",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-06-29T10:58:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9349",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9303,
-              "title": "Oletusfikstuureista optional arvot pois",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-29T10:27:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9303",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9316,
-              "title": "Otetaan oxfmt ja oxlint laajemmin käyttöön",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T10:16:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9316",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9318,
-              "title": "Ei yritetä lähettää sähköpostia poistetusta pedagogisesta asiakirjasta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T10:02:34Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9318",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9315,
-              "title": "Luvitusten käyttöliittymän parannus",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-06-29T05:38:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9315",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9317,
-              "title": "TypeScript 6 -konffipäivityksiä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T04:22:48Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -182,7 +57,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-30T08:45:24.909Z",
+            "checkedAt": "2026-06-30T09:56:45.483Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -207,7 +82,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-30T08:45:36.779Z",
+            "checkedAt": "2026-06-30T09:56:56.958Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "03183d4dd0cdbbf8e9fab23893848ce1c92e8fce",
@@ -573,15 +448,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-30T08:46:12.202Z",
+            "checkedAt": "2026-06-30T09:57:34.468Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
-              "shortSha": "1bd4ea8",
-              "message": "Update dependency vite to v8.1.0 (#9346)",
-              "date": "2026-06-28T13:24:05Z",
-              "author": "renovate[bot]"
+              "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
+              "shortSha": "d6e992b",
+              "message": "Merge pull request #9351 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.15",
+              "date": "2026-06-29T11:49:05Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -592,7 +467,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-30T08:46:13.135Z",
+            "checkedAt": "2026-06-30T09:57:44.492Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -611,8 +486,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9233,
               "title": "Päätösten perustelut pdf-tiedostoon (yleinen tuki, Espoo)",
@@ -697,41 +571,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9315,
-              "title": "Luvitusten käyttöliittymän parannus",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-06-29T05:38:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9315",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9317,
-              "title": "TypeScript 6 -konffipäivityksiä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T04:22:48Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -745,15 +587,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-30T08:46:23.466Z",
+            "checkedAt": "2026-06-30T09:57:54.503Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
-              "shortSha": "1bd4ea8",
-              "message": "Update dependency vite to v8.1.0 (#9346)",
-              "date": "2026-06-28T13:24:05Z",
-              "author": "renovate[bot]"
+              "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
+              "shortSha": "d6e992b",
+              "message": "Merge pull request #9351 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.15",
+              "date": "2026-06-29T11:49:05Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -764,7 +606,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-30T08:46:24.422Z",
+            "checkedAt": "2026-06-30T09:58:04.220Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -783,8 +625,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9233,
               "title": "Päätösten perustelut pdf-tiedostoon (yleinen tuki, Espoo)",
@@ -869,41 +710,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9315,
-              "title": "Luvitusten käyttöliittymän parannus",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-06-29T05:38:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9315",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9317,
-              "title": "TypeScript 6 -konffipäivityksiä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T04:22:48Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
