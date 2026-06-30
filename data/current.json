@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T10:54:37.598Z",
+  "generatedAt": "2026-06-30T11:06:13.225Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-30T10:53:34.469Z",
+            "checkedAt": "2026-06-30T11:05:11.352Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-30T10:53:43.568Z",
+            "checkedAt": "2026-06-30T11:05:12.305Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,92 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9356,
-              "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-30T10:32:19Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9356",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9233,
-              "title": "Päätösten perustelut pdf-tiedostoon (yleinen tuki, Espoo)",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-06-29T11:44:14Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9233",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee"
-              ]
-            },
-            {
-              "number": 9349,
-              "title": "Lisätään maininta aktiivisesta liikunnasta muistiinpanon ohjetekstiin",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-06-29T10:58:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9349",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9303,
-              "title": "Oletusfikstuureista optional arvot pois",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-29T10:27:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9303",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9316,
-              "title": "Otetaan oxfmt ja oxlint laajemmin käyttöön",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T10:16:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9316",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -148,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-30T10:53:54.084Z",
+            "checkedAt": "2026-06-30T11:05:13.500Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -173,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-30T10:54:01.990Z",
+            "checkedAt": "2026-06-30T11:05:26.654Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "03183d4dd0cdbbf8e9fab23893848ce1c92e8fce",
@@ -556,14 +471,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-30T10:54:31.715Z",
+            "checkedAt": "2026-06-30T11:06:06.104Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
-              "shortSha": "d6e992b",
-              "message": "Merge pull request #9351 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.15",
-              "date": "2026-06-29T11:49:05Z",
+              "sha": "8aa7f287e4c291410663fefdce776986bdf88b33",
+              "shortSha": "8aa7f28",
+              "message": "Merge pull request #9356 from espoon-voltti/fix-dd-java-agent-permissions",
+              "date": "2026-06-30T10:32:19Z",
               "author": "akheron"
             }
           },
@@ -575,7 +490,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-30T10:54:32.549Z",
+            "checkedAt": "2026-06-30T11:06:08.428Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -594,8 +509,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9356,
               "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
@@ -613,6 +527,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -626,7 +541,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-30T10:54:35.742Z",
+            "checkedAt": "2026-06-30T11:06:10.832Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -645,7 +560,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-30T10:54:36.362Z",
+            "checkedAt": "2026-06-30T11:06:11.668Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {

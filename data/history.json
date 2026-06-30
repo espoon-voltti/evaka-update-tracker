@@ -1,6 +1,46 @@
 {
   "events": [
     {
+      "id": "2026-06-30T11:06:08.427Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-06-30T11:06:08.427Z",
+      "previousCommit": {
+        "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
+        "shortSha": "d6e992b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8aa7f287e4c291410663fefdce776986bdf88b33",
+        "shortSha": "8aa7f28",
+        "message": "Merge pull request #9356 from espoon-voltti/fix-dd-java-agent-permissions",
+        "date": "2026-06-30T10:32:19Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9356,
+          "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-30T10:32:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9356",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-06-30T10:53:43.568Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
