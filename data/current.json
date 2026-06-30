@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T04:50:07.646Z",
+  "generatedAt": "2026-06-30T05:23:31.618Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-30T04:49:03.005Z",
+            "checkedAt": "2026-06-30T05:22:00.502Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-06-30T04:49:03.622Z",
+            "checkedAt": "2026-06-30T05:22:01.464Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -182,7 +182,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-30T04:49:12.279Z",
+            "checkedAt": "2026-06-30T05:22:11.907Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -207,21 +207,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-06-30T04:49:20.572Z",
+            "checkedAt": "2026-06-30T05:22:23.564Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "8b17684617c99bfcc00d29e9b9be8dcdd20b0e73",
-              "shortSha": "8b17684",
-              "message": "Merge pull request #2165 from Tampere/dependabot/submodules/evaka-1bd4ea8",
-              "date": "2026-06-28T21:11:23Z",
+              "sha": "03183d4dd0cdbbf8e9fab23893848ce1c92e8fce",
+              "shortSha": "03183d4",
+              "message": "Merge pull request #2166 from Tampere/dependabot/submodules/evaka-d6e992b",
+              "date": "2026-06-30T05:00:34Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "1bd4ea8fe5edc2286f992193daf86a6bd24a8e50",
-              "shortSha": "1bd4ea8",
-              "message": "Update dependency vite to v8.1.0 (#9346)",
-              "date": "2026-06-28T13:24:05Z",
-              "author": "renovate[bot]"
+              "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
+              "shortSha": "d6e992b",
+              "message": "Merge pull request #9351 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.15",
+              "date": "2026-06-29T11:49:05Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -239,6 +239,124 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9233,
+              "title": "Päätösten perustelut pdf-tiedostoon (yleinen tuki, Espoo)",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-06-29T11:44:14Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9233",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen",
+                "employee"
+              ]
+            },
+            {
+              "number": 9349,
+              "title": "Lisätään maininta aktiivisesta liikunnasta muistiinpanon ohjetekstiin",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-06-29T10:58:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9349",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9303,
+              "title": "Oletusfikstuureista optional arvot pois",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-06-29T10:27:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9303",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9316,
+              "title": "Otetaan oxfmt ja oxlint laajemmin käyttöön",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-29T10:16:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9316",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9318,
+              "title": "Ei yritetä lähettää sähköpostia poistetusta pedagogisesta asiakirjasta",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-29T10:02:34Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9318",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9315,
+              "title": "Luvitusten käyttöliittymän parannus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-06-29T05:38:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9315",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9317,
+              "title": "TypeScript 6 -konffipäivityksiä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-06-29T04:22:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9314,
               "title": "Vanhentuneiden sijoituspohjaisten tietojen poisto (ei vielä käytössä)",
@@ -442,126 +560,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9233,
-              "title": "Päätösten perustelut pdf-tiedostoon (yleinen tuki, Espoo)",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-06-29T11:44:14Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9233",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee"
-              ]
-            },
-            {
-              "number": 9349,
-              "title": "Lisätään maininta aktiivisesta liikunnasta muistiinpanon ohjetekstiin",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-06-29T10:58:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9349",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9303,
-              "title": "Oletusfikstuureista optional arvot pois",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-29T10:27:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9303",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9316,
-              "title": "Otetaan oxfmt ja oxlint laajemmin käyttöön",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T10:16:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9316",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9318,
-              "title": "Ei yritetä lähettää sähköpostia poistetusta pedagogisesta asiakirjasta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T10:02:34Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9318",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9315,
-              "title": "Luvitusten käyttöliittymän parannus",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-06-29T05:38:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9315",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9317,
-              "title": "TypeScript 6 -konffipäivityksiä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T04:22:48Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -574,7 +573,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-30T04:49:48.200Z",
+            "checkedAt": "2026-06-30T05:23:09.855Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -593,7 +592,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-06-30T04:49:48.910Z",
+            "checkedAt": "2026-06-30T05:23:10.802Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -746,7 +745,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-06-30T04:49:57.714Z",
+            "checkedAt": "2026-06-30T05:23:20.807Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -765,7 +764,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-06-30T04:49:58.329Z",
+            "checkedAt": "2026-06-30T05:23:21.842Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
