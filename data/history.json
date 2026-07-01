@@ -1,6 +1,46 @@
 {
   "events": [
     {
+      "id": "2026-07-01T03:09:31.106Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-07-01T03:09:31.106Z",
+      "previousCommit": {
+        "sha": "8aa7f287e4c291410663fefdce776986bdf88b33",
+        "shortSha": "8aa7f28",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+        "shortSha": "3166b5c",
+        "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+        "date": "2026-06-30T11:49:08Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 9354,
+          "title": "CI: Jätetään ecr-push ajamatta kun toimija on dependabot ",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-06-30T11:49:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9354",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-06-30T11:06:08.427Z_oulu-prod_core",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",
