@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T09:33:59.290Z",
+  "generatedAt": "2026-07-01T10:40:03.465Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-01T09:33:08.332Z",
+            "checkedAt": "2026-07-01T10:39:10.194Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8aa7f287e4c291410663fefdce776986bdf88b33",
-              "shortSha": "8aa7f28",
-              "message": "Merge pull request #9356 from espoon-voltti/fix-dd-java-agent-permissions",
-              "date": "2026-06-30T10:32:19Z",
-              "author": "akheron"
+              "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+              "shortSha": "3166b5c",
+              "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+              "date": "2026-06-30T11:49:08Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-01T09:33:08.989Z",
+            "checkedAt": "2026-07-01T10:39:11.492Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9355,
+              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-01T10:33:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9358,
               "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
@@ -98,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-01T09:33:11.348Z",
+            "checkedAt": "2026-07-01T10:39:14.487Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -123,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-01T09:33:20.152Z",
+            "checkedAt": "2026-07-01T10:39:22.491Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ef6e07bc76635b720d386e9cd13733cccbecbf57",
@@ -494,6 +511,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9355,
+              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-01T10:33:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9358,
               "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
               "author": "juakiv",
@@ -540,15 +574,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-01T09:33:52.667Z",
+            "checkedAt": "2026-07-01T10:39:54.793Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8aa7f287e4c291410663fefdce776986bdf88b33",
-              "shortSha": "8aa7f28",
-              "message": "Merge pull request #9356 from espoon-voltti/fix-dd-java-agent-permissions",
-              "date": "2026-06-30T10:32:19Z",
-              "author": "akheron"
+              "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+              "shortSha": "3166b5c",
+              "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+              "date": "2026-06-30T11:49:08Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -559,7 +593,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-01T09:33:53.377Z",
+            "checkedAt": "2026-07-01T10:39:56.059Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -581,6 +615,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9355,
+              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-01T10:33:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9358,
               "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
@@ -628,15 +679,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-01T09:33:55.824Z",
+            "checkedAt": "2026-07-01T10:39:58.656Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
-              "shortSha": "d6e992b",
-              "message": "Merge pull request #9351 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.15",
-              "date": "2026-06-29T11:49:05Z",
-              "author": "akheron"
+              "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+              "shortSha": "3166b5c",
+              "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+              "date": "2026-06-30T11:49:08Z",
+              "author": "ilja-git"
             }
           },
           "versionMismatch": false,
@@ -647,7 +698,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-01T09:33:56.700Z",
+            "checkedAt": "2026-07-01T10:40:00.449Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -666,8 +717,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9356,
               "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
@@ -685,7 +735,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9355,
+              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-01T10:33:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9358,
               "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
