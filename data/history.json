@@ -1,6 +1,103 @@
 {
   "events": [
     {
+      "id": "2026-07-01T04:46:53.152Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-01T04:46:53.152Z",
+      "previousCommit": {
+        "sha": "03183d4dd0cdbbf8e9fab23893848ce1c92e8fce",
+        "shortSha": "03183d4",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ef6e07bc76635b720d386e9cd13733cccbecbf57",
+        "shortSha": "ef6e07b",
+        "message": "Merge pull request #2167 from Tampere/dependabot/submodules/evaka-3166b5c",
+        "date": "2026-06-30T21:07:00Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2167,
+          "title": "Bump evaka from `d6e992b` to `3166b5c`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-06-30T21:07:00Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2167",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-01T04:46:53.152Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-01T04:46:53.152Z",
+      "previousCommit": {
+        "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
+        "shortSha": "d6e992b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+        "shortSha": "3166b5c",
+        "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+        "date": "2026-06-30T11:49:08Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 9354,
+          "title": "CI: Jätetään ecr-push ajamatta kun toimija on dependabot ",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-06-30T11:49:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9354",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 9356,
+          "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-30T10:32:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9356",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-01T04:13:47.781Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
