@@ -1,6 +1,102 @@
 {
   "events": [
     {
+      "id": "2026-07-01T04:13:47.781Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-07-01T04:13:47.781Z",
+      "previousCommit": {
+        "sha": "8aa7f287e4c291410663fefdce776986bdf88b33",
+        "shortSha": "8aa7f28",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+        "shortSha": "3166b5c",
+        "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+        "date": "2026-06-30T11:49:08Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 9354,
+          "title": "CI: Jätetään ecr-push ajamatta kun toimija on dependabot ",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-06-30T11:49:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9354",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-01T04:13:52.706Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-07-01T04:13:52.706Z",
+      "previousCommit": {
+        "sha": "d6e992b96a3fcd30290dc525dc8649422bf871b7",
+        "shortSha": "d6e992b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+        "shortSha": "3166b5c",
+        "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+        "date": "2026-06-30T11:49:08Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 9354,
+          "title": "CI: Jätetään ecr-push ajamatta kun toimija on dependabot ",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-06-30T11:49:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9354",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 9356,
+          "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-06-30T10:32:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9356",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-01T03:09:31.106Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
