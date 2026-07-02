@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T04:15:09.338Z",
+  "generatedAt": "2026-07-02T04:46:31.311Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-02T04:14:23.828Z",
+            "checkedAt": "2026-07-02T04:45:22.206Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-02T04:14:24.441Z",
+            "checkedAt": "2026-07-02T04:45:23.014Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-02T04:14:26.401Z",
+            "checkedAt": "2026-07-02T04:45:25.674Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -140,25 +140,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-02T04:14:34.255Z",
+            "checkedAt": "2026-07-02T04:45:37.793Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "ef6e07bc76635b720d386e9cd13733cccbecbf57",
-              "shortSha": "ef6e07b",
-              "message": "Merge pull request #2167 from Tampere/dependabot/submodules/evaka-3166b5c",
-              "date": "2026-06-30T21:07:00Z",
+              "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+              "shortSha": "898d959",
+              "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+              "date": "2026-07-01T21:10:38Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "3166b5c84986f55a5695ee5de26468406c199825",
-              "shortSha": "3166b5c",
-              "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
-              "date": "2026-06-30T11:49:08Z",
-              "author": "ilja-git"
+              "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+              "shortSha": "d636447",
+              "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+              "date": "2026-07-01T10:33:15Z",
+              "author": "ohinkinen"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-07-02T04:45:37.793Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+                "shortSha": "898d959",
+                "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+                "date": "2026-07-01T21:10:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+                "shortSha": "d636447",
+                "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+                "date": "2026-07-01T10:33:15Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-07-02T04:45:39.257Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ef6e07bc76635b720d386e9cd13733cccbecbf57",
+                "shortSha": "ef6e07b",
+                "message": "Merge pull request #2167 from Tampere/dependabot/submodules/evaka-3166b5c",
+                "date": "2026-06-30T21:07:00Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+                "shortSha": "3166b5c",
+                "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+                "date": "2026-06-30T11:49:08Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-07-02T04:45:40.575Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+                "shortSha": "898d959",
+                "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+                "date": "2026-07-01T21:10:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+                "shortSha": "d636447",
+                "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+                "date": "2026-07-01T10:33:15Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-07-02T04:45:41.980Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+                "shortSha": "898d959",
+                "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+                "date": "2026-07-01T21:10:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+                "shortSha": "d636447",
+                "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+                "date": "2026-07-01T10:33:15Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-07-02T04:45:43.381Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ef6e07bc76635b720d386e9cd13733cccbecbf57",
+                "shortSha": "ef6e07b",
+                "message": "Merge pull request #2167 from Tampere/dependabot/submodules/evaka-3166b5c",
+                "date": "2026-06-30T21:07:00Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+                "shortSha": "3166b5c",
+                "message": "ci: don't run ecr-push for Dependabot PRs (#9354)",
+                "date": "2026-06-30T11:49:08Z",
+                "author": "ilja-git"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-07-02T04:45:44.679Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+                "shortSha": "898d959",
+                "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+                "date": "2026-07-01T21:10:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+                "shortSha": "d636447",
+                "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+                "date": "2026-07-01T10:33:15Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-07-02T04:45:45.899Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+                "shortSha": "898d959",
+                "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+                "date": "2026-07-01T21:10:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+                "shortSha": "d636447",
+                "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+                "date": "2026-07-01T10:33:15Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-07-02T04:45:47.403Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+                "shortSha": "898d959",
+                "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+                "date": "2026-07-01T21:10:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+                "shortSha": "d636447",
+                "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+                "date": "2026-07-01T10:33:15Z",
+                "author": "ohinkinen"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-07-02T04:45:48.663Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
+                "shortSha": "898d959",
+                "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
+                "date": "2026-07-01T21:10:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+                "shortSha": "d636447",
+                "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+                "date": "2026-07-01T10:33:15Z",
+                "author": "ohinkinen"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -172,6 +344,57 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9355,
+              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-01T10:33:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9358,
+              "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-01T07:32:12Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9358",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9320,
+              "title": "Järjestetään lapsen asiakirjat päivämäärän mukaan",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-01T07:31:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9320",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9356,
               "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
@@ -509,59 +732,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9355,
-              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-07-01T10:33:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9358,
-              "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:32:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9358",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9320,
-              "title": "Järjestetään lapsen asiakirjat päivämäärän mukaan",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:31:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9320",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -574,7 +745,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-02T04:15:03.958Z",
+            "checkedAt": "2026-07-02T04:46:23.990Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -593,7 +764,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-02T04:15:04.575Z",
+            "checkedAt": "2026-07-02T04:46:24.936Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -679,7 +850,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-02T04:15:06.532Z",
+            "checkedAt": "2026-07-02T04:46:27.679Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -698,7 +869,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-02T04:15:07.279Z",
+            "checkedAt": "2026-07-02T04:46:28.468Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
