@@ -1,6 +1,82 @@
 {
   "events": [
     {
+      "id": "2026-07-02T03:08:14.822Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-07-02T03:08:14.822Z",
+      "previousCommit": {
+        "sha": "3166b5c84986f55a5695ee5de26468406c199825",
+        "shortSha": "3166b5c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+        "shortSha": "d636447",
+        "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
+        "date": "2026-07-01T10:33:15Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9355,
+          "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-07-01T10:33:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9355",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9358,
+          "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-01T07:32:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9358",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9320,
+          "title": "Järjestetään lapsen asiakirjat päivämäärän mukaan",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-01T07:31:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9320",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-01T10:39:11.492Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
