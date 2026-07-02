@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T09:47:44.695Z",
+  "generatedAt": "2026-07-02T09:49:38.031Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-02T09:46:26.616Z",
+            "checkedAt": "2026-07-02T09:48:47.413Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-02T09:46:29.271Z",
+            "checkedAt": "2026-07-02T09:48:48.076Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,61 +48,26 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9355,
-              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-07-01T10:33:15Z",
+              "number": 9360,
+              "title": "Käytetään Koski-tiedoissa yksikön esiopetusjohtajan nimeä jos se on asetettu",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-07-02T09:47:26Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9358,
-              "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:32:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9358",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9360",
               "labels": [
                 "enhancement",
                 "core",
                 "employee"
               ]
             },
-            {
-              "number": 9320,
-              "title": "Järjestetään lapsen asiakirjat päivämäärän mukaan",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:31:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9320",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
             {
               "number": 9362,
               "title": "Korjataan näkymän hyppiminen henkilökunnan läsnäolokalenterista",
@@ -166,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-02T09:46:33.789Z",
+            "checkedAt": "2026-07-02T09:48:50.339Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -191,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-02T09:46:46.639Z",
+            "checkedAt": "2026-07-02T09:48:58.118Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
@@ -613,6 +578,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9360,
+              "title": "Käytetään Koski-tiedoissa yksikön esiopetusjohtajan nimeä jos se on asetettu",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-07-02T09:47:26Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9360",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
               "number": 9362,
               "title": "Korjataan näkymän hyppiminen henkilökunnan läsnäolokalenterista",
               "author": "juakiv",
@@ -675,7 +657,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-02T09:47:29.802Z",
+            "checkedAt": "2026-07-02T09:49:31.402Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -694,7 +676,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-02T09:47:32.447Z",
+            "checkedAt": "2026-07-02T09:49:32.246Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -713,59 +695,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9355,
-              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-07-01T10:33:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9358,
-              "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:32:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9358",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9320,
-              "title": "Järjestetään lapsen asiakirjat päivämäärän mukaan",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:31:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9320",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -848,7 +778,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-02T09:47:37.237Z",
+            "checkedAt": "2026-07-02T09:49:34.891Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -867,7 +797,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-02T09:47:40.016Z",
+            "checkedAt": "2026-07-02T09:49:35.615Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -886,59 +816,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9355,
-              "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-07-01T10:33:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9355",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9358,
-              "title": "Lisätään sijoituksen alkamispäivä hetuttomat lapset -raportille",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:32:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9358",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9320,
-              "title": "Järjestetään lapsen asiakirjat päivämäärän mukaan",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-01T07:31:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9320",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
