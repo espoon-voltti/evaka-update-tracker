@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T05:27:58.350Z",
+  "generatedAt": "2026-07-03T06:06:05.357Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-03T05:26:44.355Z",
+            "checkedAt": "2026-07-03T06:04:56.912Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-03T05:26:45.578Z",
+            "checkedAt": "2026-07-03T06:04:57.607Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -120,6 +120,40 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9319,
+              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-07-03T05:41:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9357,
+              "title": "Lasten poissaoloraportti",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-03T05:33:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
               "number": 9366,
               "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
               "author": "akheron",
@@ -165,7 +199,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-03T05:26:50.719Z",
+            "checkedAt": "2026-07-03T06:05:02.602Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -190,21 +224,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-03T05:27:03.444Z",
+            "checkedAt": "2026-07-03T06:05:11.775Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "898d959cba7d0d834d3c43c42de6523eb2189e74",
-              "shortSha": "898d959",
-              "message": "Merge pull request #2169 from Tampere/dependabot/submodules/evaka-d636447",
-              "date": "2026-07-01T21:10:38Z",
+              "sha": "3096f3ffd3893bbf58fbc1094554507ff483af93",
+              "shortSha": "3096f3f",
+              "message": "Merge pull request #2170 from Tampere/dependabot/submodules/evaka-4d07075",
+              "date": "2026-07-02T21:11:51Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
-              "shortSha": "d636447",
-              "message": "Merge pull request #9355 from espoon-voltti/data-removal-service-application",
-              "date": "2026-07-01T10:33:15Z",
-              "author": "ohinkinen"
+              "sha": "4d07075bd1f1b1ebf99140422dd198892dbf131c",
+              "shortSha": "4d07075",
+              "message": "Merge pull request #9366 from espoon-voltti/employee-mobile-show-daily-service-times",
+              "date": "2026-07-02T10:33:22Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -222,6 +256,106 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9366,
+              "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-02T10:33:22Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9366",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9359,
+              "title": "Skeematiedoston kunta-agnostinen generointi",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-02T10:25:57Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9359",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9360,
+              "title": "Käytetään Koski-tiedoissa yksikön esiopetusjohtajan nimeä jos se on asetettu",
+              "author": "reynders",
+              "authorName": "Joonas Reynders",
+              "mergedAt": "2026-07-02T09:47:26Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9360",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9362,
+              "title": "Korjataan näkymän hyppiminen henkilökunnan läsnäolokalenterista",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-02T07:13:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9362",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9353,
+              "title": "Kerhopäätöksille määritellään omat perustelut",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-02T07:10:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9353",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9348,
+              "title": "Kuntakohtaiset pdf-generointitestit",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-02T07:09:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9348",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9355,
               "title": "Vanhentuneiden palveluntarpeen muutoshakemusten tietojen poisto (ei vielä käytössä)",
@@ -612,103 +746,37 @@
           ],
           "pendingDeployment": [
             {
-              "number": 9366,
-              "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
+              "number": 9319,
+              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-07-03T05:41:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9357,
+              "title": "Lasten poissaoloraportti",
               "author": "akheron",
               "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-02T10:33:22Z",
+              "mergedAt": "2026-07-03T05:33:17Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9366",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9359,
-              "title": "Skeematiedoston kunta-agnostinen generointi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-02T10:25:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9359",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9360,
-              "title": "Käytetään Koski-tiedoissa yksikön esiopetusjohtajan nimeä jos se on asetettu",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-07-02T09:47:26Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9360",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
               "labels": [
                 "enhancement",
                 "core",
                 "employee"
-              ]
-            },
-            {
-              "number": 9362,
-              "title": "Korjataan näkymän hyppiminen henkilökunnan läsnäolokalenterista",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-02T07:13:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9362",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9353,
-              "title": "Kerhopäätöksille määritellään omat perustelut",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-02T07:10:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9353",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9348,
-              "title": "Kuntakohtaiset pdf-generointitestit",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-02T07:09:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9348",
-              "labels": [
-                "tech",
-                "core"
               ]
             }
           ]
@@ -724,7 +792,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-03T05:27:48.114Z",
+            "checkedAt": "2026-07-03T06:05:53.584Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -743,7 +811,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-03T05:27:49.198Z",
+            "checkedAt": "2026-07-03T06:05:54.261Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -833,6 +901,40 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9319,
+              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-07-03T05:41:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9357,
+              "title": "Lasten poissaoloraportti",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-03T05:33:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9366,
               "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
@@ -879,7 +981,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-03T05:27:53.557Z",
+            "checkedAt": "2026-07-03T06:05:59.767Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -898,7 +1000,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-03T05:27:54.362Z",
+            "checkedAt": "2026-07-03T06:06:00.484Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -988,6 +1090,40 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9319,
+              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-07-03T05:41:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9357,
+              "title": "Lasten poissaoloraportti",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-03T05:33:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9366,
               "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",

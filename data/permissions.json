@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T05:28:02.262Z",
+  "generatedAt": "2026-07-03T06:06:09.810Z",
   "sourceCommit": null,
   "roles": [
     "ADMIN",
@@ -55990,6 +55990,223 @@
           }
         },
         {
+          "name": "Action.Unit.READ_CHILD_ABSENCE_REPORT_FOR_UNIT",
+          "shortName": "READ_CHILD_ABSENCE_REPORT_FOR_UNIT",
+          "category": "Unit",
+          "crud": "READ",
+          "label": "READ_CHILD_ABSENCE_REPORT_FOR_UNIT",
+          "rolesAllowed": {
+            "espoo": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "tampere": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "nokia": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "kangasala": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "lempaala": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "orivesi": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "pirkkala": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "vesilahti": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "ylojarvi": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "hameenkyro": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "oulu": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ],
+            "turku": [
+              "ADMIN",
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY",
+              "FINANCE_ADMIN",
+              "UNIT_SUPERVISOR"
+            ]
+          },
+          "contextByRole": {
+            "espoo": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "tampere": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "nokia": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "kangasala": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "lempaala": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "orivesi": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "pirkkala": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "vesilahti": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "ylojarvi": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "hameenkyro": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "oulu": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            },
+            "turku": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": [],
+              "EARLY_CHILDHOOD_EDUCATION_SECRETARY": [
+                "inUnit"
+              ],
+              "UNIT_SUPERVISOR": [
+                "inUnit"
+              ]
+            }
+          },
+          "contextNotes": {
+            "espoo": [],
+            "tampere": [],
+            "nokia": [],
+            "kangasala": [],
+            "lempaala": [],
+            "orivesi": [],
+            "pirkkala": [],
+            "vesilahti": [],
+            "ylojarvi": [],
+            "hameenkyro": [],
+            "oulu": [],
+            "turku": []
+          }
+        },
+        {
           "name": "Action.Unit.READ_CHILD_AGE_AND_LANGUAGE_REPORT",
           "shortName": "READ_CHILD_AGE_AND_LANGUAGE_REPORT",
           "category": "Unit",
@@ -69393,6 +69610,127 @@
               "UNIT_SUPERVISOR": [
                 "inAnyUnit"
               ]
+            }
+          },
+          "contextNotes": {
+            "espoo": [],
+            "tampere": [],
+            "nokia": [],
+            "kangasala": [],
+            "lempaala": [],
+            "orivesi": [],
+            "pirkkala": [],
+            "vesilahti": [],
+            "ylojarvi": [],
+            "hameenkyro": [],
+            "oulu": [],
+            "turku": []
+          }
+        },
+        {
+          "name": "Action.Global.READ_CHILD_ABSENCE_REPORT_FOR_AREA",
+          "shortName": "READ_CHILD_ABSENCE_REPORT_FOR_AREA",
+          "category": "Global",
+          "crud": "READ",
+          "label": "READ_CHILD_ABSENCE_REPORT_FOR_AREA",
+          "rolesAllowed": {
+            "espoo": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "tampere": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "nokia": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "kangasala": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "lempaala": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "orivesi": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "pirkkala": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "vesilahti": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "ylojarvi": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "hameenkyro": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "oulu": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ],
+            "turku": [
+              "ADMIN",
+              "FINANCE_ADMIN"
+            ]
+          },
+          "contextByRole": {
+            "espoo": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "tampere": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "nokia": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "kangasala": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "lempaala": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "orivesi": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "pirkkala": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "vesilahti": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "ylojarvi": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "hameenkyro": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "oulu": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
+            },
+            "turku": {
+              "ADMIN": [],
+              "FINANCE_ADMIN": []
             }
           },
           "contextNotes": {
