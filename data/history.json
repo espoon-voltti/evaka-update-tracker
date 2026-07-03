@@ -1,6 +1,190 @@
 {
   "events": [
     {
+      "id": "2026-07-03T04:14:01.620Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-07-03T04:14:01.620Z",
+      "previousCommit": {
+        "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+        "shortSha": "d636447",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "4f3a5846f173c0da89ec67b2b96d90f03f974264",
+        "shortSha": "4f3a584",
+        "message": "Merge pull request #9360 from espoon-voltti/koski-approver-name-preschool-manager",
+        "date": "2026-07-02T09:47:26Z",
+        "author": "reynders"
+      },
+      "includedPRs": [
+        {
+          "number": 9360,
+          "title": "Käytetään Koski-tiedoissa yksikön esiopetusjohtajan nimeä jos se on asetettu",
+          "author": "reynders",
+          "authorName": "Joonas Reynders",
+          "mergedAt": "2026-07-02T09:47:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9360",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9362,
+          "title": "Korjataan näkymän hyppiminen henkilökunnan läsnäolokalenterista",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-02T07:13:51Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9362",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9353,
+          "title": "Kerhopäätöksille määritellään omat perustelut",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-07-02T07:10:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9353",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9348,
+          "title": "Kuntakohtaiset pdf-generointitestit",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-07-02T07:09:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9348",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-03T04:14:07.737Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-07-03T04:14:07.737Z",
+      "previousCommit": {
+        "sha": "d6364470549e502a438c0bb019ecae79981d9ed2",
+        "shortSha": "d636447",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "4f3a5846f173c0da89ec67b2b96d90f03f974264",
+        "shortSha": "4f3a584",
+        "message": "Merge pull request #9360 from espoon-voltti/koski-approver-name-preschool-manager",
+        "date": "2026-07-02T09:47:26Z",
+        "author": "reynders"
+      },
+      "includedPRs": [
+        {
+          "number": 9360,
+          "title": "Käytetään Koski-tiedoissa yksikön esiopetusjohtajan nimeä jos se on asetettu",
+          "author": "reynders",
+          "authorName": "Joonas Reynders",
+          "mergedAt": "2026-07-02T09:47:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9360",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9362,
+          "title": "Korjataan näkymän hyppiminen henkilökunnan läsnäolokalenterista",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-02T07:13:51Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9362",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9353,
+          "title": "Kerhopäätöksille määritellään omat perustelut",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-07-02T07:10:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9353",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9348,
+          "title": "Kuntakohtaiset pdf-generointitestit",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-07-02T07:09:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9348",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-03T03:07:06.633Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
