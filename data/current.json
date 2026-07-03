@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T10:55:09.378Z",
+  "generatedAt": "2026-07-03T11:45:15.044Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-03T10:53:56.721Z",
-            "status": "unavailable",
+            "checkedAt": "2026-07-03T11:44:06.951Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "4f3a5846f173c0da89ec67b2b96d90f03f974264",
+              "shortSha": "4f3a584",
+              "message": "Merge pull request #9360 from espoon-voltti/koski-approver-name-preschool-manager",
+              "date": "2026-07-02T09:47:26Z",
+              "author": "reynders"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-03T10:54:03.608Z",
+            "checkedAt": "2026-07-03T11:44:07.811Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -45,6 +51,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9361,
+              "title": "Vanhentuneiden lapsen arkeen liittyvien dokumenttien tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-03T11:04:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9361",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9352,
               "title": "Kasvattajan mobiilin henkilökuntalistan uudistus",
@@ -142,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-03T10:54:07.373Z",
+            "checkedAt": "2026-07-03T11:44:12.120Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -167,7 +190,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-03T10:54:19.488Z",
+            "checkedAt": "2026-07-03T11:44:23.016Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3096f3ffd3893bbf58fbc1094554507ff483af93",
@@ -689,6 +712,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9361,
+              "title": "Vanhentuneiden lapsen arkeen liittyvien dokumenttien tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-03T11:04:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9361",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9352,
               "title": "Kasvattajan mobiilin henkilökuntalistan uudistus",
               "author": "juakiv",
@@ -752,7 +792,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-03T10:55:00.183Z",
+            "checkedAt": "2026-07-03T11:45:05.225Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -771,7 +811,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-03T10:55:01.464Z",
+            "checkedAt": "2026-07-03T11:45:06.202Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -793,6 +833,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9361,
+              "title": "Vanhentuneiden lapsen arkeen liittyvien dokumenttien tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-03T11:04:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9361",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9352,
               "title": "Kasvattajan mobiilin henkilökuntalistan uudistus",
@@ -890,7 +947,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-03T10:55:05.171Z",
+            "checkedAt": "2026-07-03T11:45:10.052Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -909,7 +966,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-03T10:55:06.107Z",
+            "checkedAt": "2026-07-03T11:45:11.104Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -931,6 +988,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9361,
+              "title": "Vanhentuneiden lapsen arkeen liittyvien dokumenttien tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-03T11:04:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9361",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9352,
               "title": "Kasvattajan mobiilin henkilökuntalistan uudistus",
