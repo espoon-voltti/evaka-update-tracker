@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T04:26:40.157Z",
+  "generatedAt": "2026-07-06T05:51:09.601Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-06T04:24:35.635Z",
+            "checkedAt": "2026-07-06T05:49:19.480Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-06T04:24:36.532Z",
+            "checkedAt": "2026-07-06T05:49:20.095Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -213,7 +213,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-06T04:24:53.278Z",
+            "checkedAt": "2026-07-06T05:49:33.701Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -238,21 +238,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-06T04:25:05.451Z",
+            "checkedAt": "2026-07-06T05:49:41.717Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "3096f3ffd3893bbf58fbc1094554507ff483af93",
-              "shortSha": "3096f3f",
-              "message": "Merge pull request #2170 from Tampere/dependabot/submodules/evaka-4d07075",
-              "date": "2026-07-02T21:11:51Z",
+              "sha": "940c40d2baa8183bddca2f06dded21879746542a",
+              "shortSha": "940c40d",
+              "message": "Merge pull request #2172 from Tampere/dependabot/submodules/evaka-0f1bfac",
+              "date": "2026-07-05T21:12:00Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "4d07075bd1f1b1ebf99140422dd198892dbf131c",
-              "shortSha": "4d07075",
-              "message": "Merge pull request #9366 from espoon-voltti/employee-mobile-show-daily-service-times",
-              "date": "2026-07-02T10:33:22Z",
-              "author": "akheron"
+              "sha": "0f1bfac291b308e6562a5247b88be543b430c488",
+              "shortSha": "0f1bfac",
+              "message": "Update dependency oxlint-tsgolint to v0.24.0 (#9403)",
+              "date": "2026-07-05T16:53:02Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -270,6 +270,122 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9369,
+              "title": "Korjataan tietokannan resetointi e2e-testeissä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-04T20:24:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9369",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9370,
+              "title": "Korjataan flaky e2e-testi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-04T20:10:47Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9370",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9373,
+              "title": "Lisätään palveluseteliraportille testi joka kattaa vain viikonlopun",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-04T20:10:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9373",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9361,
+              "title": "Vanhentuneiden lapsen arkeen liittyvien dokumenttien tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-03T11:04:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9361",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9352,
+              "title": "Kasvattajan mobiilin henkilökuntalistan uudistus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-03T07:14:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9352",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9319,
+              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-07-03T05:41:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9357,
+              "title": "Lasten poissaoloraportti",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-03T05:33:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9366,
               "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
@@ -758,124 +874,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9369,
-              "title": "Korjataan tietokannan resetointi e2e-testeissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-04T20:24:36Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9369",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9370,
-              "title": "Korjataan flaky e2e-testi",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-04T20:10:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9370",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9373,
-              "title": "Lisätään palveluseteliraportille testi joka kattaa vain viikonlopun",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-04T20:10:28Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9373",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9361,
-              "title": "Vanhentuneiden lapsen arkeen liittyvien dokumenttien tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-07-03T11:04:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9361",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9352,
-              "title": "Kasvattajan mobiilin henkilökuntalistan uudistus",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-03T07:14:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9352",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9319,
-              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-07-03T05:41:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9357,
-              "title": "Lasten poissaoloraportti",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-03T05:33:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -888,7 +887,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-06T04:26:04.997Z",
+            "checkedAt": "2026-07-06T05:50:41.849Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -907,7 +906,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-06T04:26:05.965Z",
+            "checkedAt": "2026-07-06T05:50:42.606Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1091,7 +1090,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-06T04:26:22.796Z",
+            "checkedAt": "2026-07-06T05:50:55.813Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1110,7 +1109,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-06T04:26:23.640Z",
+            "checkedAt": "2026-07-06T05:50:56.361Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
