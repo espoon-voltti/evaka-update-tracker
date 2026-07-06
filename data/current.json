@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T09:13:51.392Z",
+  "generatedAt": "2026-07-06T09:40:30.582Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-06T09:11:24.855Z",
+            "checkedAt": "2026-07-06T09:38:11.813Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "4f3a5846f173c0da89ec67b2b96d90f03f974264",
-              "shortSha": "4f3a584",
-              "message": "Merge pull request #9360 from espoon-voltti/koski-approver-name-preschool-manager",
-              "date": "2026-07-02T09:47:26Z",
-              "author": "reynders"
+              "sha": "173977ed8898eac59645b79b9eb75a88e0be6a96",
+              "shortSha": "173977e",
+              "message": "Update dependency org.postgresql:postgresql to v42.7.12 (#9396)",
+              "date": "2026-07-04T20:43:10Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-06T09:11:25.744Z",
+            "checkedAt": "2026-07-06T09:38:22.593Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9369,
               "title": "Korjataan tietokannan resetointi e2e-testeissä",
@@ -131,75 +130,9 @@
                 "core",
                 "employee-mobile"
               ]
-            },
-            {
-              "number": 9319,
-              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-07-03T05:41:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9357,
-              "title": "Lasten poissaoloraportti",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-03T05:33:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9366,
-              "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-02T10:33:22Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9366",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9359,
-              "title": "Skeematiedoston kunta-agnostinen generointi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-02T10:25:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9359",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9405,
@@ -231,7 +164,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-06T09:11:47.629Z",
+            "checkedAt": "2026-07-06T09:38:39.252Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -256,7 +189,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-06T09:12:00.497Z",
+            "checkedAt": "2026-07-06T09:38:47.714Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "940c40d2baa8183bddca2f06dded21879746542a",
@@ -923,15 +856,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-06T09:13:06.858Z",
+            "checkedAt": "2026-07-06T09:39:36.483Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "4f3a5846f173c0da89ec67b2b96d90f03f974264",
-              "shortSha": "4f3a584",
-              "message": "Merge pull request #9360 from espoon-voltti/koski-approver-name-preschool-manager",
-              "date": "2026-07-02T09:47:26Z",
-              "author": "reynders"
+              "sha": "173977ed8898eac59645b79b9eb75a88e0be6a96",
+              "shortSha": "173977e",
+              "message": "Update dependency org.postgresql:postgresql to v42.7.12 (#9396)",
+              "date": "2026-07-04T20:43:10Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -942,7 +875,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-06T09:13:08.025Z",
+            "checkedAt": "2026-07-06T09:39:46.955Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -961,8 +894,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9369,
               "title": "Korjataan tietokannan resetointi e2e-testeissä",
@@ -1044,75 +976,9 @@
                 "core",
                 "employee-mobile"
               ]
-            },
-            {
-              "number": 9319,
-              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-07-03T05:41:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9357,
-              "title": "Lasten poissaoloraportti",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-03T05:33:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9366,
-              "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-02T10:33:22Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9366",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9359,
-              "title": "Skeematiedoston kunta-agnostinen generointi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-02T10:25:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9359",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9405,
@@ -1144,15 +1010,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-06T09:13:29.436Z",
+            "checkedAt": "2026-07-06T09:40:03.312Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "4f3a5846f173c0da89ec67b2b96d90f03f974264",
-              "shortSha": "4f3a584",
-              "message": "Merge pull request #9360 from espoon-voltti/koski-approver-name-preschool-manager",
-              "date": "2026-07-02T09:47:26Z",
-              "author": "reynders"
+              "sha": "173977ed8898eac59645b79b9eb75a88e0be6a96",
+              "shortSha": "173977e",
+              "message": "Update dependency org.postgresql:postgresql to v42.7.12 (#9396)",
+              "date": "2026-07-04T20:43:10Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -1163,7 +1029,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-06T09:13:30.321Z",
+            "checkedAt": "2026-07-06T09:40:14.552Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1182,8 +1048,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9369,
               "title": "Korjataan tietokannan resetointi e2e-testeissä",
@@ -1265,75 +1130,9 @@
                 "core",
                 "employee-mobile"
               ]
-            },
-            {
-              "number": 9319,
-              "title": "Vanhentuneiden hakemusten ja niihin liittyvien tietojen poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-07-03T05:41:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9319",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9357,
-              "title": "Lasten poissaoloraportti",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-03T05:33:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9357",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9366,
-              "title": "Näytetään \"läsnä, ei aikoja\"-tekstin sijaan päivittäinen vaka-aika",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-07-02T10:33:22Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9366",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9359,
-              "title": "Skeematiedoston kunta-agnostinen generointi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-02T10:25:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9359",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9405,
