@@ -1,6 +1,200 @@
 {
   "events": [
     {
+      "id": "2026-07-07T05:06:25.426Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-07T05:06:25.426Z",
+      "previousCommit": {
+        "sha": "940c40d2baa8183bddca2f06dded21879746542a",
+        "shortSha": "940c40d",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "38743c18853dfdcc91d38e7b3a68e8e87d76e710",
+        "shortSha": "38743c1",
+        "message": "Merge pull request #2174 from Tampere/dependabot/submodules/evaka-c99ab14",
+        "date": "2026-07-06T21:12:18Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2174,
+          "title": "Bump evaka from `0f1bfac` to `c99ab14`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T21:12:19Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2174",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-07T05:06:25.426Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-07T05:06:25.426Z",
+      "previousCommit": {
+        "sha": "0f1bfac291b308e6562a5247b88be543b430c488",
+        "shortSha": "0f1bfac",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c99ab1414d580558834cf718e18f25d81717bf70",
+        "shortSha": "c99ab14",
+        "message": "Merge pull request #9404 from espoon-voltti/renovate/flyway",
+        "date": "2026-07-06T07:54:59Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9404,
+          "title": "Update flyway to v12.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T07:55:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9404",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9393,
+          "title": "Update actions/setup-node action to v6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T07:54:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9393",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9392,
+          "title": "Update actions/checkout action to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T07:54:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9392",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9391,
+          "title": "Update sentry-javascript monorepo to v10.62.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T07:54:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9391",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9390,
+          "title": "Update Font Awesome to v7.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T07:53:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9390",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9388,
+          "title": "Update dependency node to v24.18.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T07:53:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9388",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9387,
+          "title": "Update dependency dd-trace to v5.110.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-06T07:53:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9387",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9405,
+          "title": "Korjataan CSS oxfmt v0.57.0:n mukaiseksi",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-07-06T06:22:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9405",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-07T04:13:54.658Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
