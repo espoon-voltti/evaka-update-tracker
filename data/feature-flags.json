@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-07-09T19:58:57.964Z",
+  "generatedAt": "2026-07-09T20:44:21.696Z",
   "cities": [
     {
       "id": "espoo",
       "name": "Espoo",
       "cityGroupId": "espoo",
-      "error": null
+      "error": "Request failed with status code 503"
     },
     {
       "id": "tampere",
       "name": "Tampere",
       "cityGroupId": "tampere-region",
-      "error": null
+      "error": "Request failed with status code 502"
     },
     {
       "id": "nokia",
       "name": "Nokia",
       "cityGroupId": "tampere-region",
-      "error": null
+      "error": "Request failed with status code 502"
     },
     {
       "id": "kangasala",
@@ -29,31 +29,31 @@
       "id": "lempaala",
       "name": "Lempäälä",
       "cityGroupId": "tampere-region",
-      "error": null
+      "error": "Request failed with status code 504"
     },
     {
       "id": "orivesi",
       "name": "Orivesi",
       "cityGroupId": "tampere-region",
-      "error": null
+      "error": "Request failed with status code 502"
     },
     {
       "id": "pirkkala",
       "name": "Pirkkala",
       "cityGroupId": "tampere-region",
-      "error": null
+      "error": "Request failed with status code 502"
     },
     {
       "id": "vesilahti",
       "name": "Vesilahti",
       "cityGroupId": "tampere-region",
-      "error": null
+      "error": "Request failed with status code 502"
     },
     {
       "id": "ylojarvi",
       "name": "Ylöjärvi",
       "cityGroupId": "tampere-region",
-      "error": null
+      "error": "Request failed with status code 502"
     },
     {
       "id": "hameenkyro",
@@ -65,7 +65,7 @@
       "id": "oulu",
       "name": "Oulu",
       "cityGroupId": "oulu",
-      "error": null
+      "error": "Request failed with status code 502"
     },
     {
       "id": "turku",
@@ -167,25 +167,6 @@
             "lempaala": null,
             "orivesi": null,
             "pirkkala": true,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": null,
-            "turku": null
-          }
-        },
-        {
-          "key": "aromiIntegration",
-          "label": "Aromi-ruokatilausintegraatio",
-          "type": "boolean",
-          "values": {
-            "espoo": true,
-            "tampere": true,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
             "vesilahti": null,
             "ylojarvi": null,
             "hameenkyro": null,
@@ -498,25 +479,6 @@
           }
         },
         {
-          "key": "invoiceDisplayAccountNumber",
-          "label": "Tilinumero laskun tiedoissa",
-          "type": "boolean",
-          "values": {
-            "espoo": true,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": null,
-            "turku": null
-          }
-        },
-        {
           "key": "jamixIntegration",
           "label": "Jamix-ruokatilausintegraatio",
           "type": "boolean",
@@ -532,25 +494,6 @@
             "ylojarvi": true,
             "hameenkyro": true,
             "oulu": null,
-            "turku": null
-          }
-        },
-        {
-          "key": "missingQuestionnaireAnswerMarkerEnabled",
-          "label": "Puuttuvan kyselyvastauksen merkintä",
-          "type": "boolean",
-          "values": {
-            "espoo": false,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
             "turku": null
           }
         },
@@ -571,25 +514,6 @@
             "hameenkyro": true,
             "oulu": true,
             "turku": true
-          }
-        },
-        {
-          "key": "nekkuIntegration",
-          "label": "Nekku-ruokatilausintegraatio",
-          "type": "boolean",
-          "values": {
-            "espoo": null,
-            "tampere": null,
-            "nokia": null,
-            "kangasala": null,
-            "lempaala": null,
-            "orivesi": null,
-            "pirkkala": null,
-            "vesilahti": null,
-            "ylojarvi": null,
-            "hameenkyro": null,
-            "oulu": true,
-            "turku": null
           }
         },
         {
@@ -875,6 +799,82 @@
             "hameenkyro": false,
             "oulu": false,
             "turku": false
+          }
+        },
+        {
+          "key": "aromiIntegration",
+          "label": "Aromi-ruokatilausintegraatio",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": true,
+            "nokia": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "oulu": null,
+            "kangasala": null,
+            "hameenkyro": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "invoiceDisplayAccountNumber",
+          "label": "Tilinumero laskun tiedoissa",
+          "type": "boolean",
+          "values": {
+            "espoo": true,
+            "tampere": null,
+            "nokia": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "oulu": null,
+            "kangasala": null,
+            "hameenkyro": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "missingQuestionnaireAnswerMarkerEnabled",
+          "label": "Puuttuvan kyselyvastauksen merkintä",
+          "type": "boolean",
+          "values": {
+            "espoo": false,
+            "tampere": null,
+            "nokia": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "oulu": true,
+            "kangasala": null,
+            "hameenkyro": null,
+            "turku": null
+          }
+        },
+        {
+          "key": "nekkuIntegration",
+          "label": "Nekku-ruokatilausintegraatio",
+          "type": "boolean",
+          "values": {
+            "espoo": null,
+            "tampere": null,
+            "nokia": null,
+            "lempaala": null,
+            "orivesi": null,
+            "pirkkala": null,
+            "vesilahti": null,
+            "ylojarvi": null,
+            "oulu": true,
+            "kangasala": null,
+            "hameenkyro": null,
+            "turku": null
           }
         }
       ]
@@ -1341,5 +1341,6 @@
         }
       ]
     }
-  ]
+  ],
+  "errorFallbackDate": "2026-07-09T19:58:57.964Z"
 }
