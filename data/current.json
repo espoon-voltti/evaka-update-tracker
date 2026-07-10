@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T10:29:50.599Z",
+  "generatedAt": "2026-07-10T11:31:31.098Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T10:28:27.523Z",
+            "checkedAt": "2026-07-10T11:30:00.373Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T10:28:28.425Z",
+            "checkedAt": "2026-07-10T11:30:01.515Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -50,7 +50,59 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9408,
+              "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:49:09Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9408",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9363,
+              "title": "Hakemushaun muutokset liittyen muokattaviin päätösperusteluihin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:48:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9363",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9407,
+              "title": "Kasvattajan mobiilin ylävalikon uudistus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-10T10:38:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9407",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            }
+          ]
         }
       }
     },
@@ -63,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T10:28:29.519Z",
+            "checkedAt": "2026-07-10T11:30:04.114Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -88,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T10:28:41.224Z",
+            "checkedAt": "2026-07-10T11:30:22.042Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2de462ad61970988d505594b6d4525fdd29971f8",
@@ -778,6 +830,57 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9408,
+              "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:49:09Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9408",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9363,
+              "title": "Hakemushaun muutokset liittyen muokattaviin päätösperusteluihin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:48:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9363",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9407,
+              "title": "Kasvattajan mobiilin ylävalikon uudistus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-10T10:38:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9407",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
               "number": 9406,
               "title": "Lisätään muokkausaika asiakastietosivun tulotiedot-taulukkoon",
               "author": "juakiv",
@@ -807,7 +910,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T10:29:45.047Z",
+            "checkedAt": "2026-07-10T11:31:23.865Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -826,7 +929,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T10:29:46.039Z",
+            "checkedAt": "2026-07-10T11:31:24.651Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -848,6 +951,57 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9408,
+              "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:49:09Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9408",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9363,
+              "title": "Hakemushaun muutokset liittyen muokattaviin päätösperusteluihin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:48:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9363",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9407,
+              "title": "Kasvattajan mobiilin ylävalikon uudistus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-10T10:38:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9407",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
             {
               "number": 9406,
               "title": "Lisätään muokkausaika asiakastietosivun tulotiedot-taulukkoon",
@@ -878,7 +1032,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-10T10:29:47.831Z",
+            "checkedAt": "2026-07-10T11:31:27.267Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -897,7 +1051,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-10T10:29:48.622Z",
+            "checkedAt": "2026-07-10T11:31:28.200Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -919,6 +1073,57 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9408,
+              "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:49:09Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9408",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9363,
+              "title": "Hakemushaun muutokset liittyen muokattaviin päätösperusteluihin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:48:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9363",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9407,
+              "title": "Kasvattajan mobiilin ylävalikon uudistus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-10T10:38:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9407",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
             {
               "number": 9406,
               "title": "Lisätään muokkausaika asiakastietosivun tulotiedot-taulukkoon",
