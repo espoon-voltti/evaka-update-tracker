@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T09:18:22.274Z",
+  "generatedAt": "2026-07-10T09:30:03.755Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T09:16:30.601Z",
+            "checkedAt": "2026-07-10T09:28:31.294Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d2e85dba43afc7d7a270c1c4d0ac22d6275e1bd0",
-              "shortSha": "d2e85db",
-              "message": "Merge pull request #8694 from espoon-voltti/person-audit",
-              "date": "2026-07-08T06:50:26Z",
-              "author": "Joosakur"
+              "sha": "9fd2b495bab5f1f5697c1e3380183e34ccb7e4e7",
+              "shortSha": "9fd2b49",
+              "message": "Merge pull request #9406 from espoon-voltti/income-statement-modified-date",
+              "date": "2026-07-10T05:42:18Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T09:16:31.581Z",
+            "checkedAt": "2026-07-10T09:28:33.588Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9406,
               "title": "Lisätään muokkausaika asiakastietosivun tulotiedot-taulukkoon",
@@ -87,6 +86,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -100,7 +100,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T09:16:34.225Z",
+            "checkedAt": "2026-07-10T09:28:35.698Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -125,7 +125,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T09:16:47.983Z",
+            "checkedAt": "2026-07-10T09:28:52.954Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2de462ad61970988d505594b6d4525fdd29971f8",
@@ -844,15 +844,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T09:18:14.602Z",
+            "checkedAt": "2026-07-10T09:29:55.876Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d2e85dba43afc7d7a270c1c4d0ac22d6275e1bd0",
-              "shortSha": "d2e85db",
-              "message": "Merge pull request #8694 from espoon-voltti/person-audit",
-              "date": "2026-07-08T06:50:26Z",
-              "author": "Joosakur"
+              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
+              "shortSha": "8ad2962",
+              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
+              "date": "2026-07-09T07:41:56Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -863,7 +863,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T09:18:15.626Z",
+            "checkedAt": "2026-07-10T09:29:57.546Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -882,8 +882,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9371,
               "title": "Virheviestien parannus",
@@ -904,6 +903,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9406,
@@ -935,15 +935,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-10T09:18:18.585Z",
+            "checkedAt": "2026-07-10T09:29:59.906Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d2e85dba43afc7d7a270c1c4d0ac22d6275e1bd0",
-              "shortSha": "d2e85db",
-              "message": "Merge pull request #8694 from espoon-voltti/person-audit",
-              "date": "2026-07-08T06:50:26Z",
-              "author": "Joosakur"
+              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
+              "shortSha": "8ad2962",
+              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
+              "date": "2026-07-09T07:41:56Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -954,7 +954,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-10T09:18:19.692Z",
+            "checkedAt": "2026-07-10T09:30:01.492Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -973,8 +973,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9371,
               "title": "Virheviestien parannus",
@@ -995,6 +994,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9406,
