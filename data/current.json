@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T04:08:01.675Z",
+  "generatedAt": "2026-07-10T04:13:15.162Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T04:06:29.648Z",
+            "checkedAt": "2026-07-10T04:11:55.533Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T04:06:30.581Z",
+            "checkedAt": "2026-07-10T04:11:56.493Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -83,7 +83,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T04:06:32.743Z",
+            "checkedAt": "2026-07-10T04:11:58.313Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -108,7 +108,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T04:06:45.960Z",
+            "checkedAt": "2026-07-10T04:12:08.139Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b8dcf4c720caa9cc0f8c84d1722fe6a70252bdde",
@@ -810,7 +810,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T04:07:56.045Z",
+            "checkedAt": "2026-07-10T04:13:06.854Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -829,15 +829,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T04:07:57.075Z",
+            "checkedAt": "2026-07-10T04:13:07.610Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d2e85dba43afc7d7a270c1c4d0ac22d6275e1bd0",
-              "shortSha": "d2e85db",
-              "message": "Merge pull request #8694 from espoon-voltti/person-audit",
-              "date": "2026-07-08T06:50:26Z",
-              "author": "Joosakur"
+              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
+              "shortSha": "8ad2962",
+              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
+              "date": "2026-07-09T07:41:56Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -849,8 +849,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9371,
               "title": "Virheviestien parannus",
@@ -870,7 +869,8 @@
                 "employee-mobile"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -883,7 +883,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-10T04:07:59.047Z",
+            "checkedAt": "2026-07-10T04:13:11.233Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -902,15 +902,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-10T04:07:59.924Z",
+            "checkedAt": "2026-07-10T04:13:11.990Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d2e85dba43afc7d7a270c1c4d0ac22d6275e1bd0",
-              "shortSha": "d2e85db",
-              "message": "Merge pull request #8694 from espoon-voltti/person-audit",
-              "date": "2026-07-08T06:50:26Z",
-              "author": "Joosakur"
+              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
+              "shortSha": "8ad2962",
+              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
+              "date": "2026-07-09T07:41:56Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -922,8 +922,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9371,
               "title": "Virheviestien parannus",
@@ -943,7 +942,8 @@
                 "employee-mobile"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
