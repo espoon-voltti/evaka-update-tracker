@@ -1,6 +1,91 @@
 {
   "events": [
     {
+      "id": "2026-07-10T04:58:40.406Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-10T04:58:40.406Z",
+      "previousCommit": {
+        "sha": "b8dcf4c720caa9cc0f8c84d1722fe6a70252bdde",
+        "shortSha": "b8dcf4c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "2de462ad61970988d505594b6d4525fdd29971f8",
+        "shortSha": "2de462a",
+        "message": "Merge pull request #2177 from Tampere/dependabot/submodules/evaka-8ad2962",
+        "date": "2026-07-09T21:12:15Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2177,
+          "title": "Bump evaka from `d2e85db` to `8ad2962`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-09T21:12:16Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2177",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-10T04:58:40.406Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-10T04:58:40.406Z",
+      "previousCommit": {
+        "sha": "d2e85dba43afc7d7a270c1c4d0ac22d6275e1bd0",
+        "shortSha": "d2e85db",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
+        "shortSha": "8ad2962",
+        "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
+        "date": "2026-07-09T07:41:56Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9371,
+          "title": "Virheviestien parannus",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-09T07:41:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9371",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen",
+            "employee",
+            "employee-mobile"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-10T04:13:10.410Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
@@ -28176,121 +28261,6 @@
           "labels": [
             "tech",
             "core"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-06-10T04:52:46.693Z_tampere-test_wrapper",
-      "environmentId": "tampere-test",
-      "cityGroupId": "tampere-region",
-      "detectedAt": "2026-06-10T04:52:46.693Z",
-      "previousCommit": {
-        "sha": "538d03bcc80fce86357c02ef5fa66a6c52de8b6e",
-        "shortSha": "538d03b",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "2a7973658368182e5d1d9b8354b00679a6afdfb3",
-        "shortSha": "2a79736",
-        "message": "Merge pull request #2147 from Tampere/dependabot/submodules/evaka-01b7c14",
-        "date": "2026-06-09T21:12:44Z",
-        "author": "github-actions[bot]"
-      },
-      "includedPRs": [
-        {
-          "number": 2147,
-          "title": "Bump evaka from `106d123` to `01b7c14`",
-          "author": "dependabot[bot]",
-          "authorName": null,
-          "mergedAt": "2026-06-09T21:12:44Z",
-          "repository": "Tampere/trevaka",
-          "repoType": "wrapper",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/Tampere/trevaka/pull/2147",
-          "labels": [
-            "dependencies",
-            "submodules"
-          ]
-        }
-      ],
-      "repoType": "wrapper",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-06-10T04:52:46.693Z_tampere-test_core",
-      "environmentId": "tampere-test",
-      "cityGroupId": "tampere-region",
-      "detectedAt": "2026-06-10T04:52:46.693Z",
-      "previousCommit": {
-        "sha": "106d1232a126e8c778dfd7216bc6584fcb0b1d6f",
-        "shortSha": "106d123",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "01b7c1487a5e0e3f1ad8ce9d3c942764d7b9bccb",
-        "shortSha": "01b7c14",
-        "message": "Merge pull request #9218 from espoon-voltti/pin-apigw-vitest",
-        "date": "2026-06-09T12:43:15Z",
-        "author": "terolaakso-reaktor"
-      },
-      "includedPRs": [
-        {
-          "number": 9218,
-          "title": "vitest-version pinnaus apigw:ssä",
-          "author": "terolaakso-reaktor",
-          "authorName": "Tero Laakso",
-          "mergedAt": "2026-06-09T12:43:15Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9218",
-          "labels": [
-            "dependencies",
-            "apigw",
-            "not-visible"
-          ]
-        },
-        {
-          "number": 9177,
-          "title": "Lähetetään uuden asiakkaan tulotietomuistutukset päivittäin ja huomioidaan takautuvat sijoitukset",
-          "author": "akheron",
-          "authorName": "Petri Lehtinen",
-          "mergedAt": "2026-06-09T09:56:45Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9177",
-          "labels": [
-            "enhancement",
-            "core",
-            "not-visible"
-          ]
-        },
-        {
-          "number": 9215,
-          "title": "Don't pin GitHub Actions versions",
-          "author": "akheron",
-          "authorName": null,
-          "mergedAt": "2026-06-09T05:05:42Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9215",
-          "labels": [
-            "no-changelog"
           ]
         }
       ],
