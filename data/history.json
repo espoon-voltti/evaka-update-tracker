@@ -1,6 +1,30 @@
 {
   "events": [
     {
+      "id": "2026-07-10T05:27:58.262Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-07-10T05:27:58.262Z",
+      "previousCommit": {
+        "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
+        "shortSha": "8ad2962",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e977e006745840ee26c5271bf5ad1587cb98266e",
+        "shortSha": "e977e00",
+        "message": "Fix Suomi.fi single logout after a rejected sfi login",
+        "date": "2026-07-09T11:00:55Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [],
+      "repoType": "core",
+      "isDefaultBranch": false,
+      "branch": "suomifi-slo-rejected-login-session"
+    },
+    {
       "id": "2026-07-10T04:58:40.406Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T04:59:34.787Z",
+  "generatedAt": "2026-07-10T05:29:33.903Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T04:58:06.755Z",
+            "checkedAt": "2026-07-10T05:27:55.259Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-10T04:58:07.634Z",
+            "checkedAt": "2026-07-10T05:27:56.012Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
-              "shortSha": "8ad2962",
-              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
-              "date": "2026-07-09T07:41:56Z",
-              "author": "juakiv"
+              "sha": "e977e006745840ee26c5271bf5ad1587cb98266e",
+              "shortSha": "e977e00",
+              "message": "Fix Suomi.fi single logout after a rejected sfi login",
+              "date": "2026-07-09T11:00:55Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -49,7 +49,8 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [
+          "inStaging": [],
+          "pendingDeployment": [
             {
               "number": 9371,
               "title": "Virheviestien parannus",
@@ -68,9 +69,41 @@
                 "employee",
                 "employee-mobile"
               ]
+            },
+            {
+              "number": 8694,
+              "title": "Logitusparannuksia part 1",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-08T06:50:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8694",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9405,
+              "title": "Korjataan CSS oxfmt v0.57.0:n mukaiseksi",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-06T06:22:37Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9405",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
             }
-          ],
-          "pendingDeployment": []
+          ]
         }
       }
     },
@@ -83,7 +116,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T04:58:09.260Z",
+            "checkedAt": "2026-07-10T05:28:04.109Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -108,7 +141,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-10T04:58:24.005Z",
+            "checkedAt": "2026-07-10T05:28:18.816Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "2de462ad61970988d505594b6d4525fdd29971f8",
@@ -809,7 +842,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T04:59:29.145Z",
+            "checkedAt": "2026-07-10T05:29:29.230Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -828,7 +861,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-10T04:59:30.348Z",
+            "checkedAt": "2026-07-10T05:29:30.103Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -882,7 +915,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-10T04:59:32.437Z",
+            "checkedAt": "2026-07-10T05:29:31.703Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -901,7 +934,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-10T04:59:33.284Z",
+            "checkedAt": "2026-07-10T05:29:32.416Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
