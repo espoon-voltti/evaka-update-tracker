@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T09:11:51.813Z",
+  "generatedAt": "2026-07-13T09:29:27.614Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-13T09:09:37.647Z",
+            "checkedAt": "2026-07-13T09:26:24.086Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "9fd2b495bab5f1f5697c1e3380183e34ccb7e4e7",
-              "shortSha": "9fd2b49",
-              "message": "Merge pull request #9406 from espoon-voltti/income-statement-modified-date",
-              "date": "2026-07-10T05:42:18Z",
+              "sha": "5a2abf016a86b33bd8f5e8fa899bd38ecb00230f",
+              "shortSha": "5a2abf0",
+              "message": "Merge pull request #9410 from espoon-voltti/employee-absence-calendar-improvement",
+              "date": "2026-07-13T07:59:34Z",
               "author": "juakiv"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-13T09:09:38.299Z",
+            "checkedAt": "2026-07-13T09:26:35.674Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9410,
               "title": "Lisätään yksikön kalenterin viikkonäkymään poissaolo-tooltip",
@@ -135,6 +134,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-13T09:09:47.676Z",
+            "checkedAt": "2026-07-13T09:26:46.923Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -173,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-13T09:10:08.499Z",
+            "checkedAt": "2026-07-13T09:27:08.219Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a39e729152eba4288b287f2c5a933e95317b8b25",
@@ -892,15 +892,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-13T09:11:30.610Z",
+            "checkedAt": "2026-07-13T09:28:44.531Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
-              "shortSha": "8ad2962",
-              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
-              "date": "2026-07-09T07:41:56Z",
-              "author": "juakiv"
+              "sha": "f4f53193264041a1660884f3776276b8b3916536",
+              "shortSha": "f4f5319",
+              "message": "Update dependency oxfmt to v0.58.0 (#9429)",
+              "date": "2026-07-12T05:06:47Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -911,7 +911,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-13T09:11:31.322Z",
+            "checkedAt": "2026-07-13T09:28:53.824Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -930,8 +930,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9408,
               "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
@@ -1001,6 +1000,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9410,
@@ -1048,15 +1048,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-13T09:11:41.123Z",
+            "checkedAt": "2026-07-13T09:29:06.348Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
-              "shortSha": "8ad2962",
-              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
-              "date": "2026-07-09T07:41:56Z",
-              "author": "juakiv"
+              "sha": "f4f53193264041a1660884f3776276b8b3916536",
+              "shortSha": "f4f5319",
+              "message": "Update dependency oxfmt to v0.58.0 (#9429)",
+              "date": "2026-07-12T05:06:47Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -1067,7 +1067,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-13T09:11:41.877Z",
+            "checkedAt": "2026-07-13T09:29:15.534Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1086,8 +1086,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9408,
               "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
@@ -1157,6 +1156,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9410,
