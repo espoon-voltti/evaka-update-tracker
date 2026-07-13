@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T04:31:55.527Z",
+  "generatedAt": "2026-07-13T05:02:49.267Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-13T04:29:22.686Z",
+            "checkedAt": "2026-07-13T05:00:38.738Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-13T04:29:23.554Z",
+            "checkedAt": "2026-07-13T05:00:39.615Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-13T04:29:32.770Z",
+            "checkedAt": "2026-07-13T05:00:47.659Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -140,21 +140,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-13T04:30:02.015Z",
+            "checkedAt": "2026-07-13T05:01:03.384Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "2de462ad61970988d505594b6d4525fdd29971f8",
-              "shortSha": "2de462a",
-              "message": "Merge pull request #2177 from Tampere/dependabot/submodules/evaka-8ad2962",
-              "date": "2026-07-09T21:12:15Z",
+              "sha": "a39e729152eba4288b287f2c5a933e95317b8b25",
+              "shortSha": "a39e729",
+              "message": "Merge pull request #2178 from Tampere/dependabot/submodules/evaka-f4f5319",
+              "date": "2026-07-12T21:11:47Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "8ad29627576ed58b204645ec085873c3e0af65a4",
-              "shortSha": "8ad2962",
-              "message": "Merge pull request #9371 from espoon-voltti/error-message-improvements",
-              "date": "2026-07-09T07:41:56Z",
-              "author": "juakiv"
+              "sha": "f4f53193264041a1660884f3776276b8b3916536",
+              "shortSha": "f4f5319",
+              "message": "Update dependency oxfmt to v0.58.0 (#9429)",
+              "date": "2026-07-12T05:06:47Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -172,6 +172,74 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9408,
+              "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:49:09Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9408",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9363,
+              "title": "Hakemushaun muutokset liittyen muokattaviin päätösperusteluihin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-10T10:48:51Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9363",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9407,
+              "title": "Kasvattajan mobiilin ylävalikon uudistus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-10T10:38:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9407",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9406,
+              "title": "Lisätään muokkausaika asiakastietosivun tulotiedot-taulukkoon",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-10T05:42:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9406",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9371,
               "title": "Virheviestien parannus",
@@ -742,162 +810,9 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 9312,
-              "title": "Korjataan tuloilmoitustesti",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-25T10:33:11Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9312",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9307,
-              "title": "Muutetaan maksupäätösten teksteistä Vanhempien tulot -> Aikuisten tulot",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-06-24T12:05:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9307",
-              "labels": [
-                "bugfix",
-                "seutu",
-                "citizen",
-                "employee"
-              ]
-            },
-            {
-              "number": 9304,
-              "title": "frontend: Korvataan eslint + prettier -> oxlint + oxfmt",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-24T11:50:31Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9304",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9302,
-              "title": "Läsnäolosuunnitelman kuvaus päivädialogiin",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-06-24T11:11:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9302",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9300,
-              "title": "Laajennetaan dummy-idp toimimaan myös mock VTJ:nä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-24T09:31:06Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9300",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9408,
-              "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-10T10:49:09Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9408",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9363,
-              "title": "Hakemushaun muutokset liittyen muokattaviin päätösperusteluihin",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-10T10:48:51Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9363",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9407,
-              "title": "Kasvattajan mobiilin ylävalikon uudistus",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-10T10:38:27Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9407",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9406,
-              "title": "Lisätään muokkausaika asiakastietosivun tulotiedot-taulukkoon",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-10T05:42:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9406",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -910,7 +825,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-13T04:31:34.248Z",
+            "checkedAt": "2026-07-13T05:02:29.683Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -929,7 +844,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-13T04:31:35.280Z",
+            "checkedAt": "2026-07-13T05:02:30.689Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1032,7 +947,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-13T04:31:44.990Z",
+            "checkedAt": "2026-07-13T05:02:39.495Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1051,7 +966,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-13T04:31:45.884Z",
+            "checkedAt": "2026-07-13T05:02:40.722Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
