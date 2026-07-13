@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T06:51:16.511Z",
+  "generatedAt": "2026-07-13T07:58:00.702Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-13T06:49:00.100Z",
+            "checkedAt": "2026-07-13T07:55:58.953Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-13T06:49:01.202Z",
+            "checkedAt": "2026-07-13T07:55:59.679Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f4f53193264041a1660884f3776276b8b3916536",
-              "shortSha": "f4f5319",
-              "message": "Update dependency oxfmt to v0.58.0 (#9429)",
-              "date": "2026-07-12T05:06:47Z",
-              "author": "renovate[bot]"
+              "sha": "477a7985a54561768a71e4554b8547e9876873de",
+              "shortSha": "477a798",
+              "message": "Report Suomi.fi logout success for the session that was logged out",
+              "date": "2026-07-13T07:04:25Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -49,7 +49,24 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 9368,
+              "title": "Poistetaan käyttämätön tietokantaindeksi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-13T07:19:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9368",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9408,
               "title": "Lähetetään päätökset myös samassa osoitteessa asuvalle toiselle huoltajalle",
@@ -100,9 +117,77 @@
                 "core",
                 "employee-mobile"
               ]
+            },
+            {
+              "number": 9406,
+              "title": "Lisätään muokkausaika asiakastietosivun tulotiedot-taulukkoon",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-10T05:42:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9406",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9371,
+              "title": "Virheviestien parannus",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-09T07:41:56Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9371",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen",
+                "employee",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 8694,
+              "title": "Logitusparannuksia part 1",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-08T06:50:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/8694",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9405,
+              "title": "Korjataan CSS oxfmt v0.57.0:n mukaiseksi",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-06T06:22:37Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9405",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
             }
-          ],
-          "pendingDeployment": []
+          ]
         }
       }
     },
@@ -115,7 +200,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-13T06:49:10.080Z",
+            "checkedAt": "2026-07-13T07:56:15.852Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -140,7 +225,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-13T06:49:43.541Z",
+            "checkedAt": "2026-07-13T07:56:39.942Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a39e729152eba4288b287f2c5a933e95317b8b25",
@@ -812,7 +897,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9368,
+              "title": "Poistetaan käyttämätön tietokantaindeksi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-13T07:19:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9368",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -825,7 +927,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-13T06:50:55.532Z",
+            "checkedAt": "2026-07-13T07:57:40.710Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -844,7 +946,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-13T06:50:56.513Z",
+            "checkedAt": "2026-07-13T07:57:41.431Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -934,7 +1036,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9368,
+              "title": "Poistetaan käyttämätön tietokantaindeksi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-13T07:19:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9368",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     },
@@ -947,7 +1066,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-13T06:51:06.217Z",
+            "checkedAt": "2026-07-13T07:57:51.128Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -966,7 +1085,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-13T06:51:07.016Z",
+            "checkedAt": "2026-07-13T07:57:51.840Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1056,7 +1175,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9368,
+              "title": "Poistetaan käyttämätön tietokantaindeksi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-07-13T07:19:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9368",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            }
+          ]
         }
       }
     }
