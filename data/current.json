@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T09:13:45.855Z",
+  "generatedAt": "2026-07-14T09:28:20.896Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-14T09:12:16.045Z",
+            "checkedAt": "2026-07-14T09:26:25.718Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-14T09:12:16.837Z",
+            "checkedAt": "2026-07-14T09:26:26.739Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-14T09:12:18.895Z",
+            "checkedAt": "2026-07-14T09:26:29.573Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-14T09:12:29.615Z",
+            "checkedAt": "2026-07-14T09:26:42.420Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1d0767a7b45f26eaa11be8f9e1d3f28bbb17d07b",
@@ -724,15 +724,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-14T09:13:34.344Z",
+            "checkedAt": "2026-07-14T09:28:01.422Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f4f53193264041a1660884f3776276b8b3916536",
-              "shortSha": "f4f5319",
-              "message": "Update dependency oxfmt to v0.58.0 (#9429)",
-              "date": "2026-07-12T05:06:47Z",
-              "author": "renovate[bot]"
+              "sha": "5a2abf016a86b33bd8f5e8fa899bd38ecb00230f",
+              "shortSha": "5a2abf0",
+              "message": "Merge pull request #9410 from espoon-voltti/employee-absence-calendar-improvement",
+              "date": "2026-07-13T07:59:34Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -743,7 +743,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-14T09:13:35.256Z",
+            "checkedAt": "2026-07-14T09:28:05.577Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -762,8 +762,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9410,
               "title": "Lisätään yksikön kalenterin viikkonäkymään poissaolo-tooltip",
@@ -798,6 +797,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9431,
@@ -829,15 +829,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-14T09:13:40.228Z",
+            "checkedAt": "2026-07-14T09:28:11.293Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f4f53193264041a1660884f3776276b8b3916536",
-              "shortSha": "f4f5319",
-              "message": "Update dependency oxfmt to v0.58.0 (#9429)",
-              "date": "2026-07-12T05:06:47Z",
-              "author": "renovate[bot]"
+              "sha": "5a2abf016a86b33bd8f5e8fa899bd38ecb00230f",
+              "shortSha": "5a2abf0",
+              "message": "Merge pull request #9410 from espoon-voltti/employee-absence-calendar-improvement",
+              "date": "2026-07-13T07:59:34Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -848,7 +848,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-14T09:13:40.961Z",
+            "checkedAt": "2026-07-14T09:28:15.427Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -867,8 +867,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9410,
               "title": "Lisätään yksikön kalenterin viikkonäkymään poissaolo-tooltip",
@@ -903,6 +902,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9431,
