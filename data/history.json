@@ -1,6 +1,169 @@
 {
   "events": [
     {
+      "id": "2026-07-14T06:21:05.803Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-14T06:21:05.803Z",
+      "previousCommit": {
+        "sha": "a39e729152eba4288b287f2c5a933e95317b8b25",
+        "shortSha": "a39e729",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1d0767a7b45f26eaa11be8f9e1d3f28bbb17d07b",
+        "shortSha": "1d0767a",
+        "message": "Merge pull request #2180 from Tampere/dependabot/submodules/evaka-5a2abf0",
+        "date": "2026-07-13T21:12:08Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2180,
+          "title": "Bump evaka from `f4f5319` to `5a2abf0`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-13T21:12:09Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2180",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-14T06:21:05.803Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-14T06:21:05.803Z",
+      "previousCommit": {
+        "sha": "f4f53193264041a1660884f3776276b8b3916536",
+        "shortSha": "f4f5319",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5a2abf016a86b33bd8f5e8fa899bd38ecb00230f",
+        "shortSha": "5a2abf0",
+        "message": "Merge pull request #9410 from espoon-voltti/employee-absence-calendar-improvement",
+        "date": "2026-07-13T07:59:34Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9410,
+          "title": "Lisätään yksikön kalenterin viikkonäkymään poissaolo-tooltip",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-13T07:59:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9410",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9368,
+          "title": "Poistetaan käyttämätön tietokantaindeksi",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-07-13T07:19:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9368",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9427,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.47.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-13T05:45:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9427",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9422,
+          "title": "Update sentry-javascript monorepo to v10.64.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-13T05:45:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9422",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9419,
+          "title": "Update dependency org.jdbi:jdbi3-bom to v3.54.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-13T05:44:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9419",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9418,
+          "title": "Update dependency dd-trace to v5.111.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-13T05:43:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9418",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-14T04:13:40.942Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
