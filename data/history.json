@@ -1,6 +1,201 @@
 {
   "events": [
     {
+      "id": "2026-07-15T05:53:15.760Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-15T05:53:15.760Z",
+      "previousCommit": {
+        "sha": "1d0767a7b45f26eaa11be8f9e1d3f28bbb17d07b",
+        "shortSha": "1d0767a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "820fa357fd4ae2e36c816005665ad125e1d03dd0",
+        "shortSha": "820fa35",
+        "message": "Merge pull request #2181 from Tampere/dependabot/submodules/evaka-dcb51ed",
+        "date": "2026-07-14T21:10:07Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2181,
+          "title": "Bump evaka from `5a2abf0` to `dcb51ed`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T21:10:07Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2181",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2179,
+          "title": "Bump tsx from 4.22.4 to 4.23.1 in /e2e",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T09:19:53Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2179",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 2175,
+          "title": "Bump @types/node from 24.12.0 to 24.13.3 in /e2e",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T08:58:56Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2175",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 2168,
+          "title": "Bump hashicorp/aws from 6.51.0 to 6.52.0 in /infra/deploy",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T06:54:29Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2168",
+          "labels": [
+            "dependencies",
+            "terraform"
+          ]
+        },
+        {
+          "number": 2161,
+          "title": "Bump axios from 1.18.0 to 1.18.1 in /e2e",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T06:48:15Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2161",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 2159,
+          "title": "Bump adobe/s3mock from 5.0.0 to 5.1.0",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T06:40:33Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2159",
+          "labels": [
+            "dependencies",
+            "docker_compose"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-15T05:53:15.760Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-15T05:53:15.760Z",
+      "previousCommit": {
+        "sha": "5a2abf016a86b33bd8f5e8fa899bd38ecb00230f",
+        "shortSha": "5a2abf0",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "dcb51edb8cafb21b445428fe2ab404d988dbaed4",
+        "shortSha": "dcb51ed",
+        "message": "Merge pull request #9431 from espoon-voltti/unit-map-accessibility-fixes",
+        "date": "2026-07-14T07:32:29Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9431,
+          "title": "Yksiköt kartalla -sivun saavutettavuusparannuksia",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-14T07:32:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9431",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9423,
+          "title": "Update dependency dd-trace to v6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T06:38:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9423",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9420,
+          "title": "Update dependency redis to v6.1.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-14T06:25:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9420",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-15T04:13:17.546Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",

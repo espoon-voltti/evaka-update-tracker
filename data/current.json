@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T05:17:25.945Z",
+  "generatedAt": "2026-07-15T05:54:12.219Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-15T05:16:12.013Z",
+            "checkedAt": "2026-07-15T05:52:51.545Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-15T05:16:12.796Z",
+            "checkedAt": "2026-07-15T05:52:52.258Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-15T05:16:15.057Z",
+            "checkedAt": "2026-07-15T05:52:54.425Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -106,20 +106,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-15T05:16:22.849Z",
+            "checkedAt": "2026-07-15T05:53:02.408Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "1d0767a7b45f26eaa11be8f9e1d3f28bbb17d07b",
-              "shortSha": "1d0767a",
-              "message": "Merge pull request #2180 from Tampere/dependabot/submodules/evaka-5a2abf0",
-              "date": "2026-07-13T21:12:08Z",
+              "sha": "820fa357fd4ae2e36c816005665ad125e1d03dd0",
+              "shortSha": "820fa35",
+              "message": "Merge pull request #2181 from Tampere/dependabot/submodules/evaka-dcb51ed",
+              "date": "2026-07-14T21:10:07Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "5a2abf016a86b33bd8f5e8fa899bd38ecb00230f",
-              "shortSha": "5a2abf0",
-              "message": "Merge pull request #9410 from espoon-voltti/employee-absence-calendar-improvement",
-              "date": "2026-07-13T07:59:34Z",
+              "sha": "dcb51edb8cafb21b445428fe2ab404d988dbaed4",
+              "shortSha": "dcb51ed",
+              "message": "Merge pull request #9431 from espoon-voltti/unit-map-accessibility-fixes",
+              "date": "2026-07-14T07:32:29Z",
               "author": "juakiv"
             }
           },
@@ -138,6 +138,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9431,
+              "title": "Yksiköt kartalla -sivun saavutettavuusparannuksia",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-14T07:32:29Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9431",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9410,
               "title": "Lisätään yksikön kalenterin viikkonäkymään poissaolo-tooltip",
@@ -693,25 +710,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9431,
-              "title": "Yksiköt kartalla -sivun saavutettavuusparannuksia",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-14T07:32:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9431",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -724,7 +723,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-15T05:17:20.738Z",
+            "checkedAt": "2026-07-15T05:54:06.749Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -743,7 +742,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-15T05:17:21.325Z",
+            "checkedAt": "2026-07-15T05:54:07.491Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -795,7 +794,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-15T05:17:23.322Z",
+            "checkedAt": "2026-07-15T05:54:09.530Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -814,7 +813,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-15T05:17:23.859Z",
+            "checkedAt": "2026-07-15T05:54:10.339Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
