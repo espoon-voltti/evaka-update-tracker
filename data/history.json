@@ -1,6 +1,103 @@
 {
   "events": [
     {
+      "id": "2026-07-16T05:28:39.673Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-16T05:28:39.673Z",
+      "previousCommit": {
+        "sha": "820fa357fd4ae2e36c816005665ad125e1d03dd0",
+        "shortSha": "820fa35",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+        "shortSha": "ffdb4ed",
+        "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+        "date": "2026-07-15T21:10:23Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2182,
+          "title": "Bump evaka from `dcb51ed` to `9f0deea`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-15T21:10:23Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2182",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-16T05:28:39.673Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-16T05:28:39.673Z",
+      "previousCommit": {
+        "sha": "dcb51edb8cafb21b445428fe2ab404d988dbaed4",
+        "shortSha": "dcb51ed",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+        "shortSha": "9f0deea",
+        "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+        "date": "2026-07-15T11:34:48Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9411,
+          "title": "Audit log rework part 2",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-07-15T11:34:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9411",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9432,
+          "title": "Kehitysdatan generointi hakemuksille 2",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-07-15T06:33:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9432",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-16T04:13:28.790Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",

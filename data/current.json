@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T04:31:41.878Z",
+  "generatedAt": "2026-07-16T05:29:43.168Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-16T04:30:13.717Z",
+            "checkedAt": "2026-07-16T05:28:07.207Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-16T04:30:14.634Z",
+            "checkedAt": "2026-07-16T05:28:08.117Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -80,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-16T04:30:16.868Z",
+            "checkedAt": "2026-07-16T05:28:10.766Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -105,25 +105,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-16T04:30:28.692Z",
+            "checkedAt": "2026-07-16T05:28:23.300Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "820fa357fd4ae2e36c816005665ad125e1d03dd0",
-              "shortSha": "820fa35",
-              "message": "Merge pull request #2181 from Tampere/dependabot/submodules/evaka-dcb51ed",
-              "date": "2026-07-14T21:10:07Z",
+              "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+              "shortSha": "ffdb4ed",
+              "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+              "date": "2026-07-15T21:10:23Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "dcb51edb8cafb21b445428fe2ab404d988dbaed4",
-              "shortSha": "dcb51ed",
-              "message": "Merge pull request #9431 from espoon-voltti/unit-map-accessibility-fixes",
-              "date": "2026-07-14T07:32:29Z",
-              "author": "juakiv"
+              "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+              "shortSha": "9f0deea",
+              "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+              "date": "2026-07-15T11:34:48Z",
+              "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-07-16T05:28:23.300Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-07-16T05:28:24.681Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-07-16T05:28:25.920Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "820fa357fd4ae2e36c816005665ad125e1d03dd0",
+                "shortSha": "820fa35",
+                "message": "Merge pull request #2181 from Tampere/dependabot/submodules/evaka-dcb51ed",
+                "date": "2026-07-14T21:10:07Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "dcb51edb8cafb21b445428fe2ab404d988dbaed4",
+                "shortSha": "dcb51ed",
+                "message": "Merge pull request #9431 from espoon-voltti/unit-map-accessibility-fixes",
+                "date": "2026-07-14T07:32:29Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-07-16T05:28:27.316Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-07-16T05:28:28.739Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-07-16T05:28:30.031Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-07-16T05:28:31.533Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-07-16T05:28:32.799Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-07-16T05:28:34.108Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ffdb4ed34c1467afc850bc688ea1830b7d3d3868",
+                "shortSha": "ffdb4ed",
+                "message": "Merge pull request #2182 from Tampere/dependabot/submodules/evaka-9f0deea",
+                "date": "2026-07-15T21:10:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
+                "shortSha": "9f0deea",
+                "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
+                "date": "2026-07-15T11:34:48Z",
+                "author": "terolaakso-reaktor"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -137,6 +309,22 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9411,
+              "title": "Audit log rework part 2",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-07-15T11:34:48Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9411",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9431,
               "title": "Yksiköt kartalla -sivun saavutettavuusparannuksia",
@@ -691,42 +879,9 @@
                 "core",
                 "employee"
               ]
-            },
-            {
-              "number": 9317,
-              "title": "TypeScript 6 -konffipäivityksiä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T04:22:48Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9317",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9411,
-              "title": "Audit log rework part 2",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-07-15T11:34:48Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9411",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -739,7 +894,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-16T04:31:35.248Z",
+            "checkedAt": "2026-07-16T05:29:36.587Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -758,7 +913,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-16T04:31:36.212Z",
+            "checkedAt": "2026-07-16T05:29:37.603Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -809,7 +964,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-16T04:31:38.826Z",
+            "checkedAt": "2026-07-16T05:29:40.183Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -828,7 +983,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-16T04:31:39.717Z",
+            "checkedAt": "2026-07-16T05:29:40.962Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
