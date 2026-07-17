@@ -118,43 +118,62 @@ function setupGitHubMocks() {
 
   // --- Compare responses (for PR extraction) ---
 
+  // compareShas paginates (250 commits per page); every fixture range fits on
+  // the first page, so later pages are answered by the empty catch-all below.
+  const COMPARE_PAGE_1 = { page: 1 };
+
   // Core: deployed PRs (prev prod → current prod)
   gh.get(`/repos/espoon-voltti/evaka/compare/${PREV_CORE_PROD_SHA}...${ESPOO_PROD_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, coreDeployedCompareResponse);
 
   // Core: staging PRs (prod → staging)
   gh.get(`/repos/espoon-voltti/evaka/compare/${ESPOO_PROD_SHA}...${ESPOO_STAGING_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, coreStagingCompareResponse);
 
   // Core: staging change detection (prev staging → current staging)
   gh.get(`/repos/espoon-voltti/evaka/compare/${PREV_CORE_STAGING_SHA}...${ESPOO_STAGING_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, coreStagingCompareResponse);
 
   // Core: pending PRs (staging → master)
   gh.get(`/repos/espoon-voltti/evaka/compare/${ESPOO_STAGING_SHA}...master`)
+    .query(COMPARE_PAGE_1)
     .reply(200, corePendingCompareResponse);
 
   // Tampere wrapper: deployed
   gh.get(`/repos/Tampere/trevaka/compare/${TAMPERE_WRAPPER_PREV_PROD_SHA}...${TAMPERE_WRAPPER_PROD_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, wrapperDeployedCompareResponse);
 
   // Tampere wrapper: staging
   gh.get(`/repos/Tampere/trevaka/compare/${TAMPERE_WRAPPER_PROD_SHA}...${TAMPERE_WRAPPER_STAGING_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, wrapperStagingCompareResponse);
 
   // Tampere wrapper: pending (staging → main)
   gh.get(`/repos/Tampere/trevaka/compare/${TAMPERE_WRAPPER_STAGING_SHA}...main`)
+    .query(COMPARE_PAGE_1)
+    .reply(200, emptyCompareResponse);
+
+  // Any compare page beyond the first: empty (ends the pagination loop)
+  gh.get(/\/repos\/[^/]+\/[^/]+\/compare\//)
+    .query((q) => q.page !== undefined && q.page !== '1')
     .reply(200, emptyCompareResponse);
 
   // --- Branch detection responses (for staging environments) ---
   // Espoo staging: commit is on default branch (0 ahead commits)
   gh.get(`/repos/espoon-voltti/evaka/compare/master...${ESPOO_STAGING_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, emptyCompareResponse);
 
   // Tampere staging: wrapper and core on default branch
   gh.get(`/repos/Tampere/trevaka/compare/main...${TAMPERE_WRAPPER_STAGING_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, emptyCompareResponse);
   gh.get(`/repos/espoon-voltti/evaka/compare/master...${TAMPERE_CORE_STAGING_SHA}`)
+    .query(COMPARE_PAGE_1)
     .reply(200, emptyCompareResponse);
 
   // --- User profile responses (for name resolution) ---

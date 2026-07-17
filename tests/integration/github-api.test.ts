@@ -137,13 +137,70 @@ describe('compareShas', () => {
 
     const scope = nock(GITHUB_API)
       .get(`/repos/${OWNER}/${REPO}/compare/${base}...${head}`)
-      .reply(200, { commits: mockCommits });
+      .query({ page: 1 })
+      .reply(200, { total_commits: 2, commits: mockCommits });
 
     const result = await compareShas(OWNER, REPO, base, head);
 
     expect(result).toHaveLength(2);
     expect(result[0].sha).toBe('commit1sha000000000000000000000000000000');
     expect(result[1].commit.message).toBe('Second commit');
+    scope.done();
+  });
+
+  it('paginates until total_commits is reached and combines all pages', async () => {
+    const base = 'ccc333';
+    const head = 'ddd444';
+    const makeCommit = (n: number) => ({
+      sha: `commit${n}sha`.padEnd(40, '0'),
+      commit: {
+        message: `Commit ${n}`,
+        author: { date: '2026-03-01T10:00:00Z', name: 'Dev' },
+      },
+      author: { login: 'dev' },
+    });
+
+    const scope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/compare/${base}...${head}`)
+      .query({ page: 1 })
+      .reply(200, { total_commits: 3, commits: [makeCommit(1), makeCommit(2)] })
+      .get(`/repos/${OWNER}/${REPO}/compare/${base}...${head}`)
+      .query({ page: 2 })
+      .reply(200, { total_commits: 3, commits: [makeCommit(3)] });
+
+    const result = await compareShas(OWNER, REPO, base, head);
+
+    expect(result.map((c) => c.commit.message)).toEqual([
+      'Commit 1',
+      'Commit 2',
+      'Commit 3',
+    ]);
+    scope.done();
+  });
+
+  it('stops on an empty page even if total_commits overstates the range', async () => {
+    const base = 'eee555';
+    const head = 'fff666';
+    const commit = {
+      sha: 'backstopsha'.padEnd(40, '0'),
+      commit: {
+        message: 'Only commit',
+        author: { date: '2026-03-01T10:00:00Z', name: 'Dev' },
+      },
+      author: { login: 'dev' },
+    };
+
+    const scope = nock(GITHUB_API)
+      .get(`/repos/${OWNER}/${REPO}/compare/${base}...${head}`)
+      .query({ page: 1 })
+      .reply(200, { total_commits: 5, commits: [commit] })
+      .get(`/repos/${OWNER}/${REPO}/compare/${base}...${head}`)
+      .query({ page: 2 })
+      .reply(200, { total_commits: 5, commits: [] });
+
+    const result = await compareShas(OWNER, REPO, base, head);
+
+    expect(result).toHaveLength(1);
     scope.done();
   });
 });
@@ -263,6 +320,7 @@ describe('isCommitOnDefaultBranch', () => {
     const sha = 'ondefault1234567890123456789012345678901';
     const scope = nock(GITHUB_API)
       .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .query({ page: 1 })
       .reply(200, { commits: [] });
 
     const result = await isCommitOnDefaultBranch(OWNER, REPO, 'master', sha);
@@ -275,7 +333,9 @@ describe('isCommitOnDefaultBranch', () => {
     const sha = 'offdefault123456789012345678901234567890';
     const compareScope = nock(GITHUB_API)
       .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .query({ page: 1 })
       .reply(200, {
+        total_commits: 1,
         commits: [{ sha, commit: { message: 'feat', author: { date: '', name: '' } } }],
       });
     const branchScope = nock(GITHUB_API)
@@ -295,7 +355,9 @@ describe('isCommitOnDefaultBranch', () => {
     const sha = 'nolookup12345678901234567890123456789012';
     const compareScope = nock(GITHUB_API)
       .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .query({ page: 1 })
       .reply(200, {
+        total_commits: 1,
         commits: [{ sha, commit: { message: 'feat', author: { date: '', name: '' } } }],
       });
     const branchScope = nock(GITHUB_API)
@@ -313,6 +375,7 @@ describe('isCommitOnDefaultBranch', () => {
     const sha = 'apifail123456789012345678901234567890123';
     const scope = nock(GITHUB_API)
       .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .query({ page: 1 })
       .reply(500, 'Internal Server Error');
 
     const result = await isCommitOnDefaultBranch(OWNER, REPO, 'master', sha);
@@ -325,7 +388,9 @@ describe('isCommitOnDefaultBranch', () => {
     const sha = 'multibrch12345678901234567890123456789012';
     const compareScope = nock(GITHUB_API)
       .get(`/repos/${OWNER}/${REPO}/compare/master...${sha}`)
+      .query({ page: 1 })
       .reply(200, {
+        total_commits: 1,
         commits: [{ sha, commit: { message: 'feat', author: { date: '', name: '' } } }],
       });
     const branchScope = nock(GITHUB_API)
