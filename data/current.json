@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T08:54:25.503Z",
+  "generatedAt": "2026-07-17T09:13:04.273Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-17T08:52:52.432Z",
+            "checkedAt": "2026-07-17T09:11:19.933Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
-              "shortSha": "9f0deea",
-              "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
-              "date": "2026-07-15T11:34:48Z",
-              "author": "terolaakso-reaktor"
+              "sha": "1ffc03c158531b86ba045227b60ac63c36b09046",
+              "shortSha": "1ffc03c",
+              "message": "Merge pull request #9433 from espoon-voltti/income-statement-accessibility-changes",
+              "date": "2026-07-16T07:32:58Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-17T08:52:53.624Z",
+            "checkedAt": "2026-07-17T09:11:21.882Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9433,
               "title": "Tulotietojen ilmoituslomakkeen saavutettavuusparannuksia",
@@ -68,6 +67,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9409,
@@ -100,7 +100,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-17T08:52:56.232Z",
+            "checkedAt": "2026-07-17T09:11:24.784Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -125,7 +125,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-17T08:53:09.668Z",
+            "checkedAt": "2026-07-17T09:11:37.693Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f8b37afa3e1245cf4847fef3a96aa10629b9fbf9",
@@ -761,15 +761,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-17T08:54:18.446Z",
+            "checkedAt": "2026-07-17T09:12:55.262Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
-              "shortSha": "9f0deea",
-              "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
-              "date": "2026-07-15T11:34:48Z",
-              "author": "terolaakso-reaktor"
+              "sha": "1ffc03c158531b86ba045227b60ac63c36b09046",
+              "shortSha": "1ffc03c",
+              "message": "Merge pull request #9433 from espoon-voltti/income-statement-accessibility-changes",
+              "date": "2026-07-16T07:32:58Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -780,7 +780,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-17T08:54:19.418Z",
+            "checkedAt": "2026-07-17T09:12:57.120Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -799,8 +799,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9433,
               "title": "Tulotietojen ilmoituslomakkeen saavutettavuusparannuksia",
@@ -819,6 +818,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9409,
@@ -851,15 +851,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-17T08:54:22.039Z",
+            "checkedAt": "2026-07-17T09:12:59.839Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "9f0deeaee3ea7cc3e5da838a91ab780acd096bc6",
-              "shortSha": "9f0deea",
-              "message": "Merge pull request #9411 from espoon-voltti/audit-log-rework-part-2",
-              "date": "2026-07-15T11:34:48Z",
-              "author": "terolaakso-reaktor"
+              "sha": "1ffc03c158531b86ba045227b60ac63c36b09046",
+              "shortSha": "1ffc03c",
+              "message": "Merge pull request #9433 from espoon-voltti/income-statement-accessibility-changes",
+              "date": "2026-07-16T07:32:58Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -870,7 +870,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-17T08:54:22.908Z",
+            "checkedAt": "2026-07-17T09:13:01.599Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -889,8 +889,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9433,
               "title": "Tulotietojen ilmoituslomakkeen saavutettavuusparannuksia",
@@ -909,6 +908,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9409,
