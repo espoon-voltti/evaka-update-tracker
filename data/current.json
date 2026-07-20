@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T05:17:16.068Z",
+  "generatedAt": "2026-07-20T06:00:52.164Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-20T05:15:25.455Z",
+            "checkedAt": "2026-07-20T05:58:31.029Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-20T05:15:26.348Z",
+            "checkedAt": "2026-07-20T05:58:32.003Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -69,7 +69,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9479,
+              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-20T05:43:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -82,7 +100,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-20T05:15:38.837Z",
+            "checkedAt": "2026-07-20T05:58:46.364Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -107,21 +125,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-20T05:15:47.733Z",
+            "checkedAt": "2026-07-20T05:58:58.049Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "f8b37afa3e1245cf4847fef3a96aa10629b9fbf9",
-              "shortSha": "f8b37af",
-              "message": "Merge pull request #2183 from Tampere/dependabot/submodules/evaka-1ffc03c",
-              "date": "2026-07-16T21:12:34Z",
+              "sha": "17ea1195774f2bbddfa94ff18f6e45b26a08e0b0",
+              "shortSha": "17ea119",
+              "message": "Merge pull request #2184 from Tampere/dependabot/submodules/evaka-b2b401a",
+              "date": "2026-07-19T21:12:15Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "1ffc03c158531b86ba045227b60ac63c36b09046",
-              "shortSha": "1ffc03c",
-              "message": "Merge pull request #9433 from espoon-voltti/income-statement-accessibility-changes",
-              "date": "2026-07-16T07:32:58Z",
-              "author": "juakiv"
+              "sha": "b2b401ac20fc72546cc65968e6d8a72015d2731e",
+              "shortSha": "b2b401a",
+              "message": "Update dependency oxfmt to v0.59.0 (#9477)",
+              "date": "2026-07-19T17:04:44Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -139,6 +157,24 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9409,
+              "title": "Korjataan Suomi.fi-uloskirjautuminen hylätyn sfi-kirjautumisen jälkeen",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-07-17T07:32:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9409",
+              "labels": [
+                "bugfix",
+                "apigw",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9433,
               "title": "Tulotietojen ilmoituslomakkeen saavutettavuusparannuksia",
@@ -642,90 +678,22 @@
                 "citizen",
                 "employee"
               ]
-            },
-            {
-              "number": 9349,
-              "title": "Lisätään maininta aktiivisesta liikunnasta muistiinpanon ohjetekstiin",
-              "author": "reynders",
-              "authorName": "Joonas Reynders",
-              "mergedAt": "2026-06-29T10:58:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9349",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9303,
-              "title": "Oletusfikstuureista optional arvot pois",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-06-29T10:27:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9303",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9316,
-              "title": "Otetaan oxfmt ja oxlint laajemmin käyttöön",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T10:16:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9316",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9318,
-              "title": "Ei yritetä lähettää sähköpostia poistetusta pedagogisesta asiakirjasta",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-29T10:02:34Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9318",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
             }
           ],
           "pendingDeployment": [
             {
-              "number": 9409,
-              "title": "Korjataan Suomi.fi-uloskirjautuminen hylätyn sfi-kirjautumisen jälkeen",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-07-17T07:32:32Z",
+              "number": 9479,
+              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-20T05:43:00Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9409",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
               "labels": [
-                "bugfix",
-                "apigw",
+                "tech",
                 "core",
                 "not-visible"
               ]
@@ -743,7 +711,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-20T05:16:51.019Z",
+            "checkedAt": "2026-07-20T06:00:22.457Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -762,7 +730,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-20T05:16:51.821Z",
+            "checkedAt": "2026-07-20T06:00:23.429Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -819,7 +787,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9479,
+              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-20T05:43:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -832,7 +818,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-20T05:17:03.383Z",
+            "checkedAt": "2026-07-20T06:00:37.299Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -851,7 +837,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-20T05:17:04.145Z",
+            "checkedAt": "2026-07-20T06:00:38.100Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -891,7 +877,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9479,
+              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-20T05:43:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     }
