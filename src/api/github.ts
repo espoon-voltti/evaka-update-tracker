@@ -81,6 +81,7 @@ export async function getSubmoduleRef(
 }
 
 interface CompareResponse {
+  total_commits: number;
   commits: Array<{
     sha: string;
     commit: {
@@ -97,12 +98,22 @@ export async function compareShas(
   base: string,
   head: string
 ): Promise<CompareResponse['commits']> {
-  return withRetry(async () => {
-    const data = await ghGet<CompareResponse>(
-      `/repos/${owner}/${repo}/compare/${base}...${head}`
+  // The compare API returns at most 250 commits per page, so page through
+  // until total_commits is reached (or an empty page, as a backstop).
+  const allCommits: CompareResponse['commits'] = [];
+  for (let page = 1; ; page++) {
+    const data = await withRetry(
+      () =>
+        ghGet<CompareResponse>(
+          `/repos/${owner}/${repo}/compare/${base}...${head}?page=${page}`
+        ),
+      RETRY_GITHUB
     );
-    return data.commits;
-  }, RETRY_GITHUB);
+    if (data.commits.length === 0) break;
+    allCommits.push(...data.commits);
+    if (allCommits.length >= data.total_commits) break;
+  }
+  return allCommits;
 }
 
 interface GitHubPR {
