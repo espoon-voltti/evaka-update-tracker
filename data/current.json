@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T09:30:51.303Z",
+  "generatedAt": "2026-07-21T09:33:40.261Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-21T09:28:37.301Z",
+            "checkedAt": "2026-07-21T09:31:56.992Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-21T09:28:43.986Z",
+            "checkedAt": "2026-07-21T09:31:57.811Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,42 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9438,
-              "title": "Viikkokalenterin poissaolotyyppien näkyvyys kuntakohtaisesti konfiguroitavaksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T06:03:20Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9438",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9479,
-              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T05:43:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -116,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-21T09:28:54.094Z",
+            "checkedAt": "2026-07-21T09:32:02.983Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -141,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-21T09:29:03.171Z",
+            "checkedAt": "2026-07-21T09:32:13.623Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1d720e21081d8cce1c868976887d04ec1a92d3ff",
@@ -727,7 +692,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-21T09:30:16.230Z",
+            "checkedAt": "2026-07-21T09:33:28.194Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -746,7 +711,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-21T09:30:23.103Z",
+            "checkedAt": "2026-07-21T09:33:29.110Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -765,44 +730,27 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9438,
-              "title": "Viikkokalenterin poissaolotyyppien näkyvyys kuntakohtaisesti konfiguroitavaksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T06:03:20Z",
+              "number": 9436,
+              "title": "Päätösmuutokset ja päätöksen perustelut (Oulu)",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-07-21T09:30:33Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9438",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9436",
               "labels": [
                 "enhancement",
-                "core",
+                "oulu",
+                "citizen",
                 "employee"
               ]
             },
-            {
-              "number": 9479,
-              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T05:43:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
             {
               "number": 9434,
               "title": "Huoltajuuksiin liittyvien tietojen poisto (ei vielä käytössä)",
@@ -833,7 +781,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-21T09:30:33.897Z",
+            "checkedAt": "2026-07-21T09:33:34.284Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -852,7 +800,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-21T09:30:40.460Z",
+            "checkedAt": "2026-07-21T09:33:35.108Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -871,42 +819,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9438,
-              "title": "Viikkokalenterin poissaolotyyppien näkyvyys kuntakohtaisesti konfiguroitavaksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T06:03:20Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9438",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9479,
-              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T05:43:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
