@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T03:40:04.273Z",
+  "generatedAt": "2026-07-21T04:15:02.731Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-21T03:38:37.424Z",
+            "checkedAt": "2026-07-21T04:13:04.047Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-21T03:38:38.095Z",
+            "checkedAt": "2026-07-21T04:13:04.909Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-21T03:38:44.185Z",
+            "checkedAt": "2026-07-21T04:13:12.348Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-21T03:38:51.508Z",
+            "checkedAt": "2026-07-21T04:13:23.439Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "17ea1195774f2bbddfa94ff18f6e45b26a08e0b0",
@@ -726,7 +726,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-21T03:39:52.185Z",
+            "checkedAt": "2026-07-21T04:14:35.336Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -745,15 +745,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-21T03:39:52.947Z",
+            "checkedAt": "2026-07-21T04:14:36.247Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "57fabd3cc7da65b4f5cf815a923b7bf9c0eb355f",
-              "shortSha": "57fabd3",
-              "message": "Update dependency software.amazon.awssdk:bom to v2.47.6 (#9474)",
-              "date": "2026-07-19T02:27:22Z",
-              "author": "renovate[bot]"
+              "sha": "61600084d78a7c3091821df85d70554b85d702f6",
+              "shortSha": "6160008",
+              "message": "Merge pull request #9464 from espoon-voltti/renovate/helmet-8.x",
+              "date": "2026-07-20T09:14:03Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -765,8 +765,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9438,
               "title": "Viikkokalenterin poissaolotyyppien näkyvyys kuntakohtaisesti konfiguroitavaksi",
@@ -801,7 +800,8 @@
                 "not-visible"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -814,7 +814,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-21T03:39:58.378Z",
+            "checkedAt": "2026-07-21T04:14:49.142Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -833,15 +833,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-21T03:39:59.142Z",
+            "checkedAt": "2026-07-21T04:14:49.915Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "57fabd3cc7da65b4f5cf815a923b7bf9c0eb355f",
-              "shortSha": "57fabd3",
-              "message": "Update dependency software.amazon.awssdk:bom to v2.47.6 (#9474)",
-              "date": "2026-07-19T02:27:22Z",
-              "author": "renovate[bot]"
+              "sha": "61600084d78a7c3091821df85d70554b85d702f6",
+              "shortSha": "6160008",
+              "message": "Merge pull request #9464 from espoon-voltti/renovate/helmet-8.x",
+              "date": "2026-07-20T09:14:03Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -853,8 +853,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9438,
               "title": "Viikkokalenterin poissaolotyyppien näkyvyys kuntakohtaisesti konfiguroitavaksi",
@@ -889,7 +888,8 @@
                 "not-visible"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
