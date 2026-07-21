@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T04:18:06.531Z",
+  "generatedAt": "2026-07-21T04:43:56.919Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-21T04:16:40.219Z",
+            "checkedAt": "2026-07-21T04:42:03.239Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-21T04:16:40.982Z",
+            "checkedAt": "2026-07-21T04:42:04.186Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-21T04:16:46.672Z",
+            "checkedAt": "2026-07-21T04:42:11.482Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -123,21 +123,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-21T04:16:54.826Z",
+            "checkedAt": "2026-07-21T04:42:22.744Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "17ea1195774f2bbddfa94ff18f6e45b26a08e0b0",
-              "shortSha": "17ea119",
-              "message": "Merge pull request #2184 from Tampere/dependabot/submodules/evaka-b2b401a",
-              "date": "2026-07-19T21:12:15Z",
+              "sha": "1d720e21081d8cce1c868976887d04ec1a92d3ff",
+              "shortSha": "1d720e2",
+              "message": "Merge pull request #2185 from Tampere/dependabot/submodules/evaka-6160008",
+              "date": "2026-07-20T21:12:39Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "b2b401ac20fc72546cc65968e6d8a72015d2731e",
-              "shortSha": "b2b401a",
-              "message": "Update dependency oxfmt to v0.59.0 (#9477)",
-              "date": "2026-07-19T17:04:44Z",
-              "author": "renovate[bot]"
+              "sha": "61600084d78a7c3091821df85d70554b85d702f6",
+              "shortSha": "6160008",
+              "message": "Merge pull request #9464 from espoon-voltti/renovate/helmet-8.x",
+              "date": "2026-07-20T09:14:03Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -155,6 +155,40 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9438,
+              "title": "Viikkokalenterin poissaolotyyppien näkyvyys kuntakohtaisesti konfiguroitavaksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-20T06:03:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9438",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9479,
+              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-20T05:43:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9409,
               "title": "Korjataan Suomi.fi-uloskirjautuminen hylätyn sfi-kirjautumisen jälkeen",
@@ -642,78 +676,9 @@
                 "core",
                 "citizen"
               ]
-            },
-            {
-              "number": 9356,
-              "title": "Korjataan `dd-java-agent.jar`-tiedoston oikeudet",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-06-30T10:32:19Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9356",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9233,
-              "title": "Päätösten perustelut pdf-tiedostoon (yleinen tuki, Espoo)",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-06-29T11:44:14Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9233",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee"
-              ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9438,
-              "title": "Viikkokalenterin poissaolotyyppien näkyvyys kuntakohtaisesti konfiguroitavaksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T06:03:20Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9438",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9479,
-              "title": "Korjataan formatointia oxfmt 0.59 mukaiseksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-20T05:43:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9479",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -726,7 +691,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-21T04:17:54.471Z",
+            "checkedAt": "2026-07-21T04:43:41.951Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -745,7 +710,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-21T04:17:55.063Z",
+            "checkedAt": "2026-07-21T04:43:42.930Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -814,7 +779,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-21T04:18:00.483Z",
+            "checkedAt": "2026-07-21T04:43:49.519Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -833,7 +798,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-21T04:18:01.334Z",
+            "checkedAt": "2026-07-21T04:43:50.523Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
