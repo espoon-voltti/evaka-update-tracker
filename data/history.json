@@ -1,6 +1,444 @@
 {
   "events": [
     {
+      "id": "2026-07-22T09:11:54.320Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-07-22T09:11:54.320Z",
+      "previousCommit": {
+        "sha": "61600084d78a7c3091821df85d70554b85d702f6",
+        "shortSha": "6160008",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f67a7aaeb66ec87ece63db9310f45f35e2b49acd",
+        "shortSha": "f67a7aa",
+        "message": "Merge pull request #8913 from espoon-voltti/renovate/styled-components-6.x",
+        "date": "2026-07-21T10:46:31Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 8913,
+          "title": "Update dependency styled-components to v6.4.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T10:46:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8913",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9470,
+          "title": "Update dependency typescript to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T10:26:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9470",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9436,
+          "title": "Päätösmuutokset ja päätöksen perustelut (Oulu)",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-07-21T09:30:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9436",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "citizen",
+            "employee"
+          ]
+        },
+        {
+          "number": 9484,
+          "title": "Bump js-yaml from 4.2.0 to 4.3.0 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:16:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9484",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9485,
+          "title": "Bump brace-expansion from 1.1.15 to 1.1.16 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:16:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9485",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9483,
+          "title": "Bump body-parser from 2.2.1 to 2.3.0 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:14:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9483",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9482,
+          "title": "Bump brace-expansion and jake in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:13:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9482",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9481,
+          "title": "Bump brace-expansion from 1.1.15 to 1.1.16 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:06:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9481",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9469,
+          "title": "Update dependency linkify-it to v6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T08:46:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9469",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9434,
+          "title": "Huoltajuuksiin liittyvien tietojen poisto (ei vielä käytössä)",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-21T08:26:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9434",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9471,
+          "title": "Update dependency com.auth0:java-jwt to v4.6.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T07:23:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9471",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9475,
+          "title": "Update actions/setup-node action to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T06:56:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9475",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-07-22T09:12:06.530Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-07-22T09:12:06.530Z",
+      "previousCommit": {
+        "sha": "61600084d78a7c3091821df85d70554b85d702f6",
+        "shortSha": "6160008",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f67a7aaeb66ec87ece63db9310f45f35e2b49acd",
+        "shortSha": "f67a7aa",
+        "message": "Merge pull request #8913 from espoon-voltti/renovate/styled-components-6.x",
+        "date": "2026-07-21T10:46:31Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 8913,
+          "title": "Update dependency styled-components to v6.4.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T10:46:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/8913",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9470,
+          "title": "Update dependency typescript to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T10:26:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9470",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9436,
+          "title": "Päätösmuutokset ja päätöksen perustelut (Oulu)",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:30:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9436",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "citizen",
+            "employee"
+          ]
+        },
+        {
+          "number": 9484,
+          "title": "Bump js-yaml from 4.2.0 to 4.3.0 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:16:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9484",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9485,
+          "title": "Bump brace-expansion from 1.1.15 to 1.1.16 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:16:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9485",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9483,
+          "title": "Bump body-parser from 2.2.1 to 2.3.0 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:14:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9483",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9482,
+          "title": "Bump brace-expansion and jake in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:13:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9482",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9481,
+          "title": "Bump brace-expansion from 1.1.15 to 1.1.16 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T09:06:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9481",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9469,
+          "title": "Update dependency linkify-it to v6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T08:46:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9469",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9434,
+          "title": "Huoltajuuksiin liittyvien tietojen poisto (ei vielä käytössä)",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-21T08:26:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9434",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9471,
+          "title": "Update dependency com.auth0:java-jwt to v4.6.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T07:23:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9471",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9475,
+          "title": "Update actions/setup-node action to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-21T06:56:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9475",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-07-22T06:31:51.499Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
