@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T08:21:52.092Z",
+  "generatedAt": "2026-07-23T09:16:23.285Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-23T08:20:11.708Z",
+            "checkedAt": "2026-07-23T09:14:03.693Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-23T08:20:12.339Z",
+            "checkedAt": "2026-07-23T09:14:04.640Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-23T08:20:13.118Z",
+            "checkedAt": "2026-07-23T09:14:06.493Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-23T08:20:21.511Z",
+            "checkedAt": "2026-07-23T09:14:19.466Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cc694d22ff54fabb3b34b069240a7af552e9ede6",
@@ -1009,7 +1009,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-23T08:21:48.040Z",
+            "checkedAt": "2026-07-23T09:16:17.907Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1028,7 +1028,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-23T08:21:49.003Z",
+            "checkedAt": "2026-07-23T09:16:18.924Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1049,7 +1049,25 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9487,
+              "title": "Epävakaan testin korjaus",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-07-23T09:03:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9487",
+              "labels": [
+                "tech",
+                "oulu",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -1062,7 +1080,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-23T08:21:49.973Z",
+            "checkedAt": "2026-07-23T09:16:20.703Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1081,7 +1099,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-23T08:21:50.956Z",
+            "checkedAt": "2026-07-23T09:16:21.615Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
