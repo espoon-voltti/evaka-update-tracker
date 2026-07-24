@@ -1,6 +1,48 @@
 {
   "events": [
     {
+      "id": "2026-07-24T03:06:31.481Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-07-24T03:06:31.481Z",
+      "previousCommit": {
+        "sha": "f67a7aaeb66ec87ece63db9310f45f35e2b49acd",
+        "shortSha": "f67a7aa",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c3d8369f876ebb8cc2dc0740697f1d06efefdca8",
+        "shortSha": "c3d8369",
+        "message": "Merge pull request #9487 from espoon-voltti/fix-flaky-oulu-payment-integration-test",
+        "date": "2026-07-23T09:03:30Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9487,
+          "title": "Epävakaan testin korjaus",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-07-23T09:03:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9487",
+          "labels": [
+            "tech",
+            "oulu",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-22T09:13:33.238Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
@@ -26596,65 +26638,6 @@
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
       "detectedAt": "2026-06-24T04:12:30.000Z",
-      "previousCommit": {
-        "sha": "06c32603f0b3729d39a46c6dbff609760afd3919",
-        "shortSha": "06c3260",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "0b4f9bb090d6813ecfc20006b6be3d0ce5b2ca9c",
-        "shortSha": "0b4f9bb",
-        "message": "Merge pull request #9261 from espoon-voltti/decision-reasoning-optional-sv-2",
-        "date": "2026-06-23T06:38:15Z",
-        "author": "Joosakur"
-      },
-      "includedPRs": [
-        {
-          "number": 9261,
-          "title": "Päätösten perustelujen ruotsiversiot vain kunnissa, joissa päätöksiä tehdään ruotsiksi",
-          "author": "Joosakur",
-          "authorName": "Joosa Kurvinen",
-          "mergedAt": "2026-06-23T06:38:16Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9261",
-          "labels": [
-            "enhancement",
-            "core",
-            "employee"
-          ]
-        },
-        {
-          "number": 9301,
-          "title": "Lisätään yöllinen ajo varhaiskasvatusajan muutosilmoitusten siivoamiselle",
-          "author": "ohinkinen",
-          "authorName": "Olli-Heikki Inkinen",
-          "mergedAt": "2026-06-23T05:52:47Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9301",
-          "labels": [
-            "enhancement",
-            "core",
-            "citizen"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-06-24T03:08:28.312Z_espoo-staging_core",
-      "environmentId": "espoo-staging",
-      "cityGroupId": "espoo",
-      "detectedAt": "2026-06-24T03:08:28.312Z",
       "previousCommit": {
         "sha": "06c32603f0b3729d39a46c6dbff609760afd3919",
         "shortSha": "06c3260",
