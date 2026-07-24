@@ -1,6 +1,89 @@
 {
   "events": [
     {
+      "id": "2026-07-24T06:03:17.229Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-24T06:03:17.229Z",
+      "previousCommit": {
+        "sha": "cc694d22ff54fabb3b34b069240a7af552e9ede6",
+        "shortSha": "cc694d2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "783acc0a92d399451c5737ba31b7091adf8bf107",
+        "shortSha": "783acc0",
+        "message": "Merge pull request #2188 from Tampere/dependabot/submodules/evaka-c3d8369",
+        "date": "2026-07-23T21:10:37Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2188,
+          "title": "Bump evaka from `f67a7aa` to `c3d8369`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-23T21:10:37Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2188",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-07-24T06:03:17.229Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-07-24T06:03:17.229Z",
+      "previousCommit": {
+        "sha": "f67a7aaeb66ec87ece63db9310f45f35e2b49acd",
+        "shortSha": "f67a7aa",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c3d8369f876ebb8cc2dc0740697f1d06efefdca8",
+        "shortSha": "c3d8369",
+        "message": "Merge pull request #9487 from espoon-voltti/fix-flaky-oulu-payment-integration-test",
+        "date": "2026-07-23T09:03:30Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9487,
+          "title": "Epävakaan testin korjaus",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-07-23T09:03:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9487",
+          "labels": [
+            "tech",
+            "oulu",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-24T04:14:53.445Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
