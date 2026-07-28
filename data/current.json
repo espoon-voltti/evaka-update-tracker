@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T08:19:37.485Z",
+  "generatedAt": "2026-07-28T09:19:33.137Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-28T08:17:07.162Z",
+            "checkedAt": "2026-07-28T09:17:17.430Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-28T08:17:08.075Z",
+            "checkedAt": "2026-07-28T09:17:18.157Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -100,7 +100,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-28T08:17:13.472Z",
+            "checkedAt": "2026-07-28T09:17:22.768Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -125,7 +125,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-28T08:17:25.454Z",
+            "checkedAt": "2026-07-28T09:17:31.249Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "06b73a89a070927196beeeb261110e721662cacc",
@@ -1082,15 +1082,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-28T08:19:24.258Z",
+            "checkedAt": "2026-07-28T09:19:17.727Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "362f6a5d604ced8fcf5752dca01c71d2a7db761c",
-              "shortSha": "362f6a5",
-              "message": "Update react monorepo to v19.2.8 (#9522)",
-              "date": "2026-07-26T17:44:20Z",
-              "author": "renovate[bot]"
+              "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
+              "shortSha": "e3d316c",
+              "message": "Merge pull request #9506 from espoon-voltti/renovate/flyingsaucer",
+              "date": "2026-07-27T06:57:36Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -1101,7 +1101,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-28T08:19:25.814Z",
+            "checkedAt": "2026-07-28T09:19:21.154Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1120,8 +1120,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9489,
               "title": "Muutetaan LegacyButton- ja LegacyInlineButton-komponentit Button-komponenteiksi",
@@ -1159,6 +1158,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -1172,15 +1172,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-28T08:19:31.216Z",
+            "checkedAt": "2026-07-28T09:19:25.821Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "362f6a5d604ced8fcf5752dca01c71d2a7db761c",
-              "shortSha": "362f6a5",
-              "message": "Update react monorepo to v19.2.8 (#9522)",
-              "date": "2026-07-26T17:44:20Z",
-              "author": "renovate[bot]"
+              "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
+              "shortSha": "e3d316c",
+              "message": "Merge pull request #9506 from espoon-voltti/renovate/flyingsaucer",
+              "date": "2026-07-27T06:57:36Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -1191,7 +1191,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-28T08:19:32.463Z",
+            "checkedAt": "2026-07-28T09:19:28.653Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1210,8 +1210,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9489,
               "title": "Muutetaan LegacyButton- ja LegacyInlineButton-komponentit Button-komponenteiksi",
@@ -1249,6 +1248,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
