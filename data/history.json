@@ -1,6 +1,115 @@
 {
   "events": [
     {
+      "id": "2026-07-28T03:06:07.504Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-07-28T03:06:07.504Z",
+      "previousCommit": {
+        "sha": "362f6a5d604ced8fcf5752dca01c71d2a7db761c",
+        "shortSha": "362f6a5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
+        "shortSha": "e3d316c",
+        "message": "Merge pull request #9506 from espoon-voltti/renovate/flyingsaucer",
+        "date": "2026-07-27T06:57:36Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 9506,
+          "title": "Update flyingsaucer to v10.4.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T06:57:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9506",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9489,
+          "title": "Muutetaan LegacyButton- ja LegacyInlineButton-komponentit Button-komponenteiksi",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-07-27T06:20:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9489",
+          "labels": [
+            "tech",
+            "core",
+            "citizen",
+            "employee",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9488,
+          "title": "Tietojen eheysvirheiden lokitus error-tasolle",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-07-27T06:17:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9488",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9505,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.49.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T06:15:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9505",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9503,
+          "title": "Update dependency dd-trace to v6.4.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T06:15:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9503",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-07-27T09:25:24.747Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
