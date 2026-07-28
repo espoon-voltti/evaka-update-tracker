@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T06:30:08.358Z",
+  "generatedAt": "2026-07-28T06:44:43.913Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-28T06:28:03.650Z",
+            "checkedAt": "2026-07-28T06:41:59.409Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-28T06:28:04.442Z",
+            "checkedAt": "2026-07-28T06:42:00.839Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -100,7 +100,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-28T06:28:08.614Z",
+            "checkedAt": "2026-07-28T06:42:06.475Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -125,21 +125,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-28T06:28:17.983Z",
+            "checkedAt": "2026-07-28T06:42:19.957Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "2577ef232032310d786558d91520640a3f2c9e72",
-              "shortSha": "2577ef2",
-              "message": "Merge pull request #2189 from Tampere/dependabot/submodules/evaka-362f6a5",
-              "date": "2026-07-26T21:11:55Z",
+              "sha": "06b73a89a070927196beeeb261110e721662cacc",
+              "shortSha": "06b73a8",
+              "message": "Merge pull request #2190 from Tampere/dependabot/submodules/evaka-6e7ac61",
+              "date": "2026-07-27T21:12:41Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "362f6a5d604ced8fcf5752dca01c71d2a7db761c",
-              "shortSha": "362f6a5",
-              "message": "Update react monorepo to v19.2.8 (#9522)",
-              "date": "2026-07-26T17:44:20Z",
-              "author": "renovate[bot]"
+              "sha": "6e7ac61fac158b883b90ceec5e2127966105ba8e",
+              "shortSha": "6e7ac61",
+              "message": "Merge pull request #9510 from espoon-voltti/renovate/font-awesome",
+              "date": "2026-07-27T07:27:42Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -157,6 +157,42 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9489,
+              "title": "Muutetaan LegacyButton- ja LegacyInlineButton-komponentit Button-komponenteiksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-27T06:20:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9489",
+              "labels": [
+                "tech",
+                "core",
+                "citizen",
+                "employee",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9488,
+              "title": "Tietojen eheysvirheiden lokitus error-tasolle",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-07-27T06:17:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9488",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9434,
               "title": "Huoltajuuksiin liittyvien tietojen poisto (ei vielä käytössä)",
@@ -1033,44 +1069,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9489,
-              "title": "Muutetaan LegacyButton- ja LegacyInlineButton-komponentit Button-komponenteiksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-27T06:20:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9489",
-              "labels": [
-                "tech",
-                "core",
-                "citizen",
-                "employee",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9488,
-              "title": "Tietojen eheysvirheiden lokitus error-tasolle",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-07-27T06:17:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9488",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -1083,7 +1082,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-28T06:29:58.633Z",
+            "checkedAt": "2026-07-28T06:44:30.817Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1102,7 +1101,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-28T06:29:59.497Z",
+            "checkedAt": "2026-07-28T06:44:32.435Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1173,7 +1172,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-28T06:30:03.551Z",
+            "checkedAt": "2026-07-28T06:44:37.773Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1192,7 +1191,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-28T06:30:04.298Z",
+            "checkedAt": "2026-07-28T06:44:38.718Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
