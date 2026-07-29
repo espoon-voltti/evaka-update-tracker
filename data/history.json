@@ -1,6 +1,369 @@
 {
   "events": [
     {
+      "id": "2026-07-29T09:09:29.026Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-07-29T09:09:29.026Z",
+      "previousCommit": {
+        "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
+        "shortSha": "e3d316c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "0d49ad9c09d09a83556c3c3f01ff4067894eb819",
+        "shortSha": "0d49ad9",
+        "message": "Merge pull request #9514 from espoon-voltti/renovate/major-testing-library-monorepo",
+        "date": "2026-07-28T11:33:14Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9514,
+          "title": "Update dependency @testing-library/jest-dom to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T11:33:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9514",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9521,
+          "title": "Update dependency oxlint-tsgolint to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T10:51:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9521",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9508,
+          "title": "Bump postcss from 8.5.15 to 8.5.23 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T09:18:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9508",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9494,
+          "title": "Pin dependency @types/stylis to 4.2.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T06:36:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9494",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9510,
+          "title": "Update dependency @fortawesome/react-fontawesome to v3.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T07:27:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9510",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9507,
+          "title": "Update sentry-javascript monorepo to v10.67.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T07:26:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9507",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-07-29T09:11:34.579Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-07-29T09:11:34.579Z",
+      "previousCommit": {
+        "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
+        "shortSha": "e3d316c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "0d49ad9c09d09a83556c3c3f01ff4067894eb819",
+        "shortSha": "0d49ad9",
+        "message": "Merge pull request #9514 from espoon-voltti/renovate/major-testing-library-monorepo",
+        "date": "2026-07-28T11:33:14Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9514,
+          "title": "Update dependency @testing-library/jest-dom to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T11:33:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9514",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9521,
+          "title": "Update dependency oxlint-tsgolint to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T10:51:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9521",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9508,
+          "title": "Bump postcss from 8.5.15 to 8.5.23 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T09:18:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9508",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9494,
+          "title": "Pin dependency @types/stylis to 4.2.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T06:36:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9494",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9510,
+          "title": "Update dependency @fortawesome/react-fontawesome to v3.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T07:27:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9510",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9507,
+          "title": "Update sentry-javascript monorepo to v10.67.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T07:26:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9507",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-07-29T09:11:41.081Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-07-29T09:11:41.081Z",
+      "previousCommit": {
+        "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
+        "shortSha": "e3d316c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "0d49ad9c09d09a83556c3c3f01ff4067894eb819",
+        "shortSha": "0d49ad9",
+        "message": "Merge pull request #9514 from espoon-voltti/renovate/major-testing-library-monorepo",
+        "date": "2026-07-28T11:33:14Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9514,
+          "title": "Update dependency @testing-library/jest-dom to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T11:33:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9514",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9521,
+          "title": "Update dependency oxlint-tsgolint to v7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T10:51:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9521",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9508,
+          "title": "Bump postcss from 8.5.15 to 8.5.23 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T09:18:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9508",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9494,
+          "title": "Pin dependency @types/stylis to 4.2.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-28T06:36:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9494",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9510,
+          "title": "Update dependency @fortawesome/react-fontawesome to v3.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T07:27:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9510",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9507,
+          "title": "Update sentry-javascript monorepo to v10.67.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-07-27T07:26:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9507",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-07-29T06:12:36.585Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
