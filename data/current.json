@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T09:23:34.874Z",
+  "generatedAt": "2026-07-31T09:35:26.630Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-31T09:21:25.830Z",
+            "checkedAt": "2026-07-31T09:33:22.834Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0d49ad9c09d09a83556c3c3f01ff4067894eb819",
-              "shortSha": "0d49ad9",
-              "message": "Merge pull request #9514 from espoon-voltti/renovate/major-testing-library-monorepo",
-              "date": "2026-07-28T11:33:14Z",
-              "author": "juakiv"
+              "sha": "14b174c1eef2199a9081d90956e3a36b4cd6b69e",
+              "shortSha": "14b174c",
+              "message": "Merge pull request #9525 from espoon-voltti/chore/nginx-1-31-3",
+              "date": "2026-07-30T07:45:25Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-07-31T09:21:26.468Z",
+            "checkedAt": "2026-07-31T09:33:23.981Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9525,
               "title": "chore: upgrade nginx to 1.31.3 [SECURITY]",
@@ -67,6 +66,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9524,
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-31T09:21:28.796Z",
+            "checkedAt": "2026-07-31T09:33:26.285Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -140,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-07-31T09:21:37.136Z",
+            "checkedAt": "2026-07-31T09:33:35.083Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1e488a086bf4b12dce0a02c6a8604a7e0ec8e7de",
@@ -1148,15 +1148,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-31T09:23:28.870Z",
+            "checkedAt": "2026-07-31T09:35:21.147Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0d49ad9c09d09a83556c3c3f01ff4067894eb819",
-              "shortSha": "0d49ad9",
-              "message": "Merge pull request #9514 from espoon-voltti/renovate/major-testing-library-monorepo",
-              "date": "2026-07-28T11:33:14Z",
-              "author": "juakiv"
+              "sha": "14b174c1eef2199a9081d90956e3a36b4cd6b69e",
+              "shortSha": "14b174c",
+              "message": "Merge pull request #9525 from espoon-voltti/chore/nginx-1-31-3",
+              "date": "2026-07-30T07:45:25Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -1167,7 +1167,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-07-31T09:23:29.748Z",
+            "checkedAt": "2026-07-31T09:35:22.385Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1186,8 +1186,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9525,
               "title": "chore: upgrade nginx to 1.31.3 [SECURITY]",
@@ -1205,6 +1204,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9524,
@@ -1253,7 +1253,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-07-31T09:23:32.416Z",
+            "checkedAt": "2026-07-31T09:35:24.530Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1272,7 +1272,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-07-31T09:23:33.192Z",
+            "checkedAt": "2026-07-31T09:35:25.062Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
