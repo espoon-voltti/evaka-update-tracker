@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T08:46:57.633Z",
+  "generatedAt": "2026-08-03T09:24:37.750Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-03T08:43:30.783Z",
+            "checkedAt": "2026-08-03T09:21:25.767Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "14b174c1eef2199a9081d90956e3a36b4cd6b69e",
-              "shortSha": "14b174c",
-              "message": "Merge pull request #9525 from espoon-voltti/chore/nginx-1-31-3",
-              "date": "2026-07-30T07:45:25Z",
-              "author": "Joosakur"
+              "sha": "4531b4deb62a0ced5dd3ca629e78c1f572525955",
+              "shortSha": "4531b4d",
+              "message": "Merge pull request #9524 from espoon-voltti/prevent-bulletins-with-applications",
+              "date": "2026-07-31T06:55:35Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-03T08:43:31.898Z",
+            "checkedAt": "2026-08-03T09:21:27.602Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9524,
               "title": "Estetään hakemukseen liittyvät tiedote-viestit",
@@ -85,6 +84,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9527,
@@ -150,7 +150,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-03T08:43:48.024Z",
+            "checkedAt": "2026-08-03T09:21:40.835Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -175,7 +175,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-03T08:44:00.567Z",
+            "checkedAt": "2026-08-03T09:21:49.387Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4522d3c53a86065865bd26e06a4efa261afc937c",
@@ -1234,15 +1234,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-03T08:46:24.835Z",
+            "checkedAt": "2026-08-03T09:24:02.545Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "14b174c1eef2199a9081d90956e3a36b4cd6b69e",
-              "shortSha": "14b174c",
-              "message": "Merge pull request #9525 from espoon-voltti/chore/nginx-1-31-3",
-              "date": "2026-07-30T07:45:25Z",
-              "author": "Joosakur"
+              "sha": "4531b4deb62a0ced5dd3ca629e78c1f572525955",
+              "shortSha": "4531b4d",
+              "message": "Merge pull request #9524 from espoon-voltti/prevent-bulletins-with-applications",
+              "date": "2026-07-31T06:55:35Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -1253,7 +1253,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-03T08:46:25.796Z",
+            "checkedAt": "2026-08-03T09:24:04.586Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1272,8 +1272,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9524,
               "title": "Estetään hakemukseen liittyvät tiedote-viestit",
@@ -1309,6 +1308,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9527,
@@ -1374,15 +1374,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-03T08:46:41.287Z",
+            "checkedAt": "2026-08-03T09:24:18.378Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "14b174c1eef2199a9081d90956e3a36b4cd6b69e",
-              "shortSha": "14b174c",
-              "message": "Merge pull request #9525 from espoon-voltti/chore/nginx-1-31-3",
-              "date": "2026-07-30T07:45:25Z",
-              "author": "Joosakur"
+              "sha": "4531b4deb62a0ced5dd3ca629e78c1f572525955",
+              "shortSha": "4531b4d",
+              "message": "Merge pull request #9524 from espoon-voltti/prevent-bulletins-with-applications",
+              "date": "2026-07-31T06:55:35Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -1393,7 +1393,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-03T08:46:42.282Z",
+            "checkedAt": "2026-08-03T09:24:20.149Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1412,8 +1412,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9524,
               "title": "Estetään hakemukseen liittyvät tiedote-viestit",
@@ -1449,6 +1448,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9527,
