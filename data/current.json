@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T11:17:26.164Z",
+  "generatedAt": "2026-08-03T12:29:58.466Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-03T11:13:48.496Z",
+            "checkedAt": "2026-08-03T12:26:54.487Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-03T11:13:49.371Z",
+            "checkedAt": "2026-08-03T12:26:55.156Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,40 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9364,
+              "title": "Espoo: Valmistavan opetuksen hakemusmuutokset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-03T12:04:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9364",
+              "labels": [
+                "enhancement",
+                "espoo",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9372,
+              "title": "Espoon hakemuksille tekstikorjaus",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-03T12:03:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9372",
+              "labels": [
+                "enhancement",
+                "espoo",
+                "citizen"
+              ]
+            },
             {
               "number": 9527,
               "title": "Korjataan kalenterin varausmodaalin jumiin jäävä lomake",
@@ -115,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-03T11:14:04.704Z",
+            "checkedAt": "2026-08-03T12:27:10.499Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -140,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-03T11:14:17.609Z",
+            "checkedAt": "2026-08-03T12:27:19.103Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4522d3c53a86065865bd26e06a4efa261afc937c",
@@ -1199,7 +1233,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-03T11:16:52.974Z",
+            "checkedAt": "2026-08-03T12:29:26.082Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1218,7 +1252,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-03T11:16:54.159Z",
+            "checkedAt": "2026-08-03T12:29:26.971Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1240,6 +1274,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9367,
+              "title": "Oulu: Valmistavan opetuksen hakemusmuutokset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-03T12:03:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9367",
+              "labels": [
+                "enhancement",
+                "oulu",
+                "citizen"
+              ]
+            },
             {
               "number": 9527,
               "title": "Korjataan kalenterin varausmodaalin jumiin jäävä lomake",
@@ -1304,7 +1355,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-03T11:17:10.018Z",
+            "checkedAt": "2026-08-03T12:29:42.346Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1323,7 +1374,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-03T11:17:11.006Z",
+            "checkedAt": "2026-08-03T12:29:43.421Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1345,6 +1396,57 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9437,
+              "title": "Turun päätöstekstien päivittäminen",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-03T12:20:46Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9437",
+              "labels": [
+                "enhancement",
+                "turku",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9365,
+              "title": "Turku: Valmistavan opetuksen hakemusmuutokset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-03T12:03:56Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9365",
+              "labels": [
+                "enhancement",
+                "turku",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9439,
+              "title": "Korjataan ruotsinkielinen oikaisuvaatimusohje ja siivotaan Turun päätöspohjia",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-03T12:02:38Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9439",
+              "labels": [
+                "bugfix",
+                "turku",
+                "citizen"
+              ]
+            },
             {
               "number": 9527,
               "title": "Korjataan kalenterin varausmodaalin jumiin jäävä lomake",
