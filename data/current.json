@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T04:18:09.305Z",
+  "generatedAt": "2026-08-04T04:47:40.531Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-04T04:14:53.200Z",
+            "checkedAt": "2026-08-04T04:44:49.028Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-04T04:14:53.915Z",
+            "checkedAt": "2026-08-04T04:44:49.659Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -149,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-04T04:15:08.909Z",
+            "checkedAt": "2026-08-04T04:45:03.272Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -174,21 +174,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-04T04:15:17.470Z",
+            "checkedAt": "2026-08-04T04:45:11.394Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "4522d3c53a86065865bd26e06a4efa261afc937c",
-              "shortSha": "4522d3c",
-              "message": "Merge pull request #2194 from Tampere/dependabot/submodules/evaka-14b174c",
-              "date": "2026-08-02T21:12:12Z",
+              "sha": "f252d37a8c2895de75f79f85d2334a430a589a3e",
+              "shortSha": "f252d37",
+              "message": "Merge pull request #2196 from Tampere/dependabot/submodules/evaka-2699465",
+              "date": "2026-08-03T21:12:28Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "14b174c1eef2199a9081d90956e3a36b4cd6b69e",
-              "shortSha": "14b174c",
-              "message": "Merge pull request #9525 from espoon-voltti/chore/nginx-1-31-3",
-              "date": "2026-07-30T07:45:25Z",
-              "author": "Joosakur"
+              "sha": "269946535befba8621aa1dc6b4103f21c0d31e16",
+              "shortSha": "2699465",
+              "message": "render reservation modal after service needs load",
+              "date": "2026-07-31T12:14:33Z",
+              "author": "juakiv"
             }
           },
           "versionMismatch": false,
@@ -206,6 +206,40 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9524,
+              "title": "Estetään hakemukseen liittyvät tiedote-viestit",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-31T06:55:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9524",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9490,
+              "title": "Vanhojen useRestApi- ja useApiState-hookien poisto",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-07-31T06:38:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9490",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9525,
               "title": "chore: upgrade nginx to 1.31.3 [SECURITY]",
@@ -1185,40 +1219,6 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9524,
-              "title": "Estetään hakemukseen liittyvät tiedote-viestit",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-31T06:55:36Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9524",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9490,
-              "title": "Vanhojen useRestApi- ja useApiState-hookien poisto",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-07-31T06:38:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9490",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
             }
           ]
         }
@@ -1233,7 +1233,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-04T04:17:14.660Z",
+            "checkedAt": "2026-08-04T04:47:12.605Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1252,7 +1252,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-04T04:17:15.248Z",
+            "checkedAt": "2026-08-04T04:47:13.601Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1355,7 +1355,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-04T04:17:42.436Z",
+            "checkedAt": "2026-08-04T04:47:27.097Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1374,7 +1374,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-04T04:17:43.092Z",
+            "checkedAt": "2026-08-04T04:47:27.685Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
