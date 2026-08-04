@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T06:45:54.359Z",
+  "generatedAt": "2026-08-04T07:16:39.931Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-04T06:42:13.619Z",
+            "checkedAt": "2026-08-04T07:11:13.668Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-04T06:42:14.655Z",
+            "checkedAt": "2026-08-04T07:11:14.567Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -149,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-04T06:42:34.080Z",
+            "checkedAt": "2026-08-04T07:11:32.878Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4719beaf6b1f856b09b3f41829c636c65e3ce0f1",
@@ -174,20 +174,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-04T06:42:46.304Z",
+            "checkedAt": "2026-08-04T07:11:42.730Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "f252d37a8c2895de75f79f85d2334a430a589a3e",
-              "shortSha": "f252d37",
-              "message": "Merge pull request #2196 from Tampere/dependabot/submodules/evaka-2699465",
-              "date": "2026-08-03T21:12:28Z",
-              "author": "github-actions[bot]"
+              "sha": "25726708be52916a13efc996fce8d432ce43b859",
+              "shortSha": "2572670",
+              "message": "Fix e2e test",
+              "date": "2026-08-04T06:37:08Z",
+              "author": "akheron"
             },
             "coreCommit": {
-              "sha": "269946535befba8621aa1dc6b4103f21c0d31e16",
-              "shortSha": "2699465",
-              "message": "render reservation modal after service needs load",
-              "date": "2026-07-31T12:14:33Z",
+              "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+              "shortSha": "7427da6",
+              "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+              "date": "2026-08-03T12:20:45Z",
               "author": "juakiv"
             }
           },
@@ -206,6 +206,57 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9527,
+              "title": "Korjataan kalenterin varausmodaalin jumiin jäävä lomake",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-08-03T07:36:44Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9527",
+              "labels": [
+                "tech",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9526,
+              "title": "Muutetaan testit käyttämään sijoitus-fikstuureja ",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-08-03T07:12:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9526",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9554,
+              "title": "Korjataan formatointia oxfmt 0.61 mukaiseksi",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-08-03T05:55:03Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9554",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9524,
               "title": "Estetään hakemukseen liittyvät tiedote-viestit",
@@ -1168,59 +1219,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9527,
-              "title": "Korjataan kalenterin varausmodaalin jumiin jäävä lomake",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-03T07:36:44Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9527",
-              "labels": [
-                "tech",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9526,
-              "title": "Muutetaan testit käyttämään sijoitus-fikstuureja ",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-03T07:12:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9526",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9554,
-              "title": "Korjataan formatointia oxfmt 0.61 mukaiseksi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-03T05:55:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9554",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -1233,7 +1232,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-04T06:45:16.052Z",
+            "checkedAt": "2026-08-04T07:16:01.955Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1252,7 +1251,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-04T06:45:16.948Z",
+            "checkedAt": "2026-08-04T07:16:02.693Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1355,7 +1354,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-04T06:45:35.795Z",
+            "checkedAt": "2026-08-04T07:16:21.710Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -1374,7 +1373,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-04T06:45:37.002Z",
+            "checkedAt": "2026-08-04T07:16:22.422Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
