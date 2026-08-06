@@ -1,6 +1,130 @@
 {
   "events": [
     {
+      "id": "2026-08-06T03:06:25.583Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-08-06T03:06:25.583Z",
+      "previousCommit": {
+        "sha": "3916af5c4678ffa3ef238362b218b7e23054e373",
+        "shortSha": "3916af5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "71be005cd6ec0bae22ec1f4fae464f2f806c0b49",
+        "shortSha": "71be005",
+        "message": "Merge pull request #9562 from espoon-voltti/fix-staff-attendance-query-invalidation",
+        "date": "2026-08-05T09:19:29Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9562,
+          "title": "Korjataan henkilökunnan läsnäoloeditorin datan päivittyminen",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-05T09:19:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9562",
+          "labels": [
+            "bugfix",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9558,
+          "title": "Vanhojen mockNow- ja mockToday-funktioiden poisto",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-05T07:04:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9558",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9556,
+          "title": "Bump brace-expansion in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-05T06:44:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9556",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9560,
+          "title": "Lisätään yleistuki vaihtoehdoksi tuloselvityksiin",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-05T05:39:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9560",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9559,
+          "title": "Update dependency cryptography to v50 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-05T05:36:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9559",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9543,
+          "title": "Update playwright monorepo to v1.62.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-05T05:30:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9543",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-05T10:15:29.112Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
