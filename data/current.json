@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T09:33:00.232Z",
+  "generatedAt": "2026-08-06T09:38:51.746Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-06T09:32:07.520Z",
+            "checkedAt": "2026-08-06T09:38:21.566Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-06T09:32:11.184Z",
+            "checkedAt": "2026-08-06T09:38:22.392Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,59 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9562,
-              "title": "Korjataan henkilökunnan läsnäoloeditorin datan päivittyminen",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T09:19:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9562",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9558,
-              "title": "Vanhojen mockNow- ja mockToday-funktioiden poisto",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T07:04:06Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9558",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9560,
-              "title": "Lisätään yleistuki vaihtoehdoksi tuloselvityksiin",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T05:39:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9560",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -132,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-06T09:32:15.797Z",
+            "checkedAt": "2026-08-06T09:38:24.398Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -157,7 +105,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-06T09:32:24.870Z",
+            "checkedAt": "2026-08-06T09:38:33.260Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "88343f51c58b3726d30f2cb23baeabb1f1124406",
@@ -174,180 +122,8 @@
               "author": "juakiv"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-08-06T09:32:24.870Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "88343f51c58b3726d30f2cb23baeabb1f1124406",
-                "shortSha": "88343f5",
-                "message": "Merge pull request #2197 from Tampere/dependabot/submodules/evaka-71be005",
-                "date": "2026-08-06T05:52:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "71be005cd6ec0bae22ec1f4fae464f2f806c0b49",
-                "shortSha": "71be005",
-                "message": "Merge pull request #9562 from espoon-voltti/fix-staff-attendance-query-invalidation",
-                "date": "2026-08-05T09:19:29Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-08-06T09:32:25.862Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-08-06T09:32:26.873Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-08-06T09:32:27.882Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-08-06T09:32:28.961Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-08-06T09:32:29.926Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-08-06T09:32:30.896Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-08-06T09:32:32.017Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-08-06T09:32:33.030Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "25726708be52916a13efc996fce8d432ce43b859",
-                "shortSha": "2572670",
-                "message": "Fix e2e test",
-                "date": "2026-08-04T06:37:08Z",
-                "author": "akheron"
-              },
-              "coreCommit": {
-                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-                "shortSha": "7427da6",
-                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-                "date": "2026-08-03T12:20:45Z",
-                "author": "juakiv"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -445,7 +221,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-06T09:32:44.985Z",
+            "checkedAt": "2026-08-06T09:38:46.591Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -464,7 +240,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-06T09:32:48.299Z",
+            "checkedAt": "2026-08-06T09:38:47.359Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -483,59 +259,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9562,
-              "title": "Korjataan henkilökunnan läsnäoloeditorin datan päivittyminen",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T09:19:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9562",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9558,
-              "title": "Vanhojen mockNow- ja mockToday-funktioiden poisto",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T07:04:06Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9558",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9560,
-              "title": "Lisätään yleistuki vaihtoehdoksi tuloselvityksiin",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T05:39:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9560",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -569,7 +293,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-06T09:32:52.581Z",
+            "checkedAt": "2026-08-06T09:38:49.311Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -588,7 +312,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-06T09:32:55.779Z",
+            "checkedAt": "2026-08-06T09:38:50.103Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -607,59 +331,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9562,
-              "title": "Korjataan henkilökunnan läsnäoloeditorin datan päivittyminen",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T09:19:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9562",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9558,
-              "title": "Vanhojen mockNow- ja mockToday-funktioiden poisto",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T07:04:06Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9558",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9560,
-              "title": "Lisätään yleistuki vaihtoehdoksi tuloselvityksiin",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T05:39:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9560",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
