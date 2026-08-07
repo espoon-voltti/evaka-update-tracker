@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T08:41:29.310Z",
+  "generatedAt": "2026-08-07T09:07:56.576Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-07T08:40:57.145Z",
+            "checkedAt": "2026-08-07T09:07:21.994Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-07T08:40:57.703Z",
+            "checkedAt": "2026-08-07T09:07:22.745Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-07T08:41:00.322Z",
+            "checkedAt": "2026-08-07T09:07:25.545Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-07T08:41:08.875Z",
+            "checkedAt": "2026-08-07T09:07:33.728Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "88343f51c58b3726d30f2cb23baeabb1f1124406",
@@ -256,15 +256,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-07T08:41:23.018Z",
+            "checkedAt": "2026-08-07T09:07:48.664Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "71be005cd6ec0bae22ec1f4fae464f2f806c0b49",
-              "shortSha": "71be005",
-              "message": "Merge pull request #9562 from espoon-voltti/fix-staff-attendance-query-invalidation",
-              "date": "2026-08-05T09:19:29Z",
-              "author": "juakiv"
+              "sha": "1e27de7b4058f7fb363494c66fbf34b9fe8d2882",
+              "shortSha": "1e27de7",
+              "message": "Merge pull request #9563 from espoon-voltti/aftermigrate-null-safe-guards",
+              "date": "2026-08-06T09:29:59Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -275,7 +275,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-07T08:41:23.747Z",
+            "checkedAt": "2026-08-07T09:07:50.420Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -294,8 +294,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9563,
               "title": "Käytetään `IS DISTINCT FROM` -operaattoria `<>`:n sijaan afterMigrate-skripteissä",
@@ -315,6 +314,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9565,
@@ -346,15 +346,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-07T08:41:26.206Z",
+            "checkedAt": "2026-08-07T09:07:52.685Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "71be005cd6ec0bae22ec1f4fae464f2f806c0b49",
-              "shortSha": "71be005",
-              "message": "Merge pull request #9562 from espoon-voltti/fix-staff-attendance-query-invalidation",
-              "date": "2026-08-05T09:19:29Z",
-              "author": "juakiv"
+              "sha": "1e27de7b4058f7fb363494c66fbf34b9fe8d2882",
+              "shortSha": "1e27de7",
+              "message": "Merge pull request #9563 from espoon-voltti/aftermigrate-null-safe-guards",
+              "date": "2026-08-06T09:29:59Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -365,7 +365,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-07T08:41:26.900Z",
+            "checkedAt": "2026-08-07T09:07:54.271Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -384,8 +384,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9563,
               "title": "Käytetään `IS DISTINCT FROM` -operaattoria `<>`:n sijaan afterMigrate-skripteissä",
@@ -405,6 +404,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9565,
