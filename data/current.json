@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T09:07:56.576Z",
+  "generatedAt": "2026-08-07T09:12:00.010Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-07T09:07:21.994Z",
+            "checkedAt": "2026-08-07T09:11:28.570Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "71be005cd6ec0bae22ec1f4fae464f2f806c0b49",
-              "shortSha": "71be005",
-              "message": "Merge pull request #9562 from espoon-voltti/fix-staff-attendance-query-invalidation",
-              "date": "2026-08-05T09:19:29Z",
-              "author": "juakiv"
+              "sha": "1e27de7b4058f7fb363494c66fbf34b9fe8d2882",
+              "shortSha": "1e27de7",
+              "message": "Merge pull request #9563 from espoon-voltti/aftermigrate-null-safe-guards",
+              "date": "2026-08-06T09:29:59Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-07T09:07:22.745Z",
+            "checkedAt": "2026-08-07T09:11:30.410Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9561,
               "title": "Espoo: hallinnoidaan palvelualueet ja tukitoimet afterMigrate-skripteillä",
@@ -67,6 +66,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9565,
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-07T09:07:25.545Z",
+            "checkedAt": "2026-08-07T09:11:32.603Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-07T09:07:33.728Z",
+            "checkedAt": "2026-08-07T09:11:41.074Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "88343f51c58b3726d30f2cb23baeabb1f1124406",
@@ -256,7 +256,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-07T09:07:48.664Z",
+            "checkedAt": "2026-08-07T09:11:55.315Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -275,7 +275,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-07T09:07:50.420Z",
+            "checkedAt": "2026-08-07T09:11:56.233Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -294,26 +294,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9563,
-              "title": "Käytetään `IS DISTINCT FROM` -operaattoria `<>`:n sijaan afterMigrate-skripteissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-06T09:30:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9563",
-              "labels": [
-                "tech",
-                "turku",
-                "oulu",
-                "seutu"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -346,7 +327,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-07T09:07:52.685Z",
+            "checkedAt": "2026-08-07T09:11:57.912Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -365,7 +346,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-07T09:07:54.271Z",
+            "checkedAt": "2026-08-07T09:11:58.655Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -384,26 +365,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9563,
-              "title": "Käytetään `IS DISTINCT FROM` -operaattoria `<>`:n sijaan afterMigrate-skripteissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-06T09:30:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9563",
-              "labels": [
-                "tech",
-                "turku",
-                "oulu",
-                "seutu"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
