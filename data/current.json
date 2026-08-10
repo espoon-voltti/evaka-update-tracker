@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T00:48:03.316Z",
+  "generatedAt": "2026-08-10T01:19:41.759Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,10 +10,16 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-10T00:47:00.912Z",
-            "status": "unavailable",
+            "checkedAt": "2026-08-10T01:18:50.951Z",
+            "status": "ok",
             "wrapperCommit": null,
-            "coreCommit": null
+            "coreCommit": {
+              "sha": "1e27de7b4058f7fb363494c66fbf34b9fe8d2882",
+              "shortSha": "1e27de7",
+              "message": "Merge pull request #9563 from espoon-voltti/aftermigrate-null-safe-guards",
+              "date": "2026-08-06T09:29:59Z",
+              "author": "akheron"
+            }
           },
           "versionMismatch": false,
           "mismatchDetails": []
@@ -23,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-10T00:47:07.760Z",
+            "checkedAt": "2026-08-10T01:18:51.589Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -75,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-10T00:47:15.044Z",
+            "checkedAt": "2026-08-10T01:18:58.182Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -100,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-10T00:47:25.224Z",
+            "checkedAt": "2026-08-10T01:19:07.483Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "dd8fa672855f3fce0c84681deb161002306e1551",
@@ -233,7 +239,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-10T00:47:46.393Z",
+            "checkedAt": "2026-08-10T01:19:27.119Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -252,7 +258,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-10T00:47:47.191Z",
+            "checkedAt": "2026-08-10T01:19:27.885Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -304,7 +310,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-10T00:47:54.107Z",
+            "checkedAt": "2026-08-10T01:19:34.400Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -323,7 +329,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-10T00:47:55.261Z",
+            "checkedAt": "2026-08-10T01:19:35.101Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
