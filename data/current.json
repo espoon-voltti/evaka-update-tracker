@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T09:33:31.913Z",
+  "generatedAt": "2026-08-12T09:44:39.736Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-12T09:32:41.995Z",
+            "checkedAt": "2026-08-12T09:43:14.832Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d986ead31895242dfaa9b90c1a67b43c2e6866d0",
-              "shortSha": "d986ead",
-              "message": "Merge pull request #9587 from espoon-voltti/renovate/uv-0.x",
-              "date": "2026-08-10T07:35:34Z",
-              "author": "juakiv"
+              "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
+              "shortSha": "dcd4965",
+              "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
+              "date": "2026-08-11T10:58:55Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-12T09:32:42.667Z",
+            "checkedAt": "2026-08-12T09:43:18.227Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,32 +63,204 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-12T09:32:45.781Z",
+            "checkedAt": "2026-08-12T09:43:21.674Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "25726708be52916a13efc996fce8d432ce43b859",
-              "shortSha": "2572670",
-              "message": "Fix e2e test",
-              "date": "2026-08-04T06:37:08Z",
-              "author": "akheron"
+              "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
+              "shortSha": "c9461d1",
+              "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
+              "date": "2026-08-11T21:12:17Z",
+              "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-              "shortSha": "7427da6",
-              "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
-              "date": "2026-08-03T12:20:45Z",
-              "author": "juakiv"
+              "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
+              "shortSha": "dcd4965",
+              "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
+              "date": "2026-08-11T10:58:55Z",
+              "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-08-12T09:43:21.674Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
+                "shortSha": "c9461d1",
+                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
+                "date": "2026-08-11T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
+                "shortSha": "dcd4965",
+                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
+                "date": "2026-08-11T10:58:55Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-08-12T09:43:23.222Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-08-12T09:43:24.431Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-08-12T09:43:25.727Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-08-12T09:43:26.943Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-08-12T09:43:28.081Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-08-12T09:43:29.224Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-08-12T09:43:30.508Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-08-12T09:43:31.720Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "25726708be52916a13efc996fce8d432ce43b859",
+                "shortSha": "2572670",
+                "message": "Fix e2e test",
+                "date": "2026-08-04T06:37:08Z",
+                "author": "akheron"
+              },
+              "coreCommit": {
+                "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
+                "shortSha": "7427da6",
+                "message": "Merge pull request #9437 from espoon-voltti/turku-decision-text-changes",
+                "date": "2026-08-03T12:20:45Z",
+                "author": "juakiv"
+              }
+            }
+          ]
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-12T09:32:54.959Z",
+            "checkedAt": "2026-08-12T09:43:54.903Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -118,8 +290,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9565,
               "title": "Korjataan lasten sisään/uloskirjaus mobiilissa riittävän vanhoilla selaimilla",
@@ -171,42 +342,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9558,
-              "title": "Vanhojen mockNow- ja mockToday-funktioiden poisto",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T07:04:06Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9558",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9560,
-              "title": "Lisätään yleistuki vaihtoehdoksi tuloselvityksiin",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T05:39:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9560",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -220,15 +358,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-12T09:33:23.775Z",
+            "checkedAt": "2026-08-12T09:44:26.506Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d986ead31895242dfaa9b90c1a67b43c2e6866d0",
-              "shortSha": "d986ead",
-              "message": "Merge pull request #9587 from espoon-voltti/renovate/uv-0.x",
-              "date": "2026-08-10T07:35:34Z",
-              "author": "juakiv"
+              "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
+              "shortSha": "dcd4965",
+              "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
+              "date": "2026-08-11T10:58:55Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -239,7 +377,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-12T09:33:24.700Z",
+            "checkedAt": "2026-08-12T09:44:29.867Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -258,8 +396,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9564,
               "title": "Muokattavat perustelut päätöksiin: Turku, Oulu",
@@ -280,6 +417,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -293,15 +431,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-12T09:33:27.832Z",
+            "checkedAt": "2026-08-12T09:44:33.307Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d986ead31895242dfaa9b90c1a67b43c2e6866d0",
-              "shortSha": "d986ead",
-              "message": "Merge pull request #9587 from espoon-voltti/renovate/uv-0.x",
-              "date": "2026-08-10T07:35:34Z",
-              "author": "juakiv"
+              "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
+              "shortSha": "dcd4965",
+              "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
+              "date": "2026-08-11T10:58:55Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -312,7 +450,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-12T09:33:28.991Z",
+            "checkedAt": "2026-08-12T09:44:36.438Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -331,8 +469,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9564,
               "title": "Muokattavat perustelut päätöksiin: Turku, Oulu",
@@ -353,6 +490,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
