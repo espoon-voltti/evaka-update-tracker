@@ -1,6 +1,114 @@
 {
   "events": [
     {
+      "id": "2026-08-12T02:56:43.526Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-08-12T02:56:43.526Z",
+      "previousCommit": {
+        "sha": "d986ead31895242dfaa9b90c1a67b43c2e6866d0",
+        "shortSha": "d986ead",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
+        "shortSha": "dcd4965",
+        "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
+        "date": "2026-08-11T10:58:55Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9607,
+          "title": "Bump brace-expansion from 1.1.16 to 1.1.18 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-11T10:58:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9607",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9608,
+          "title": "Bump body-parser from 2.2.1 to 2.3.0 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-11T10:46:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9608",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9606,
+          "title": "Bump brace-expansion from 1.1.16 to 1.1.18 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-11T10:29:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9606",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9582,
+          "title": "Update dependency com.github.ben-manes.versions to v0.59.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-11T09:01:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9582",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9564,
+          "title": "Muokattavat perustelut päätöksiin: Turku, Oulu",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-08-11T07:12:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9564",
+          "labels": [
+            "enhancement",
+            "turku",
+            "oulu",
+            "citizen",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-11T09:53:48.021Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
