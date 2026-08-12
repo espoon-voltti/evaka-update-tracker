@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T09:44:39.736Z",
+  "generatedAt": "2026-08-12T09:46:41.844Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-12T09:43:14.832Z",
+            "checkedAt": "2026-08-12T09:46:13.256Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-12T09:43:18.227Z",
+            "checkedAt": "2026-08-12T09:46:14.306Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-12T09:43:21.674Z",
+            "checkedAt": "2026-08-12T09:46:15.379Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -84,7 +84,7 @@
           "mismatchDetails": [
             {
               "instanceDomain": "varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-08-12T09:43:21.674Z",
+              "checkedAt": "2026-08-12T09:46:15.379Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -103,7 +103,7 @@
             },
             {
               "instanceDomain": "evaka.hameenkyro.fi",
-              "checkedAt": "2026-08-12T09:43:23.222Z",
+              "checkedAt": "2026-08-12T09:46:16.600Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -122,7 +122,7 @@
             },
             {
               "instanceDomain": "evaka.kangasala.fi",
-              "checkedAt": "2026-08-12T09:43:24.431Z",
+              "checkedAt": "2026-08-12T09:46:17.802Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -141,7 +141,7 @@
             },
             {
               "instanceDomain": "evaka.lempaala.fi",
-              "checkedAt": "2026-08-12T09:43:25.727Z",
+              "checkedAt": "2026-08-12T09:46:19.021Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -160,7 +160,7 @@
             },
             {
               "instanceDomain": "evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-08-12T09:43:26.943Z",
+              "checkedAt": "2026-08-12T09:46:20.187Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -179,7 +179,7 @@
             },
             {
               "instanceDomain": "evaka.orivesi.fi",
-              "checkedAt": "2026-08-12T09:43:28.081Z",
+              "checkedAt": "2026-08-12T09:46:21.405Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -198,7 +198,7 @@
             },
             {
               "instanceDomain": "evaka.pirkkala.fi",
-              "checkedAt": "2026-08-12T09:43:29.224Z",
+              "checkedAt": "2026-08-12T09:46:22.593Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -217,7 +217,7 @@
             },
             {
               "instanceDomain": "evaka.vesilahti.fi",
-              "checkedAt": "2026-08-12T09:43:30.508Z",
+              "checkedAt": "2026-08-12T09:46:23.836Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -236,7 +236,7 @@
             },
             {
               "instanceDomain": "evaka.ylojarvi.fi",
-              "checkedAt": "2026-08-12T09:43:31.720Z",
+              "checkedAt": "2026-08-12T09:46:24.976Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "25726708be52916a13efc996fce8d432ce43b859",
@@ -260,7 +260,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-12T09:43:54.903Z",
+            "checkedAt": "2026-08-12T09:46:26.327Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -290,60 +290,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9565,
-              "title": "Korjataan lasten sisään/uloskirjaus mobiilissa riittävän vanhoilla selaimilla",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-07T04:48:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9565",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9563,
-              "title": "Käytetään `IS DISTINCT FROM` -operaattoria `<>`:n sijaan afterMigrate-skripteissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-06T09:30:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9563",
-              "labels": [
-                "tech",
-                "turku",
-                "oulu",
-                "seutu"
-              ]
-            },
-            {
-              "number": 9562,
-              "title": "Korjataan henkilökunnan läsnäoloeditorin datan päivittyminen",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-05T09:19:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9562",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -358,7 +305,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-12T09:44:26.506Z",
+            "checkedAt": "2026-08-12T09:46:37.670Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -377,7 +324,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-12T09:44:29.867Z",
+            "checkedAt": "2026-08-12T09:46:38.682Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -396,27 +343,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9564,
-              "title": "Muokattavat perustelut päätöksiin: Turku, Oulu",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-11T07:12:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9564",
-              "labels": [
-                "enhancement",
-                "turku",
-                "oulu",
-                "citizen",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -431,7 +358,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-12T09:44:33.307Z",
+            "checkedAt": "2026-08-12T09:46:39.977Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -450,7 +377,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-12T09:44:36.438Z",
+            "checkedAt": "2026-08-12T09:46:40.784Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -469,27 +396,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9564,
-              "title": "Muokattavat perustelut päätöksiin: Turku, Oulu",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-11T07:12:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9564",
-              "labels": [
-                "enhancement",
-                "turku",
-                "oulu",
-                "citizen",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
