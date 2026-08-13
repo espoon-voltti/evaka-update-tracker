@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T10:00:54.276Z",
+  "generatedAt": "2026-08-13T10:26:26.639Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-13T10:00:19.386Z",
+            "checkedAt": "2026-08-13T10:25:38.570Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-13T10:00:20.112Z",
+            "checkedAt": "2026-08-13T10:25:39.414Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -146,7 +146,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-13T10:00:23.698Z",
+            "checkedAt": "2026-08-13T10:25:43.790Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -171,14 +171,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-13T10:00:32.607Z",
+            "checkedAt": "2026-08-13T10:25:56.042Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "e2468a63a25d7a9a8f0c6cfec4ef3bb114827c30",
-              "shortSha": "e2468a6",
-              "message": "Merge pull request #2204 from Tampere/dependabot/npm_and_yarn/e2e/tsx-4.23.11",
-              "date": "2026-08-12T12:48:12Z",
-              "author": "terolaakso-reaktor"
+              "sha": "0a113e1e4c7ad04638611ac36ebf956ea8f2b4b5",
+              "shortSha": "0a113e1",
+              "message": "Merge pull request #2207 from Tampere/enable-decision-reasoning-in-staging",
+              "date": "2026-08-13T10:01:51Z",
+              "author": "Joosakur"
             },
             "coreCommit": {
               "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
@@ -196,7 +196,21 @@
         "wrapper": {
           "repository": "Tampere/trevaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 2207,
+              "title": "enable decision reasoning in test envs",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T10:01:52Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2207",
+              "labels": []
+            }
+          ],
           "pendingDeployment": []
         },
         "core": {
@@ -317,7 +331,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-13T10:00:46.336Z",
+            "checkedAt": "2026-08-13T10:26:16.342Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -336,7 +350,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-13T10:00:47.006Z",
+            "checkedAt": "2026-08-13T10:26:17.438Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -453,7 +467,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-13T10:00:50.410Z",
+            "checkedAt": "2026-08-13T10:26:21.416Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -472,7 +486,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-13T10:00:51.083Z",
+            "checkedAt": "2026-08-13T10:26:22.559Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
