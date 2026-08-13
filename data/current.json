@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T06:20:05.629Z",
+  "generatedAt": "2026-08-13T06:53:54.119Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-13T06:19:38.828Z",
+            "checkedAt": "2026-08-13T06:53:18.120Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-13T06:19:40.286Z",
+            "checkedAt": "2026-08-13T06:53:19.077Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,22 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9609,
+              "title": "Ei käytetä `--force` flagia tsc:lle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-13T06:22:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9609",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9610,
               "title": "Korjataan oikaisulaskujen luonti ottamaan huomioon oikeat hyvitys/korotusrivit",
@@ -81,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-13T06:19:41.757Z",
+            "checkedAt": "2026-08-13T06:53:21.965Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -106,7 +122,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-13T06:19:50.449Z",
+            "checkedAt": "2026-08-13T06:53:31.969Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e2468a63a25d7a9a8f0c6cfec4ef3bb114827c30",
@@ -140,6 +156,57 @@
           "inStaging": [],
           "pendingDeployment": [
             {
+              "number": 9613,
+              "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T06:53:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9613",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9566,
+              "title": "Muokattavat perustelut päätöksiin: Tampere+seutu",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T06:52:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9566",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "citizen",
+                "employee"
+              ]
+            },
+            {
+              "number": 9609,
+              "title": "Ei käytetä `--force` flagia tsc:lle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-13T06:22:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9609",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
               "number": 9610,
               "title": "Korjataan oikaisulaskujen luonti ottamaan huomioon oikeat hyvitys/korotusrivit",
               "author": "akheron",
@@ -169,7 +236,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-13T06:20:01.515Z",
+            "checkedAt": "2026-08-13T06:53:46.663Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -188,7 +255,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-13T06:20:02.209Z",
+            "checkedAt": "2026-08-13T06:53:48.165Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -210,6 +277,39 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9613,
+              "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T06:53:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9613",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9609,
+              "title": "Ei käytetä `--force` flagia tsc:lle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-13T06:22:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9609",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9610,
               "title": "Korjataan oikaisulaskujen luonti ottamaan huomioon oikeat hyvitys/korotusrivit",
@@ -240,7 +340,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-13T06:20:03.593Z",
+            "checkedAt": "2026-08-13T06:53:50.784Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -259,7 +359,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-13T06:20:04.394Z",
+            "checkedAt": "2026-08-13T06:53:51.572Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -281,6 +381,39 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9613,
+              "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T06:53:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9613",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9609,
+              "title": "Ei käytetä `--force` flagia tsc:lle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-13T06:22:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9609",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9610,
               "title": "Korjataan oikaisulaskujen luonti ottamaan huomioon oikeat hyvitys/korotusrivit",
