@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T06:53:54.119Z",
+  "generatedAt": "2026-08-13T07:27:48.210Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-13T06:53:18.120Z",
+            "checkedAt": "2026-08-13T07:27:13.408Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-13T06:53:19.077Z",
+            "checkedAt": "2026-08-13T07:27:14.220Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,55 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9611,
+              "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-08-13T07:07:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9611",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9612,
+              "title": "Lokaalin kehitystietokannan alustuksen korjaus",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-08-13T06:58:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9612",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9613,
+              "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T06:53:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9613",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9609,
               "title": "Ei käytetä `--force` flagia tsc:lle",
@@ -97,7 +146,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-13T06:53:21.965Z",
+            "checkedAt": "2026-08-13T07:27:17.713Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -122,7 +171,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-13T06:53:31.969Z",
+            "checkedAt": "2026-08-13T07:27:26.587Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "e2468a63a25d7a9a8f0c6cfec4ef3bb114827c30",
@@ -155,6 +204,38 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9611,
+              "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-08-13T07:07:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9611",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9612,
+              "title": "Lokaalin kehitystietokannan alustuksen korjaus",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-08-13T06:58:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9612",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9613,
               "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
@@ -236,7 +317,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-13T06:53:46.663Z",
+            "checkedAt": "2026-08-13T07:27:40.234Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -255,7 +336,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-13T06:53:48.165Z",
+            "checkedAt": "2026-08-13T07:27:41.152Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -277,6 +358,38 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9611,
+              "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-08-13T07:07:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9611",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9612,
+              "title": "Lokaalin kehitystietokannan alustuksen korjaus",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-08-13T06:58:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9612",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9613,
               "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
@@ -340,7 +453,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-13T06:53:50.784Z",
+            "checkedAt": "2026-08-13T07:27:44.301Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -359,7 +472,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-13T06:53:51.572Z",
+            "checkedAt": "2026-08-13T07:27:44.948Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -381,6 +494,38 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9611,
+              "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-08-13T07:07:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9611",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9612,
+              "title": "Lokaalin kehitystietokannan alustuksen korjaus",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-08-13T06:58:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9612",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9613,
               "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
