@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T10:32:14.992Z",
+  "generatedAt": "2026-08-14T10:54:59.882Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-14T10:31:24.902Z",
+            "checkedAt": "2026-08-14T10:53:58.389Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-14T10:31:25.929Z",
+            "checkedAt": "2026-08-14T10:53:59.238Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -197,7 +197,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-14T10:31:31.985Z",
+            "checkedAt": "2026-08-14T10:54:06.067Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -222,7 +222,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-14T10:31:43.142Z",
+            "checkedAt": "2026-08-14T10:54:18.305Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "be3bf0846350f5ec8f9502352d9320660d333bf5",
@@ -416,15 +416,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-14T10:32:02.862Z",
+            "checkedAt": "2026-08-14T10:54:40.723Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-              "shortSha": "dcd4965",
-              "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-              "date": "2026-08-11T10:58:55Z",
-              "author": "akheron"
+              "sha": "2bf21f99b0bd80a45f1b7c6bc36998376e6fbbf5",
+              "shortSha": "2bf21f9",
+              "message": "Merge pull request #9611 from espoon-voltti/vtj-relative-hydration-contract",
+              "date": "2026-08-13T07:07:43Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -435,7 +435,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-14T10:32:03.817Z",
+            "checkedAt": "2026-08-14T10:54:45.046Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -454,8 +454,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9611,
               "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
@@ -520,25 +519,9 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 9610,
-              "title": "Korjataan oikaisulaskujen luonti ottamaan huomioon oikeat hyvitys/korotusrivit",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-13T06:11:14Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9610",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9618,
@@ -586,15 +569,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-14T10:32:09.064Z",
+            "checkedAt": "2026-08-14T10:54:50.537Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-              "shortSha": "dcd4965",
-              "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-              "date": "2026-08-11T10:58:55Z",
-              "author": "akheron"
+              "sha": "2bf21f99b0bd80a45f1b7c6bc36998376e6fbbf5",
+              "shortSha": "2bf21f9",
+              "message": "Merge pull request #9611 from espoon-voltti/vtj-relative-hydration-contract",
+              "date": "2026-08-13T07:07:43Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -605,7 +588,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-14T10:32:09.878Z",
+            "checkedAt": "2026-08-14T10:54:54.417Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -624,8 +607,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9611,
               "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
@@ -690,25 +672,9 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 9610,
-              "title": "Korjataan oikaisulaskujen luonti ottamaan huomioon oikeat hyvitys/korotusrivit",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-13T06:11:14Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9610",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9618,
