@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T04:18:01.868Z",
+  "generatedAt": "2026-08-14T04:57:56.721Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-14T04:17:14.995Z",
+            "checkedAt": "2026-08-14T04:57:19.705Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-14T04:17:15.904Z",
+            "checkedAt": "2026-08-14T04:57:20.342Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -146,7 +146,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-14T04:17:20.235Z",
+            "checkedAt": "2026-08-14T04:57:23.984Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -171,21 +171,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-14T04:17:32.688Z",
+            "checkedAt": "2026-08-14T04:57:31.649Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "0a113e1e4c7ad04638611ac36ebf956ea8f2b4b5",
-              "shortSha": "0a113e1",
-              "message": "Merge pull request #2207 from Tampere/enable-decision-reasoning-in-staging",
-              "date": "2026-08-13T10:01:51Z",
-              "author": "Joosakur"
+              "sha": "be3bf0846350f5ec8f9502352d9320660d333bf5",
+              "shortSha": "be3bf08",
+              "message": "Merge pull request #2208 from Tampere/dependabot/submodules/evaka-2bf21f9",
+              "date": "2026-08-13T21:10:34Z",
+              "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-              "shortSha": "dcd4965",
-              "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-              "date": "2026-08-11T10:58:55Z",
-              "author": "akheron"
+              "sha": "2bf21f99b0bd80a45f1b7c6bc36998376e6fbbf5",
+              "shortSha": "2bf21f9",
+              "message": "Merge pull request #9611 from espoon-voltti/vtj-relative-hydration-contract",
+              "date": "2026-08-13T07:07:43Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -216,8 +216,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9611,
               "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
@@ -318,7 +317,8 @@
                 "not-visible"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -331,7 +331,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-14T04:17:51.977Z",
+            "checkedAt": "2026-08-14T04:57:49.263Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -350,7 +350,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-14T04:17:52.921Z",
+            "checkedAt": "2026-08-14T04:57:49.963Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -467,7 +467,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-14T04:17:56.994Z",
+            "checkedAt": "2026-08-14T04:57:52.948Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -486,7 +486,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-14T04:17:57.833Z",
+            "checkedAt": "2026-08-14T04:57:53.535Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
