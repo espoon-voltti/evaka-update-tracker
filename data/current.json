@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T15:06:07.617Z",
+  "generatedAt": "2026-08-17T15:15:13.212Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-17T15:02:17.245Z",
+            "checkedAt": "2026-08-17T15:12:30.686Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-17T15:02:21.703Z",
+            "checkedAt": "2026-08-17T15:12:32.450Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-17T15:02:47.014Z",
+            "checkedAt": "2026-08-17T15:12:45.033Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-17T15:03:23.924Z",
+            "checkedAt": "2026-08-17T15:13:21.282Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
@@ -113,22 +113,22 @@
         "wrapper": {
           "repository": "Tampere/trevaka",
           "deployed": [],
-          "inStaging": [
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 2207,
-              "title": "enable decision reasoning in test envs",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-13T10:01:52Z",
+              "number": 2187,
+              "title": "Enable new browser login email in prod + staging",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-08-17T06:46:09Z",
               "repository": "Tampere/trevaka",
               "repoType": "wrapper",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2207",
+              "url": "https://github.com/Tampere/trevaka/pull/2187",
               "labels": []
             }
-          ],
-          "pendingDeployment": []
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -147,7 +147,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-17T15:05:32.556Z",
+            "checkedAt": "2026-08-17T15:14:39.549Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -166,7 +166,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-17T15:05:34.433Z",
+            "checkedAt": "2026-08-17T15:14:41.510Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -200,7 +200,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-17T15:05:48.987Z",
+            "checkedAt": "2026-08-17T15:14:58.643Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -219,7 +219,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-17T15:05:50.761Z",
+            "checkedAt": "2026-08-17T15:15:00.392Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
