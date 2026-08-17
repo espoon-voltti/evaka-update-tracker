@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T02:23:56.815Z",
+  "generatedAt": "2026-08-17T02:33:35.043Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-17T02:22:43.795Z",
+            "checkedAt": "2026-08-17T02:32:08.799Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-17T02:22:44.688Z",
+            "checkedAt": "2026-08-17T02:32:09.638Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2bf21f99b0bd80a45f1b7c6bc36998376e6fbbf5",
-              "shortSha": "2bf21f9",
-              "message": "Merge pull request #9611 from espoon-voltti/vtj-relative-hydration-contract",
-              "date": "2026-08-13T07:07:43Z",
-              "author": "tomuli"
+              "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+              "shortSha": "fb894a1",
+              "message": "Update dependency styled-components to v6.5.2 (#9651)",
+              "date": "2026-08-16T18:24:06Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9614,
               "title": "Espoo: tukitoimien nimien päivitys",
@@ -101,7 +100,8 @@
                 "employee"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -114,7 +114,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-17T02:22:55.660Z",
+            "checkedAt": "2026-08-17T02:32:32.110Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -139,7 +139,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-17T02:23:07.562Z",
+            "checkedAt": "2026-08-17T02:32:44.308Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "be3bf0846350f5ec8f9502352d9320660d333bf5",
@@ -333,7 +333,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-17T02:23:35.078Z",
+            "checkedAt": "2026-08-17T02:33:12.729Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -352,7 +352,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-17T02:23:36.028Z",
+            "checkedAt": "2026-08-17T02:33:13.725Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -420,7 +420,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-17T02:23:45.967Z",
+            "checkedAt": "2026-08-17T02:33:24.166Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -439,7 +439,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-17T02:23:46.758Z",
+            "checkedAt": "2026-08-17T02:33:25.124Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
