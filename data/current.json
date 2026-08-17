@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T13:46:41.104Z",
+  "generatedAt": "2026-08-17T14:03:51.046Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-17T13:43:43.179Z",
+            "checkedAt": "2026-08-17T13:59:12.783Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-17T13:43:44.831Z",
+            "checkedAt": "2026-08-17T13:59:14.445Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-17T13:44:09.655Z",
+            "checkedAt": "2026-08-17T13:59:32.301Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-17T13:44:45.201Z",
+            "checkedAt": "2026-08-17T14:00:08.354Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
@@ -119,7 +119,141 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9618,
+              "title": "Tietoturvapäivityksiä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-14T09:21:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9618",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9604,
+              "title": "Lisätään huoltajan nimi läsnä- ja poissaolomerkintöihin yksikön kalenteriin",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-08-14T07:33:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9604",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9611,
+              "title": "Testataan ettei VTJ-päivitys tyhjennä huollettavien tietoja",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-08-13T07:07:43Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9611",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9612,
+              "title": "Lokaalin kehitystietokannan alustuksen korjaus",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-08-13T06:58:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9612",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9613,
+              "title": "Lapsen syntymävuosi Lasten tuen tarpeet ja tukitoimet -raporttiin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T06:53:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9613",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9566,
+              "title": "Muokattavat perustelut päätöksiin: Tampere+seutu",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-13T06:52:19Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9566",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "citizen",
+                "employee"
+              ]
+            },
+            {
+              "number": 9609,
+              "title": "Ei käytetä `--force` flagia tsc:lle",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-13T06:22:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9609",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9610,
+              "title": "Korjataan oikaisulaskujen luonti ottamaan huomioon oikeat hyvitys/korotusrivit",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-13T06:11:14Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9610",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -133,7 +267,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-17T13:46:11.081Z",
+            "checkedAt": "2026-08-17T14:02:44.358Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -152,7 +286,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-17T13:46:12.714Z",
+            "checkedAt": "2026-08-17T14:02:46.745Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -186,7 +320,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-17T13:46:25.965Z",
+            "checkedAt": "2026-08-17T14:03:02.120Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -205,7 +339,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-17T13:46:28.651Z",
+            "checkedAt": "2026-08-17T14:03:21.370Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
