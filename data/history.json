@@ -1,6 +1,762 @@
 {
   "events": [
     {
+      "id": "2026-08-17T04:13:39.487Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-08-17T04:13:39.487Z",
+      "previousCommit": {
+        "sha": "2bf21f99b0bd80a45f1b7c6bc36998376e6fbbf5",
+        "shortSha": "2bf21f9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+        "shortSha": "fb894a1",
+        "message": "Update dependency styled-components to v6.5.2 (#9651)",
+        "date": "2026-08-16T18:24:06Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9651,
+          "title": "Update dependency styled-components to v6.5.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-16T18:24:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9651",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9650,
+          "title": "Update dependency redis to v6.2.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-16T13:55:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9650",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9649,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.51.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T22:34:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9649",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9647,
+          "title": "Update dependency oxlint to v1.78.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T13:13:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9647",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9645,
+          "title": "Update dependency tsx to v4.23.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T06:48:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9645",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9641,
+          "title": "Update dependency @testing-library/jest-dom to v7.0.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T02:17:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9641",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9630,
+          "title": "Update dependency styled-components to v6.5.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T02:16:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9630",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9633,
+          "title": "Update dependency uv to v0.12.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9633",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9634,
+          "title": "Update dependency vite to v8.2.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:51Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9634",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9628,
+          "title": "Update dependency postcss to v8.5.26",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9628",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9632,
+          "title": "Update dependency tsx to v4.23.11",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9632",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9631,
+          "title": "Update dependency terser to v5.49.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:09:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9631",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9626,
+          "title": "Update dependency org.checkerframework:checker-qual to v4.2.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:09:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9626",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9627,
+          "title": "Update dependency org.junit:junit-bom to v6.1.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:08:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9627",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9624,
+          "title": "Update dependency org.apache.httpcomponents.client5:httpclient5 to v5.6.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:08:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9624",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9622,
+          "title": "Update dependency @vitejs/plugin-legacy to v8.2.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:08:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9622",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9629,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.51.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:07:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9629",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9623,
+          "title": "Update dependency io.netty:netty-bom to v4.2.17.Final",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:06:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9623",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9620,
+          "title": "Päivitetään s3-downloader versioon v1.5.2",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-08-14T11:18:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9620",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 9614,
+          "title": "Espoo: tukitoimien nimien päivitys",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-08-14T10:01:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9614",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "employee"
+          ]
+        },
+        {
+          "number": 9618,
+          "title": "Tietoturvapäivityksiä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-08-14T09:21:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9618",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9604,
+          "title": "Lisätään huoltajan nimi läsnä- ja poissaolomerkintöihin yksikön kalenteriin",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-14T07:33:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9604",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-08-17T04:13:58.074Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-08-17T04:13:58.074Z",
+      "previousCommit": {
+        "sha": "2bf21f99b0bd80a45f1b7c6bc36998376e6fbbf5",
+        "shortSha": "2bf21f9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+        "shortSha": "fb894a1",
+        "message": "Update dependency styled-components to v6.5.2 (#9651)",
+        "date": "2026-08-16T18:24:06Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9651,
+          "title": "Update dependency styled-components to v6.5.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-16T18:24:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9651",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9650,
+          "title": "Update dependency redis to v6.2.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-16T13:55:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9650",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9649,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.51.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T22:34:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9649",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9647,
+          "title": "Update dependency oxlint to v1.78.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T13:13:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9647",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9645,
+          "title": "Update dependency tsx to v4.23.12",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T06:48:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9645",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9641,
+          "title": "Update dependency @testing-library/jest-dom to v7.0.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T02:17:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9641",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9630,
+          "title": "Update dependency styled-components to v6.5.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-15T02:16:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9630",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9633,
+          "title": "Update dependency uv to v0.12.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9633",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9634,
+          "title": "Update dependency vite to v8.2.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:51Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9634",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9628,
+          "title": "Update dependency postcss to v8.5.26",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9628",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9632,
+          "title": "Update dependency tsx to v4.23.11",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:10:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9632",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9631,
+          "title": "Update dependency terser to v5.49.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:09:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9631",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9626,
+          "title": "Update dependency org.checkerframework:checker-qual to v4.2.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:09:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9626",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9627,
+          "title": "Update dependency org.junit:junit-bom to v6.1.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:08:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9627",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9624,
+          "title": "Update dependency org.apache.httpcomponents.client5:httpclient5 to v5.6.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:08:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9624",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9622,
+          "title": "Update dependency @vitejs/plugin-legacy to v8.2.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:08:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9622",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9629,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.51.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:07:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9629",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9623,
+          "title": "Update dependency io.netty:netty-bom to v4.2.17.Final",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-14T22:06:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9623",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9620,
+          "title": "Päivitetään s3-downloader versioon v1.5.2",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-08-14T11:18:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9620",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 9614,
+          "title": "Espoo: tukitoimien nimien päivitys",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-08-14T10:01:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9614",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "employee"
+          ]
+        },
+        {
+          "number": 9618,
+          "title": "Tietoturvapäivityksiä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-08-14T09:21:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9618",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9604,
+          "title": "Lisätään huoltajan nimi läsnä- ja poissaolomerkintöihin yksikön kalenteriin",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-14T07:33:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9604",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-17T02:32:22.527Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
