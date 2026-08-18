@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T04:20:41.820Z",
+  "generatedAt": "2026-08-18T04:37:25.846Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-18T04:19:40.838Z",
+            "checkedAt": "2026-08-18T04:36:05.657Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-18T04:19:41.776Z",
+            "checkedAt": "2026-08-18T04:36:06.510Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-18T04:19:47.890Z",
+            "checkedAt": "2026-08-18T04:36:13.947Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
@@ -88,25 +88,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-18T04:19:58.101Z",
+            "checkedAt": "2026-08-18T04:36:27.201Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
-              "shortSha": "239717c",
-              "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
-              "date": "2026-08-16T21:12:08Z",
+              "sha": "20640e443e6888d7820dd78cce47b4d4caf97dc1",
+              "shortSha": "20640e4",
+              "message": "Merge pull request #2210 from Tampere/dependabot/submodules/evaka-3817bcb",
+              "date": "2026-08-17T21:12:59Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
-              "shortSha": "fb894a1",
-              "message": "Update dependency styled-components to v6.5.2 (#9651)",
-              "date": "2026-08-16T18:24:06Z",
-              "author": "renovate[bot]"
+              "sha": "3817bcb54f459e44a6042f20d2dff1fc6d696edd",
+              "shortSha": "3817bcb",
+              "message": "Merge pull request #9601 from espoon-voltti/renovate/ktfmt",
+              "date": "2026-08-17T06:51:20Z",
+              "author": "juakiv"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-08-18T04:36:27.201Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "20640e443e6888d7820dd78cce47b4d4caf97dc1",
+                "shortSha": "20640e4",
+                "message": "Merge pull request #2210 from Tampere/dependabot/submodules/evaka-3817bcb",
+                "date": "2026-08-17T21:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3817bcb54f459e44a6042f20d2dff1fc6d696edd",
+                "shortSha": "3817bcb",
+                "message": "Merge pull request #9601 from espoon-voltti/renovate/ktfmt",
+                "date": "2026-08-17T06:51:20Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-08-18T04:36:28.652Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
+                "shortSha": "239717c",
+                "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
+                "date": "2026-08-16T21:12:08Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+                "shortSha": "fb894a1",
+                "message": "Update dependency styled-components to v6.5.2 (#9651)",
+                "date": "2026-08-16T18:24:06Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-08-18T04:36:29.940Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
+                "shortSha": "239717c",
+                "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
+                "date": "2026-08-16T21:12:08Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+                "shortSha": "fb894a1",
+                "message": "Update dependency styled-components to v6.5.2 (#9651)",
+                "date": "2026-08-16T18:24:06Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-08-18T04:36:31.377Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
+                "shortSha": "239717c",
+                "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
+                "date": "2026-08-16T21:12:08Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+                "shortSha": "fb894a1",
+                "message": "Update dependency styled-components to v6.5.2 (#9651)",
+                "date": "2026-08-16T18:24:06Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-08-18T04:36:32.624Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
+                "shortSha": "239717c",
+                "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
+                "date": "2026-08-16T21:12:08Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+                "shortSha": "fb894a1",
+                "message": "Update dependency styled-components to v6.5.2 (#9651)",
+                "date": "2026-08-16T18:24:06Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-08-18T04:36:33.934Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "20640e443e6888d7820dd78cce47b4d4caf97dc1",
+                "shortSha": "20640e4",
+                "message": "Merge pull request #2210 from Tampere/dependabot/submodules/evaka-3817bcb",
+                "date": "2026-08-17T21:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3817bcb54f459e44a6042f20d2dff1fc6d696edd",
+                "shortSha": "3817bcb",
+                "message": "Merge pull request #9601 from espoon-voltti/renovate/ktfmt",
+                "date": "2026-08-17T06:51:20Z",
+                "author": "juakiv"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-08-18T04:36:35.315Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
+                "shortSha": "239717c",
+                "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
+                "date": "2026-08-16T21:12:08Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+                "shortSha": "fb894a1",
+                "message": "Update dependency styled-components to v6.5.2 (#9651)",
+                "date": "2026-08-16T18:24:06Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-08-18T04:36:36.716Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
+                "shortSha": "239717c",
+                "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
+                "date": "2026-08-16T21:12:08Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+                "shortSha": "fb894a1",
+                "message": "Update dependency styled-components to v6.5.2 (#9651)",
+                "date": "2026-08-16T18:24:06Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-08-18T04:36:38.041Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "239717c843ed03abe60d0075a98581c3e54e17b7",
+                "shortSha": "239717c",
+                "message": "Merge pull request #2209 from Tampere/dependabot/submodules/evaka-fb894a1",
+                "date": "2026-08-16T21:12:08Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+                "shortSha": "fb894a1",
+                "message": "Update dependency styled-components to v6.5.2 (#9651)",
+                "date": "2026-08-16T18:24:06Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -114,6 +286,19 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 2187,
+              "title": "Enable new browser login email in prod + staging",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-08-17T06:46:09Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2187",
+              "labels": []
+            },
             {
               "number": 2207,
               "title": "enable decision reasoning in test envs",
@@ -128,21 +313,7 @@
               "labels": []
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 2187,
-              "title": "Enable new browser login email in prod + staging",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-17T06:46:09Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2187",
-              "labels": []
-            }
-          ]
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -295,7 +466,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-18T04:20:28.928Z",
+            "checkedAt": "2026-08-18T04:37:10.518Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -314,7 +485,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-18T04:20:29.793Z",
+            "checkedAt": "2026-08-18T04:37:11.592Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -348,7 +519,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-18T04:20:35.463Z",
+            "checkedAt": "2026-08-18T04:37:18.376Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -367,7 +538,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-18T04:20:36.264Z",
+            "checkedAt": "2026-08-18T04:37:19.450Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
