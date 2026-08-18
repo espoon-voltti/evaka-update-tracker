@@ -1,6 +1,444 @@
 {
   "events": [
     {
+      "id": "2026-08-18T04:13:02.235Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-08-18T04:13:02.235Z",
+      "previousCommit": {
+        "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+        "shortSha": "fb894a1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3817bcb54f459e44a6042f20d2dff1fc6d696edd",
+        "shortSha": "3817bcb",
+        "message": "Merge pull request #9601 from espoon-voltti/renovate/ktfmt",
+        "date": "2026-08-17T06:51:20Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9601,
+          "title": "Update dependency com.ncorti.ktfmt.gradle to v0.27.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T06:51:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9601",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9646,
+          "title": "Update dependency oxfmt to v0.63.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T05:00:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9646",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9637,
+          "title": "Update dependency dd-trace to v6.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:42:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9637",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9648,
+          "title": "Update sentry-javascript monorepo to v10.70.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:35:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9648",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9644,
+          "title": "Update Node.js to v24.19.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:34:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9644",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9643,
+          "title": "Update Gradle to v9.7.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:34:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9643",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9642,
+          "title": "Update flyway to v13.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:33:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9642",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9640,
+          "title": "Update dependency query-string to v9.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:33:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9640",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9639,
+          "title": "Update dependency org.apache.logging.log4j:log4j-api to v2.26.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:33:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9639",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9638,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.65.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:32:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9638",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9636,
+          "title": "Update dependency com.github.ben-manes.versions to v0.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:31:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9636",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9635,
+          "title": "Update dependency com.datadoghq:dd-java-agent to v1.65.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:30:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9635",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-08-18T04:13:13.217Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-08-18T04:13:13.217Z",
+      "previousCommit": {
+        "sha": "fb894a1beef87f4222a821a25005789cfe9cb98b",
+        "shortSha": "fb894a1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3817bcb54f459e44a6042f20d2dff1fc6d696edd",
+        "shortSha": "3817bcb",
+        "message": "Merge pull request #9601 from espoon-voltti/renovate/ktfmt",
+        "date": "2026-08-17T06:51:20Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9601,
+          "title": "Update dependency com.ncorti.ktfmt.gradle to v0.27.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T06:51:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9601",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9646,
+          "title": "Update dependency oxfmt to v0.63.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T05:00:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9646",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9637,
+          "title": "Update dependency dd-trace to v6.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:42:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9637",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9648,
+          "title": "Update sentry-javascript monorepo to v10.70.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:35:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9648",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9644,
+          "title": "Update Node.js to v24.19.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:34:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9644",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9643,
+          "title": "Update Gradle to v9.7.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:34:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9643",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9642,
+          "title": "Update flyway to v13.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:33:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9642",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9640,
+          "title": "Update dependency query-string to v9.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:33:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9640",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9639,
+          "title": "Update dependency org.apache.logging.log4j:log4j-api to v2.26.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:33:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9639",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9638,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.65.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:32:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9638",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9636,
+          "title": "Update dependency com.github.ben-manes.versions to v0.61.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:31:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9636",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9635,
+          "title": "Update dependency com.datadoghq:dd-java-agent to v1.65.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-17T04:30:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9635",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-18T02:31:33.812Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
