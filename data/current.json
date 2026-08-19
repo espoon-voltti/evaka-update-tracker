@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T09:45:16.633Z",
+  "generatedAt": "2026-08-19T09:47:28.301Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-19T09:43:46.232Z",
+            "checkedAt": "2026-08-19T09:46:51.575Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-19T09:43:49.915Z",
+            "checkedAt": "2026-08-19T09:46:52.415Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,76 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9523,
-              "title": "Vanhentuneiden tiedotteiden ja viestiluonnosten poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-08-18T13:18:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9523",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9653,
-              "title": "Korjataan päiväkirjan henkilökunnan määrärivin näkyvyys",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-08-18T12:11:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9653",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9655,
-              "title": "Tekstimuokkaus Espoon esiopetushakemukselle",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-08-18T12:04:54Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9655",
-              "labels": [
-                "enhancement",
-                "espoo",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9621,
-              "title": "Saavutettavuusselosteen päivitykset",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-18T11:45:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9621",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -166,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-19T09:43:54.402Z",
+            "checkedAt": "2026-08-19T09:46:54.628Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -183,187 +114,15 @@
               "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-08-19T09:43:54.402Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
-                "shortSha": "f036619",
-                "message": "Merge pull request #2211 from Tampere/dependabot/submodules/evaka-8a0350d",
-                "date": "2026-08-18T21:10:41Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "8a0350d2c9e7d56e2ebd301ae0e462be2e9041b5",
-                "shortSha": "8a0350d",
-                "message": "Merge pull request #9523 from espoon-voltti/bulletin-removal",
-                "date": "2026-08-18T13:18:59Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "evaka.hameenkyro.fi",
-              "checkedAt": "2026-08-19T09:43:55.622Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.kangasala.fi",
-              "checkedAt": "2026-08-19T09:43:56.841Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.lempaala.fi",
-              "checkedAt": "2026-08-19T09:43:57.905Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-08-19T09:43:58.912Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.orivesi.fi",
-              "checkedAt": "2026-08-19T09:44:00.014Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.pirkkala.fi",
-              "checkedAt": "2026-08-19T09:44:01.155Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.vesilahti.fi",
-              "checkedAt": "2026-08-19T09:44:02.269Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "evaka.ylojarvi.fi",
-              "checkedAt": "2026-08-19T09:44:03.325Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c9461d104b2a0bb4c5a9a72b4a653995e78ef86e",
-                "shortSha": "c9461d1",
-                "message": "Merge pull request #2205 from Tampere/dependabot/submodules/evaka-dcd4965",
-                "date": "2026-08-11T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "dcd49654fb5cd960b56b2c1523cfa4941e2f46f4",
-                "shortSha": "dcd4965",
-                "message": "Merge pull request #9607 from espoon-voltti/dependabot/npm_and_yarn/apigw/brace-expansion-1.1.18",
-                "date": "2026-08-11T10:58:55Z",
-                "author": "akheron"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-19T09:44:27.569Z",
+            "checkedAt": "2026-08-19T09:47:07.397Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -387,92 +146,13 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [
-            {
-              "number": 2187,
-              "title": "Enable new browser login email in prod + staging",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-17T06:46:09Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2187",
-              "labels": []
-            },
-            {
-              "number": 2207,
-              "title": "enable decision reasoning in test envs",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-13T10:01:52Z",
-              "repository": "Tampere/trevaka",
-              "repoType": "wrapper",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/Tampere/trevaka/pull/2207",
-              "labels": []
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9523,
-              "title": "Vanhentuneiden tiedotteiden ja viestiluonnosten poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-08-18T13:18:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9523",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9653,
-              "title": "Korjataan päiväkirjan henkilökunnan määrärivin näkyvyys",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-08-18T12:11:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9653",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9621,
-              "title": "Saavutettavuusselosteen päivitykset",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-18T11:45:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9621",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -521,7 +201,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-19T09:45:00.923Z",
+            "checkedAt": "2026-08-19T09:47:21.884Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -540,7 +220,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-19T09:45:04.052Z",
+            "checkedAt": "2026-08-19T09:47:22.886Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -559,76 +239,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9523,
-              "title": "Vanhentuneiden tiedotteiden ja viestiluonnosten poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-08-18T13:18:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9523",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9653,
-              "title": "Korjataan päiväkirjan henkilökunnan määrärivin näkyvyys",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-08-18T12:11:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9653",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9652,
-              "title": "Päätösmuokkauksia - oikaisuvaatimusten muotoilu",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-08-18T12:07:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9652",
-              "labels": [
-                "enhancement",
-                "oulu",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9621,
-              "title": "Saavutettavuusselosteen päivitykset",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-18T11:45:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9621",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -677,7 +288,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-19T09:45:09.196Z",
+            "checkedAt": "2026-08-19T09:47:25.195Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -696,7 +307,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-19T09:45:12.430Z",
+            "checkedAt": "2026-08-19T09:47:26.163Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -715,59 +326,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9523,
-              "title": "Vanhentuneiden tiedotteiden ja viestiluonnosten poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-08-18T13:18:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9523",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9653,
-              "title": "Korjataan päiväkirjan henkilökunnan määrärivin näkyvyys",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-08-18T12:11:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9653",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9621,
-              "title": "Saavutettavuusselosteen päivitykset",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-18T11:45:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9621",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
