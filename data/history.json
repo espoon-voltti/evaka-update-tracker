@@ -1,6 +1,174 @@
 {
   "events": [
     {
+      "id": "2026-08-19T04:22:25.496Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-08-19T04:22:25.496Z",
+      "previousCommit": {
+        "sha": "20640e443e6888d7820dd78cce47b4d4caf97dc1",
+        "shortSha": "20640e4",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
+        "shortSha": "f036619",
+        "message": "Merge pull request #2211 from Tampere/dependabot/submodules/evaka-8a0350d",
+        "date": "2026-08-18T21:10:41Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2211,
+          "title": "Bump evaka from `3817bcb` to `8a0350d`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-18T21:10:41Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2211",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-08-19T04:22:25.496Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-08-19T04:22:25.496Z",
+      "previousCommit": {
+        "sha": "3817bcb54f459e44a6042f20d2dff1fc6d696edd",
+        "shortSha": "3817bcb",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8a0350d2c9e7d56e2ebd301ae0e462be2e9041b5",
+        "shortSha": "8a0350d",
+        "message": "Merge pull request #9523 from espoon-voltti/bulletin-removal",
+        "date": "2026-08-18T13:18:59Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9523,
+          "title": "Vanhentuneiden tiedotteiden ja viestiluonnosten poisto (ei vielä käytössä)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-08-18T13:18:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9523",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9653,
+          "title": "Korjataan päiväkirjan henkilökunnan määrärivin näkyvyys",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-08-18T12:11:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9653",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9652,
+          "title": "Päätösmuokkauksia - oikaisuvaatimusten muotoilu",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-08-18T12:07:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9652",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9655,
+          "title": "Tekstimuokkaus Espoon esiopetushakemukselle",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-08-18T12:04:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9655",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9621,
+          "title": "Saavutettavuusselosteen päivitykset",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-18T11:45:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9621",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9654,
+          "title": "Muutetaan takaisin-napin toimintaa päätöksissä",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-18T11:44:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9654",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-19T04:15:51.563Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
