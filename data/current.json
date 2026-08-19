@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T10:45:14.966Z",
+  "generatedAt": "2026-08-19T10:57:37.866Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-19T10:44:38.646Z",
+            "checkedAt": "2026-08-19T10:57:07.816Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-19T10:44:39.608Z",
+            "checkedAt": "2026-08-19T10:57:08.568Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -97,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-19T10:44:41.969Z",
+            "checkedAt": "2026-08-19T10:57:10.918Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -122,7 +122,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-19T10:44:54.343Z",
+            "checkedAt": "2026-08-19T10:57:20.631Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -201,7 +201,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-19T10:45:08.346Z",
+            "checkedAt": "2026-08-19T10:57:32.004Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -220,7 +220,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-19T10:45:09.411Z",
+            "checkedAt": "2026-08-19T10:57:32.847Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -288,7 +288,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-19T10:45:11.765Z",
+            "checkedAt": "2026-08-19T10:57:35.051Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -307,7 +307,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-19T10:45:12.925Z",
+            "checkedAt": "2026-08-19T10:57:35.747Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -329,6 +329,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9657,
+              "title": "TKU: hakemusten vastaanottoviestien tekstimuokkaukset",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-19T10:55:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9657",
+              "labels": [
+                "enhancement",
+                "turku",
+                "citizen"
+              ]
+            },
             {
               "number": 9568,
               "title": "Kuntalaisen omat tiedot -sivun refaktorointi ja uusi design",
