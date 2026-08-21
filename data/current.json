@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T11:52:05.997Z",
+  "generatedAt": "2026-08-21T12:02:52.451Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-21T11:51:32.592Z",
+            "checkedAt": "2026-08-21T12:02:14.837Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-21T11:51:33.362Z",
+            "checkedAt": "2026-08-21T12:02:15.692Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-21T11:51:35.343Z",
+            "checkedAt": "2026-08-21T12:02:17.773Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-21T11:51:45.437Z",
+            "checkedAt": "2026-08-21T12:02:29.024Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "038471d51e66ff1c38aad319ac08d074393cf636",
@@ -149,7 +149,21 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 2214,
+              "title": "Add passkey env variables",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-21T11:58:42Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2214",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -237,7 +251,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-21T11:52:00.028Z",
+            "checkedAt": "2026-08-21T12:02:45.974Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -256,7 +270,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-21T11:52:00.928Z",
+            "checkedAt": "2026-08-21T12:02:47.465Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -325,7 +339,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-21T11:52:03.420Z",
+            "checkedAt": "2026-08-21T12:02:49.380Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -344,7 +358,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-21T11:52:04.303Z",
+            "checkedAt": "2026-08-21T12:02:50.281Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
