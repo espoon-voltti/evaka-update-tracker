@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T03:39:41.431Z",
+  "generatedAt": "2026-08-24T03:57:25.524Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-24T03:38:45.305Z",
+            "checkedAt": "2026-08-24T03:56:18.366Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-24T03:38:46.065Z",
+            "checkedAt": "2026-08-24T03:56:18.983Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-24T03:38:54.835Z",
+            "checkedAt": "2026-08-24T03:56:28.038Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -140,20 +140,20 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-24T03:39:03.092Z",
+            "checkedAt": "2026-08-24T03:56:36.579Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "038471d51e66ff1c38aad319ac08d074393cf636",
-              "shortSha": "038471d",
-              "message": "Merge pull request #2212 from Tampere/dependabot/submodules/evaka-d1f8815",
-              "date": "2026-08-19T21:11:56Z",
+              "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
+              "shortSha": "4900130",
+              "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
+              "date": "2026-08-23T21:12:03Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "d1f8815557c5404e420f76d1c50b7f89ef4c52b2",
-              "shortSha": "d1f8815",
-              "message": "Update dependency org.bouncycastle:bcprov-jdk18on to v1.85.2 (#9625)",
-              "date": "2026-08-19T12:34:52Z",
+              "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
+              "shortSha": "a92d9b6",
+              "message": "Update dependency oxfmt to v0.64.0 (#9688)",
+              "date": "2026-08-23T19:04:47Z",
               "author": "renovate[bot]"
             }
           },
@@ -165,8 +165,7 @@
         "wrapper": {
           "repository": "Tampere/trevaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 2214,
               "title": "Add passkey env variables",
@@ -180,47 +179,13 @@
               "url": "https://github.com/Tampere/trevaka/pull/2214",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 9568,
-              "title": "Kuntalaisen omat tiedot -sivun refaktorointi ja uusi design",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-19T09:36:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9568",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9491,
-              "title": "Audit log rework part 3",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-08-19T05:42:38Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9491",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 9665,
               "title": "Korjaus läsnäolovarauksiin lomakaudella",
@@ -271,8 +236,42 @@
                 "core",
                 "employee-mobile"
               ]
+            },
+            {
+              "number": 9568,
+              "title": "Kuntalaisen omat tiedot -sivun refaktorointi ja uusi design",
+              "author": "juakiv",
+              "authorName": "Jussi",
+              "mergedAt": "2026-08-19T09:36:57Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9568",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9491,
+              "title": "Audit log rework part 3",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-19T05:42:38Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9491",
+              "labels": [
+                "tech",
+                "core"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -285,7 +284,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-24T03:39:23.317Z",
+            "checkedAt": "2026-08-24T03:57:06.502Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -304,7 +303,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-24T03:39:24.044Z",
+            "checkedAt": "2026-08-24T03:57:07.064Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -390,7 +389,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-24T03:39:32.304Z",
+            "checkedAt": "2026-08-24T03:57:16.086Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -409,7 +408,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-24T03:39:33.186Z",
+            "checkedAt": "2026-08-24T03:57:16.671Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
