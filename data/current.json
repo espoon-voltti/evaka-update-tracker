@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T04:02:51.792Z",
+  "generatedAt": "2026-08-24T04:13:33.595Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-24T04:01:42.692Z",
+            "checkedAt": "2026-08-24T04:11:59.311Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-24T04:01:43.553Z",
+            "checkedAt": "2026-08-24T04:12:00.219Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-24T04:01:54.203Z",
+            "checkedAt": "2026-08-24T04:12:11.500Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -140,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-24T04:02:05.104Z",
+            "checkedAt": "2026-08-24T04:12:23.338Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
@@ -284,7 +284,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-24T04:02:29.729Z",
+            "checkedAt": "2026-08-24T04:12:49.016Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -303,15 +303,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-24T04:02:30.704Z",
+            "checkedAt": "2026-08-24T04:12:50.030Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2238f32997a6a8460bd773984d89ce6830d2a8af",
-              "shortSha": "2238f32",
-              "message": "Merge pull request #9656 from espoon-voltti/oulu-dw-fixes",
-              "date": "2026-08-20T06:50:53Z",
-              "author": "terolaakso-reaktor"
+              "sha": "c1bab515fcdb886793cf5ed38dfc29e255d2cb7a",
+              "shortSha": "c1bab51",
+              "message": "Merge pull request #9684 from espoon-voltti/renovate/dd-trace-6.x",
+              "date": "2026-08-24T03:26:28Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -323,8 +323,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9665,
               "title": "Korjaus läsnäolovarauksiin lomakaudella",
@@ -376,7 +375,8 @@
                 "employee-mobile"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -389,7 +389,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-24T04:02:40.878Z",
+            "checkedAt": "2026-08-24T04:13:11.340Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -408,15 +408,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-24T04:02:41.677Z",
+            "checkedAt": "2026-08-24T04:13:12.296Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2238f32997a6a8460bd773984d89ce6830d2a8af",
-              "shortSha": "2238f32",
-              "message": "Merge pull request #9656 from espoon-voltti/oulu-dw-fixes",
-              "date": "2026-08-20T06:50:53Z",
-              "author": "terolaakso-reaktor"
+              "sha": "c1bab515fcdb886793cf5ed38dfc29e255d2cb7a",
+              "shortSha": "c1bab51",
+              "message": "Merge pull request #9684 from espoon-voltti/renovate/dd-trace-6.x",
+              "date": "2026-08-24T03:26:28Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -428,8 +428,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9665,
               "title": "Korjaus läsnäolovarauksiin lomakaudella",
@@ -481,7 +480,8 @@
                 "employee-mobile"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
