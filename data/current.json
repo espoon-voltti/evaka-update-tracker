@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T05:31:54.718Z",
+  "generatedAt": "2026-08-25T05:37:59.668Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T05:30:34.210Z",
+            "checkedAt": "2026-08-25T05:36:57.641Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T05:30:35.154Z",
+            "checkedAt": "2026-08-25T05:36:58.431Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -149,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T05:30:47.399Z",
+            "checkedAt": "2026-08-25T05:37:08.551Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -174,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T05:30:58.225Z",
+            "checkedAt": "2026-08-25T05:37:17.050Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
@@ -191,180 +191,8 @@
               "author": "Joosakur"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-08-25T05:30:58.225Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-08-25T05:30:59.419Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-08-25T05:31:00.548Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-08-25T05:31:01.690Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-08-25T05:31:02.876Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-08-25T05:31:04.055Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-08-25T05:31:05.153Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-08-25T05:31:06.273Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-08-25T05:31:07.499Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
-                "shortSha": "4900130",
-                "message": "Merge pull request #2215 from Tampere/dependabot/submodules/evaka-a92d9b6",
-                "date": "2026-08-23T21:12:03Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-                "shortSha": "a92d9b6",
-                "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-                "date": "2026-08-23T19:04:47Z",
-                "author": "renovate[bot]"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -524,7 +352,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T05:31:30.714Z",
+            "checkedAt": "2026-08-25T05:37:39.033Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -543,7 +371,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T05:31:31.611Z",
+            "checkedAt": "2026-08-25T05:37:39.615Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -663,7 +491,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-25T05:31:42.816Z",
+            "checkedAt": "2026-08-25T05:37:49.328Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -682,7 +510,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-25T05:31:43.683Z",
+            "checkedAt": "2026-08-25T05:37:49.930Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
