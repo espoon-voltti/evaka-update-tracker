@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T09:14:25.235Z",
+  "generatedAt": "2026-08-25T09:25:54.220Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T09:13:20.506Z",
+            "checkedAt": "2026-08-25T09:24:21.641Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T09:13:31.432Z",
+            "checkedAt": "2026-08-25T09:24:23.458Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,95 +48,26 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9619,
-              "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:08:00Z",
+              "number": 9663,
+              "title": "Huomioidaan kalenterin aukiolo loma-ajan varauksessa ja kyselyssä tulevalle sijoitukselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-25T09:23:54Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9619",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9663",
               "labels": [
                 "bugfix",
                 "core",
                 "citizen"
               ]
             },
-            {
-              "number": 9617,
-              "title": "Korjataan bugit ryhmänäkymän lasten muistiinpano-ikoneissa",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:06:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9617",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9665,
-              "title": "Korjaus läsnäolovarauksiin lomakaudella",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-08-21T12:41:26Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9665",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9662,
-              "title": "Korjataan epävakaa testi",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-21T08:45:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9662",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9659,
-              "title": "Korjataan lapsen profiilikuvan valinnasta aiheutuva kaatuminen kasvattajan mobiilissa",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-21T08:44:43Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9659",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
             {
               "number": 9660,
               "title": "Lapseen liittyvien vanhentuneiden viestien poisto (ei vielä käytössä)",
@@ -184,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T09:13:43.267Z",
+            "checkedAt": "2026-08-25T09:24:28.816Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -209,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T09:13:52.634Z",
+            "checkedAt": "2026-08-25T09:24:58.014Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
@@ -376,6 +307,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9663,
+              "title": "Huomioidaan kalenterin aukiolo loma-ajan varauksessa ja kyselyssä tulevalle sijoitukselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-25T09:23:54Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9663",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
               "number": 9660,
               "title": "Lapseen liittyvien vanhentuneiden viestien poisto (ei vielä käytössä)",
               "author": "terolaakso-reaktor",
@@ -422,7 +370,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T09:14:18.601Z",
+            "checkedAt": "2026-08-25T09:25:43.532Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -441,7 +389,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T09:14:19.362Z",
+            "checkedAt": "2026-08-25T09:25:44.643Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -463,6 +411,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9663,
+              "title": "Huomioidaan kalenterin aukiolo loma-ajan varauksessa ja kyselyssä tulevalle sijoitukselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-25T09:23:54Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9663",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9660,
               "title": "Lapseen liittyvien vanhentuneiden viestien poisto (ei vielä käytössä)",
@@ -510,7 +475,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-25T09:14:21.757Z",
+            "checkedAt": "2026-08-25T09:25:49.609Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -529,7 +494,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-25T09:14:22.508Z",
+            "checkedAt": "2026-08-25T09:25:50.992Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -551,6 +516,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9663,
+              "title": "Huomioidaan kalenterin aukiolo loma-ajan varauksessa ja kyselyssä tulevalle sijoitukselle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-08-25T09:23:54Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9663",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9660,
               "title": "Lapseen liittyvien vanhentuneiden viestien poisto (ei vielä käytössä)",
