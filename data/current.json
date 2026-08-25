@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T08:54:34.675Z",
+  "generatedAt": "2026-08-25T09:11:39.218Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T08:53:10.312Z",
+            "checkedAt": "2026-08-25T09:09:54.485Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T08:53:11.170Z",
+            "checkedAt": "2026-08-25T09:09:55.413Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -184,7 +184,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T08:53:27.631Z",
+            "checkedAt": "2026-08-25T09:10:09.840Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -209,7 +209,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T08:53:38.515Z",
+            "checkedAt": "2026-08-25T09:10:20.891Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
@@ -422,15 +422,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T08:54:06.824Z",
+            "checkedAt": "2026-08-25T09:10:50.038Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2238f32997a6a8460bd773984d89ce6830d2a8af",
-              "shortSha": "2238f32",
-              "message": "Merge pull request #9656 from espoon-voltti/oulu-dw-fixes",
-              "date": "2026-08-20T06:50:53Z",
-              "author": "terolaakso-reaktor"
+              "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
+              "shortSha": "62c6396",
+              "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
+              "date": "2026-08-24T14:08:00Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -441,7 +441,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T08:54:07.756Z",
+            "checkedAt": "2026-08-25T09:11:01.418Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -460,8 +460,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9619,
               "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
@@ -548,6 +547,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9660,
@@ -596,15 +596,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-25T08:54:20.897Z",
+            "checkedAt": "2026-08-25T09:11:14.694Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2238f32997a6a8460bd773984d89ce6830d2a8af",
-              "shortSha": "2238f32",
-              "message": "Merge pull request #9656 from espoon-voltti/oulu-dw-fixes",
-              "date": "2026-08-20T06:50:53Z",
-              "author": "terolaakso-reaktor"
+              "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
+              "shortSha": "62c6396",
+              "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
+              "date": "2026-08-24T14:08:00Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -615,7 +615,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-25T08:54:21.737Z",
+            "checkedAt": "2026-08-25T09:11:26.161Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -634,8 +634,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9619,
               "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
@@ -722,6 +721,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9660,
