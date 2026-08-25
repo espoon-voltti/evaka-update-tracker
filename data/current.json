@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T04:09:38.053Z",
+  "generatedAt": "2026-08-25T04:13:30.487Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T04:08:35.857Z",
+            "checkedAt": "2026-08-25T04:12:07.002Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T04:08:36.499Z",
+            "checkedAt": "2026-08-25T04:12:07.896Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -149,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T04:08:46.932Z",
+            "checkedAt": "2026-08-25T04:12:19.960Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -174,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T04:08:54.960Z",
+            "checkedAt": "2026-08-25T04:12:31.728Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
@@ -353,7 +353,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T04:09:16.528Z",
+            "checkedAt": "2026-08-25T04:12:58.527Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -372,15 +372,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T04:09:17.189Z",
+            "checkedAt": "2026-08-25T04:12:59.620Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c1bab515fcdb886793cf5ed38dfc29e255d2cb7a",
-              "shortSha": "c1bab51",
-              "message": "Merge pull request #9684 from espoon-voltti/renovate/dd-trace-6.x",
-              "date": "2026-08-24T03:26:28Z",
-              "author": "akheron"
+              "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
+              "shortSha": "62c6396",
+              "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
+              "date": "2026-08-24T14:08:00Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -393,6 +393,40 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9619,
+              "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-24T14:08:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9619",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9617,
+              "title": "Korjataan bugit ryhmänäkymän lasten muistiinpano-ikoneissa",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-24T14:06:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9617",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9665,
               "title": "Korjaus läsnäolovarauksiin lomakaudella",
@@ -445,42 +479,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9619,
-              "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:08:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9619",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9617,
-              "title": "Korjataan bugit ryhmänäkymän lasten muistiinpano-ikoneissa",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:06:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9617",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -493,7 +492,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-25T04:09:27.378Z",
+            "checkedAt": "2026-08-25T04:13:14.750Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -512,15 +511,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-25T04:09:28.257Z",
+            "checkedAt": "2026-08-25T04:13:15.800Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c1bab515fcdb886793cf5ed38dfc29e255d2cb7a",
-              "shortSha": "c1bab51",
-              "message": "Merge pull request #9684 from espoon-voltti/renovate/dd-trace-6.x",
-              "date": "2026-08-24T03:26:28Z",
-              "author": "akheron"
+              "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
+              "shortSha": "62c6396",
+              "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
+              "date": "2026-08-24T14:08:00Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -533,6 +532,40 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9619,
+              "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-24T14:08:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9619",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9617,
+              "title": "Korjataan bugit ryhmänäkymän lasten muistiinpano-ikoneissa",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-24T14:06:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9617",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9665,
               "title": "Korjaus läsnäolovarauksiin lomakaudella",
@@ -585,42 +618,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9619,
-              "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:08:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9619",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9617,
-              "title": "Korjataan bugit ryhmänäkymän lasten muistiinpano-ikoneissa",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:06:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9617",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     }
