@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T02:20:41.523Z",
+  "generatedAt": "2026-08-25T02:32:05.402Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T02:19:36.897Z",
+            "checkedAt": "2026-08-25T02:30:46.157Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-25T02:19:37.745Z",
+            "checkedAt": "2026-08-25T02:30:47.018Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "a92d9b6341b555f0f59dee7da632d93c686ef092",
-              "shortSha": "a92d9b6",
-              "message": "Update dependency oxfmt to v0.64.0 (#9688)",
-              "date": "2026-08-23T19:04:47Z",
-              "author": "renovate[bot]"
+              "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
+              "shortSha": "62c6396",
+              "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
+              "date": "2026-08-24T14:08:00Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -50,6 +50,40 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9619,
+              "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-24T14:08:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9619",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9617,
+              "title": "Korjataan bugit ryhmänäkymän lasten muistiinpano-ikoneissa",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-08-24T14:06:41Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9617",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9665,
               "title": "Korjaus läsnäolovarauksiin lomakaudella",
@@ -102,42 +136,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9619,
-              "title": "Korjataan validointivirhe oikeaksi kun varauksen loppuajaksi syöttää 00:00",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:08:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9619",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9617,
-              "title": "Korjataan bugit ryhmänäkymän lasten muistiinpano-ikoneissa",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-24T14:06:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9617",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -150,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T02:19:48.903Z",
+            "checkedAt": "2026-08-25T02:31:03.852Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -175,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-25T02:19:57.340Z",
+            "checkedAt": "2026-08-25T02:31:14.602Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "4900130bc2429a7df3146b65badc9c9d82b5a7de",
@@ -354,7 +353,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T02:20:19.419Z",
+            "checkedAt": "2026-08-25T02:31:41.565Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -373,7 +372,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-25T02:20:20.849Z",
+            "checkedAt": "2026-08-25T02:31:42.422Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -494,7 +493,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-25T02:20:30.973Z",
+            "checkedAt": "2026-08-25T02:31:53.611Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -513,7 +512,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-25T02:20:31.707Z",
+            "checkedAt": "2026-08-25T02:31:54.544Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
