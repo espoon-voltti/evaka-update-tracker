@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T04:20:42.029Z",
+  "generatedAt": "2026-08-26T04:26:28.041Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-26T04:19:48.904Z",
+            "checkedAt": "2026-08-26T04:25:30.548Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-26T04:19:49.708Z",
+            "checkedAt": "2026-08-26T04:25:31.421Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -102,7 +102,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9567,
+              "title": "Kuntalaisen Passkey-kirjautuminen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-26T04:21:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9567",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -115,7 +133,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-26T04:19:52.314Z",
+            "checkedAt": "2026-08-26T04:25:35.266Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f036619cf2e33c1c235f65ebebc946ef130d5a86",
@@ -140,7 +158,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-26T04:20:00.941Z",
+            "checkedAt": "2026-08-26T04:25:46.820Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "96e203a07c95aee6345ca8b688b6df55e9a2ff1f",
@@ -157,180 +175,8 @@
               "author": "ohinkinen"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-08-26T04:20:00.941Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "96e203a07c95aee6345ca8b688b6df55e9a2ff1f",
-                "shortSha": "96e203a",
-                "message": "Merge pull request #2218 from Tampere/dependabot/submodules/evaka-f1dc0a9",
-                "date": "2026-08-25T21:12:15Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f1dc0a9ab2e87faf4516202c574b30a9dac288ba",
-                "shortSha": "f1dc0a9",
-                "message": "Merge pull request #9663 from espoon-voltti/holiday-questionnaire-future-placement",
-                "date": "2026-08-25T09:23:53Z",
-                "author": "ohinkinen"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-08-26T04:20:01.799Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-08-26T04:20:02.927Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-08-26T04:20:03.904Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-08-26T04:20:04.964Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-08-26T04:20:05.932Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-08-26T04:20:06.985Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-08-26T04:20:07.978Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-08-26T04:20:09.031Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "980e74095414f8a1d65a56b0893e07084ebe553b",
-                "shortSha": "980e740",
-                "message": "Merge pull request #2217 from Tampere/dependabot/submodules/evaka-62c6396",
-                "date": "2026-08-24T21:13:48Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
-                "shortSha": "62c6396",
-                "message": "Merge pull request #9619 from espoon-voltti/citizen-reservation-midnight-end-validation",
-                "date": "2026-08-24T14:08:00Z",
-                "author": "Joosakur"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -528,7 +374,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9567,
+              "title": "Kuntalaisen Passkey-kirjautuminen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-26T04:21:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9567",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -541,7 +405,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-26T04:20:33.732Z",
+            "checkedAt": "2026-08-26T04:26:18.815Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -560,7 +424,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-26T04:20:34.487Z",
+            "checkedAt": "2026-08-26T04:26:19.942Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -633,7 +497,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9567,
+              "title": "Kuntalaisen Passkey-kirjautuminen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-26T04:21:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9567",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -646,7 +528,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-26T04:20:38.224Z",
+            "checkedAt": "2026-08-26T04:26:23.542Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -665,7 +547,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-26T04:20:39.068Z",
+            "checkedAt": "2026-08-26T04:26:24.469Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -738,7 +620,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9567,
+              "title": "Kuntalaisen Passkey-kirjautuminen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-08-26T04:21:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9567",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     }
