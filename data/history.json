@@ -1,6 +1,97 @@
 {
   "events": [
     {
+      "id": "2026-08-26T02:35:10.414Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-08-26T02:35:10.414Z",
+      "previousCommit": {
+        "sha": "62c6396b59e2a0f18a3e11af09e1e5437c1d720c",
+        "shortSha": "62c6396",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f1dc0a9ab2e87faf4516202c574b30a9dac288ba",
+        "shortSha": "f1dc0a9",
+        "message": "Merge pull request #9663 from espoon-voltti/holiday-questionnaire-future-placement",
+        "date": "2026-08-25T09:23:53Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9663,
+          "title": "Huomioidaan kalenterin aukiolo loma-ajan varauksessa ja kyselyssä tulevalle sijoitukselle",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-08-25T09:23:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9663",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9660,
+          "title": "Lapseen liittyvien vanhentuneiden viestien poisto (ei vielä käytössä)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-08-25T08:43:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9660",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9676,
+          "title": "Update dependency @xmldom/xmldom to v0.9.11",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-25T07:14:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9676",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9616,
+          "title": "Näytetään metatiedoissa, milloin Suomi.fi-viesti on avattu ja korjataan siihen liittyvät bugit",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-08-25T06:04:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9616",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-25T09:13:31.432Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
