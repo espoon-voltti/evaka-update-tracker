@@ -1,6 +1,83 @@
 {
   "events": [
     {
+      "id": "2026-08-27T04:15:26.471Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-08-27T04:15:26.471Z",
+      "previousCommit": {
+        "sha": "f1dc0a9ab2e87faf4516202c574b30a9dac288ba",
+        "shortSha": "f1dc0a9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c767ae32301be2a59804f75c77cb774e2d6f9f05",
+        "shortSha": "c767ae3",
+        "message": "Merge pull request #9658 from espoon-voltti/hide-hojks-citizen-frontend",
+        "date": "2026-08-26T07:23:23Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9658,
+          "title": "Piilotetaan HOJKS huoltajan käyttöliittymästä",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-26T07:23:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9658",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9692,
+          "title": "Lisätään kustannuspaikka SFI Viestit rajapintaan",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-08-26T07:05:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9692",
+          "labels": [
+            "enhancement",
+            "service",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9567,
+          "title": "Kuntalaisen Passkey-kirjautuminen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-08-26T04:21:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9567",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-27T04:12:20.383Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
@@ -34623,224 +34700,6 @@
             "frontend"
           ]
         },
-        {
-          "number": 9506,
-          "title": "Update flyingsaucer to v10.4.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-07-27T06:57:37Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9506",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9489,
-          "title": "Muutetaan LegacyButton- ja LegacyInlineButton-komponentit Button-komponenteiksi",
-          "author": "juakiv",
-          "authorName": "Jussi",
-          "mergedAt": "2026-07-27T06:20:30Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9489",
-          "labels": [
-            "tech",
-            "core",
-            "citizen",
-            "employee",
-            "employee-mobile"
-          ]
-        },
-        {
-          "number": 9488,
-          "title": "Tietojen eheysvirheiden lokitus error-tasolle",
-          "author": "terolaakso-reaktor",
-          "authorName": "Tero Laakso",
-          "mergedAt": "2026-07-27T06:17:02Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9488",
-          "labels": [
-            "enhancement",
-            "core",
-            "not-visible"
-          ]
-        },
-        {
-          "number": 9505,
-          "title": "Update dependency software.amazon.awssdk:bom to v2.49.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-07-27T06:15:37Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9505",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9503,
-          "title": "Update dependency dd-trace to v6.4.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-07-27T06:15:13Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9503",
-          "labels": [
-            "dependencies",
-            "apigw"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-07-28T04:14:22.468Z_oulu-staging_core",
-      "environmentId": "oulu-staging",
-      "cityGroupId": "oulu",
-      "detectedAt": "2026-07-28T04:14:22.468Z",
-      "previousCommit": {
-        "sha": "362f6a5d604ced8fcf5752dca01c71d2a7db761c",
-        "shortSha": "362f6a5",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
-        "shortSha": "e3d316c",
-        "message": "Merge pull request #9506 from espoon-voltti/renovate/flyingsaucer",
-        "date": "2026-07-27T06:57:36Z",
-        "author": "tomuli"
-      },
-      "includedPRs": [
-        {
-          "number": 9506,
-          "title": "Update flyingsaucer to v10.4.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-07-27T06:57:37Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9506",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9489,
-          "title": "Muutetaan LegacyButton- ja LegacyInlineButton-komponentit Button-komponenteiksi",
-          "author": "juakiv",
-          "authorName": "Jussi",
-          "mergedAt": "2026-07-27T06:20:30Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9489",
-          "labels": [
-            "tech",
-            "core",
-            "citizen",
-            "employee",
-            "employee-mobile"
-          ]
-        },
-        {
-          "number": 9488,
-          "title": "Tietojen eheysvirheiden lokitus error-tasolle",
-          "author": "terolaakso-reaktor",
-          "authorName": "Tero Laakso",
-          "mergedAt": "2026-07-27T06:17:02Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9488",
-          "labels": [
-            "enhancement",
-            "core",
-            "not-visible"
-          ]
-        },
-        {
-          "number": 9505,
-          "title": "Update dependency software.amazon.awssdk:bom to v2.49.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-07-27T06:15:37Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9505",
-          "labels": [
-            "dependencies",
-            "service"
-          ]
-        },
-        {
-          "number": 9503,
-          "title": "Update dependency dd-trace to v6.4.0",
-          "author": "renovate[bot]",
-          "authorName": null,
-          "mergedAt": "2026-07-27T06:15:13Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": true,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9503",
-          "labels": [
-            "dependencies",
-            "apigw"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-07-28T04:14:30.936Z_turku-staging_core",
-      "environmentId": "turku-staging",
-      "cityGroupId": "turku",
-      "detectedAt": "2026-07-28T04:14:30.936Z",
-      "previousCommit": {
-        "sha": "362f6a5d604ced8fcf5752dca01c71d2a7db761c",
-        "shortSha": "362f6a5",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "e3d316c66c3583086d0ca3b495b38fb663ebfb1e",
-        "shortSha": "e3d316c",
-        "message": "Merge pull request #9506 from espoon-voltti/renovate/flyingsaucer",
-        "date": "2026-07-27T06:57:36Z",
-        "author": "tomuli"
-      },
-      "includedPRs": [
         {
           "number": 9506,
           "title": "Update flyingsaucer to v10.4.0",
