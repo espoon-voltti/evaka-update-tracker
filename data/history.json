@@ -1,6 +1,124 @@
 {
   "events": [
     {
+      "id": "2026-08-27T04:39:17.994Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-08-27T04:39:17.994Z",
+      "previousCommit": {
+        "sha": "96e203a07c95aee6345ca8b688b6df55e9a2ff1f",
+        "shortSha": "96e203a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "357efbdf991aa5621431c838b46fa06b55e3e019",
+        "shortSha": "357efbd",
+        "message": "Merge pull request #2219 from Tampere/dependabot/submodules/evaka-c767ae3",
+        "date": "2026-08-26T21:12:33Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2219,
+          "title": "Bump evaka from `f1dc0a9` to `c767ae3`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-26T21:12:34Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2219",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-08-27T04:39:17.994Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-08-27T04:39:17.994Z",
+      "previousCommit": {
+        "sha": "f1dc0a9ab2e87faf4516202c574b30a9dac288ba",
+        "shortSha": "f1dc0a9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c767ae32301be2a59804f75c77cb774e2d6f9f05",
+        "shortSha": "c767ae3",
+        "message": "Merge pull request #9658 from espoon-voltti/hide-hojks-citizen-frontend",
+        "date": "2026-08-26T07:23:23Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9658,
+          "title": "Piilotetaan HOJKS huoltajan käyttöliittymästä",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-26T07:23:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9658",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9692,
+          "title": "Lisätään kustannuspaikka SFI Viestit rajapintaan",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-08-26T07:05:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9692",
+          "labels": [
+            "enhancement",
+            "service",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9567,
+          "title": "Kuntalaisen Passkey-kirjautuminen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-08-26T04:21:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9567",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-27T04:15:26.471Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
