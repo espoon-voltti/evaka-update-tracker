@@ -1,6 +1,83 @@
 {
   "events": [
     {
+      "id": "2026-08-27T04:12:20.383Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-08-27T04:12:20.383Z",
+      "previousCommit": {
+        "sha": "f1dc0a9ab2e87faf4516202c574b30a9dac288ba",
+        "shortSha": "f1dc0a9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c767ae32301be2a59804f75c77cb774e2d6f9f05",
+        "shortSha": "c767ae3",
+        "message": "Merge pull request #9658 from espoon-voltti/hide-hojks-citizen-frontend",
+        "date": "2026-08-26T07:23:23Z",
+        "author": "juakiv"
+      },
+      "includedPRs": [
+        {
+          "number": 9658,
+          "title": "Piilotetaan HOJKS huoltajan käyttöliittymästä",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-26T07:23:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9658",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9692,
+          "title": "Lisätään kustannuspaikka SFI Viestit rajapintaan",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-08-26T07:05:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9692",
+          "labels": [
+            "enhancement",
+            "service",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9567,
+          "title": "Kuntalaisen Passkey-kirjautuminen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-08-26T04:21:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9567",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-27T03:44:18.787Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
