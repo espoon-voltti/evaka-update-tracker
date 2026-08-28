@@ -1,6 +1,190 @@
 {
   "events": [
     {
+      "id": "2026-08-28T04:31:36.722Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-08-28T04:31:36.722Z",
+      "previousCommit": {
+        "sha": "357efbdf991aa5621431c838b46fa06b55e3e019",
+        "shortSha": "357efbd",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a854d4ef672831f4d3cbdfccb85ded293ee609dd",
+        "shortSha": "a854d4e",
+        "message": "Merge pull request #2220 from Tampere/dependabot/submodules/evaka-800d4e1",
+        "date": "2026-08-27T21:15:07Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2220,
+          "title": "Bump evaka from `c767ae3` to `800d4e1`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-27T21:15:07Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2220",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-08-28T04:31:36.722Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-08-28T04:31:36.722Z",
+      "previousCommit": {
+        "sha": "c767ae32301be2a59804f75c77cb774e2d6f9f05",
+        "shortSha": "c767ae3",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "800d4e103599bf3a668375dd31c4ce1a25873ec3",
+        "shortSha": "800d4e1",
+        "message": "Merge pull request #9697 from espoon-voltti/audit-log-rework-part-4",
+        "date": "2026-08-27T11:44:45Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 9697,
+          "title": "Logitusparannuksia osa 4",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-08-27T11:44:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9697",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9696,
+          "title": "Kääntäjävirheitä käyttämättömistä paluuarvoista",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-08-27T10:41:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9696",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9693,
+          "title": "Korjataan asiakirjan tunniste asianhallinnan metadatassa",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-08-27T07:32:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9693",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen",
+            "employee"
+          ]
+        },
+        {
+          "number": 9664,
+          "title": "Omat tiedot -sivun tehtävälistan parannukset",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-27T07:10:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9664",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9689,
+          "title": "Update dependency oxlint to v1.79.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-27T06:25:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9689",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9690,
+          "title": "Korjataan poissaolokyselyn alustuminen vanhalla datalla",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-27T05:30:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9690",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9695,
+          "title": "Tallennetaan kuntalaisen käyttöliittymäkieli tietokantaan",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-08-27T04:23:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9695",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-08-28T04:13:12.646Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
