@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T07:43:11.365Z",
+  "generatedAt": "2026-08-28T09:13:07.370Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-28T07:42:28.359Z",
+            "checkedAt": "2026-08-28T09:12:17.813Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-28T07:42:29.206Z",
+            "checkedAt": "2026-08-28T09:12:18.709Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -200,7 +200,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-28T07:42:34.273Z",
+            "checkedAt": "2026-08-28T09:12:23.835Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "96e203a07c95aee6345ca8b688b6df55e9a2ff1f",
@@ -225,7 +225,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-28T07:42:44.182Z",
+            "checkedAt": "2026-08-28T09:12:33.671Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a854d4ef672831f4d3cbdfccb85ded293ee609dd",
@@ -459,15 +459,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-28T07:43:00.494Z",
+            "checkedAt": "2026-08-28T09:12:50.697Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c767ae32301be2a59804f75c77cb774e2d6f9f05",
-              "shortSha": "c767ae3",
-              "message": "Merge pull request #9658 from espoon-voltti/hide-hojks-citizen-frontend",
-              "date": "2026-08-26T07:23:23Z",
-              "author": "juakiv"
+              "sha": "800d4e103599bf3a668375dd31c4ce1a25873ec3",
+              "shortSha": "800d4e1",
+              "message": "Merge pull request #9697 from espoon-voltti/audit-log-rework-part-4",
+              "date": "2026-08-27T11:44:45Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -478,7 +478,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-28T07:43:01.386Z",
+            "checkedAt": "2026-08-28T09:12:54.188Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -497,8 +497,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9697,
               "title": "Logitusparannuksia osa 4",
@@ -582,25 +581,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9695,
-              "title": "Tallennetaan kuntalaisen käyttöliittymäkieli tietokantaan",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-27T04:23:37Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9695",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9698,
@@ -649,15 +632,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-28T07:43:06.103Z",
+            "checkedAt": "2026-08-28T09:12:58.915Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c767ae32301be2a59804f75c77cb774e2d6f9f05",
-              "shortSha": "c767ae3",
-              "message": "Merge pull request #9658 from espoon-voltti/hide-hojks-citizen-frontend",
-              "date": "2026-08-26T07:23:23Z",
-              "author": "juakiv"
+              "sha": "800d4e103599bf3a668375dd31c4ce1a25873ec3",
+              "shortSha": "800d4e1",
+              "message": "Merge pull request #9697 from espoon-voltti/audit-log-rework-part-4",
+              "date": "2026-08-27T11:44:45Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -668,7 +651,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-28T07:43:06.813Z",
+            "checkedAt": "2026-08-28T09:13:02.619Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -687,8 +670,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9697,
               "title": "Logitusparannuksia osa 4",
@@ -772,25 +754,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9695,
-              "title": "Tallennetaan kuntalaisen käyttöliittymäkieli tietokantaan",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-08-27T04:23:37Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9695",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9698,
