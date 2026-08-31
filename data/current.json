@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T09:18:04.946Z",
+  "generatedAt": "2026-08-31T09:20:48.366Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-31T09:16:27.014Z",
+            "checkedAt": "2026-08-31T09:19:47.440Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "800d4e103599bf3a668375dd31c4ce1a25873ec3",
-              "shortSha": "800d4e1",
-              "message": "Merge pull request #9697 from espoon-voltti/audit-log-rework-part-4",
-              "date": "2026-08-27T11:44:45Z",
-              "author": "tomuli"
+              "sha": "e11a96324afbbdb481c67dc28ecaed9f5030ee29",
+              "shortSha": "e11a963",
+              "message": "Update dependency postcss-preset-env to v11.5.0 (#9724)",
+              "date": "2026-08-30T22:16:22Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-08-31T09:16:28.028Z",
+            "checkedAt": "2026-08-31T09:19:55.724Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9703,
               "title": "Korjaus mobiilin \"Seuraavat päivät\" lasten määrän laskuriin huomioimaan tilapäisessä varhaiskasvatuksessa olevat",
@@ -102,6 +101,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-31T09:16:40.881Z",
+            "checkedAt": "2026-08-31T09:20:06.445Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "96e203a07c95aee6345ca8b688b6df55e9a2ff1f",
@@ -140,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-08-31T09:16:52.974Z",
+            "checkedAt": "2026-08-31T09:20:15.292Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bf6fb8394ff20a208fa81c44d341132d2d1de94a",
@@ -390,7 +390,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-31T09:17:22.591Z",
+            "checkedAt": "2026-08-31T09:20:40.325Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -409,7 +409,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-08-31T09:17:31.443Z",
+            "checkedAt": "2026-08-31T09:20:40.990Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -428,59 +428,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9703,
-              "title": "Korjaus mobiilin \"Seuraavat päivät\" lasten määrän laskuriin huomioimaan tilapäisessä varhaiskasvatuksessa olevat",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-08-28T13:17:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9703",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9698,
-              "title": "Korjauksia uuteen päätösten muokkaus -näkymään",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-28T06:51:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9698",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9702,
-              "title": "Poistetaan Groovy-riippuvuuden kiinnitys",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-28T06:27:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9702",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -495,7 +443,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-08-31T09:17:43.688Z",
+            "checkedAt": "2026-08-31T09:20:44.255Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -514,7 +462,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-08-31T09:17:52.613Z",
+            "checkedAt": "2026-08-31T09:20:44.916Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -533,59 +481,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9703,
-              "title": "Korjaus mobiilin \"Seuraavat päivät\" lasten määrän laskuriin huomioimaan tilapäisessä varhaiskasvatuksessa olevat",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-08-28T13:17:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9703",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9698,
-              "title": "Korjauksia uuteen päätösten muokkaus -näkymään",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-08-28T06:51:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9698",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9702,
-              "title": "Poistetaan Groovy-riippuvuuden kiinnitys",
-              "author": "juakiv",
-              "authorName": "Jussi",
-              "mergedAt": "2026-08-28T06:27:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9702",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }

@@ -1,6 +1,321 @@
 {
   "events": [
     {
+      "id": "2026-08-31T09:19:55.724Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-08-31T09:19:55.724Z",
+      "previousCommit": {
+        "sha": "800d4e103599bf3a668375dd31c4ce1a25873ec3",
+        "shortSha": "800d4e1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "e11a96324afbbdb481c67dc28ecaed9f5030ee29",
+        "shortSha": "e11a963",
+        "message": "Update dependency postcss-preset-env to v11.5.0 (#9724)",
+        "date": "2026-08-30T22:16:22Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9724,
+          "title": "Update dependency postcss-preset-env to v11.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-30T22:16:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9724",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9725,
+          "title": "Update dependency rollup to v4.63.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-30T18:12:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9725",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9721,
+          "title": "Update dependency oxlint to v1.80.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T21:47:08Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9721",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9720,
+          "title": "Update dependency oxfmt to v0.65.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T18:52:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9720",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9719,
+          "title": "Update dependency npm:pm2 to v7.0.4",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T13:05:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9719",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9715,
+          "title": "Update dependency @vitejs/plugin-react to v6.1.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:49:09Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9715",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9712,
+          "title": "Update spring boot to v4.1.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:48:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9712",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9711,
+          "title": "Update Gradle to v9.7.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:48:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9711",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9707,
+          "title": "Update dependency com.networknt:json-schema-validator to v3.0.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:47:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9707",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9704,
+          "title": "Update dependency @testing-library/user-event to v14.6.6",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:45:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9704",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9706,
+          "title": "Update dependency com.github.mwiede:jsch to v2.28.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:45:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9706",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9709,
+          "title": "Update dependency rollup to v4.62.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:45:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9709",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9705,
+          "title": "Update dependency @types/react-dom to v19.2.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:45:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9705",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9708,
+          "title": "Update dependency lefthook to v2.1.11",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:45:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9708",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9710,
+          "title": "Update dependency vite to v8.2.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-08-29T01:45:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9710",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9703,
+          "title": "Korjaus mobiilin \"Seuraavat päivät\" lasten määrän laskuriin huomioimaan tilapäisessä varhaiskasvatuksessa olevat",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-08-28T13:17:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9703",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9698,
+          "title": "Korjauksia uuteen päätösten muokkaus -näkymään",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-08-28T06:51:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9698",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9702,
+          "title": "Poistetaan Groovy-riippuvuuden kiinnitys",
+          "author": "juakiv",
+          "authorName": "Jussi",
+          "mergedAt": "2026-08-28T06:27:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9702",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-08-31T09:17:31.443Z_oulu-prod_core",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",
