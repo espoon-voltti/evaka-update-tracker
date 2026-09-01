@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T09:43:39.774Z",
+  "generatedAt": "2026-09-01T09:51:29.933Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-01T09:42:42.420Z",
+            "checkedAt": "2026-09-01T09:50:18.376Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-01T09:42:43.099Z",
+            "checkedAt": "2026-09-01T09:50:19.269Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -150,7 +150,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-01T09:42:49.430Z",
+            "checkedAt": "2026-09-01T09:50:25.799Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "96e203a07c95aee6345ca8b688b6df55e9a2ff1f",
@@ -175,7 +175,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-01T09:42:57.994Z",
+            "checkedAt": "2026-09-01T09:50:36.528Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a5a0ae0c997d681815d17dc5f4d2cd9c82a1a931",
@@ -511,15 +511,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-01T09:43:26.465Z",
+            "checkedAt": "2026-09-01T09:51:07.063Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "e11a96324afbbdb481c67dc28ecaed9f5030ee29",
-              "shortSha": "e11a963",
-              "message": "Update dependency postcss-preset-env to v11.5.0 (#9724)",
-              "date": "2026-08-30T22:16:22Z",
-              "author": "renovate[bot]"
+              "sha": "42f5bbfdb634519d3c43aafc952707bbef0d1e9f",
+              "shortSha": "42f5bbf",
+              "message": "Merge pull request #9555 from espoon-voltti/paper-application-rework",
+              "date": "2026-08-31T12:39:43Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -530,7 +530,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-01T09:43:27.312Z",
+            "checkedAt": "2026-09-01T09:51:11.566Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -549,8 +549,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9555,
               "title": "Työntekijäpuolen hakemusmuokkaus käyttämään jaettua toteutusta",
@@ -569,6 +568,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9727,
@@ -651,15 +651,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-01T09:43:33.461Z",
+            "checkedAt": "2026-09-01T09:51:18.935Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "e11a96324afbbdb481c67dc28ecaed9f5030ee29",
-              "shortSha": "e11a963",
-              "message": "Update dependency postcss-preset-env to v11.5.0 (#9724)",
-              "date": "2026-08-30T22:16:22Z",
-              "author": "renovate[bot]"
+              "sha": "42f5bbfdb634519d3c43aafc952707bbef0d1e9f",
+              "shortSha": "42f5bbf",
+              "message": "Merge pull request #9555 from espoon-voltti/paper-application-rework",
+              "date": "2026-08-31T12:39:43Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -670,7 +670,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-01T09:43:34.125Z",
+            "checkedAt": "2026-09-01T09:51:23.505Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -689,8 +689,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9555,
               "title": "Työntekijäpuolen hakemusmuokkaus käyttämään jaettua toteutusta",
@@ -709,6 +708,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9727,
