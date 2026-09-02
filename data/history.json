@@ -1,6 +1,258 @@
 {
   "events": [
     {
+      "id": "2026-09-02T09:17:34.805Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-02T09:17:34.805Z",
+      "previousCommit": {
+        "sha": "42f5bbfdb634519d3c43aafc952707bbef0d1e9f",
+        "shortSha": "42f5bbf",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "be1f2b5aafed059951f44733616eef98841835ac",
+        "shortSha": "be1f2b5",
+        "message": "Merge pull request #9729 from espoon-voltti/personal-details-task-scroll",
+        "date": "2026-09-01T11:38:54Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9729,
+          "title": "Korjataan tehtävien klikkauksesta tapahtuva vieritys",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-01T11:38:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9729",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9728,
+          "title": "Ohjataan passkey-virheestä omiin tietoihin",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-01T11:38:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9728",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9727,
+          "title": "Ohje audit-tapahtumien security-merkinnöille",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-01T08:07:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9727",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9701,
+          "title": "Työntekijän roolin lisääminen auditlokiin",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-01T07:37:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9701",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9666,
+          "title": "Kuntalaisen asiakirjat -raportti huomioi sijoitusta edeltävän lähetysikkunan",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-01T07:09:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9666",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9699,
+          "title": "Luodaan Koski-virheraportti",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-01T06:53:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9699",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-09-02T09:17:44.620Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-09-02T09:17:44.620Z",
+      "previousCommit": {
+        "sha": "42f5bbfdb634519d3c43aafc952707bbef0d1e9f",
+        "shortSha": "42f5bbf",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "be1f2b5aafed059951f44733616eef98841835ac",
+        "shortSha": "be1f2b5",
+        "message": "Merge pull request #9729 from espoon-voltti/personal-details-task-scroll",
+        "date": "2026-09-01T11:38:54Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9729,
+          "title": "Korjataan tehtävien klikkauksesta tapahtuva vieritys",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-01T11:38:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9729",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9728,
+          "title": "Ohjataan passkey-virheestä omiin tietoihin",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-01T11:38:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9728",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9727,
+          "title": "Ohje audit-tapahtumien security-merkinnöille",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-01T08:07:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9727",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9701,
+          "title": "Työntekijän roolin lisääminen auditlokiin",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-01T07:37:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9701",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9666,
+          "title": "Kuntalaisen asiakirjat -raportti huomioi sijoitusta edeltävän lähetysikkunan",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-01T07:09:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9666",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9699,
+          "title": "Luodaan Koski-virheraportti",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-01T06:53:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9699",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-09-02T04:55:35.133Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
