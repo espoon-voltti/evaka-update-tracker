@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T12:16:44.877Z",
+  "generatedAt": "2026-09-02T12:30:53.013Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-02T12:15:10.314Z",
+            "checkedAt": "2026-09-02T12:30:09.383Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-02T12:15:11.349Z",
+            "checkedAt": "2026-09-02T12:30:10.416Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -166,7 +166,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-02T12:15:16.584Z",
+            "checkedAt": "2026-09-02T12:30:14.982Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "41c49a77796c1c322dce97a6c87e446b172297dc",
@@ -191,7 +191,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-02T12:15:54.472Z",
+            "checkedAt": "2026-09-02T12:30:27.104Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "41c49a77796c1c322dce97a6c87e446b172297dc",
@@ -221,93 +221,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9729,
-              "title": "Korjataan tehtävien klikkauksesta tapahtuva vieritys",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-01T11:38:54Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9729",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9728,
-              "title": "Ohjataan passkey-virheestä omiin tietoihin",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-01T11:38:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9728",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9727,
-              "title": "Ohje audit-tapahtumien security-merkinnöille",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-09-01T08:07:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9727",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9701,
-              "title": "Työntekijän roolin lisääminen auditlokiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-01T07:37:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9701",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9666,
-              "title": "Kuntalaisen asiakirjat -raportti huomioi sijoitusta edeltävän lähetysikkunan",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-09-01T07:09:25Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9666",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -425,7 +339,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-02T12:16:32.859Z",
+            "checkedAt": "2026-09-02T12:30:42.995Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -444,7 +358,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-02T12:16:34.508Z",
+            "checkedAt": "2026-09-02T12:30:43.917Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -581,7 +495,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-02T12:16:39.279Z",
+            "checkedAt": "2026-09-02T12:30:47.856Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -600,7 +514,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-02T12:16:40.242Z",
+            "checkedAt": "2026-09-02T12:30:48.873Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
