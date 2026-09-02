@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T09:25:15.666Z",
+  "generatedAt": "2026-09-02T09:34:59.026Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-02T09:24:15.069Z",
+            "checkedAt": "2026-09-02T09:34:07.781Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-02T09:24:18.896Z",
+            "checkedAt": "2026-09-02T09:34:08.454Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,95 +48,43 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9729,
-              "title": "Korjataan tehtävien klikkauksesta tapahtuva vieritys",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-01T11:38:54Z",
+              "number": 9732,
+              "title": "Hakukausi-validaatio ei koske palveluohjaajien lähettämiä/muokkaamia hakemuksia",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-09-02T09:33:14Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9729",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9728,
-              "title": "Ohjataan passkey-virheestä omiin tietoihin",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-01T11:38:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9728",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9727,
-              "title": "Ohje audit-tapahtumien security-merkinnöille",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-09-01T08:07:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9727",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9701,
-              "title": "Työntekijän roolin lisääminen auditlokiin",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-01T07:37:24Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9701",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9666,
-              "title": "Kuntalaisen asiakirjat -raportti huomioi sijoitusta edeltävän lähetysikkunan",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-09-01T07:09:25Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9666",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9732",
               "labels": [
                 "bugfix",
                 "core",
                 "employee"
               ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
+            },
+            {
+              "number": 9733,
+              "title": "Koski: Ei katkaista varhennetun oppivelvollisuuden jaksoa sijoituksen päättymiseen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-02T09:26:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9733",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9731,
               "title": "Tuki sähköpostikirjautumisen poistamiselle käytöstä",
@@ -201,7 +149,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-02T09:24:24.067Z",
+            "checkedAt": "2026-09-02T09:34:11.574Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "96e203a07c95aee6345ca8b688b6df55e9a2ff1f",
@@ -226,7 +174,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-02T09:24:34.956Z",
+            "checkedAt": "2026-09-02T09:34:20.823Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "41c49a77796c1c322dce97a6c87e446b172297dc",
@@ -584,6 +532,40 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9732,
+              "title": "Hakukausi-validaatio ei koske palveluohjaajien lähettämiä/muokkaamia hakemuksia",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-09-02T09:33:14Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9732",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9733,
+              "title": "Koski: Ei katkaista varhennetun oppivelvollisuuden jaksoa sijoituksen päättymiseen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-02T09:26:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9733",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9731,
               "title": "Tuki sähköpostikirjautumisen poistamiselle käytöstä",
               "author": "akheron",
@@ -647,7 +629,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-02T09:25:08.889Z",
+            "checkedAt": "2026-09-02T09:34:51.337Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -666,7 +648,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-02T09:25:09.759Z",
+            "checkedAt": "2026-09-02T09:34:52.796Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -688,6 +670,40 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9732,
+              "title": "Hakukausi-validaatio ei koske palveluohjaajien lähettämiä/muokkaamia hakemuksia",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-09-02T09:33:14Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9732",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9733,
+              "title": "Koski: Ei katkaista varhennetun oppivelvollisuuden jaksoa sijoituksen päättymiseen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-02T09:26:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9733",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9731,
               "title": "Tuki sähköpostikirjautumisen poistamiselle käytöstä",
@@ -752,7 +768,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-02T09:25:12.214Z",
+            "checkedAt": "2026-09-02T09:34:55.461Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -771,7 +787,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-02T09:25:13.208Z",
+            "checkedAt": "2026-09-02T09:34:56.257Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -793,6 +809,40 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9732,
+              "title": "Hakukausi-validaatio ei koske palveluohjaajien lähettämiä/muokkaamia hakemuksia",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-09-02T09:33:14Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9732",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9733,
+              "title": "Koski: Ei katkaista varhennetun oppivelvollisuuden jaksoa sijoituksen päättymiseen",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-02T09:26:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9733",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9731,
               "title": "Tuki sähköpostikirjautumisen poistamiselle käytöstä",
