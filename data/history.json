@@ -1,6 +1,149 @@
 {
   "events": [
     {
+      "id": "2026-09-03T02:17:16.029Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-09-03T02:17:16.029Z",
+      "previousCommit": {
+        "sha": "be1f2b5aafed059951f44733616eef98841835ac",
+        "shortSha": "be1f2b5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "10b4c558df1ad88f0a5c0c570f35a51ae54aa946",
+        "shortSha": "10b4c55",
+        "message": "Merge pull request #9735 from espoon-voltti/dependabot/npm_and_yarn/frontend/postcss-selector-parser-7.1.5",
+        "date": "2026-09-02T11:13:36Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 9735,
+          "title": "Bump postcss-selector-parser from 7.1.1 to 7.1.5 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-02T11:13:36Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9735",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9726,
+          "title": "Suomen ja ruotsinkielisiä yksilöllisiä perusteluja hallinnoidaan erikseen",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-02T10:10:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9726",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9732,
+          "title": "Hakukausi-validaatio ei koske palveluohjaajien lähettämiä/muokkaamia hakemuksia",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-02T09:33:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9732",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9733,
+          "title": "Koski: Ei katkaista varhennetun oppivelvollisuuden jaksoa sijoituksen päättymiseen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-02T09:26:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9733",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9731,
+          "title": "Tuki sähköpostikirjautumisen poistamiselle käytöstä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-02T09:17:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9731",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9736,
+          "title": "Korjataan paperihakemuksella näkyvät toimintakaudet",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-02T09:13:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9736",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9691,
+          "title": "Muutetaan \"puuttuvat tulotiedot\"-raportin rajaussääntöjä",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-02T05:39:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9691",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-02T12:15:54.472Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
