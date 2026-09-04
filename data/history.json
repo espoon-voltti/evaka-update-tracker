@@ -1,6 +1,124 @@
 {
   "events": [
     {
+      "id": "2026-09-04T04:18:36.252Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-04T04:18:36.252Z",
+      "previousCommit": {
+        "sha": "10b4c558df1ad88f0a5c0c570f35a51ae54aa946",
+        "shortSha": "10b4c55",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "97d123119d846b731051d18383cd9dc9ab3e9917",
+        "shortSha": "97d1231",
+        "message": "Merge pull request #9746 from espoon-voltti/tampere-invoice-resend-permission",
+        "date": "2026-09-03T13:59:11Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 9746,
+          "title": "Tampere: sallitaan pääkäyttäjälle laskujen uudelleenlähetys ",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-09-03T13:59:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9746",
+          "labels": [
+            "no-changelog",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9730,
+          "title": "Kuntalaisen PWA, osa 1",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-03T10:21:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9730",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-09-04T04:18:41.284Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-09-04T04:18:41.284Z",
+      "previousCommit": {
+        "sha": "10b4c558df1ad88f0a5c0c570f35a51ae54aa946",
+        "shortSha": "10b4c55",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "97d123119d846b731051d18383cd9dc9ab3e9917",
+        "shortSha": "97d1231",
+        "message": "Merge pull request #9746 from espoon-voltti/tampere-invoice-resend-permission",
+        "date": "2026-09-03T13:59:11Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 9746,
+          "title": "Tampere: sallitaan pääkäyttäjälle laskujen uudelleenlähetys ",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-09-03T13:59:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9746",
+          "labels": [
+            "no-changelog",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9730,
+          "title": "Kuntalaisen PWA, osa 1",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-03T10:21:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9730",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-04T02:17:04.509Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
@@ -32371,86 +32489,6 @@
       ],
       "repoType": "core",
       "isDefaultBranch": true
-    },
-    {
-      "id": "2026-08-05T04:15:43.334Z_oulu-staging_core",
-      "environmentId": "oulu-staging",
-      "cityGroupId": "oulu",
-      "detectedAt": "2026-08-05T04:15:43.334Z",
-      "previousCommit": {
-        "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-        "shortSha": "7427da6",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "3916af5c4678ffa3ef238362b218b7e23054e373",
-        "shortSha": "3916af5",
-        "message": "Korjataan GHCR putsaus (#9519)",
-        "date": "2026-08-04T06:53:52Z",
-        "author": "ilja-git"
-      },
-      "includedPRs": [
-        {
-          "number": 9519,
-          "title": "Korjataan GHCR putsaus",
-          "author": "ilja-git",
-          "authorName": null,
-          "mergedAt": "2026-08-04T06:53:52Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9519",
-          "labels": [
-            "no-changelog"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-08-05T04:15:48.861Z_turku-staging_core",
-      "environmentId": "turku-staging",
-      "cityGroupId": "turku",
-      "detectedAt": "2026-08-05T04:15:48.861Z",
-      "previousCommit": {
-        "sha": "7427da6784207c23c5d008f4f5f29722f27cb3a5",
-        "shortSha": "7427da6",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "3916af5c4678ffa3ef238362b218b7e23054e373",
-        "shortSha": "3916af5",
-        "message": "Korjataan GHCR putsaus (#9519)",
-        "date": "2026-08-04T06:53:52Z",
-        "author": "ilja-git"
-      },
-      "includedPRs": [
-        {
-          "number": 9519,
-          "title": "Korjataan GHCR putsaus",
-          "author": "ilja-git",
-          "authorName": null,
-          "mergedAt": "2026-08-04T06:53:52Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": true,
-          "url": "https://github.com/espoon-voltti/evaka/pull/9519",
-          "labels": [
-            "no-changelog"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
     }
   ]
 }
