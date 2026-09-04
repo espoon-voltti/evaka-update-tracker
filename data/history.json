@@ -1,6 +1,238 @@
 {
   "events": [
     {
+      "id": "2026-09-04T07:38:26.521Z_tampere-prod_wrapper",
+      "environmentId": "tampere-prod",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-04T07:38:26.521Z",
+      "previousCommit": {
+        "sha": "41c49a77796c1c322dce97a6c87e446b172297dc",
+        "shortSha": "41c49a7",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "55f92c6a25d6dd1e85865ac75b8b65c056ec9200",
+        "shortSha": "55f92c6",
+        "message": "Merge pull request #2228 from Tampere/dependabot/submodules/evaka-97d1231",
+        "date": "2026-09-03T21:12:26Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2228,
+          "title": "Bump evaka from `10b4c55` to `97d1231`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-03T21:12:27Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2228",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2227,
+          "title": "Bump evaka from `be1f2b5` to `10b4c55`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-02T21:12:22Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2227",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-09-04T07:38:26.521Z_tampere-prod_core",
+      "environmentId": "tampere-prod",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-04T07:38:26.521Z",
+      "previousCommit": {
+        "sha": "be1f2b5aafed059951f44733616eef98841835ac",
+        "shortSha": "be1f2b5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "97d123119d846b731051d18383cd9dc9ab3e9917",
+        "shortSha": "97d1231",
+        "message": "Merge pull request #9746 from espoon-voltti/tampere-invoice-resend-permission",
+        "date": "2026-09-03T13:59:11Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 9746,
+          "title": "Tampere: sallitaan pääkäyttäjälle laskujen uudelleenlähetys ",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-09-03T13:59:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9746",
+          "labels": [
+            "no-changelog",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9730,
+          "title": "Kuntalaisen PWA, osa 1",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-03T10:21:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9730",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9735,
+          "title": "Bump postcss-selector-parser from 7.1.1 to 7.1.5 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-02T11:13:36Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9735",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9726,
+          "title": "Suomen ja ruotsinkielisiä yksilöllisiä perusteluja hallinnoidaan erikseen",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-02T10:10:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9726",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9732,
+          "title": "Hakukausi-validaatio ei koske palveluohjaajien lähettämiä/muokkaamia hakemuksia",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-02T09:33:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9732",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9733,
+          "title": "Koski: Ei katkaista varhennetun oppivelvollisuuden jaksoa sijoituksen päättymiseen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-02T09:26:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9733",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9731,
+          "title": "Tuki sähköpostikirjautumisen poistamiselle käytöstä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-02T09:17:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9731",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9736,
+          "title": "Korjataan paperihakemuksella näkyvät toimintakaudet",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-02T09:13:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9736",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9691,
+          "title": "Muutetaan \"puuttuvat tulotiedot\"-raportin rajaussääntöjä",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-02T05:39:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9691",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-09-04T04:40:52.013Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
