@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T04:23:47.906Z",
+  "generatedAt": "2026-09-08T04:35:54.850Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-08T04:22:53.605Z",
+            "checkedAt": "2026-09-08T04:34:44.928Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-08T04:22:54.387Z",
+            "checkedAt": "2026-09-08T04:34:45.948Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -132,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-08T04:23:00.552Z",
+            "checkedAt": "2026-09-08T04:34:52.519Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "55f92c6a25d6dd1e85865ac75b8b65c056ec9200",
@@ -157,25 +157,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-08T04:23:10.509Z",
+            "checkedAt": "2026-09-08T04:35:03.370Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
-              "shortSha": "968ec57",
-              "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
-              "date": "2026-09-06T21:12:27Z",
+              "sha": "a74058de1df480694fd57b001d91408a80fb97f7",
+              "shortSha": "a74058d",
+              "message": "Merge pull request #2230 from Tampere/dependabot/submodules/evaka-2630803",
+              "date": "2026-09-07T21:12:43Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
-              "shortSha": "2f50a58",
-              "message": "Update dependency oxfmt to v0.66.0 (#9774)",
-              "date": "2026-09-06T17:08:11Z",
-              "author": "renovate[bot]"
+              "sha": "263080302e056617905afeb526bcc77176440321",
+              "shortSha": "2630803",
+              "message": "Merge pull request #9748 from espoon-voltti/passkey-section-visibility",
+              "date": "2026-09-07T12:00:21Z",
+              "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-09-08T04:35:03.370Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a74058de1df480694fd57b001d91408a80fb97f7",
+                "shortSha": "a74058d",
+                "message": "Merge pull request #2230 from Tampere/dependabot/submodules/evaka-2630803",
+                "date": "2026-09-07T21:12:43Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "263080302e056617905afeb526bcc77176440321",
+                "shortSha": "2630803",
+                "message": "Merge pull request #9748 from espoon-voltti/passkey-section-visibility",
+                "date": "2026-09-07T12:00:21Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-09-08T04:35:04.550Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-09-08T04:35:05.746Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-09-08T04:35:06.942Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-09-08T04:35:08.137Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-09-08T04:35:09.438Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-09-08T04:35:10.646Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-09-08T04:35:11.973Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-09-08T04:35:13.208Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "968ec57e6d09067b1146923df7ff3f25bceb6ff6",
+                "shortSha": "968ec57",
+                "message": "Merge pull request #2229 from Tampere/dependabot/submodules/evaka-2f50a58",
+                "date": "2026-09-06T21:12:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "2f50a581fe21ca85bc6b1fba1ad223582168d5a9",
+                "shortSha": "2f50a58",
+                "message": "Update dependency oxfmt to v0.66.0 (#9774)",
+                "date": "2026-09-06T17:08:11Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -189,41 +361,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 9738,
-              "title": "Lisätään tuki passkey käytölle vanhemmissa selaimissa",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-09-04T11:15:20Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9738",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9749,
-              "title": "Heitetään poikkeus oikein testeissä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-04T11:14:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9749",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 9748,
               "title": "Näytetään omien tietojen pääsyavain-osio aina jos käyttäjällä on pääsyavaimia",
@@ -291,8 +428,42 @@
                 "core",
                 "not-visible"
               ]
+            },
+            {
+              "number": 9738,
+              "title": "Lisätään tuki passkey käytölle vanhemmissa selaimissa",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-04T11:15:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9738",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9749,
+              "title": "Heitetään poikkeus oikein testeissä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-04T11:14:23Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9749",
+              "labels": [
+                "tech",
+                "core"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -305,7 +476,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-08T04:23:35.302Z",
+            "checkedAt": "2026-09-08T04:35:39.646Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -324,7 +495,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-08T04:23:36.072Z",
+            "checkedAt": "2026-09-08T04:35:41.084Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -427,7 +598,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-08T04:23:41.719Z",
+            "checkedAt": "2026-09-08T04:35:47.539Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -446,7 +617,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-08T04:23:42.427Z",
+            "checkedAt": "2026-09-08T04:35:48.467Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
