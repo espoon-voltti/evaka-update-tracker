@@ -1,6 +1,48 @@
 {
   "events": [
     {
+      "id": "2026-09-09T10:19:02.305Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-09-09T10:19:02.305Z",
+      "previousCommit": {
+        "sha": "10e88345f96496702f632c9a7ee5f8a68047d2f8",
+        "shortSha": "10e8834",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c5befdcf86cd5c61b3ef112a90d629af11acca4c",
+        "shortSha": "c5befdc",
+        "message": "Merge pull request #9785 from espoon-voltti/income-statements-care-areas",
+        "date": "2026-09-09T05:58:37Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 9785,
+          "title": "Korjataan tuloselvityslistauksen alueiden satunnainen vaihtelu",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-09T05:58:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9785",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-09T10:04:20.030Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
