@@ -1,6 +1,125 @@
 {
   "events": [
     {
+      "id": "2026-09-09T04:46:08.301Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-09T04:46:08.301Z",
+      "previousCommit": {
+        "sha": "a74058de1df480694fd57b001d91408a80fb97f7",
+        "shortSha": "a74058d",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
+        "shortSha": "9b38f91",
+        "message": "Merge pull request #2231 from Tampere/dependabot/submodules/evaka-10e8834",
+        "date": "2026-09-08T21:14:54Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2231,
+          "title": "Bump evaka from `2630803` to `10e8834`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-08T21:14:54Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2231",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-09-09T04:46:08.301Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-09T04:46:08.301Z",
+      "previousCommit": {
+        "sha": "263080302e056617905afeb526bcc77176440321",
+        "shortSha": "2630803",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "10e88345f96496702f632c9a7ee5f8a68047d2f8",
+        "shortSha": "10e8834",
+        "message": "Merge pull request #9782 from espoon-voltti/koski-error-log-level",
+        "date": "2026-09-08T08:57:12Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9782,
+          "title": "Hiljennetään Koskivirheiden hälyt",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-08T08:57:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9782",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9777,
+          "title": "Lisätään linkit virhesivuille",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-08T08:43:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9777",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen",
+            "employee",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9734,
+          "title": "Estetään automaattisten tietojen poiston vaikutus Koskeen",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-08T06:24:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9734",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-09T04:13:01.083Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
