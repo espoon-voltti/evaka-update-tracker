@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T09:01:32.467Z",
+  "generatedAt": "2026-09-09T09:13:53.826Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-09T09:00:33.876Z",
+            "checkedAt": "2026-09-09T09:12:55.157Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-09T09:00:35.177Z",
+            "checkedAt": "2026-09-09T09:12:56.090Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -135,7 +135,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-09T09:00:38.480Z",
+            "checkedAt": "2026-09-09T09:12:59.462Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "55f92c6a25d6dd1e85865ac75b8b65c056ec9200",
@@ -160,7 +160,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-09T09:00:51.556Z",
+            "checkedAt": "2026-09-09T09:13:10.635Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -378,15 +378,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-09T09:01:23.189Z",
+            "checkedAt": "2026-09-09T09:13:41.901Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "263080302e056617905afeb526bcc77176440321",
-              "shortSha": "2630803",
-              "message": "Merge pull request #9748 from espoon-voltti/passkey-section-visibility",
-              "date": "2026-09-07T12:00:21Z",
-              "author": "akheron"
+              "sha": "10e88345f96496702f632c9a7ee5f8a68047d2f8",
+              "shortSha": "10e8834",
+              "message": "Merge pull request #9782 from espoon-voltti/koski-error-log-level",
+              "date": "2026-09-08T08:57:12Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -397,7 +397,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-09T09:01:24.376Z",
+            "checkedAt": "2026-09-09T09:13:44.360Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -416,8 +416,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9782,
               "title": "Hiljennetään Koskivirheiden hälyt",
@@ -472,6 +471,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9785,
@@ -503,15 +503,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-09T09:01:28.211Z",
+            "checkedAt": "2026-09-09T09:13:47.859Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "263080302e056617905afeb526bcc77176440321",
-              "shortSha": "2630803",
-              "message": "Merge pull request #9748 from espoon-voltti/passkey-section-visibility",
-              "date": "2026-09-07T12:00:21Z",
-              "author": "akheron"
+              "sha": "10e88345f96496702f632c9a7ee5f8a68047d2f8",
+              "shortSha": "10e8834",
+              "message": "Merge pull request #9782 from espoon-voltti/koski-error-log-level",
+              "date": "2026-09-08T08:57:12Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -522,7 +522,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-09T09:01:29.104Z",
+            "checkedAt": "2026-09-09T09:13:50.655Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -541,8 +541,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9782,
               "title": "Hiljennetään Koskivirheiden hälyt",
@@ -597,6 +596,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9785,
