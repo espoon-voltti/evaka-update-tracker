@@ -1,6 +1,65 @@
 {
   "events": [
     {
+      "id": "2026-09-10T02:12:08.060Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-09-10T02:12:08.060Z",
+      "previousCommit": {
+        "sha": "10e88345f96496702f632c9a7ee5f8a68047d2f8",
+        "shortSha": "10e8834",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c86ce806644db2566ae5fbd211f94458c5c0aa3a",
+        "shortSha": "c86ce80",
+        "message": "Merge pull request #9747 from espoon-voltti/fix-placement-draft-stale-form-state",
+        "date": "2026-09-09T12:16:42Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 9747,
+          "title": "Korjaa sijoitussuunnitelmasivun vanhentunut lomaketila",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-09T12:16:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9747",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9785,
+          "title": "Korjataan tuloselvityslistauksen alueiden satunnainen vaihtelu",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-09T05:58:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9785",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-09T10:29:02.377Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
