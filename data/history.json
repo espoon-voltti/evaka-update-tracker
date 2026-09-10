@@ -1,6 +1,64 @@
 {
   "events": [
     {
+      "id": "2026-09-10T08:48:41.274Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-10T08:48:41.274Z",
+      "previousCommit": {
+        "sha": "05f48c34e7735544a887b40c1df4ed43d3508cec",
+        "shortSha": "05f48c3",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "eff28dc96943150d43e83518d1845f625953b841",
+        "shortSha": "eff28dc",
+        "message": "Merge pull request #9784 from espoon-voltti/oulu-autoanalyze-config",
+        "date": "2026-09-10T07:11:35Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 9784,
+          "title": "Aggressiivisempi Postgres autovacuum analyze Oulussa",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-10T07:11:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9784",
+          "labels": [
+            "tech",
+            "oulu"
+          ]
+        },
+        {
+          "number": 9780,
+          "title": "Vanhentuneiden tuloselvitysmuistutusten tietojen poisto (ei vielä käytössä)",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-10T05:34:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9780",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-10T08:33:06.872Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
