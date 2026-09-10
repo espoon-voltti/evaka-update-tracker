@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T09:02:32.820Z",
+  "generatedAt": "2026-09-10T09:21:21.838Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-10T09:01:58.905Z",
+            "checkedAt": "2026-09-10T09:20:43.015Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-10T09:01:59.645Z",
+            "checkedAt": "2026-09-10T09:20:43.633Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -132,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-10T09:02:03.082Z",
+            "checkedAt": "2026-09-10T09:20:47.404Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -157,7 +157,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-10T09:02:12.197Z",
+            "checkedAt": "2026-09-10T09:20:56.359Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "df1440daebc007e8d077c4507b1160623c32d633",
@@ -271,15 +271,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-10T09:02:24.740Z",
+            "checkedAt": "2026-09-10T09:21:08.682Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "10e88345f96496702f632c9a7ee5f8a68047d2f8",
-              "shortSha": "10e8834",
-              "message": "Merge pull request #9782 from espoon-voltti/koski-error-log-level",
-              "date": "2026-09-08T08:57:12Z",
-              "author": "ohinkinen"
+              "sha": "eff28dc96943150d43e83518d1845f625953b841",
+              "shortSha": "eff28dc",
+              "message": "Merge pull request #9784 from espoon-voltti/oulu-autoanalyze-config",
+              "date": "2026-09-10T07:11:35Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -290,7 +290,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-10T09:02:25.466Z",
+            "checkedAt": "2026-09-10T09:21:11.884Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -309,8 +309,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9784,
               "title": "Aggressiivisempi Postgres autovacuum analyze Oulussa",
@@ -395,6 +394,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -408,15 +408,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-10T09:02:28.952Z",
+            "checkedAt": "2026-09-10T09:21:15.311Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "10e88345f96496702f632c9a7ee5f8a68047d2f8",
-              "shortSha": "10e8834",
-              "message": "Merge pull request #9782 from espoon-voltti/koski-error-log-level",
-              "date": "2026-09-08T08:57:12Z",
-              "author": "ohinkinen"
+              "sha": "eff28dc96943150d43e83518d1845f625953b841",
+              "shortSha": "eff28dc",
+              "message": "Merge pull request #9784 from espoon-voltti/oulu-autoanalyze-config",
+              "date": "2026-09-10T07:11:35Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -427,7 +427,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-10T09:02:29.618Z",
+            "checkedAt": "2026-09-10T09:21:18.501Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -446,8 +446,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9780,
               "title": "Vanhentuneiden tuloselvitysmuistutusten tietojen poisto (ei vielä käytössä)",
@@ -516,6 +515,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
