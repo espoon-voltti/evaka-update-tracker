@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T08:18:44.289Z",
+  "generatedAt": "2026-09-10T08:33:10.186Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-10T08:18:09.119Z",
+            "checkedAt": "2026-09-10T08:32:25.015Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-10T08:18:10.050Z",
+            "checkedAt": "2026-09-10T08:32:26.044Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -132,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-10T08:18:13.664Z",
+            "checkedAt": "2026-09-10T08:32:29.764Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -157,7 +157,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-10T08:18:22.990Z",
+            "checkedAt": "2026-09-10T08:32:41.154Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "df1440daebc007e8d077c4507b1160623c32d633",
@@ -271,7 +271,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-10T08:18:36.196Z",
+            "checkedAt": "2026-09-10T08:32:56.729Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -290,7 +290,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-10T08:18:36.847Z",
+            "checkedAt": "2026-09-10T08:32:57.643Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -409,7 +409,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-10T08:18:40.206Z",
+            "checkedAt": "2026-09-10T08:33:01.496Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -428,15 +428,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-10T08:18:40.901Z",
+            "checkedAt": "2026-09-10T08:33:02.416Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "05f48c34e7735544a887b40c1df4ed43d3508cec",
-              "shortSha": "05f48c3",
-              "message": "Merge pull request #9789 from espoon-voltti/fix-varda-logging",
-              "date": "2026-09-10T04:37:05Z",
-              "author": "akheron"
+              "sha": "eff28dc96943150d43e83518d1845f625953b841",
+              "shortSha": "eff28dc",
+              "message": "Merge pull request #9784 from espoon-voltti/oulu-autoanalyze-config",
+              "date": "2026-09-10T07:11:35Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -449,6 +449,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9780,
+              "title": "Vanhentuneiden tuloselvitysmuistutusten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-09-10T05:34:47Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9780",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9789,
               "title": "Korjataan Varda-virheilmoituksen tulostus",
@@ -500,25 +517,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9780,
-              "title": "Vanhentuneiden tuloselvitysmuistutusten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-10T05:34:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9780",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     }
