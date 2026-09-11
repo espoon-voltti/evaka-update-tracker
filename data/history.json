@@ -1,6 +1,114 @@
 {
   "events": [
     {
+      "id": "2026-09-11T02:11:32.281Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-09-11T02:11:32.281Z",
+      "previousCommit": {
+        "sha": "c86ce806644db2566ae5fbd211f94458c5c0aa3a",
+        "shortSha": "c86ce80",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
+        "shortSha": "101ceb7",
+        "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
+        "date": "2026-09-10T13:58:19Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 9778,
+          "title": " Estetään automaattisten tietojen poiston vaikutus Vardaan",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-10T13:58:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9778",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9783,
+          "title": "Lisävahvistus ja tekstimuutoksia viestin poisto -dialogiin",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-10T13:55:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9783",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9784,
+          "title": "Aggressiivisempi Postgres autovacuum analyze Oulussa",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-09-10T07:11:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9784",
+          "labels": [
+            "tech",
+            "oulu"
+          ]
+        },
+        {
+          "number": 9780,
+          "title": "Vanhentuneiden tuloselvitysmuistutusten tietojen poisto (ei vielä käytössä)",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-10T05:34:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9780",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9789,
+          "title": "Korjataan Varda-virheilmoituksen tulostus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-10T04:37:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9789",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-10T09:34:12.393Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
