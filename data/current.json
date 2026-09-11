@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T06:34:28.152Z",
+  "generatedAt": "2026-09-11T06:53:21.323Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-11T06:33:43.195Z",
+            "checkedAt": "2026-09-11T06:52:49.461Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-11T06:33:44.101Z",
+            "checkedAt": "2026-09-11T06:52:50.074Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-11T06:33:48.673Z",
+            "checkedAt": "2026-09-11T06:52:53.957Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -173,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-11T06:34:01.257Z",
+            "checkedAt": "2026-09-11T06:53:02.249Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
@@ -337,7 +337,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-11T06:34:20.739Z",
+            "checkedAt": "2026-09-11T06:53:15.288Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -356,7 +356,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-11T06:34:21.776Z",
+            "checkedAt": "2026-09-11T06:53:15.941Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -441,7 +441,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-11T06:34:24.468Z",
+            "checkedAt": "2026-09-11T06:53:18.376Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -460,7 +460,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-11T06:34:25.445Z",
+            "checkedAt": "2026-09-11T06:53:18.993Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -482,6 +482,22 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9792,
+              "title": "Aggressiivisempi Postgres autovacuum analyze Turussa",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-09-11T06:47:17Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9792",
+              "labels": [
+                "tech",
+                "turku"
+              ]
+            },
             {
               "number": 9779,
               "title": "Korjaus async-jobien throttlaukseen",
