@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T11:05:45.524Z",
+  "generatedAt": "2026-09-11T11:15:03.594Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-11T11:05:03.348Z",
+            "checkedAt": "2026-09-11T11:14:18.162Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-11T11:05:04.182Z",
+            "checkedAt": "2026-09-11T11:14:19.048Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-11T11:05:10.578Z",
+            "checkedAt": "2026-09-11T11:14:23.512Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -173,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-11T11:05:21.826Z",
+            "checkedAt": "2026-09-11T11:14:34.617Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
@@ -337,15 +337,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-11T11:05:38.227Z",
+            "checkedAt": "2026-09-11T11:14:52.131Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "eff28dc96943150d43e83518d1845f625953b841",
-              "shortSha": "eff28dc",
-              "message": "Merge pull request #9784 from espoon-voltti/oulu-autoanalyze-config",
-              "date": "2026-09-10T07:11:35Z",
-              "author": "tomuli"
+              "sha": "014e6f304d9cae7a742bd19b2f5abde1355cfdc3",
+              "shortSha": "014e6f3",
+              "message": "Merge pull request #9779 from espoon-voltti/fix-async-job-throttle-mocked-clock",
+              "date": "2026-09-11T04:21:14Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -356,7 +356,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-11T11:05:38.975Z",
+            "checkedAt": "2026-09-11T11:14:54.860Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -375,8 +375,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9779,
               "title": "Korjaus async-jobien throttlaukseen",
@@ -428,6 +427,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -441,15 +441,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-11T11:05:41.794Z",
+            "checkedAt": "2026-09-11T11:14:58.161Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "eff28dc96943150d43e83518d1845f625953b841",
-              "shortSha": "eff28dc",
-              "message": "Merge pull request #9784 from espoon-voltti/oulu-autoanalyze-config",
-              "date": "2026-09-10T07:11:35Z",
-              "author": "tomuli"
+              "sha": "014e6f304d9cae7a742bd19b2f5abde1355cfdc3",
+              "shortSha": "014e6f3",
+              "message": "Merge pull request #9779 from espoon-voltti/fix-async-job-throttle-mocked-clock",
+              "date": "2026-09-11T04:21:14Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -460,7 +460,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-11T11:05:42.440Z",
+            "checkedAt": "2026-09-11T11:15:00.641Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -479,8 +479,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9779,
               "title": "Korjaus async-jobien throttlaukseen",
@@ -532,6 +531,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9792,
