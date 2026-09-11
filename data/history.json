@@ -1,6 +1,81 @@
 {
   "events": [
     {
+      "id": "2026-09-11T08:44:19.192Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-11T08:44:19.192Z",
+      "previousCommit": {
+        "sha": "eff28dc96943150d43e83518d1845f625953b841",
+        "shortSha": "eff28dc",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "014e6f304d9cae7a742bd19b2f5abde1355cfdc3",
+        "shortSha": "014e6f3",
+        "message": "Merge pull request #9779 from espoon-voltti/fix-async-job-throttle-mocked-clock",
+        "date": "2026-09-11T04:21:14Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9779,
+          "title": "Korjaus async-jobien throttlaukseen",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-11T04:21:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9779",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9778,
+          "title": " Estetään automaattisten tietojen poiston vaikutus Vardaan",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-10T13:58:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9778",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9783,
+          "title": "Lisävahvistus ja tekstimuutoksia viestin poisto -dialogiin",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-10T13:55:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9783",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-11T08:28:10.862Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
