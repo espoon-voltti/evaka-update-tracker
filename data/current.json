@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T11:15:03.594Z",
+  "generatedAt": "2026-09-11T11:17:57.577Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-11T11:14:18.162Z",
+            "checkedAt": "2026-09-11T11:17:15.491Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c86ce806644db2566ae5fbd211f94458c5c0aa3a",
-              "shortSha": "c86ce80",
-              "message": "Merge pull request #9747 from espoon-voltti/fix-placement-draft-stale-form-state",
-              "date": "2026-09-09T12:16:42Z",
-              "author": "tomuli"
+              "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
+              "shortSha": "101ceb7",
+              "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
+              "date": "2026-09-10T13:58:19Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-11T11:14:19.048Z",
+            "checkedAt": "2026-09-11T11:17:18.913Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9778,
               "title": " Estetään automaattisten tietojen poiston vaikutus Vardaan",
@@ -118,6 +117,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9779,
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-11T11:14:23.512Z",
+            "checkedAt": "2026-09-11T11:17:23.327Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -173,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-11T11:14:34.617Z",
+            "checkedAt": "2026-09-11T11:17:34.826Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
@@ -337,7 +337,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-11T11:14:52.131Z",
+            "checkedAt": "2026-09-11T11:17:52.422Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -356,7 +356,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-11T11:14:54.860Z",
+            "checkedAt": "2026-09-11T11:17:53.502Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -375,58 +375,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9779,
-              "title": "Korjaus async-jobien throttlaukseen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-11T04:21:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9779",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9778,
-              "title": " Estetään automaattisten tietojen poiston vaikutus Vardaan",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-10T13:58:19Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9778",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9783,
-              "title": "Lisävahvistus ja tekstimuutoksia viestin poisto -dialogiin",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-10T13:55:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9783",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -441,7 +390,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-11T11:14:58.161Z",
+            "checkedAt": "2026-09-11T11:17:55.259Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -460,7 +409,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-11T11:15:00.641Z",
+            "checkedAt": "2026-09-11T11:17:56.054Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -479,58 +428,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9779,
-              "title": "Korjaus async-jobien throttlaukseen",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-11T04:21:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9779",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9778,
-              "title": " Estetään automaattisten tietojen poiston vaikutus Vardaan",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-10T13:58:19Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9778",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9783,
-              "title": "Lisävahvistus ja tekstimuutoksia viestin poisto -dialogiin",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-10T13:55:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9783",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
