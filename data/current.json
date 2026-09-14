@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T09:19:54.391Z",
+  "generatedAt": "2026-09-14T09:22:57.085Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T09:18:45.585Z",
+            "checkedAt": "2026-09-14T09:21:59.105Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-              "shortSha": "101ceb7",
-              "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-              "date": "2026-09-10T13:58:19Z",
-              "author": "Joosakur"
+              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+              "shortSha": "bf78afd",
+              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+              "date": "2026-09-13T17:02:11Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T09:18:46.180Z",
+            "checkedAt": "2026-09-14T09:22:05.330Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9779,
               "title": "Korjaus async-jobien throttlaukseen",
@@ -67,6 +66,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9781,
@@ -131,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T09:18:55.664Z",
+            "checkedAt": "2026-09-14T09:22:15.534Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -156,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T09:19:03.524Z",
+            "checkedAt": "2026-09-14T09:22:24.341Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
@@ -387,7 +387,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T09:19:25.601Z",
+            "checkedAt": "2026-09-14T09:22:46.473Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -406,7 +406,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T09:19:30.863Z",
+            "checkedAt": "2026-09-14T09:22:47.301Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -491,7 +491,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-14T09:19:40.007Z",
+            "checkedAt": "2026-09-14T09:22:51.749Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -510,7 +510,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-14T09:19:45.456Z",
+            "checkedAt": "2026-09-14T09:22:52.553Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -529,24 +529,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9792,
-              "title": "Aggressiivisempi Postgres autovacuum analyze Turussa",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-09-11T06:47:17Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9792",
-              "labels": [
-                "tech",
-                "turku"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
