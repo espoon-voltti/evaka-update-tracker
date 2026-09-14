@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T04:52:53.719Z",
+  "generatedAt": "2026-09-14T04:58:20.004Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T04:51:56.094Z",
+            "checkedAt": "2026-09-14T04:57:23.525Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T04:51:56.847Z",
+            "checkedAt": "2026-09-14T04:57:24.486Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -80,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T04:52:02.797Z",
+            "checkedAt": "2026-09-14T04:57:31.951Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -105,7 +105,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T04:52:13.826Z",
+            "checkedAt": "2026-09-14T04:57:43.288Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
@@ -122,180 +122,8 @@
               "author": "renovate[bot]"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-09-14T04:52:13.826Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-09-14T04:52:14.872Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-09-14T04:52:16.025Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-09-14T04:52:17.175Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-09-14T04:52:18.329Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-09-14T04:52:19.493Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-09-14T04:52:20.506Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-09-14T04:52:21.590Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-09-14T04:52:22.595Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
-                "shortSha": "1ae132b",
-                "message": "Merge pull request #2233 from Tampere/dependabot/submodules/evaka-101ceb7",
-                "date": "2026-09-10T21:12:11Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-                "shortSha": "101ceb7",
-                "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-                "date": "2026-09-10T13:58:19Z",
-                "author": "Joosakur"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -440,7 +268,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T04:52:40.912Z",
+            "checkedAt": "2026-09-14T04:58:04.761Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -459,7 +287,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T04:52:41.832Z",
+            "checkedAt": "2026-09-14T04:58:05.643Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -493,7 +321,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-14T04:52:47.704Z",
+            "checkedAt": "2026-09-14T04:58:12.580Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -512,7 +340,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-14T04:52:48.363Z",
+            "checkedAt": "2026-09-14T04:58:13.732Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
