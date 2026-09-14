@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T07:03:08.571Z",
+  "generatedAt": "2026-09-14T07:32:58.015Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T07:01:58.957Z",
+            "checkedAt": "2026-09-14T07:31:48.629Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T07:02:00.009Z",
+            "checkedAt": "2026-09-14T07:31:49.562Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -68,6 +68,23 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9781,
+              "title": "Päivitetään näkymiä herkemmin kuntalaisen käyttöliittymässä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-14T07:10:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9781",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9794,
               "title": "Migratoidaan henkilön tietojen käsittelyyn liittyviä audit-logeja",
@@ -114,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T07:02:10.426Z",
+            "checkedAt": "2026-09-14T07:32:00.227Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -139,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T07:02:22.816Z",
+            "checkedAt": "2026-09-14T07:32:11.116Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
@@ -291,6 +308,40 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9799,
+              "title": "Tampereen tukitoimet: integroitu -> pienennetty",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-14T07:13:50Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9799",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "employee"
+              ]
+            },
+            {
+              "number": 9781,
+              "title": "Päivitetään näkymiä herkemmin kuntalaisen käyttöliittymässä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-14T07:10:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9781",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
               "number": 9794,
               "title": "Migratoidaan henkilön tietojen käsittelyyn liittyviä audit-logeja",
               "author": "ohinkinen",
@@ -336,7 +387,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T07:02:47.404Z",
+            "checkedAt": "2026-09-14T07:32:36.742Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -355,7 +406,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T07:02:48.501Z",
+            "checkedAt": "2026-09-14T07:32:37.624Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -377,6 +428,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9781,
+              "title": "Päivitetään näkymiä herkemmin kuntalaisen käyttöliittymässä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-14T07:10:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9781",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9794,
               "title": "Migratoidaan henkilön tietojen käsittelyyn liittyviä audit-logeja",
@@ -423,7 +491,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-14T07:02:58.326Z",
+            "checkedAt": "2026-09-14T07:32:47.366Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -442,7 +510,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-14T07:02:59.341Z",
+            "checkedAt": "2026-09-14T07:32:48.230Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -481,6 +549,23 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9781,
+              "title": "Päivitetään näkymiä herkemmin kuntalaisen käyttöliittymässä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-14T07:10:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9781",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9794,
               "title": "Migratoidaan henkilön tietojen käsittelyyn liittyviä audit-logeja",
