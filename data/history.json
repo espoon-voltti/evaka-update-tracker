@@ -1,6 +1,224 @@
 {
   "events": [
     {
+      "id": "2026-09-14T00:03:32.716Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-09-14T00:03:32.716Z",
+      "previousCommit": {
+        "sha": "014e6f304d9cae7a742bd19b2f5abde1355cfdc3",
+        "shortSha": "014e6f3",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+        "shortSha": "bf78afd",
+        "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+        "date": "2026-09-13T17:02:11Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 9820,
+          "title": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-13T17:02:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9820",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9819,
+          "title": "Update dependency com.auth0:java-jwt to v4.6.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-13T14:17:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9819",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9817,
+          "title": "Update dependency oxfmt to v0.67.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-12T21:08:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9817",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9818,
+          "title": "Update dependency oxlint to v1.82.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-12T18:42:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9818",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9803,
+          "title": "Update dependency postcss to v8.5.28",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-12T02:11:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9803",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9806,
+          "title": "Update dependency uv to v0.12.10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-11T22:41:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9806",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9805,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.54.13",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-11T22:41:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9805",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9811,
+          "title": "Update playwright monorepo to v1.63.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-11T22:41:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9811",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9802,
+          "title": "Update dependency @types/react-dom to v19.2.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-11T22:41:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9802",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9804,
+          "title": "Update dependency postcss-preset-env to v11.5.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-11T22:41:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9804",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9801,
+          "title": "Update dependency @testing-library/user-event to v14.6.7",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-11T22:41:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9801",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9792,
+          "title": "Aggressiivisempi Postgres autovacuum analyze Turussa",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-11T06:47:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9792",
+          "labels": [
+            "tech",
+            "turku"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-14T00:00:47.504Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
