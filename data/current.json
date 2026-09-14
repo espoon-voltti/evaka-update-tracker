@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T09:06:16.830Z",
+  "generatedAt": "2026-09-14T09:19:54.391Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T09:05:14.975Z",
+            "checkedAt": "2026-09-14T09:18:45.585Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T09:05:15.613Z",
+            "checkedAt": "2026-09-14T09:18:46.180Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -131,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T09:05:25.655Z",
+            "checkedAt": "2026-09-14T09:18:55.664Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -156,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T09:05:34.438Z",
+            "checkedAt": "2026-09-14T09:19:03.524Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
@@ -387,15 +387,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T09:05:56.456Z",
+            "checkedAt": "2026-09-14T09:19:25.601Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "014e6f304d9cae7a742bd19b2f5abde1355cfdc3",
-              "shortSha": "014e6f3",
-              "message": "Merge pull request #9779 from espoon-voltti/fix-async-job-throttle-mocked-clock",
-              "date": "2026-09-11T04:21:14Z",
-              "author": "akheron"
+              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+              "shortSha": "bf78afd",
+              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+              "date": "2026-09-13T17:02:11Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -406,7 +406,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T09:05:57.169Z",
+            "checkedAt": "2026-09-14T09:19:30.863Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -491,15 +491,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-14T09:06:06.903Z",
+            "checkedAt": "2026-09-14T09:19:40.007Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "014e6f304d9cae7a742bd19b2f5abde1355cfdc3",
-              "shortSha": "014e6f3",
-              "message": "Merge pull request #9779 from espoon-voltti/fix-async-job-throttle-mocked-clock",
-              "date": "2026-09-11T04:21:14Z",
-              "author": "akheron"
+              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+              "shortSha": "bf78afd",
+              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+              "date": "2026-09-13T17:02:11Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -510,7 +510,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-14T09:06:07.517Z",
+            "checkedAt": "2026-09-14T09:19:45.456Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -529,8 +529,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9792,
               "title": "Aggressiivisempi Postgres autovacuum analyze Turussa",
@@ -548,6 +547,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9781,
