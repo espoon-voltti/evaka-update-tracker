@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T01:57:06.652Z",
+  "generatedAt": "2026-09-14T02:15:29.884Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T01:56:24.148Z",
+            "checkedAt": "2026-09-14T02:14:27.241Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-14T01:56:24.740Z",
+            "checkedAt": "2026-09-14T02:14:27.954Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "101ceb7a8e046961d7a389674a38f591af07a271",
-              "shortSha": "101ceb7",
-              "message": "Merge pull request #9778 from espoon-voltti/varda-retention-freeze",
-              "date": "2026-09-10T13:58:19Z",
-              "author": "Joosakur"
+              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+              "shortSha": "bf78afd",
+              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+              "date": "2026-09-13T17:02:11Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9779,
               "title": "Korjaus async-jobien throttlaukseen",
@@ -67,7 +66,8 @@
                 "core"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -80,7 +80,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T01:56:30.108Z",
+            "checkedAt": "2026-09-14T02:14:39.358Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -105,7 +105,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-14T01:56:37.898Z",
+            "checkedAt": "2026-09-14T02:14:47.707Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ae132b7943ed7095cb3cb6703abb4b2af563132",
@@ -269,7 +269,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T01:56:55.119Z",
+            "checkedAt": "2026-09-14T02:15:13.178Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -288,7 +288,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-14T01:56:55.778Z",
+            "checkedAt": "2026-09-14T02:15:14.519Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -322,7 +322,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-14T01:57:00.891Z",
+            "checkedAt": "2026-09-14T02:15:22.188Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -341,7 +341,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-14T01:57:01.545Z",
+            "checkedAt": "2026-09-14T02:15:23.329Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
