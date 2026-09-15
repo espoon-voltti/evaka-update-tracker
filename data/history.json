@@ -1,6 +1,243 @@
 {
   "events": [
     {
+      "id": "2026-09-15T02:12:06.221Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-09-15T02:12:06.221Z",
+      "previousCommit": {
+        "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+        "shortSha": "bf78afd",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
+        "shortSha": "a07ef88",
+        "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
+        "date": "2026-09-14T12:35:45Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 9694,
+          "title": "Audit-lokitus ajastetusta oikeuksien poistosta",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-14T12:35:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9694",
+          "labels": [
+            "tech",
+            "service",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9824,
+          "title": "Korjataan flaky e2e-testi",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-14T09:43:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9824",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9823,
+          "title": "Korjataan `mise restart` käynnistämään pm2-palvelut oikein",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-09-14T09:43:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9823",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 9813,
+          "title": "Bump js-yaml from 4.3.1 to 4.3.2 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-14T09:20:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9813",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9799,
+          "title": "Tampereen tukitoimet: integroitu -> pienennetty",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-09-14T07:13:50Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9799",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9781,
+          "title": "Päivitetään näkymiä herkemmin kuntalaisen käyttöliittymässä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-14T07:10:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9781",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9794,
+          "title": "Migratoidaan henkilön tietojen käsittelyyn liittyviä audit-logeja",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-14T06:40:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9794",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9822,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.54.14",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-14T05:46:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9822",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9821,
+          "title": "Update dependency com.datadoghq:dd-java-agent to v1.66.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-14T05:28:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9821",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9810,
+          "title": "Update flyway to v13.5.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-14T05:28:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9810",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9809,
+          "title": "Update docker/dockerfile Docker tag to v1.27.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-14T05:26:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9809",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9808,
+          "title": "Update dependency wouter to v3.11.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-14T05:26:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9808",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9793,
+          "title": "Poistetaan kuntalaisen sessio, jos käyttäjää ei enää ole tietokannassa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-14T05:14:36Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9793",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-15T00:29:27.996Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
