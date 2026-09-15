@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T05:02:40.698Z",
+  "generatedAt": "2026-09-15T05:13:48.979Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T05:01:45.229Z",
+            "checkedAt": "2026-09-15T05:12:47.143Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T05:01:45.877Z",
+            "checkedAt": "2026-09-15T05:12:48.077Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T05:01:51.239Z",
+            "checkedAt": "2026-09-15T05:12:54.612Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -173,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T05:01:59.160Z",
+            "checkedAt": "2026-09-15T05:13:06.317Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d0699911bbd9a6cce2413bd0af03e8ef0aa333df",
@@ -190,180 +190,8 @@
               "author": "Wnt"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-09-15T05:01:59.160Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "d0699911bbd9a6cce2413bd0af03e8ef0aa333df",
-                "shortSha": "d069991",
-                "message": "Merge pull request #2236 from Tampere/dependabot/submodules/evaka-a07ef88",
-                "date": "2026-09-14T21:13:29Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
-                "shortSha": "a07ef88",
-                "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
-                "date": "2026-09-14T12:35:45Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-09-15T05:02:00.244Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-09-15T05:02:01.263Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-09-15T05:02:02.199Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-09-15T05:02:03.109Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-09-15T05:02:04.065Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-09-15T05:02:05.131Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-09-15T05:02:06.024Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-09-15T05:02:06.963Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-                "shortSha": "85b2957",
-                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-                "date": "2026-09-13T21:12:17Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-                "shortSha": "bf78afd",
-                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-                "date": "2026-09-13T17:02:11Z",
-                "author": "renovate[bot]"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -609,7 +437,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T05:02:28.739Z",
+            "checkedAt": "2026-09-15T05:13:34.036Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -628,7 +456,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T05:02:29.357Z",
+            "checkedAt": "2026-09-15T05:13:35.137Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -747,7 +575,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-15T05:02:34.724Z",
+            "checkedAt": "2026-09-15T05:13:41.476Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -766,7 +594,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-15T05:02:35.428Z",
+            "checkedAt": "2026-09-15T05:13:42.549Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
