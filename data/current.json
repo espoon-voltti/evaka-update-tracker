@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T10:36:48.163Z",
+  "generatedAt": "2026-09-15T10:46:03.012Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T10:35:32.185Z",
+            "checkedAt": "2026-09-15T10:44:41.674Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T10:35:33.089Z",
+            "checkedAt": "2026-09-15T10:44:42.678Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -137,6 +137,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9786,
+              "title": "Vanhentuneiden palveluohjauksen viestien poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-15T10:35:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9786",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9828,
               "title": "Ei anneta Renovaten pinnata Zulu Javaa",
               "author": "akheron",
@@ -181,7 +198,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T10:35:42.507Z",
+            "checkedAt": "2026-09-15T10:44:53.455Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -206,7 +223,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T10:35:53.986Z",
+            "checkedAt": "2026-09-15T10:45:06.404Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d0699911bbd9a6cce2413bd0af03e8ef0aa333df",
@@ -520,7 +537,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T10:36:26.352Z",
+            "checkedAt": "2026-09-15T10:45:41.028Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -539,7 +556,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T10:36:27.254Z",
+            "checkedAt": "2026-09-15T10:45:42.019Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -708,7 +725,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-15T10:36:36.914Z",
+            "checkedAt": "2026-09-15T10:45:52.033Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -727,7 +744,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-15T10:36:38.149Z",
+            "checkedAt": "2026-09-15T10:45:53.011Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
