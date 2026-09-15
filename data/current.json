@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T10:59:13.852Z",
+  "generatedAt": "2026-09-15T11:07:36.410Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T10:57:49.649Z",
+            "checkedAt": "2026-09-15T11:06:17.425Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-              "shortSha": "bf78afd",
-              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-              "date": "2026-09-13T17:02:11Z",
-              "author": "renovate[bot]"
+              "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
+              "shortSha": "a07ef88",
+              "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
+              "date": "2026-09-14T12:35:45Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T10:57:50.866Z",
+            "checkedAt": "2026-09-15T11:06:23.912Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9694,
               "title": "Audit-lokitus ajastetusta oikeuksien poistosta",
@@ -116,25 +115,9 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 9793,
-              "title": "Poistetaan kuntalaisen sessio, jos käyttäjää ei enää ole tietokannassa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-14T05:14:36Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9793",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9786,
@@ -198,7 +181,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T10:58:04.505Z",
+            "checkedAt": "2026-09-15T11:06:32.950Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -223,7 +206,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T10:58:17.169Z",
+            "checkedAt": "2026-09-15T11:06:41.337Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d0699911bbd9a6cce2413bd0af03e8ef0aa333df",
@@ -537,15 +520,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T10:58:51.300Z",
+            "checkedAt": "2026-09-15T11:07:08.851Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-              "shortSha": "bf78afd",
-              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-              "date": "2026-09-13T17:02:11Z",
-              "author": "renovate[bot]"
+              "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
+              "shortSha": "a07ef88",
+              "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
+              "date": "2026-09-14T12:35:45Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -556,7 +539,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T10:58:52.308Z",
+            "checkedAt": "2026-09-15T11:07:14.609Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -575,8 +558,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9694,
               "title": "Audit-lokitus ajastetusta oikeuksien poistosta",
@@ -643,25 +625,9 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 9793,
-              "title": "Poistetaan kuntalaisen sessio, jos käyttäjää ei enää ole tietokannassa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-14T05:14:36Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9793",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9786,
@@ -725,15 +691,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-15T10:59:02.278Z",
+            "checkedAt": "2026-09-15T11:07:22.805Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-              "shortSha": "bf78afd",
-              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-              "date": "2026-09-13T17:02:11Z",
-              "author": "renovate[bot]"
+              "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
+              "shortSha": "a07ef88",
+              "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
+              "date": "2026-09-14T12:35:45Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -744,7 +710,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-15T10:59:03.282Z",
+            "checkedAt": "2026-09-15T11:07:28.521Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -763,8 +729,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9694,
               "title": "Audit-lokitus ajastetusta oikeuksien poistosta",
@@ -831,25 +796,9 @@
                 "tech",
                 "core"
               ]
-            },
-            {
-              "number": 9793,
-              "title": "Poistetaan kuntalaisen sessio, jos käyttäjää ei enää ole tietokannassa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-14T05:14:36Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9793",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9786,
