@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T04:55:41.054Z",
+  "generatedAt": "2026-09-15T05:02:40.698Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T04:54:50.755Z",
+            "checkedAt": "2026-09-15T05:01:45.229Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-15T04:54:51.718Z",
+            "checkedAt": "2026-09-15T05:01:45.877Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T04:54:57.363Z",
+            "checkedAt": "2026-09-15T05:01:51.239Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -173,25 +173,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-15T04:55:06.102Z",
+            "checkedAt": "2026-09-15T05:01:59.160Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
-              "shortSha": "85b2957",
-              "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
-              "date": "2026-09-13T21:12:17Z",
+              "sha": "d0699911bbd9a6cce2413bd0af03e8ef0aa333df",
+              "shortSha": "d069991",
+              "message": "Merge pull request #2236 from Tampere/dependabot/submodules/evaka-a07ef88",
+              "date": "2026-09-14T21:13:29Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
-              "shortSha": "bf78afd",
-              "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
-              "date": "2026-09-13T17:02:11Z",
-              "author": "renovate[bot]"
+              "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
+              "shortSha": "a07ef88",
+              "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
+              "date": "2026-09-14T12:35:45Z",
+              "author": "Wnt"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-09-15T05:01:59.160Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "d0699911bbd9a6cce2413bd0af03e8ef0aa333df",
+                "shortSha": "d069991",
+                "message": "Merge pull request #2236 from Tampere/dependabot/submodules/evaka-a07ef88",
+                "date": "2026-09-14T21:13:29Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
+                "shortSha": "a07ef88",
+                "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
+                "date": "2026-09-14T12:35:45Z",
+                "author": "Wnt"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-09-15T05:02:00.244Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-09-15T05:02:01.263Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-09-15T05:02:02.199Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-09-15T05:02:03.109Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-09-15T05:02:04.065Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-09-15T05:02:05.131Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-09-15T05:02:06.024Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-09-15T05:02:06.963Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "85b29577349d4b2e47a1a5ec7e4d83d9e9da9da0",
+                "shortSha": "85b2957",
+                "message": "Merge pull request #2234 from Tampere/dependabot/submodules/evaka-bf78afd",
+                "date": "2026-09-13T21:12:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "bf78afd942a6b9df0997545c6870cf421b055d84",
+                "shortSha": "bf78afd",
+                "message": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.2.3 (#9820)",
+                "date": "2026-09-13T17:02:11Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -205,6 +377,107 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9694,
+              "title": "Audit-lokitus ajastetusta oikeuksien poistosta",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-14T12:35:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9694",
+              "labels": [
+                "tech",
+                "service",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9824,
+              "title": "Korjataan flaky e2e-testi",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-14T09:43:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9824",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9799,
+              "title": "Tampereen tukitoimet: integroitu -> pienennetty",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-14T07:13:50Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9799",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "employee"
+              ]
+            },
+            {
+              "number": 9781,
+              "title": "Päivitetään näkymiä herkemmin kuntalaisen käyttöliittymässä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-14T07:10:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9781",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9794,
+              "title": "Migratoidaan henkilön tietojen käsittelyyn liittyviä audit-logeja",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-09-14T06:40:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9794",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9793,
+              "title": "Poistetaan kuntalaisen sessio, jos käyttäjää ei enää ole tietokannassa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-14T05:14:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9793",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9779,
               "title": "Korjaus async-jobien throttlaukseen",
@@ -323,109 +596,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9694,
-              "title": "Audit-lokitus ajastetusta oikeuksien poistosta",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-09-14T12:35:45Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9694",
-              "labels": [
-                "tech",
-                "service",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9824,
-              "title": "Korjataan flaky e2e-testi",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-14T09:43:49Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9824",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9799,
-              "title": "Tampereen tukitoimet: integroitu -> pienennetty",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-14T07:13:50Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9799",
-              "labels": [
-                "enhancement",
-                "seutu",
-                "employee"
-              ]
-            },
-            {
-              "number": 9781,
-              "title": "Päivitetään näkymiä herkemmin kuntalaisen käyttöliittymässä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-14T07:10:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9781",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9794,
-              "title": "Migratoidaan henkilön tietojen käsittelyyn liittyviä audit-logeja",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-14T06:40:49Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9794",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9793,
-              "title": "Poistetaan kuntalaisen sessio, jos käyttäjää ei enää ole tietokannassa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-14T05:14:36Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9793",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -438,7 +609,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T04:55:28.608Z",
+            "checkedAt": "2026-09-15T05:02:28.739Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -457,7 +628,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-15T04:55:29.345Z",
+            "checkedAt": "2026-09-15T05:02:29.357Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -576,7 +747,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-15T04:55:34.867Z",
+            "checkedAt": "2026-09-15T05:02:34.724Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -595,7 +766,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-15T04:55:35.666Z",
+            "checkedAt": "2026-09-15T05:02:35.428Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
