@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T09:01:56.113Z",
+  "generatedAt": "2026-09-16T09:15:43.507Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-16T09:00:53.604Z",
+            "checkedAt": "2026-09-16T09:14:23.772Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-16T09:00:54.621Z",
+            "checkedAt": "2026-09-16T09:14:24.745Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -164,7 +164,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-16T09:01:00.093Z",
+            "checkedAt": "2026-09-16T09:14:31.262Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -189,7 +189,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-16T09:01:11.672Z",
+            "checkedAt": "2026-09-16T09:14:43.507Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -524,6 +524,22 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9797,
+              "title": "Aggressiivisempi Postgres autovacuum analyze / Tampere",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-09-16T09:03:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9797",
+              "labels": [
+                "tech",
+                "seutu"
+              ]
+            },
+            {
               "number": 9788,
               "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
               "author": "akheron",
@@ -553,15 +569,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-16T09:01:43.933Z",
+            "checkedAt": "2026-09-16T09:15:20.307Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
-              "shortSha": "a07ef88",
-              "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
-              "date": "2026-09-14T12:35:45Z",
-              "author": "Wnt"
+              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
+              "shortSha": "725e35c",
+              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
+              "date": "2026-09-15T11:53:29Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -572,7 +588,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-16T09:01:44.913Z",
+            "checkedAt": "2026-09-16T09:15:26.856Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -591,8 +607,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9795,
               "title": "Migratoidaan lapsen asiakirjojen audit-logit",
@@ -676,6 +691,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9788,
@@ -707,15 +723,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-16T09:01:50.080Z",
+            "checkedAt": "2026-09-16T09:15:32.994Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
-              "shortSha": "a07ef88",
-              "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
-              "date": "2026-09-14T12:35:45Z",
-              "author": "Wnt"
+              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
+              "shortSha": "725e35c",
+              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
+              "date": "2026-09-15T11:53:29Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -726,7 +742,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-16T09:01:50.937Z",
+            "checkedAt": "2026-09-16T09:15:37.568Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -745,8 +761,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9795,
               "title": "Migratoidaan lapsen asiakirjojen audit-logit",
@@ -830,6 +845,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9788,
