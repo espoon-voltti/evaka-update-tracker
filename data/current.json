@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T09:23:38.313Z",
+  "generatedAt": "2026-09-16T09:31:57.617Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-16T09:22:41.283Z",
+            "checkedAt": "2026-09-16T09:31:01.471Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-16T09:22:45.575Z",
+            "checkedAt": "2026-09-16T09:31:02.311Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
-              "shortSha": "725e35c",
-              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
-              "date": "2026-09-15T11:53:29Z",
-              "author": "ohinkinen"
+              "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+              "shortSha": "64e6a82",
+              "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
+              "date": "2026-09-16T09:03:32Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -48,92 +48,8 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9795,
-              "title": "Migratoidaan lapsen asiakirjojen audit-logit",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-15T11:53:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9795",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9480,
-              "title": "Vanhentuneiden tuloselvitysten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-15T11:42:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9480",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9786,
-              "title": "Vanhentuneiden palveluohjauksen viestien poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-15T10:35:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9786",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9828,
-              "title": "Ei anneta Renovaten pinnata Zulu Javaa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-15T10:20:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9828",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 9798,
-              "title": "iOS Safari PWA layout-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-15T08:18:46Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9798",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
+          "deployed": [],
+          "inStaging": [
             {
               "number": 9788,
               "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
@@ -151,7 +67,8 @@
                 "citizen"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -164,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-16T09:22:50.699Z",
+            "checkedAt": "2026-09-16T09:31:07.132Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -189,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-16T09:23:00.766Z",
+            "checkedAt": "2026-09-16T09:31:17.418Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -569,7 +486,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-16T09:23:32.469Z",
+            "checkedAt": "2026-09-16T09:31:49.388Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -588,7 +505,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-16T09:23:33.438Z",
+            "checkedAt": "2026-09-16T09:31:50.293Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -640,7 +557,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-16T09:23:35.495Z",
+            "checkedAt": "2026-09-16T09:31:52.325Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -659,15 +576,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-16T09:23:36.318Z",
+            "checkedAt": "2026-09-16T09:31:53.078Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
-              "shortSha": "725e35c",
-              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
-              "date": "2026-09-15T11:53:29Z",
-              "author": "ohinkinen"
+              "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+              "shortSha": "64e6a82",
+              "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
+              "date": "2026-09-16T09:03:32Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -679,8 +596,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9788,
               "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
@@ -698,7 +614,8 @@
                 "citizen"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     }
