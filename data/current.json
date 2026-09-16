@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T04:06:19.695Z",
+  "generatedAt": "2026-09-16T04:19:14.094Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-16T04:05:30.901Z",
+            "checkedAt": "2026-09-16T04:18:18.189Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-16T04:05:31.587Z",
+            "checkedAt": "2026-09-16T04:18:18.978Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -146,7 +146,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-16T04:05:35.799Z",
+            "checkedAt": "2026-09-16T04:18:23.306Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9b38f917ad9acd7fbffe633154f72e9210557d0c",
@@ -171,21 +171,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-16T04:05:44.163Z",
+            "checkedAt": "2026-09-16T04:18:32.459Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "d0699911bbd9a6cce2413bd0af03e8ef0aa333df",
-              "shortSha": "d069991",
-              "message": "Merge pull request #2236 from Tampere/dependabot/submodules/evaka-a07ef88",
-              "date": "2026-09-14T21:13:29Z",
+              "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
+              "shortSha": "83591e1",
+              "message": "Merge pull request #2237 from Tampere/dependabot/submodules/evaka-725e35c",
+              "date": "2026-09-15T21:13:19Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "a07ef88940f8b66fd33421e969d3e6d614abcc46",
-              "shortSha": "a07ef88",
-              "message": "Merge pull request #9694 from espoon-voltti/scheduled-acl-audit-logging",
-              "date": "2026-09-14T12:35:45Z",
-              "author": "Wnt"
+              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
+              "shortSha": "725e35c",
+              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
+              "date": "2026-09-15T11:53:29Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -203,6 +203,88 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9795,
+              "title": "Migratoidaan lapsen asiakirjojen audit-logit",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-09-15T11:53:29Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9795",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9480,
+              "title": "Vanhentuneiden tuloselvitysten tietojen poisto (ei vielä käytössä)",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-09-15T11:42:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9480",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9786,
+              "title": "Vanhentuneiden palveluohjauksen viestien poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-15T10:35:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9786",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9828,
+              "title": "Ei anneta Renovaten pinnata Zulu Javaa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-15T10:20:01Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9828",
+              "labels": [
+                "dependencies"
+              ]
+            },
+            {
+              "number": 9798,
+              "title": "iOS Safari PWA layout-korjaus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-15T08:18:46Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9798",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9694,
               "title": "Audit-lokitus ajastetusta oikeuksien poistosta",
@@ -422,90 +504,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9795,
-              "title": "Migratoidaan lapsen asiakirjojen audit-logit",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-15T11:53:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9795",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9480,
-              "title": "Vanhentuneiden tuloselvitysten tietojen poisto (ei vielä käytössä)",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-15T11:42:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9480",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9786,
-              "title": "Vanhentuneiden palveluohjauksen viestien poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-15T10:35:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9786",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9828,
-              "title": "Ei anneta Renovaten pinnata Zulu Javaa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-15T10:20:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9828",
-              "labels": [
-                "dependencies"
-              ]
-            },
-            {
-              "number": 9798,
-              "title": "iOS Safari PWA layout-korjaus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-15T08:18:46Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9798",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -518,7 +517,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-16T04:06:10.061Z",
+            "checkedAt": "2026-09-16T04:19:04.908Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -537,7 +536,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-16T04:06:10.895Z",
+            "checkedAt": "2026-09-16T04:19:05.547Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -654,7 +653,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-16T04:06:15.082Z",
+            "checkedAt": "2026-09-16T04:19:09.489Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -673,7 +672,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-16T04:06:15.803Z",
+            "checkedAt": "2026-09-16T04:19:10.249Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
