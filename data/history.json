@@ -1,6 +1,105 @@
 {
   "events": [
     {
+      "id": "2026-09-17T04:34:23.178Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-17T04:34:23.178Z",
+      "previousCommit": {
+        "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
+        "shortSha": "83591e1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "97e47fb5324c8658b48a3bd7f496776fa723bbae",
+        "shortSha": "97e47fb",
+        "message": "Merge pull request #2238 from Tampere/dependabot/submodules/evaka-64e6a82",
+        "date": "2026-09-16T21:11:05Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2238,
+          "title": "Bump evaka from `725e35c` to `64e6a82`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-16T21:11:05Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2238",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-09-17T04:34:23.178Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-17T04:34:23.178Z",
+      "previousCommit": {
+        "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
+        "shortSha": "725e35c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+        "shortSha": "64e6a82",
+        "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
+        "date": "2026-09-16T09:03:32Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 9797,
+          "title": "Aggressiivisempi Postgres autovacuum analyze / Tampere",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-16T09:03:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9797",
+          "labels": [
+            "tech",
+            "seutu"
+          ]
+        },
+        {
+          "number": 9788,
+          "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-16T06:39:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9788",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-17T00:17:27.423Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
