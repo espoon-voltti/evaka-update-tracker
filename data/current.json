@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T09:24:18.527Z",
+  "generatedAt": "2026-09-17T09:34:29.774Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-17T09:23:41.794Z",
+            "checkedAt": "2026-09-17T09:33:52.787Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
-              "shortSha": "725e35c",
-              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
-              "date": "2026-09-15T11:53:29Z",
-              "author": "ohinkinen"
+              "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+              "shortSha": "64e6a82",
+              "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
+              "date": "2026-09-16T09:03:32Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-17T09:23:42.660Z",
+            "checkedAt": "2026-09-17T09:33:54.721Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9788,
               "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
@@ -68,7 +67,42 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9826,
+              "title": "Päivitetään välimuistiin tallennettu offline-sivu jokaisella julkaisulla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9826",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9825,
+              "title": "Poistetaan kuntalaisen PWAn offline-välimuisti PWAn sammutuksen yhteydessä",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9825",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9830,
               "title": "Pudotetaa kuntalaisen tuloselvityksen valinnoista vanhentuneet valinnat",
@@ -116,7 +150,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-17T09:23:45.780Z",
+            "checkedAt": "2026-09-17T09:33:58.046Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -141,7 +175,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-17T09:23:56.446Z",
+            "checkedAt": "2026-09-17T09:34:06.595Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "97e47fb5324c8658b48a3bd7f496776fa723bbae",
@@ -209,6 +243,40 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9826,
+              "title": "Päivitetään välimuistiin tallennettu offline-sivu jokaisella julkaisulla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9826",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9825,
+              "title": "Poistetaan kuntalaisen PWAn offline-välimuisti PWAn sammutuksen yhteydessä",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9825",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
               "number": 9830,
               "title": "Pudotetaa kuntalaisen tuloselvityksen valinnoista vanhentuneet valinnat",
               "author": "reynders",
@@ -255,15 +323,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-17T09:24:10.453Z",
+            "checkedAt": "2026-09-17T09:34:19.229Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
-              "shortSha": "725e35c",
-              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
-              "date": "2026-09-15T11:53:29Z",
-              "author": "ohinkinen"
+              "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+              "shortSha": "64e6a82",
+              "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
+              "date": "2026-09-16T09:03:32Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -274,7 +342,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-17T09:24:11.425Z",
+            "checkedAt": "2026-09-17T09:34:20.947Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -293,8 +361,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9788,
               "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
@@ -313,7 +380,42 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9826,
+              "title": "Päivitetään välimuistiin tallennettu offline-sivu jokaisella julkaisulla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9826",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9825,
+              "title": "Poistetaan kuntalaisen PWAn offline-välimuisti PWAn sammutuksen yhteydessä",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9825",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9830,
               "title": "Pudotetaa kuntalaisen tuloselvityksen valinnoista vanhentuneet valinnat",
@@ -361,15 +463,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-17T09:24:14.639Z",
+            "checkedAt": "2026-09-17T09:34:24.486Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
-              "shortSha": "725e35c",
-              "message": "Merge pull request #9795 from espoon-voltti/audit-log-rework-child-documents",
-              "date": "2026-09-15T11:53:29Z",
-              "author": "ohinkinen"
+              "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+              "shortSha": "64e6a82",
+              "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
+              "date": "2026-09-16T09:03:32Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -380,7 +482,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-17T09:24:15.464Z",
+            "checkedAt": "2026-09-17T09:34:26.449Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -399,8 +501,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9788,
               "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
@@ -419,7 +520,42 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9826,
+              "title": "Päivitetään välimuistiin tallennettu offline-sivu jokaisella julkaisulla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:45Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9826",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9825,
+              "title": "Poistetaan kuntalaisen PWAn offline-välimuisti PWAn sammutuksen yhteydessä",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-17T09:30:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9825",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9830,
               "title": "Pudotetaa kuntalaisen tuloselvityksen valinnoista vanhentuneet valinnat",
