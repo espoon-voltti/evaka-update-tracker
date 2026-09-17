@@ -1,6 +1,64 @@
 {
   "events": [
     {
+      "id": "2026-09-17T00:17:27.423Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-17T00:17:27.423Z",
+      "previousCommit": {
+        "sha": "725e35c18cd68f55ce335a4ffbd574f4cffd6b99",
+        "shortSha": "725e35c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+        "shortSha": "64e6a82",
+        "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
+        "date": "2026-09-16T09:03:32Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 9797,
+          "title": "Aggressiivisempi Postgres autovacuum analyze / Tampere",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-09-16T09:03:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9797",
+          "labels": [
+            "tech",
+            "seutu"
+          ]
+        },
+        {
+          "number": 9788,
+          "title": "Kuntalaisen PWA ja push-notifikaatiot, osa 2",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-16T06:39:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9788",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-16T09:44:53.580Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
