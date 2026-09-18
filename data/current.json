@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T09:12:32.617Z",
+  "generatedAt": "2026-09-18T09:27:30.467Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-18T09:11:59.033Z",
+            "checkedAt": "2026-09-18T09:26:52.601Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
-              "shortSha": "64e6a82",
-              "message": "Merge pull request #9797 from espoon-voltti/tampere-autoanalyze-config",
-              "date": "2026-09-16T09:03:32Z",
-              "author": "tomuli"
+              "sha": "d5eea6763328b535cfe3b4fc61c48b49547e8002",
+              "shortSha": "d5eea67",
+              "message": "Merge pull request #9826 from espoon-voltti/citizen-pwa-refresh-offline-page",
+              "date": "2026-09-17T09:30:44Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-18T09:11:59.979Z",
+            "checkedAt": "2026-09-18T09:26:55.598Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9826,
               "title": "Päivitetään välimuistiin tallennettu offline-sivu jokaisella julkaisulla",
@@ -119,6 +118,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -132,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-18T09:12:03.236Z",
+            "checkedAt": "2026-09-18T09:26:58.485Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -157,7 +157,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-18T09:12:14.084Z",
+            "checkedAt": "2026-09-18T09:27:10.754Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "115d0d3b4fb9db4e7f5a593bbc69b60e77260665",
@@ -304,7 +304,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-18T09:12:28.730Z",
+            "checkedAt": "2026-09-18T09:27:26.131Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -323,7 +323,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-18T09:12:29.525Z",
+            "checkedAt": "2026-09-18T09:27:27.101Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -357,7 +357,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-18T09:12:30.798Z",
+            "checkedAt": "2026-09-18T09:27:28.329Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -376,7 +376,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-18T09:12:31.637Z",
+            "checkedAt": "2026-09-18T09:27:29.202Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
