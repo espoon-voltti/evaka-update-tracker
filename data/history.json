@@ -1,6 +1,190 @@
 {
   "events": [
     {
+      "id": "2026-09-18T09:09:41.662Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-18T09:09:41.662Z",
+      "previousCommit": {
+        "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+        "shortSha": "64e6a82",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "d5eea6763328b535cfe3b4fc61c48b49547e8002",
+        "shortSha": "d5eea67",
+        "message": "Merge pull request #9826 from espoon-voltti/citizen-pwa-refresh-offline-page",
+        "date": "2026-09-17T09:30:44Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 9826,
+          "title": "Päivitetään välimuistiin tallennettu offline-sivu jokaisella julkaisulla",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-17T09:30:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9826",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9825,
+          "title": "Poistetaan kuntalaisen PWAn offline-välimuisti PWAn sammutuksen yhteydessä",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-17T09:30:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9825",
+          "labels": [
+            "bugfix",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9830,
+          "title": "Pudotetaa kuntalaisen tuloselvityksen valinnoista vanhentuneet valinnat",
+          "author": "reynders",
+          "authorName": "Joonas Reynders",
+          "mergedAt": "2026-09-17T09:14:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9830",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9829,
+          "title": "Käyttöoikeus ryhmän keskeneräisten asiakirjojen hakuun",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-17T09:11:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9829",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-09-18T09:09:48.620Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-09-18T09:09:48.620Z",
+      "previousCommit": {
+        "sha": "64e6a821203f9828e8c831674ec06d3b081304ee",
+        "shortSha": "64e6a82",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "d5eea6763328b535cfe3b4fc61c48b49547e8002",
+        "shortSha": "d5eea67",
+        "message": "Merge pull request #9826 from espoon-voltti/citizen-pwa-refresh-offline-page",
+        "date": "2026-09-17T09:30:44Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 9826,
+          "title": "Päivitetään välimuistiin tallennettu offline-sivu jokaisella julkaisulla",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-17T09:30:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9826",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9825,
+          "title": "Poistetaan kuntalaisen PWAn offline-välimuisti PWAn sammutuksen yhteydessä",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-17T09:30:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9825",
+          "labels": [
+            "bugfix",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9830,
+          "title": "Pudotetaa kuntalaisen tuloselvityksen valinnoista vanhentuneet valinnat",
+          "author": "reynders",
+          "authorName": "Joonas Reynders",
+          "mergedAt": "2026-09-17T09:14:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9830",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9829,
+          "title": "Käyttöoikeus ryhmän keskeneräisten asiakirjojen hakuun",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-17T09:11:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9829",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-09-18T05:19:59.878Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
