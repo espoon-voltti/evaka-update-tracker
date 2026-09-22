@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T01:59:20.482Z",
+  "generatedAt": "2026-09-22T02:12:34.496Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-22T01:58:29.076Z",
+            "checkedAt": "2026-09-22T02:11:36.210Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-22T01:58:29.736Z",
+            "checkedAt": "2026-09-22T02:11:37.067Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "8b1ad1d27e8be77e7e7ea367be327b51ebccff04",
-              "shortSha": "8b1ad1d",
-              "message": "Update dependency org.apache.neethi:neethi to v3.2.4 (#9869)",
-              "date": "2026-09-20T12:59:46Z",
-              "author": "renovate[bot]"
+              "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
+              "shortSha": "f547b4c",
+              "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
+              "date": "2026-09-21T07:01:27Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9831,
               "title": "Migratoidaan tuloihin liittyviä audit-logeja",
@@ -68,7 +67,8 @@
                 "not-visible"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-22T01:58:34.838Z",
+            "checkedAt": "2026-09-22T02:11:47.214Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-22T01:58:43.708Z",
+            "checkedAt": "2026-09-22T02:11:56.500Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bbb0ba6ca6e314b4021a37ad734283b023f61db6",
@@ -271,7 +271,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-22T01:59:08.660Z",
+            "checkedAt": "2026-09-22T02:12:23.621Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -290,7 +290,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-22T01:59:10.075Z",
+            "checkedAt": "2026-09-22T02:12:24.458Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -342,7 +342,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-22T01:59:14.506Z",
+            "checkedAt": "2026-09-22T02:12:29.216Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -361,7 +361,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-22T01:59:16.075Z",
+            "checkedAt": "2026-09-22T02:12:29.898Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
