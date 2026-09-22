@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T04:41:37.513Z",
+  "generatedAt": "2026-09-22T04:46:55.130Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-22T04:40:32.194Z",
+            "checkedAt": "2026-09-22T04:45:56.757Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-22T04:40:33.025Z",
+            "checkedAt": "2026-09-22T04:45:57.686Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-22T04:40:38.815Z",
+            "checkedAt": "2026-09-22T04:46:03.542Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-22T04:40:49.238Z",
+            "checkedAt": "2026-09-22T04:46:14.232Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
@@ -123,180 +123,8 @@
               "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-09-22T04:40:49.238Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
-                "shortSha": "72f98b6",
-                "message": "Merge pull request #2241 from Tampere/dependabot/submodules/evaka-f547b4c",
-                "date": "2026-09-21T21:14:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-                "shortSha": "f547b4c",
-                "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-                "date": "2026-09-21T07:01:27Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-09-22T04:40:50.366Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bbb0ba6ca6e314b4021a37ad734283b023f61db6",
-                "shortSha": "bbb0ba6",
-                "message": "Merge pull request #2240 from Tampere/dependabot/submodules/evaka-8b1ad1d",
-                "date": "2026-09-20T21:11:40Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "8b1ad1d27e8be77e7e7ea367be327b51ebccff04",
-                "shortSha": "8b1ad1d",
-                "message": "Update dependency org.apache.neethi:neethi to v3.2.4 (#9869)",
-                "date": "2026-09-20T12:59:46Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-09-22T04:40:51.475Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
-                "shortSha": "72f98b6",
-                "message": "Merge pull request #2241 from Tampere/dependabot/submodules/evaka-f547b4c",
-                "date": "2026-09-21T21:14:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-                "shortSha": "f547b4c",
-                "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-                "date": "2026-09-21T07:01:27Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-09-22T04:40:52.616Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
-                "shortSha": "72f98b6",
-                "message": "Merge pull request #2241 from Tampere/dependabot/submodules/evaka-f547b4c",
-                "date": "2026-09-21T21:14:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-                "shortSha": "f547b4c",
-                "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-                "date": "2026-09-21T07:01:27Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-09-22T04:40:53.827Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
-                "shortSha": "72f98b6",
-                "message": "Merge pull request #2241 from Tampere/dependabot/submodules/evaka-f547b4c",
-                "date": "2026-09-21T21:14:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-                "shortSha": "f547b4c",
-                "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-                "date": "2026-09-21T07:01:27Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-09-22T04:40:54.970Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
-                "shortSha": "72f98b6",
-                "message": "Merge pull request #2241 from Tampere/dependabot/submodules/evaka-f547b4c",
-                "date": "2026-09-21T21:14:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-                "shortSha": "f547b4c",
-                "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-                "date": "2026-09-21T07:01:27Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-09-22T04:40:56.032Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "bbb0ba6ca6e314b4021a37ad734283b023f61db6",
-                "shortSha": "bbb0ba6",
-                "message": "Merge pull request #2240 from Tampere/dependabot/submodules/evaka-8b1ad1d",
-                "date": "2026-09-20T21:11:40Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "8b1ad1d27e8be77e7e7ea367be327b51ebccff04",
-                "shortSha": "8b1ad1d",
-                "message": "Update dependency org.apache.neethi:neethi to v3.2.4 (#9869)",
-                "date": "2026-09-20T12:59:46Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-09-22T04:40:57.171Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
-                "shortSha": "72f98b6",
-                "message": "Merge pull request #2241 from Tampere/dependabot/submodules/evaka-f547b4c",
-                "date": "2026-09-21T21:14:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-                "shortSha": "f547b4c",
-                "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-                "date": "2026-09-21T07:01:27Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-09-22T04:40:58.242Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "72f98b6073dec8006b03d4e2c1849171992bfe76",
-                "shortSha": "72f98b6",
-                "message": "Merge pull request #2241 from Tampere/dependabot/submodules/evaka-f547b4c",
-                "date": "2026-09-21T21:14:12Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-                "shortSha": "f547b4c",
-                "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-                "date": "2026-09-21T07:01:27Z",
-                "author": "terolaakso-reaktor"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -442,7 +270,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-22T04:41:26.018Z",
+            "checkedAt": "2026-09-22T04:46:43.657Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -461,7 +289,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-22T04:41:26.929Z",
+            "checkedAt": "2026-09-22T04:46:44.605Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -513,7 +341,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-22T04:41:31.927Z",
+            "checkedAt": "2026-09-22T04:46:49.473Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -532,7 +360,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-22T04:41:32.699Z",
+            "checkedAt": "2026-09-22T04:46:50.258Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
