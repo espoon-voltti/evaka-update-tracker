@@ -1,6 +1,561 @@
 {
   "events": [
     {
+      "id": "2026-09-22T09:16:50.071Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-09-22T09:16:50.071Z",
+      "previousCommit": {
+        "sha": "8b1ad1d27e8be77e7e7ea367be327b51ebccff04",
+        "shortSha": "8b1ad1d",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
+        "shortSha": "f547b4c",
+        "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
+        "date": "2026-09-21T07:01:27Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9862,
+          "title": "Update sentry-javascript monorepo to v10.74.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T07:01:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9862",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9861,
+          "title": "Update react monorepo to v19.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:45:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9861",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9831,
+          "title": "Migratoidaan tuloihin liittyviä audit-logeja",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-21T06:44:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9831",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9857,
+          "title": "Update dependency org.jetbrains.kotlin:kotlin-compiler-embeddable to v2.4.10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9857",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9860,
+          "title": "Update flyway to v13.7.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9860",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9859,
+          "title": "Update dependency zod to v4.6.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9859",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9856,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.66.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:23:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9856",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9855,
+          "title": "Update dependency dd-trace to v6.16.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:22:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9855",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9854,
+          "title": "Update dependency com.github.ben-manes.versions to v0.63.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9854",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9853,
+          "title": "Update bouncycastle to v1.86",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:21:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9853",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-09-22T09:17:39.779Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-22T09:17:39.779Z",
+      "previousCommit": {
+        "sha": "8b1ad1d27e8be77e7e7ea367be327b51ebccff04",
+        "shortSha": "8b1ad1d",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
+        "shortSha": "f547b4c",
+        "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
+        "date": "2026-09-21T07:01:27Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9862,
+          "title": "Update sentry-javascript monorepo to v10.74.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T07:01:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9862",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9861,
+          "title": "Update react monorepo to v19.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:45:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9861",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9831,
+          "title": "Migratoidaan tuloihin liittyviä audit-logeja",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-21T06:44:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9831",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9857,
+          "title": "Update dependency org.jetbrains.kotlin:kotlin-compiler-embeddable to v2.4.10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9857",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9860,
+          "title": "Update flyway to v13.7.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9860",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9859,
+          "title": "Update dependency zod to v4.6.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9859",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9856,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.66.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:23:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9856",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9855,
+          "title": "Update dependency dd-trace to v6.16.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:22:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9855",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9854,
+          "title": "Update dependency com.github.ben-manes.versions to v0.63.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9854",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9853,
+          "title": "Update bouncycastle to v1.86",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:21:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9853",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-09-22T09:17:51.477Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-09-22T09:17:51.477Z",
+      "previousCommit": {
+        "sha": "8b1ad1d27e8be77e7e7ea367be327b51ebccff04",
+        "shortSha": "8b1ad1d",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
+        "shortSha": "f547b4c",
+        "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
+        "date": "2026-09-21T07:01:27Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9862,
+          "title": "Update sentry-javascript monorepo to v10.74.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T07:01:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9862",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9861,
+          "title": "Update react monorepo to v19.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:45:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9861",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9831,
+          "title": "Migratoidaan tuloihin liittyviä audit-logeja",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-21T06:44:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9831",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9857,
+          "title": "Update dependency org.jetbrains.kotlin:kotlin-compiler-embeddable to v2.4.10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9857",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9860,
+          "title": "Update flyway to v13.7.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:45Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9860",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9859,
+          "title": "Update dependency zod to v4.6.5",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:39:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9859",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9856,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.66.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:23:14Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9856",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9855,
+          "title": "Update dependency dd-trace to v6.16.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:22:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9855",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 9854,
+          "title": "Update dependency com.github.ben-manes.versions to v0.63.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:22:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9854",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9853,
+          "title": "Update bouncycastle to v1.86",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-21T06:21:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9853",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-09-22T04:41:07.642Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
