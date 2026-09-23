@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:29:05.402Z",
+  "generatedAt": "2026-09-23T09:39:26.154Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-23T09:28:06.472Z",
+            "checkedAt": "2026-09-23T09:38:34.177Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-23T09:28:10.345Z",
+            "checkedAt": "2026-09-23T09:38:34.976Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,91 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9873,
-              "title": "Poistetaan käyttämätön AuditId-import",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T07:35:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9873",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9790,
-              "title": "Migratoidaan sijoituksiin ja palveluntarpeisiin liittyvät audit-logit",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-22T06:29:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9790",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9841,
-              "title": "Migratoidaan maksu- ja arvopäätösten audit-logit",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T06:27:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9841",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9842,
-              "title": "Korjauksia tietokantaskeemaan",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-22T06:05:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9842",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9871,
-              "title": "Lisätään puuttuva audit-loki varhaiskasvatuspaikkatakuuraportille",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T05:43:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9871",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -165,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-23T09:28:14.362Z",
+            "checkedAt": "2026-09-23T09:38:36.574Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -190,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-23T09:28:25.374Z",
+            "checkedAt": "2026-09-23T09:38:47.528Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -455,7 +371,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-23T09:29:00.220Z",
+            "checkedAt": "2026-09-23T09:39:20.935Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -474,7 +390,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-23T09:29:01.202Z",
+            "checkedAt": "2026-09-23T09:39:21.926Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -526,7 +442,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-23T09:29:03.140Z",
+            "checkedAt": "2026-09-23T09:39:23.572Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -545,7 +461,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-23T09:29:03.895Z",
+            "checkedAt": "2026-09-23T09:39:24.496Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
