@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T09:25:52.209Z",
+  "generatedAt": "2026-09-23T09:29:05.402Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-23T09:24:54.256Z",
+            "checkedAt": "2026-09-23T09:28:06.472Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
-              "shortSha": "f547b4c",
-              "message": "Merge pull request #9862 from espoon-voltti/renovate/sentry-javascript-monorepo",
-              "date": "2026-09-21T07:01:27Z",
-              "author": "terolaakso-reaktor"
+              "sha": "ff7e5eaeaac9065e21034adff15a6bf8bf5dc476",
+              "shortSha": "ff7e5ea",
+              "message": "Merge pull request #9873 from espoon-voltti/fix-unused-auditid-import",
+              "date": "2026-09-22T07:35:02Z",
+              "author": "ohinkinen"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-23T09:24:55.086Z",
+            "checkedAt": "2026-09-23T09:28:10.345Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9873,
               "title": "Poistetaan käyttämätön AuditId-import",
@@ -134,6 +133,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9837,
@@ -165,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-23T09:24:59.046Z",
+            "checkedAt": "2026-09-23T09:28:14.362Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83591e1d2ffaf34be738ad476cb6268f546cef85",
@@ -190,7 +190,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-23T09:25:08.059Z",
+            "checkedAt": "2026-09-23T09:28:25.374Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -455,7 +455,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-23T09:25:38.516Z",
+            "checkedAt": "2026-09-23T09:29:00.220Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -474,7 +474,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-23T09:25:41.943Z",
+            "checkedAt": "2026-09-23T09:29:01.202Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -493,91 +493,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9873,
-              "title": "Poistetaan käyttämätön AuditId-import",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T07:35:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9873",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9790,
-              "title": "Migratoidaan sijoituksiin ja palveluntarpeisiin liittyvät audit-logit",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-22T06:29:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9790",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9841,
-              "title": "Migratoidaan maksu- ja arvopäätösten audit-logit",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T06:27:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9841",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9842,
-              "title": "Korjauksia tietokantaskeemaan",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-22T06:05:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9842",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9871,
-              "title": "Lisätään puuttuva audit-loki varhaiskasvatuspaikkatakuuraportille",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T05:43:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9871",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -610,7 +526,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-23T09:25:45.573Z",
+            "checkedAt": "2026-09-23T09:29:03.140Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -629,7 +545,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-23T09:25:48.411Z",
+            "checkedAt": "2026-09-23T09:29:03.895Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -648,91 +564,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9873,
-              "title": "Poistetaan käyttämätön AuditId-import",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T07:35:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9873",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9790,
-              "title": "Migratoidaan sijoituksiin ja palveluntarpeisiin liittyvät audit-logit",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-22T06:29:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9790",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9841,
-              "title": "Migratoidaan maksu- ja arvopäätösten audit-logit",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T06:27:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9841",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9842,
-              "title": "Korjauksia tietokantaskeemaan",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-22T06:05:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9842",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9871,
-              "title": "Lisätään puuttuva audit-loki varhaiskasvatuspaikkatakuuraportille",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-09-22T05:43:23Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9871",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
