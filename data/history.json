@@ -1,6 +1,114 @@
 {
   "events": [
     {
+      "id": "2026-09-23T00:18:31.878Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-09-23T00:18:31.878Z",
+      "previousCommit": {
+        "sha": "f547b4caa5d72b51c791f8bf8567adddfdd5cbb9",
+        "shortSha": "f547b4c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ff7e5eaeaac9065e21034adff15a6bf8bf5dc476",
+        "shortSha": "ff7e5ea",
+        "message": "Merge pull request #9873 from espoon-voltti/fix-unused-auditid-import",
+        "date": "2026-09-22T07:35:02Z",
+        "author": "ohinkinen"
+      },
+      "includedPRs": [
+        {
+          "number": 9873,
+          "title": "Poistetaan käyttämätön AuditId-import",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-22T07:35:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9873",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9790,
+          "title": "Migratoidaan sijoituksiin ja palveluntarpeisiin liittyvät audit-logit",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-22T06:29:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9790",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9841,
+          "title": "Migratoidaan maksu- ja arvopäätösten audit-logit",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-22T06:27:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9841",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9842,
+          "title": "Korjauksia tietokantaskeemaan",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-22T06:05:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9842",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9871,
+          "title": "Lisätään puuttuva audit-loki varhaiskasvatuspaikkatakuuraportille",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-22T05:43:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9871",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-23T00:12:08.907Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
