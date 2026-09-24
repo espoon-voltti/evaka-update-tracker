@@ -1,6 +1,105 @@
 {
   "events": [
     {
+      "id": "2026-09-24T05:52:34.932Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-24T05:52:34.932Z",
+      "previousCommit": {
+        "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
+        "shortSha": "6548e6c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "9815aadd5f732e2a09af0e7321389646545f3768",
+        "shortSha": "9815aad",
+        "message": "Merge pull request #2244 from Tampere/dependabot/submodules/evaka-ea990d8",
+        "date": "2026-09-23T21:10:49Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2244,
+          "title": "Bump evaka from `ff7e5ea` to `ea990d8`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-23T21:10:50Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2244",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-09-24T05:52:34.932Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-24T05:52:34.932Z",
+      "previousCommit": {
+        "sha": "ff7e5eaeaac9065e21034adff15a6bf8bf5dc476",
+        "shortSha": "ff7e5ea",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ea990d812092d47da41b4ff48aef84f9d02b6834",
+        "shortSha": "ea990d8",
+        "message": "Merge pull request #9875 from espoon-voltti/pwa-performance",
+        "date": "2026-09-23T09:53:47Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9875,
+          "title": "PWA:n perffiparannukset",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-23T09:53:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9875",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9837,
+          "title": "Varda- ja koskilapsivirheet -raporteille filtteri vanhoille lapsille",
+          "author": "reynders",
+          "authorName": "Joonas Reynders",
+          "mergedAt": "2026-09-23T05:38:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9837",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-24T02:12:46.043Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
