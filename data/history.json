@@ -1,6 +1,64 @@
 {
   "events": [
     {
+      "id": "2026-09-24T00:23:09.666Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-24T00:23:09.666Z",
+      "previousCommit": {
+        "sha": "ff7e5eaeaac9065e21034adff15a6bf8bf5dc476",
+        "shortSha": "ff7e5ea",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ea990d812092d47da41b4ff48aef84f9d02b6834",
+        "shortSha": "ea990d8",
+        "message": "Merge pull request #9875 from espoon-voltti/pwa-performance",
+        "date": "2026-09-23T09:53:47Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9875,
+          "title": "PWA:n perffiparannukset",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-23T09:53:48Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9875",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9837,
+          "title": "Varda- ja koskilapsivirheet -raporteille filtteri vanhoille lapsille",
+          "author": "reynders",
+          "authorName": "Joonas Reynders",
+          "mergedAt": "2026-09-23T05:38:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9837",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-23T09:54:40.668Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
