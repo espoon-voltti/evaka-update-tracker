@@ -1,6 +1,142 @@
 {
   "events": [
     {
+      "id": "2026-09-25T05:45:33.043Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-25T05:45:33.043Z",
+      "previousCommit": {
+        "sha": "9815aadd5f732e2a09af0e7321389646545f3768",
+        "shortSha": "9815aad",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
+        "shortSha": "8b939a7",
+        "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
+        "date": "2026-09-24T21:13:09Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2245,
+          "title": "Bump evaka from `ea990d8` to `ef50e10`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-24T21:13:10Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2245",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-09-25T05:45:33.043Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-25T05:45:33.043Z",
+      "previousCommit": {
+        "sha": "ea990d812092d47da41b4ff48aef84f9d02b6834",
+        "shortSha": "ea990d8",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
+        "shortSha": "ef50e10",
+        "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
+        "date": "2026-09-24T11:07:37Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 9838,
+          "title": "Lähetetään Vardaan maksuttoman palveluntarpeen maksutiedot maksun perusteella MP01",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-24T11:07:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9838",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9879,
+          "title": "Työntekijän hakemusmuokkauksen jaettu toteutus tuotantoon - Espoo, Turku, Oulu",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-09-24T07:30:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9879",
+          "labels": [
+            "enhancement",
+            "turku",
+            "oulu",
+            "espoo",
+            "employee"
+          ]
+        },
+        {
+          "number": 9836,
+          "title": "Kuntalaisen push-notifikaatioiden asetukset ja mainostus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-24T04:52:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9836",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9835,
+          "title": "Korjauksia ja parannuksia kuntalaisen käyttöliittymään",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-24T04:50:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9835",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-25T02:12:09.244Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
