@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T13:00:28.290Z",
+  "generatedAt": "2026-09-25T13:20:57.750Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-25T12:59:58.019Z",
+            "checkedAt": "2026-09-25T13:20:24.575Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-25T12:59:58.955Z",
+            "checkedAt": "2026-09-25T13:20:25.747Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -51,6 +51,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9883,
+              "title": "Kalenterimerkintöjen ja keskusteluaikavarausten otsikon max. merkkimäärän nosto 30 -> 50",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-25T13:15:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9883",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9838,
               "title": "Lähetetään Vardaan maksuttoman palveluntarpeen maksutiedot maksun perusteella MP01",
@@ -81,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-25T13:00:00.283Z",
+            "checkedAt": "2026-09-25T13:20:27.610Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -106,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-25T13:00:09.400Z",
+            "checkedAt": "2026-09-25T13:20:37.556Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
@@ -223,7 +240,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9883,
+              "title": "Kalenterimerkintöjen ja keskusteluaikavarausten otsikon max. merkkimäärän nosto 30 -> 50",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-25T13:15:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9883",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            }
+          ]
         }
       }
     },
@@ -236,7 +271,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-25T13:00:23.399Z",
+            "checkedAt": "2026-09-25T13:20:52.205Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -255,7 +290,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-25T13:00:24.413Z",
+            "checkedAt": "2026-09-25T13:20:52.975Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -277,6 +312,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9883,
+              "title": "Kalenterimerkintöjen ja keskusteluaikavarausten otsikon max. merkkimäärän nosto 30 -> 50",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-25T13:15:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9883",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9838,
               "title": "Lähetetään Vardaan maksuttoman palveluntarpeen maksutiedot maksun perusteella MP01",
@@ -307,7 +359,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-25T13:00:26.345Z",
+            "checkedAt": "2026-09-25T13:20:55.000Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -326,7 +378,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-25T13:00:26.902Z",
+            "checkedAt": "2026-09-25T13:20:55.764Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -348,6 +400,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9883,
+              "title": "Kalenterimerkintöjen ja keskusteluaikavarausten otsikon max. merkkimäärän nosto 30 -> 50",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-25T13:15:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9883",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9838,
               "title": "Lähetetään Vardaan maksuttoman palveluntarpeen maksutiedot maksun perusteella MP01",
