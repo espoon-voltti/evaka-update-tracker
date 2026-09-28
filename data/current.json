@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:12:44.972Z",
+  "generatedAt": "2026-09-28T07:44:50.201Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-28T07:11:28.794Z",
+            "checkedAt": "2026-09-28T07:43:37.641Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-28T07:11:29.558Z",
+            "checkedAt": "2026-09-28T07:43:38.334Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -85,7 +85,26 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9827,
+              "title": "Tuloselvityslistauksen alue päätellään ensisijaisesti voimassa olevista sijoituksista",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-28T07:34:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9827",
+              "labels": [
+                "bugfix",
+                "service",
+                "core",
+                "employee"
+              ]
+            }
+          ]
         }
       }
     },
@@ -98,7 +117,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-28T07:11:41.791Z",
+            "checkedAt": "2026-09-28T07:43:50.740Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -123,7 +142,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-28T07:11:52.601Z",
+            "checkedAt": "2026-09-28T07:43:59.153Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3dec7ef824c544ac6b17a5f9a5642fbdeb3d0695",
@@ -257,7 +276,26 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9827,
+              "title": "Tuloselvityslistauksen alue päätellään ensisijaisesti voimassa olevista sijoituksista",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-28T07:34:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9827",
+              "labels": [
+                "bugfix",
+                "service",
+                "core",
+                "employee"
+              ]
+            }
+          ]
         }
       }
     },
@@ -270,7 +308,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-28T07:12:19.453Z",
+            "checkedAt": "2026-09-28T07:44:23.854Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -289,95 +327,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-28T07:12:20.623Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "b7c4b632aa079f32089d6edd32a2129296bcad42",
-              "shortSha": "b7c4b63",
-              "message": "Update dependency jsdom to v30.1.1 (#9907)",
-              "date": "2026-09-27T05:30:19Z",
-              "author": "renovate[bot]"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        }
-      ],
-      "prTracks": {
-        "wrapper": null,
-        "core": {
-          "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
-            {
-              "number": 9883,
-              "title": "Kalenterimerkintöjen ja keskusteluaikavarausten otsikon max. merkkimäärän nosto 30 -> 50",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-25T13:15:33Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9883",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9838,
-              "title": "Lähetetään Vardaan maksuttoman palveluntarpeen maksutiedot maksun perusteella MP01",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-09-24T11:07:37Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9838",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
-          "pendingDeployment": []
-        }
-      }
-    },
-    {
-      "id": "turku",
-      "name": "Turku",
-      "environments": [
-        {
-          "id": "turku-prod",
-          "type": "production",
-          "version": {
-            "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-28T07:12:32.303Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "a7e7c9f63e0cffac64b54669f7ae4aa4c3bceaee",
-              "shortSha": "a7e7c9f",
-              "message": "Merge pull request #9879 from espoon-voltti/shared-application-editor-prod-espoo-turku-oulu",
-              "date": "2026-09-24T07:30:15Z",
-              "author": "tomuli"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        },
-        {
-          "id": "turku-staging",
-          "type": "staging",
-          "version": {
-            "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-28T07:12:33.143Z",
+            "checkedAt": "2026-09-28T07:44:24.471Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -434,6 +384,131 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 9827,
+              "title": "Tuloselvityslistauksen alue päätellään ensisijaisesti voimassa olevista sijoituksista",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-28T07:34:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9827",
+              "labels": [
+                "bugfix",
+                "service",
+                "core",
+                "employee"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "turku",
+      "name": "Turku",
+      "environments": [
+        {
+          "id": "turku-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "evaka.turku.fi",
+            "checkedAt": "2026-09-28T07:44:37.224Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "a7e7c9f63e0cffac64b54669f7ae4aa4c3bceaee",
+              "shortSha": "a7e7c9f",
+              "message": "Merge pull request #9879 from espoon-voltti/shared-application-editor-prod-espoo-turku-oulu",
+              "date": "2026-09-24T07:30:15Z",
+              "author": "tomuli"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "turku-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging-evaka.turku.fi",
+            "checkedAt": "2026-09-28T07:44:37.959Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "b7c4b632aa079f32089d6edd32a2129296bcad42",
+              "shortSha": "b7c4b63",
+              "message": "Update dependency jsdom to v30.1.1 (#9907)",
+              "date": "2026-09-27T05:30:19Z",
+              "author": "renovate[bot]"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": null,
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
+          "inStaging": [
+            {
+              "number": 9883,
+              "title": "Kalenterimerkintöjen ja keskusteluaikavarausten otsikon max. merkkimäärän nosto 30 -> 50",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-25T13:15:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9883",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9838,
+              "title": "Lähetetään Vardaan maksuttoman palveluntarpeen maksutiedot maksun perusteella MP01",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-24T11:07:37Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9838",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ],
+          "pendingDeployment": [
+            {
+              "number": 9827,
+              "title": "Tuloselvityslistauksen alue päätellään ensisijaisesti voimassa olevista sijoituksista",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-28T07:34:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9827",
+              "labels": [
+                "bugfix",
+                "service",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9880,
               "title": "Turku: henkilökunnan ruotsi-käännökset stagingiin",
