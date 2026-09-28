@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T04:27:45.011Z",
+  "generatedAt": "2026-09-28T04:33:41.593Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-28T04:26:38.788Z",
+            "checkedAt": "2026-09-28T04:32:37.213Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-28T04:26:39.582Z",
+            "checkedAt": "2026-09-28T04:32:38.459Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-28T04:26:48.333Z",
+            "checkedAt": "2026-09-28T04:32:47.682Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-28T04:26:57.456Z",
+            "checkedAt": "2026-09-28T04:32:59.104Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3dec7ef824c544ac6b17a5f9a5642fbdeb3d0695",
@@ -140,180 +140,8 @@
               "author": "renovate[bot]"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-09-28T04:26:57.456Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "3dec7ef824c544ac6b17a5f9a5642fbdeb3d0695",
-                "shortSha": "3dec7ef",
-                "message": "Merge pull request #2246 from Tampere/dependabot/submodules/evaka-b7c4b63",
-                "date": "2026-09-27T21:11:40Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b7c4b632aa079f32089d6edd32a2129296bcad42",
-                "shortSha": "b7c4b63",
-                "message": "Update dependency jsdom to v30.1.1 (#9907)",
-                "date": "2026-09-27T05:30:19Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-09-28T04:26:58.484Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
-                "shortSha": "8b939a7",
-                "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
-                "date": "2026-09-24T21:13:09Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
-                "shortSha": "ef50e10",
-                "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
-                "date": "2026-09-24T11:07:37Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-09-28T04:26:59.541Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "3dec7ef824c544ac6b17a5f9a5642fbdeb3d0695",
-                "shortSha": "3dec7ef",
-                "message": "Merge pull request #2246 from Tampere/dependabot/submodules/evaka-b7c4b63",
-                "date": "2026-09-27T21:11:40Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b7c4b632aa079f32089d6edd32a2129296bcad42",
-                "shortSha": "b7c4b63",
-                "message": "Update dependency jsdom to v30.1.1 (#9907)",
-                "date": "2026-09-27T05:30:19Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-09-28T04:27:00.665Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
-                "shortSha": "8b939a7",
-                "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
-                "date": "2026-09-24T21:13:09Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
-                "shortSha": "ef50e10",
-                "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
-                "date": "2026-09-24T11:07:37Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-09-28T04:27:01.652Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
-                "shortSha": "8b939a7",
-                "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
-                "date": "2026-09-24T21:13:09Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
-                "shortSha": "ef50e10",
-                "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
-                "date": "2026-09-24T11:07:37Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-09-28T04:27:02.731Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
-                "shortSha": "8b939a7",
-                "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
-                "date": "2026-09-24T21:13:09Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
-                "shortSha": "ef50e10",
-                "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
-                "date": "2026-09-24T11:07:37Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-09-28T04:27:03.810Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
-                "shortSha": "8b939a7",
-                "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
-                "date": "2026-09-24T21:13:09Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
-                "shortSha": "ef50e10",
-                "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
-                "date": "2026-09-24T11:07:37Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-09-28T04:27:04.851Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
-                "shortSha": "8b939a7",
-                "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
-                "date": "2026-09-24T21:13:09Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
-                "shortSha": "ef50e10",
-                "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
-                "date": "2026-09-24T11:07:37Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-09-28T04:27:05.945Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "8b939a736bfcbae4078a6d588b8543b4da809c1d",
-                "shortSha": "8b939a7",
-                "message": "Merge pull request #2245 from Tampere/dependabot/submodules/evaka-ef50e10",
-                "date": "2026-09-24T21:13:09Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "ef50e103c6651b963291fd7408cc49bdf622a147",
-                "shortSha": "ef50e10",
-                "message": "Merge pull request #9838 from espoon-voltti/varda-free-payment-basis",
-                "date": "2026-09-24T11:07:37Z",
-                "author": "Wnt"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -442,7 +270,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-28T04:27:27.379Z",
+            "checkedAt": "2026-09-28T04:33:21.856Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -461,7 +289,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-28T04:27:28.169Z",
+            "checkedAt": "2026-09-28T04:33:22.893Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -530,7 +358,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-28T04:27:36.527Z",
+            "checkedAt": "2026-09-28T04:33:31.850Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -549,7 +377,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-28T04:27:37.192Z",
+            "checkedAt": "2026-09-28T04:33:33.232Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
