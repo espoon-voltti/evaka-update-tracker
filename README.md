@@ -64,6 +64,12 @@ ln -sf ../data site/data
 npx serve site
 # Avaa http://localhost:3000
 
+# Ajastetut näkymät (esim. lounaslistat): määritä osoitteessa #/settings,
+# ja testaa ajastusta ajasta riippumatta ?now=-parametrilla (ennen #-merkkiä):
+#   http://localhost:3000/?now=10:45#/?fullscreen=true            (tänään klo 10:45)
+#   http://localhost:3000/?now=2026-10-01T10:45#/?fullscreen=true (tiettynä päivänä)
+# Asetuksissa oleva "Esikatsele"-painike näyttää näkymän heti.
+
 # Suorita testit
 npm test
 

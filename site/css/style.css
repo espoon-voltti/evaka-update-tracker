@@ -1566,3 +1566,212 @@ main:has(.perm-view) {
   .perm-row-col-feature { min-width: 12rem; }
   .perm-search-input { min-width: 12rem; }
 }
+
+/* Scheduled screens overlay */
+.scheduled-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+
+.scheduled-screen-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-card);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.scheduled-screen-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.scheduled-screen-time {
+  color: var(--color-text-muted);
+}
+
+.scheduled-screen-close {
+  margin-left: auto;
+}
+
+.scheduled-screen-panels {
+  flex: 1;
+  display: flex;
+  gap: 1px;
+  background: var(--color-border);
+  min-height: 0;
+}
+
+.scheduled-screen-day {
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-transform: capitalize;
+}
+
+.scheduled-screen-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  background: var(--color-card);
+}
+
+.scheduled-screen-panel-name {
+  padding: 0.75rem 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.scheduled-screen-panel-body {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.scheduled-screen-panel iframe {
+  display: block;
+  border: 0;
+  transform-origin: 0 0;
+}
+
+.scheduled-screen-calibrate {
+  position: absolute;
+  inset: 0;
+  cursor: ns-resize;
+}
+
+.scheduled-screen-offset {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: rgba(30, 41, 59, 0.85);
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* Settings view */
+.settings-link {
+  color: inherit;
+  margin-left: 0.5rem;
+}
+
+body.fullscreen .settings-link {
+  display: none;
+}
+
+.settings-view h2 {
+  margin-bottom: 0.5rem;
+}
+
+.settings-help {
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  max-width: 50rem;
+}
+
+.settings-screen {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.settings-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+}
+
+.settings-row label,
+.settings-label {
+  font-size: 0.875rem;
+}
+
+.settings-label {
+  font-weight: 500;
+}
+
+.settings-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.settings-block textarea {
+  width: 100%;
+  font-family: inherit;
+}
+
+.settings-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settings-panel-url {
+  flex: 1 1 20rem;
+  min-width: 0;
+}
+
+.settings-offsets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings-offset input {
+  width: 4.5rem;
+}
+
+.settings-add-panel {
+  align-self: flex-start;
+}
+
+.settings-errors {
+  color: var(--color-unavailable);
+  font-size: 0.875rem;
+}
+
+.settings-errors:empty {
+  display: none;
+}
+
+.settings-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.settings-delete {
+  color: var(--color-unavailable);
+}
+
+.settings-status {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.settings-panel-name {
+  flex: 0 1 12rem;
+  min-width: 0;
+}
