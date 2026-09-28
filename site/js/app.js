@@ -6,6 +6,7 @@ import { addRoute, setNotFound, startRouter, navigate, handleRoute } from './rou
 import { renderOverview, bindOverviewEvents } from './components/overview.js';
 import { initCache, startAutoRefresh } from './auto-refresh.js';
 import { cacheBustUrl } from './utils.js';
+import { startScheduledScreens } from './scheduled-screens.js';
 
 let currentData = null;
 const appEl = () => document.getElementById('app');
@@ -202,6 +203,19 @@ function handleFeatures(_params, queryParams) {
     });
 }
 
+// Route: Settings (#/settings)
+function handleSettings() {
+  exitFullscreen();
+  // Auto-refresh re-runs the route handler; don't wipe unsaved form edits.
+  if (appEl().querySelector('.settings-view')) return;
+  document.title = 'Asetukset - eVaka muutostenseuranta';
+  import('./components/settings.js').then(({ renderSettings, bindSettingsEvents }) => {
+    renderView(renderSettings());
+    bindSettingsEvents();
+    updateTabs('settings');
+  });
+}
+
 function updateTabs(activeCityId) {
   // Dynamically import city-tabs if they exist
   import('./components/city-tabs.js').then(({ renderCityTabs }) => {
@@ -242,12 +256,14 @@ export async function refreshCurrentView() {
 addRoute('/', handleOverview);
 addRoute('/features', handleFeatures);
 addRoute('/permissions', handlePermissions);
+addRoute('/settings', handleSettings);
 addRoute('/city/:id', handleCityDetail);
 addRoute('/city/:id/history', handleCityHistory);
 setNotFound(() => navigate('/'));
 
 // Bootstrap
 async function init() {
+  startScheduledScreens();
   await loadCurrentData();
   startRouter();
   await initCache();
