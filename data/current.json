@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T06:30:18.198Z",
+  "generatedAt": "2026-09-28T07:12:44.972Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-28T06:29:09.093Z",
+            "checkedAt": "2026-09-28T07:11:28.794Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-28T06:29:09.989Z",
+            "checkedAt": "2026-09-28T07:11:29.558Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-28T06:29:19.795Z",
+            "checkedAt": "2026-09-28T07:11:41.791Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-28T06:29:32.678Z",
+            "checkedAt": "2026-09-28T07:11:52.601Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3dec7ef824c544ac6b17a5f9a5642fbdeb3d0695",
@@ -270,7 +270,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-28T06:29:56.425Z",
+            "checkedAt": "2026-09-28T07:12:19.453Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -289,7 +289,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-28T06:29:57.377Z",
+            "checkedAt": "2026-09-28T07:12:20.623Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -358,7 +358,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-28T06:30:07.676Z",
+            "checkedAt": "2026-09-28T07:12:32.303Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -377,7 +377,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-28T06:30:08.447Z",
+            "checkedAt": "2026-09-28T07:12:33.143Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -433,7 +433,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9880,
+              "title": "Turku: henkilökunnan ruotsi-käännökset stagingiin",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-09-28T07:08:37Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9880",
+              "labels": [
+                "enhancement",
+                "turku",
+                "employee"
+              ]
+            }
+          ]
         }
       }
     }
