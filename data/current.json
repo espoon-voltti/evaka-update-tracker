@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T04:41:12.073Z",
+  "generatedAt": "2026-09-29T04:53:30.077Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-29T04:40:19.401Z",
+            "checkedAt": "2026-09-29T04:52:18.143Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-29T04:40:20.029Z",
+            "checkedAt": "2026-09-29T04:52:19.062Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -150,7 +150,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-29T04:40:26.250Z",
+            "checkedAt": "2026-09-29T04:52:26.053Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -175,21 +175,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-29T04:40:34.647Z",
+            "checkedAt": "2026-09-29T04:52:36.899Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "3dec7ef824c544ac6b17a5f9a5642fbdeb3d0695",
-              "shortSha": "3dec7ef",
-              "message": "Merge pull request #2246 from Tampere/dependabot/submodules/evaka-b7c4b63",
-              "date": "2026-09-27T21:11:40Z",
+              "sha": "7b65d0f1a01422377b863990f35ec8c0c455d63c",
+              "shortSha": "7b65d0f",
+              "message": "Merge pull request #2247 from Tampere/dependabot/submodules/evaka-0bab81c",
+              "date": "2026-09-28T21:13:50Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "b7c4b632aa079f32089d6edd32a2129296bcad42",
-              "shortSha": "b7c4b63",
-              "message": "Update dependency jsdom to v30.1.1 (#9907)",
-              "date": "2026-09-27T05:30:19Z",
-              "author": "renovate[bot]"
+              "sha": "0bab81c5cf1e96d010d121a3373dffc00536c98b",
+              "shortSha": "0bab81c",
+              "message": "Merge pull request #9839 from espoon-voltti/declarative-data-retention",
+              "date": "2026-09-28T13:25:21Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -207,6 +207,92 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9839,
+              "title": "Deklaratiivinen tietojen poisto",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-09-28T13:25:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9839",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9884,
+              "title": "Korjaus henkilökunnan sisäänkirjaukseen",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-09-28T11:33:59Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9884",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9872,
+              "title": "Omat tiedot -sivun tehtävät näytetään vaiheittain",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-09-28T10:44:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9872",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9832,
+              "title": "Lähetetään kuntalaisille push-notifikaatioita samoista aiheista kuin sähköpostiakin",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-28T10:12:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9832",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9827,
+              "title": "Tuloselvityslistauksen alue päätellään ensisijaisesti voimassa olevista sijoituksista",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-09-28T07:34:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9827",
+              "labels": [
+                "bugfix",
+                "service",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9883,
               "title": "Kalenterimerkintöjen ja keskusteluaikavarausten otsikon max. merkkimäärän nosto 30 -> 50",
@@ -309,94 +395,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9839,
-              "title": "Deklaratiivinen tietojen poisto",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-09-28T13:25:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9839",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9884,
-              "title": "Korjaus henkilökunnan sisäänkirjaukseen",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-28T11:33:59Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9884",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9872,
-              "title": "Omat tiedot -sivun tehtävät näytetään vaiheittain",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-09-28T10:44:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9872",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9832,
-              "title": "Lähetetään kuntalaisille push-notifikaatioita samoista aiheista kuin sähköpostiakin",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-28T10:12:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9832",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9827,
-              "title": "Tuloselvityslistauksen alue päätellään ensisijaisesti voimassa olevista sijoituksista",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-09-28T07:34:28Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9827",
-              "labels": [
-                "bugfix",
-                "service",
-                "core",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -409,7 +408,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-29T04:40:59.009Z",
+            "checkedAt": "2026-09-29T04:53:14.685Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -428,7 +427,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-29T04:40:59.621Z",
+            "checkedAt": "2026-09-29T04:53:15.623Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -549,7 +548,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-29T04:41:05.441Z",
+            "checkedAt": "2026-09-29T04:53:22.380Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -568,7 +567,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-29T04:41:06.188Z",
+            "checkedAt": "2026-09-29T04:53:23.424Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
