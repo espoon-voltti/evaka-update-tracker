@@ -1,6 +1,246 @@
 {
   "events": [
     {
+      "id": "2026-09-29T01:38:18.583Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-09-29T01:38:18.583Z",
+      "previousCommit": {
+        "sha": "b7c4b632aa079f32089d6edd32a2129296bcad42",
+        "shortSha": "b7c4b63",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "0bab81c5cf1e96d010d121a3373dffc00536c98b",
+        "shortSha": "0bab81c",
+        "message": "Merge pull request #9839 from espoon-voltti/declarative-data-retention",
+        "date": "2026-09-28T13:25:21Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 9839,
+          "title": "Deklaratiivinen tietojen poisto",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-09-28T13:25:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9839",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9884,
+          "title": "Korjaus henkilökunnan sisäänkirjaukseen",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-28T11:33:59Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9884",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9872,
+          "title": "Omat tiedot -sivun tehtävät näytetään vaiheittain",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-09-28T10:44:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9872",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9832,
+          "title": "Lähetetään kuntalaisille push-notifikaatioita samoista aiheista kuin sähköpostiakin",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-28T10:12:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9832",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9827,
+          "title": "Tuloselvityslistauksen alue päätellään ensisijaisesti voimassa olevista sijoituksista",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-28T07:34:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9827",
+          "labels": [
+            "bugfix",
+            "service",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9902,
+          "title": "Update valkey/valkey Docker tag to v9.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-28T07:20:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9902",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 9880,
+          "title": "Turku: henkilökunnan ruotsi-käännökset stagingiin",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-09-28T07:08:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9880",
+          "labels": [
+            "enhancement",
+            "turku",
+            "employee"
+          ]
+        },
+        {
+          "number": 9889,
+          "title": "Update dependency oxlint-tsgolint to v7.0.2002",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-28T07:06:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9889",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9894,
+          "title": "Update dependency @tanstack/react-query to v5.103.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-28T06:58:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9894",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9901,
+          "title": "Update sentry-javascript monorepo to v10.75.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-28T06:32:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9901",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 9899,
+          "title": "Update dependency software.amazon.awssdk:bom to v2.55.3",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-28T06:32:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9899",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9898,
+          "title": "Update dependency org.wiremock.integrations:wiremock-spring-boot to v4.4.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-28T06:31:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9898",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9895,
+          "title": "Update dependency com.github.ben-manes.versions to v0.64.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-28T06:31:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9895",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-28T09:41:16.430Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
