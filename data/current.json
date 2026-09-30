@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T04:20:25.874Z",
+  "generatedAt": "2026-09-30T04:39:43.454Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T04:19:42.555Z",
+            "checkedAt": "2026-09-30T04:38:56.197Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T04:19:43.261Z",
+            "checkedAt": "2026-09-30T04:38:56.910Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -116,7 +116,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T04:19:45.826Z",
+            "checkedAt": "2026-09-30T04:38:59.635Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -141,7 +141,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T04:19:53.731Z",
+            "checkedAt": "2026-09-30T04:39:08.451Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "7b65d0f1a01422377b863990f35ec8c0c455d63c",
@@ -427,7 +427,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T04:20:19.585Z",
+            "checkedAt": "2026-09-30T04:39:36.068Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -446,7 +446,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T04:20:20.429Z",
+            "checkedAt": "2026-09-30T04:39:37.062Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -533,7 +533,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-30T04:20:22.649Z",
+            "checkedAt": "2026-09-30T04:39:40.152Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -552,7 +552,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-30T04:20:23.359Z",
+            "checkedAt": "2026-09-30T04:39:41.048Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -626,7 +626,24 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9915,
+              "title": "Generoidaan Turun laskutus- ja maksatusclientit",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-30T04:25:38Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9915",
+              "labels": [
+                "tech",
+                "turku"
+              ]
+            }
+          ]
         }
       }
     }
