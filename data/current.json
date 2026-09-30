@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T10:35:23.350Z",
+  "generatedAt": "2026-09-30T10:43:31.591Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T10:34:45.078Z",
+            "checkedAt": "2026-09-30T10:42:53.584Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T10:34:45.720Z",
+            "checkedAt": "2026-09-30T10:42:54.381Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -116,7 +116,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T10:34:48.717Z",
+            "checkedAt": "2026-09-30T10:42:57.638Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
@@ -141,7 +141,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T10:34:57.525Z",
+            "checkedAt": "2026-09-30T10:43:08.823Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -158,180 +158,8 @@
               "author": "Wnt"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-09-30T10:34:57.525Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
-                "shortSha": "69348bc",
-                "message": "Merge pull request #2249 from Tampere/bump-evaka-2c991f5",
-                "date": "2026-09-30T10:20:37Z",
-                "author": "tomuli"
-              },
-              "coreCommit": {
-                "sha": "2c991f54a3df2b491b90b3d1802e4643ef6e36e6",
-                "shortSha": "2c991f5",
-                "message": "Merge pull request #9919 from espoon-voltti/ylojarvi-decision-text-changes",
-                "date": "2026-09-30T09:50:01Z",
-                "author": "Wnt"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-09-30T10:34:58.604Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-09-30T10:34:59.467Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-09-30T10:35:00.366Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-09-30T10:35:01.299Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-09-30T10:35:02.389Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-09-30T10:35:03.411Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-09-30T10:35:04.329Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-09-30T10:35:05.249Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
-                "shortSha": "b4e2466",
-                "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
-                "date": "2026-09-29T21:13:44Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-                "shortSha": "341d625",
-                "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-                "date": "2026-09-29T08:56:25Z",
-                "author": "terolaakso-reaktor"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -428,7 +256,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T10:35:15.634Z",
+            "checkedAt": "2026-09-30T10:43:23.624Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -447,7 +275,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T10:35:16.335Z",
+            "checkedAt": "2026-09-30T10:43:24.695Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -534,7 +362,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-30T10:35:19.779Z",
+            "checkedAt": "2026-09-30T10:43:27.737Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -553,7 +381,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-30T10:35:20.531Z",
+            "checkedAt": "2026-09-30T10:43:28.513Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
