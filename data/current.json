@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T09:26:17.851Z",
+  "generatedAt": "2026-09-30T09:38:09.439Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T09:25:44.812Z",
+            "checkedAt": "2026-09-30T09:37:39.797Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T09:25:47.009Z",
+            "checkedAt": "2026-09-30T09:37:40.412Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,62 +48,26 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9914,
-              "title": "Siivotaan Digitransit-liikenteen headereita",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-29T08:56:25Z",
+              "number": 9912,
+              "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-30T09:30:20Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9914",
-              "labels": [
-                "bugfix",
-                "apigw",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9874,
-              "title": "Vanhentuneiden talouden viestien poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-09-29T07:15:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9874",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9912",
               "labels": [
                 "enhancement",
                 "core",
-                "not-visible"
+                "citizen"
               ]
             },
-            {
-              "number": 9911,
-              "title": "Lokitetaan yksikön käyttöoikeuden päättymispäivä pelkkänä päivämääränä",
-              "author": "ilja-git",
-              "authorName": "Ilja Pyykkönen",
-              "mergedAt": "2026-09-29T06:49:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9911",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
             {
               "number": 9917,
               "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
@@ -152,7 +116,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T09:25:50.927Z",
+            "checkedAt": "2026-09-30T09:37:43.080Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
@@ -177,7 +141,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T09:25:59.992Z",
+            "checkedAt": "2026-09-30T09:37:51.002Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
@@ -210,6 +174,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9912,
+              "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-30T09:30:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9912",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9917,
               "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
@@ -258,7 +239,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T09:26:11.909Z",
+            "checkedAt": "2026-09-30T09:38:01.463Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -277,7 +258,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T09:26:12.734Z",
+            "checkedAt": "2026-09-30T09:38:02.621Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -299,6 +280,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9912,
+              "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-30T09:30:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9912",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9917,
               "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
@@ -347,7 +345,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-30T09:26:14.945Z",
+            "checkedAt": "2026-09-30T09:38:05.731Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -366,7 +364,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-30T09:26:15.578Z",
+            "checkedAt": "2026-09-30T09:38:06.510Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -388,6 +386,23 @@
           "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9912,
+              "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-09-30T09:30:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9912",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 9917,
               "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
