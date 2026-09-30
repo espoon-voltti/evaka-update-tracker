@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T09:00:07.133Z",
+  "generatedAt": "2026-09-30T09:12:57.405Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T08:59:11.566Z",
+            "checkedAt": "2026-09-30T09:11:52.975Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-09-30T08:59:12.600Z",
+            "checkedAt": "2026-09-30T09:11:53.890Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -152,7 +152,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T08:59:16.313Z",
+            "checkedAt": "2026-09-30T09:11:57.913Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6548e6c4b9c27825205ad6d25a9e182135d9ef5c",
@@ -177,7 +177,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-09-30T08:59:26.345Z",
+            "checkedAt": "2026-09-30T09:12:09.928Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
@@ -498,15 +498,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T08:59:57.511Z",
+            "checkedAt": "2026-09-30T09:12:43.971Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0bab81c5cf1e96d010d121a3373dffc00536c98b",
-              "shortSha": "0bab81c",
-              "message": "Merge pull request #9839 from espoon-voltti/declarative-data-retention",
-              "date": "2026-09-28T13:25:21Z",
-              "author": "Joosakur"
+              "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
+              "shortSha": "341d625",
+              "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
+              "date": "2026-09-29T08:56:25Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -517,7 +517,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-09-30T08:59:58.364Z",
+            "checkedAt": "2026-09-30T09:12:46.484Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -536,8 +536,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9914,
               "title": "Siivotaan Digitransit-liikenteen headereita",
@@ -591,6 +590,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9917,
@@ -640,15 +640,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-09-30T09:00:02.469Z",
+            "checkedAt": "2026-09-30T09:12:50.422Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0bab81c5cf1e96d010d121a3373dffc00536c98b",
-              "shortSha": "0bab81c",
-              "message": "Merge pull request #9839 from espoon-voltti/declarative-data-retention",
-              "date": "2026-09-28T13:25:21Z",
-              "author": "Joosakur"
+              "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
+              "shortSha": "341d625",
+              "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
+              "date": "2026-09-29T08:56:25Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -659,7 +659,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-09-30T09:00:03.224Z",
+            "checkedAt": "2026-09-30T09:12:53.297Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -678,8 +678,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9914,
               "title": "Siivotaan Digitransit-liikenteen headereita",
@@ -733,6 +732,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9917,
