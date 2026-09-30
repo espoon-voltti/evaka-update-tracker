@@ -1,6 +1,152 @@
 {
   "events": [
     {
+      "id": "2026-09-30T10:47:34.639Z_tampere-prod_wrapper",
+      "environmentId": "tampere-prod",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-30T10:47:34.639Z",
+      "previousCommit": {
+        "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
+        "shortSha": "b4e2466",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
+        "shortSha": "69348bc",
+        "message": "Merge pull request #2249 from Tampere/bump-evaka-2c991f5",
+        "date": "2026-09-30T10:20:37Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 2249,
+          "title": "Bump evaka from `341d625` to `2c991f5`",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-09-30T10:20:37Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2249",
+          "labels": []
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-09-30T10:47:34.639Z_tampere-prod_core",
+      "environmentId": "tampere-prod",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-30T10:47:34.639Z",
+      "previousCommit": {
+        "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
+        "shortSha": "341d625",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "2c991f54a3df2b491b90b3d1802e4643ef6e36e6",
+        "shortSha": "2c991f5",
+        "message": "Merge pull request #9919 from espoon-voltti/ylojarvi-decision-text-changes",
+        "date": "2026-09-30T09:50:01Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 9919,
+          "title": "Ylöjärven varhaiskasvatuspäätösten tekstimuutokset",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-09-30T09:50:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9919",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9912,
+          "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T09:30:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9912",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9917,
+          "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-30T07:09:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9917",
+          "labels": [
+            "bugfix",
+            "apigw",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9913,
+          "title": "Korjauksia henkilökunnan käyttöliittymään",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-30T06:36:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9913",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9915,
+          "title": "Generoidaan Turun laskutus- ja maksatusclientit",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-09-30T04:25:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9915",
+          "labels": [
+            "tech",
+            "turku"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-09-30T10:35:11.207Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
