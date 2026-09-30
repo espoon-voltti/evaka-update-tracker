@@ -1,6 +1,124 @@
 {
   "events": [
     {
+      "id": "2026-09-30T05:35:57.914Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-30T05:35:57.914Z",
+      "previousCommit": {
+        "sha": "7b65d0f1a01422377b863990f35ec8c0c455d63c",
+        "shortSha": "7b65d0f",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "b4e24666587a5425165686301711bc6f8b2d2ee3",
+        "shortSha": "b4e2466",
+        "message": "Merge pull request #2248 from Tampere/dependabot/submodules/evaka-341d625",
+        "date": "2026-09-29T21:13:44Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2248,
+          "title": "Bump evaka from `0bab81c` to `341d625`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-29T21:13:44Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2248",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-09-30T05:35:57.914Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-09-30T05:35:57.914Z",
+      "previousCommit": {
+        "sha": "0bab81c5cf1e96d010d121a3373dffc00536c98b",
+        "shortSha": "0bab81c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
+        "shortSha": "341d625",
+        "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
+        "date": "2026-09-29T08:56:25Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9914,
+          "title": "Siivotaan Digitransit-liikenteen headereita",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-29T08:56:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9914",
+          "labels": [
+            "bugfix",
+            "apigw",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9874,
+          "title": "Vanhentuneiden talouden viestien poisto (ei vielä käytössä)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-29T07:15:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9874",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9911,
+          "title": "Lokitetaan yksikön käyttöoikeuden päättymispäivä pelkkänä päivämääränä",
+          "author": "ilja-git",
+          "authorName": "Ilja Pyykkönen",
+          "mergedAt": "2026-09-29T06:49:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9911",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-09-30T02:18:26.945Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
