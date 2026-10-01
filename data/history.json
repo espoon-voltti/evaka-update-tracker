@@ -1,6 +1,88 @@
 {
   "events": [
     {
+      "id": "2026-10-01T06:17:29.949Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-01T06:17:29.949Z",
+      "previousCommit": {
+        "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
+        "shortSha": "69348bc",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "83252ece3b13be72e24853a9cbc76b90d8700504",
+        "shortSha": "83252ec",
+        "message": "Merge pull request #2250 from Tampere/dependabot/submodules/evaka-df5f6a7",
+        "date": "2026-09-30T21:07:14Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2250,
+          "title": "Bump evaka from `2c991f5` to `df5f6a7`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-09-30T21:07:15Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2250",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-01T06:17:29.949Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-01T06:17:29.949Z",
+      "previousCommit": {
+        "sha": "2c991f54a3df2b491b90b3d1802e4643ef6e36e6",
+        "shortSha": "2c991f5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+        "shortSha": "df5f6a7",
+        "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
+        "date": "2026-09-30T10:54:24Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9916,
+          "title": "Lokitetaan kaikki proxyyn tulevat requestit paitsi health checkit",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T10:54:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9916",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-01T02:23:56.520Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
