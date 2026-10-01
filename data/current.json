@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T09:01:18.982Z",
+  "generatedAt": "2026-10-01T09:15:21.417Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-01T09:00:36.819Z",
+            "checkedAt": "2026-10-01T09:14:30.054Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-              "shortSha": "341d625",
-              "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-              "date": "2026-09-29T08:56:25Z",
-              "author": "terolaakso-reaktor"
+              "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+              "shortSha": "df5f6a7",
+              "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
+              "date": "2026-09-30T10:54:24Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-01T09:00:37.712Z",
+            "checkedAt": "2026-10-01T09:14:33.993Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9916,
               "title": "Lokitetaan kaikki proxyyn tulevat requestit paitsi health checkit",
@@ -119,6 +118,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -132,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-01T09:00:42.695Z",
+            "checkedAt": "2026-10-01T09:14:38.490Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -157,7 +157,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-01T09:00:53.371Z",
+            "checkedAt": "2026-10-01T09:14:49.344Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "83252ece3b13be72e24853a9cbc76b90d8700504",
@@ -219,15 +219,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-01T09:01:08.020Z",
+            "checkedAt": "2026-10-01T09:15:03.240Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-              "shortSha": "341d625",
-              "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-              "date": "2026-09-29T08:56:25Z",
-              "author": "terolaakso-reaktor"
+              "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+              "shortSha": "df5f6a7",
+              "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
+              "date": "2026-09-30T10:54:24Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -238,7 +238,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-01T09:01:08.921Z",
+            "checkedAt": "2026-10-01T09:15:07.300Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -257,8 +257,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9916,
               "title": "Lokitetaan kaikki proxyyn tulevat requestit paitsi health checkit",
@@ -328,6 +327,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -341,15 +341,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-01T09:01:13.713Z",
+            "checkedAt": "2026-10-01T09:15:12.594Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
-              "shortSha": "341d625",
-              "message": "Merge pull request #9914 from espoon-voltti/digitransit-headers-whitelist",
-              "date": "2026-09-29T08:56:25Z",
-              "author": "terolaakso-reaktor"
+              "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+              "shortSha": "df5f6a7",
+              "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
+              "date": "2026-09-30T10:54:24Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -360,7 +360,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-01T09:01:14.566Z",
+            "checkedAt": "2026-10-01T09:15:16.593Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -379,8 +379,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9916,
               "title": "Lokitetaan kaikki proxyyn tulevat requestit paitsi health checkit",
@@ -448,24 +447,9 @@
                 "core",
                 "employee"
               ]
-            },
-            {
-              "number": 9915,
-              "title": "Generoidaan Turun laskutus- ja maksatusclientit",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-09-30T04:25:38Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9915",
-              "labels": [
-                "tech",
-                "turku"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9922,

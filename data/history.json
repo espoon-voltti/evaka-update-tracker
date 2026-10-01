@@ -1,6 +1,381 @@
 {
   "events": [
     {
+      "id": "2026-10-01T09:14:33.993Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-10-01T09:14:33.993Z",
+      "previousCommit": {
+        "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
+        "shortSha": "341d625",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+        "shortSha": "df5f6a7",
+        "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
+        "date": "2026-09-30T10:54:24Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9916,
+          "title": "Lokitetaan kaikki proxyyn tulevat requestit paitsi health checkit",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T10:54:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9916",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9919,
+          "title": "Ylöjärven varhaiskasvatuspäätösten tekstimuutokset",
+          "author": "Wnt",
+          "authorName": null,
+          "mergedAt": "2026-09-30T09:50:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9919",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9912,
+          "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T09:30:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9912",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9917,
+          "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-30T07:09:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9917",
+          "labels": [
+            "bugfix",
+            "apigw",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9913,
+          "title": "Korjauksia henkilökunnan käyttöliittymään",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-30T06:36:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9913",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9915,
+          "title": "Generoidaan Turun laskutus- ja maksatusclientit",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-09-30T04:25:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9915",
+          "labels": [
+            "tech",
+            "turku"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-10-01T09:15:07.300Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-10-01T09:15:07.300Z",
+      "previousCommit": {
+        "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
+        "shortSha": "341d625",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+        "shortSha": "df5f6a7",
+        "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
+        "date": "2026-09-30T10:54:24Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9916,
+          "title": "Lokitetaan kaikki proxyyn tulevat requestit paitsi health checkit",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T10:54:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9916",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9919,
+          "title": "Ylöjärven varhaiskasvatuspäätösten tekstimuutokset",
+          "author": "Wnt",
+          "authorName": null,
+          "mergedAt": "2026-09-30T09:50:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9919",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9912,
+          "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T09:30:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9912",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9917,
+          "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-30T07:09:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9917",
+          "labels": [
+            "bugfix",
+            "apigw",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9913,
+          "title": "Korjauksia henkilökunnan käyttöliittymään",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-30T06:36:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9913",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9915,
+          "title": "Generoidaan Turun laskutus- ja maksatusclientit",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-09-30T04:25:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9915",
+          "labels": [
+            "tech",
+            "turku"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-10-01T09:15:16.593Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-10-01T09:15:16.593Z",
+      "previousCommit": {
+        "sha": "341d6254fa657ac8db95599d5914c122a5e699bb",
+        "shortSha": "341d625",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+        "shortSha": "df5f6a7",
+        "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
+        "date": "2026-09-30T10:54:24Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9916,
+          "title": "Lokitetaan kaikki proxyyn tulevat requestit paitsi health checkit",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T10:54:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9916",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9919,
+          "title": "Ylöjärven varhaiskasvatuspäätösten tekstimuutokset",
+          "author": "Wnt",
+          "authorName": null,
+          "mergedAt": "2026-09-30T09:50:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9919",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9912,
+          "title": "Parannetaan kuntalaisen push-notifikaatioiden deep linkitystä",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T09:30:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9912",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9917,
+          "title": "Korjaus kauan aktiivisena olleiden sessioiden uloskirjaamiseen automaattisesti",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-09-30T07:09:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9917",
+          "labels": [
+            "bugfix",
+            "apigw",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9913,
+          "title": "Korjauksia henkilökunnan käyttöliittymään",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-09-30T06:36:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9913",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 9915,
+          "title": "Generoidaan Turun laskutus- ja maksatusclientit",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-09-30T04:25:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9915",
+          "labels": [
+            "tech",
+            "turku"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-10-01T06:17:29.949Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
