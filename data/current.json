@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:00:52.496Z",
+  "generatedAt": "2026-10-02T09:25:22.874Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-02T09:00:08.888Z",
+            "checkedAt": "2026-10-02T09:24:33.122Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
-              "shortSha": "df5f6a7",
-              "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
-              "date": "2026-09-30T10:54:24Z",
-              "author": "akheron"
+              "sha": "f3d6805c85f20c3a5dbe2a14a14ed91533265ad6",
+              "shortSha": "f3d6805",
+              "message": "Merge pull request #9926 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/moment-2.31.0",
+              "date": "2026-10-01T12:52:21Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-02T09:00:09.712Z",
+            "checkedAt": "2026-10-02T09:24:35.708Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9923,
               "title": "Lähetetään muistutus keskusteluajanvarauksesta vain jos varausta ei ole vielä tehty",
@@ -68,7 +67,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9921,
+              "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-02T09:08:13Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9921",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9910,
               "title": "Lisätään Cloudflare-tunneli kehitysympäristön testaamiseen ulkoisilla laitteilla",
@@ -99,7 +116,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-02T09:00:14.101Z",
+            "checkedAt": "2026-10-02T09:24:41.327Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -124,7 +141,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-02T09:00:24.681Z",
+            "checkedAt": "2026-10-02T09:24:51.252Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6368ec5fdb009f1c37d7e2d0bb24704e2b1c23cc",
@@ -192,6 +209,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9921,
+              "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-02T09:08:13Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9921",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
+            {
               "number": 9910,
               "title": "Lisätään Cloudflare-tunneli kehitysympäristön testaamiseen ulkoisilla laitteilla",
               "author": "Wnt",
@@ -221,15 +255,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-02T09:00:40.737Z",
+            "checkedAt": "2026-10-02T09:25:08.311Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
-              "shortSha": "df5f6a7",
-              "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
-              "date": "2026-09-30T10:54:24Z",
-              "author": "akheron"
+              "sha": "f3d6805c85f20c3a5dbe2a14a14ed91533265ad6",
+              "shortSha": "f3d6805",
+              "message": "Merge pull request #9926 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/moment-2.31.0",
+              "date": "2026-10-01T12:52:21Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -240,7 +274,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-02T09:00:41.716Z",
+            "checkedAt": "2026-10-02T09:25:10.723Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -259,8 +293,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9923,
               "title": "Lähetetään muistutus keskusteluajanvarauksesta vain jos varausta ei ole vielä tehty",
@@ -279,7 +312,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9921,
+              "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-02T09:08:13Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9921",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9910,
               "title": "Lisätään Cloudflare-tunneli kehitysympäristön testaamiseen ulkoisilla laitteilla",
@@ -310,15 +361,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-02T09:00:47.725Z",
+            "checkedAt": "2026-10-02T09:25:15.161Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
-              "shortSha": "df5f6a7",
-              "message": "Merge pull request #9916 from espoon-voltti/proxy-access-logging",
-              "date": "2026-09-30T10:54:24Z",
-              "author": "akheron"
+              "sha": "f3d6805c85f20c3a5dbe2a14a14ed91533265ad6",
+              "shortSha": "f3d6805",
+              "message": "Merge pull request #9926 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/moment-2.31.0",
+              "date": "2026-10-01T12:52:21Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -329,7 +380,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-02T09:00:48.471Z",
+            "checkedAt": "2026-10-02T09:25:17.687Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -348,8 +399,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9923,
               "title": "Lähetetään muistutus keskusteluajanvarauksesta vain jos varausta ei ole vielä tehty",
@@ -385,7 +435,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9921,
+              "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-02T09:08:13Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9921",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9909,
               "title": "Turku: ruotsinkielinen työntekijän käyttöliittymä tuotantoon",
