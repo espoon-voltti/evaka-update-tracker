@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T09:25:22.874Z",
+  "generatedAt": "2026-10-02T09:28:12.596Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-02T09:24:33.122Z",
+            "checkedAt": "2026-10-02T09:27:31.689Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-02T09:24:35.708Z",
+            "checkedAt": "2026-10-02T09:27:32.549Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,27 +48,26 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9923,
-              "title": "Lähetetään muistutus keskusteluajanvarauksesta vain jos varausta ei ole vielä tehty",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-01T10:39:41Z",
+              "number": 9924,
+              "title": "Mobiililaitteella voi kirjautua PIN-koodilla vain yksikön oma henkilökunta",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-10-02T09:25:24Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9923",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9924",
               "labels": [
-                "bugfix",
+                "enhancement",
                 "core",
-                "not-visible"
+                "employee-mobile"
               ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
+            },
             {
               "number": 9921,
               "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
@@ -116,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-02T09:24:41.327Z",
+            "checkedAt": "2026-10-02T09:27:36.104Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -141,7 +140,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-02T09:24:51.252Z",
+            "checkedAt": "2026-10-02T09:27:46.844Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6368ec5fdb009f1c37d7e2d0bb24704e2b1c23cc",
@@ -209,6 +208,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 9924,
+              "title": "Mobiililaitteella voi kirjautua PIN-koodilla vain yksikön oma henkilökunta",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-10-02T09:25:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9924",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
               "number": 9921,
               "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
               "author": "ohinkinen",
@@ -255,7 +271,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-02T09:25:08.311Z",
+            "checkedAt": "2026-10-02T09:28:03.861Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -274,7 +290,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-02T09:25:10.723Z",
+            "checkedAt": "2026-10-02T09:28:04.862Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -293,27 +309,26 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
+          "deployed": [],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 9923,
-              "title": "Lähetetään muistutus keskusteluajanvarauksesta vain jos varausta ei ole vielä tehty",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-01T10:39:41Z",
+              "number": 9924,
+              "title": "Mobiililaitteella voi kirjautua PIN-koodilla vain yksikön oma henkilökunta",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-10-02T09:25:24Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9923",
+              "url": "https://github.com/espoon-voltti/evaka/pull/9924",
               "labels": [
-                "bugfix",
+                "enhancement",
                 "core",
-                "not-visible"
+                "employee-mobile"
               ]
-            }
-          ],
-          "inStaging": [],
-          "pendingDeployment": [
+            },
             {
               "number": 9921,
               "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
@@ -361,7 +376,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-02T09:25:15.161Z",
+            "checkedAt": "2026-10-02T09:28:08.234Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -380,7 +395,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-02T09:25:17.687Z",
+            "checkedAt": "2026-10-02T09:28:09.207Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -399,44 +414,26 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9923,
-              "title": "Lähetetään muistutus keskusteluajanvarauksesta vain jos varausta ei ole vielä tehty",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-01T10:39:41Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9923",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9922,
-              "title": "Turku: Muutetaan tukitoimien ruotsinkieliset käännökset",
-              "author": "ohinkinen",
-              "authorName": "Olli-Heikki Inkinen",
-              "mergedAt": "2026-10-01T09:00:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9922",
-              "labels": [
-                "enhancement",
-                "turku",
-                "employee"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 9924,
+              "title": "Mobiililaitteella voi kirjautua PIN-koodilla vain yksikön oma henkilökunta",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-10-02T09:25:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9924",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee-mobile"
+              ]
+            },
             {
               "number": 9921,
               "title": "Estetään esiopetussijoituksen tallentaminen esiopetuskauden ulkopuolelle",
