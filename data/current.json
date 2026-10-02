@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T05:56:43.478Z",
+  "generatedAt": "2026-10-02T06:13:21.712Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-02T05:56:10.927Z",
+            "checkedAt": "2026-10-02T06:12:42.063Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-02T05:56:11.588Z",
+            "checkedAt": "2026-10-02T06:12:42.934Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -68,7 +68,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9910,
+              "title": "Lisätään Cloudflare-tunneli kehitysympäristön testaamiseen ulkoisilla laitteilla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-10-02T06:01:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9910",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -81,7 +99,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-02T05:56:14.515Z",
+            "checkedAt": "2026-10-02T06:12:47.260Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -106,7 +124,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-02T05:56:24.297Z",
+            "checkedAt": "2026-10-02T06:12:57.390Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6368ec5fdb009f1c37d7e2d0bb24704e2b1c23cc",
@@ -172,7 +190,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9910,
+              "title": "Lisätään Cloudflare-tunneli kehitysympäristön testaamiseen ulkoisilla laitteilla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-10-02T06:01:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9910",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -185,7 +221,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-02T05:56:36.930Z",
+            "checkedAt": "2026-10-02T06:13:12.369Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -204,7 +240,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-02T05:56:37.555Z",
+            "checkedAt": "2026-10-02T06:13:13.335Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -243,7 +279,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9910,
+              "title": "Lisätään Cloudflare-tunneli kehitysympäristön testaamiseen ulkoisilla laitteilla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-10-02T06:01:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9910",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -256,7 +310,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-02T05:56:40.211Z",
+            "checkedAt": "2026-10-02T06:13:17.367Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -275,7 +329,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-02T05:56:40.812Z",
+            "checkedAt": "2026-10-02T06:13:18.086Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -331,7 +385,42 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9909,
+              "title": "Turku: ruotsinkielinen työntekijän käyttöliittymä tuotantoon",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-02T06:07:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9909",
+              "labels": [
+                "enhancement",
+                "turku",
+                "employee"
+              ]
+            },
+            {
+              "number": 9910,
+              "title": "Lisätään Cloudflare-tunneli kehitysympäristön testaamiseen ulkoisilla laitteilla",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-10-02T06:01:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9910",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     }
