@@ -1,6 +1,122 @@
 {
   "events": [
     {
+      "id": "2026-10-02T04:42:08.936Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-02T04:42:08.936Z",
+      "previousCommit": {
+        "sha": "83252ece3b13be72e24853a9cbc76b90d8700504",
+        "shortSha": "83252ec",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "6368ec5fdb009f1c37d7e2d0bb24704e2b1c23cc",
+        "shortSha": "6368ec5",
+        "message": "Merge pull request #2252 from Tampere/dependabot/submodules/evaka-f3d6805",
+        "date": "2026-10-01T21:13:16Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2252,
+          "title": "Bump evaka from `df5f6a7` to `f3d6805`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-01T21:13:17Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2252",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-02T04:42:08.936Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-02T04:42:08.936Z",
+      "previousCommit": {
+        "sha": "df5f6a748125356d37cbca2797298c3f6288581d",
+        "shortSha": "df5f6a7",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f3d6805c85f20c3a5dbe2a14a14ed91533265ad6",
+        "shortSha": "f3d6805",
+        "message": "Merge pull request #9926 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/moment-2.31.0",
+        "date": "2026-10-01T12:52:21Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 9926,
+          "title": "Bump moment from 2.30.1 to 2.31.0 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-01T12:52:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9926",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9923,
+          "title": "Lähetetään muistutus keskusteluajanvarauksesta vain jos varausta ei ole vielä tehty",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-01T10:39:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9923",
+          "labels": [
+            "bugfix",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 9922,
+          "title": "Turku: Muutetaan tukitoimien ruotsinkieliset käännökset",
+          "author": "ohinkinen",
+          "authorName": null,
+          "mergedAt": "2026-10-01T09:00:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9922",
+          "labels": [
+            "enhancement",
+            "turku",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-02T02:17:32.676Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
