@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T18:49:15.520Z",
+  "generatedAt": "2026-10-05T19:00:58.337Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-05T18:48:00.823Z",
+            "checkedAt": "2026-10-05T18:59:37.963Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-05T18:48:01.719Z",
+            "checkedAt": "2026-10-05T18:59:38.923Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -134,7 +134,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-05T18:48:10.661Z",
+            "checkedAt": "2026-10-05T18:59:47.224Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -159,7 +159,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-05T18:48:21.664Z",
+            "checkedAt": "2026-10-05T18:59:57.867Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "107eb373166a84e8c21bfa0c67839eeec5311833",
@@ -411,7 +411,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-05T18:48:56.674Z",
+            "checkedAt": "2026-10-05T19:00:33.978Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -430,7 +430,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-05T18:48:57.588Z",
+            "checkedAt": "2026-10-05T19:00:34.760Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -535,15 +535,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-05T18:49:05.960Z",
+            "checkedAt": "2026-10-05T19:00:43.353Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "bb425b7cae6d99532df064563fbe3e6d1d8ef2d1",
-              "shortSha": "bb425b7",
-              "message": "Update dependency lefthook to v2.1.15 (#9961)",
-              "date": "2026-10-04T21:15:24Z",
-              "author": "renovate[bot]"
+              "sha": "e3a2697b2c6d98991c57d708d7becdc5a8732f31",
+              "shortSha": "e3a2697",
+              "message": "Merge pull request #9918 from espoon-voltti/ssn-masker-on-audit-logs",
+              "date": "2026-10-05T06:20:27Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -554,7 +554,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-05T18:49:06.728Z",
+            "checkedAt": "2026-10-05T19:00:49.580Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -573,8 +573,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9918,
               "title": "Poistetaan henkilötunnukset ja nimet audit-lokeista",
@@ -610,6 +609,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 9963,
