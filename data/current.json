@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:31:46.010Z",
+  "generatedAt": "2026-10-05T00:37:33.804Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-05T00:30:35.715Z",
+            "checkedAt": "2026-10-05T00:36:10.848Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-05T00:30:36.484Z",
+            "checkedAt": "2026-10-05T00:36:11.805Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -183,7 +183,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-05T00:30:49.499Z",
+            "checkedAt": "2026-10-05T00:36:23.611Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -208,7 +208,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-05T00:30:59.295Z",
+            "checkedAt": "2026-10-05T00:36:33.974Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6368ec5fdb009f1c37d7e2d0bb24704e2b1c23cc",
@@ -390,7 +390,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-05T00:31:22.584Z",
+            "checkedAt": "2026-10-05T00:36:58.053Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -409,15 +409,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-05T00:31:23.396Z",
+            "checkedAt": "2026-10-05T00:36:58.979Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f3d6805c85f20c3a5dbe2a14a14ed91533265ad6",
-              "shortSha": "f3d6805",
-              "message": "Merge pull request #9926 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/moment-2.31.0",
-              "date": "2026-10-01T12:52:21Z",
-              "author": "terolaakso-reaktor"
+              "sha": "bb425b7cae6d99532df064563fbe3e6d1d8ef2d1",
+              "shortSha": "bb425b7",
+              "message": "Update dependency lefthook to v2.1.15 (#9961)",
+              "date": "2026-10-04T21:15:24Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -429,8 +429,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 9930,
               "title": "Muistutus puuttuvista loma-ajan varauksista päälle kaikkiin kuntiin",
@@ -533,7 +532,8 @@
                 "not-visible"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -546,7 +546,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-05T00:31:34.241Z",
+            "checkedAt": "2026-10-05T00:37:21.865Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -565,7 +565,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-05T00:31:34.968Z",
+            "checkedAt": "2026-10-05T00:37:22.781Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
