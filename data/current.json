@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T05:23:09.515Z",
+  "generatedAt": "2026-10-06T05:37:21.814Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-06T05:22:02.185Z",
+            "checkedAt": "2026-10-06T05:36:05.701Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-06T05:22:03.017Z",
+            "checkedAt": "2026-10-06T05:36:06.547Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -134,7 +134,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-06T05:22:11.832Z",
+            "checkedAt": "2026-10-06T05:36:14.960Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -159,21 +159,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-06T05:22:22.090Z",
+            "checkedAt": "2026-10-06T05:36:25.365Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "107eb373166a84e8c21bfa0c67839eeec5311833",
-              "shortSha": "107eb37",
-              "message": "Merge pull request #2253 from Tampere/dependabot/submodules/evaka-63654d5",
-              "date": "2026-10-04T21:13:26Z",
+              "sha": "fd05a109c806d502c242a836191e93c77893abb4",
+              "shortSha": "fd05a10",
+              "message": "Merge pull request #2254 from Tampere/dependabot/submodules/evaka-3a61999",
+              "date": "2026-10-06T05:07:38Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "63654d505232dc76072c533b723bafeb067038b7",
-              "shortSha": "63654d5",
-              "message": "Update dependency fast-xml-parser to v5.11.2 (#9958)",
-              "date": "2026-10-04T09:39:44Z",
-              "author": "renovate[bot]"
+              "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
+              "shortSha": "3a61999",
+              "message": "Merge pull request #9963 from espoon-voltti/citizen-messaging-scroll-fix",
+              "date": "2026-10-05T11:48:31Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -191,6 +191,76 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9963,
+              "title": "Korjataan viestiketjun automaattinen skrollaus deskarilla",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-05T11:48:32Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9963",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9929,
+              "title": "Talouspäätösten jäädytys viittä vuotta vanhemmille päiville",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-05T11:27:04Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9929",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 9840,
+              "title": "Modaalien saavutettavuusparannuksia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-05T10:18:47Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9840",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen",
+                "employee",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9918,
+              "title": "Poistetaan henkilötunnukset ja nimet audit-lokeista",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-10-05T06:20:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9918",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9930,
               "title": "Muistutus puuttuvista loma-ajan varauksista päälle kaikkiin kuntiin",
@@ -327,78 +397,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9963,
-              "title": "Korjataan viestiketjun automaattinen skrollaus deskarilla",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-05T11:48:32Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9963",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9929,
-              "title": "Talouspäätösten jäädytys viittä vuotta vanhemmille päiville",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-05T11:27:04Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9929",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9840,
-              "title": "Modaalien saavutettavuusparannuksia",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-05T10:18:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9840",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9918,
-              "title": "Poistetaan henkilötunnukset ja nimet audit-lokeista",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-10-05T06:20:27Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9918",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -411,7 +410,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-06T05:22:56.373Z",
+            "checkedAt": "2026-10-06T05:37:08.889Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -430,7 +429,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-06T05:22:57.214Z",
+            "checkedAt": "2026-10-06T05:37:10.005Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -535,7 +534,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-06T05:23:05.301Z",
+            "checkedAt": "2026-10-06T05:37:17.698Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -554,7 +553,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-06T05:23:06.079Z",
+            "checkedAt": "2026-10-06T05:37:18.648Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
