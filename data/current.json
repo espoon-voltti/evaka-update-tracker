@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T07:02:52.514Z",
+  "generatedAt": "2026-10-07T07:09:19.956Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-07T07:01:31.398Z",
+            "checkedAt": "2026-10-07T07:08:08.446Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-07T07:01:32.103Z",
+            "checkedAt": "2026-10-07T07:08:09.266Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-07T07:01:40.946Z",
+            "checkedAt": "2026-10-07T07:08:13.944Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-07T07:01:51.351Z",
+            "checkedAt": "2026-10-07T07:08:24.686Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "795a5dd7caed07cb3610b3eaa4dc1f8db37bf272",
@@ -394,14 +394,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-07T07:02:34.481Z",
+            "checkedAt": "2026-10-07T07:09:02.799Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
-              "shortSha": "3a61999",
-              "message": "Merge pull request #9963 from espoon-voltti/citizen-messaging-scroll-fix",
-              "date": "2026-10-05T11:48:31Z",
+              "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+              "shortSha": "c4bb284",
+              "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+              "date": "2026-10-07T06:21:19Z",
               "author": "akheron"
             }
           },
@@ -413,7 +413,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-07T07:02:35.120Z",
+            "checkedAt": "2026-10-07T07:09:07.040Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -432,8 +432,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9975,
               "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
@@ -471,6 +470,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -484,14 +484,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-07T07:02:43.510Z",
+            "checkedAt": "2026-10-07T07:09:11.722Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
-              "shortSha": "3a61999",
-              "message": "Merge pull request #9963 from espoon-voltti/citizen-messaging-scroll-fix",
-              "date": "2026-10-05T11:48:31Z",
+              "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+              "shortSha": "c4bb284",
+              "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+              "date": "2026-10-07T06:21:19Z",
               "author": "akheron"
             }
           },
@@ -503,7 +503,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-07T07:02:44.142Z",
+            "checkedAt": "2026-10-07T07:09:15.651Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -522,8 +522,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9975,
               "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
@@ -561,6 +560,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }

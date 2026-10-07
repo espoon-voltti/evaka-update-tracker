@@ -1,6 +1,284 @@
 {
   "events": [
     {
+      "id": "2026-10-07T07:09:07.040Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-10-07T07:09:07.040Z",
+      "previousCommit": {
+        "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
+        "shortSha": "3a61999",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+        "shortSha": "c4bb284",
+        "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+        "date": "2026-10-07T06:21:19Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9975,
+          "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-07T06:21:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9975",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9965,
+          "title": "Näytetään Titania-virheraportilla myös samaan aikaan alkavat ja päättyvät sekä ennen alkuaan päättyvät työvuorot",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-10-07T05:25:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9965",
+          "labels": [
+            "bugfix",
+            "turku",
+            "oulu",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9969,
+          "title": "Bump proxy-addr from 2.0.7 to 2.0.8 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:16:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9969",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9970,
+          "title": "Bump postcss-selector-parser from 7.1.5 to 7.1.6 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:14:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9970",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9971,
+          "title": "Bump fast-copy from 4.0.0 to 4.1.1 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:14:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9971",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9972,
+          "title": "Bump source-map-js from 1.2.1 to 1.2.2 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:14:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9972",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9967,
+          "title": "Poistetaan sandbox",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-06T11:16:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9967",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-10-07T07:09:15.651Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-10-07T07:09:15.651Z",
+      "previousCommit": {
+        "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
+        "shortSha": "3a61999",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+        "shortSha": "c4bb284",
+        "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+        "date": "2026-10-07T06:21:19Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9975,
+          "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-07T06:21:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9975",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9965,
+          "title": "Näytetään Titania-virheraportilla myös samaan aikaan alkavat ja päättyvät sekä ennen alkuaan päättyvät työvuorot",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-10-07T05:25:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9965",
+          "labels": [
+            "bugfix",
+            "turku",
+            "oulu",
+            "seutu",
+            "employee"
+          ]
+        },
+        {
+          "number": 9969,
+          "title": "Bump proxy-addr from 2.0.7 to 2.0.8 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:16:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9969",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9970,
+          "title": "Bump postcss-selector-parser from 7.1.5 to 7.1.6 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:14:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9970",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9971,
+          "title": "Bump fast-copy from 4.0.0 to 4.1.1 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:14:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9971",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9972,
+          "title": "Bump source-map-js from 1.2.1 to 1.2.2 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-06T13:14:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9972",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 9967,
+          "title": "Poistetaan sandbox",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-06T11:16:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9967",
+          "labels": [
+            "no-changelog"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-10-07T07:01:37.478Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
