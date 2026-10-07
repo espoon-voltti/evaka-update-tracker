@@ -1,6 +1,108 @@
 {
   "events": [
     {
+      "id": "2026-10-07T07:34:55.042Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-07T07:34:55.042Z",
+      "previousCommit": {
+        "sha": "795a5dd7caed07cb3610b3eaa4dc1f8db37bf272",
+        "shortSha": "795a5dd",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+        "shortSha": "1ce107c",
+        "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+        "date": "2026-10-07T07:10:33Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2256,
+          "title": "Bump evaka from `5b9cbb5` to `c4bb284`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-07T07:10:33Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2256",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-07T07:34:55.042Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-07T07:34:55.042Z",
+      "previousCommit": {
+        "sha": "5b9cbb57864ea35050e8ec7ce9032f7808b555cd",
+        "shortSha": "5b9cbb5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+        "shortSha": "c4bb284",
+        "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+        "date": "2026-10-07T06:21:19Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9975,
+          "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-07T06:21:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9975",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9965,
+          "title": "Näytetään Titania-virheraportilla myös samaan aikaan alkavat ja päättyvät sekä ennen alkuaan päättyvät työvuorot",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-10-07T05:25:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9965",
+          "labels": [
+            "bugfix",
+            "turku",
+            "oulu",
+            "seutu",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-07T07:12:02.857Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
