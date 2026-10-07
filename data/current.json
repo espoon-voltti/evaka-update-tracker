@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T20:07:57.014Z",
+  "generatedAt": "2026-10-07T07:02:52.514Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-06T20:06:56.766Z",
+            "checkedAt": "2026-10-07T07:01:31.398Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,14 +29,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-06T20:06:57.673Z",
+            "checkedAt": "2026-10-07T07:01:32.103Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
-              "shortSha": "3a61999",
-              "message": "Merge pull request #9963 from espoon-voltti/citizen-messaging-scroll-fix",
-              "date": "2026-10-05T11:48:31Z",
+              "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+              "shortSha": "c4bb284",
+              "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+              "date": "2026-10-07T06:21:19Z",
               "author": "akheron"
             }
           },
@@ -49,7 +49,25 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9975,
+              "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-07T06:21:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9975",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -63,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-06T20:07:00.957Z",
+            "checkedAt": "2026-10-07T07:01:40.946Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "69348bc4f11c71387daaab31f69ad6c2689b1f7f",
@@ -88,21 +106,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-06T20:07:11.441Z",
+            "checkedAt": "2026-10-07T07:01:51.351Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "fd05a109c806d502c242a836191e93c77893abb4",
-              "shortSha": "fd05a10",
-              "message": "Merge pull request #2254 from Tampere/dependabot/submodules/evaka-3a61999",
-              "date": "2026-10-06T05:07:38Z",
+              "sha": "795a5dd7caed07cb3610b3eaa4dc1f8db37bf272",
+              "shortSha": "795a5dd",
+              "message": "Merge pull request #2255 from Tampere/dependabot/submodules/evaka-5b9cbb5",
+              "date": "2026-10-06T21:08:53Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
-              "shortSha": "3a61999",
-              "message": "Merge pull request #9963 from espoon-voltti/citizen-messaging-scroll-fix",
-              "date": "2026-10-05T11:48:31Z",
-              "author": "akheron"
+              "sha": "5b9cbb57864ea35050e8ec7ce9032f7808b555cd",
+              "shortSha": "5b9cbb5",
+              "message": "Merge pull request #9969 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/proxy-addr-2.0.8",
+              "date": "2026-10-06T13:16:53Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -326,7 +344,44 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 9975,
+              "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-07T06:21:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9975",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9965,
+              "title": "Näytetään Titania-virheraportilla myös samaan aikaan alkavat ja päättyvät sekä ennen alkuaan päättyvät työvuorot",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-07T05:25:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9965",
+              "labels": [
+                "bugfix",
+                "turku",
+                "oulu",
+                "seutu",
+                "employee"
+              ]
+            }
+          ]
         }
       }
     },
@@ -339,7 +394,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-06T20:07:49.208Z",
+            "checkedAt": "2026-10-07T07:02:34.481Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -358,14 +413,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-06T20:07:50.026Z",
+            "checkedAt": "2026-10-07T07:02:35.120Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
-              "shortSha": "3a61999",
-              "message": "Merge pull request #9963 from espoon-voltti/citizen-messaging-scroll-fix",
-              "date": "2026-10-05T11:48:31Z",
+              "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+              "shortSha": "c4bb284",
+              "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+              "date": "2026-10-07T06:21:19Z",
               "author": "akheron"
             }
           },
@@ -378,7 +433,44 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9975,
+              "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-07T06:21:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9975",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9965,
+              "title": "Näytetään Titania-virheraportilla myös samaan aikaan alkavat ja päättyvät sekä ennen alkuaan päättyvät työvuorot",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-07T05:25:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9965",
+              "labels": [
+                "bugfix",
+                "turku",
+                "oulu",
+                "seutu",
+                "employee"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
@@ -392,7 +484,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-06T20:07:53.434Z",
+            "checkedAt": "2026-10-07T07:02:43.510Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -411,14 +503,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-06T20:07:54.148Z",
+            "checkedAt": "2026-10-07T07:02:44.142Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3a619997b3ff8c4e4a0db4dcc9e43e62b85f5e19",
-              "shortSha": "3a61999",
-              "message": "Merge pull request #9963 from espoon-voltti/citizen-messaging-scroll-fix",
-              "date": "2026-10-05T11:48:31Z",
+              "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+              "shortSha": "c4bb284",
+              "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+              "date": "2026-10-07T06:21:19Z",
               "author": "akheron"
             }
           },
@@ -431,7 +523,44 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
+          "inStaging": [
+            {
+              "number": 9975,
+              "title": "HOTFIX: Korjaus kuntalaisen modaaleihin iOS PWA:ssa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-07T06:21:20Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9975",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9965,
+              "title": "Näytetään Titania-virheraportilla myös samaan aikaan alkavat ja päättyvät sekä ennen alkuaan päättyvät työvuorot",
+              "author": "ohinkinen",
+              "authorName": "Olli-Heikki Inkinen",
+              "mergedAt": "2026-10-07T05:25:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9965",
+              "labels": [
+                "bugfix",
+                "turku",
+                "oulu",
+                "seutu",
+                "employee"
+              ]
+            }
+          ],
           "pendingDeployment": []
         }
       }
