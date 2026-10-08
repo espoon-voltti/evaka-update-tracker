@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T09:17:28.909Z",
+  "generatedAt": "2026-10-08T09:21:05.008Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-08T09:16:48.303Z",
+            "checkedAt": "2026-10-08T09:20:24.723Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
-              "shortSha": "c4bb284",
-              "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
-              "date": "2026-10-07T06:21:19Z",
+              "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+              "shortSha": "f9644f1",
+              "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+              "date": "2026-10-07T11:57:04Z",
               "author": "akheron"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-08T09:16:49.074Z",
+            "checkedAt": "2026-10-08T09:20:28.339Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9979,
               "title": "Päivitetään kehitysdatan kerho- ja eskarikaudet ",
@@ -118,6 +117,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -131,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-08T09:16:52.886Z",
+            "checkedAt": "2026-10-08T09:20:32.275Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
@@ -156,7 +156,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-08T09:17:02.687Z",
+            "checkedAt": "2026-10-08T09:20:44.987Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
@@ -252,7 +252,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-08T09:17:15.551Z",
+            "checkedAt": "2026-10-08T09:21:00.184Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -271,7 +271,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-08T09:17:19.094Z",
+            "checkedAt": "2026-10-08T09:21:01.138Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -290,58 +290,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9979,
-              "title": "Päivitetään kehitysdatan kerho- ja eskarikaudet ",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-07T11:57:04Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9979",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9980,
-              "title": "Korjaus sijoituksen palveluntarpeen arvon tarkistukseen palveluseteliyksikössä",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-07T11:47:07Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9980",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9968,
-              "title": "Kuntalaisen salasanakirjautumisen yrityskertojen rajoitus",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-10-07T09:41:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9968",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
@@ -356,7 +305,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-08T09:17:22.416Z",
+            "checkedAt": "2026-10-08T09:21:02.522Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -375,7 +324,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-08T09:17:25.411Z",
+            "checkedAt": "2026-10-08T09:21:03.839Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -394,58 +343,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 9979,
-              "title": "Päivitetään kehitysdatan kerho- ja eskarikaudet ",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-07T11:57:04Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9979",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9980,
-              "title": "Korjaus sijoituksen palveluntarpeen arvon tarkistukseen palveluseteliyksikössä",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-07T11:47:07Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9980",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9968,
-              "title": "Kuntalaisen salasanakirjautumisen yrityskertojen rajoitus",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-10-07T09:41:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9968",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": []
         }
