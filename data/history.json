@@ -1,6 +1,65 @@
 {
   "events": [
     {
+      "id": "2026-10-09T01:53:51.234Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-10-09T01:53:51.234Z",
+      "previousCommit": {
+        "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+        "shortSha": "f9644f1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "b6d0cfcc0418e5ceb08c3053c1b5b3a560fdda51",
+        "shortSha": "b6d0cfc",
+        "message": "Merge pull request #9977 from espoon-voltti/finance-decisions-to-codebtor",
+        "date": "2026-10-08T10:45:52Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9977,
+          "title": "Lähetetään asiakasmaksupäätökset Suomi.fi:llä myös kanssavelallisille",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-08T10:45:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9977",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9978,
+          "title": "Poistetaan transitiivisten riippuvuuksien tuomat Jackson 2 -muuntimet HTTP-vastauksista",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-08T09:32:53Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9978",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-08T09:20:28.339Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
