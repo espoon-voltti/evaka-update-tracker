@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T04:28:45.086Z",
+  "generatedAt": "2026-10-09T04:48:44.241Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-09T04:27:53.288Z",
+            "checkedAt": "2026-10-09T04:48:04.786Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-09T04:27:54.095Z",
+            "checkedAt": "2026-10-09T04:48:05.926Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-09T04:27:56.453Z",
+            "checkedAt": "2026-10-09T04:48:08.188Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
@@ -123,25 +123,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-09T04:28:08.819Z",
+            "checkedAt": "2026-10-09T04:48:18.275Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
-              "shortSha": "eeea234",
-              "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
-              "date": "2026-10-07T21:12:23Z",
+              "sha": "d9e9dc35126b1890407e4422c911e858a852cd84",
+              "shortSha": "d9e9dc3",
+              "message": "Merge pull request #2258 from Tampere/dependabot/submodules/evaka-b6d0cfc",
+              "date": "2026-10-08T21:14:30Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "f9644f1d566ba74248349d56ea0f243660653535",
-              "shortSha": "f9644f1",
-              "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
-              "date": "2026-10-07T11:57:04Z",
+              "sha": "b6d0cfcc0418e5ceb08c3053c1b5b3a560fdda51",
+              "shortSha": "b6d0cfc",
+              "message": "Merge pull request #9977 from espoon-voltti/finance-decisions-to-codebtor",
+              "date": "2026-10-08T10:45:52Z",
               "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-10-09T04:48:18.275Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "d9e9dc35126b1890407e4422c911e858a852cd84",
+                "shortSha": "d9e9dc3",
+                "message": "Merge pull request #2258 from Tampere/dependabot/submodules/evaka-b6d0cfc",
+                "date": "2026-10-08T21:14:30Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b6d0cfcc0418e5ceb08c3053c1b5b3a560fdda51",
+                "shortSha": "b6d0cfc",
+                "message": "Merge pull request #9977 from espoon-voltti/finance-decisions-to-codebtor",
+                "date": "2026-10-08T10:45:52Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-10-09T04:48:19.408Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-10-09T04:48:20.613Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-10-09T04:48:21.717Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-10-09T04:48:23.018Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-10-09T04:48:24.117Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-10-09T04:48:25.231Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-10-09T04:48:26.334Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-10-09T04:48:27.427Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eeea2349f9f285d2ef7b45226654849e8253dcc9",
+                "shortSha": "eeea234",
+                "message": "Merge pull request #2257 from Tampere/dependabot/submodules/evaka-f9644f1",
+                "date": "2026-10-07T21:12:23Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "f9644f1d566ba74248349d56ea0f243660653535",
+                "shortSha": "f9644f1",
+                "message": "Merge pull request #9979 from espoon-voltti/dev-data-terms",
+                "date": "2026-10-07T11:57:04Z",
+                "author": "akheron"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -155,6 +327,40 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9977,
+              "title": "Lähetetään asiakasmaksupäätökset Suomi.fi:llä myös kanssavelallisille",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-08T10:45:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9977",
+              "labels": [
+                "enhancement",
+                "core",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9978,
+              "title": "Poistetaan transitiivisten riippuvuuksien tuomat Jackson 2 -muuntimet HTTP-vastauksista",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-08T09:32:53Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9978",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 9979,
               "title": "Päivitetään kehitysdatan kerho- ja eskarikaudet ",
@@ -206,42 +412,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9977,
-              "title": "Lähetetään asiakasmaksupäätökset Suomi.fi:llä myös kanssavelallisille",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-08T10:45:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9977",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9978,
-              "title": "Poistetaan transitiivisten riippuvuuksien tuomat Jackson 2 -muuntimet HTTP-vastauksista",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-08T09:32:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9978",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -254,7 +425,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-09T04:28:32.549Z",
+            "checkedAt": "2026-10-09T04:48:37.712Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -273,7 +444,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-09T04:28:37.770Z",
+            "checkedAt": "2026-10-09T04:48:38.559Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -342,7 +513,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-09T04:28:40.041Z",
+            "checkedAt": "2026-10-09T04:48:40.925Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -361,7 +532,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-09T04:28:40.773Z",
+            "checkedAt": "2026-10-09T04:48:41.729Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
