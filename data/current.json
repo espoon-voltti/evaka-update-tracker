@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T04:10:07.040Z",
+  "generatedAt": "2026-10-12T04:36:09.043Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T04:08:56.092Z",
+            "checkedAt": "2026-10-12T04:34:29.846Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T04:08:56.751Z",
+            "checkedAt": "2026-10-12T04:34:30.730Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T04:09:09.285Z",
+            "checkedAt": "2026-10-12T04:34:45.912Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
@@ -140,21 +140,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T04:09:17.172Z",
+            "checkedAt": "2026-10-12T04:34:57.191Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "d9e9dc35126b1890407e4422c911e858a852cd84",
-              "shortSha": "d9e9dc3",
-              "message": "Merge pull request #2258 from Tampere/dependabot/submodules/evaka-b6d0cfc",
-              "date": "2026-10-08T21:14:30Z",
+              "sha": "03de1e9d50dd6e7d6e8156da110704f5459d056f",
+              "shortSha": "03de1e9",
+              "message": "Merge pull request #2259 from Tampere/dependabot/submodules/evaka-b2312d8",
+              "date": "2026-10-11T21:13:20Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "b6d0cfcc0418e5ceb08c3053c1b5b3a560fdda51",
-              "shortSha": "b6d0cfc",
-              "message": "Merge pull request #9977 from espoon-voltti/finance-decisions-to-codebtor",
-              "date": "2026-10-08T10:45:52Z",
-              "author": "akheron"
+              "sha": "b2312d80d9ce9993d4c094fb4ee9db5f622abe87",
+              "shortSha": "b2312d8",
+              "message": "Update dependency io.netty:netty-bom to v4.2.19.Final (#10023)",
+              "date": "2026-10-11T14:18:22Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -172,6 +172,57 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9982,
+              "title": "AsyncJob uudelleenyrityksien ohitus",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-09T13:20:30Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9982",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9973,
+              "title": "Tietojen poistot: loput taulut ja sääntöjen tarkennukset",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-09T10:42:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9973",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 9981,
+              "title": "Pedagogiset asiakirjat -raportti: palvelualuevalinta, CSV-lataus ja käyttöoikeusmuutoksia",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-09T10:24:25Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9981",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
             {
               "number": 9977,
               "title": "Lähetetään asiakasmaksupäätökset Suomi.fi:llä myös kanssavelallisille",
@@ -257,59 +308,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9982,
-              "title": "AsyncJob uudelleenyrityksien ohitus",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-09T13:20:30Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9982",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9973,
-              "title": "Tietojen poistot: loput taulut ja sääntöjen tarkennukset",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-09T10:42:28Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9973",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9981,
-              "title": "Pedagogiset asiakirjat -raportti: palvelualuevalinta, CSV-lataus ja käyttöoikeusmuutoksia",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-09T10:24:25Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9981",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -322,7 +321,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T04:09:40.301Z",
+            "checkedAt": "2026-10-12T04:35:40.699Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -341,7 +340,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T04:09:43.259Z",
+            "checkedAt": "2026-10-12T04:35:41.703Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -427,7 +426,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-12T04:09:54.953Z",
+            "checkedAt": "2026-10-12T04:35:55.256Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -446,7 +445,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-12T04:09:55.655Z",
+            "checkedAt": "2026-10-12T04:35:56.176Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
