@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T19:19:28.277Z",
+  "generatedAt": "2026-10-12T19:32:38.229Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T19:18:26.413Z",
+            "checkedAt": "2026-10-12T19:31:31.502Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "68a295b33ffe79552e77b3ffa94e92463c4cddc0",
-              "shortSha": "68a295b",
-              "message": "Merge pull request #10025 from espoon-voltti/unread-document-count-query-perf",
-              "date": "2026-10-12T07:43:31Z",
+              "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
+              "shortSha": "c27966a",
+              "message": "Merge pull request #10027 from espoon-voltti/espoo-oulu-pwa-prod",
+              "date": "2026-10-12T11:28:20Z",
               "author": "akheron"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T19:18:27.303Z",
+            "checkedAt": "2026-10-12T19:31:33.098Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10027,
               "title": "Kuntalaisen PWA tuotantoon Espoossa ja Oulussa",
@@ -69,6 +68,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -82,7 +82,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T19:18:29.286Z",
+            "checkedAt": "2026-10-12T19:31:34.958Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
@@ -107,7 +107,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T19:18:40.016Z",
+            "checkedAt": "2026-10-12T19:31:46.658Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "03de1e9d50dd6e7d6e8156da110704f5459d056f",
@@ -321,15 +321,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T19:19:14.201Z",
+            "checkedAt": "2026-10-12T19:32:19.668Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f4d725e4aa43cd249ddad02c9a5765c1140c2b85",
-              "shortSha": "f4d725e",
-              "message": "Update dependency @sentry/vite-plugin to v5.4.1 (#10022)",
-              "date": "2026-10-11T21:13:00Z",
-              "author": "renovate[bot]"
+              "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
+              "shortSha": "c27966a",
+              "message": "Merge pull request #10027 from espoon-voltti/espoo-oulu-pwa-prod",
+              "date": "2026-10-12T11:28:20Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -340,7 +340,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T19:19:15.141Z",
+            "checkedAt": "2026-10-12T19:32:25.276Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -359,8 +359,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10027,
               "title": "Kuntalaisen PWA tuotantoon Espoossa ja Oulussa",
@@ -412,6 +411,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -425,7 +425,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-12T19:19:21.458Z",
+            "checkedAt": "2026-10-12T19:32:31.169Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -444,7 +444,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-12T19:19:22.316Z",
+            "checkedAt": "2026-10-12T19:32:32.236Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {

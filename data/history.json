@@ -1,6 +1,266 @@
 {
   "events": [
     {
+      "id": "2026-10-12T19:31:33.098Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-10-12T19:31:33.098Z",
+      "previousCommit": {
+        "sha": "68a295b33ffe79552e77b3ffa94e92463c4cddc0",
+        "shortSha": "68a295b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
+        "shortSha": "c27966a",
+        "message": "Merge pull request #10027 from espoon-voltti/espoo-oulu-pwa-prod",
+        "date": "2026-10-12T11:28:20Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10027,
+          "title": "Kuntalaisen PWA tuotantoon Espoossa ja Oulussa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-12T11:28:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10027",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "espoo",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-10-12T19:32:25.276Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-10-12T19:32:25.276Z",
+      "previousCommit": {
+        "sha": "f4d725e4aa43cd249ddad02c9a5765c1140c2b85",
+        "shortSha": "f4d725e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
+        "shortSha": "c27966a",
+        "message": "Merge pull request #10027 from espoon-voltti/espoo-oulu-pwa-prod",
+        "date": "2026-10-12T11:28:20Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10027,
+          "title": "Kuntalaisen PWA tuotantoon Espoossa ja Oulussa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-12T11:28:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10027",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10025,
+          "title": "Nopeutetaan kuntalaisen lukemattomien dokumenttien määrän hakua",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-12T07:43:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10025",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10014,
+          "title": "Update sentry-javascript monorepo to v11.4.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:21:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10014",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10012,
+          "title": "Update flyingsaucer to v10.6.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:21:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10012",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10011,
+          "title": "Update dependency wouter to v3.13.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:20:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10011",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10009,
+          "title": "Update dependency redis to v6.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:20:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10009",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10004,
+          "title": "Update dependency pino-pretty to v13.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:19:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10004",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10003,
+          "title": "Update dependency pino to v10.4.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:19:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10003",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10002,
+          "title": "Update dependency org.checkerframework:checker-qual to v4.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:19:19Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10002",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10001,
+          "title": "Update dependency dd-trace to v6.20.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:19:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10001",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10000,
+          "title": "Update dependency com.yubico:webauthn-server-core to v2.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-12T05:18:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10000",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 9986,
+          "title": "Parannuksia VTJkysely- ja VTJ-muutosrajapinta -integraatioihin",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-12T05:18:10Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9986",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-10-12T12:19:22.310Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
