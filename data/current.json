@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T08:49:48.264Z",
+  "generatedAt": "2026-10-12T09:12:09.207Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T08:47:59.876Z",
+            "checkedAt": "2026-10-12T09:09:30.286Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "b6d0cfcc0418e5ceb08c3053c1b5b3a560fdda51",
-              "shortSha": "b6d0cfc",
-              "message": "Merge pull request #9977 from espoon-voltti/finance-decisions-to-codebtor",
-              "date": "2026-10-08T10:45:52Z",
+              "sha": "68a295b33ffe79552e77b3ffa94e92463c4cddc0",
+              "shortSha": "68a295b",
+              "message": "Merge pull request #10025 from espoon-voltti/unread-document-count-query-perf",
+              "date": "2026-10-12T07:43:31Z",
               "author": "akheron"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T08:48:00.611Z",
+            "checkedAt": "2026-10-12T09:09:50.386Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10025,
               "title": "Nopeutetaan kuntalaisen lukemattomien dokumenttien määrän hakua",
@@ -134,6 +133,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -147,7 +147,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T08:48:25.083Z",
+            "checkedAt": "2026-10-12T09:10:10.731Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
@@ -172,7 +172,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T08:48:34.335Z",
+            "checkedAt": "2026-10-12T09:10:22.022Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "03de1e9d50dd6e7d6e8156da110704f5459d056f",
@@ -386,15 +386,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T08:49:08.717Z",
+            "checkedAt": "2026-10-12T09:10:57.983Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "b6d0cfcc0418e5ceb08c3053c1b5b3a560fdda51",
-              "shortSha": "b6d0cfc",
-              "message": "Merge pull request #9977 from espoon-voltti/finance-decisions-to-codebtor",
-              "date": "2026-10-08T10:45:52Z",
-              "author": "akheron"
+              "sha": "f4d725e4aa43cd249ddad02c9a5765c1140c2b85",
+              "shortSha": "f4d725e",
+              "message": "Update dependency @sentry/vite-plugin to v5.4.1 (#10022)",
+              "date": "2026-10-11T21:13:00Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -405,7 +405,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T08:49:09.502Z",
+            "checkedAt": "2026-10-12T09:11:13.871Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -424,8 +424,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9982,
               "title": "AsyncJob uudelleenyrityksien ohitus",
@@ -478,6 +477,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10025,
@@ -524,15 +524,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-12T08:49:29.251Z",
+            "checkedAt": "2026-10-12T09:11:34.022Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "b6d0cfcc0418e5ceb08c3053c1b5b3a560fdda51",
-              "shortSha": "b6d0cfc",
-              "message": "Merge pull request #9977 from espoon-voltti/finance-decisions-to-codebtor",
-              "date": "2026-10-08T10:45:52Z",
-              "author": "akheron"
+              "sha": "f4d725e4aa43cd249ddad02c9a5765c1140c2b85",
+              "shortSha": "f4d725e",
+              "message": "Update dependency @sentry/vite-plugin to v5.4.1 (#10022)",
+              "date": "2026-10-11T21:13:00Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -543,7 +543,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-12T08:49:29.900Z",
+            "checkedAt": "2026-10-12T09:11:49.253Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -562,8 +562,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 9982,
               "title": "AsyncJob uudelleenyrityksien ohitus",
@@ -616,6 +615,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10025,
