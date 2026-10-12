@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T08:10:04.099Z",
+  "generatedAt": "2026-10-12T08:49:48.264Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T08:08:20.404Z",
+            "checkedAt": "2026-10-12T08:47:59.876Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-12T08:08:21.284Z",
+            "checkedAt": "2026-10-12T08:48:00.611Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f4d725e4aa43cd249ddad02c9a5765c1140c2b85",
-              "shortSha": "f4d725e",
-              "message": "Update dependency @sentry/vite-plugin to v5.4.1 (#10022)",
-              "date": "2026-10-11T21:13:00Z",
-              "author": "renovate[bot]"
+              "sha": "68a295b33ffe79552e77b3ffa94e92463c4cddc0",
+              "shortSha": "68a295b",
+              "message": "Merge pull request #10025 from espoon-voltti/unread-document-count-query-perf",
+              "date": "2026-10-12T07:43:31Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -50,6 +50,38 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10025,
+              "title": "Nopeutetaan kuntalaisen lukemattomien dokumenttien määrän hakua",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-12T07:43:31Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10025",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 9986,
+              "title": "Parannuksia VTJkysely- ja VTJ-muutosrajapinta -integraatioihin",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-12T05:18:10Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9986",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9982,
               "title": "AsyncJob uudelleenyrityksien ohitus",
@@ -102,40 +134,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10025,
-              "title": "Nopeutetaan kuntalaisen lukemattomien dokumenttien määrän hakua",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-12T07:43:31Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10025",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9986,
-              "title": "Parannuksia VTJkysely- ja VTJ-muutosrajapinta -integraatioihin",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-12T05:18:10Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9986",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -148,7 +147,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T08:08:40.321Z",
+            "checkedAt": "2026-10-12T08:48:25.083Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
@@ -173,7 +172,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-12T08:08:51.385Z",
+            "checkedAt": "2026-10-12T08:48:34.335Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "03de1e9d50dd6e7d6e8156da110704f5459d056f",
@@ -387,7 +386,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T08:09:25.499Z",
+            "checkedAt": "2026-10-12T08:49:08.717Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -406,7 +405,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-12T08:09:26.352Z",
+            "checkedAt": "2026-10-12T08:49:09.502Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -525,7 +524,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-12T08:09:44.643Z",
+            "checkedAt": "2026-10-12T08:49:29.251Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -544,7 +543,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-12T08:09:45.488Z",
+            "checkedAt": "2026-10-12T08:49:29.900Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
