@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T11:23:31.112Z",
+  "generatedAt": "2026-10-13T11:30:17.465Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-13T11:22:30.331Z",
+            "checkedAt": "2026-10-13T11:28:59.089Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-13T11:22:31.158Z",
+            "checkedAt": "2026-10-13T11:29:00.187Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-13T11:22:32.278Z",
+            "checkedAt": "2026-10-13T11:29:01.662Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-13T11:22:43.405Z",
+            "checkedAt": "2026-10-13T11:29:15.607Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "d121ee1b298b99617934df5183ad9a6f30e028b0",
@@ -301,7 +301,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-13T11:23:20.379Z",
+            "checkedAt": "2026-10-13T11:29:58.492Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -320,7 +320,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-13T11:23:21.871Z",
+            "checkedAt": "2026-10-13T11:29:59.463Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -354,15 +354,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-13T11:23:23.129Z",
+            "checkedAt": "2026-10-13T11:30:00.926Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "f4d725e4aa43cd249ddad02c9a5765c1140c2b85",
-              "shortSha": "f4d725e",
-              "message": "Update dependency @sentry/vite-plugin to v5.4.1 (#10022)",
-              "date": "2026-10-11T21:13:00Z",
-              "author": "renovate[bot]"
+              "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
+              "shortSha": "c27966a",
+              "message": "Merge pull request #10027 from espoon-voltti/espoo-oulu-pwa-prod",
+              "date": "2026-10-12T11:28:20Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -373,7 +373,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-13T11:23:24.193Z",
+            "checkedAt": "2026-10-13T11:30:09.228Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -392,8 +392,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10025,
               "title": "Nopeutetaan kuntalaisen lukemattomien dokumenttien määrän hakua",
@@ -427,6 +426,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
