@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T14:00:10.169Z",
+  "generatedAt": "2026-10-14T14:21:04.240Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-14T13:59:30.081Z",
+            "checkedAt": "2026-10-14T14:20:20.495Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-14T13:59:30.802Z",
+            "checkedAt": "2026-10-14T14:20:21.427Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
-              "shortSha": "1307ed0",
-              "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
-              "date": "2026-10-13T12:12:49Z",
-              "author": "akheron"
+              "sha": "8daa44e9cafdd9b31e6304a3050a6cae6fd9a41b",
+              "shortSha": "8daa44e",
+              "message": "Let a data retention job turn the optimization off, so that the run times can be compared",
+              "date": "2026-10-14T06:28:17Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -116,6 +116,40 @@
                 "tech",
                 "core"
               ]
+            },
+            {
+              "number": 10027,
+              "title": "Kuntalaisen PWA tuotantoon Espoossa ja Oulussa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-12T11:28:21Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10027",
+              "labels": [
+                "enhancement",
+                "oulu",
+                "espoo",
+                "citizen"
+              ]
+            },
+            {
+              "number": 10025,
+              "title": "Nopeutetaan kuntalaisen lukemattomien dokumenttien määrän hakua",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-12T07:43:31Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10025",
+              "labels": [
+                "tech",
+                "core"
+              ]
             }
           ]
         }
@@ -130,7 +164,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-14T13:59:35.158Z",
+            "checkedAt": "2026-10-14T14:20:30.377Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -155,7 +189,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-14T13:59:46.792Z",
+            "checkedAt": "2026-10-14T14:20:41.955Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -267,7 +301,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-14T14:00:00.830Z",
+            "checkedAt": "2026-10-14T14:20:56.066Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -286,7 +320,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-14T14:00:01.868Z",
+            "checkedAt": "2026-10-14T14:20:56.947Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -387,7 +421,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-14T14:00:06.158Z",
+            "checkedAt": "2026-10-14T14:21:00.027Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -406,7 +440,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-14T14:00:07.059Z",
+            "checkedAt": "2026-10-14T14:21:00.920Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
