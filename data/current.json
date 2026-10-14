@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T09:47:30.310Z",
+  "generatedAt": "2026-10-14T09:50:39.229Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-14T09:46:24.185Z",
+            "checkedAt": "2026-10-14T09:49:09.657Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
-              "shortSha": "c27966a",
-              "message": "Merge pull request #10027 from espoon-voltti/espoo-oulu-pwa-prod",
-              "date": "2026-10-12T11:28:20Z",
+              "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
+              "shortSha": "1307ed0",
+              "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
+              "date": "2026-10-13T12:12:49Z",
               "author": "akheron"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-14T09:46:25.064Z",
+            "checkedAt": "2026-10-14T09:49:12.174Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -80,32 +80,204 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-14T09:46:28.213Z",
+            "checkedAt": "2026-10-14T09:49:15.249Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
-              "shortSha": "1ce107c",
-              "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
-              "date": "2026-10-07T07:10:33Z",
+              "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
+              "shortSha": "8c6b4a8",
+              "message": "Merge pull request #2264 from Tampere/dependabot/submodules/evaka-1307ed0",
+              "date": "2026-10-14T04:45:27Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
-              "shortSha": "c4bb284",
-              "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
-              "date": "2026-10-07T06:21:19Z",
+              "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
+              "shortSha": "1307ed0",
+              "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
+              "date": "2026-10-13T12:12:49Z",
               "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-10-14T09:49:15.249Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
+                "shortSha": "8c6b4a8",
+                "message": "Merge pull request #2264 from Tampere/dependabot/submodules/evaka-1307ed0",
+                "date": "2026-10-14T04:45:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
+                "shortSha": "1307ed0",
+                "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
+                "date": "2026-10-13T12:12:49Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-10-14T09:49:16.819Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-10-14T09:49:17.939Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-10-14T09:49:20.263Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-10-14T09:49:21.382Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-10-14T09:49:22.675Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-10-14T09:49:23.857Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-10-14T09:49:25.303Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-10-14T09:49:26.702Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "1ce107c6adf8d1224d754b72c73bb6d464976659",
+                "shortSha": "1ce107c",
+                "message": "Merge pull request #2256 from Tampere/dependabot/submodules/evaka-c4bb284",
+                "date": "2026-10-07T07:10:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c4bb284aa76bedb4766270ed588f33fc712ad871",
+                "shortSha": "c4bb284",
+                "message": "Merge pull request #9975 from espoon-voltti/ios-pwa-modal-fix",
+                "date": "2026-10-07T06:21:19Z",
+                "author": "akheron"
+              }
+            }
+          ]
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-14T09:46:39.744Z",
+            "checkedAt": "2026-10-14T09:49:53.946Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -135,8 +307,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10025,
               "title": "Nopeutetaan kuntalaisen lukemattomien dokumenttien määrän hakua",
@@ -202,109 +373,9 @@
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 9981,
-              "title": "Pedagogiset asiakirjat -raportti: palvelualuevalinta, CSV-lataus ja käyttöoikeusmuutoksia",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-09T10:24:25Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9981",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9977,
-              "title": "Lähetetään asiakasmaksupäätökset Suomi.fi:llä myös kanssavelallisille",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-08T10:45:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9977",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9978,
-              "title": "Poistetaan transitiivisten riippuvuuksien tuomat Jackson 2 -muuntimet HTTP-vastauksista",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-08T09:32:53Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9978",
-              "labels": [
-                "tech",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 9979,
-              "title": "Päivitetään kehitysdatan kerho- ja eskarikaudet ",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-07T11:57:04Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9979",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 9980,
-              "title": "Korjaus sijoituksen palveluntarpeen arvon tarkistukseen palveluseteliyksikössä",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-07T11:47:07Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9980",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 9968,
-              "title": "Kuntalaisen salasanakirjautumisen yrityskertojen rajoitus",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-10-07T09:41:01Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9968",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10026,
@@ -335,14 +406,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-14T09:47:20.497Z",
+            "checkedAt": "2026-10-14T09:50:32.014Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
-              "shortSha": "c27966a",
-              "message": "Merge pull request #10027 from espoon-voltti/espoo-oulu-pwa-prod",
-              "date": "2026-10-12T11:28:20Z",
+              "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
+              "shortSha": "1307ed0",
+              "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
+              "date": "2026-10-13T12:12:49Z",
               "author": "akheron"
             }
           },
@@ -354,7 +425,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-14T09:47:21.639Z",
+            "checkedAt": "2026-10-14T09:50:34.086Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -405,7 +476,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-14T09:47:25.015Z",
+            "checkedAt": "2026-10-14T09:50:36.812Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -424,7 +495,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-14T09:47:27.226Z",
+            "checkedAt": "2026-10-14T09:50:37.523Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
