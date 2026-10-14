@@ -1,6 +1,104 @@
 {
   "events": [
     {
+      "id": "2026-10-14T05:12:40.774Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-14T05:12:40.774Z",
+      "previousCommit": {
+        "sha": "d121ee1b298b99617934df5183ad9a6f30e028b0",
+        "shortSha": "d121ee1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
+        "shortSha": "8c6b4a8",
+        "message": "Merge pull request #2264 from Tampere/dependabot/submodules/evaka-1307ed0",
+        "date": "2026-10-14T04:45:27Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2264,
+          "title": "Bump evaka from `c27966a` to `1307ed0`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-14T04:45:28Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2264",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-14T05:12:40.774Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-14T05:12:40.774Z",
+      "previousCommit": {
+        "sha": "c27966ac8bc318dc49156601e5ae33990b28d54a",
+        "shortSha": "c27966a",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
+        "shortSha": "1307ed0",
+        "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
+        "date": "2026-10-13T12:12:49Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10006,
+          "title": "Bump proxy-addr from 2.0.7 to 2.0.8 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-13T12:12:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10006",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10013,
+          "title": "Update flyway to v13.9.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-13T12:12:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10013",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-14T02:11:03.429Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
