@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T13:21:41.352Z",
+  "generatedAt": "2026-10-15T13:35:36.843Z",
   "sourceCommit": null,
   "roles": [
     "ADMIN",
@@ -35719,6 +35719,61 @@
               "ADMIN": [],
               "FINANCE_ADMIN": []
             }
+          },
+          "contextNotes": {
+            "espoo": [],
+            "tampere": [],
+            "nokia": [],
+            "kangasala": [],
+            "lempaala": [],
+            "orivesi": [],
+            "pirkkala": [],
+            "vesilahti": [],
+            "ylojarvi": [],
+            "hameenkyro": [],
+            "oulu": [],
+            "turku": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "McpAuthorization",
+      "label": "McpAuthorization",
+      "actions": [
+        {
+          "name": "Action.McpAuthorization.REVOKE",
+          "shortName": "REVOKE",
+          "category": "McpAuthorization",
+          "crud": "UPDATE",
+          "label": "REVOKE",
+          "rolesAllowed": {
+            "espoo": [],
+            "tampere": [],
+            "nokia": [],
+            "kangasala": [],
+            "lempaala": [],
+            "orivesi": [],
+            "pirkkala": [],
+            "vesilahti": [],
+            "ylojarvi": [],
+            "hameenkyro": [],
+            "oulu": [],
+            "turku": []
+          },
+          "contextByRole": {
+            "espoo": {},
+            "tampere": {},
+            "nokia": {},
+            "kangasala": {},
+            "lempaala": {},
+            "orivesi": {},
+            "pirkkala": {},
+            "vesilahti": {},
+            "ylojarvi": {},
+            "hameenkyro": {},
+            "oulu": {},
+            "turku": {}
           },
           "contextNotes": {
             "espoo": [],
@@ -80011,6 +80066,297 @@
           "category": "Global",
           "crud": "OTHER",
           "label": "Loma- ja toimikaudet (sivu)",
+          "rolesAllowed": {
+            "espoo": [
+              "ADMIN"
+            ],
+            "tampere": [
+              "ADMIN"
+            ],
+            "nokia": [
+              "ADMIN"
+            ],
+            "kangasala": [
+              "ADMIN"
+            ],
+            "lempaala": [
+              "ADMIN"
+            ],
+            "orivesi": [
+              "ADMIN"
+            ],
+            "pirkkala": [
+              "ADMIN"
+            ],
+            "vesilahti": [
+              "ADMIN"
+            ],
+            "ylojarvi": [
+              "ADMIN"
+            ],
+            "hameenkyro": [
+              "ADMIN"
+            ],
+            "oulu": [
+              "ADMIN"
+            ],
+            "turku": [
+              "ADMIN"
+            ]
+          },
+          "contextByRole": {
+            "espoo": {
+              "ADMIN": []
+            },
+            "tampere": {
+              "ADMIN": []
+            },
+            "nokia": {
+              "ADMIN": []
+            },
+            "kangasala": {
+              "ADMIN": []
+            },
+            "lempaala": {
+              "ADMIN": []
+            },
+            "orivesi": {
+              "ADMIN": []
+            },
+            "pirkkala": {
+              "ADMIN": []
+            },
+            "vesilahti": {
+              "ADMIN": []
+            },
+            "ylojarvi": {
+              "ADMIN": []
+            },
+            "hameenkyro": {
+              "ADMIN": []
+            },
+            "oulu": {
+              "ADMIN": []
+            },
+            "turku": {
+              "ADMIN": []
+            }
+          },
+          "contextNotes": {
+            "espoo": [],
+            "tampere": [],
+            "nokia": [],
+            "kangasala": [],
+            "lempaala": [],
+            "orivesi": [],
+            "pirkkala": [],
+            "vesilahti": [],
+            "ylojarvi": [],
+            "hameenkyro": [],
+            "oulu": [],
+            "turku": []
+          }
+        },
+        {
+          "name": "Action.Global.MANAGE_MCP_AUTHORIZATIONS",
+          "shortName": "MANAGE_MCP_AUTHORIZATIONS",
+          "category": "Global",
+          "crud": "OTHER",
+          "label": "MANAGE_MCP_AUTHORIZATIONS",
+          "rolesAllowed": {
+            "espoo": [
+              "ADMIN"
+            ],
+            "tampere": [
+              "ADMIN"
+            ],
+            "nokia": [
+              "ADMIN"
+            ],
+            "kangasala": [
+              "ADMIN"
+            ],
+            "lempaala": [
+              "ADMIN"
+            ],
+            "orivesi": [
+              "ADMIN"
+            ],
+            "pirkkala": [
+              "ADMIN"
+            ],
+            "vesilahti": [
+              "ADMIN"
+            ],
+            "ylojarvi": [
+              "ADMIN"
+            ],
+            "hameenkyro": [
+              "ADMIN"
+            ],
+            "oulu": [
+              "ADMIN"
+            ],
+            "turku": [
+              "ADMIN"
+            ]
+          },
+          "contextByRole": {
+            "espoo": {
+              "ADMIN": []
+            },
+            "tampere": {
+              "ADMIN": []
+            },
+            "nokia": {
+              "ADMIN": []
+            },
+            "kangasala": {
+              "ADMIN": []
+            },
+            "lempaala": {
+              "ADMIN": []
+            },
+            "orivesi": {
+              "ADMIN": []
+            },
+            "pirkkala": {
+              "ADMIN": []
+            },
+            "vesilahti": {
+              "ADMIN": []
+            },
+            "ylojarvi": {
+              "ADMIN": []
+            },
+            "hameenkyro": {
+              "ADMIN": []
+            },
+            "oulu": {
+              "ADMIN": []
+            },
+            "turku": {
+              "ADMIN": []
+            }
+          },
+          "contextNotes": {
+            "espoo": [],
+            "tampere": [],
+            "nokia": [],
+            "kangasala": [],
+            "lempaala": [],
+            "orivesi": [],
+            "pirkkala": [],
+            "vesilahti": [],
+            "ylojarvi": [],
+            "hameenkyro": [],
+            "oulu": [],
+            "turku": []
+          }
+        },
+        {
+          "name": "Action.Global.MANAGE_MCP_TEST_DATA",
+          "shortName": "MANAGE_MCP_TEST_DATA",
+          "category": "Global",
+          "crud": "OTHER",
+          "label": "MANAGE_MCP_TEST_DATA",
+          "rolesAllowed": {
+            "espoo": [
+              "ADMIN"
+            ],
+            "tampere": [
+              "ADMIN"
+            ],
+            "nokia": [
+              "ADMIN"
+            ],
+            "kangasala": [
+              "ADMIN"
+            ],
+            "lempaala": [
+              "ADMIN"
+            ],
+            "orivesi": [
+              "ADMIN"
+            ],
+            "pirkkala": [
+              "ADMIN"
+            ],
+            "vesilahti": [
+              "ADMIN"
+            ],
+            "ylojarvi": [
+              "ADMIN"
+            ],
+            "hameenkyro": [
+              "ADMIN"
+            ],
+            "oulu": [
+              "ADMIN"
+            ],
+            "turku": [
+              "ADMIN"
+            ]
+          },
+          "contextByRole": {
+            "espoo": {
+              "ADMIN": []
+            },
+            "tampere": {
+              "ADMIN": []
+            },
+            "nokia": {
+              "ADMIN": []
+            },
+            "kangasala": {
+              "ADMIN": []
+            },
+            "lempaala": {
+              "ADMIN": []
+            },
+            "orivesi": {
+              "ADMIN": []
+            },
+            "pirkkala": {
+              "ADMIN": []
+            },
+            "vesilahti": {
+              "ADMIN": []
+            },
+            "ylojarvi": {
+              "ADMIN": []
+            },
+            "hameenkyro": {
+              "ADMIN": []
+            },
+            "oulu": {
+              "ADMIN": []
+            },
+            "turku": {
+              "ADMIN": []
+            }
+          },
+          "contextNotes": {
+            "espoo": [],
+            "tampere": [],
+            "nokia": [],
+            "kangasala": [],
+            "lempaala": [],
+            "orivesi": [],
+            "pirkkala": [],
+            "vesilahti": [],
+            "ylojarvi": [],
+            "hameenkyro": [],
+            "oulu": [],
+            "turku": []
+          }
+        },
+        {
+          "name": "Action.Global.MCP_PAGE",
+          "shortName": "MCP_PAGE",
+          "category": "Global",
+          "crud": "OTHER",
+          "label": "MCP_PAGE",
           "rolesAllowed": {
             "espoo": [
               "ADMIN"
