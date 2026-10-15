@@ -1776,6 +1776,7 @@ body.fullscreen .settings-link {
   min-width: 0;
 }
 
+.settings-import,
 .settings-metrics {
   background: var(--color-card);
   border: 1px solid var(--color-border);
@@ -1785,6 +1786,46 @@ body.fullscreen .settings-link {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+.settings-import-text {
+  word-break: break-all;
+}
+
+.settings-import-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/*
+ * Keeps the empty preview out of the form gap. display: none would remove the
+ * live region from the accessibility tree, and screen readers would then not
+ * announce the preview when it appears.
+ */
+.settings-import-preview:empty {
+  position: absolute;
+}
+
+.settings-import-cities {
+  border-collapse: collapse;
+  align-self: flex-start;
+}
+
+.settings-import-cities th,
+.settings-import-cities td {
+  text-align: left;
+  padding: 0.25rem 1rem 0.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.settings-import-token {
+  font-family: 'SF Mono', SFMono-Regular, Consolas, monospace;
+}
+
+.settings-import-skipped {
+  color: var(--color-text-muted);
 }
 
 .settings-metrics-city {
