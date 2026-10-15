@@ -203,6 +203,22 @@ function handleFeatures(_params, queryParams) {
     });
 }
 
+// Route: Metrics (#/metrics)
+function handleMetrics(_params, queryParams) {
+  exitFullscreen();
+  if (!currentData) {
+    renderView('<div class="loading">Ladataan...</div>');
+    return;
+  }
+  document.title = 'Mittarit - eVaka muutostenseuranta';
+  import('./components/metrics-view.js').then(({ renderMetricsView, bindMetricsViewEvents }) => {
+    const range = queryParams?.get('range');
+    renderView(renderMetricsView(currentData.cityGroups, range));
+    bindMetricsViewEvents(currentData.cityGroups, range);
+    updateTabs('metrics');
+  });
+}
+
 // Route: Settings (#/settings)
 function handleSettings() {
   exitFullscreen();
@@ -210,7 +226,7 @@ function handleSettings() {
   if (appEl().querySelector('.settings-view')) return;
   document.title = 'Asetukset - eVaka muutostenseuranta';
   import('./components/settings.js').then(({ renderSettings, bindSettingsEvents }) => {
-    renderView(renderSettings());
+    renderView(renderSettings(currentData?.cityGroups || []));
     bindSettingsEvents();
     updateTabs('settings');
   });
@@ -230,6 +246,8 @@ function updateTabs(activeCityId) {
             navigate('/features');
           } else if (cityId === 'permissions') {
             navigate('/permissions');
+          } else if (cityId === 'metrics') {
+            navigate('/metrics');
           } else if (cityId) {
             navigate(`/city/${cityId}`);
           } else {
@@ -256,6 +274,7 @@ export async function refreshCurrentView() {
 addRoute('/', handleOverview);
 addRoute('/features', handleFeatures);
 addRoute('/permissions', handlePermissions);
+addRoute('/metrics', handleMetrics);
 addRoute('/settings', handleSettings);
 addRoute('/city/:id', handleCityDetail);
 addRoute('/city/:id/history', handleCityHistory);

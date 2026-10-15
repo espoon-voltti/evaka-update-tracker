@@ -1,5 +1,6 @@
 /**
- * Settings view (#/settings): edit scheduled screens stored in this browser.
+ * Settings view (#/settings): edit scheduled screens and metrics endpoints
+ * stored in this browser.
  */
 
 import { escapeHtml } from '../utils.js';
@@ -10,6 +11,8 @@ import {
   validateScreen,
   previewScheduledScreen,
 } from '../scheduled-screens.js';
+import { loadMetricsSettings, saveMetricsSettings } from '../metrics/client.js';
+import { invalidateMetrics } from '../metrics/cache.js';
 
 function newScreen() {
   return {
@@ -94,7 +97,48 @@ function renderScreenForm(screen) {
   `;
 }
 
-export function renderSettings() {
+function renderMetricsForm(cityGroups) {
+  const rows = cityGroups
+    .map((city) => {
+      const { url, token } = loadMetricsSettings(city.id);
+      return `
+        <div class="settings-row settings-metrics-row" data-city-id="${escapeHtml(city.id)}">
+          <span class="settings-label settings-metrics-city">${escapeHtml(city.name)}</span>
+          <input type="url" name="url" class="settings-metrics-url" value="${escapeHtml(url)}" placeholder="https://….lambda-url.eu-north-1.on.aws" aria-label="${escapeHtml(city.name)}: funktion osoite">
+          <input type="password" name="token" class="settings-metrics-token" value="${escapeHtml(token)}" placeholder="Tunniste" autocomplete="off" aria-label="${escapeHtml(city.name)}: tunniste">
+        </div>`;
+    })
+    .join('');
+  return `
+    <h2>Operatiiviset mittarit</h2>
+    <p class="settings-help">
+      Kunnan mittaritietojen lukufunktion osoite ja tunniste. Mittarit näkyvät
+      <a href="#/metrics">Mittarit</a>-välilehdellä niille kunnille, joilla on osoite.
+      Tunniste tallennetaan vain tähän selaimeen.
+    </p>
+    <form class="settings-metrics">
+      ${rows}
+      <div class="settings-actions">
+        <button type="submit">Tallenna</button>
+        <span class="settings-status"></span>
+      </div>
+    </form>
+  `;
+}
+
+function saveMetricsForm(form) {
+  form.querySelectorAll('.settings-metrics-row').forEach((row) => {
+    const cityId = row.dataset.cityId;
+    saveMetricsSettings(cityId, {
+      url: row.querySelector('[name=url]').value,
+      token: row.querySelector('[name=token]').value,
+    });
+    invalidateMetrics(cityId);
+  });
+  form.querySelector('.settings-status').textContent = 'Tallennettu';
+}
+
+export function renderSettings(cityGroups = []) {
   const screens = loadScreens();
   return `
     <div class="settings-view">
@@ -112,6 +156,7 @@ export function renderSettings() {
         ${screens.map(renderScreenForm).join('')}
       </div>
       <button type="button" data-action="add">+ Lisää näkymä</button>
+      ${cityGroups.length ? renderMetricsForm(cityGroups) : ''}
     </div>
   `;
 }
@@ -153,6 +198,10 @@ export function bindSettingsEvents() {
   view.addEventListener('submit', (e) => {
     e.preventDefault();
     const form = e.target;
+    if (form.matches('.settings-metrics')) {
+      saveMetricsForm(form);
+      return;
+    }
     const screen = readForm(form);
     const errors = validateScreen(screen);
     showErrors(form, errors);

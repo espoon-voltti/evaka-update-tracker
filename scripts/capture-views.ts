@@ -8,7 +8,7 @@
  *   npm run capture-views -- --output-dir ./my-snapshots
  */
 
-import { chromium } from '@playwright/test';
+import { chromium, type Page } from '@playwright/test';
 import * as path from 'path';
 import * as fs from 'fs';
 import { generateTestData } from '../tests/e2e/helpers/generate-test-data.js';
@@ -17,6 +17,7 @@ import { buildSlackMessage } from '../src/api/slack.js';
 import { formatPRLine } from '../src/services/change-announcer.js';
 import { blockKitToMarkdown, slackMrkdwnToMarkdown } from '../src/utils/slack-to-markdown.js';
 import { DeploymentEvent, PullRequest, CurrentData, StagingContext } from '../src/types.js';
+import { buildDayFile, dayKey, mockMetricsEndpoint, seedMetricsSettings } from '../tests/e2e/helpers/metrics-mock.js';
 
 // --- Types ---
 
@@ -25,6 +26,8 @@ interface ViewDefinition {
   type: 'browser' | 'slack-deployment' | 'slack-deployment-staging' | 'slack-change';
   route?: string;
   waitFor?: string;
+  /** Runs on a fresh page before navigation, e.g. to seed localStorage or mock routes. */
+  prepare?: (page: Page) => Promise<void>;
 }
 
 interface CaptureResult {
@@ -67,6 +70,15 @@ function buildViewRegistry(currentData: CurrentData): ViewDefinition[] {
     views.push({ name: `city-${id}-history`, type: 'browser', route: `#/city/${id}/history`, waitFor: '.city-detail' });
   }
 
+  views.push({ name: 'metrics-no-url', type: 'browser', route: '#/metrics', waitFor: '.metrics-no-url' });
+  views.push({
+    name: 'metrics',
+    type: 'browser',
+    route: '#/metrics?range=24h',
+    waitFor: '.metrics-body[data-state="ok"]',
+    prepare: prepareMetricsPage,
+  });
+
   // Slack deployment notifications (production + staging per city)
   for (const cityGroup of currentData.cityGroups) {
     views.push({ name: `slack-deployment-${cityGroup.id}`, type: 'slack-deployment' });
@@ -78,6 +90,23 @@ function buildViewRegistry(currentData: CurrentData): ViewDefinition[] {
   views.push({ name: 'slack-change-announcement-wrapper', type: 'slack-change' });
 
   return views;
+}
+
+// Espoo renders data with gaps (no slots 14-15 UTC on Oct 5, no Oct 6 file);
+// Oulu's read Lambda fails with 503.
+async function prepareMetricsPage(page: Page) {
+  const oct5 = Date.parse('2026-10-05T00:00:00Z');
+  await page.clock.setFixedTime(new Date('2026-10-06T12:00:00Z'));
+  await seedMetricsSettings(page, {
+    espoo: { url: 'https://espoo.lambda-url.eu-north-1.on.aws', token: 'secret' },
+    oulu: { url: 'https://oulu.lambda-url.eu-north-1.on.aws', token: 'secret' },
+  });
+  await mockMetricsEndpoint(page, {
+    functionUrl: 'https://espoo.lambda-url.eu-north-1.on.aws',
+    token: 'secret',
+    files: { [dayKey(oct5)]: buildDayFile(oct5, { gapHours: [14, 15] }) },
+  });
+  await mockMetricsEndpoint(page, { functionUrl: 'https://oulu.lambda-url.eu-north-1.on.aws', token: 'secret', files: {}, failStatus: 503 });
 }
 
 // --- DOM-to-Markdown Extraction ---
@@ -113,7 +142,9 @@ const DOM_EXTRACT_SCRIPT = `
     if (tag === 'li') return walkChildren(node);
 
     if (tag === 'a') {
-      var href = el.href;
+      // In-app hash links keep their relative form so the random server port stays out of snapshots.
+      var rawHref = el.getAttribute('href') || '';
+      var href = rawHref.charAt(0) === '#' ? rawHref : el.href;
       var linkText = (el.textContent || '').trim();
       if (href && linkText) return '[' + linkText + '](' + href + ')';
       return linkText;
@@ -154,6 +185,8 @@ const DOM_EXTRACT_SCRIPT = `
     }
 
     if (tag === 'button') return '';
+    if (tag === 'svg') return '[' + (el.getAttribute('aria-label') || 'kaavio') + ']';
+    if ((el.getAttribute('class') || '').indexOf('chart-axis') >= 0) return '';
 
     return walkChildren(node);
   };
@@ -430,14 +463,17 @@ async function main() {
     try {
       console.log('[Capture] Launching browser...');
       const browser = await chromium.launch({ headless: true });
-      const page = await browser.newPage({
+      const pageOptions = {
         viewport: { width: 1200, height: 900 },
         timezoneId: 'Europe/Helsinki',
         locale: 'fi-FI',
-      });
+      };
+      const sharedPage = await browser.newPage(pageOptions);
 
       for (const view of browserViews) {
+        const page = view.prepare ? await browser.newPage(pageOptions) : sharedPage;
         try {
+          if (view.prepare) await view.prepare(page);
           const url = `${server.url}/${view.route}`;
           console.log(`[Capture] ${view.name} → ${url}`);
           await page.goto(url);
@@ -451,6 +487,8 @@ async function main() {
           console.warn(`[Capture] FAILED: ${view.name} — ${msg}`);
           results.push({ name: view.name, markdown: '', success: false, error: msg });
           hasFailures = true;
+        } finally {
+          if (page !== sharedPage) await page.close();
         }
       }
 
