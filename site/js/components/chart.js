@@ -19,14 +19,34 @@ function niceCeil(value) {
 }
 
 function fmt(n) {
-  return Number.isInteger(n) ? String(n) : n.toFixed(1);
+  return Number.isInteger(n) ? String(n) : String(Number(n.toPrecision(3))).replace('.', ',');
 }
 
-function scales(from, to, yMax) {
+/** wholeNumbers leaves out a gridline at a fraction, which would be misleading for counts. */
+function linearAxis(yMax, { wholeNumbers = false } = {}) {
+  const yValues = [0, yMax / 2, yMax].filter((v) => !wholeNumbers || Number.isInteger(v));
+  return { yValues, y: (v) => HEIGHT - (v / yMax) * HEIGHT };
+}
+
+/**
+ * A gridline at each power of 10 from the one at or below the smallest
+ * positive value up to the one at or above the largest, at least two
+ * gridlines. A value below the lowest gridline is drawn on it.
+ */
+function logAxis(values) {
+  const positive = values.filter((v) => v > 0);
+  const low = positive.length ? Math.floor(Math.log10(Math.min(...positive))) : 0;
+  const high = Math.max(low + 1, positive.length ? Math.ceil(Math.log10(Math.max(...positive))) : 0);
+  const yValues = [];
+  for (let e = low; e <= high; e++) yValues.push(10 ** e);
   return {
-    x: (t) => ((t - from) / (to - from)) * WIDTH,
-    y: (v) => HEIGHT - (v / yMax) * HEIGHT,
+    yValues,
+    y: (v) => HEIGHT - ((Math.log10(Math.max(v, 10 ** low)) - low) / (high - low)) * HEIGHT,
   };
+}
+
+function scales(from, to, axis) {
+  return { x: (t) => ((t - from) / (to - from)) * WIDTH, ...axis };
 }
 
 function percent(n) {
@@ -37,8 +57,7 @@ function percent(n) {
  * The SVG stretches to fill its frame (preserveAspectRatio none), so the axis
  * labels are HTML next to it to keep their font size readable at any width.
  */
-function frame({ x, y }, { ticks, yMax, unit, ariaLabel }, body) {
-  const yValues = [0, yMax / 2, yMax];
+function frame({ x, y, yValues }, { ticks, unit, ariaLabel }, body) {
   const grid = yValues
     .map((v) => `<line class="chart-grid" x1="0" x2="${WIDTH}" y1="${y(v)}" y2="${y(v)}"></line>`)
     .join('');
@@ -66,8 +85,7 @@ function frame({ x, y }, { ticks, yMax, unit, ariaLabel }, body) {
  */
 export function renderStackedBarChart({ points, series, stepMs, from, to, ticks, ariaLabel, formatTooltip }) {
   const totals = points.map((p) => p.values.reduce((a, v) => a + (v ?? 0), 0));
-  const yMax = niceCeil(Math.max(0, ...totals));
-  const s = scales(from, to, yMax);
+  const s = scales(from, to, linearAxis(niceCeil(Math.max(0, ...totals)), { wholeNumbers: true }));
   const slotW = (stepMs / (to - from)) * WIDTH;
   const gap = slotW > 4 ? 1 : 0;
 
@@ -89,7 +107,7 @@ export function renderStackedBarChart({ points, series, stepMs, from, to, ticks,
     })
     .join('');
 
-  return frame(s, { ticks, yMax, unit: '', ariaLabel }, bars);
+  return frame(s, { ticks, unit: '', ariaLabel }, bars);
 }
 
 /**
@@ -98,7 +116,7 @@ export function renderStackedBarChart({ points, series, stepMs, from, to, ticks,
  * gaps stay empty.
  */
 export function renderBandChart({ points, stepMs, from, to, ticks, yMax, unit, ariaLabel, formatTooltip }) {
-  const s = scales(from, to, yMax);
+  const s = scales(from, to, linearAxis(yMax));
   const mid = (t) => s.x(t + stepMs / 2);
   const runs = contiguousRuns(points);
 
@@ -117,14 +135,48 @@ export function renderBandChart({ points, stepMs, from, to, ticks, yMax, unit, a
     })
     .join('');
 
+  const targets = hoverTargets(s, { points: points.filter((p) => p.value !== null), stepMs, from, to, formatTooltip });
+  return frame(s, { ticks, unit, ariaLabel }, shapes + targets);
+}
+
+/**
+ * points: [{ t, values: [number|null, ...] }], one value per entry in series.
+ * series: [{ label, className }]. Each series is a line through the bucket
+ * midpoints that a null value breaks; a value with gaps on both sides is a
+ * flat line across its bucket. The y axis starts from 0 and ends at a round
+ * number at or above the largest value, or with logScale, spans the powers of
+ * 10 around the values.
+ */
+export function renderLineChart({ points, series, stepMs, from, to, ticks, logScale = false, unit = '', ariaLabel, formatTooltip }) {
+  const known = points.filter((p) => p.values.some((v) => v !== null));
+  const values = known.flatMap((p) => p.values.filter((v) => v !== null));
+  const s = scales(from, to, logScale ? logAxis(values) : linearAxis(niceCeil(Math.max(0, ...values))));
+  const mid = (t) => s.x(t + stepMs / 2);
+
+  const lines = series
+    .map((entry, i) =>
+      contiguousRuns(points.map((p) => ({ t: p.t, value: p.values[i] })))
+        .map((run) => {
+          if (run.length === 1) {
+            const { t, value } = run[0];
+            return `<line class="line ${entry.className}" x1="${s.x(t)}" x2="${s.x(t + stepMs)}" y1="${s.y(value)}" y2="${s.y(value)}"></line>`;
+          }
+          return `<polyline class="line ${entry.className}" points="${run.map((p) => `${mid(p.t)},${s.y(p.value)}`).join(' ')}"></polyline>`;
+        })
+        .join('')
+    )
+    .join('');
+
+  const targets = hoverTargets(s, { points: known, stepMs, from, to, formatTooltip });
+  return frame(s, { ticks, unit, ariaLabel }, lines + targets);
+}
+
+function hoverTargets(s, { points, stepMs, from, to, formatTooltip }) {
   const slotW = (stepMs / (to - from)) * WIDTH;
-  const hoverTargets = points
-    .filter((p) => p.value !== null)
+  return points
     .map(
       (p) =>
         `<rect class="hover-target" x="${s.x(p.t)}" y="0" width="${slotW}" height="${HEIGHT}"><title>${escapeHtml(formatTooltip(p))}</title></rect>`
     )
     .join('');
-
-  return frame(s, { ticks, yMax, unit, ariaLabel }, shapes + hoverTargets);
 }

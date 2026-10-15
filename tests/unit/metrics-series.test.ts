@@ -13,6 +13,20 @@ import {
   totalOf,
   lastKnownPoint,
   contiguousRuns,
+  sumSeries,
+  ratioSeries,
+  ratioOfTotals,
+  differenceSeries,
+  differenceOfTotals,
+  histogramBounds,
+  aggregateHistograms,
+  totalHistogram,
+  histogramPercentile,
+  percentileSeries,
+  breakdownKeys,
+  labelValue,
+  breakdownTotals,
+  topEntries,
   type GaugeSummary,
   type Point,
 } from '../../site/js/metrics/series.js';
@@ -203,5 +217,184 @@ describe('contiguousRuns', () => {
       [p(1, 1), p(2, 2)],
       [p(5, 0)],
     ]);
+  });
+});
+
+const at = (i: number) => T0 + i * FIVE_MINUTES;
+const pointsOf = <T>(values: (T | null)[]): Point<T>[] => values.map((value, i) => ({ t: at(i), value }));
+
+describe('sumSeries', () => {
+  it('adds aligned points and treats a gap in one list as nothing', () => {
+    expect(sumSeries([pointsOf([1, null, null]), pointsOf([2, 3, null])])).toEqual(pointsOf([3, 3, null]));
+  });
+});
+
+describe('ratioSeries and ratioOfTotals', () => {
+  it('divides point by point', () => {
+    expect(ratioSeries(pointsOf([1, 0]), pointsOf([4, 10]))).toEqual(pointsOf([0.25, 0]));
+  });
+
+  it('gives null for a zero denominator and for a gap', () => {
+    expect(ratioSeries(pointsOf([0, 1, null]), pointsOf([0, null, 5]))).toEqual(pointsOf([null, null, null]));
+  });
+
+  it('divides the totals over the range, skipping gaps', () => {
+    expect(ratioOfTotals(pointsOf([1, null, 2]), pointsOf([10, null, 20]))).toBe(0.1);
+  });
+
+  it('gives null when the denominator total is 0', () => {
+    expect(ratioOfTotals(pointsOf([0, null]), pointsOf([0, null]))).toBeNull();
+  });
+});
+
+describe('differenceSeries', () => {
+  it('subtracts point by point, not below 0, and keeps gaps', () => {
+    expect(differenceSeries(pointsOf([5, 1, null, 3]), pointsOf([2, 4, 1, null]))).toEqual(
+      pointsOf([3, 0, null, null])
+    );
+  });
+});
+
+describe('differenceOfTotals', () => {
+  it('subtracts the totals before it clamps at 0, skipping points where either side is a gap', () => {
+    // Point by point, the clamped differences would add up to 3.
+    expect(differenceOfTotals(pointsOf([3, 0, 9, null]), pointsOf([0, 2, null, 4]))).toBe(1);
+  });
+
+  it('is 0 when b is larger in total', () => {
+    expect(differenceOfTotals(pointsOf([1, 0]), pointsOf([0, 5]))).toBe(0);
+  });
+});
+
+describe('histogramBounds', () => {
+  it('reads the bounds of a histogram from the series metadata', () => {
+    const meta = { 'a.responseTime': { type: 'histogram', bounds: [1, 2, 4] }, 'a.count': { type: 'counter' } };
+    expect(histogramBounds(meta, 'a.responseTime')).toEqual([1, 2, 4]);
+  });
+
+  it('gives null for another type or a missing series', () => {
+    const meta = { 'a.count': { type: 'counter' } };
+    expect(histogramBounds(meta, 'a.count')).toBeNull();
+    expect(histogramBounds(meta, 'b')).toBeNull();
+    expect(histogramBounds(undefined, 'b')).toBeNull();
+  });
+});
+
+describe('aggregateHistograms and totalHistogram', () => {
+  it('adds the counts of each hour', () => {
+    const points = pointsOf([...Array(12).fill([1, 2, 0]), [0, 0, 5]]);
+    expect(aggregateHistograms(points, HOUR)).toEqual([
+      { t: T0, value: [12, 24, 0] },
+      { t: T0 + HOUR, value: [0, 0, 5] },
+    ]);
+  });
+
+  it('makes an hour a gap only when every histogram in it is unknown', () => {
+    const points = pointsOf([...Array(12).fill(null), null, [0, 0, 0]]);
+    expect(aggregateHistograms(points, HOUR)).toEqual([
+      { t: T0, value: null },
+      { t: T0 + HOUR, value: [0, 0, 0] },
+    ]);
+  });
+
+  it('adds the counts of any range and skips gaps', () => {
+    expect(totalHistogram(pointsOf([[1, 0, 2], null, [0, 3, 0]]))).toEqual([1, 3, 2]);
+  });
+
+  it('gives null when every point is a gap', () => {
+    expect(totalHistogram(pointsOf([null, null]))).toBeNull();
+  });
+});
+
+describe('histogramPercentile', () => {
+  // Counts: [< 10, 10..100, 100..1000, >= 1000].
+  const bounds = [10, 100, 1000];
+
+  it('interpolates linearly inside the bucket', () => {
+    expect(histogramPercentile([0, 10, 0, 0], bounds, 50)).toBe(55);
+    // Rank 19 of 20 is the 9th of the 10 values in the second bucket.
+    expect(histogramPercentile([10, 10, 0, 0], bounds, 95)).toBeCloseTo(91);
+  });
+
+  it('starts the first bucket from 0 when all counts are in it', () => {
+    expect(histogramPercentile([4, 0, 0, 0], bounds, 50)).toBe(5);
+    expect(histogramPercentile([4, 0, 0, 0], bounds, 95)).toBe(9.5);
+  });
+
+  it('gives the lower bound of the last bucket when all counts are in it', () => {
+    expect(histogramPercentile([0, 0, 0, 7], bounds, 50)).toBe(1000);
+    expect(histogramPercentile([0, 0, 0, 7], bounds, 95)).toBe(1000);
+  });
+
+  it('gives the lower bound of the last bucket when the percentile falls in it', () => {
+    expect(histogramPercentile([90, 0, 0, 10], bounds, 95)).toBe(1000);
+  });
+
+  it('gives null for an empty histogram', () => {
+    expect(histogramPercentile([0, 0, 0, 0], bounds, 50)).toBeNull();
+    expect(histogramPercentile([], bounds, 50)).toBeNull();
+  });
+
+  it('uses the bounds it is given', () => {
+    expect(histogramPercentile([0, 10, 0, 0], [2, 4, 8], 50)).toBe(3);
+  });
+});
+
+describe('percentileSeries', () => {
+  it('keeps gaps and gives null for a bucket without values', () => {
+    expect(percentileSeries(pointsOf([[0, 2], null, [0, 0]]), [10], 50)).toEqual(pointsOf([10, null, null]));
+  });
+});
+
+describe('open-ended breakdowns', () => {
+  const FAMILY = 'job.failed';
+  const A = 'job.failed{type=A}';
+  const B = 'job.failed{type=B}';
+  const slots = [
+    { t: iso(at(0)), [FAMILY]: 3, [A]: 3 },
+    { t: iso(at(1)), [FAMILY]: 2, [B]: 2 },
+    // the slot exists but the source did not cover it: a gap
+    { t: iso(at(2)), other: 1 },
+    { t: iso(at(4)), [FAMILY]: 5, [A]: 1, [B]: 4 },
+  ];
+
+  it('finds the keys of the family', () => {
+    expect(breakdownKeys([...slots, { t: iso(at(5)), 'job.failedOther{type=C}': 1 }], FAMILY)).toEqual([A, B]);
+  });
+
+  it('reads the label value', () => {
+    expect(labelValue(A)).toBe('A');
+    expect(labelValue('x{type=a=b}')).toBe('a=b');
+  });
+
+  it('adds up each key over the range', () => {
+    expect(breakdownTotals(slots, FAMILY, at(1), at(5))).toEqual(
+      new Map([
+        ['A', 1],
+        ['B', 6],
+      ])
+    );
+  });
+});
+
+describe('topEntries', () => {
+  const totals = new Map([
+    ['c', 2],
+    ['a', 5],
+    ['b', 2],
+    ['zero', 0],
+    ['d', 1],
+  ]);
+
+  it('gives the largest totals first and orders equal totals by key', () => {
+    expect(topEntries(totals, 3)).toEqual([
+      ['a', 5],
+      ['b', 2],
+      ['c', 2],
+    ]);
+  });
+
+  it('leaves out zero totals', () => {
+    expect(topEntries(totals, 10).map(([key]) => key)).toEqual(['a', 'b', 'c', 'd']);
   });
 });

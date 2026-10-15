@@ -1961,6 +1961,17 @@ body.fullscreen .settings-link {
   stroke: var(--color-tab-inactive);
 }
 
+/* Categorical series colors. Keep the order: it was checked for color vision deficiency on adjacent pairs. */
+.cat-1 { --series-color: #2563eb; }
+.cat-2 { --series-color: #d97706; }
+.cat-3 { --series-color: #0d9488; }
+.cat-4 { --series-color: #9333ea; }
+
+.bar { fill: var(--series-color); }
+.line { fill: none; stroke: var(--series-color); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.legend-swatch { background: var(--series-color); }
+.legend-swatch.swatch-line { height: 2px; vertical-align: 0.2rem; }
+
 .bar-strong { fill: #2563eb; background: #2563eb; }
 .bar-weak { fill: #f59e0b; background: #f59e0b; }
 

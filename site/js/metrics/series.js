@@ -40,20 +40,29 @@ export function floorTo(ms, stepMs) {
   return Math.floor(ms / stepMs) * stepMs;
 }
 
+// The metrics view extracts dozens of series from one slot list, and parsing
+// every slot time again for each of them is the slow part. A slot list must
+// not change after a series has been extracted from it.
+const slotIndexes = new WeakMap();
+
+function slotsByTime(slots) {
+  let index = slotIndexes.get(slots);
+  if (!index) {
+    index = new Map(slots.map((slot) => [Date.parse(slot.t), slot]));
+    slotIndexes.set(slots, index);
+  }
+  return index;
+}
+
 /**
  * One point per 5-minute bucket from the bucket containing `from` up to `to`.
  * A bucket with no slot, or a slot without the series key, has value null.
  */
 export function extractSeries(slots, name, from, to) {
-  const byTime = new Map();
-  for (const slot of slots) {
-    if (slot[name] !== undefined && slot[name] !== null) {
-      byTime.set(Date.parse(slot.t), slot[name]);
-    }
-  }
+  const byTime = slotsByTime(slots);
   const points = [];
   for (let t = floorTo(from, FIVE_MINUTES); t < to; t += FIVE_MINUTES) {
-    points.push({ t, value: byTime.has(t) ? byTime.get(t) : null });
+    points.push({ t, value: byTime.get(t)?.[name] ?? null });
   }
   return points;
 }
@@ -99,6 +108,143 @@ export function aggregateGaugeSummaries(points, bucketMs) {
 /** A gap adds nothing. */
 export function totalOf(points) {
   return points.reduce((sum, p) => sum + (p.value ?? 0), 0);
+}
+
+/** Point lists must be aligned. A point is a gap only when it is a gap in every list. */
+export function sumSeries(pointLists) {
+  return pointLists[0].map((point, i) => {
+    const values = pointLists.map((points) => points[i].value).filter((v) => v !== null);
+    return { t: point.t, value: values.length > 0 ? values.reduce((a, b) => a + b, 0) : null };
+  });
+}
+
+/** Null where either side is a gap or the denominator is 0. */
+export function ratioSeries(numerator, denominator) {
+  return numerator.map((point, i) => {
+    const d = denominator[i].value;
+    return { t: point.t, value: point.value === null || d === null || d === 0 ? null : point.value / d };
+  });
+}
+
+/** Null when the denominator total is 0. */
+export function ratioOfTotals(numerator, denominator) {
+  const d = totalOf(denominator);
+  return d === 0 ? null : totalOf(numerator) / d;
+}
+
+/** a - b, never below 0. Null where either side is a gap. */
+export function differenceSeries(a, b) {
+  return a.map((point, i) => {
+    const other = b[i].value;
+    return { t: point.t, value: point.value === null || other === null ? null : Math.max(0, point.value - other) };
+  });
+}
+
+/** a - b over the points where neither side is a gap, clamped at 0 once for the whole range. */
+export function differenceOfTotals(a, b) {
+  let difference = 0;
+  a.forEach((point, i) => {
+    const other = b[i].value;
+    if (point.value !== null && other !== null) difference += point.value - other;
+  });
+  return Math.max(0, difference);
+}
+
+/** Bounds of a histogram series from its metadata, or null when the series is not a histogram. */
+export function histogramBounds(seriesMeta, name) {
+  const meta = seriesMeta?.[name];
+  return meta?.type === 'histogram' && Array.isArray(meta.bounds) ? meta.bounds : null;
+}
+
+/** Element-wise sum of histogram count arrays; null for an empty list. */
+function sumHistograms(histograms) {
+  if (histograms.length === 0) return null;
+  const length = Math.max(...histograms.map((h) => h.length));
+  const sum = new Array(length).fill(0);
+  for (const counts of histograms) {
+    counts.forEach((count, i) => (sum[i] += count));
+  }
+  return sum;
+}
+
+/** A bucket is a gap only when every 5-minute histogram in it is unknown. */
+export function aggregateHistograms(points, bucketMs) {
+  return groupByBucket(points, bucketMs, sumHistograms);
+}
+
+/** The counts of all points added up; null when every point is a gap. */
+export function totalHistogram(points) {
+  return sumHistograms(points.filter((p) => p.value !== null).map((p) => p.value));
+}
+
+/**
+ * The p-th percentile (0-100) of histogram counts, where count i holds values
+ * v with bounds[i-1] <= v < bounds[i], count 0 starts from 0 and the last
+ * count has no upper bound. Interpolates linearly inside the bucket. A
+ * percentile in the last bucket is that bucket's lower bound, the last entry
+ * of bounds. Null when every count is 0.
+ */
+export function histogramPercentile(counts, bounds, p) {
+  const total = counts.reduce((a, b) => a + b, 0);
+  if (total === 0) return null;
+  const rank = (p / 100) * total;
+  let below = 0;
+  for (let i = 0; i < counts.length; i++) {
+    if (counts[i] > 0 && below + counts[i] >= rank) {
+      if (i >= bounds.length) break;
+      const lower = i === 0 ? 0 : bounds[i - 1];
+      return lower + ((rank - below) / counts[i]) * (bounds[i] - lower);
+    }
+    below += counts[i];
+  }
+  return bounds[bounds.length - 1];
+}
+
+/** Null for a gap and for a bucket with no values. */
+export function percentileSeries(histogramPoints, bounds, p) {
+  return histogramPoints.map((point) => ({
+    t: point.t,
+    value: point.value === null ? null : histogramPercentile(point.value, bounds, p),
+  }));
+}
+
+/**
+ * Keys such as family{type=x} of an open-ended breakdown of family, found in
+ * any of the slots, sorted.
+ */
+export function breakdownKeys(slots, family) {
+  const prefix = `${family}{`;
+  const keys = new Set();
+  for (const slot of slots) {
+    for (const key of Object.keys(slot)) {
+      if (key.startsWith(prefix)) keys.add(key);
+    }
+  }
+  return [...keys].sort();
+}
+
+/** 'x' for a key with one label such as name{type=x}. */
+export function labelValue(key) {
+  const match = /\{[^=]*=(.*)\}$/.exec(key);
+  return match ? match[1] : key;
+}
+
+/** Map from label value to the total of that key of the breakdown over [from, to). */
+export function breakdownTotals(slots, family, from, to) {
+  return new Map(
+    breakdownKeys(slots, family).map((key) => [labelValue(key), totalOf(extractSeries(slots, key, from, to))])
+  );
+}
+
+/**
+ * The n entries of a Map with the largest positive totals, largest first;
+ * equal totals are ordered by key.
+ */
+export function topEntries(totals, n) {
+  return [...totals.entries()]
+    .filter(([, total]) => total > 0)
+    .sort(([keyA, a], [keyB, b]) => b - a || keyA.localeCompare(keyB))
+    .slice(0, n);
 }
 
 export function lastKnownPoint(points) {
