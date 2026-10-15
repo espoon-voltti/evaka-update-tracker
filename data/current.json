@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T09:00:42.416Z",
+  "generatedAt": "2026-10-15T09:22:34.798Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-15T09:00:05.926Z",
+            "checkedAt": "2026-10-15T09:21:43.593Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
-              "shortSha": "1307ed0",
-              "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
-              "date": "2026-10-13T12:12:49Z",
+              "sha": "f6680b7886b29e68ddb7b5bdc42dcc74ebbef847",
+              "shortSha": "f6680b7",
+              "message": "Merge pull request #10029 from espoon-voltti/vtj-tests-cleanups",
+              "date": "2026-10-14T11:33:17Z",
               "author": "akheron"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-15T09:00:06.674Z",
+            "checkedAt": "2026-10-15T09:21:47.232Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10029,
               "title": "VTJ-refaktorointi, osa 1",
@@ -117,7 +116,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 10034,
+              "title": "Estetään 0-mittaisten henkilökunnan läsnäolojen luominen muokkaamalla",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-15T09:01:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10034",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee-mobile"
+              ]
+            },
             {
               "number": 9881,
               "title": "Loppujen viestien poisto (ei vielä käytössä)",
@@ -148,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-15T09:00:11.370Z",
+            "checkedAt": "2026-10-15T09:21:51.501Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -173,7 +190,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-15T09:00:20.460Z",
+            "checkedAt": "2026-10-15T09:22:02.287Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "f8577ec2c24948432841637c86f27f1dcbbf0688",
@@ -274,6 +291,23 @@
           ],
           "pendingDeployment": [
             {
+              "number": 10034,
+              "title": "Estetään 0-mittaisten henkilökunnan läsnäolojen luominen muokkaamalla",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-15T09:01:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10034",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
               "number": 9881,
               "title": "Loppujen viestien poisto (ei vielä käytössä)",
               "author": "terolaakso-reaktor",
@@ -303,14 +337,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-15T09:00:33.746Z",
+            "checkedAt": "2026-10-15T09:22:17.878Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
-              "shortSha": "1307ed0",
-              "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
-              "date": "2026-10-13T12:12:49Z",
+              "sha": "f6680b7886b29e68ddb7b5bdc42dcc74ebbef847",
+              "shortSha": "f6680b7",
+              "message": "Merge pull request #10029 from espoon-voltti/vtj-tests-cleanups",
+              "date": "2026-10-14T11:33:17Z",
               "author": "akheron"
             }
           },
@@ -322,7 +356,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-15T09:00:34.498Z",
+            "checkedAt": "2026-10-15T09:22:21.028Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -341,8 +375,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10029,
               "title": "VTJ-refaktorointi, osa 1",
@@ -410,7 +443,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 10034,
+              "title": "Estetään 0-mittaisten henkilökunnan läsnäolojen luominen muokkaamalla",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-15T09:01:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10034",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee-mobile"
+              ]
+            },
             {
               "number": 9881,
               "title": "Loppujen viestien poisto (ei vielä käytössä)",
@@ -441,14 +492,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-15T09:00:38.351Z",
+            "checkedAt": "2026-10-15T09:22:25.214Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
-              "shortSha": "1307ed0",
-              "message": "Merge pull request #10006 from espoon-voltti/dependabot/npm_and_yarn/apigw/proxy-addr-2.0.8",
-              "date": "2026-10-13T12:12:49Z",
+              "sha": "f6680b7886b29e68ddb7b5bdc42dcc74ebbef847",
+              "shortSha": "f6680b7",
+              "message": "Merge pull request #10029 from espoon-voltti/vtj-tests-cleanups",
+              "date": "2026-10-14T11:33:17Z",
               "author": "akheron"
             }
           },
@@ -460,7 +511,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-15T09:00:39.080Z",
+            "checkedAt": "2026-10-15T09:22:28.205Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -479,8 +530,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10029,
               "title": "VTJ-refaktorointi, osa 1",
@@ -548,7 +598,25 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
+            {
+              "number": 10034,
+              "title": "Estetään 0-mittaisten henkilökunnan läsnäolojen luominen muokkaamalla",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-15T09:01:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10034",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee-mobile"
+              ]
+            },
             {
               "number": 9881,
               "title": "Loppujen viestien poisto (ei vielä käytössä)",
