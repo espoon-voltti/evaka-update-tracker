@@ -17,7 +17,13 @@ import { buildSlackMessage } from '../src/api/slack.js';
 import { formatPRLine } from '../src/services/change-announcer.js';
 import { blockKitToMarkdown, slackMrkdwnToMarkdown } from '../src/utils/slack-to-markdown.js';
 import { DeploymentEvent, PullRequest, CurrentData, StagingContext } from '../src/types.js';
-import { buildDayFile, dayKey, mockMetricsEndpoint, seedMetricsSettings } from '../tests/e2e/helpers/metrics-mock.js';
+import {
+  buildDayFile,
+  buildDayFiles,
+  dayKey,
+  mockMetricsEndpoint,
+  seedMetricsSettings,
+} from '../tests/e2e/helpers/metrics-mock.js';
 
 // --- Types ---
 
@@ -82,7 +88,7 @@ function buildViewRegistry(currentData: CurrentData): ViewDefinition[] {
     name: 'metrics',
     type: 'browser',
     route: '#/metrics?range=24h',
-    waitFor: '.metrics-body[data-state="ok"]',
+    waitFor: '.metrics-view:not(:has(.metrics-body[data-state="loading"]))',
     prepare: prepareMetricsPage,
   });
 
@@ -100,13 +106,16 @@ function buildViewRegistry(currentData: CurrentData): ViewDefinition[] {
 }
 
 // Espoo renders data with gaps (no slots 14-15 UTC on Oct 5, no Oct 6 file);
-// Oulu's read Lambda fails with 503.
+// Oulu's read Lambda fails with 503; Turku has only the service log group, so
+// its apigw and proxy charts have no data.
 async function prepareMetricsPage(page: Page) {
   const oct5 = Date.parse('2026-10-05T00:00:00Z');
+  const oct6 = Date.parse('2026-10-06T00:00:00Z');
   await page.clock.setFixedTime(new Date('2026-10-06T12:00:00Z'));
   await seedMetricsSettings(page, {
     espoo: { url: 'https://espoo.lambda-url.eu-north-1.on.aws', token: 'secret' },
     oulu: { url: 'https://oulu.lambda-url.eu-north-1.on.aws', token: 'secret' },
+    turku: { url: 'https://turku.lambda-url.eu-north-1.on.aws', token: 'secret' },
   });
   await mockMetricsEndpoint(page, {
     functionUrl: 'https://espoo.lambda-url.eu-north-1.on.aws',
@@ -114,6 +123,11 @@ async function prepareMetricsPage(page: Page) {
     files: { [dayKey(oct5)]: buildDayFile(oct5, { gapHours: [14, 15] }) },
   });
   await mockMetricsEndpoint(page, { functionUrl: 'https://oulu.lambda-url.eu-north-1.on.aws', token: 'secret', files: {}, failStatus: 503 });
+  await mockMetricsEndpoint(page, {
+    functionUrl: 'https://turku.lambda-url.eu-north-1.on.aws',
+    token: 'secret',
+    files: buildDayFiles(oct5, oct6, { sources: ['service'] }),
+  });
 }
 
 // Espoo shows the last 6 hours with a gap (no slots 08-09 UTC on Oct 6); Oulu's

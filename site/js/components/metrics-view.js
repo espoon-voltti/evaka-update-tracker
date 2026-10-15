@@ -5,114 +5,21 @@
  */
 
 import { setQueryParam } from '../router.js';
-import { escapeHtml, formatTime } from '../utils.js';
+import { escapeHtml, formatTime, isoOf } from '../utils.js';
 import { loadMetricsSettings } from '../metrics/client.js';
 import { loadMetrics, peekMetrics } from '../metrics/cache.js';
-import {
-  RANGES,
-  LOGIN_STRONG,
-  LOGIN_WEAK,
-  RDS_CPU,
-  parseRange,
-  bucketSizeForRange,
-  floorTo,
-  extractSeries,
-  aggregateCounters,
-  aggregateGaugeSummaries,
-  localTicks,
-  totalOf,
-} from '../metrics/series.js';
-import { renderStackedBarChart, renderBandChart } from './chart.js';
+import { RANGES, parseRange } from '../metrics/series.js';
+import { renderMetricCharts } from './metrics-charts.js';
 import { renderInvalidToken } from './city-metrics.js';
 
 const POLL_INTERVAL = 60_000;
 let pollTimer = null;
 
-function isoOf(ms) {
-  return new Date(ms).toISOString();
-}
-
-function fmt1(n) {
-  return n.toFixed(1).replace('.', ',');
-}
-
-function renderLoginChart(slots, range, from, to) {
-  const bucketMs = bucketSizeForRange(range);
-  const strong = aggregateCounters(extractSeries(slots, LOGIN_STRONG, from, to), bucketMs);
-  const weak = aggregateCounters(extractSeries(slots, LOGIN_WEAK, from, to), bucketMs);
-  const points = strong.map((p, i) => ({ t: p.t, values: [p.value, weak[i].value] }));
-  const chartFrom = floorTo(from, bucketMs);
-  const gaps = points.filter((p) => p.values.every((v) => v === null)).length;
-
-  const chart = renderStackedBarChart({
-    points,
-    series: [
-      { label: 'Vahva', className: 'bar-strong' },
-      { label: 'Heikko', className: 'bar-weak' },
-    ],
-    stepMs: bucketMs,
-    from: chartFrom,
-    to,
-    ticks: localTicks(range, chartFrom, to),
-    ariaLabel: `Kuntalaisten kirjautumiset, ${range.label}: vahva ${totalOf(strong)}, heikko ${totalOf(weak)}, puuttuvia jaksoja ${gaps}`,
-    formatTooltip: (p) =>
-      `${formatTime(isoOf(p.t))}: vahva ${p.values[0] ?? '-'}, heikko ${p.values[1] ?? '-'}`,
-  });
-
-  return `
-    <div class="metrics-chart">
-      <h3>Kuntalaisten kirjautumiset</h3>
-      <ul class="chart-legend">
-        <li><span class="legend-swatch bar-strong"></span>Vahva tunnistautuminen</li>
-        <li><span class="legend-swatch bar-weak"></span>Heikko tunnistautuminen</li>
-      </ul>
-      ${chart}
-    </div>
-  `;
-}
-
-function renderCpuChart(slots, range, from, to) {
-  const bucketMs = bucketSizeForRange(range);
-  const points = aggregateGaugeSummaries(extractSeries(slots, RDS_CPU, from, to), bucketMs);
-  const chartFrom = floorTo(from, bucketMs);
-  const known = points.filter((p) => p.value !== null);
-  const peak = known.length ? Math.max(...known.map((p) => p.value.max)) : null;
-  const gaps = points.length - known.length;
-  const summary = peak === null ? 'ei tietoja' : `suurin ${fmt1(peak)} %`;
-
-  const chart = renderBandChart({
-    points,
-    stepMs: bucketMs,
-    from: chartFrom,
-    to,
-    ticks: localTicks(range, chartFrom, to),
-    yMax: 100,
-    unit: ' %',
-    ariaLabel: `Tietokannan suoritinkuorma, ${range.label}: ${summary}, puuttuvia jaksoja ${gaps}`,
-    formatTooltip: (p) =>
-      `${formatTime(isoOf(p.t))}: min ${fmt1(p.value.min)} %, ka ${fmt1(p.value.mean)} %, max ${fmt1(p.value.max)} %`,
-  });
-
-  return `
-    <div class="metrics-chart">
-      <h3>Tietokannan suoritinkuorma (RDS CPU)</h3>
-      <ul class="chart-legend">
-        <li><span class="legend-swatch band-range"></span>Vaihteluväli</li>
-        <li><span class="legend-swatch band-mean"></span>Keskiarvo</li>
-      </ul>
-      ${chart}
-    </div>
-  `;
-}
-
 function renderData(data, range) {
   if (data.slots.length === 0) {
     return '<p class="metrics-note">Valitulta aikaväliltä ei ole tietoja.</p>';
   }
-  return (
-    renderLoginChart(data.slots, range, data.from, data.to) +
-    renderCpuChart(data.slots, range, data.from, data.to)
-  );
+  return renderMetricCharts(data, range);
 }
 
 function renderBody(city, range) {
