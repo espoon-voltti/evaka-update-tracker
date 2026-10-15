@@ -1,13 +1,13 @@
 /**
  * Module-level cache of fetched metrics per municipality and range. Route
- * re-runs by auto-refresh read from here; the read Lambda is called at most
- * once per REFRESH_INTERVAL per entry, and after the first fetch only the
- * files of the current UTC day (and of the previous one when the day has
- * changed since the last fetch) are fetched again.
+ * re-runs by auto-refresh read from here; unless forced, the read Lambda is
+ * called at most once per REFRESH_INTERVAL per entry. After the first fetch
+ * only the files of the current UTC day (and of the previous one when the day
+ * has changed since the last fetch) are fetched again.
  */
 
 import { fetchFiles as defaultFetchFiles, joinDayFiles } from './client.js';
-import { DAY, rangeWindow, floorTo } from './series.js';
+import { DAY, FIVE_MINUTES, rangeWindow, floorTo } from './series.js';
 
 export const REFRESH_INTERVAL = 5 * 60 * 1000;
 
@@ -24,7 +24,8 @@ function dayOfKey(key) {
 
 /**
  * The latest state, or null before the first load: { data, error, lastSuccessAt }.
- * data is { from, to, series, slots } of the last successful fetch.
+ * data is { from, to, series, slots } of the last successful fetch, where from
+ * is the start of the 5-minute bucket that contains the start of the range.
  * A new object is created on each change.
  */
 export function peekMetrics(cityId, range) {
@@ -37,7 +38,8 @@ export function invalidateMetrics(cityId) {
   }
 }
 
-export function loadMetrics(cityId, range, { now = Date.now(), fetchFiles = defaultFetchFiles } = {}) {
+/** force fetches even within REFRESH_INTERVAL, but still joins a fetch in progress. */
+export function loadMetrics(cityId, range, { now = Date.now(), fetchFiles = defaultFetchFiles, force = false } = {}) {
   const key = entryKey(cityId, range);
   let entry = entries.get(key);
   if (!entry) {
@@ -45,7 +47,7 @@ export function loadMetrics(cityId, range, { now = Date.now(), fetchFiles = defa
     entries.set(key, entry);
   }
   if (entry.promise) return entry.promise;
-  if (entry.lastAttemptAt !== null && now - entry.lastAttemptAt < REFRESH_INTERVAL) {
+  if (!force && entry.lastAttemptAt !== null && now - entry.lastAttemptAt < REFRESH_INTERVAL) {
     return Promise.resolve(entry.state);
   }
 
@@ -54,14 +56,15 @@ export function loadMetrics(cityId, range, { now = Date.now(), fetchFiles = defa
   entry.promise = fetchFiles(cityId, from, now)
     .then((fetched) => {
       const window = rangeWindow(range, now);
+      const from = floorTo(window.from, FIVE_MINUTES);
       const files = new Map([...(entry.files || []), ...fetched]);
       for (const fileKey of files.keys()) {
         const day = dayOfKey(fileKey);
-        if (day !== null && day + DAY <= window.from) files.delete(fileKey);
+        if (day !== null && day + DAY <= from) files.delete(fileKey);
       }
       entry.files = files;
       entry.fetchedAt = now;
-      const data = { ...window, ...joinDayFiles([...files.values()], window.from, window.to) };
+      const data = { from, to: window.to, ...joinDayFiles([...files.values()], from, window.to) };
       entry.state = { data, error: null, lastSuccessAt: now };
     })
     .catch((error) => {

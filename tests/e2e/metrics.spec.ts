@@ -94,12 +94,14 @@ test.describe('Metrics view', () => {
     await expect(section.locator('.chart-axis-x').first().locator('.chart-label').filter({ hasText: /\.00$/ }).first()).toHaveText('15.00');
     expect(calls.lambda).toBe(1);
 
-    // Leaving and returning within 5 minutes uses the cache.
+    // Leaving and returning within 5 minutes uses the cache. The overview
+    // fetches only the 6-hour range of its sparklines.
     await page.click('.tab[data-city-id=""]');
-    await page.waitForSelector('.city-grid');
+    await page.waitForSelector('.city-metrics[data-state="ok"]');
+    expect(calls.lambda).toBe(2);
     await page.evaluate(() => (location.hash = '#/metrics?range=24h'));
     await expect(section.locator('rect.bar-strong')).toHaveCount(132);
-    expect(calls.lambda).toBe(1);
+    expect(calls.lambda).toBe(2);
 
     await page.click('.metrics-range-btn[data-range="7d"]');
     await expect(page).toHaveURL(/#\/metrics\?range=7d$/);

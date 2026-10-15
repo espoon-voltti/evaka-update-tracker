@@ -17,6 +17,13 @@ export const RANGES = {
 
 const DEFAULT_RANGE = '14d';
 
+// Kept out of RANGES so that the metrics view does not offer it.
+export const RANGE_6H = { key: '6h', label: '6 h', ms: 6 * HOUR };
+
+export const LOGIN_STRONG = 'citizen.login{auth=strong}';
+export const LOGIN_WEAK = 'citizen.login{auth=weak}';
+export const RDS_CPU = 'rds.cpu';
+
 export function parseRange(value) {
   return RANGES[value] || RANGES[DEFAULT_RANGE];
 }
@@ -87,6 +94,34 @@ export function combineGaugeSummaries(summaries) {
 
 export function aggregateGaugeSummaries(points, bucketMs) {
   return groupByBucket(points, bucketMs, combineGaugeSummaries);
+}
+
+/** A gap adds nothing. */
+export function totalOf(points) {
+  return points.reduce((sum, p) => sum + (p.value ?? 0), 0);
+}
+
+export function lastKnownPoint(points) {
+  for (let i = points.length - 1; i >= 0; i--) {
+    if (points[i].value !== null) return points[i];
+  }
+  return null;
+}
+
+/** Splits points at gaps into runs of consecutive points that have a value. */
+export function contiguousRuns(points) {
+  const runs = [];
+  let current = [];
+  for (const point of points) {
+    if (point.value === null) {
+      if (current.length) runs.push(current);
+      current = [];
+    } else {
+      current.push(point);
+    }
+  }
+  if (current.length) runs.push(current);
+  return runs;
 }
 
 function pad2(n) {

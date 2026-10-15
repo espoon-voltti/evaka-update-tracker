@@ -10,6 +10,9 @@ import { loadMetricsSettings } from '../metrics/client.js';
 import { loadMetrics, peekMetrics } from '../metrics/cache.js';
 import {
   RANGES,
+  LOGIN_STRONG,
+  LOGIN_WEAK,
+  RDS_CPU,
   parseRange,
   bucketSizeForRange,
   floorTo,
@@ -17,12 +20,10 @@ import {
   aggregateCounters,
   aggregateGaugeSummaries,
   localTicks,
+  totalOf,
 } from '../metrics/series.js';
 import { renderStackedBarChart, renderBandChart } from './chart.js';
-
-const LOGIN_STRONG = 'citizen.login{auth=strong}';
-const LOGIN_WEAK = 'citizen.login{auth=weak}';
-const RDS_CPU = 'rds.cpu';
+import { renderInvalidToken } from './city-metrics.js';
 
 const POLL_INTERVAL = 60_000;
 let pollTimer = null;
@@ -41,7 +42,6 @@ function renderLoginChart(slots, range, from, to) {
   const weak = aggregateCounters(extractSeries(slots, LOGIN_WEAK, from, to), bucketMs);
   const points = strong.map((p, i) => ({ t: p.t, values: [p.value, weak[i].value] }));
   const chartFrom = floorTo(from, bucketMs);
-  const sum = (pts) => pts.reduce((a, p) => a + (p.value ?? 0), 0);
   const gaps = points.filter((p) => p.values.every((v) => v === null)).length;
 
   const chart = renderStackedBarChart({
@@ -54,7 +54,7 @@ function renderLoginChart(slots, range, from, to) {
     from: chartFrom,
     to,
     ticks: localTicks(range, chartFrom, to),
-    ariaLabel: `Kuntalaisten kirjautumiset, ${range.label}: vahva ${sum(strong)}, heikko ${sum(weak)}, puuttuvia jaksoja ${gaps}`,
+    ariaLabel: `Kuntalaisten kirjautumiset, ${range.label}: vahva ${totalOf(strong)}, heikko ${totalOf(weak)}, puuttuvia jaksoja ${gaps}`,
     formatTooltip: (p) =>
       `${formatTime(isoOf(p.t))}: vahva ${p.values[0] ?? '-'}, heikko ${p.values[1] ?? '-'}`,
   });
@@ -129,7 +129,7 @@ function renderBody(city, range) {
     content = '<div class="loading">Ladataan mittareita...</div>';
   } else if (state.error?.kind === 'unauthorized') {
     stateName = 'unauthorized';
-    content = '<p class="metrics-error"><a href="#/settings">Mittarit: tunniste ei kelpaa</a></p>';
+    content = renderInvalidToken('metrics-error');
   } else if (state.error) {
     stateName = 'error';
     const last = state.lastSuccessAt

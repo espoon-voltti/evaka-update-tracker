@@ -17,5 +17,6 @@ export function loadMetrics(
   options?: {
     now?: number;
     fetchFiles?: (cityId: string, from: number, to: number) => Promise<Map<string, DayFile | null>>;
+    force?: boolean;
   }
 ): Promise<MetricsState>;

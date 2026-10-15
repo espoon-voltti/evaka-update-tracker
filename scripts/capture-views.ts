@@ -61,6 +61,13 @@ function buildViewRegistry(currentData: CurrentData): ViewDefinition[] {
 
   // Fixed browser routes
   views.push({ name: 'overview', type: 'browser', route: '#/', waitFor: '.city-grid' });
+  views.push({
+    name: 'overview-metrics',
+    type: 'browser',
+    route: '#/',
+    waitFor: '.city-grid:has(.city-metrics):not(:has(.city-metrics[data-state="loading"]))',
+    prepare: prepareOverviewMetricsPage,
+  });
   views.push({ name: 'features', type: 'browser', route: '#/features', waitFor: '.feature-matrix' });
 
   // Per-city browser routes
@@ -107,6 +114,25 @@ async function prepareMetricsPage(page: Page) {
     files: { [dayKey(oct5)]: buildDayFile(oct5, { gapHours: [14, 15] }) },
   });
   await mockMetricsEndpoint(page, { functionUrl: 'https://oulu.lambda-url.eu-north-1.on.aws', token: 'secret', files: {}, failStatus: 503 });
+}
+
+// Espoo shows the last 6 hours with a gap (no slots 08-09 UTC on Oct 6); Oulu's
+// token is refused and Turku's read Lambda fails with 503.
+async function prepareOverviewMetricsPage(page: Page) {
+  const oct6 = Date.parse('2026-10-06T00:00:00Z');
+  await page.clock.setFixedTime(new Date('2026-10-06T12:00:00Z'));
+  await seedMetricsSettings(page, {
+    espoo: { url: 'https://espoo.lambda-url.eu-north-1.on.aws', token: 'secret' },
+    oulu: { url: 'https://oulu.lambda-url.eu-north-1.on.aws', token: 'old' },
+    turku: { url: 'https://turku.lambda-url.eu-north-1.on.aws', token: 'secret' },
+  });
+  await mockMetricsEndpoint(page, {
+    functionUrl: 'https://espoo.lambda-url.eu-north-1.on.aws',
+    token: 'secret',
+    files: { [dayKey(oct6)]: buildDayFile(oct6, { gapHours: [8, 9] }) },
+  });
+  await mockMetricsEndpoint(page, { functionUrl: 'https://oulu.lambda-url.eu-north-1.on.aws', token: 'new', files: {} });
+  await mockMetricsEndpoint(page, { functionUrl: 'https://turku.lambda-url.eu-north-1.on.aws', token: 'secret', files: {}, failStatus: 503 });
 }
 
 // --- DOM-to-Markdown Extraction ---

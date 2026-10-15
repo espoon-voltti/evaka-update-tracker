@@ -10,6 +10,9 @@ import {
   combineGaugeSummaries,
   aggregateGaugeSummaries,
   localTicks,
+  totalOf,
+  lastKnownPoint,
+  contiguousRuns,
   type GaugeSummary,
   type Point,
 } from '../../site/js/metrics/series.js';
@@ -27,6 +30,10 @@ describe('parseRange', () => {
   it('falls back to 14 days for a missing or unknown value', () => {
     expect(parseRange(null).key).toBe('14d');
     expect(parseRange('3y').key).toBe('14d');
+  });
+
+  it('does not offer the 6-hour range of the overview', () => {
+    expect(parseRange('6h').key).toBe('14d');
   });
 });
 
@@ -150,5 +157,51 @@ describe('localTicks', () => {
     const from = new Date(2026, 9, 1, 13, 0).getTime();
     const ticks = localTicks(RANGES['14d'], from, from + RANGES['14d'].ms);
     expect(ticks.map((t) => t.label)).toEqual(['3.10.', '5.10.', '7.10.', '9.10.', '11.10.', '13.10.', '15.10.']);
+  });
+});
+
+describe('totalOf', () => {
+  it('adds the known values and skips gaps', () => {
+    const points = [
+      { t: T0, value: 3 },
+      { t: T0 + FIVE_MINUTES, value: null },
+      { t: T0 + 2 * FIVE_MINUTES, value: 0 },
+      { t: T0 + 3 * FIVE_MINUTES, value: 4 },
+    ];
+    expect(totalOf(points)).toBe(7);
+  });
+
+  it('is zero when every point is a gap', () => {
+    expect(totalOf([{ t: T0, value: null }])).toBe(0);
+  });
+});
+
+describe('lastKnownPoint', () => {
+  it('skips trailing gaps', () => {
+    const points = [
+      { t: T0, value: 1 },
+      { t: T0 + FIVE_MINUTES, value: 2 },
+      { t: T0 + 2 * FIVE_MINUTES, value: null },
+    ];
+    expect(lastKnownPoint(points)).toEqual({ t: T0 + FIVE_MINUTES, value: 2 });
+  });
+
+  it('returns a zero value, not a gap', () => {
+    expect(lastKnownPoint([{ t: T0, value: 0 }])).toEqual({ t: T0, value: 0 });
+  });
+
+  it('returns null when every point is a gap', () => {
+    expect(lastKnownPoint([{ t: T0, value: null }])).toBeNull();
+    expect(lastKnownPoint([])).toBeNull();
+  });
+});
+
+describe('contiguousRuns', () => {
+  it('splits at gaps and drops them', () => {
+    const p = (i: number, value: number | null) => ({ t: T0 + i * FIVE_MINUTES, value });
+    expect(contiguousRuns([p(0, null), p(1, 1), p(2, 2), p(3, null), p(4, null), p(5, 0)])).toEqual([
+      [p(1, 1), p(2, 2)],
+      [p(5, 0)],
+    ]);
   });
 });

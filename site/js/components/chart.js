@@ -4,6 +4,7 @@
  */
 
 import { escapeHtml } from '../utils.js';
+import { contiguousRuns } from '../metrics/series.js';
 
 const WIDTH = 1000;
 const HEIGHT = 200;
@@ -89,21 +90,6 @@ export function renderStackedBarChart({ points, series, stepMs, from, to, ticks,
     .join('');
 
   return frame(s, { ticks, yMax, unit: '', ariaLabel }, bars);
-}
-
-function contiguousRuns(points) {
-  const runs = [];
-  let current = [];
-  for (const point of points) {
-    if (point.value === null) {
-      if (current.length) runs.push(current);
-      current = [];
-    } else {
-      current.push(point);
-    }
-  }
-  if (current.length) runs.push(current);
-  return runs;
 }
 
 /**
