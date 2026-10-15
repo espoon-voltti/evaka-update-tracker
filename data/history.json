@@ -1,6 +1,138 @@
 {
   "events": [
     {
+      "id": "2026-10-15T05:21:32.529Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-15T05:21:32.529Z",
+      "previousCommit": {
+        "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
+        "shortSha": "8c6b4a8",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f8577ec2c24948432841637c86f27f1dcbbf0688",
+        "shortSha": "f8577ec",
+        "message": "Merge pull request #2265 from Tampere/dependabot/submodules/evaka-f6680b7",
+        "date": "2026-10-14T21:51:01Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2265,
+          "title": "Bump evaka from `1307ed0` to `f6680b7`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-14T21:51:01Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2265",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-15T05:21:32.529Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-15T05:21:32.529Z",
+      "previousCommit": {
+        "sha": "1307ed030e5cdd82099b260b22455800d270dd10",
+        "shortSha": "1307ed0",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f6680b7886b29e68ddb7b5bdc42dcc74ebbef847",
+        "shortSha": "f6680b7",
+        "message": "Merge pull request #10029 from espoon-voltti/vtj-tests-cleanups",
+        "date": "2026-10-14T11:33:17Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10029,
+          "title": "VTJ-refaktorointi, osa 1",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-14T11:33:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10029",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 9985,
+          "title": "Sijoituspäätöksen päätöksentekijäksi päätöksen lähettänyt työntekijä",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-14T10:21:51Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9985",
+          "labels": [
+            "breaking",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10028,
+          "title": "Tietojen poistot: korjauksia paketointiin",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-14T10:21:32Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10028",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10026,
+          "title": "Nopeutetaan kuntalaisen kalenterimerkintöjen hakua",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-14T06:13:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10026",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-15T00:28:18.950Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
