@@ -21,6 +21,9 @@ export function renderCityTabs(cityGroups, activeCityId) {
   const permissionsActive = activeCityId === 'permissions';
   const permissionsTab = `<span class="tab${permissionsActive ? ' active' : ''}" data-city-id="permissions">Käyttäjäoikeudet</span>`;
 
-  return overviewTab + cityTabs.join('') + featuresTab + permissionsTab;
+  const metricsActive = activeCityId === 'metrics';
+  const metricsTab = `<span class="tab${metricsActive ? ' active' : ''}" data-city-id="metrics">Mittarit</span>`;
+
+  return overviewTab + cityTabs.join('') + featuresTab + permissionsTab + metricsTab;
 }
 

@@ -32,6 +32,11 @@ export function navigate(path, params) {
   window.location.hash = hash;
 }
 
+/** Changes the address without a hashchange event or a new history entry. */
+export function replaceRoute(path) {
+  history.replaceState(history.state, '', '#' + path);
+}
+
 export function getQueryParam(name) {
   const { params } = parseHash();
   return params.get(name);

@@ -26,6 +26,10 @@ export function formatDate(isoString) {
   return `${d.getDate()}.${d.getMonth() + 1}.`;
 }
 
+export function isoOf(ms) {
+  return new Date(ms).toISOString();
+}
+
 /**
  * Format an ISO date string as Finnish short weekday + date + time:
  * "pe 13.3. klo 14:30". Returns '' for nullish/empty input.

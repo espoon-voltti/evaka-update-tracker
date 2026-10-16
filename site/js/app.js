@@ -2,7 +2,7 @@
  * App initialization: fetch data, wire router, render views.
  */
 
-import { addRoute, setNotFound, startRouter, navigate, handleRoute } from './router.js';
+import { addRoute, setNotFound, startRouter, navigate, handleRoute, replaceRoute } from './router.js';
 import { renderOverview, bindOverviewEvents } from './components/overview.js';
 import { initCache, startAutoRefresh } from './auto-refresh.js';
 import { cacheBustUrl } from './utils.js';
@@ -203,16 +203,38 @@ function handleFeatures(_params, queryParams) {
     });
 }
 
-// Route: Settings (#/settings)
-function handleSettings() {
+// Route: Metrics (#/metrics)
+function handleMetrics(_params, queryParams) {
   exitFullscreen();
-  // Auto-refresh re-runs the route handler; don't wipe unsaved form edits.
-  if (appEl().querySelector('.settings-view')) return;
-  document.title = 'Asetukset - eVaka muutostenseuranta';
-  import('./components/settings.js').then(({ renderSettings, bindSettingsEvents }) => {
-    renderView(renderSettings());
-    bindSettingsEvents();
-    updateTabs('settings');
+  if (!currentData) {
+    renderView('<div class="loading">Ladataan...</div>');
+    return;
+  }
+  document.title = 'Mittarit - eVaka muutostenseuranta';
+  import('./components/metrics-view.js').then(({ renderMetricsView, bindMetricsViewEvents }) => {
+    const range = queryParams?.get('range');
+    renderView(renderMetricsView(currentData.cityGroups, range));
+    bindMetricsViewEvents(currentData.cityGroups, range);
+    updateTabs('metrics');
+  });
+}
+
+// Route: Settings (#/settings, #/settings?import=<code>)
+function handleSettings(_params, queryParams) {
+  exitFullscreen();
+  const importCode = queryParams?.get('import');
+  // The import code contains tokens, so it must not stay in the browser history.
+  if (importCode) replaceRoute('/settings');
+  import('./components/settings.js').then(({ renderSettings, bindSettingsEvents, prefillImport }) => {
+    const cityGroups = currentData?.cityGroups || [];
+    // Auto-refresh re-runs the route handler; don't wipe unsaved form edits.
+    if (!appEl().querySelector('.settings-view')) {
+      document.title = 'Asetukset - eVaka muutostenseuranta';
+      renderView(renderSettings(cityGroups));
+      bindSettingsEvents(cityGroups);
+      updateTabs('settings');
+    }
+    if (importCode) prefillImport(importCode, cityGroups);
   });
 }
 
@@ -230,6 +252,8 @@ function updateTabs(activeCityId) {
             navigate('/features');
           } else if (cityId === 'permissions') {
             navigate('/permissions');
+          } else if (cityId === 'metrics') {
+            navigate('/metrics');
           } else if (cityId) {
             navigate(`/city/${cityId}`);
           } else {
@@ -256,6 +280,7 @@ export async function refreshCurrentView() {
 addRoute('/', handleOverview);
 addRoute('/features', handleFeatures);
 addRoute('/permissions', handlePermissions);
+addRoute('/metrics', handleMetrics);
 addRoute('/settings', handleSettings);
 addRoute('/city/:id', handleCityDetail);
 addRoute('/city/:id/history', handleCityHistory);

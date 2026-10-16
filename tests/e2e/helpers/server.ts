@@ -1,6 +1,7 @@
 /**
- * Minimal HTTP server for E2E tests.
- * Serves the site/ directory and test data from tests/e2e/test-data/.
+ * Minimal HTTP server for E2E tests and `npm run dev`.
+ * Serves the site/ directory, and serves /data/ from the given data directory
+ * (default: tests/e2e/test-data/).
  */
 
 import * as http from 'http';
@@ -26,7 +27,7 @@ function serveFile(res: http.ServerResponse, filePath: string) {
 
   try {
     const content = fs.readFileSync(filePath);
-    res.writeHead(200, { 'Content-Type': contentType });
+    res.writeHead(200, { 'Content-Type': contentType, 'Cache-Control': 'no-store' });
     res.end(content);
   } catch {
     res.writeHead(404);
@@ -43,15 +44,17 @@ export function updateTestData(filename: string, data: object | string) {
   fs.writeFileSync(filePath, content, 'utf-8');
 }
 
-export function startServer(): Promise<{ url: string; close: () => void }> {
+export function startServer({
+  port = 0,
+  dataDir = TEST_DATA_DIR,
+}: { port?: number; dataDir?: string } = {}): Promise<{ url: string; close: () => void }> {
   return new Promise((resolve) => {
     const server = http.createServer((req, res) => {
       const url = req.url || '/';
       const cleanUrl = url.split('?')[0];
 
-      // Serve data/ from test-data directory
       if (cleanUrl.startsWith('/data/')) {
-        const dataPath = path.join(TEST_DATA_DIR, cleanUrl.replace('/data/', ''));
+        const dataPath = path.join(dataDir, cleanUrl.replace('/data/', ''));
         serveFile(res, dataPath);
         return;
       }
@@ -65,11 +68,10 @@ export function startServer(): Promise<{ url: string; close: () => void }> {
       serveFile(res, filePath);
     });
 
-    server.listen(0, '127.0.0.1', () => {
+    server.listen(port, '127.0.0.1', () => {
       const addr = server.address();
       if (typeof addr === 'object' && addr) {
         const url = `http://127.0.0.1:${addr.port}`;
-        console.log(`[E2E Server] Listening on ${url}`);
         resolve({
           url,
           close: () => server.close(),

@@ -4,6 +4,8 @@ export function cacheBustUrl(url: string): string;
 
 export function formatDate(isoString: string | null | undefined): string;
 
+export function isoOf(ms: number): string;
+
 export function formatTime(isoString: string | null | undefined): string;
 
 export interface StagingBranchInfo {

@@ -5,6 +5,7 @@
 import { renderStatusBadge } from './status-badge.js';
 import { navigate, getQueryParam, setQueryParam } from '../router.js';
 import { escapeHtml, findStagingBranchInfo, countNonVisibleStagingCommits } from '../utils.js';
+import { renderCityMetrics, bindCityMetrics } from './city-metrics.js';
 
 export function renderOverview(data, historyEvents = []) {
   if (!data || !data.cityGroups) {
@@ -153,14 +154,15 @@ function renderCityCard(city, historyEvents) {
     <div class="city-card" data-city-id="${city.id}">
       <h2>${escapeHtml(city.name)}</h2>
       ${countsHtml}
-      ${envSections.join('')}
+      ${envSections.join('')}${renderCityMetrics(city.id)}
     </div>
   `;
 }
 
 export function bindOverviewEvents() {
   document.querySelectorAll('.city-card').forEach((card) => {
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest('.city-metrics a')) return;
       const cityId = card.dataset.cityId;
       if (cityId) navigate(`/city/${cityId}`);
     });
@@ -175,6 +177,7 @@ export function bindOverviewEvents() {
   }
 
   document.addEventListener('keydown', handleFullscreenEsc);
+  bindCityMetrics();
 }
 
 function handleFullscreenEsc(e) {
