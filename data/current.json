@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T05:35:03.088Z",
+  "generatedAt": "2026-10-16T05:46:12.085Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-16T05:34:14.432Z",
+            "checkedAt": "2026-10-16T05:45:32.368Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-16T05:34:15.436Z",
+            "checkedAt": "2026-10-16T05:45:33.078Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -131,7 +131,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-16T05:34:21.329Z",
+            "checkedAt": "2026-10-16T05:45:36.503Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -156,21 +156,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-16T05:34:33.296Z",
+            "checkedAt": "2026-10-16T05:45:44.719Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "f8577ec2c24948432841637c86f27f1dcbbf0688",
-              "shortSha": "f8577ec",
-              "message": "Merge pull request #2265 from Tampere/dependabot/submodules/evaka-f6680b7",
-              "date": "2026-10-14T21:51:01Z",
+              "sha": "816dbe4153fc39bb01edb83e7ee97f6316e21fc0",
+              "shortSha": "816dbe4",
+              "message": "Merge pull request #2266 from Tampere/dependabot/submodules/evaka-6eb51e0",
+              "date": "2026-10-15T21:14:40Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "f6680b7886b29e68ddb7b5bdc42dcc74ebbef847",
-              "shortSha": "f6680b7",
-              "message": "Merge pull request #10029 from espoon-voltti/vtj-tests-cleanups",
-              "date": "2026-10-14T11:33:17Z",
-              "author": "akheron"
+              "sha": "6eb51e0b50def1a07610cd42310cfb73d0055d4d",
+              "shortSha": "6eb51e0",
+              "message": "Merge pull request #9878 from espoon-voltti/mcp-server",
+              "date": "2026-10-15T13:27:54Z",
+              "author": "Wnt"
             }
           },
           "versionMismatch": false,
@@ -188,6 +188,73 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 9878,
+              "title": "Lisätään MCP-palvelin tekoälyavusteiseen testidatan luontiin ei-tuotantoympäristöissä",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-10-15T13:27:55Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9878",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 10032,
+              "title": "VTJ-refaktorointi, osa 2",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-15T10:58:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10032",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10034,
+              "title": "Estetään 0-mittaisten henkilökunnan läsnäolojen luominen muokkaamalla",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-15T09:01:36Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10034",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 9881,
+              "title": "Loppujen viestien poisto (ei vielä käytössä)",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-15T06:11:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9881",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
             {
               "number": 10029,
               "title": "VTJ-refaktorointi, osa 1",
@@ -255,75 +322,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 9878,
-              "title": "Lisätään MCP-palvelin tekoälyavusteiseen testidatan luontiin ei-tuotantoympäristöissä",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-10-15T13:27:55Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9878",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10032,
-              "title": "VTJ-refaktorointi, osa 2",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-15T10:58:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10032",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10034,
-              "title": "Estetään 0-mittaisten henkilökunnan läsnäolojen luominen muokkaamalla",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-15T09:01:36Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10034",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 9881,
-              "title": "Loppujen viestien poisto (ei vielä käytössä)",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-15T06:11:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9881",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -336,7 +335,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-16T05:34:52.584Z",
+            "checkedAt": "2026-10-16T05:46:03.828Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -355,7 +354,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-16T05:34:53.655Z",
+            "checkedAt": "2026-10-16T05:46:04.527Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -457,7 +456,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-16T05:34:57.793Z",
+            "checkedAt": "2026-10-16T05:46:08.134Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -476,7 +475,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-16T05:34:58.755Z",
+            "checkedAt": "2026-10-16T05:46:08.791Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {

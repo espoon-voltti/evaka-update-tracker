@@ -1,6 +1,155 @@
 {
   "events": [
     {
+      "id": "2026-10-16T05:45:57.981Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-16T05:45:57.981Z",
+      "previousCommit": {
+        "sha": "f8577ec2c24948432841637c86f27f1dcbbf0688",
+        "shortSha": "f8577ec",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "816dbe4153fc39bb01edb83e7ee97f6316e21fc0",
+        "shortSha": "816dbe4",
+        "message": "Merge pull request #2266 from Tampere/dependabot/submodules/evaka-6eb51e0",
+        "date": "2026-10-15T21:14:40Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2266,
+          "title": "Bump evaka from `f6680b7` to `6eb51e0`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-15T21:14:40Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2266",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-16T05:45:57.981Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-16T05:45:57.981Z",
+      "previousCommit": {
+        "sha": "f6680b7886b29e68ddb7b5bdc42dcc74ebbef847",
+        "shortSha": "f6680b7",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "6eb51e0b50def1a07610cd42310cfb73d0055d4d",
+        "shortSha": "6eb51e0",
+        "message": "Merge pull request #9878 from espoon-voltti/mcp-server",
+        "date": "2026-10-15T13:27:54Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 9878,
+          "title": "Lisätään MCP-palvelin tekoälyavusteiseen testidatan luontiin ei-tuotantoympäristöissä",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-10-15T13:27:55Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9878",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10030,
+          "title": "Bump shell-quote and concurrently in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-15T12:02:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10030",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10032,
+          "title": "VTJ-refaktorointi, osa 2",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-15T10:58:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10032",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10034,
+          "title": "Estetään 0-mittaisten henkilökunnan läsnäolojen luominen muokkaamalla",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-15T09:01:36Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10034",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 9881,
+          "title": "Loppujen viestien poisto (ei vielä käytössä)",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-15T06:11:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9881",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-16T02:12:47.295Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
