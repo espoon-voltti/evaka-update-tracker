@@ -59,15 +59,14 @@ DRY_RUN=true npx ts-node --esm src/index.ts
 # Suorita koko putki (kirjoittaa datatiedostot, lähettää Slack-ilmoitukset)
 npx ts-node --esm src/index.ts
 
-# Esikatsele hallintapaneelia paikallisesti
-ln -sf ../data site/data
-npx serve site
-# Avaa http://localhost:3000
+# Esikatsele hallintapaneelia paikallisesti data/-hakemiston datalla
+npm run dev
+# Avaa http://localhost:3578
 
 # Ajastetut näkymät (esim. lounaslistat): määritä osoitteessa #/settings,
 # ja testaa ajastusta ajasta riippumatta ?now=-parametrilla (ennen #-merkkiä):
-#   http://localhost:3000/?now=10:45#/?fullscreen=true            (tänään klo 10:45)
-#   http://localhost:3000/?now=2026-10-01T10:45#/?fullscreen=true (tiettynä päivänä)
+#   http://localhost:3578/?now=10:45#/?fullscreen=true            (tänään klo 10:45)
+#   http://localhost:3578/?now=2026-10-01T10:45#/?fullscreen=true (tiettynä päivänä)
 # Asetuksissa oleva "Esikatsele"-painike näyttää näkymän heti.
 
 # Suorita testit

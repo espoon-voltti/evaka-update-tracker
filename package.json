@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "npx tsx src/index.ts",
+    "dev": "npx tsx scripts/dev-server.ts",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "typecheck": "tsc --noEmit",
