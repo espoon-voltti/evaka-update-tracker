@@ -17,19 +17,33 @@ import {
   floorTo,
   extractSeries,
   totalOf,
+  sumSeries,
   lastKnownPoint,
+  localTicks,
 } from '../metrics/series.js';
 import { renderStackedBarSparkline, renderBandSparkline } from './sparkline.js';
 
 const METRICS_VIEW_HREF = '#/metrics?range=24h';
-const LOGINS_LABEL = `Kirjautumiset ${RANGE_6H.label}`;
+const LOGINS_LABEL = 'Kuntalaisten kirjautumiset';
+const LOGINS_LEGEND = `
+  <ul class="city-metric-legend">
+    <li><span class="legend-swatch bar-strong"></span>vahva</li>
+    <li><span class="legend-swatch bar-weak"></span>kevyt</li>
+  </ul>`;
 const CPU_LABEL = 'Tietokanta CPU';
 const NO_VALUE = '–';
 const LOADING = '…';
 
-// Must stay longer than the delay before the metrics collector (ops-metrics module in
-// evaka-infra-shared) writes a closed bucket, or a normal delay hides the latest CPU value.
-const CPU_VALUE_MAX_AGE = 30 * 60 * 1000;
+// The window ends where the bucket that closed last starts. The metrics collector
+// (ops-metrics module in evaka-infra-shared) writes a bucket no earlier than
+// ingestion_delay_seconds after it closes, so with the default delay of 300 s that
+// bucket is never in the data. The fetch starts one bucket earlier to keep the window
+// 6 hours long.
+const FETCH_RANGE = { ...RANGE_6H, ms: RANGE_6H.ms + FIVE_MINUTES };
+
+// Must stay longer than the time the collector usually needs after the window end to
+// write the last bucket of the window, or a usual delay hides the latest value.
+const VALUE_MAX_AGE = 30 * 60 * 1000;
 
 let refreshTimer = null;
 
@@ -46,70 +60,97 @@ function clock(ms) {
   return new Date(ms).toLocaleTimeString('fi', { hour: '2-digit', minute: '2-digit', hour12: false });
 }
 
-function metric(label, chart, value) {
+function metric({ label, legend = '', chart = '', axis = '', value, detail = '' }) {
   const chartCell = chart
     ? `<a class="city-metric-chart" href="${METRICS_VIEW_HREF}">${chart}</a>`
     : '<span class="city-metric-chart"></span>';
+  const detailLine = detail ? `<span class="city-metric-detail">${escapeHtml(detail)}</span>` : '';
   return `
     <div class="city-metric">
-      <span class="city-metric-label">${label}</span>
+      <div class="city-metric-head"><span class="city-metric-label">${label}</span>${legend}</div>
       ${chartCell}
-      <span class="city-metric-value">${escapeHtml(value)}</span>
+      <div class="city-metric-figures"><span class="city-metric-value">${escapeHtml(value)}</span>${detailLine}</div>
+      <div class="city-metric-axis" aria-hidden="true">${axis}</div>
     </div>`;
 }
 
-function renderLogins(slots, from, to) {
+function renderLogins(slots, from, to, axis) {
   const strong = extractSeries(slots, LOGIN_STRONG, from, to);
   const weak = extractSeries(slots, LOGIN_WEAK, from, to);
-  const points = strong.map((p, i) => ({ t: p.t, values: [p.value, weak[i].value] }));
-  const gaps = points.filter((p) => p.values.every((v) => v === null)).length;
-  if (gaps === points.length) return metric(LOGINS_LABEL, '', NO_VALUE);
+  const totals = sumSeries([strong, weak]);
+  const latest = lastKnownPoint(totals);
+  if (!latest) return metric({ label: LOGINS_LABEL, legend: LOGINS_LEGEND, value: NO_VALUE });
 
+  const gaps = totals.filter((p) => p.value === null).length;
   const chart = renderStackedBarSparkline({
-    points,
+    points: strong.map((p, i) => ({ t: p.t, values: [p.value, weak[i].value] })),
     from,
     to,
     stepMs: FIVE_MINUTES,
     classNames: ['bar-strong', 'bar-weak'],
-    title: `Kirjautumiset klo ${clock(from)}–${clock(to)}: vahva ${totalOf(strong)}, heikko ${totalOf(weak)}, puuttuvia jaksoja ${gaps}`,
+    title: `Kuntalaisten kirjautumiset klo ${clock(from)}–${clock(to)}: vahva ${totalOf(strong)}, kevyt ${totalOf(weak)}, viimeisin 5 min ${latest.value} (klo ${clock(latest.t)}), puuttuvia jaksoja ${gaps}`,
   });
-  return metric(LOGINS_LABEL, chart, String(totalOf(strong) + totalOf(weak)));
+  return metric({
+    label: LOGINS_LABEL,
+    legend: LOGINS_LEGEND,
+    chart,
+    axis,
+    value: latest.t >= to - VALUE_MAX_AGE ? String(latest.value) : NO_VALUE,
+    detail: `yht. ${totalOf(totals)}`,
+  });
 }
 
-function renderCpu(slots, from, to) {
+function renderCpu(slots, from, to, axis) {
   const points = extractSeries(slots, RDS_CPU, from, to);
   const latest = lastKnownPoint(points);
-  if (!latest) return metric(CPU_LABEL, '', NO_VALUE);
+  if (!latest) return metric({ label: CPU_LABEL, value: NO_VALUE });
 
   const mean = Math.round(latest.value.mean);
-  const gaps = points.filter((p) => p.value === null).length;
+  const known = points.filter((p) => p.value !== null);
+  const max = Math.round(Math.max(...known.map((p) => p.value.max)));
+  const gaps = points.length - known.length;
   const chart = renderBandSparkline({
     points,
     from,
     to,
     stepMs: FIVE_MINUTES,
     yMax: 100,
-    title: `Tietokannan suoritinkuorma klo ${clock(from)}–${clock(to)}: viimeisin keskiarvo ${mean} % (klo ${clock(latest.t)}), puuttuvia jaksoja ${gaps}`,
+    title: `Tietokannan suoritinkuorma klo ${clock(from)}–${clock(to)}: viimeisin keskiarvo ${mean} % (klo ${clock(latest.t)}), suurin ${max} %, puuttuvia jaksoja ${gaps}`,
   });
-  return metric(CPU_LABEL, chart, latest.t >= to - CPU_VALUE_MAX_AGE ? `${mean}\u00a0%` : NO_VALUE);
+  return metric({
+    label: CPU_LABEL,
+    chart,
+    axis,
+    value: latest.t >= to - VALUE_MAX_AGE ? `${mean}\u00a0%` : NO_VALUE,
+    detail: `max ${max}\u00a0%`,
+  });
 }
 
 function renderData(data) {
-  const to = floorTo(data.to, FIVE_MINUTES);
+  const to = floorTo(data.to, FIVE_MINUTES) - FIVE_MINUTES;
   const from = to - RANGE_6H.ms;
-  return renderLogins(data.slots, from, to) + renderCpu(data.slots, from, to);
+  const axis = localTicks(RANGE_6H, from, to)
+    .map((tick) => {
+      const position = ((tick.t - from) / (to - from)) * 100;
+      // A label centered on a tick near an end would stick out of the chart.
+      const end = position < 8 ? ' tick-start' : position > 92 ? ' tick-end' : '';
+      return `<span class="city-metric-tick${end}" style="left: ${position.toFixed(3)}%">${tick.label}</span>`;
+    })
+    .join('');
+  return renderLogins(data.slots, from, to, axis) + renderCpu(data.slots, from, to, axis);
 }
 
 /** Empty for a municipality without settings. Renders from the cache without fetching. */
 export function renderCityMetrics(cityId) {
   if (!hasSettings(cityId)) return '';
-  const state = peekMetrics(cityId, RANGE_6H);
+  const state = peekMetrics(cityId, FETCH_RANGE);
   let stateName;
   let content;
 
   if (!state) {
     stateName = 'loading';
-    content = metric(LOGINS_LABEL, '', LOADING) + metric(CPU_LABEL, '', LOADING);
+    content =
+      metric({ label: LOGINS_LABEL, legend: LOGINS_LEGEND, value: LOADING }) + metric({ label: CPU_LABEL, value: LOADING });
   } else if (state.error?.kind === 'unauthorized') {
     stateName = 'unauthorized';
     content = renderInvalidToken('city-metrics-error');
@@ -125,8 +166,8 @@ export function renderCityMetrics(cityId) {
 }
 
 function load(cityId, options) {
-  const before = peekMetrics(cityId, RANGE_6H);
-  loadMetrics(cityId, RANGE_6H, options).then((state) => {
+  const before = peekMetrics(cityId, FETCH_RANGE);
+  loadMetrics(cityId, FETCH_RANGE, options).then((state) => {
     if (state === before) return;
     const block = document.querySelector(`.city-metrics[data-city-id="${CSS.escape(cityId)}"]`);
     if (block) block.outerHTML = renderCityMetrics(cityId);

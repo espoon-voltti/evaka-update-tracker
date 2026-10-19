@@ -2,6 +2,7 @@ import {
   FIVE_MINUTES,
   HOUR,
   RANGES,
+  RANGE_6H,
   parseRange,
   rangeWindow,
   bucketSizeForRange,
@@ -151,6 +152,12 @@ describe('aggregateGaugeSummaries', () => {
 
 describe('localTicks', () => {
   // Local-time constructors keep these stable in any host timezone.
+  it('puts a tick every 2 local hours for 6 hours', () => {
+    const from = new Date(2026, 9, 5, 7, 55).getTime();
+    const ticks = localTicks(RANGE_6H, from, from + RANGE_6H.ms);
+    expect(ticks.map((t) => t.label)).toEqual(['08.00', '10.00', '12.00']);
+  });
+
   it('puts a tick every 3 local hours for 24 hours', () => {
     const from = new Date(2026, 9, 5, 13, 20).getTime();
     const ticks = localTicks(RANGES['24h'], from, from + 24 * HOUR);
