@@ -275,17 +275,18 @@ function pad2(n) {
 }
 
 /**
- * Axis ticks in local time: every 3 hours for 24 h, local midnights for
- * longer ranges (every other midnight for 14 days). Local midnights are
- * stepped with the Date constructor so DST days get 23 or 25 hours.
+ * Axis ticks in local time: every 2 hours for 6 h, every 3 hours for 24 h,
+ * local midnights for longer ranges (every other midnight for 14 days). Local
+ * midnights are stepped with the Date constructor so DST days get 23 or 25 hours.
  */
 export function localTicks(range, from, to) {
   const ticks = [];
   if (range.ms <= DAY) {
+    const everyHours = range.ms <= RANGE_6H.ms ? 2 : 3;
     const d = new Date(from);
     d.setMinutes(0, 0, 0);
     for (; d.getTime() < to; d.setHours(d.getHours() + 1)) {
-      if (d.getTime() >= from && d.getHours() % 3 === 0) {
+      if (d.getTime() >= from && d.getHours() % everyHours === 0) {
         ticks.push({ t: d.getTime(), label: `${pad2(d.getHours())}.00` });
       }
     }
