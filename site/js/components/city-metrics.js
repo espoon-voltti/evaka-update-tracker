@@ -34,15 +34,12 @@ const CPU_LABEL = 'Tietokanta CPU';
 const NO_VALUE = '–';
 const LOADING = '…';
 
-// The window ends where the bucket that closed last starts. The metrics collector
-// (ops-metrics module in evaka-infra-shared) writes a bucket no earlier than
-// ingestion_delay_seconds after it closes, so with the default delay of 300 s that
-// bucket is never in the data. The fetch starts one bucket earlier to keep the window
-// 6 hours long.
-const FETCH_RANGE = { ...RANGE_6H, ms: RANGE_6H.ms + FIVE_MINUTES };
+// The window can end two buckets before the bucket in progress, so the fetch starts
+// two buckets earlier to keep the window 6 hours long.
+const FETCH_RANGE = { ...RANGE_6H, ms: RANGE_6H.ms + 2 * FIVE_MINUTES };
 
-// Must stay longer than the time the collector usually needs after the window end to
-// write the last bucket of the window, or a usual delay hides the latest value.
+// A latest value from a bucket that starts more than this before the window end shows
+// as a dash, because the collector has then not written several buckets.
 const VALUE_MAX_AGE = 30 * 60 * 1000;
 
 let refreshTimer = null;
@@ -127,7 +124,14 @@ function renderCpu(slots, from, to, axis) {
 }
 
 function renderData(data) {
-  const to = floorTo(data.to, FIVE_MINUTES) - FIVE_MINUTES;
+  // The metrics collector (ops-metrics module in evaka-infra-shared) writes a bucket no
+  // earlier than ingestion_delay_seconds after it closes, so with the default delay of
+  // 300 s the bucket that closed last is never in the data. The bucket before it comes in
+  // the next collector run, a minute or two after the bucket in progress starts. Until
+  // then the window ends before that bucket too. A longer delay shows as a gap.
+  const end = floorTo(data.to, FIVE_MINUTES) - FIVE_MINUTES;
+  const lastBucket = end - FIVE_MINUTES;
+  const to = data.slots.some((slot) => Date.parse(slot.t) === lastBucket) ? end : lastBucket;
   const from = to - RANGE_6H.ms;
   const axis = localTicks(RANGE_6H, from, to)
     .map((tick) => {

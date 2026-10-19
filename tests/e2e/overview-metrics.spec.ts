@@ -117,6 +117,40 @@ test.describe('Overview metric sparklines', () => {
     );
   });
 
+  test('the window also leaves out the bucket before, until the next collector run writes it', async ({
+    page,
+    baseUrl,
+  }) => {
+    await page.clock.setFixedTime(NOW);
+    await seedMetricsSettings(page, {
+      espoo: { url: ESPOO_URL, token: 'secret' },
+      oulu: { url: OULU_URL, token: 'secret' },
+    });
+    const writtenBefore = (time: string) => {
+      const file = buildDayFile(OCT_6);
+      file.slots = file.slots.filter((slot) => Date.parse(slot.t) < Date.parse(time));
+      return { [dayKey(OCT_6)]: file };
+    };
+    // At 12:00 the collector run of 12:01 has not written the 11:50 bucket yet.
+    await mockMetricsEndpoint(page, { functionUrl: ESPOO_URL, token: 'secret', files: writtenBefore('2026-10-06T11:50:00Z') });
+    // A collector that is one more run late leaves a gap.
+    await mockMetricsEndpoint(page, { functionUrl: OULU_URL, token: 'secret', files: writtenBefore('2026-10-06T11:45:00Z') });
+    await page.goto(`${baseUrl}/#/`);
+
+    // 72 slots from 05:50 to 11:45 UTC: strong 11 + 11, then 12 + 13 + 10 + 11 + 12 per hour slot and 13 in the
+    // 10 slots of 11:00-11:45; weak 3 each.
+    const espoo = cityMetrics(page, 'espoo');
+    await expect(espoo.locator('.city-metric-value')).toHaveText(['16', /^20\s%$/]);
+    await expect(espoo.locator('.city-metric-detail').first()).toHaveText('yht. 1064');
+    await expect(espoo.locator('svg.sparkline').first().locator('title')).toHaveText(
+      'Kuntalaisten kirjautumiset klo 08.50–14.50: vahva 848, kevyt 216, viimeisin 5 min 16 (klo 14.45), puuttuvia jaksoja 0'
+    );
+
+    const ouluLogins = cityMetrics(page, 'oulu').locator('svg.sparkline').first().locator('title');
+    await expect(ouluLogins).toContainText('klo 08.50–14.50:');
+    await expect(ouluLogins).toContainText('puuttuvia jaksoja 1');
+  });
+
   test('a window across UTC midnight joins the files of both days', async ({ page, baseUrl }) => {
     const oct5 = OCT_6 - 24 * 60 * MINUTE;
     await page.clock.setFixedTime(OCT_6 + 2 * 60 * MINUTE);
@@ -148,8 +182,8 @@ test.describe('Overview metric sparklines', () => {
     const espoo = cityMetrics(page, 'espoo');
     const values = espoo.locator('.city-metric-value');
 
-    // At 12:14 the window ends at 12:05, and its last bucket at 12:00 is missing, as it is when the
-    // collector is a few minutes late. The values come from the 11:55 bucket.
+    // At 12:14 the 12:00 bucket is missing, as it is when the collector is a few minutes late, so the
+    // window ends at 12:00. The values come from the 11:55 bucket.
     await page.clock.setFixedTime(NOW.getTime() + 14 * MINUTE);
     await page.goto(`${baseUrl}/#/`);
     await expect(values).toHaveText(['16', /^20\s%$/]);
