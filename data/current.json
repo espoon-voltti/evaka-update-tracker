@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T18:50:54.447Z",
+  "generatedAt": "2026-10-19T19:00:08.200Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-19T18:49:56.337Z",
+            "checkedAt": "2026-10-19T18:59:12.958Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-19T18:49:57.114Z",
+            "checkedAt": "2026-10-19T18:59:14.126Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -130,7 +130,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-19T18:50:02.686Z",
+            "checkedAt": "2026-10-19T18:59:19.253Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -155,7 +155,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-19T18:50:13.686Z",
+            "checkedAt": "2026-10-19T18:59:29.048Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
@@ -181,7 +181,21 @@
           "repository": "Tampere/trevaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 2269,
+              "title": "Upgrade Terraform to 1.16 and AWS provider to 6.x",
+              "author": "japsu",
+              "authorName": "Luka Pajukanta",
+              "mergedAt": "2026-10-19T18:51:42Z",
+              "repository": "Tampere/trevaka",
+              "repoType": "wrapper",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/Tampere/trevaka/pull/2269",
+              "labels": []
+            }
+          ]
         },
         "core": {
           "repository": "espoon-voltti/evaka",
@@ -418,7 +432,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-19T18:50:42.085Z",
+            "checkedAt": "2026-10-19T18:59:55.602Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -437,7 +451,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-19T18:50:43.092Z",
+            "checkedAt": "2026-10-19T18:59:56.386Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -538,7 +552,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-19T18:50:48.415Z",
+            "checkedAt": "2026-10-19T19:00:01.403Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -557,7 +571,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-19T18:50:49.230Z",
+            "checkedAt": "2026-10-19T19:00:02.431Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
