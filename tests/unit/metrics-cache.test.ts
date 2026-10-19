@@ -1,8 +1,15 @@
-import { loadMetrics, peekMetrics, invalidateMetrics, REFRESH_INTERVAL } from '../../site/js/metrics/cache.js';
+import {
+  loadMetrics,
+  peekMetrics,
+  invalidateMetrics,
+  refreshPeriodStart,
+  REFRESH_INTERVAL,
+} from '../../site/js/metrics/cache.js';
 import { MetricsError, type DayFile } from '../../site/js/metrics/client.js';
 import { RANGES } from '../../site/js/metrics/series.js';
 
 const NOW = Date.parse('2026-10-06T12:00:00Z');
+const MINUTE = 60 * 1000;
 const range = RANGES['24h'];
 
 function fakeFetch(files: Record<string, DayFile | null>) {
@@ -14,10 +21,18 @@ function fakeFetch(files: Record<string, DayFile | null>) {
   return { fn, calls };
 }
 
+describe('refreshPeriodStart', () => {
+  it('starts a period at minute 2 of every 5 minutes', () => {
+    expect(refreshPeriodStart(Date.parse('2026-10-06T12:01:59Z'))).toBe(Date.parse('2026-10-06T11:57:00Z'));
+    expect(refreshPeriodStart(Date.parse('2026-10-06T12:02:00Z'))).toBe(Date.parse('2026-10-06T12:02:00Z'));
+    expect(refreshPeriodStart(Date.parse('2026-10-06T12:06:59Z'))).toBe(Date.parse('2026-10-06T12:02:00Z'));
+  });
+});
+
 describe('loadMetrics', () => {
   beforeEach(() => invalidateMetrics('espoo'));
 
-  it('fetches the full range first, then nothing within the refresh interval', async () => {
+  it('fetches the full range first, then nothing until the next refresh period', async () => {
     const { fn, calls } = fakeFetch({
       '5min/2026/10/06.json': { series: {}, slots: [{ t: '2026-10-06T11:00:00Z', x: 1 }] },
     });
@@ -25,10 +40,14 @@ describe('loadMetrics', () => {
     expect(calls).toEqual([{ from: NOW - range.ms, to: NOW }]);
     expect(first.data?.slots).toHaveLength(1);
 
-    const second = await loadMetrics('espoo', range, { now: NOW + REFRESH_INTERVAL - 1, fetchFiles: fn });
+    // The next period starts at 12:02.
+    const second = await loadMetrics('espoo', range, { now: NOW + 2 * MINUTE - 1, fetchFiles: fn });
     expect(calls).toHaveLength(1);
     expect(second).toBe(first);
     expect(peekMetrics('espoo', range)).toBe(first);
+
+    await loadMetrics('espoo', range, { now: NOW + 2 * MINUTE, fetchFiles: fn });
+    expect(calls).toHaveLength(2);
   });
 
   it('starts the data at the 5-minute bucket that contains the window start', async () => {

@@ -5,9 +5,8 @@
  */
 
 import { escapeHtml } from '../utils.js';
-import { parseHash } from '../router.js';
 import { loadMetricsSettings } from '../metrics/client.js';
-import { loadMetrics, peekMetrics, REFRESH_INTERVAL } from '../metrics/cache.js';
+import { loadMetrics, peekMetrics, refreshPeriodStart, REFRESH_INTERVAL } from '../metrics/cache.js';
 import {
   FIVE_MINUTES,
   RANGE_6H,
@@ -42,7 +41,7 @@ const FETCH_RANGE = { ...RANGE_6H, ms: RANGE_6H.ms + 2 * FIVE_MINUTES };
 // as a dash, because the collector has then not written several buckets.
 const VALUE_MAX_AGE = 30 * 60 * 1000;
 
-let refreshTimer = null;
+let refreshRunning = false;
 
 function hasSettings(cityId) {
   const { url, token } = loadMetricsSettings(cityId);
@@ -182,25 +181,24 @@ function renderedCityIds() {
   return [...document.querySelectorAll('.city-metrics')].map((block) => block.dataset.cityId);
 }
 
-function stopRefreshOnLeave() {
-  if (parseHash().path === '/') return;
-  clearInterval(refreshTimer);
-  refreshTimer = null;
-  window.removeEventListener('hashchange', stopRefreshOnLeave);
-}
-
 /**
- * Loads the rendered blocks and keeps refreshing them while the overview is
- * shown, also when no other data changes. A re-render keeps the running timer.
+ * Loads the rendered blocks. The first call that finds blocks starts a timer
+ * that refreshes the rendered blocks at the start of each refresh period, also
+ * when no other data changes. On other views the timer finds no blocks.
  */
 export function bindCityMetrics() {
   const cityIds = renderedCityIds();
   cityIds.forEach((cityId) => load(cityId));
-  if (cityIds.length === 0 || refreshTimer !== null) return;
+  if (cityIds.length === 0 || refreshRunning) return;
 
-  refreshTimer = setInterval(() => {
-    // A tick can come a moment before REFRESH_INTERVAL has passed by Date.now(); unforced, it would fetch nothing.
-    renderedCityIds().forEach((cityId) => load(cityId, { force: true }));
-  }, REFRESH_INTERVAL);
-  window.addEventListener('hashchange', stopRefreshOnLeave);
+  refreshRunning = true;
+  const scheduleRefresh = () => {
+    const now = Date.now();
+    setTimeout(() => {
+      // Unforced, a tick that comes a moment early by Date.now() would fetch nothing.
+      renderedCityIds().forEach((cityId) => load(cityId, { force: true }));
+      scheduleRefresh();
+    }, refreshPeriodStart(now) + REFRESH_INTERVAL - now);
+  };
+  scheduleRefresh();
 }

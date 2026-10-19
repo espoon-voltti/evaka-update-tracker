@@ -281,7 +281,10 @@ test.describe('Overview metric sparklines', () => {
     await expect(page).toHaveURL(/#\/settings$/);
   });
 
-  test('refreshes every 5 minutes, and a re-render does not start a second timer', async ({ page, baseUrl }) => {
+  test('refreshes at minute 2 of every 5 minutes, after the collector run, also after a re-render', async ({
+    page,
+    baseUrl,
+  }) => {
     await pauseClockAtNow(page);
     await seedMetricsSettings(page, { espoo: { url: ESPOO_URL, token: 'secret' } });
     const calls = await mockMetricsEndpoint(page, {
@@ -298,20 +301,28 @@ test.describe('Overview metric sparklines', () => {
     await page.click('#fullscreen-toggle');
     await expect(page.locator('body')).toHaveClass(/fullscreen/);
     await expect(logins).toHaveText('yht. 1066');
+    await settle(page);
     expect(calls.lambda).toBe(1);
 
-    // The window moves on: the 05:55 slot (11 + 3) drops out, the 11:55 slot (13 + 3) comes in.
-    await page.clock.runFor(4 * MINUTE);
-    await expect(logins).toHaveText('yht. 1068');
-    expect(calls.lambda).toBe(2);
-
-    // A timer started by the re-render at 1 minute would fire at 6 minutes.
+    // The collector run of 12:01 has written the 11:50 bucket, which is already in the mock.
     await page.clock.runFor(MINUTE);
+    await expect.poll(() => calls.lambda).toBe(2);
+    await expect(logins).toHaveText('yht. 1066');
+
+    await page.clock.runFor(4 * MINUTE);
     await settle(page);
     expect(calls.lambda).toBe(2);
+
+    // At 12:07 the window moves on: the 05:55 slot (11 + 3) drops out, the 11:55 slot (13 + 3) comes in.
+    await page.clock.runFor(MINUTE);
+    await expect(logins).toHaveText('yht. 1068');
+    expect(calls.lambda).toBe(3);
   });
 
-  test('leaving the overview stops the refresh timer', async ({ page, baseUrl }) => {
+  test('back on the overview after a refresh period, the cards fetch at once and keep refreshing', async ({
+    page,
+    baseUrl,
+  }) => {
     await pauseClockAtNow(page);
     await seedMetricsSettings(page, { espoo: { url: ESPOO_URL, token: 'secret' } });
     const calls = await mockMetricsEndpoint(page, {
@@ -323,19 +334,15 @@ test.describe('Overview metric sparklines', () => {
     await expect(cityMetrics(page, 'espoo')).toHaveAttribute('data-state', 'ok');
     expect(calls.lambda).toBe(1);
 
+    // The refreshes of 12:02 and 12:07 find no cards on another view.
     await page.evaluate(() => (location.hash = '#/features'));
     await page.waitForSelector('.feature-matrix');
     await page.clock.runFor(11 * MINUTE);
     await settle(page);
     expect(calls.lambda).toBe(1);
 
-    // Back at 11 minutes, the cache is old enough to fetch at once and a new timer starts.
     await page.evaluate(() => (location.hash = '#/'));
     await expect.poll(() => calls.lambda).toBe(2);
-    // The first timer, had it kept running, would fire at 15 minutes; the new one fires at 16.
-    await page.clock.runFor(4 * MINUTE);
-    await settle(page);
-    expect(calls.lambda).toBe(2);
     await page.clock.runFor(MINUTE);
     await expect.poll(() => calls.lambda).toBe(3);
   });

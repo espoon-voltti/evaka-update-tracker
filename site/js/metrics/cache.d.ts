@@ -2,6 +2,7 @@ import type { DayFile, JoinedRange, MetricsError } from './client.js';
 import type { Range } from './series.js';
 
 export const REFRESH_INTERVAL: number;
+export function refreshPeriodStart(now: number): number;
 
 export interface MetricsState {
   data: (JoinedRange & { from: number; to: number }) | null;

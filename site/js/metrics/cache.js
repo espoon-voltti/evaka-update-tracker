@@ -1,7 +1,7 @@
 /**
  * Module-level cache of fetched metrics per municipality and range. Route
  * re-runs by auto-refresh read from here; unless forced, the read Lambda is
- * called at most once per REFRESH_INTERVAL per entry. After the first fetch
+ * called at most once per refresh period per entry. After the first fetch
  * only the files of the current UTC day (and of the previous one when the day
  * has changed since the last fetch) are fetched again.
  */
@@ -9,7 +9,16 @@
 import { fetchFiles as defaultFetchFiles, joinDayFiles } from './client.js';
 import { DAY, FIVE_MINUTES, rangeWindow, floorTo } from './series.js';
 
+// The metrics collector (ops-metrics module in evaka-infra-shared) runs every 5 minutes,
+// at minute 1 by its default collector_schedule, and finishes in well under a minute.
+// A refresh period starts at minute 2, when the data of the run is there.
 export const REFRESH_INTERVAL = 5 * 60 * 1000;
+const REFRESH_OFFSET = 2 * 60 * 1000;
+
+/** The start of the refresh period that contains now. */
+export function refreshPeriodStart(now) {
+  return floorTo(now - REFRESH_OFFSET, REFRESH_INTERVAL) + REFRESH_OFFSET;
+}
 
 const entries = new Map();
 
@@ -38,7 +47,7 @@ export function invalidateMetrics(cityId) {
   }
 }
 
-/** force fetches even within REFRESH_INTERVAL, but still joins a fetch in progress. */
+/** force fetches even within the refresh period of the last fetch, but still joins a fetch in progress. */
 export function loadMetrics(cityId, range, { now = Date.now(), fetchFiles = defaultFetchFiles, force = false } = {}) {
   const key = entryKey(cityId, range);
   let entry = entries.get(key);
@@ -47,7 +56,7 @@ export function loadMetrics(cityId, range, { now = Date.now(), fetchFiles = defa
     entries.set(key, entry);
   }
   if (entry.promise) return entry.promise;
-  if (!force && entry.lastAttemptAt !== null && now - entry.lastAttemptAt < REFRESH_INTERVAL) {
+  if (!force && entry.lastAttemptAt !== null && entry.lastAttemptAt >= refreshPeriodStart(now)) {
     return Promise.resolve(entry.state);
   }
 
