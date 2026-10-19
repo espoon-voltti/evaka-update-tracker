@@ -84,13 +84,19 @@ function buildViewRegistry(currentData: CurrentData): ViewDefinition[] {
   }
 
   views.push({ name: 'metrics-no-url', type: 'browser', route: '#/metrics', waitFor: '.metrics-no-url' });
-  views.push({
-    name: 'metrics',
-    type: 'browser',
-    route: '#/metrics?range=24h',
-    waitFor: '.metrics-view:not(:has(.metrics-body[data-state="loading"]))',
-    prepare: prepareMetricsPage,
-  });
+  for (const [name, city] of [
+    ['metrics', 'espoo'],
+    ['metrics-oulu', 'oulu'],
+    ['metrics-turku', 'turku'],
+  ]) {
+    views.push({
+      name,
+      type: 'browser',
+      route: `#/metrics?range=24h&city=${city}`,
+      waitFor: '.metrics-view:not(:has(.metrics-body[data-state="loading"]))',
+      prepare: prepareMetricsPage,
+    });
+  }
 
   // Slack deployment notifications (production + staging per city)
   for (const cityGroup of currentData.cityGroups) {

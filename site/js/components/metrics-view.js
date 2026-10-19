@@ -1,7 +1,7 @@
 /**
- * Operational metrics view (#/metrics?range=24h|7d|14d): one section per
- * municipality that has a read Lambda URL in settings. Sections load
- * independently, so one failing municipality does not hide the others.
+ * Operational metrics view (#/metrics?range=24h|7d|14d&city=<id>): one tab per
+ * municipality that has a read Lambda URL in settings. Only the selected
+ * municipality is fetched, by default the first one.
  */
 
 import { setQueryParam } from '../router.js';
@@ -56,10 +56,15 @@ function configuredCities(cityGroups) {
   return cityGroups.filter((c) => loadMetricsSettings(c.id).url);
 }
 
-export function renderMetricsView(cityGroups, rangeKey) {
+function selectedCity(configured, cityId) {
+  return configured.find((c) => c.id === cityId) ?? configured[0];
+}
+
+export function renderMetricsView(cityGroups, rangeKey, cityId) {
   const range = parseRange(rangeKey);
   const configured = configuredCities(cityGroups);
   const unconfigured = cityGroups.filter((c) => !configured.includes(c));
+  const selected = selectedCity(configured, cityId);
 
   const rangeButtons = Object.values(RANGES)
     .map(
@@ -68,16 +73,18 @@ export function renderMetricsView(cityGroups, rangeKey) {
     )
     .join('');
 
-  const sections = configured.length
-    ? configured
-        .map(
-          (city) => `
-          <section class="metrics-section" data-city-id="${escapeHtml(city.id)}">
-            <h2>${escapeHtml(city.name)}</h2>
-            ${renderBody(city, range)}
-          </section>`
-        )
-        .join('')
+  const cityTabs = configured
+    .map((city) => {
+      const current = city === selected;
+      const href = `#/metrics?range=${range.key}&city=${encodeURIComponent(city.id)}`;
+      return `<a class="metrics-city-tab${current ? ' active' : ''}" href="${escapeHtml(href)}" data-city-id="${escapeHtml(city.id)}"${current ? ' aria-current="page"' : ''}>${escapeHtml(city.name)}</a>`;
+    })
+    .join('');
+
+  const section = selected
+    ? `<section class="metrics-section" data-city-id="${escapeHtml(selected.id)}" aria-label="${escapeHtml(selected.name)}">
+         ${renderBody(selected, range)}
+       </section>`
     : `<div class="empty-state metrics-no-url">
          Mittareiden osoitteita ei ole asetettu. Lisää kunnan funktion osoite ja tunniste
          <a href="#/settings">asetuksissa</a>.
@@ -91,8 +98,9 @@ export function renderMetricsView(cityGroups, rangeKey) {
   return `
     <div class="metrics-view" data-range="${range.key}">
       <h2>Operatiiviset mittarit</h2>
+      ${selected ? `<nav class="metrics-city-tabs" aria-label="Kunta">${cityTabs}</nav>` : ''}
       <div class="feature-toolbar" role="group" aria-label="Aikaväli">${rangeButtons}</div>
-      ${sections}
+      ${section}
       ${notConfigured}
     </div>
   `;
@@ -114,25 +122,26 @@ function load(city, range) {
   });
 }
 
-export function bindMetricsViewEvents(cityGroups, rangeKey) {
+export function bindMetricsViewEvents(cityGroups, rangeKey, cityId) {
   const view = document.querySelector('.metrics-view');
   if (!view) return;
   const range = parseRange(rangeKey);
-  const configured = configuredCities(cityGroups);
+  const city = selectedCity(configuredCities(cityGroups), cityId);
 
   view.querySelectorAll('.metrics-range-btn').forEach((button) => {
     button.addEventListener('click', () => setQueryParam('range', button.dataset.range));
   });
 
-  configured.forEach((city) => load(city, range));
-
   if (pollTimer !== null) clearInterval(pollTimer);
+  pollTimer = null;
+  if (!city) return;
+  load(city, range);
   pollTimer = setInterval(() => {
     if (!document.querySelector('.metrics-view')) {
       clearInterval(pollTimer);
       pollTimer = null;
       return;
     }
-    configured.forEach((city) => load(city, range));
+    load(city, range);
   }, POLL_INTERVAL);
 }

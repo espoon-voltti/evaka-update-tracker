@@ -213,8 +213,9 @@ function handleMetrics(_params, queryParams) {
   document.title = 'Mittarit - eVaka muutostenseuranta';
   import('./components/metrics-view.js').then(({ renderMetricsView, bindMetricsViewEvents }) => {
     const range = queryParams?.get('range');
-    renderView(renderMetricsView(currentData.cityGroups, range));
-    bindMetricsViewEvents(currentData.cityGroups, range);
+    const city = queryParams?.get('city');
+    renderView(renderMetricsView(currentData.cityGroups, range, city));
+    bindMetricsViewEvents(currentData.cityGroups, range, city);
     updateTabs('metrics');
   });
 }

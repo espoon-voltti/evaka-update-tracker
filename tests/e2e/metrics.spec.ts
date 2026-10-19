@@ -121,27 +121,38 @@ test.describe('Metrics view', () => {
     await expect(section.locator('rect.bar-strong')).toHaveCount(23);
   });
 
-  test('one failing municipality does not hide the others', async ({ page, baseUrl }) => {
+  test('each municipality is a tab, and only the selected one is fetched', async ({ page, baseUrl }) => {
     await seedMetricsSettings(page, {
       espoo: { url: ESPOO_URL, token: 'secret' },
       oulu: { url: OULU_URL, token: 'secret' },
     });
     await mockMetricsEndpoint(page, { functionUrl: ESPOO_URL, token: 'secret', files: {}, failStatus: 503 });
-    await mockMetricsEndpoint(page, {
+    const ouluCalls = await mockMetricsEndpoint(page, {
       functionUrl: OULU_URL,
       token: 'secret',
       files: { [dayKey(OCT_5)]: buildDayFile(OCT_5) },
     });
     await page.goto(`${baseUrl}/#/metrics?range=24h`);
 
-    const espoo = page.locator('.metrics-section[data-city-id="espoo"] .metrics-body');
-    await expect(espoo).toHaveAttribute('data-state', 'error');
-    await expect(espoo).toContainText('Mittaritiedot eivät ole saatavilla (HTTP 503)');
-    await expect(espoo).toContainText('Yhtään hakua ei ole vielä onnistunut');
+    // The first municipality is selected by default.
+    await expect(page.locator('.metrics-city-tab')).toHaveText(['Espoo', 'Oulu']);
+    await expect(page.locator('.metrics-city-tab.active')).toHaveText('Espoo');
+    const body = page.locator('.metrics-section .metrics-body');
+    await expect(body).toHaveAttribute('data-state', 'error');
+    await expect(body).toContainText('Mittaritiedot eivät ole saatavilla (HTTP 503)');
+    await expect(body).toContainText('Yhtään hakua ei ole vielä onnistunut');
+    expect(ouluCalls.lambda).toBe(0);
 
-    const oulu = page.locator('.metrics-section[data-city-id="oulu"] .metrics-body');
-    await expect(oulu).toHaveAttribute('data-state', 'ok');
-    await expect(oulu.locator('[data-chart="citizen-logins"] svg.chart')).toBeVisible();
+    await page.click('.metrics-city-tab[data-city-id="oulu"]');
+    await expect(page).toHaveURL(/#\/metrics\?range=24h&city=oulu$/);
+    await expect(page.locator('.metrics-city-tab.active')).toHaveText('Oulu');
+    await expect(page.locator('.metrics-section')).toHaveAttribute('data-city-id', 'oulu');
+    await expect(body).toHaveAttribute('data-state', 'ok');
+    await expect(body.locator('[data-chart="citizen-logins"] svg.chart')).toBeVisible();
+
+    await page.click('.metrics-range-btn[data-range="7d"]');
+    await expect(page).toHaveURL(/#\/metrics\?range=7d&city=oulu$/);
+    await expect(page.locator('.metrics-city-tab.active')).toHaveText('Oulu');
   });
 
   test('a slow response for the previous range does not replace the current one', async ({ page, baseUrl }) => {
