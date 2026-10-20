@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T05:25:03.643Z",
+  "generatedAt": "2026-10-20T05:34:15.017Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-20T05:24:13.743Z",
+            "checkedAt": "2026-10-20T05:33:12.869Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,14 +29,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-20T05:24:14.396Z",
+            "checkedAt": "2026-10-20T05:33:13.853Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
-              "shortSha": "fb1cb39",
-              "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
-              "date": "2026-10-19T12:12:07Z",
+              "sha": "76189a54d96a18afea68b53b061fcacbce2d6e0a",
+              "shortSha": "76189a5",
+              "message": "Merge pull request #10082 from espoon-voltti/tomcat-max-locale-count",
+              "date": "2026-10-20T04:46:52Z",
               "author": "akheron"
             }
           },
@@ -50,6 +50,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 10033,
               "title": "CI:n nopeutus",
@@ -117,25 +134,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10082,
-              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-20T04:46:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -148,7 +147,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-20T05:24:19.295Z",
+            "checkedAt": "2026-10-20T05:33:21.520Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -173,7 +172,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-20T05:24:29.050Z",
+            "checkedAt": "2026-10-20T05:33:31.891Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
@@ -467,7 +466,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-20T05:24:52.377Z",
+            "checkedAt": "2026-10-20T05:33:58.597Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -486,14 +485,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-20T05:24:52.979Z",
+            "checkedAt": "2026-10-20T05:33:59.515Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
-              "shortSha": "fb1cb39",
-              "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
-              "date": "2026-10-19T12:12:07Z",
+              "sha": "76189a54d96a18afea68b53b061fcacbce2d6e0a",
+              "shortSha": "76189a5",
+              "message": "Merge pull request #10082 from espoon-voltti/tomcat-max-locale-count",
+              "date": "2026-10-20T04:46:52Z",
               "author": "akheron"
             }
           },
@@ -507,6 +506,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 10033,
               "title": "CI:n nopeutus",
@@ -574,25 +590,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10082,
-              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-20T04:46:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -605,7 +603,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-20T05:24:57.804Z",
+            "checkedAt": "2026-10-20T05:34:06.890Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -624,14 +622,14 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-20T05:24:58.553Z",
+            "checkedAt": "2026-10-20T05:34:07.988Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
-              "shortSha": "fb1cb39",
-              "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
-              "date": "2026-10-19T12:12:07Z",
+              "sha": "76189a54d96a18afea68b53b061fcacbce2d6e0a",
+              "shortSha": "76189a5",
+              "message": "Merge pull request #10082 from espoon-voltti/tomcat-max-locale-count",
+              "date": "2026-10-20T04:46:52Z",
               "author": "akheron"
             }
           },
@@ -645,6 +643,23 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 10033,
               "title": "CI:n nopeutus",
@@ -712,25 +727,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10082,
-              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-20T04:46:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     }
