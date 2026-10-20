@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T04:47:55.151Z",
+  "generatedAt": "2026-10-20T04:57:02.111Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-20T04:46:48.062Z",
+            "checkedAt": "2026-10-20T04:56:00.545Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-20T04:46:49.211Z",
+            "checkedAt": "2026-10-20T04:56:01.380Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-20T04:46:54.817Z",
+            "checkedAt": "2026-10-20T04:56:07.386Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -173,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-20T04:47:06.277Z",
+            "checkedAt": "2026-10-20T04:56:18.483Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
@@ -190,180 +190,8 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-10-20T04:47:06.277Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
-                "shortSha": "c112ffb",
-                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
-                "date": "2026-10-19T21:14:53Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
-                "shortSha": "fb1cb39",
-                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
-                "date": "2026-10-19T12:12:07Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-10-20T04:47:07.507Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-10-20T04:47:08.729Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-10-20T04:47:09.892Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-10-20T04:47:10.998Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-10-20T04:47:12.182Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-10-20T04:47:13.331Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-10-20T04:47:14.515Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-10-20T04:47:15.641Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-                "shortSha": "0a12b43",
-                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-                "date": "2026-10-18T21:12:57Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-                "shortSha": "20c28d9",
-                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-                "date": "2026-10-18T18:07:30Z",
-                "author": "renovate[bot]"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -639,7 +467,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-20T04:47:41.925Z",
+            "checkedAt": "2026-10-20T04:56:48.802Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -658,7 +486,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-20T04:47:42.772Z",
+            "checkedAt": "2026-10-20T04:56:49.693Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -777,7 +605,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-20T04:47:48.499Z",
+            "checkedAt": "2026-10-20T04:56:55.452Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -796,7 +624,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-20T04:47:49.437Z",
+            "checkedAt": "2026-10-20T04:56:56.372Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
