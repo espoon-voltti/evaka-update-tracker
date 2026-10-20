@@ -1,6 +1,255 @@
 {
   "events": [
     {
+      "id": "2026-10-20T02:10:45.632Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-10-20T02:10:45.632Z",
+      "previousCommit": {
+        "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+        "shortSha": "20c28d9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+        "shortSha": "fb1cb39",
+        "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+        "date": "2026-10-19T12:12:07Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10033,
+          "title": "CI:n nopeutus",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-19T12:12:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10033",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10031,
+          "title": "Tietojen poiston optimointi",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-19T06:37:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10031",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10035,
+          "title": "Vain pääkäyttäjä voi muokata ryhmän henkilökuntamääriä",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-19T06:37:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10035",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10081,
+          "title": "Poistetaan servicen käyttämättömät riippuvuudet",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-19T06:04:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10081",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10075,
+          "title": "Update dependency styled-components to v6.6.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:53:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10075",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10070,
+          "title": "Update dependency ipaddr.js to v2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:53:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10070",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10069,
+          "title": "Update sentry-javascript monorepo to v11.7.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:52:34Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10069",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10067,
+          "title": "Update flyway to v13.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:52:17Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10067",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10066,
+          "title": "Update docker/dockerfile Docker tag to v1.28.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:52:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10066",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10065,
+          "title": "Update dependency uv to v0.13.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:51:41Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10065",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 10064,
+          "title": "Update dependency lefthook to v2.2.2",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:51:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10064",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 10063,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.67.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:51:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10063",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10062,
+          "title": "Update dependency express to v5.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:50:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10062",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10060,
+          "title": "Update dependency com.datadoghq:dd-java-agent to v1.67.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-19T04:46:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10060",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-20T01:03:12.892Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
