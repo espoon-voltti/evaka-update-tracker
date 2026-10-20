@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T04:34:06.174Z",
+  "generatedAt": "2026-10-20T04:47:55.151Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-20T04:33:19.994Z",
+            "checkedAt": "2026-10-20T04:46:48.062Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-20T04:33:20.599Z",
+            "checkedAt": "2026-10-20T04:46:49.211Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -117,7 +117,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -130,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-20T04:33:25.239Z",
+            "checkedAt": "2026-10-20T04:46:54.817Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -155,33 +173,204 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-20T04:33:33.404Z",
+            "checkedAt": "2026-10-20T04:47:06.277Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
-              "shortSha": "0a12b43",
-              "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
-              "date": "2026-10-18T21:12:57Z",
+              "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+              "shortSha": "c112ffb",
+              "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+              "date": "2026-10-19T21:14:53Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
-              "shortSha": "20c28d9",
-              "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
-              "date": "2026-10-18T18:07:30Z",
-              "author": "renovate[bot]"
+              "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+              "shortSha": "fb1cb39",
+              "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+              "date": "2026-10-19T12:12:07Z",
+              "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-10-20T04:47:06.277Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-10-20T04:47:07.507Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-10-20T04:47:08.729Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-10-20T04:47:09.892Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-10-20T04:47:10.998Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-10-20T04:47:12.182Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-10-20T04:47:13.331Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-10-20T04:47:14.515Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-10-20T04:47:15.641Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "0a12b43a3c4505c7e9e54add7629767bf1bfd6e5",
+                "shortSha": "0a12b43",
+                "message": "Merge pull request #2268 from Tampere/dependabot/submodules/evaka-20c28d9",
+                "date": "2026-10-18T21:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "20c28d98583b69744c4eb02c299805d01ed5d55d",
+                "shortSha": "20c28d9",
+                "message": "Update dependency com.auth0:java-jwt to v4.6.2 (#10080)",
+                "date": "2026-10-18T18:07:30Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 2269,
               "title": "Upgrade Terraform to 1.16 and AWS provider to 6.x",
@@ -195,12 +384,79 @@
               "url": "https://github.com/Tampere/trevaka/pull/2269",
               "labels": []
             }
-          ]
+          ],
+          "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10033,
+              "title": "CI:n nopeutus",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-19T12:12:07Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10033",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10031,
+              "title": "Tietojen poiston optimointi",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-19T06:37:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10031",
+              "labels": [
+                "tech",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 10035,
+              "title": "Vain pääkäyttäjä voi muokata ryhmän henkilökuntamääriä",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-19T06:37:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10035",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 10081,
+              "title": "Poistetaan servicen käyttämättömät riippuvuudet",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-19T06:04:35Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10081",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 9983,
               "title": "Kuntalaisen salasanakirjautumisen IP-osoitekohtainen rajoitus",
@@ -354,69 +610,20 @@
           ],
           "pendingDeployment": [
             {
-              "number": 10033,
-              "title": "CI:n nopeutus",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-19T12:12:07Z",
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10033",
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
               "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10031,
-              "title": "Tietojen poiston optimointi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-19T06:37:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10031",
-              "labels": [
-                "tech",
+                "bugfix",
                 "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 10035,
-              "title": "Vain pääkäyttäjä voi muokata ryhmän henkilökuntamääriä",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-19T06:37:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10035",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10081,
-              "title": "Poistetaan servicen käyttämättömät riippuvuudet",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-19T06:04:35Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10081",
-              "labels": [
-                "tech",
-                "core"
+                "citizen"
               ]
             }
           ]
@@ -432,7 +639,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-20T04:33:55.669Z",
+            "checkedAt": "2026-10-20T04:47:41.925Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -451,7 +658,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-20T04:33:56.412Z",
+            "checkedAt": "2026-10-20T04:47:42.772Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -539,7 +746,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     },
@@ -552,7 +777,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-20T04:34:00.861Z",
+            "checkedAt": "2026-10-20T04:47:48.499Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -571,7 +796,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-20T04:34:01.672Z",
+            "checkedAt": "2026-10-20T04:47:49.437Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -659,7 +884,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     }
