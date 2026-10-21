@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T04:22:24.197Z",
+  "generatedAt": "2026-10-21T04:38:49.461Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-21T04:21:36.414Z",
+            "checkedAt": "2026-10-21T04:37:49.262Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-21T04:21:37.248Z",
+            "checkedAt": "2026-10-21T04:37:50.159Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-21T04:21:39.224Z",
+            "checkedAt": "2026-10-21T04:37:52.412Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "8c6b4a83257a3d0ae117e5ffbeb4f7bb3f274121",
@@ -106,25 +106,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-21T04:21:49.649Z",
+            "checkedAt": "2026-10-21T04:38:04.968Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
-              "shortSha": "c112ffb",
-              "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
-              "date": "2026-10-19T21:14:53Z",
+              "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+              "shortSha": "eb38f48",
+              "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+              "date": "2026-10-20T21:14:32Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
-              "shortSha": "fb1cb39",
-              "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
-              "date": "2026-10-19T12:12:07Z",
+              "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+              "shortSha": "b227679",
+              "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+              "date": "2026-10-20T11:27:01Z",
               "author": "akheron"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-10-21T04:38:04.968Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-10-21T04:38:06.354Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-10-21T04:38:07.645Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-10-21T04:38:09.103Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-10-21T04:38:10.526Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-10-21T04:38:11.920Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-10-21T04:38:13.336Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-10-21T04:38:14.727Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-10-21T04:38:15.998Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c112ffb7f5f6d385a1faa4b69ec67d6a4df6af27",
+                "shortSha": "c112ffb",
+                "message": "Merge pull request #2270 from Tampere/dependabot/submodules/evaka-fb1cb39",
+                "date": "2026-10-19T21:14:53Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "fb1cb399127e4b66226d42025ff42ff3e8f0305e",
+                "shortSha": "fb1cb39",
+                "message": "Merge pull request #10033 from espoon-voltti/ci-speedup",
+                "date": "2026-10-19T12:12:07Z",
+                "author": "akheron"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -152,6 +324,57 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10085,
+              "title": "Kuntalaisen PWA tuotantoon Tampereella ja seutukunnissa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-20T11:27:02Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10085",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "citizen"
+              ]
+            },
+            {
+              "number": 9928,
+              "title": "Vanhentuneiden viestien poiston linkitys deklaratiiviseen poistoon",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T05:38:27Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/9928",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 10082,
+              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-20T04:46:52Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
+            },
             {
               "number": 10033,
               "title": "CI:n nopeutus",
@@ -369,59 +592,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10085,
-              "title": "Kuntalaisen PWA tuotantoon Tampereella ja seutukunnissa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-20T11:27:02Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10085",
-              "labels": [
-                "enhancement",
-                "seutu",
-                "citizen"
-              ]
-            },
-            {
-              "number": 9928,
-              "title": "Vanhentuneiden viestien poiston linkitys deklaratiiviseen poistoon",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-20T05:38:27Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/9928",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 10082,
-              "title": "Sallitaan yli 10 localea Accept-Language headerissa",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-20T04:46:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10082",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -434,7 +605,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-21T04:22:18.268Z",
+            "checkedAt": "2026-10-21T04:38:43.067Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -453,7 +624,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-21T04:22:19.343Z",
+            "checkedAt": "2026-10-21T04:38:44.026Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -505,7 +676,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-21T04:22:21.433Z",
+            "checkedAt": "2026-10-21T04:38:46.429Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -524,7 +695,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-21T04:22:22.150Z",
+            "checkedAt": "2026-10-21T04:38:47.311Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
