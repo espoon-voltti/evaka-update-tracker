@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T04:37:41.623Z",
+  "generatedAt": "2026-10-22T04:47:02.265Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-22T04:37:04.280Z",
+            "checkedAt": "2026-10-22T04:46:34.076Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-22T04:37:05.056Z",
+            "checkedAt": "2026-10-22T04:46:34.798Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-22T04:37:08.103Z",
+            "checkedAt": "2026-10-22T04:46:37.137Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-22T04:37:18.395Z",
+            "checkedAt": "2026-10-22T04:46:45.495Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c6e26c5197ffa726324bd47d00da2e0c19f1f642",
@@ -140,180 +140,8 @@
               "author": "akheron"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-10-22T04:37:18.395Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "c6e26c5197ffa726324bd47d00da2e0c19f1f642",
-                "shortSha": "c6e26c5",
-                "message": "Merge pull request #2273 from Tampere/dependabot/submodules/evaka-63bc94b",
-                "date": "2026-10-21T21:13:07Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "63bc94bf8143b7243c5d0191aac35875f4eb7f27",
-                "shortSha": "63bc94b",
-                "message": "Merge pull request #9796 from espoon-voltti/espoo-patu",
-                "date": "2026-10-21T13:58:02Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-10-22T04:37:19.521Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-10-22T04:37:20.589Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-10-22T04:37:21.721Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-10-22T04:37:22.854Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-10-22T04:37:23.994Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-10-22T04:37:25.113Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-10-22T04:37:26.147Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-10-22T04:37:27.256Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-                "shortSha": "eb38f48",
-                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-                "date": "2026-10-20T21:14:32Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-                "shortSha": "b227679",
-                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-                "date": "2026-10-20T11:27:01Z",
-                "author": "akheron"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -340,7 +168,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-22T04:37:34.506Z",
+            "checkedAt": "2026-10-22T04:46:56.031Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -359,7 +187,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-22T04:37:35.328Z",
+            "checkedAt": "2026-10-22T04:46:56.815Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -411,7 +239,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-22T04:37:38.044Z",
+            "checkedAt": "2026-10-22T04:46:59.212Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -430,7 +258,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-22T04:37:38.867Z",
+            "checkedAt": "2026-10-22T04:46:59.747Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
