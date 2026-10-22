@@ -1,6 +1,330 @@
 {
   "events": [
     {
+      "id": "2026-10-22T09:13:43.642Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-10-22T09:13:43.642Z",
+      "previousCommit": {
+        "sha": "76189a54d96a18afea68b53b061fcacbce2d6e0a",
+        "shortSha": "76189a5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "63bc94bf8143b7243c5d0191aac35875f4eb7f27",
+        "shortSha": "63bc94b",
+        "message": "Merge pull request #9796 from espoon-voltti/espoo-patu",
+        "date": "2026-10-21T13:58:02Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9796,
+          "title": "Espoo: Uusi Patu BI-integraatio",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-21T13:58:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9796",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10071,
+          "title": "Update dependency nock to v15",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:14:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10071",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10052,
+          "title": "Update dependency oxlint-tsgolint to v7.0.2004",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T05:30:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10052",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10085,
+          "title": "Kuntalaisen PWA tuotantoon Tampereella ja seutukunnissa",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-20T11:27:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10085",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9928,
+          "title": "Vanhentuneiden viestien poiston linkitys deklaratiiviseen poistoon",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-20T05:38:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9928",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-10-22T09:14:09.459Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-10-22T09:14:09.459Z",
+      "previousCommit": {
+        "sha": "76189a54d96a18afea68b53b061fcacbce2d6e0a",
+        "shortSha": "76189a5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "63bc94bf8143b7243c5d0191aac35875f4eb7f27",
+        "shortSha": "63bc94b",
+        "message": "Merge pull request #9796 from espoon-voltti/espoo-patu",
+        "date": "2026-10-21T13:58:02Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9796,
+          "title": "Espoo: Uusi Patu BI-integraatio",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:58:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9796",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10071,
+          "title": "Update dependency nock to v15",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:14:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10071",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10052,
+          "title": "Update dependency oxlint-tsgolint to v7.0.2004",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T05:30:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10052",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10085,
+          "title": "Kuntalaisen PWA tuotantoon Tampereella ja seutukunnissa",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-20T11:27:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10085",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9928,
+          "title": "Vanhentuneiden viestien poiston linkitys deklaratiiviseen poistoon",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-20T05:38:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9928",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-10-22T09:14:15.022Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-10-22T09:14:15.022Z",
+      "previousCommit": {
+        "sha": "76189a54d96a18afea68b53b061fcacbce2d6e0a",
+        "shortSha": "76189a5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "63bc94bf8143b7243c5d0191aac35875f4eb7f27",
+        "shortSha": "63bc94b",
+        "message": "Merge pull request #9796 from espoon-voltti/espoo-patu",
+        "date": "2026-10-21T13:58:02Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9796,
+          "title": "Espoo: Uusi Patu BI-integraatio",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:58:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9796",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10071,
+          "title": "Update dependency nock to v15",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:14:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10071",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10052,
+          "title": "Update dependency oxlint-tsgolint to v7.0.2004",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T05:30:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10052",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10085,
+          "title": "Kuntalaisen PWA tuotantoon Tampereella ja seutukunnissa",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-20T11:27:02Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10085",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 9928,
+          "title": "Vanhentuneiden viestien poiston linkitys deklaratiiviseen poistoon",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-20T05:38:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9928",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-10-22T04:37:32.351Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
