@@ -1,6 +1,122 @@
 {
   "events": [
     {
+      "id": "2026-10-22T04:37:32.351Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-22T04:37:32.351Z",
+      "previousCommit": {
+        "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+        "shortSha": "eb38f48",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c6e26c5197ffa726324bd47d00da2e0c19f1f642",
+        "shortSha": "c6e26c5",
+        "message": "Merge pull request #2273 from Tampere/dependabot/submodules/evaka-63bc94b",
+        "date": "2026-10-21T21:13:07Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2273,
+          "title": "Build(deps): Bump evaka from `b227679` to `63bc94b`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T21:13:08Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2273",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-22T04:37:32.351Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-22T04:37:32.351Z",
+      "previousCommit": {
+        "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+        "shortSha": "b227679",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "63bc94bf8143b7243c5d0191aac35875f4eb7f27",
+        "shortSha": "63bc94b",
+        "message": "Merge pull request #9796 from espoon-voltti/espoo-patu",
+        "date": "2026-10-21T13:58:02Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9796,
+          "title": "Espoo: Uusi Patu-integraatio",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:58:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9796",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10071,
+          "title": "Update dependency nock to v15",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:14:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10071",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10052,
+          "title": "Update dependency oxlint-tsgolint to v7.0.2004",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T05:30:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10052",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-22T02:12:22.287Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
