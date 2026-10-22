@@ -1,6 +1,81 @@
 {
   "events": [
     {
+      "id": "2026-10-22T00:33:35.672Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-10-22T00:33:35.672Z",
+      "previousCommit": {
+        "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+        "shortSha": "b227679",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "63bc94bf8143b7243c5d0191aac35875f4eb7f27",
+        "shortSha": "63bc94b",
+        "message": "Merge pull request #9796 from espoon-voltti/espoo-patu",
+        "date": "2026-10-21T13:58:02Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 9796,
+          "title": "Espoo: Uusi Patu-integraatio",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:58:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/9796",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10071,
+          "title": "Update dependency nock to v15",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T13:14:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10071",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10052,
+          "title": "Update dependency oxlint-tsgolint to v7.0.2004",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-21T05:30:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10052",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-21T09:36:10.427Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
