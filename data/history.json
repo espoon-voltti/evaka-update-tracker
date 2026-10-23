@@ -1,6 +1,104 @@
 {
   "events": [
     {
+      "id": "2026-10-23T05:47:43.909Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-23T05:47:43.909Z",
+      "previousCommit": {
+        "sha": "c6e26c5197ffa726324bd47d00da2e0c19f1f642",
+        "shortSha": "c6e26c5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
+        "shortSha": "1206cdc",
+        "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
+        "date": "2026-10-22T21:14:46Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2274,
+          "title": "Build(deps): Bump evaka from `63bc94b` to `1c40a83`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-22T21:14:46Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2274",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-23T05:47:43.909Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-23T05:47:43.909Z",
+      "previousCommit": {
+        "sha": "63bc94bf8143b7243c5d0191aac35875f4eb7f27",
+        "shortSha": "63bc94b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
+        "shortSha": "1c40a83",
+        "message": "Update s3-downloader with Renovate (#10084)",
+        "date": "2026-10-22T11:53:45Z",
+        "author": "ilja-git"
+      },
+      "includedPRs": [
+        {
+          "number": 10084,
+          "title": "Päivitetään s3-downloader Renovatella",
+          "author": "ilja-git",
+          "authorName": null,
+          "mergedAt": "2026-10-22T11:53:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10084",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 10083,
+          "title": "Ei huomioida kirjainkokoa sähköpostin vahvistuksessa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-22T06:32:40Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10083",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-23T02:13:56.620Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
