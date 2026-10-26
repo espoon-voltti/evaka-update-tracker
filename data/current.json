@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T05:52:34.650Z",
+  "generatedAt": "2026-10-26T06:00:34.254Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-26T05:51:21.810Z",
+            "checkedAt": "2026-10-26T05:59:23.524Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-26T05:51:22.646Z",
+            "checkedAt": "2026-10-26T05:59:24.456Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -97,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-26T05:51:32.247Z",
+            "checkedAt": "2026-10-26T05:59:34.302Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
@@ -122,7 +122,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-26T05:51:42.818Z",
+            "checkedAt": "2026-10-26T05:59:46.088Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a4f3f6d81050fde6f7495d5791f5ae02539c142f",
@@ -139,180 +139,8 @@
               "author": "renovate[bot]"
             }
           },
-          "versionMismatch": true,
-          "mismatchDetails": [
-            {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-10-26T05:51:42.818Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "a4f3f6d81050fde6f7495d5791f5ae02539c142f",
-                "shortSha": "a4f3f6d",
-                "message": "Merge pull request #2275 from Tampere/dependabot/submodules/evaka-eb4e0c7",
-                "date": "2026-10-25T22:13:27Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "eb4e0c73d2aec90318f6d72ef08b1ac79ffb4474",
-                "shortSha": "eb4e0c7",
-                "message": "Update dependency uv to v0.13.4 (#10121)",
-                "date": "2026-10-25T16:46:03Z",
-                "author": "renovate[bot]"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-10-26T05:51:43.962Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-10-26T05:51:45.082Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-10-26T05:51:46.168Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-10-26T05:51:47.297Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-10-26T05:51:48.468Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-10-26T05:51:49.736Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-10-26T05:51:50.851Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            },
-            {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-10-26T05:51:52.003Z",
-              "status": "ok",
-              "wrapperCommit": {
-                "sha": "1206cdc58302faad32b142cab7215292c4145ef8",
-                "shortSha": "1206cdc",
-                "message": "Merge pull request #2274 from Tampere/dependabot/submodules/evaka-1c40a83",
-                "date": "2026-10-22T21:14:46Z",
-                "author": "github-actions[bot]"
-              },
-              "coreCommit": {
-                "sha": "1c40a8361c75100f43efac04ba88e4388d470109",
-                "shortSha": "1c40a83",
-                "message": "Update s3-downloader with Renovate (#10084)",
-                "date": "2026-10-22T11:53:45Z",
-                "author": "ilja-git"
-              }
-            }
-          ]
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -390,7 +218,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-26T05:52:14.246Z",
+            "checkedAt": "2026-10-26T06:00:10.995Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -409,7 +237,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-26T05:52:15.138Z",
+            "checkedAt": "2026-10-26T06:00:12.277Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -477,7 +305,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-26T05:52:24.466Z",
+            "checkedAt": "2026-10-26T06:00:22.969Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -496,7 +324,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-26T05:52:25.353Z",
+            "checkedAt": "2026-10-26T06:00:23.858Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
