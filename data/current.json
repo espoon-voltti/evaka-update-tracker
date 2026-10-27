@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T05:22:18.658Z",
+  "generatedAt": "2026-10-27T05:37:45.205Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-27T05:21:14.702Z",
+            "checkedAt": "2026-10-27T05:36:16.654Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-27T05:21:15.545Z",
+            "checkedAt": "2026-10-27T05:36:17.508Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -150,7 +150,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-27T05:21:22.441Z",
+            "checkedAt": "2026-10-27T05:36:26.316Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
@@ -175,21 +175,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-27T05:21:32.784Z",
+            "checkedAt": "2026-10-27T05:36:39.002Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "a4f3f6d81050fde6f7495d5791f5ae02539c142f",
-              "shortSha": "a4f3f6d",
-              "message": "Merge pull request #2275 from Tampere/dependabot/submodules/evaka-eb4e0c7",
-              "date": "2026-10-25T22:13:27Z",
+              "sha": "42652262c620397afac6d127e94db44ef6a4fd5d",
+              "shortSha": "4265226",
+              "message": "Merge pull request #2276 from Tampere/dependabot/submodules/evaka-5ad8e0b",
+              "date": "2026-10-26T22:14:30Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "eb4e0c73d2aec90318f6d72ef08b1ac79ffb4474",
-              "shortSha": "eb4e0c7",
-              "message": "Update dependency uv to v0.13.4 (#10121)",
-              "date": "2026-10-25T16:46:03Z",
-              "author": "renovate[bot]"
+              "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
+              "shortSha": "5ad8e0b",
+              "message": "Merge pull request #10090 from espoon-voltti/data-retention-scheduling",
+              "date": "2026-10-26T11:47:07Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -207,58 +207,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 10038,
-              "title": "Arkistointi-integraatioiden tekniset kuvaukset ja esimerkit",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-10-23T13:31:49Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10038",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10037,
-              "title": "Poistosääntöjen kustomointi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-23T09:31:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10037",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 10083,
-              "title": "Ei huomioida kirjainkokoa sähköpostin vahvistuksessa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-22T06:32:40Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10083",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 10090,
               "title": "Tietojen poiston ajastus",
@@ -326,8 +274,59 @@
                 "tech",
                 "core"
               ]
+            },
+            {
+              "number": 10038,
+              "title": "Arkistointi-integraatioiden tekniset kuvaukset ja esimerkit",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-10-23T13:31:49Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10038",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10037,
+              "title": "Poistosääntöjen kustomointi",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-10-23T09:31:42Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10037",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 10083,
+              "title": "Ei huomioida kirjainkokoa sähköpostin vahvistuksessa",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-22T06:32:40Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10083",
+              "labels": [
+                "bugfix",
+                "core",
+                "citizen"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -340,7 +339,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-27T05:22:02.823Z",
+            "checkedAt": "2026-10-27T05:37:26.372Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -359,7 +358,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-27T05:22:03.659Z",
+            "checkedAt": "2026-10-27T05:37:27.361Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -480,7 +479,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-27T05:22:10.871Z",
+            "checkedAt": "2026-10-27T05:37:36.348Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -499,7 +498,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-27T05:22:11.602Z",
+            "checkedAt": "2026-10-27T05:37:37.214Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
