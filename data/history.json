@@ -1,6 +1,64 @@
 {
   "events": [
     {
+      "id": "2026-10-28T02:10:48.009Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-10-28T02:10:48.009Z",
+      "previousCommit": {
+        "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
+        "shortSha": "5ad8e0b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+        "shortSha": "5f420ce",
+        "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+        "date": "2026-10-27T12:20:30Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 10126,
+          "title": "Korjaus Safari-selaimen push-ilmoituksiin kunnan lähettäessä useita ilmoituksia pitkäkestoisesti",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-27T12:20:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10126",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10122,
+          "title": "E2E-testikorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-27T05:46:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10122",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-28T01:07:21.524Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
