@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T10:38:18.769Z",
+  "generatedAt": "2026-10-28T10:44:32.938Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-28T10:37:05.704Z",
+            "checkedAt": "2026-10-28T10:43:08.226Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
-              "shortSha": "5ad8e0b",
-              "message": "Merge pull request #10090 from espoon-voltti/data-retention-scheduling",
-              "date": "2026-10-26T11:47:07Z",
-              "author": "Joosakur"
+              "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+              "shortSha": "5f420ce",
+              "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+              "date": "2026-10-27T12:20:30Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-28T10:37:06.745Z",
+            "checkedAt": "2026-10-28T10:43:10.177Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10126,
               "title": "Korjaus Safari-selaimen push-ilmoituksiin kunnan lähettäessä useita ilmoituksia pitkäkestoisesti",
@@ -84,6 +83,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10127,
@@ -115,32 +115,204 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-28T10:37:10.712Z",
+            "checkedAt": "2026-10-28T10:43:13.460Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
-              "shortSha": "eb38f48",
-              "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
-              "date": "2026-10-20T21:14:32Z",
+              "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
+              "shortSha": "9a609b9",
+              "message": "Merge pull request #2280 from Tampere/dependabot/submodules/evaka-5565b10",
+              "date": "2026-10-28T09:23:06Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
-              "shortSha": "b227679",
-              "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
-              "date": "2026-10-20T11:27:01Z",
-              "author": "akheron"
+              "sha": "5565b105d259236a6b0a88f25ebb1e82647eb2f6",
+              "shortSha": "5565b10",
+              "message": "Merge pull request #10128 from espoon-voltti/vesilahti-varhaiskasvatuspaallikko",
+              "date": "2026-10-28T09:00:57Z",
+              "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-10-28T10:43:13.460Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
+                "shortSha": "9a609b9",
+                "message": "Merge pull request #2280 from Tampere/dependabot/submodules/evaka-5565b10",
+                "date": "2026-10-28T09:23:06Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5565b105d259236a6b0a88f25ebb1e82647eb2f6",
+                "shortSha": "5565b10",
+                "message": "Merge pull request #10128 from espoon-voltti/vesilahti-varhaiskasvatuspaallikko",
+                "date": "2026-10-28T09:00:57Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-10-28T10:43:14.728Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-10-28T10:43:15.912Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-10-28T10:43:16.967Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-10-28T10:43:17.937Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-10-28T10:43:18.972Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-10-28T10:43:20.105Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-10-28T10:43:21.117Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            },
+            {
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-10-28T10:43:22.118Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
+                "shortSha": "eb38f48",
+                "message": "Merge pull request #2272 from Tampere/dependabot/submodules/evaka-b227679",
+                "date": "2026-10-20T21:14:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "b2276794cc6652e8a42ee6b668d18eec465c75f3",
+                "shortSha": "b227679",
+                "message": "Merge pull request #10085 from espoon-voltti/enable-citizen-pwa-tampere-region",
+                "date": "2026-10-20T11:27:01Z",
+                "author": "akheron"
+              }
+            }
+          ]
         },
         {
           "id": "tampere-test",
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-28T10:37:24.575Z",
+            "checkedAt": "2026-10-28T10:43:46.529Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
@@ -164,8 +336,7 @@
       "prTracks": {
         "wrapper": {
           "repository": "Tampere/trevaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 2277,
               "title": "Enable the MCP server in the dev and test environments",
@@ -180,12 +351,12 @@
               "labels": []
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10128,
               "title": "Vesilahden varhaiskasvatusjohtaja -> varhaiskasvatuspäällikkö",
@@ -271,92 +442,28 @@
                 "citizen",
                 "employee"
               ]
-            },
+            }
+          ],
+          "inStaging": [],
+          "pendingDeployment": [
             {
-              "number": 10039,
-              "title": "Korjaus arvopäätösten suodatukseen toimipaikan perusteella",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-26T07:43:56Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10039",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10036,
-              "title": "VTJ-refaktorointi, osa 3",
+              "number": 10124,
+              "title": "VTJ-refaktorointi, osa 4",
               "author": "akheron",
               "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-26T07:01:20Z",
+              "mergedAt": "2026-10-28T10:43:12Z",
               "repository": "espoon-voltti/evaka",
               "repoType": "core",
               "isBot": false,
               "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10036",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10038,
-              "title": "Arkistointi-integraatioiden tekniset kuvaukset ja esimerkit",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-10-23T13:31:49Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10038",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10037,
-              "title": "Poistosääntöjen kustomointi",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-10-23T09:31:42Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10037",
+              "url": "https://github.com/espoon-voltti/evaka/pull/10124",
               "labels": [
                 "enhancement",
                 "core",
                 "not-visible"
               ]
-            },
-            {
-              "number": 10083,
-              "title": "Ei huomioida kirjainkokoa sähköpostin vahvistuksessa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-10-22T06:32:40Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10083",
-              "labels": [
-                "bugfix",
-                "core",
-                "citizen"
-              ]
             }
-          ],
-          "pendingDeployment": []
+          ]
         }
       }
     },
@@ -369,15 +476,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-28T10:38:08.950Z",
+            "checkedAt": "2026-10-28T10:44:21.871Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
-              "shortSha": "5ad8e0b",
-              "message": "Merge pull request #10090 from espoon-voltti/data-retention-scheduling",
-              "date": "2026-10-26T11:47:07Z",
-              "author": "Joosakur"
+              "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+              "shortSha": "5f420ce",
+              "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+              "date": "2026-10-27T12:20:30Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -388,7 +495,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-28T10:38:10.152Z",
+            "checkedAt": "2026-10-28T10:44:23.702Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -407,8 +514,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10126,
               "title": "Korjaus Safari-selaimen push-ilmoituksiin kunnan lähettäessä useita ilmoituksia pitkäkestoisesti",
@@ -443,7 +549,26 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 10124,
+              "title": "VTJ-refaktorointi, osa 4",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-28T10:43:12Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10124",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     },
@@ -456,15 +581,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-28T10:38:14.033Z",
+            "checkedAt": "2026-10-28T10:44:27.382Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
-              "shortSha": "5ad8e0b",
-              "message": "Merge pull request #10090 from espoon-voltti/data-retention-scheduling",
-              "date": "2026-10-26T11:47:07Z",
-              "author": "Joosakur"
+              "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+              "shortSha": "5f420ce",
+              "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+              "date": "2026-10-27T12:20:30Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -475,7 +600,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-28T10:38:14.946Z",
+            "checkedAt": "2026-10-28T10:44:29.468Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -494,8 +619,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10126,
               "title": "Korjaus Safari-selaimen push-ilmoituksiin kunnan lähettäessä useita ilmoituksia pitkäkestoisesti",
@@ -530,7 +654,26 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 10124,
+              "title": "VTJ-refaktorointi, osa 4",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-10-28T10:43:12Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10124",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            }
+          ]
         }
       }
     }
