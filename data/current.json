@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T09:31:24.096Z",
+  "generatedAt": "2026-10-28T09:39:13.022Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-28T09:30:23.682Z",
+            "checkedAt": "2026-10-28T09:37:58.725Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-10-28T09:30:24.510Z",
+            "checkedAt": "2026-10-28T09:37:59.605Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -97,7 +97,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-28T09:30:27.585Z",
+            "checkedAt": "2026-10-28T09:38:03.082Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "eb38f48b9637b5547fd6b789572197110e34f369",
@@ -122,25 +122,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-10-28T09:30:38.603Z",
+            "checkedAt": "2026-10-28T09:38:17.030Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
-              "shortSha": "81b2aa7",
-              "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
-              "date": "2026-10-27T22:14:17Z",
+              "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
+              "shortSha": "9a609b9",
+              "message": "Merge pull request #2280 from Tampere/dependabot/submodules/evaka-5565b10",
+              "date": "2026-10-28T09:23:06Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
-              "shortSha": "5f420ce",
-              "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
-              "date": "2026-10-27T12:20:30Z",
+              "sha": "5565b105d259236a6b0a88f25ebb1e82647eb2f6",
+              "shortSha": "5565b10",
+              "message": "Merge pull request #10128 from espoon-voltti/vesilahti-varhaiskasvatuspaallikko",
+              "date": "2026-10-28T09:00:57Z",
               "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-10-28T09:38:17.030Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
+                "shortSha": "9a609b9",
+                "message": "Merge pull request #2280 from Tampere/dependabot/submodules/evaka-5565b10",
+                "date": "2026-10-28T09:23:06Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5565b105d259236a6b0a88f25ebb1e82647eb2f6",
+                "shortSha": "5565b10",
+                "message": "Merge pull request #10128 from espoon-voltti/vesilahti-varhaiskasvatuspaallikko",
+                "date": "2026-10-28T09:00:57Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-10-28T09:38:18.599Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-10-28T09:38:20.183Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-10-28T09:38:21.733Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-10-28T09:38:23.194Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-10-28T09:38:24.715Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-10-28T09:38:26.196Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-10-28T09:38:27.608Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-10-28T09:38:29.056Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+                "shortSha": "81b2aa7",
+                "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+                "date": "2026-10-27T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+                "shortSha": "5f420ce",
+                "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+                "date": "2026-10-27T12:20:30Z",
+                "author": "terolaakso-reaktor"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -168,6 +340,24 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10128,
+              "title": "Vesilahden varhaiskasvatusjohtaja -> varhaiskasvatuspäällikkö",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-10-28T09:00:58Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10128",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "citizen",
+                "employee"
+              ]
+            },
             {
               "number": 10126,
               "title": "Korjaus Safari-selaimen push-ilmoituksiin kunnan lähettäessä useita ilmoituksia pitkäkestoisesti",
@@ -320,26 +510,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10128,
-              "title": "Vesilahden varhaiskasvatusjohtaja -> varhaiskasvatuspäällikkö",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-10-28T09:00:58Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10128",
-              "labels": [
-                "enhancement",
-                "seutu",
-                "citizen",
-                "employee"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -352,7 +523,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-28T09:31:16.318Z",
+            "checkedAt": "2026-10-28T09:39:03.741Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -371,7 +542,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-10-28T09:31:17.202Z",
+            "checkedAt": "2026-10-28T09:39:04.835Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -439,7 +610,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-10-28T09:31:20.370Z",
+            "checkedAt": "2026-10-28T09:39:08.334Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -458,7 +629,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-10-28T09:31:21.134Z",
+            "checkedAt": "2026-10-28T09:39:09.332Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {

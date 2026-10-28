@@ -1,6 +1,90 @@
 {
   "events": [
     {
+      "id": "2026-10-28T09:38:35.070Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-28T09:38:35.070Z",
+      "previousCommit": {
+        "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+        "shortSha": "81b2aa7",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
+        "shortSha": "9a609b9",
+        "message": "Merge pull request #2280 from Tampere/dependabot/submodules/evaka-5565b10",
+        "date": "2026-10-28T09:23:06Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2280,
+          "title": "Build(deps): Bump evaka from `5f420ce` to `5565b10`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-28T09:23:07Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2280",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-28T09:38:35.070Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-28T09:38:35.070Z",
+      "previousCommit": {
+        "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+        "shortSha": "5f420ce",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5565b105d259236a6b0a88f25ebb1e82647eb2f6",
+        "shortSha": "5565b10",
+        "message": "Merge pull request #10128 from espoon-voltti/vesilahti-varhaiskasvatuspaallikko",
+        "date": "2026-10-28T09:00:57Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 10128,
+          "title": "Vesilahden varhaiskasvatusjohtaja -> varhaiskasvatuspäällikkö",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-28T09:00:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10128",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-28T06:16:55.395Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
