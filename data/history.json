@@ -1,6 +1,118 @@
 {
   "events": [
     {
+      "id": "2026-10-28T06:16:55.395Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-28T06:16:55.395Z",
+      "previousCommit": {
+        "sha": "42652262c620397afac6d127e94db44ef6a4fd5d",
+        "shortSha": "4265226",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "81b2aa7cba5afbc129704b0e7ea320e9c12b2877",
+        "shortSha": "81b2aa7",
+        "message": "Merge pull request #2279 from Tampere/dependabot/submodules/evaka-5f420ce",
+        "date": "2026-10-27T22:14:17Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2279,
+          "title": "Build(deps): Bump evaka from `5ad8e0b` to `5f420ce`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-27T22:14:18Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2279",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        },
+        {
+          "number": 2277,
+          "title": "Enable the MCP server in the dev and test environments",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-27T12:54:51Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/Tampere/trevaka/pull/2277",
+          "labels": []
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-28T06:16:55.395Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-28T06:16:55.395Z",
+      "previousCommit": {
+        "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
+        "shortSha": "5ad8e0b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+        "shortSha": "5f420ce",
+        "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
+        "date": "2026-10-27T12:20:30Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 10126,
+          "title": "Korjaus Safari-selaimen push-ilmoituksiin kunnan lähettäessä useita ilmoituksia pitkäkestoisesti",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-10-27T12:20:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10126",
+          "labels": [
+            "bugfix",
+            "core",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10122,
+          "title": "E2E-testikorjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-27T05:46:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10122",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-28T02:10:48.009Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
