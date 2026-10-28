@@ -1,6 +1,83 @@
 {
   "events": [
     {
+      "id": "2026-10-28T13:27:23.004Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-10-28T13:27:23.004Z",
+      "previousCommit": {
+        "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+        "shortSha": "5f420ce",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "6ba81cabfed9500ddf07c2c157bb135fd3a192d3",
+        "shortSha": "6ba81ca",
+        "message": "Add an employee page that draws the data retention schema graph",
+        "date": "2026-09-21T09:11:11Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10124,
+          "title": "VTJ-refaktorointi, osa 4",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-28T10:43:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10124",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10127,
+          "title": "Maininta maksullisuudesta Espoon vaka-päätöksiin",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-28T10:03:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10127",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10128,
+          "title": "Vesilahden varhaiskasvatusjohtaja -> varhaiskasvatuspäällikkö",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-10-28T09:00:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10128",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": false,
+      "branch": "data-retention-graph"
+    },
+    {
       "id": "2026-10-28T10:43:10.177Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
