@@ -1,6 +1,106 @@
 {
   "events": [
     {
+      "id": "2026-10-29T06:55:49.584Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-29T06:55:49.584Z",
+      "previousCommit": {
+        "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
+        "shortSha": "9a609b9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "8b3db1e20cc09902ea8774fcae25b82e2201515e",
+        "shortSha": "8b3db1e",
+        "message": "Merge pull request #2281 from Tampere/dependabot/submodules/evaka-ec2aba8",
+        "date": "2026-10-28T22:13:20Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2281,
+          "title": "Build(deps): Bump evaka from `5565b10` to `ec2aba8`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-28T22:13:21Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2281",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-29T06:55:49.584Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-29T06:55:49.584Z",
+      "previousCommit": {
+        "sha": "5565b105d259236a6b0a88f25ebb1e82647eb2f6",
+        "shortSha": "5565b10",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ec2aba87e4b50e367fa8e06d06df6974cd60594f",
+        "shortSha": "ec2aba8",
+        "message": "Merge pull request #10124 from espoon-voltti/vtj-sync-add-children-to-families",
+        "date": "2026-10-28T10:43:12Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10124,
+          "title": "VTJ-refaktorointi, osa 4",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-28T10:43:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10124",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10127,
+          "title": "Maininta maksullisuudesta Espoon vaka-päätöksiin",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-10-28T10:03:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10127",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-29T01:42:35.877Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
