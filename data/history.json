@@ -1,6 +1,65 @@
 {
   "events": [
     {
+      "id": "2026-10-29T10:16:26.148Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-10-29T10:16:26.148Z",
+      "previousCommit": {
+        "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
+        "shortSha": "5f420ce",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a97e58bf3036d568273d39ee57a5ea2d0eeb789d",
+        "shortSha": "a97e58b",
+        "message": "Merge pull request #10127 from espoon-voltti/daycare-decision-fee-info",
+        "date": "2026-10-28T10:03:00Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10127,
+          "title": "Maininta maksullisuudesta Espoon vaka-päätöksiin",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-10-28T10:03:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10127",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10128,
+          "title": "Vesilahden varhaiskasvatusjohtaja -> varhaiskasvatuspäällikkö",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-10-28T09:00:58Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10128",
+          "labels": [
+            "enhancement",
+            "seutu",
+            "citizen",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-10-29T06:55:49.584Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
