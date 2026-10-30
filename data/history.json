@@ -1,6 +1,114 @@
 {
   "events": [
     {
+      "id": "2026-10-30T02:10:20.811Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-10-30T02:10:20.811Z",
+      "previousCommit": {
+        "sha": "a97e58bf3036d568273d39ee57a5ea2d0eeb789d",
+        "shortSha": "a97e58b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c1090111f6034e2130a637beb15599cd02be76b7",
+        "shortSha": "c109011",
+        "message": "Merge pull request #10133 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/qs-6.17.1",
+        "date": "2026-10-29T11:39:51Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10133,
+          "title": "Bump qs from 6.16.0 to 6.17.1 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-29T11:39:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10133",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10136,
+          "title": "Korjataan flaky integraatiotesti",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-29T11:27:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10136",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10129,
+          "title": "Päättyneet ryhmät viestinnässä enemmän piiloon",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-29T11:24:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10129",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10131,
+          "title": "Turku: Korjataan mihin pitää olla yhteydessä perhekoon muutoksista",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-10-29T09:37:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10131",
+          "labels": [
+            "enhancement",
+            "turku",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10124,
+          "title": "VTJ-refaktorointi, osa 4",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-28T10:43:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10124",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-30T01:49:36.988Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
