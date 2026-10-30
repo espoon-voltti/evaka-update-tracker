@@ -1,6 +1,138 @@
 {
   "events": [
     {
+      "id": "2026-10-30T05:49:08.750Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-30T05:49:08.750Z",
+      "previousCommit": {
+        "sha": "8b3db1e20cc09902ea8774fcae25b82e2201515e",
+        "shortSha": "8b3db1e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "4871a7ec575104bbe0775fce64c35c032e4e3933",
+        "shortSha": "4871a7e",
+        "message": "Merge pull request #2282 from Tampere/dependabot/submodules/evaka-c109011",
+        "date": "2026-10-29T22:14:17Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2282,
+          "title": "Build(deps): Bump evaka from `ec2aba8` to `c109011`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-29T22:14:17Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2282",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-10-30T05:49:08.750Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-10-30T05:49:08.750Z",
+      "previousCommit": {
+        "sha": "ec2aba87e4b50e367fa8e06d06df6974cd60594f",
+        "shortSha": "ec2aba8",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "c1090111f6034e2130a637beb15599cd02be76b7",
+        "shortSha": "c109011",
+        "message": "Merge pull request #10133 from espoon-voltti/dependabot/npm_and_yarn/dummy-idp/qs-6.17.1",
+        "date": "2026-10-29T11:39:51Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10133,
+          "title": "Bump qs from 6.16.0 to 6.17.1 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-10-29T11:39:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10133",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10136,
+          "title": "Korjataan flaky integraatiotesti",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-10-29T11:27:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10136",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10129,
+          "title": "Päättyneet ryhmät viestinnässä enemmän piiloon",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-10-29T11:24:47Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10129",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10131,
+          "title": "Turku: Korjataan mihin pitää olla yhteydessä perhekoon muutoksista",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-10-29T09:37:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10131",
+          "labels": [
+            "enhancement",
+            "turku",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-10-30T02:10:20.811Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
