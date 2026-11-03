@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:49:03.738Z",
+  "generatedAt": "2026-11-03T06:56:11.201Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-03T06:48:04.982Z",
+            "checkedAt": "2026-11-03T06:55:04.332Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-03T06:48:05.719Z",
+            "checkedAt": "2026-11-03T06:55:05.243Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -154,7 +154,25 @@
               ]
             }
           ],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 10132,
+              "title": "Rajataan osoitteiden näyttämistä ja hakua",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-11-03T06:48:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10132",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            }
+          ]
         }
       }
     },
@@ -167,7 +185,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-03T06:48:12.511Z",
+            "checkedAt": "2026-11-03T06:55:13.584Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
@@ -192,7 +210,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-03T06:48:23.652Z",
+            "checkedAt": "2026-11-03T06:55:25.902Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bee9c694ad6f870fd0b2151212a91b8fc909e141",
@@ -426,7 +444,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-03T06:48:48.098Z",
+            "checkedAt": "2026-11-03T06:55:53.524Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -445,7 +463,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-03T06:48:48.949Z",
+            "checkedAt": "2026-11-03T06:55:54.399Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -618,7 +636,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-03T06:48:55.703Z",
+            "checkedAt": "2026-11-03T06:56:02.120Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -637,7 +655,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-03T06:48:56.546Z",
+            "checkedAt": "2026-11-03T06:56:03.371Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
