@@ -1,6 +1,373 @@
 {
   "events": [
     {
+      "id": "2026-11-03T10:13:57.494Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-11-03T10:13:57.494Z",
+      "previousCommit": {
+        "sha": "366f19d4161ae00c3f5cee3674044a1ee903702f",
+        "shortSha": "366f19d",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
+        "shortSha": "caaffc2",
+        "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
+        "date": "2026-11-02T13:17:24Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10123,
+          "title": "Tietojen poistojen säännöstön visualisointityökalu",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-02T13:17:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10123",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10137,
+          "title": "Lasketaan esiopetussijoitukset mukaan täyttöasteisiin myös opetustauoilla",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-02T13:14:44Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10137",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10140,
+          "title": "Näytetään tuen päätösten raportilla myös migroidut päätökset",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-02T13:13:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10140",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10141,
+          "title": "Johtajan tai veon roolin poiston pitää poistaa myös henkilökohtainen mobiili",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-02T13:12:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10141",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10175,
+          "title": "`SyncMissingVtjRelations`-yöajo päälle kaikkissa kunnissa",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-11-02T11:30:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10175",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10176,
+          "title": "Squeeze blank lines in the schema dump without cat -s",
+          "author": "akheron",
+          "authorName": null,
+          "mergedAt": "2026-11-02T10:55:29Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10176",
+          "labels": [
+            "no-changelog"
+          ]
+        },
+        {
+          "number": 10167,
+          "title": "Update dependency com.datadoghq:dd-java-agent to v1.68.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T08:08:27Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10167",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10165,
+          "title": "Update dependency @tanstack/react-query to v5.105.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T08:08:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10165",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10163,
+          "title": "Bump follow-redirects from 1.16.1 to 1.16.2 in /apigw",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T08:08:04Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10163",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10161,
+          "title": "Bump follow-redirects from 1.16.1 to 1.16.2 in /frontend",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T08:06:22Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10161",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10156,
+          "title": "Update flyway to v13.11.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T08:06:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10156",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10138,
+          "title": "Näytetään päiväkirjalla henkilökunnan määrä palveluohjaukselle",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-11-02T08:02:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10138",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "employee"
+          ]
+        },
+        {
+          "number": 10135,
+          "title": "Kuntalaisten osoitteiden hallinnan korjauksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-11-02T07:58:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10135",
+          "labels": [
+            "enhancement",
+            "core",
+            "citizen",
+            "employee"
+          ]
+        },
+        {
+          "number": 10166,
+          "title": "Update dependency @node-saml/node-saml to v5.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:49:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10166",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10159,
+          "title": "Update dependency query-string to v10",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:48:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10159",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10157,
+          "title": "Update sentry-javascript monorepo to v11.9.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:47:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10157",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10155,
+          "title": "Update flyingsaucer to v10.7.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:46:56Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10155",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10153,
+          "title": "Update dependency org.apache.tika:tika-core to v4.2.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:46:43Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10153",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10152,
+          "title": "Update dependency npm:pm2 to v7.1.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:46:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10152",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 10151,
+          "title": "Update dependency chart.js to v4.6.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:29:42Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10151",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10145,
+          "title": "Update Node.js",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-02T07:22:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10145",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-11-03T10:09:37.739Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",

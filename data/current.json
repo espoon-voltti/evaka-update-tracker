@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T10:10:49.526Z",
+  "generatedAt": "2026-11-03T10:14:09.281Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-03T10:09:30.512Z",
+            "checkedAt": "2026-11-03T10:13:03.197Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-03T10:09:37.739Z",
+            "checkedAt": "2026-11-03T10:13:04.124Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,93 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [
-            {
-              "number": 10123,
-              "title": "Tietojen poistojen säännöstön visualisointityökalu",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:17:25Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10123",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10137,
-              "title": "Lasketaan esiopetussijoitukset mukaan täyttöasteisiin myös opetustauoilla",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:14:44Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10137",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10140,
-              "title": "Näytetään tuen päätösten raportilla myös migroidut päätökset",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:13:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10140",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10141,
-              "title": "Johtajan tai veon roolin poiston pitää poistaa myös henkilökohtainen mobiili",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:12:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10141",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10175,
-              "title": "`SyncMissingVtjRelations`-yöajo päälle kaikkissa kunnissa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-02T11:30:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10175",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
@@ -167,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-03T10:09:45.821Z",
+            "checkedAt": "2026-11-03T10:13:06.011Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
@@ -192,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-03T10:09:57.156Z",
+            "checkedAt": "2026-11-03T10:13:19.571Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "bee9c694ad6f870fd0b2151212a91b8fc909e141",
@@ -426,15 +340,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-03T10:10:25.516Z",
+            "checkedAt": "2026-11-03T10:13:49.542Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "366f19d4161ae00c3f5cee3674044a1ee903702f",
-              "shortSha": "366f19d",
-              "message": "Update dependency node-forge to v1.4.2 (#10174)",
-              "date": "2026-11-01T17:06:31Z",
-              "author": "renovate[bot]"
+              "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
+              "shortSha": "caaffc2",
+              "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
+              "date": "2026-11-02T13:17:24Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -445,199 +359,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-03T10:10:26.343Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
-              "shortSha": "caaffc2",
-              "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
-              "date": "2026-11-02T13:17:24Z",
-              "author": "Joosakur"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        }
-      ],
-      "prTracks": {
-        "wrapper": null,
-        "core": {
-          "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
-            {
-              "number": 10123,
-              "title": "Tietojen poistojen säännöstön visualisointityökalu",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:17:25Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10123",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10137,
-              "title": "Lasketaan esiopetussijoitukset mukaan täyttöasteisiin myös opetustauoilla",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:14:44Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10137",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10140,
-              "title": "Näytetään tuen päätösten raportilla myös migroidut päätökset",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:13:03Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10140",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10141,
-              "title": "Johtajan tai veon roolin poiston pitää poistaa myös henkilökohtainen mobiili",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-02T13:12:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10141",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10175,
-              "title": "`SyncMissingVtjRelations`-yöajo päälle kaikkissa kunnissa",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-02T11:30:29Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10175",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 10138,
-              "title": "Näytetään päiväkirjalla henkilökunnan määrä palveluohjaukselle",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-11-02T08:02:31Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10138",
-              "labels": [
-                "enhancement",
-                "oulu",
-                "employee"
-              ]
-            },
-            {
-              "number": 10135,
-              "title": "Kuntalaisten osoitteiden hallinnan korjauksia",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-02T07:58:52Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10135",
-              "labels": [
-                "enhancement",
-                "core",
-                "citizen",
-                "employee"
-              ]
-            }
-          ],
-          "pendingDeployment": [
-            {
-              "number": 10132,
-              "title": "Rajataan osoitteiden näyttämistä ja hakua",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-03T06:48:28Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10132",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "id": "turku",
-      "name": "Turku",
-      "environments": [
-        {
-          "id": "turku-prod",
-          "type": "production",
-          "version": {
-            "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-03T10:10:34.284Z",
-            "status": "ok",
-            "wrapperCommit": null,
-            "coreCommit": {
-              "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
-              "shortSha": "caaffc2",
-              "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
-              "date": "2026-11-02T13:17:24Z",
-              "author": "Joosakur"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        },
-        {
-          "id": "turku-staging",
-          "type": "staging",
-          "version": {
-            "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-03T10:10:41.388Z",
+            "checkedAt": "2026-11-03T10:13:57.494Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -743,6 +465,77 @@
               ]
             }
           ],
+          "inStaging": [],
+          "pendingDeployment": [
+            {
+              "number": 10132,
+              "title": "Rajataan osoitteiden näyttämistä ja hakua",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-11-03T06:48:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10132",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "turku",
+      "name": "Turku",
+      "environments": [
+        {
+          "id": "turku-prod",
+          "type": "production",
+          "version": {
+            "instanceDomain": "evaka.turku.fi",
+            "checkedAt": "2026-11-03T10:14:06.315Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
+              "shortSha": "caaffc2",
+              "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
+              "date": "2026-11-02T13:17:24Z",
+              "author": "Joosakur"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        },
+        {
+          "id": "turku-staging",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "staging-evaka.turku.fi",
+            "checkedAt": "2026-11-03T10:14:07.164Z",
+            "status": "ok",
+            "wrapperCommit": null,
+            "coreCommit": {
+              "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
+              "shortSha": "caaffc2",
+              "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
+              "date": "2026-11-02T13:17:24Z",
+              "author": "Joosakur"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
+        }
+      ],
+      "prTracks": {
+        "wrapper": null,
+        "core": {
+          "repository": "espoon-voltti/evaka",
+          "deployed": [],
           "inStaging": [],
           "pendingDeployment": [
             {
