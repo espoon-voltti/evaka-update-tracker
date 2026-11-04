@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T10:30:08.107Z",
+  "generatedAt": "2026-11-04T10:45:57.187Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-04T10:29:14.945Z",
+            "checkedAt": "2026-11-04T10:44:49.053Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-04T10:29:15.838Z",
+            "checkedAt": "2026-11-04T10:44:50.030Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -98,7 +98,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-04T10:29:18.772Z",
+            "checkedAt": "2026-11-04T10:44:53.408Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "9a609b9e4b12c59276dd3564a41d3eaa1c613996",
@@ -123,7 +123,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-04T10:29:31.161Z",
+            "checkedAt": "2026-11-04T10:45:09.354Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "aecf7a51a957b038a14444062ca98173b4e7faeb",
@@ -373,14 +373,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-04T10:29:59.836Z",
+            "checkedAt": "2026-11-04T10:45:43.637Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
-              "shortSha": "caaffc2",
-              "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
-              "date": "2026-11-02T13:17:24Z",
+              "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
+              "shortSha": "2ad3203",
+              "message": "Merge pull request #10177 from espoon-voltti/data-retention-simulated-now",
+              "date": "2026-11-03T13:44:07Z",
               "author": "Joosakur"
             }
           },
@@ -392,7 +392,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-04T10:30:00.719Z",
+            "checkedAt": "2026-11-04T10:45:46.837Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -411,8 +411,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10177,
               "title": "Tietojen poiston simuloiminen tulevaisuudessa ajettuna",
@@ -448,6 +447,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -461,14 +461,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-04T10:30:04.091Z",
+            "checkedAt": "2026-11-04T10:45:50.493Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
-              "shortSha": "caaffc2",
-              "message": "Merge pull request #10123 from espoon-voltti/data-retention-graph",
-              "date": "2026-11-02T13:17:24Z",
+              "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
+              "shortSha": "2ad3203",
+              "message": "Merge pull request #10177 from espoon-voltti/data-retention-simulated-now",
+              "date": "2026-11-03T13:44:07Z",
               "author": "Joosakur"
             }
           },
@@ -480,7 +480,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-04T10:30:04.922Z",
+            "checkedAt": "2026-11-04T10:45:53.753Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -499,8 +499,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10177,
               "title": "Tietojen poiston simuloiminen tulevaisuudessa ajettuna",
@@ -536,6 +535,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
