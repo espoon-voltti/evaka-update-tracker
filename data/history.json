@@ -1,6 +1,156 @@
 {
   "events": [
     {
+      "id": "2026-11-04T05:26:00.931Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-04T05:26:00.931Z",
+      "previousCommit": {
+        "sha": "bee9c694ad6f870fd0b2151212a91b8fc909e141",
+        "shortSha": "bee9c69",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "aecf7a51a957b038a14444062ca98173b4e7faeb",
+        "shortSha": "aecf7a5",
+        "message": "Merge pull request #2287 from Tampere/dependabot/submodules/evaka-2ad3203",
+        "date": "2026-11-03T22:14:59Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2287,
+          "title": "Build(deps): Bump evaka from `caaffc2` to `2ad3203`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-03T22:15:00Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2287",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-11-04T05:26:00.931Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-04T05:26:00.931Z",
+      "previousCommit": {
+        "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
+        "shortSha": "caaffc2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
+        "shortSha": "2ad3203",
+        "message": "Merge pull request #10177 from espoon-voltti/data-retention-simulated-now",
+        "date": "2026-11-03T13:44:07Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10177,
+          "title": "Tietojen poiston simuloiminen tulevaisuudessa ajettuna",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-03T13:44:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10177",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10172,
+          "title": "Update dependency oxfmt to v0.75.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-03T12:37:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10172",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10181,
+          "title": "Bump body-parser from 2.3.0 to 2.4.0 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-03T11:32:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10181",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10171,
+          "title": "Update dependency axios to v1.21.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-03T08:18:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10171",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10132,
+          "title": "Rajataan osoitteiden näyttämistä ja hakua",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-03T06:48:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10132",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-04T02:09:58.259Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
