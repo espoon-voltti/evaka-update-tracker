@@ -1,6 +1,114 @@
 {
   "events": [
     {
+      "id": "2026-11-04T10:56:58.260Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-11-04T10:56:58.260Z",
+      "previousCommit": {
+        "sha": "caaffc22edfb8665e5706b06c2ea7e22f1467937",
+        "shortSha": "caaffc2",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
+        "shortSha": "2ad3203",
+        "message": "Merge pull request #10177 from espoon-voltti/data-retention-simulated-now",
+        "date": "2026-11-03T13:44:07Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10177,
+          "title": "Tietojen poiston simuloiminen tulevaisuudessa ajettuna",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-03T13:44:07Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10177",
+          "labels": [
+            "tech",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10172,
+          "title": "Update dependency oxfmt to v0.75.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-03T12:37:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10172",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10181,
+          "title": "Bump body-parser from 2.3.0 to 2.4.0 in /dummy-idp",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-03T11:32:03Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10181",
+          "labels": [
+            "dependencies",
+            "javascript"
+          ]
+        },
+        {
+          "number": 10171,
+          "title": "Update dependency axios to v1.21.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-03T08:18:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10171",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10132,
+          "title": "Rajataan osoitteiden näyttämistä ja hakua",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-03T06:48:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10132",
+          "labels": [
+            "enhancement",
+            "core",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-11-04T10:45:46.836Z_oulu-prod_core",
       "environmentId": "oulu-prod",
       "cityGroupId": "oulu",
