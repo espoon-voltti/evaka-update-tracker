@@ -1,6 +1,113 @@
 {
   "events": [
     {
+      "id": "2026-11-06T02:08:18.281Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-11-06T02:08:18.281Z",
+      "previousCommit": {
+        "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
+        "shortSha": "2ad3203",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+        "shortSha": "3d7f6ce",
+        "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+        "date": "2026-11-05T13:55:38Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 10178,
+          "title": "SAML-kirjautumiseen evästetarkistus osa 1",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-05T13:55:38Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10178",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10183,
+          "title": "VTJ-refaktorointi, osa 6",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-11-05T12:56:16Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10183",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10179,
+          "title": "VTJ-refaktorointi, osa 5",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-11-05T12:56:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10179",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10182,
+          "title": "Duplikaattilapset tietojen poistossa",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-05T09:09:57Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10182",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10180,
+          "title": "Palveluseteliraportti tietojen poistossa",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-05T08:21:12Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10180",
+          "labels": [
+            "enhancement",
+            "core",
+            "not-visible"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-04T11:37:47.170Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
