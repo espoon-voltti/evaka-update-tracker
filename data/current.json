@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T10:03:09.054Z",
+  "generatedAt": "2026-11-06T10:10:39.418Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-06T10:02:31.318Z",
+            "checkedAt": "2026-11-06T10:09:48.887Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
-              "shortSha": "2ad3203",
-              "message": "Merge pull request #10177 from espoon-voltti/data-retention-simulated-now",
-              "date": "2026-11-03T13:44:07Z",
-              "author": "Joosakur"
+              "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+              "shortSha": "3d7f6ce",
+              "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+              "date": "2026-11-05T13:55:38Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-06T10:02:32.054Z",
+            "checkedAt": "2026-11-06T10:09:51.863Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10178,
               "title": "SAML-kirjautumiseen evästetarkistus osa 1",
@@ -133,6 +132,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10189,
@@ -214,7 +214,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-06T10:02:36.118Z",
+            "checkedAt": "2026-11-06T10:09:56.567Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "aecf7a51a957b038a14444062ca98173b4e7faeb",
@@ -239,7 +239,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-06T10:02:45.693Z",
+            "checkedAt": "2026-11-06T10:10:08.442Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
@@ -435,15 +435,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-06T10:02:59.362Z",
+            "checkedAt": "2026-11-06T10:10:25.046Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
-              "shortSha": "2ad3203",
-              "message": "Merge pull request #10177 from espoon-voltti/data-retention-simulated-now",
-              "date": "2026-11-03T13:44:07Z",
-              "author": "Joosakur"
+              "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+              "shortSha": "3d7f6ce",
+              "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+              "date": "2026-11-05T13:55:38Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -454,7 +454,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-06T10:03:00.115Z",
+            "checkedAt": "2026-11-06T10:10:27.718Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -473,8 +473,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10178,
               "title": "SAML-kirjautumiseen evästetarkistus osa 1",
@@ -558,6 +557,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10189,
@@ -639,15 +639,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-06T10:03:04.142Z",
+            "checkedAt": "2026-11-06T10:10:32.195Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "2ad3203f7cf66db9f0ddc15008585b1c283fc07c",
-              "shortSha": "2ad3203",
-              "message": "Merge pull request #10177 from espoon-voltti/data-retention-simulated-now",
-              "date": "2026-11-03T13:44:07Z",
-              "author": "Joosakur"
+              "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+              "shortSha": "3d7f6ce",
+              "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+              "date": "2026-11-05T13:55:38Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -658,7 +658,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-06T10:03:04.898Z",
+            "checkedAt": "2026-11-06T10:10:34.869Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -677,8 +677,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10178,
               "title": "SAML-kirjautumiseen evästetarkistus osa 1",
@@ -762,6 +761,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10189,
