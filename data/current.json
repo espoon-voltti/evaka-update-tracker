@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T10:17:31.994Z",
+  "generatedAt": "2026-11-09T10:24:27.750Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-09T10:16:37.217Z",
+            "checkedAt": "2026-11-09T10:23:24.903Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
-              "shortSha": "3d7f6ce",
-              "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
-              "date": "2026-11-05T13:55:38Z",
-              "author": "tomuli"
+              "sha": "d0a23e6ff8702d86e8b6688a520dff8adc2035fb",
+              "shortSha": "d0a23e6",
+              "message": "Update dependency npm:pm2 to v7.1.2 (#10212)",
+              "date": "2026-11-08T17:53:19Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-09T10:16:38.015Z",
+            "checkedAt": "2026-11-09T10:23:30.649Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10190,
               "title": "Päivitykset Espoon esiopetushakemuksen päivämääriin",
@@ -133,25 +132,9 @@
                 "core",
                 "employee"
               ]
-            },
-            {
-              "number": 10187,
-              "title": "Päivitetään poistosääntöjä",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-06T06:48:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10187",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -165,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-09T10:16:45.497Z",
+            "checkedAt": "2026-11-09T10:23:37.061Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "aecf7a51a957b038a14444062ca98173b4e7faeb",
@@ -190,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-09T10:16:56.569Z",
+            "checkedAt": "2026-11-09T10:23:47.067Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "c103133fe3fa9ab6989c7f73dcb4a0c7a7a2f7ee",
@@ -402,15 +385,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-09T10:17:16.196Z",
+            "checkedAt": "2026-11-09T10:24:03.496Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
-              "shortSha": "3d7f6ce",
-              "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
-              "date": "2026-11-05T13:55:38Z",
-              "author": "tomuli"
+              "sha": "d0a23e6ff8702d86e8b6688a520dff8adc2035fb",
+              "shortSha": "d0a23e6",
+              "message": "Update dependency npm:pm2 to v7.1.2 (#10212)",
+              "date": "2026-11-08T17:53:19Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -421,7 +404,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-09T10:17:17.186Z",
+            "checkedAt": "2026-11-09T10:24:09.762Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -440,8 +423,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10186,
               "title": "Hakemuksella ilmoitettua puolisoa ei lisätä perheeseen, jos hän asuu eri osoitteessa",
@@ -508,25 +490,9 @@
                 "core",
                 "employee"
               ]
-            },
-            {
-              "number": 10187,
-              "title": "Päivitetään poistosääntöjä",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-06T06:48:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10187",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -540,15 +506,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-09T10:17:24.063Z",
+            "checkedAt": "2026-11-09T10:24:16.072Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
-              "shortSha": "3d7f6ce",
-              "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
-              "date": "2026-11-05T13:55:38Z",
-              "author": "tomuli"
+              "sha": "d0a23e6ff8702d86e8b6688a520dff8adc2035fb",
+              "shortSha": "d0a23e6",
+              "message": "Update dependency npm:pm2 to v7.1.2 (#10212)",
+              "date": "2026-11-08T17:53:19Z",
+              "author": "renovate[bot]"
             }
           },
           "versionMismatch": false,
@@ -559,7 +525,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-09T10:17:25.082Z",
+            "checkedAt": "2026-11-09T10:24:21.497Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -578,8 +544,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10186,
               "title": "Hakemuksella ilmoitettua puolisoa ei lisätä perheeseen, jos hän asuu eri osoitteessa",
@@ -646,25 +611,9 @@
                 "core",
                 "employee"
               ]
-            },
-            {
-              "number": 10187,
-              "title": "Päivitetään poistosääntöjä",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-06T06:48:21Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10187",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
