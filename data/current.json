@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:01:04.661Z",
+  "generatedAt": "2026-11-09T06:31:15.109Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-09T06:00:20.076Z",
+            "checkedAt": "2026-11-09T06:30:16.418Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-09T06:00:20.719Z",
+            "checkedAt": "2026-11-09T06:30:17.187Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -165,7 +165,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-09T06:00:27.175Z",
+            "checkedAt": "2026-11-09T06:30:23.826Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "aecf7a51a957b038a14444062ca98173b4e7faeb",
@@ -190,25 +190,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-09T06:00:35.684Z",
+            "checkedAt": "2026-11-09T06:30:34.161Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
-              "shortSha": "221491a",
-              "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
-              "date": "2026-11-05T22:14:17Z",
+              "sha": "c103133fe3fa9ab6989c7f73dcb4a0c7a7a2f7ee",
+              "shortSha": "c103133",
+              "message": "Merge pull request #2289 from Tampere/dependabot/submodules/evaka-d0a23e6",
+              "date": "2026-11-08T22:13:38Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
-              "shortSha": "3d7f6ce",
-              "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
-              "date": "2026-11-05T13:55:38Z",
-              "author": "tomuli"
+              "sha": "d0a23e6ff8702d86e8b6688a520dff8adc2035fb",
+              "shortSha": "d0a23e6",
+              "message": "Update dependency npm:pm2 to v7.1.2 (#10212)",
+              "date": "2026-11-08T17:53:19Z",
+              "author": "renovate[bot]"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-11-09T06:30:34.161Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "c103133fe3fa9ab6989c7f73dcb4a0c7a7a2f7ee",
+                "shortSha": "c103133",
+                "message": "Merge pull request #2289 from Tampere/dependabot/submodules/evaka-d0a23e6",
+                "date": "2026-11-08T22:13:38Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d0a23e6ff8702d86e8b6688a520dff8adc2035fb",
+                "shortSha": "d0a23e6",
+                "message": "Update dependency npm:pm2 to v7.1.2 (#10212)",
+                "date": "2026-11-08T17:53:19Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-11-09T06:30:35.348Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-11-09T06:30:36.484Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-11-09T06:30:37.569Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-11-09T06:30:38.678Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-11-09T06:30:39.926Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-11-09T06:30:41.035Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-11-09T06:30:42.183Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-11-09T06:30:43.275Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "221491ae67149a6c8bdd5216e22e8daeefa94f69",
+                "shortSha": "221491a",
+                "message": "Merge pull request #2288 from Tampere/dependabot/submodules/evaka-3d7f6ce",
+                "date": "2026-11-05T22:14:17Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "3d7f6ce626ff5fef5592ea2c48d32ba071d4a2b9",
+                "shortSha": "3d7f6ce",
+                "message": "Merge pull request #10178 from espoon-voltti/saml-login-csrf",
+                "date": "2026-11-05T13:55:38Z",
+                "author": "tomuli"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -222,90 +394,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 10178,
-              "title": "SAML-kirjautumiseen evästetarkistus osa 1",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-11-05T13:55:38Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10178",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10183,
-              "title": "VTJ-refaktorointi, osa 6",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-05T12:56:16Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10183",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10179,
-              "title": "VTJ-refaktorointi, osa 5",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-05T12:56:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10179",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10182,
-              "title": "Duplikaattilapset tietojen poistossa",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-05T09:09:57Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10182",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 10180,
-              "title": "Palveluseteliraportti tietojen poistossa",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-05T08:21:12Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10180",
-              "labels": [
-                "enhancement",
-                "core",
-                "not-visible"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 10186,
               "title": "Hakemuksella ilmoitettua puolisoa ei lisätä perheeseen, jos hän asuu eri osoitteessa",
@@ -389,8 +477,91 @@
                 "core",
                 "not-visible"
               ]
+            },
+            {
+              "number": 10178,
+              "title": "SAML-kirjautumiseen evästetarkistus osa 1",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-11-05T13:55:38Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10178",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10183,
+              "title": "VTJ-refaktorointi, osa 6",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-11-05T12:56:16Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10183",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10179,
+              "title": "VTJ-refaktorointi, osa 5",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-11-05T12:56:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10179",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10182,
+              "title": "Duplikaattilapset tietojen poistossa",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-11-05T09:09:57Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10182",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 10180,
+              "title": "Palveluseteliraportti tietojen poistossa",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-11-05T08:21:12Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10180",
+              "labels": [
+                "enhancement",
+                "core",
+                "not-visible"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -403,7 +574,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-09T06:00:51.879Z",
+            "checkedAt": "2026-11-09T06:31:00.656Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -422,7 +593,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-09T06:00:52.555Z",
+            "checkedAt": "2026-11-09T06:31:01.478Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -541,7 +712,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-09T06:00:58.401Z",
+            "checkedAt": "2026-11-09T06:31:07.908Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -560,7 +731,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-09T06:00:58.983Z",
+            "checkedAt": "2026-11-09T06:31:08.600Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
