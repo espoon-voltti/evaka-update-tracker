@@ -1,6 +1,61 @@
 {
   "events": [
     {
+      "id": "2026-11-10T02:09:38.952Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-11-10T02:09:38.952Z",
+      "previousCommit": {
+        "sha": "d0a23e6ff8702d86e8b6688a520dff8adc2035fb",
+        "shortSha": "d0a23e6",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "d17343b3be67a81357a2c5e4777ddf79c152ced8",
+        "shortSha": "d17343b",
+        "message": "Merge pull request #10201 from espoon-voltti/renovate/tslib-2.x",
+        "date": "2026-11-09T10:04:53Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 10201,
+          "title": "Update dependency tslib to v2.9.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:04:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10201",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 10199,
+          "title": "Update dependency pipx:reuse to v6.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:04:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10199",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-09T10:23:30.649Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
