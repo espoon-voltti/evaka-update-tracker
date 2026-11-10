@@ -1,6 +1,182 @@
 {
   "events": [
     {
+      "id": "2026-11-10T06:35:40.256Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-10T06:35:40.256Z",
+      "previousCommit": {
+        "sha": "c103133fe3fa9ab6989c7f73dcb4a0c7a7a2f7ee",
+        "shortSha": "c103133",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "16717e1313f27ef70e393011357a17b13e619d50",
+        "shortSha": "16717e1",
+        "message": "Merge pull request #2290 from Tampere/dependabot/submodules/evaka-3ea9c1c",
+        "date": "2026-11-09T22:14:26Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2290,
+          "title": "Build(deps): Bump evaka from `d0a23e6` to `3ea9c1c`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T22:14:26Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2290",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-11-10T06:35:40.256Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-10T06:35:40.256Z",
+      "previousCommit": {
+        "sha": "d0a23e6ff8702d86e8b6688a520dff8adc2035fb",
+        "shortSha": "d0a23e6",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "3ea9c1cb7c299f10d437d10a7d33ed41d20a7ce4",
+        "shortSha": "3ea9c1c",
+        "message": "Merge pull request #10213 from espoon-voltti/renovate/fast-xml-parser-5.x",
+        "date": "2026-11-09T10:31:46Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10213,
+          "title": "Update dependency fast-xml-parser to v5.12.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:31:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10213",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10210,
+          "title": "Update dependency org.jsoup:jsoup to v1.24.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:31:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10210",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10208,
+          "title": "Update dependency org.checkerframework:checker-qual to v4.4.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:30:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10208",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10203,
+          "title": "Update sentry-javascript monorepo to v11.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:30:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10203",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10202,
+          "title": "Update flyway to v13.12.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:24:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10202",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10201,
+          "title": "Update dependency tslib to v2.9.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:04:54Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10201",
+          "labels": [
+            "dependencies"
+          ]
+        },
+        {
+          "number": 10199,
+          "title": "Update dependency pipx:reuse to v6.3.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:04:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10199",
+          "labels": [
+            "dependencies"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-10T04:05:46.368Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
