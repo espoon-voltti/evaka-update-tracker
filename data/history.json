@@ -1,6 +1,140 @@
 {
   "events": [
     {
+      "id": "2026-11-11T06:36:50.991Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-11T06:36:50.991Z",
+      "previousCommit": {
+        "sha": "16717e1313f27ef70e393011357a17b13e619d50",
+        "shortSha": "16717e1",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+        "shortSha": "a0f8a41",
+        "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+        "date": "2026-11-10T22:12:59Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2291,
+          "title": "Build(deps): Bump evaka from `3ea9c1c` to `a0796f9`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-10T22:13:00Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2291",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-11-11T06:36:50.991Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-11T06:36:50.991Z",
+      "previousCommit": {
+        "sha": "3ea9c1cb7c299f10d437d10a7d33ed41d20a7ce4",
+        "shortSha": "3ea9c1c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+        "shortSha": "a0796f9",
+        "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+        "date": "2026-11-10T11:39:34Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10216,
+          "title": "Turun esiopetushakemuksen tekstipäivitykset 2027",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-11-10T11:39:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10216",
+          "labels": [
+            "enhancement",
+            "turku",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10214,
+          "title": "Update dependency oxfmt to v0.76.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-10T10:58:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10214",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10217,
+          "title": "Oulun esiopetushakemuksen tekstipäivitykset 2027",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-11-10T10:10:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10217",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10218,
+          "title": "Kaksi uutta aluetta Espooseen",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-11-10T06:54:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10218",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-11T02:10:07.710Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
