@@ -1,6 +1,179 @@
 {
   "events": [
     {
+      "id": "2026-11-11T01:49:07.590Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-11-11T01:49:07.590Z",
+      "previousCommit": {
+        "sha": "d17343b3be67a81357a2c5e4777ddf79c152ced8",
+        "shortSha": "d17343b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+        "shortSha": "a0796f9",
+        "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+        "date": "2026-11-10T11:39:34Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10216,
+          "title": "Turun esiopetushakemuksen tekstipäivitykset 2027",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-11-10T11:39:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10216",
+          "labels": [
+            "enhancement",
+            "turku",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10214,
+          "title": "Update dependency oxfmt to v0.76.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-10T10:58:30Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10214",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10217,
+          "title": "Oulun esiopetushakemuksen tekstipäivitykset 2027",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-10T10:10:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10217",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10218,
+          "title": "Kaksi uutta aluetta Espooseen",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-11-10T06:54:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10218",
+          "labels": [
+            "enhancement",
+            "espoo",
+            "employee"
+          ]
+        },
+        {
+          "number": 10213,
+          "title": "Update dependency fast-xml-parser to v5.12.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:31:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10213",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10210,
+          "title": "Update dependency org.jsoup:jsoup to v1.24.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:31:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10210",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10208,
+          "title": "Update dependency org.checkerframework:checker-qual to v4.4.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:30:49Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10208",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10203,
+          "title": "Update sentry-javascript monorepo to v11.10.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:30:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10203",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10202,
+          "title": "Update flyway to v13.12.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-09T10:24:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10202",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-10T11:06:47.558Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
