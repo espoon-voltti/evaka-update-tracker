@@ -1,6 +1,122 @@
 {
   "events": [
     {
+      "id": "2026-11-12T05:43:35.189Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-12T05:43:35.189Z",
+      "previousCommit": {
+        "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+        "shortSha": "a0f8a41",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "cef60ac9094c5498fbfc8b50ecac86a8c67e07f7",
+        "shortSha": "cef60ac",
+        "message": "Merge pull request #2292 from Tampere/dependabot/submodules/evaka-957410b",
+        "date": "2026-11-11T22:11:33Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2292,
+          "title": "Build(deps): Bump evaka from `a0796f9` to `957410b`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-11T22:11:34Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2292",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-11-12T05:43:35.189Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-12T05:43:35.189Z",
+      "previousCommit": {
+        "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+        "shortSha": "a0796f9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "957410b5057c0eb7e996d6e5c2692716fa0aee93",
+        "shortSha": "957410b",
+        "message": "Update dependency node-forge to v1.4.3 [SECURITY] (#10223)",
+        "date": "2026-11-11T13:26:20Z",
+        "author": "renovate[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 10223,
+          "title": "Update dependency node-forge to v1.4.3 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-11T13:26:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10223",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10198,
+          "title": "Update dependency dd-trace to v6.24.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-11T13:14:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10198",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10219,
+          "title": "Korjaa summien asettelu maksupäätösten PDF:issä (Turku)",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-11-11T07:54:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10219",
+          "labels": [
+            "bugfix",
+            "turku",
+            "citizen",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-12T02:51:08.159Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",

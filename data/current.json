@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T05:37:11.403Z",
+  "generatedAt": "2026-11-12T05:43:42.937Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-12T05:36:43.096Z",
+            "checkedAt": "2026-11-12T05:43:09.654Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-12T05:36:43.908Z",
+            "checkedAt": "2026-11-12T05:43:10.587Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-12T05:36:45.921Z",
+            "checkedAt": "2026-11-12T05:43:13.031Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
@@ -88,25 +88,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-12T05:36:55.181Z",
+            "checkedAt": "2026-11-12T05:43:22.218Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
-              "shortSha": "a0f8a41",
-              "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
-              "date": "2026-11-10T22:12:59Z",
+              "sha": "cef60ac9094c5498fbfc8b50ecac86a8c67e07f7",
+              "shortSha": "cef60ac",
+              "message": "Merge pull request #2292 from Tampere/dependabot/submodules/evaka-957410b",
+              "date": "2026-11-11T22:11:33Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
-              "shortSha": "a0796f9",
-              "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
-              "date": "2026-11-10T11:39:34Z",
-              "author": "Joosakur"
+              "sha": "957410b5057c0eb7e996d6e5c2692716fa0aee93",
+              "shortSha": "957410b",
+              "message": "Update dependency node-forge to v1.4.3 [SECURITY] (#10223)",
+              "date": "2026-11-11T13:26:20Z",
+              "author": "renovate[bot]"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-11-12T05:43:22.218Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "cef60ac9094c5498fbfc8b50ecac86a8c67e07f7",
+                "shortSha": "cef60ac",
+                "message": "Merge pull request #2292 from Tampere/dependabot/submodules/evaka-957410b",
+                "date": "2026-11-11T22:11:33Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "957410b5057c0eb7e996d6e5c2692716fa0aee93",
+                "shortSha": "957410b",
+                "message": "Update dependency node-forge to v1.4.3 [SECURITY] (#10223)",
+                "date": "2026-11-11T13:26:20Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-11-12T05:43:23.288Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-11-12T05:43:24.590Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-11-12T05:43:25.629Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-11-12T05:43:26.630Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-11-12T05:43:27.584Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-11-12T05:43:28.572Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-11-12T05:43:29.620Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-11-12T05:43:30.599Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
+                "shortSha": "a0f8a41",
+                "message": "Merge pull request #2291 from Tampere/dependabot/submodules/evaka-a0796f9",
+                "date": "2026-11-10T22:12:59Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+                "shortSha": "a0796f9",
+                "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
+                "date": "2026-11-10T11:39:34Z",
+                "author": "Joosakur"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -133,7 +305,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-12T05:37:05.751Z",
+            "checkedAt": "2026-11-12T05:43:37.371Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -152,7 +324,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-12T05:37:06.492Z",
+            "checkedAt": "2026-11-12T05:43:38.118Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -186,7 +358,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-12T05:37:08.604Z",
+            "checkedAt": "2026-11-12T05:43:40.139Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -205,7 +377,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-12T05:37:09.441Z",
+            "checkedAt": "2026-11-12T05:43:40.797Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
