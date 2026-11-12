@@ -1,6 +1,65 @@
 {
   "events": [
     {
+      "id": "2026-11-12T02:51:08.159Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-11-12T02:51:08.159Z",
+      "previousCommit": {
+        "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
+        "shortSha": "a0796f9",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "1ceb66e3992c351406a7728a3e45c658eec66f6a",
+        "shortSha": "1ceb66e",
+        "message": "Merge pull request #10198 from espoon-voltti/renovate/dd-trace-6.x",
+        "date": "2026-11-11T13:13:59Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 10198,
+          "title": "Update dependency dd-trace to v6.24.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-11T13:14:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10198",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        },
+        {
+          "number": 10219,
+          "title": "Korjaa summien asettelu maksupäätösten PDF:issä (Turku)",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-11T07:54:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10219",
+          "labels": [
+            "bugfix",
+            "turku",
+            "citizen",
+            "employee"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-12T02:47:37.424Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
