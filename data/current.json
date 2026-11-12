@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T10:27:49.493Z",
+  "generatedAt": "2026-11-12T10:35:57.525Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-12T10:27:10.920Z",
+            "checkedAt": "2026-11-12T10:35:13.293Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
-              "shortSha": "a0796f9",
-              "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
-              "date": "2026-11-10T11:39:34Z",
-              "author": "Joosakur"
+              "sha": "1ceb66e3992c351406a7728a3e45c658eec66f6a",
+              "shortSha": "1ceb66e",
+              "message": "Merge pull request #10198 from espoon-voltti/renovate/dd-trace-6.x",
+              "date": "2026-11-11T13:13:59Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-12T10:27:11.765Z",
+            "checkedAt": "2026-11-12T10:35:15.319Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -81,7 +81,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-12T10:27:14.882Z",
+            "checkedAt": "2026-11-12T10:35:18.659Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
@@ -106,7 +106,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-12T10:27:26.674Z",
+            "checkedAt": "2026-11-12T10:35:30.863Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "cef60ac9094c5498fbfc8b50ecac86a8c67e07f7",
@@ -169,15 +169,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-12T10:27:41.527Z",
+            "checkedAt": "2026-11-12T10:35:45.832Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
-              "shortSha": "a0796f9",
-              "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
-              "date": "2026-11-10T11:39:34Z",
-              "author": "Joosakur"
+              "sha": "1ceb66e3992c351406a7728a3e45c658eec66f6a",
+              "shortSha": "1ceb66e",
+              "message": "Merge pull request #10198 from espoon-voltti/renovate/dd-trace-6.x",
+              "date": "2026-11-11T13:13:59Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -188,7 +188,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-12T10:27:42.493Z",
+            "checkedAt": "2026-11-12T10:35:48.007Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -240,15 +240,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-12T10:27:45.580Z",
+            "checkedAt": "2026-11-12T10:35:51.702Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "a0796f980ed78903c382be37b82104fbbaf9337f",
-              "shortSha": "a0796f9",
-              "message": "Merge pull request #10216 from espoon-voltti/turku-preschool-application-texts-2027",
-              "date": "2026-11-10T11:39:34Z",
-              "author": "Joosakur"
+              "sha": "1ceb66e3992c351406a7728a3e45c658eec66f6a",
+              "shortSha": "1ceb66e",
+              "message": "Merge pull request #10198 from espoon-voltti/renovate/dd-trace-6.x",
+              "date": "2026-11-11T13:13:59Z",
+              "author": "terolaakso-reaktor"
             }
           },
           "versionMismatch": false,
@@ -259,7 +259,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-12T10:27:46.425Z",
+            "checkedAt": "2026-11-12T10:35:53.713Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -278,8 +278,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10219,
               "title": "Korjaa summien asettelu maksupäätösten PDF:issä (Turku)",
@@ -299,6 +298,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10192,
