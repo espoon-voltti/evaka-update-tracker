@@ -1,6 +1,228 @@
 {
   "events": [
     {
+      "id": "2026-11-13T10:20:41.877Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-11-13T10:20:41.877Z",
+      "previousCommit": {
+        "sha": "1ceb66e3992c351406a7728a3e45c658eec66f6a",
+        "shortSha": "1ceb66e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "128af712736d8251eb87909c972e254774085df3",
+        "shortSha": "128af71",
+        "message": "Merge pull request #10192 from espoon-voltti/employee-session-role-refresh",
+        "date": "2026-11-12T07:46:11Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 10192,
+          "title": "Poistetut roolit ja käyttäjän deaktivointi koskemaan myös avoimia työntekijäsessioita",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-12T07:46:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10192",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10215,
+          "title": "Update dependency oxlint to v1.91.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-12T06:12:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10215",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10223,
+          "title": "Update dependency node-forge to v1.4.3 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-11T13:26:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10223",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-11-13T10:21:12.861Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-11-13T10:21:12.861Z",
+      "previousCommit": {
+        "sha": "1ceb66e3992c351406a7728a3e45c658eec66f6a",
+        "shortSha": "1ceb66e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "128af712736d8251eb87909c972e254774085df3",
+        "shortSha": "128af71",
+        "message": "Merge pull request #10192 from espoon-voltti/employee-session-role-refresh",
+        "date": "2026-11-12T07:46:11Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 10192,
+          "title": "Poistetut roolit ja käyttäjän deaktivointi koskemaan myös avoimia työntekijäsessioita",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-12T07:46:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10192",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10215,
+          "title": "Update dependency oxlint to v1.91.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-12T06:12:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10215",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10223,
+          "title": "Update dependency node-forge to v1.4.3 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-11T13:26:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10223",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-11-13T10:21:18.722Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-11-13T10:21:18.722Z",
+      "previousCommit": {
+        "sha": "1ceb66e3992c351406a7728a3e45c658eec66f6a",
+        "shortSha": "1ceb66e",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "128af712736d8251eb87909c972e254774085df3",
+        "shortSha": "128af71",
+        "message": "Merge pull request #10192 from espoon-voltti/employee-session-role-refresh",
+        "date": "2026-11-12T07:46:11Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 10192,
+          "title": "Poistetut roolit ja käyttäjän deaktivointi koskemaan myös avoimia työntekijäsessioita",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-12T07:46:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10192",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10215,
+          "title": "Update dependency oxlint to v1.91.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-12T06:12:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10215",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10223,
+          "title": "Update dependency node-forge to v1.4.3 [SECURITY]",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-11T13:26:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10223",
+          "labels": [
+            "dependencies",
+            "apigw"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-11-13T05:28:39.793Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
