@@ -1,6 +1,106 @@
 {
   "events": [
     {
+      "id": "2026-11-13T05:28:39.793Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-13T05:28:39.793Z",
+      "previousCommit": {
+        "sha": "cef60ac9094c5498fbfc8b50ecac86a8c67e07f7",
+        "shortSha": "cef60ac",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "65a9158e2c5dea37ef43b648be31ce27588e6051",
+        "shortSha": "65a9158",
+        "message": "Merge pull request #2293 from Tampere/dependabot/submodules/evaka-128af71",
+        "date": "2026-11-12T22:14:15Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2293,
+          "title": "Build(deps): Bump evaka from `957410b` to `128af71`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-12T22:14:16Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2293",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-11-13T05:28:39.793Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-13T05:28:39.793Z",
+      "previousCommit": {
+        "sha": "957410b5057c0eb7e996d6e5c2692716fa0aee93",
+        "shortSha": "957410b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "128af712736d8251eb87909c972e254774085df3",
+        "shortSha": "128af71",
+        "message": "Merge pull request #10192 from espoon-voltti/employee-session-role-refresh",
+        "date": "2026-11-12T07:46:11Z",
+        "author": "tomuli"
+      },
+      "includedPRs": [
+        {
+          "number": 10192,
+          "title": "Poistetut roolit ja käyttäjän deaktivointi koskemaan myös avoimia työntekijäsessioita",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-12T07:46:11Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10192",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10215,
+          "title": "Update dependency oxlint to v1.91.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-12T06:12:13Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10215",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-13T02:34:22.580Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
