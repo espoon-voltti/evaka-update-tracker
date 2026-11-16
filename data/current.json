@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T06:38:45.518Z",
+  "generatedAt": "2026-11-16T07:01:29.048Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-16T06:37:33.967Z",
+            "checkedAt": "2026-11-16T07:00:07.855Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-16T06:37:34.836Z",
+            "checkedAt": "2026-11-16T07:00:08.749Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -115,7 +115,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-16T06:37:45.553Z",
+            "checkedAt": "2026-11-16T07:00:19.839Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
@@ -140,25 +140,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-16T06:37:56.623Z",
+            "checkedAt": "2026-11-16T07:00:30.432Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "65a9158e2c5dea37ef43b648be31ce27588e6051",
-              "shortSha": "65a9158",
-              "message": "Merge pull request #2293 from Tampere/dependabot/submodules/evaka-128af71",
-              "date": "2026-11-12T22:14:15Z",
+              "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+              "shortSha": "8f2f906",
+              "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+              "date": "2026-11-15T22:13:27Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "128af712736d8251eb87909c972e254774085df3",
-              "shortSha": "128af71",
-              "message": "Merge pull request #10192 from espoon-voltti/employee-session-role-refresh",
-              "date": "2026-11-12T07:46:11Z",
-              "author": "tomuli"
+              "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+              "shortSha": "c1299b5",
+              "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+              "date": "2026-11-15T18:17:52Z",
+              "author": "renovate[bot]"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-11-16T07:00:30.432Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-11-16T07:00:31.709Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-11-16T07:00:32.933Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-11-16T07:00:34.139Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "65a9158e2c5dea37ef43b648be31ce27588e6051",
+                "shortSha": "65a9158",
+                "message": "Merge pull request #2293 from Tampere/dependabot/submodules/evaka-128af71",
+                "date": "2026-11-12T22:14:15Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "128af712736d8251eb87909c972e254774085df3",
+                "shortSha": "128af71",
+                "message": "Merge pull request #10192 from espoon-voltti/employee-session-role-refresh",
+                "date": "2026-11-12T07:46:11Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-11-16T07:00:35.572Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-11-16T07:00:36.686Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-11-16T07:00:37.878Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-11-16T07:00:39.050Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-11-16T07:00:40.358Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -172,25 +344,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 10192,
-              "title": "Poistetut roolit ja käyttäjän deaktivointi koskemaan myös avoimia työntekijäsessioita",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-11-12T07:46:11Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10192",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 10229,
               "title": "Flakyjen testien korjaus",
@@ -241,8 +394,26 @@
                 "core",
                 "not-visible"
               ]
+            },
+            {
+              "number": 10192,
+              "title": "Poistetut roolit ja käyttäjän deaktivointi koskemaan myös avoimia työntekijäsessioita",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-11-12T07:46:11Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10192",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -255,7 +426,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-16T06:38:21.345Z",
+            "checkedAt": "2026-11-16T07:01:06.155Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -274,7 +445,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-16T06:38:22.445Z",
+            "checkedAt": "2026-11-16T07:01:07.007Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -360,7 +531,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-16T06:38:34.401Z",
+            "checkedAt": "2026-11-16T07:01:18.063Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -379,7 +550,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-16T06:38:35.241Z",
+            "checkedAt": "2026-11-16T07:01:18.803Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
