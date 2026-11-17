@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T06:52:59.513Z",
+  "generatedAt": "2026-11-17T06:59:25.640Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-17T06:52:13.884Z",
+            "checkedAt": "2026-11-17T06:58:24.708Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-17T06:52:14.551Z",
+            "checkedAt": "2026-11-17T06:58:25.509Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -114,7 +114,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-17T06:52:18.869Z",
+            "checkedAt": "2026-11-17T06:58:30.253Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
@@ -139,25 +139,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-17T06:52:27.727Z",
+            "checkedAt": "2026-11-17T06:58:42.185Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
-              "shortSha": "8f2f906",
-              "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
-              "date": "2026-11-15T22:13:27Z",
+              "sha": "386a79180c523ec3390225105225ed243fc39e8f",
+              "shortSha": "386a791",
+              "message": "Merge pull request #2295 from Tampere/dependabot/submodules/evaka-850047c",
+              "date": "2026-11-16T22:14:26Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
-              "shortSha": "c1299b5",
-              "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
-              "date": "2026-11-15T18:17:52Z",
-              "author": "renovate[bot]"
+              "sha": "850047c7b0b1924e50a00efc947ae48b5c4d3946",
+              "shortSha": "850047c",
+              "message": "Merge pull request #10268 from espoon-voltti/disable-axios-xsrftoken",
+              "date": "2026-11-16T14:03:04Z",
+              "author": "terolaakso-reaktor"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-11-17T06:58:42.185Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "386a79180c523ec3390225105225ed243fc39e8f",
+                "shortSha": "386a791",
+                "message": "Merge pull request #2295 from Tampere/dependabot/submodules/evaka-850047c",
+                "date": "2026-11-16T22:14:26Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "850047c7b0b1924e50a00efc947ae48b5c4d3946",
+                "shortSha": "850047c",
+                "message": "Merge pull request #10268 from espoon-voltti/disable-axios-xsrftoken",
+                "date": "2026-11-16T14:03:04Z",
+                "author": "terolaakso-reaktor"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-11-17T06:58:43.413Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-11-17T06:58:44.731Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-11-17T06:58:45.864Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-11-17T06:58:47.115Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-11-17T06:58:48.337Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-11-17T06:58:49.537Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-11-17T06:58:50.655Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-11-17T06:58:51.793Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "8f2f906fad6268073c298d237df9412ff514ed0c",
+                "shortSha": "8f2f906",
+                "message": "Merge pull request #2294 from Tampere/dependabot/submodules/evaka-c1299b5",
+                "date": "2026-11-15T22:13:27Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+                "shortSha": "c1299b5",
+                "message": "Update dependency io.github.oshai:kotlin-logging-jvm to v8.0.7 (#10266)",
+                "date": "2026-11-15T18:17:52Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -171,6 +343,74 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10268,
+              "title": "Poistetaan Axios XSRF token -käsittely",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-11-16T14:03:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10268",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10267,
+              "title": "Muodostetaan aina vähintään yksi päätös",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-11-16T12:54:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10267",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 10228,
+              "title": "Generoituja hex-arvoja ei peitetä henkilötunnuksina lokeilla",
+              "author": "terolaakso-reaktor",
+              "authorName": "Tero Laakso",
+              "mergedAt": "2026-11-16T08:23:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10228",
+              "labels": [
+                "bugfix",
+                "core",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 10225,
+              "title": "Hämeenkyrön, Kangasalan, Nokian ja Ylöjärven esiopetushakemustekstien päivityksiä",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-11-16T07:54:18Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10225",
+              "labels": [
+                "enhancement",
+                "core",
+                "seutu",
+                "citizen"
+              ]
+            },
             {
               "number": 10229,
               "title": "Flakyjen testien korjaus",
@@ -240,76 +480,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10268,
-              "title": "Poistetaan Axios XSRF token -käsittely",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-11-16T14:03:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10268",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10267,
-              "title": "Muodostetaan aina vähintään yksi päätös",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-16T12:54:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10267",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10228,
-              "title": "Generoituja hex-arvoja ei peitetä henkilötunnuksina lokeilla",
-              "author": "terolaakso-reaktor",
-              "authorName": "Tero Laakso",
-              "mergedAt": "2026-11-16T08:23:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10228",
-              "labels": [
-                "bugfix",
-                "core",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 10225,
-              "title": "Hämeenkyrön, Kangasalan, Nokian ja Ylöjärven esiopetushakemustekstien päivityksiä",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-11-16T07:54:18Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10225",
-              "labels": [
-                "enhancement",
-                "core",
-                "seutu",
-                "citizen"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -322,7 +493,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-17T06:52:49.709Z",
+            "checkedAt": "2026-11-17T06:59:14.529Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -341,7 +512,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-17T06:52:50.500Z",
+            "checkedAt": "2026-11-17T06:59:15.464Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -426,7 +597,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-17T06:52:54.659Z",
+            "checkedAt": "2026-11-17T06:59:20.207Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -445,7 +616,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-17T06:52:55.405Z",
+            "checkedAt": "2026-11-17T06:59:21.267Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
