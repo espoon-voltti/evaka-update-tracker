@@ -1,6 +1,227 @@
 {
   "events": [
     {
+      "id": "2026-11-17T02:10:16.701Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-11-17T02:10:16.701Z",
+      "previousCommit": {
+        "sha": "c1299b5595e422aa356fae22e993c5a34fa97f07",
+        "shortSha": "c1299b5",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "850047c7b0b1924e50a00efc947ae48b5c4d3946",
+        "shortSha": "850047c",
+        "message": "Merge pull request #10268 from espoon-voltti/disable-axios-xsrftoken",
+        "date": "2026-11-16T14:03:04Z",
+        "author": "terolaakso-reaktor"
+      },
+      "includedPRs": [
+        {
+          "number": 10268,
+          "title": "Poistetaan Axios XSRF token -käsittely",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-11-16T14:03:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10268",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10267,
+          "title": "Muodostetaan aina vähintään yksi päätös",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-16T12:54:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10267",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10243,
+          "title": "Update dependency com.ncorti.ktfmt.gradle to v0.28.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T11:17:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10243",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10253,
+          "title": "Update dependency com.github.kagkarlsson:db-scheduler to v17",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T08:46:33Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10253",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10244,
+          "title": "Update dependency io.opentelemetry:opentelemetry-bom to v1.68.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T08:44:37Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10244",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10242,
+          "title": "Update dependency @tanstack/react-query to v5.107.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T08:44:21Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10242",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10228,
+          "title": "Generoituja hex-arvoja ei peitetä henkilötunnuksina lokeilla",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-11-16T08:23:00Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10228",
+          "labels": [
+            "bugfix",
+            "core",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10254,
+          "title": "Update dependency jsdom to v31",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T08:12:52Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10254",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10252,
+          "title": "Update sentry-javascript monorepo to v11.12.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T08:07:06Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10252",
+          "labels": [
+            "dependencies",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10250,
+          "title": "Update jackson monorepo",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T08:06:46Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10250",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10249,
+          "title": "Update Gradle to v9.9.1",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-16T08:06:31Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10249",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        },
+        {
+          "number": 10225,
+          "title": "Hämeenkyrön, Kangasalan, Nokian ja Ylöjärven esiopetushakemustekstien päivityksiä",
+          "author": "tomuli",
+          "authorName": null,
+          "mergedAt": "2026-11-16T07:54:18Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10225",
+          "labels": [
+            "enhancement",
+            "core",
+            "seutu",
+            "citizen"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-16T10:16:01.970Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
