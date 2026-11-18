@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T01:59:09.391Z",
+  "generatedAt": "2026-11-18T02:10:51.698Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-18T01:58:22.335Z",
+            "checkedAt": "2026-11-18T02:09:55.868Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,15 +29,15 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-18T01:58:23.222Z",
+            "checkedAt": "2026-11-18T02:09:56.824Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "850047c7b0b1924e50a00efc947ae48b5c4d3946",
-              "shortSha": "850047c",
-              "message": "Merge pull request #10268 from espoon-voltti/disable-axios-xsrftoken",
-              "date": "2026-11-16T14:03:04Z",
-              "author": "terolaakso-reaktor"
+              "sha": "d85ba8b21b36dd93399f39ba828faa12d7f1ccc1",
+              "shortSha": "d85ba8b",
+              "message": "Merge pull request #10271 from espoon-voltti/vtj-cleanups",
+              "date": "2026-11-17T13:16:04Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -49,8 +49,7 @@
         "core": {
           "repository": "espoon-voltti/evaka",
           "deployed": [],
-          "inStaging": [],
-          "pendingDeployment": [
+          "inStaging": [
             {
               "number": 10271,
               "title": "Pieni VTJ-siivous",
@@ -120,7 +119,8 @@
                 "core"
               ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -133,7 +133,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-18T01:58:25.941Z",
+            "checkedAt": "2026-11-18T02:10:03.223Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
@@ -158,7 +158,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-18T01:58:36.324Z",
+            "checkedAt": "2026-11-18T02:10:15.559Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "386a79180c523ec3390225105225ed243fc39e8f",
@@ -410,7 +410,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-18T01:59:02.838Z",
+            "checkedAt": "2026-11-18T02:10:44.221Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -429,7 +429,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-18T01:59:03.751Z",
+            "checkedAt": "2026-11-18T02:10:45.314Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -533,7 +533,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-18T01:59:06.281Z",
+            "checkedAt": "2026-11-18T02:10:48.047Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -552,7 +552,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-18T01:59:07.023Z",
+            "checkedAt": "2026-11-18T02:10:49.004Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
