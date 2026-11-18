@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T12:52:51.744Z",
+  "generatedAt": "2026-11-18T12:58:53.521Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-18T12:52:19.969Z",
+            "checkedAt": "2026-11-18T12:58:20.704Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-18T12:52:20.665Z",
+            "checkedAt": "2026-11-18T12:58:21.523Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,32 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-18T12:52:21.957Z",
-            "status": "ok",
-            "wrapperCommit": {
-              "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
-              "shortSha": "62ec396",
-              "message": "Merge pull request #2296 from Tampere/dependabot/submodules/evaka-d85ba8b",
-              "date": "2026-11-17T22:14:33Z",
-              "author": "github-actions[bot]"
-            },
-            "coreCommit": {
-              "sha": "d85ba8b21b36dd93399f39ba828faa12d7f1ccc1",
-              "shortSha": "d85ba8b",
-              "message": "Merge pull request #10271 from espoon-voltti/vtj-cleanups",
-              "date": "2026-11-17T13:16:04Z",
-              "author": "akheron"
-            }
-          },
-          "versionMismatch": false,
-          "mismatchDetails": []
-        },
-        {
-          "id": "tampere-test",
-          "type": "staging",
-          "version": {
-            "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-18T12:52:31.954Z",
+            "checkedAt": "2026-11-18T12:58:22.622Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -108,8 +83,8 @@
           "versionMismatch": true,
           "mismatchDetails": [
             {
-              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-              "checkedAt": "2026-11-18T12:52:31.954Z",
+              "instanceDomain": "varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-11-18T12:58:22.622Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -127,8 +102,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.hameenkyro.fi",
-              "checkedAt": "2026-11-18T12:52:32.984Z",
+              "instanceDomain": "evaka.hameenkyro.fi",
+              "checkedAt": "2026-11-18T12:58:23.809Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -146,8 +121,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.kangasala.fi",
-              "checkedAt": "2026-11-18T12:52:34.079Z",
+              "instanceDomain": "evaka.kangasala.fi",
+              "checkedAt": "2026-11-18T12:58:25.274Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -165,8 +140,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.lempaala.fi",
-              "checkedAt": "2026-11-18T12:52:35.131Z",
+              "instanceDomain": "evaka.lempaala.fi",
+              "checkedAt": "2026-11-18T12:58:26.508Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -184,8 +159,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.nokiankaupunki.fi",
-              "checkedAt": "2026-11-18T12:52:36.143Z",
+              "instanceDomain": "evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-11-18T12:58:27.739Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -203,8 +178,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.orivesi.fi",
-              "checkedAt": "2026-11-18T12:52:37.198Z",
+              "instanceDomain": "evaka.orivesi.fi",
+              "checkedAt": "2026-11-18T12:58:28.905Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -222,8 +197,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.pirkkala.fi",
-              "checkedAt": "2026-11-18T12:52:38.482Z",
+              "instanceDomain": "evaka.pirkkala.fi",
+              "checkedAt": "2026-11-18T12:58:30.143Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -241,8 +216,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.vesilahti.fi",
-              "checkedAt": "2026-11-18T12:52:39.514Z",
+              "instanceDomain": "evaka.vesilahti.fi",
+              "checkedAt": "2026-11-18T12:58:31.361Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -260,8 +235,8 @@
               }
             },
             {
-              "instanceDomain": "test-evaka.ylojarvi.fi",
-              "checkedAt": "2026-11-18T12:52:40.493Z",
+              "instanceDomain": "evaka.ylojarvi.fi",
+              "checkedAt": "2026-11-18T12:58:32.559Z",
               "status": "ok",
               "wrapperCommit": {
                 "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
@@ -279,6 +254,31 @@
               }
             }
           ]
+        },
+        {
+          "id": "tampere-test",
+          "type": "staging",
+          "version": {
+            "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+            "checkedAt": "2026-11-18T12:58:35.152Z",
+            "status": "ok",
+            "wrapperCommit": {
+              "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
+              "shortSha": "3565feb",
+              "message": "Merge pull request #2297 from Tampere/bump-evaka-9514290",
+              "date": "2026-11-18T12:34:16Z",
+              "author": "Wnt"
+            },
+            "coreCommit": {
+              "sha": "95142909f913a8ae89103390b8284e0f42dec4b2",
+              "shortSha": "9514290",
+              "message": "Merge pull request #10273 from espoon-voltti/update-jvm-25-0-5-1",
+              "date": "2026-11-18T12:20:25Z",
+              "author": "Wnt"
+            }
+          },
+          "versionMismatch": false,
+          "mismatchDetails": []
         }
       ],
       "prTracks": {
@@ -290,8 +290,7 @@
         },
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10273,
               "title": "Päivitetään palvelun JVM versioon Zulu 25.0.5.1",
@@ -309,6 +308,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -322,7 +322,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-18T12:52:47.072Z",
+            "checkedAt": "2026-11-18T12:58:48.436Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -341,7 +341,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-18T12:52:47.902Z",
+            "checkedAt": "2026-11-18T12:58:49.277Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -392,7 +392,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-18T12:52:49.512Z",
+            "checkedAt": "2026-11-18T12:58:50.997Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -411,7 +411,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-18T12:52:50.259Z",
+            "checkedAt": "2026-11-18T12:58:51.773Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
