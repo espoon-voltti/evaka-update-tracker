@@ -1,6 +1,117 @@
 {
   "events": [
     {
+      "id": "2026-11-18T03:27:36.241Z_oulu-staging_core",
+      "environmentId": "oulu-staging",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-11-18T03:27:36.241Z",
+      "previousCommit": {
+        "sha": "850047c7b0b1924e50a00efc947ae48b5c4d3946",
+        "shortSha": "850047c",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "d85ba8b21b36dd93399f39ba828faa12d7f1ccc1",
+        "shortSha": "d85ba8b",
+        "message": "Merge pull request #10271 from espoon-voltti/vtj-cleanups",
+        "date": "2026-11-17T13:16:04Z",
+        "author": "akheron"
+      },
+      "includedPRs": [
+        {
+          "number": 10271,
+          "title": "Pieni VTJ-siivous",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-11-17T13:16:05Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10271",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10227,
+          "title": "BI-muutoksia",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-11-17T13:00:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10227",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "espoo",
+            "seutu",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10270,
+          "title": "Estetään henkilökunnan päällekkäiset läsnäolokirjaukset eri yksiköissä",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-17T12:55:28Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10270",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee",
+            "employee-mobile"
+          ]
+        },
+        {
+          "number": 10158,
+          "title": "Update Node.js to v26",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-17T12:37:25Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10158",
+          "labels": [
+            "dependencies",
+            "apigw",
+            "frontend"
+          ]
+        },
+        {
+          "number": 10226,
+          "title": "VTJ-muutosrajapinnan perustietohaun käyttöönotto, osa 1",
+          "author": "akheron",
+          "authorName": "Petri Lehtinen",
+          "mergedAt": "2026-11-17T09:11:15Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10226",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-18T02:10:01.241Z_espoo-staging_core",
       "environmentId": "espoo-staging",
       "cityGroupId": "espoo",
