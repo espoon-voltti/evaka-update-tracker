@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T06:59:14.197Z",
+  "generatedAt": "2026-11-18T07:14:18.162Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-18T06:58:27.931Z",
+            "checkedAt": "2026-11-18T07:13:28.208Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-18T06:58:28.906Z",
+            "checkedAt": "2026-11-18T07:13:28.920Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -133,7 +133,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-18T06:58:31.661Z",
+            "checkedAt": "2026-11-18T07:13:31.414Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "a0f8a41f773fefbf792bf84895a0437a895a4726",
@@ -158,21 +158,21 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-18T06:58:41.466Z",
+            "checkedAt": "2026-11-18T07:13:41.565Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "386a79180c523ec3390225105225ed243fc39e8f",
-              "shortSha": "386a791",
-              "message": "Merge pull request #2295 from Tampere/dependabot/submodules/evaka-850047c",
-              "date": "2026-11-16T22:14:26Z",
+              "sha": "62ec39655489f4deb3911476adbdfe967558f7c8",
+              "shortSha": "62ec396",
+              "message": "Merge pull request #2296 from Tampere/dependabot/submodules/evaka-d85ba8b",
+              "date": "2026-11-17T22:14:33Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "850047c7b0b1924e50a00efc947ae48b5c4d3946",
-              "shortSha": "850047c",
-              "message": "Merge pull request #10268 from espoon-voltti/disable-axios-xsrftoken",
-              "date": "2026-11-16T14:03:04Z",
-              "author": "terolaakso-reaktor"
+              "sha": "d85ba8b21b36dd93399f39ba828faa12d7f1ccc1",
+              "shortSha": "d85ba8b",
+              "message": "Merge pull request #10271 from espoon-voltti/vtj-cleanups",
+              "date": "2026-11-17T13:16:04Z",
+              "author": "akheron"
             }
           },
           "versionMismatch": false,
@@ -190,6 +190,75 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
+            {
+              "number": 10271,
+              "title": "Pieni VTJ-siivous",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-11-17T13:16:05Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10271",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
+            {
+              "number": 10227,
+              "title": "BI-muutoksia",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-11-17T13:00:39Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10227",
+              "labels": [
+                "enhancement",
+                "oulu",
+                "espoo",
+                "seutu",
+                "not-visible"
+              ]
+            },
+            {
+              "number": 10270,
+              "title": "Estetään henkilökunnan päällekkäiset läsnäolokirjaukset eri yksiköissä",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-11-17T12:55:28Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10270",
+              "labels": [
+                "bugfix",
+                "core",
+                "employee",
+                "employee-mobile"
+              ]
+            },
+            {
+              "number": 10226,
+              "title": "VTJ-muutosrajapinnan perustietohaun käyttöönotto, osa 1",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-11-17T09:11:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10226",
+              "labels": [
+                "tech",
+                "core"
+              ]
+            },
             {
               "number": 10268,
               "title": "Poistetaan Axios XSRF token -käsittely",
@@ -327,77 +396,7 @@
               ]
             }
           ],
-          "pendingDeployment": [
-            {
-              "number": 10271,
-              "title": "Pieni VTJ-siivous",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-17T13:16:05Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10271",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            },
-            {
-              "number": 10227,
-              "title": "BI-muutoksia",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-17T13:00:39Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10227",
-              "labels": [
-                "enhancement",
-                "oulu",
-                "espoo",
-                "seutu",
-                "not-visible"
-              ]
-            },
-            {
-              "number": 10270,
-              "title": "Estetään henkilökunnan päällekkäiset läsnäolokirjaukset eri yksiköissä",
-              "author": "tomuli",
-              "authorName": "Samuli Toivonen",
-              "mergedAt": "2026-11-17T12:55:28Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10270",
-              "labels": [
-                "bugfix",
-                "core",
-                "employee",
-                "employee-mobile"
-              ]
-            },
-            {
-              "number": 10226,
-              "title": "VTJ-muutosrajapinnan perustietohaun käyttöönotto, osa 1",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-17T09:11:15Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10226",
-              "labels": [
-                "tech",
-                "core"
-              ]
-            }
-          ]
+          "pendingDeployment": []
         }
       }
     },
@@ -410,7 +409,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-18T06:59:06.619Z",
+            "checkedAt": "2026-11-18T07:14:11.071Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -429,7 +428,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-18T06:59:07.417Z",
+            "checkedAt": "2026-11-18T07:14:11.763Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -533,7 +532,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-18T06:59:10.452Z",
+            "checkedAt": "2026-11-18T07:14:14.669Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -552,7 +551,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-18T06:59:11.283Z",
+            "checkedAt": "2026-11-18T07:14:15.532Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
