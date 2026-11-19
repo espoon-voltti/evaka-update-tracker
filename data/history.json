@@ -1,6 +1,47 @@
 {
   "events": [
     {
+      "id": "2026-11-19T03:10:11.767Z_turku-staging_core",
+      "environmentId": "turku-staging",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-11-19T03:10:11.767Z",
+      "previousCommit": {
+        "sha": "d85ba8b21b36dd93399f39ba828faa12d7f1ccc1",
+        "shortSha": "d85ba8b",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "95142909f913a8ae89103390b8284e0f42dec4b2",
+        "shortSha": "9514290",
+        "message": "Merge pull request #10273 from espoon-voltti/update-jvm-25-0-5-1",
+        "date": "2026-11-18T12:20:25Z",
+        "author": "Wnt"
+      },
+      "includedPRs": [
+        {
+          "number": 10273,
+          "title": "Päivitetään palvelun JVM versioon Zulu 25.0.5.1",
+          "author": "Wnt",
+          "authorName": "Jonni Madekivi",
+          "mergedAt": "2026-11-18T12:20:26Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10273",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-19T03:03:39.102Z_oulu-staging_core",
       "environmentId": "oulu-staging",
       "cityGroupId": "oulu",
