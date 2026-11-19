@@ -32,6 +32,7 @@ municipalities=(
   "espoo voltti-evaka-$espoo_env eu-north-1 evaka-$espoo_env-ops-metrics-reader /$espoo_env/evaka/ops-metrics-token"
   "oulu evakaoulu-$other_env eu-west-1 evakaoulu-$other_env-ops-metrics-reader /evakaoulu-$other_env/ops-metrics/token"
   "turku evakaturku-$other_env eu-west-1 evakaturku-$other_env-ops-metrics-reader /evakaturku-$other_env/ops-metrics/token"
+  "tampere-region trevaka-$other_env eu-west-1 trevaka-$other_env-ops-metrics-reader /trevaka-$other_env/ops-metrics/token"
 )
 
 errors=$(mktemp)
