@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T10:56:17.612Z",
+  "generatedAt": "2026-11-20T11:02:24.794Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-20T10:55:48.402Z",
+            "checkedAt": "2026-11-20T11:01:55.342Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-20T10:55:49.180Z",
+            "checkedAt": "2026-11-20T11:01:56.533Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-20T10:55:50.319Z",
+            "checkedAt": "2026-11-20T11:01:57.855Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-20T10:56:01.266Z",
+            "checkedAt": "2026-11-20T11:02:08.759Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -133,7 +133,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-20T10:56:13.444Z",
+            "checkedAt": "2026-11-20T11:02:20.274Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -152,7 +152,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-20T10:56:14.303Z",
+            "checkedAt": "2026-11-20T11:02:21.124Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -173,7 +173,24 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 10274,
+              "title": "Nekku-koodin selkeytys",
+              "author": "akheron",
+              "authorName": "Petri Lehtinen",
+              "mergedAt": "2026-11-20T10:57:15Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10274",
+              "labels": [
+                "tech",
+                "oulu"
+              ]
+            }
+          ]
         }
       }
     },
@@ -186,7 +203,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-20T10:56:15.547Z",
+            "checkedAt": "2026-11-20T11:02:22.584Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -205,7 +222,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-20T10:56:16.350Z",
+            "checkedAt": "2026-11-20T11:02:23.338Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
