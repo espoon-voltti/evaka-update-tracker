@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T14:49:00.133Z",
+  "generatedAt": "2026-11-23T14:54:45.282Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-23T14:47:59.990Z",
+            "checkedAt": "2026-11-23T14:53:49.722Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-23T14:48:00.887Z",
+            "checkedAt": "2026-11-23T14:53:50.620Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-23T14:48:06.877Z",
+            "checkedAt": "2026-11-23T14:53:56.428Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -173,7 +173,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-23T14:48:18.210Z",
+            "checkedAt": "2026-11-23T14:54:07.471Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
@@ -241,6 +241,23 @@
             }
           ],
           "pendingDeployment": [
+            {
+              "number": 10316,
+              "title": "Puuttuva OPH henkilö-OID tiedonsiirtovientiin Koskesta",
+              "author": "tomuli",
+              "authorName": "Samuli Toivonen",
+              "mergedAt": "2026-11-23T14:49:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10316",
+              "labels": [
+                "enhancement",
+                "seutu",
+                "not-visible"
+              ]
+            },
             {
               "number": 10314,
               "title": "Poistetaan epäselväksi koettu varoitus loma-ajan poissaolojen ilmoittamisesta",
@@ -321,7 +338,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-23T14:48:45.822Z",
+            "checkedAt": "2026-11-23T14:54:32.012Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -340,7 +357,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-23T14:48:46.863Z",
+            "checkedAt": "2026-11-23T14:54:32.891Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -442,7 +459,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-23T14:48:53.511Z",
+            "checkedAt": "2026-11-23T14:54:38.449Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -461,7 +478,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-23T14:48:54.329Z",
+            "checkedAt": "2026-11-23T14:54:39.124Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
