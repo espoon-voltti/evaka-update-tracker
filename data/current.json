@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T11:59:17.175Z",
+  "generatedAt": "2026-11-24T12:16:51.595Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-24T11:58:37.803Z",
+            "checkedAt": "2026-11-24T12:15:59.122Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-24T11:58:38.565Z",
+            "checkedAt": "2026-11-24T12:16:00.593Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-24T11:58:39.884Z",
+            "checkedAt": "2026-11-24T12:16:02.806Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-24T11:58:49.304Z",
+            "checkedAt": "2026-11-24T12:16:15.411Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
@@ -252,7 +252,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-24T11:59:12.710Z",
+            "checkedAt": "2026-11-24T12:16:45.553Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -271,7 +271,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-24T11:59:13.724Z",
+            "checkedAt": "2026-11-24T12:16:46.543Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -305,7 +305,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-24T11:59:15.044Z",
+            "checkedAt": "2026-11-24T12:16:48.934Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -324,7 +324,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-24T11:59:15.797Z",
+            "checkedAt": "2026-11-24T12:16:49.759Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -345,7 +345,25 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [],
-          "pendingDeployment": []
+          "pendingDeployment": [
+            {
+              "number": 10318,
+              "title": "Päivityksiä Turun päätösteksteihin",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-11-24T11:59:24Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10318",
+              "labels": [
+                "enhancement",
+                "turku",
+                "citizen"
+              ]
+            }
+          ]
         }
       }
     }
