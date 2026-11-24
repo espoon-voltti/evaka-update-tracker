@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T10:26:07.658Z",
+  "generatedAt": "2026-11-24T10:32:28.752Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-24T10:24:59.392Z",
+            "checkedAt": "2026-11-24T10:30:45.482Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
-              "shortSha": "0f4e3d7",
-              "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
-              "date": "2026-11-22T21:44:41Z",
-              "author": "renovate[bot]"
+              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+              "shortSha": "d03e9ae",
+              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+              "date": "2026-11-23T14:49:24Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-24T10:25:00.403Z",
+            "checkedAt": "2026-11-24T10:30:53.106Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10317,
               "title": "Päivitetään linkit Espoon tietosuojaselosteeseen",
@@ -117,24 +116,9 @@
                 "core",
                 "citizen"
               ]
-            },
-            {
-              "number": 10313,
-              "title": "Korjataan flakyjä integraatiotestejä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-23T07:20:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10313",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -148,7 +132,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-24T10:25:07.584Z",
+            "checkedAt": "2026-11-24T10:31:01.263Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -173,7 +157,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-24T10:25:20.977Z",
+            "checkedAt": "2026-11-24T10:31:16.417Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
@@ -337,15 +321,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-24T10:25:50.979Z",
+            "checkedAt": "2026-11-24T10:31:54.552Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
-              "shortSha": "0f4e3d7",
-              "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
-              "date": "2026-11-22T21:44:41Z",
-              "author": "renovate[bot]"
+              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+              "shortSha": "d03e9ae",
+              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+              "date": "2026-11-23T14:49:24Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -356,7 +340,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-24T10:25:52.352Z",
+            "checkedAt": "2026-11-24T10:32:02.044Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -375,8 +359,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10314,
               "title": "Poistetaan epäselväksi koettu varoitus loma-ajan poissaolojen ilmoittamisesta",
@@ -427,24 +410,9 @@
                 "core",
                 "citizen"
               ]
-            },
-            {
-              "number": 10313,
-              "title": "Korjataan flakyjä integraatiotestejä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-23T07:20:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10313",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
@@ -458,15 +426,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-24T10:25:59.636Z",
+            "checkedAt": "2026-11-24T10:32:11.724Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
-              "shortSha": "0f4e3d7",
-              "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
-              "date": "2026-11-22T21:44:41Z",
-              "author": "renovate[bot]"
+              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+              "shortSha": "d03e9ae",
+              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+              "date": "2026-11-23T14:49:24Z",
+              "author": "tomuli"
             }
           },
           "versionMismatch": false,
@@ -477,7 +445,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-24T10:26:00.581Z",
+            "checkedAt": "2026-11-24T10:32:19.616Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -496,8 +464,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10314,
               "title": "Poistetaan epäselväksi koettu varoitus loma-ajan poissaolojen ilmoittamisesta",
@@ -548,24 +515,9 @@
                 "core",
                 "citizen"
               ]
-            },
-            {
-              "number": 10313,
-              "title": "Korjataan flakyjä integraatiotestejä",
-              "author": "akheron",
-              "authorName": "Petri Lehtinen",
-              "mergedAt": "2026-11-23T07:20:47Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10313",
-              "labels": [
-                "tech",
-                "core"
-              ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
