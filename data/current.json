@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T05:52:38.508Z",
+  "generatedAt": "2026-11-24T05:56:09.772Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-24T05:51:34.452Z",
+            "checkedAt": "2026-11-24T05:55:16.921Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-24T05:51:35.283Z",
+            "checkedAt": "2026-11-24T05:55:17.592Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -148,7 +148,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-24T05:51:40.601Z",
+            "checkedAt": "2026-11-24T05:55:22.424Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -173,25 +173,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-24T05:51:51.340Z",
+            "checkedAt": "2026-11-24T05:55:30.977Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
-              "shortSha": "add2e6b",
-              "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
-              "date": "2026-11-22T22:12:57Z",
+              "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+              "shortSha": "6783086",
+              "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+              "date": "2026-11-23T22:13:32Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
-              "shortSha": "0f4e3d7",
-              "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
-              "date": "2026-11-22T21:44:41Z",
-              "author": "renovate[bot]"
+              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+              "shortSha": "d03e9ae",
+              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+              "date": "2026-11-23T14:49:24Z",
+              "author": "tomuli"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-11-24T05:55:30.977Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-11-24T05:55:31.963Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-11-24T05:55:33.018Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-11-24T05:55:34.056Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-11-24T05:55:35.151Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-11-24T05:55:36.089Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-11-24T05:55:37.177Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-11-24T05:55:38.077Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-11-24T05:55:39.054Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "add2e6b46a6f6f60b2e39f16377003fc64224eb4",
+                "shortSha": "add2e6b",
+                "message": "Merge pull request #2298 from Tampere/dependabot/submodules/evaka-0f4e3d7",
+                "date": "2026-11-22T22:12:57Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "0f4e3d780cdf4239ec793e7ae5edc4b9bb0a1d47",
+                "shortSha": "0f4e3d7",
+                "message": "Update dependency postcss-preset-env to v11.6.3 (#10311)",
+                "date": "2026-11-22T21:44:41Z",
+                "author": "renovate[bot]"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -205,42 +377,6 @@
           "repository": "espoon-voltti/evaka",
           "deployed": [],
           "inStaging": [
-            {
-              "number": 10276,
-              "title": "Poistetaan ECHA-korotukset toiminnallisuus",
-              "author": "Joosakur",
-              "authorName": "Joosa Kurvinen",
-              "mergedAt": "2026-11-20T13:20:00Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10276",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            },
-            {
-              "number": 10269,
-              "title": "Varahoidossa aloittavalle voi lähettää viestin ennen varasijoituksen alkua",
-              "author": "Wnt",
-              "authorName": "Jonni Madekivi",
-              "mergedAt": "2026-11-20T12:37:33Z",
-              "repository": "espoon-voltti/evaka",
-              "repoType": "core",
-              "isBot": false,
-              "isHidden": false,
-              "url": "https://github.com/espoon-voltti/evaka/pull/10269",
-              "labels": [
-                "enhancement",
-                "core",
-                "employee"
-              ]
-            }
-          ],
-          "pendingDeployment": [
             {
               "number": 10316,
               "title": "Puuttuva OPH henkilö-OID tiedonsiirtovientiin Koskesta",
@@ -324,8 +460,43 @@
                 "tech",
                 "core"
               ]
+            },
+            {
+              "number": 10276,
+              "title": "Poistetaan ECHA-korotukset toiminnallisuus",
+              "author": "Joosakur",
+              "authorName": "Joosa Kurvinen",
+              "mergedAt": "2026-11-20T13:20:00Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10276",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
+            },
+            {
+              "number": 10269,
+              "title": "Varahoidossa aloittavalle voi lähettää viestin ennen varasijoituksen alkua",
+              "author": "Wnt",
+              "authorName": "Jonni Madekivi",
+              "mergedAt": "2026-11-20T12:37:33Z",
+              "repository": "espoon-voltti/evaka",
+              "repoType": "core",
+              "isBot": false,
+              "isHidden": false,
+              "url": "https://github.com/espoon-voltti/evaka/pull/10269",
+              "labels": [
+                "enhancement",
+                "core",
+                "employee"
+              ]
             }
-          ]
+          ],
+          "pendingDeployment": []
         }
       }
     },
@@ -338,7 +509,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-24T05:52:14.616Z",
+            "checkedAt": "2026-11-24T05:55:58.308Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -357,7 +528,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-24T05:52:15.486Z",
+            "checkedAt": "2026-11-24T05:55:59.180Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -459,7 +630,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-24T05:52:26.910Z",
+            "checkedAt": "2026-11-24T05:56:04.187Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -478,7 +649,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-24T05:52:27.751Z",
+            "checkedAt": "2026-11-24T05:56:04.837Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
