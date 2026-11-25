@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T06:01:03.384Z",
+  "generatedAt": "2026-11-25T06:24:07.701Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,7 +10,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-25T06:00:18.304Z",
+            "checkedAt": "2026-11-25T06:23:18.167Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-25T06:00:19.130Z",
+            "checkedAt": "2026-11-25T06:23:19.013Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-25T06:00:21.155Z",
+            "checkedAt": "2026-11-25T06:23:21.242Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -88,25 +88,197 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-25T06:00:32.180Z",
+            "checkedAt": "2026-11-25T06:23:32.801Z",
             "status": "ok",
             "wrapperCommit": {
-              "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
-              "shortSha": "6783086",
-              "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
-              "date": "2026-11-23T22:13:32Z",
+              "sha": "ab2053e96c2e8690a6c2e42f33253bd3843174cb",
+              "shortSha": "ab2053e",
+              "message": "Merge pull request #2301 from Tampere/dependabot/submodules/evaka-de1d072",
+              "date": "2026-11-24T22:12:34Z",
               "author": "github-actions[bot]"
             },
             "coreCommit": {
-              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
-              "shortSha": "d03e9ae",
-              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
-              "date": "2026-11-23T14:49:24Z",
-              "author": "tomuli"
+              "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+              "shortSha": "de1d072",
+              "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
+              "date": "2026-11-24T11:59:23Z",
+              "author": "Joosakur"
             }
           },
-          "versionMismatch": false,
-          "mismatchDetails": []
+          "versionMismatch": true,
+          "mismatchDetails": [
+            {
+              "instanceDomain": "test-varhaiskasvatus.tampere.fi",
+              "checkedAt": "2026-11-25T06:23:32.801Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "ab2053e96c2e8690a6c2e42f33253bd3843174cb",
+                "shortSha": "ab2053e",
+                "message": "Merge pull request #2301 from Tampere/dependabot/submodules/evaka-de1d072",
+                "date": "2026-11-24T22:12:34Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+                "shortSha": "de1d072",
+                "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
+                "date": "2026-11-24T11:59:23Z",
+                "author": "Joosakur"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.hameenkyro.fi",
+              "checkedAt": "2026-11-25T06:23:34.068Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.kangasala.fi",
+              "checkedAt": "2026-11-25T06:23:35.265Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.lempaala.fi",
+              "checkedAt": "2026-11-25T06:23:36.423Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.nokiankaupunki.fi",
+              "checkedAt": "2026-11-25T06:23:37.672Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.orivesi.fi",
+              "checkedAt": "2026-11-25T06:23:38.780Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.pirkkala.fi",
+              "checkedAt": "2026-11-25T06:23:39.973Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.vesilahti.fi",
+              "checkedAt": "2026-11-25T06:23:41.081Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            },
+            {
+              "instanceDomain": "test-evaka.ylojarvi.fi",
+              "checkedAt": "2026-11-25T06:23:42.258Z",
+              "status": "ok",
+              "wrapperCommit": {
+                "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+                "shortSha": "6783086",
+                "message": "Merge pull request #2300 from Tampere/dependabot/submodules/evaka-d03e9ae",
+                "date": "2026-11-23T22:13:32Z",
+                "author": "github-actions[bot]"
+              },
+              "coreCommit": {
+                "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+                "shortSha": "d03e9ae",
+                "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
+                "date": "2026-11-23T14:49:24Z",
+                "author": "tomuli"
+              }
+            }
+          ]
         }
       ],
       "prTracks": {
@@ -252,7 +424,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-25T06:00:57.480Z",
+            "checkedAt": "2026-11-25T06:24:01.255Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -271,7 +443,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-25T06:00:58.447Z",
+            "checkedAt": "2026-11-25T06:24:02.174Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -305,7 +477,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-25T06:01:00.439Z",
+            "checkedAt": "2026-11-25T06:24:04.594Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -324,7 +496,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-25T06:01:01.290Z",
+            "checkedAt": "2026-11-25T06:24:05.432Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {

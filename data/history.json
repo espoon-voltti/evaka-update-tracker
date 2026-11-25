@@ -1,6 +1,105 @@
 {
   "events": [
     {
+      "id": "2026-11-25T06:23:47.180Z_tampere-test_wrapper",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-25T06:23:47.180Z",
+      "previousCommit": {
+        "sha": "6783086edfc07f58cf4b6f4fd307e10f50fce950",
+        "shortSha": "6783086",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "ab2053e96c2e8690a6c2e42f33253bd3843174cb",
+        "shortSha": "ab2053e",
+        "message": "Merge pull request #2301 from Tampere/dependabot/submodules/evaka-de1d072",
+        "date": "2026-11-24T22:12:34Z",
+        "author": "github-actions[bot]"
+      },
+      "includedPRs": [
+        {
+          "number": 2301,
+          "title": "Build(deps): Bump evaka from `d03e9ae` to `de1d072`",
+          "author": "dependabot[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-24T22:12:35Z",
+          "repository": "Tampere/trevaka",
+          "repoType": "wrapper",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/Tampere/trevaka/pull/2301",
+          "labels": [
+            "dependencies",
+            "submodules"
+          ]
+        }
+      ],
+      "repoType": "wrapper",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
+      "id": "2026-11-25T06:23:47.180Z_tampere-test_core",
+      "environmentId": "tampere-test",
+      "cityGroupId": "tampere-region",
+      "detectedAt": "2026-11-25T06:23:47.180Z",
+      "previousCommit": {
+        "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+        "shortSha": "d03e9ae",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+        "shortSha": "de1d072",
+        "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
+        "date": "2026-11-24T11:59:23Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10318,
+          "title": "Päivityksiä Turun päätösteksteihin",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-11-24T11:59:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10318",
+          "labels": [
+            "enhancement",
+            "turku",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10293,
+          "title": "Update dependency com.github.kagkarlsson:db-scheduler to v17.1.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-24T07:43:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10293",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-25T04:56:13.461Z_turku-staging_core",
       "environmentId": "turku-staging",
       "cityGroupId": "turku",
