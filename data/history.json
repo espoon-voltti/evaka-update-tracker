@@ -1,6 +1,64 @@
 {
   "events": [
     {
+      "id": "2026-11-25T02:10:43.510Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-11-25T02:10:43.510Z",
+      "previousCommit": {
+        "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
+        "shortSha": "d03e9ae",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+        "shortSha": "de1d072",
+        "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
+        "date": "2026-11-24T11:59:23Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10318,
+          "title": "Päivityksiä Turun päätösteksteihin",
+          "author": "Joosakur",
+          "authorName": null,
+          "mergedAt": "2026-11-24T11:59:24Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10318",
+          "labels": [
+            "enhancement",
+            "turku",
+            "citizen"
+          ]
+        },
+        {
+          "number": 10293,
+          "title": "Update dependency com.github.kagkarlsson:db-scheduler to v17.1.0",
+          "author": "renovate[bot]",
+          "authorName": null,
+          "mergedAt": "2026-11-24T07:43:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": true,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10293",
+          "labels": [
+            "dependencies",
+            "service"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-24T10:30:53.106Z_espoo-prod_core",
       "environmentId": "espoo-prod",
       "cityGroupId": "espoo",
