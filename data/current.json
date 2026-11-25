@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T10:41:46.713Z",
+  "generatedAt": "2026-11-25T10:48:26.581Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,15 +10,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-25T10:41:03.304Z",
+            "checkedAt": "2026-11-25T10:47:29.276Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
-              "shortSha": "d03e9ae",
-              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
-              "date": "2026-11-23T14:49:24Z",
-              "author": "tomuli"
+              "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+              "shortSha": "de1d072",
+              "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
+              "date": "2026-11-24T11:59:23Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-25T10:41:04.190Z",
+            "checkedAt": "2026-11-25T10:47:31.257Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -63,7 +63,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-25T10:41:06.249Z",
+            "checkedAt": "2026-11-25T10:47:33.530Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3565febf9aa87b636de1bfaeef1b8edefe05c967",
@@ -88,7 +88,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-25T10:41:16.249Z",
+            "checkedAt": "2026-11-25T10:47:46.528Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ab2053e96c2e8690a6c2e42f33253bd3843174cb",
@@ -252,15 +252,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-25T10:41:41.117Z",
+            "checkedAt": "2026-11-25T10:48:17.048Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
-              "shortSha": "d03e9ae",
-              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
-              "date": "2026-11-23T14:49:24Z",
-              "author": "tomuli"
+              "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+              "shortSha": "de1d072",
+              "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
+              "date": "2026-11-24T11:59:23Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -271,7 +271,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-25T10:41:42.057Z",
+            "checkedAt": "2026-11-25T10:48:19.168Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -305,15 +305,15 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-25T10:41:43.954Z",
+            "checkedAt": "2026-11-25T10:48:21.814Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "d03e9ae8734772ef268bf880612c365dd80297f9",
-              "shortSha": "d03e9ae",
-              "message": "Merge pull request #10316 from espoon-voltti/missing-oph-oid-values",
-              "date": "2026-11-23T14:49:24Z",
-              "author": "tomuli"
+              "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+              "shortSha": "de1d072",
+              "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
+              "date": "2026-11-24T11:59:23Z",
+              "author": "Joosakur"
             }
           },
           "versionMismatch": false,
@@ -324,7 +324,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-25T10:41:44.755Z",
+            "checkedAt": "2026-11-25T10:48:23.911Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -343,8 +343,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10318,
               "title": "Päivityksiä Turun päätösteksteihin",
@@ -363,6 +362,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": []
         }
       }
