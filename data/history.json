@@ -1,6 +1,113 @@
 {
   "events": [
     {
+      "id": "2026-11-27T02:10:30.538Z_espoo-staging_core",
+      "environmentId": "espoo-staging",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-11-27T02:10:30.538Z",
+      "previousCommit": {
+        "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+        "shortSha": "de1d072",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f54408b59d3c0c0871f99cf94fe62de8ce4b2566",
+        "shortSha": "f54408b",
+        "message": "Merge pull request #10321 from espoon-voltti/child-document-edit-lock-fixes",
+        "date": "2026-11-26T14:41:00Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10321,
+          "title": "Parannetaan asiakirjojen muokkauksen vikasietoisuutta",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-26T14:41:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10321",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10322,
+          "title": "Oulun Fabric-siirron aikaikkuna 5 vuoteen alkulatausta varten",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-11-26T11:35:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10322",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10323,
+          "title": "Audit-lokitusten päivityksiä: maksumuutokset, palvelusetelikertoimet ja hyvityskorjaukset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:57:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10323",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10324,
+          "title": "Lomavarausten poiston audit-lokituksen päivitys",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-11-26T10:53:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10324",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10320,
+          "title": "Perhesuhteiden audit-lokituksen päivitykset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:50:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10320",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true,
+      "branch": null
+    },
+    {
       "id": "2026-11-25T10:51:27.485Z_tampere-prod_wrapper",
       "environmentId": "tampere-prod",
       "cityGroupId": "tampere-region",
@@ -30199,64 +30306,6 @@
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
       "detectedAt": "2026-10-28T06:16:55.395Z",
-      "previousCommit": {
-        "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
-        "shortSha": "5ad8e0b",
-        "message": "",
-        "date": "",
-        "author": ""
-      },
-      "newCommit": {
-        "sha": "5f420ceae313e5d18b621a73b0dc452f16c974db",
-        "shortSha": "5f420ce",
-        "message": "Merge pull request #10126 from espoon-voltti/apple-push-token-fix",
-        "date": "2026-10-27T12:20:30Z",
-        "author": "terolaakso-reaktor"
-      },
-      "includedPRs": [
-        {
-          "number": 10126,
-          "title": "Korjaus Safari-selaimen push-ilmoituksiin kunnan lähettäessä useita ilmoituksia pitkäkestoisesti",
-          "author": "terolaakso-reaktor",
-          "authorName": "Tero Laakso",
-          "mergedAt": "2026-10-27T12:20:30Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/10126",
-          "labels": [
-            "bugfix",
-            "core",
-            "citizen"
-          ]
-        },
-        {
-          "number": 10122,
-          "title": "E2E-testikorjauksia",
-          "author": "akheron",
-          "authorName": "Petri Lehtinen",
-          "mergedAt": "2026-10-27T05:46:15Z",
-          "repository": "espoon-voltti/evaka",
-          "repoType": "core",
-          "isBot": false,
-          "isHidden": false,
-          "url": "https://github.com/espoon-voltti/evaka/pull/10122",
-          "labels": [
-            "tech",
-            "core"
-          ]
-        }
-      ],
-      "repoType": "core",
-      "isDefaultBranch": true,
-      "branch": null
-    },
-    {
-      "id": "2026-10-28T02:10:48.009Z_espoo-staging_core",
-      "environmentId": "espoo-staging",
-      "cityGroupId": "espoo",
-      "detectedAt": "2026-10-28T02:10:48.009Z",
       "previousCommit": {
         "sha": "5ad8e0ba4e6a320698c59dc6613ecd5a91eb3dfe",
         "shortSha": "5ad8e0b",
