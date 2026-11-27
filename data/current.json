@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T10:15:08.875Z",
+  "generatedAt": "2026-11-27T10:19:53.033Z",
   "cityGroups": [
     {
       "id": "espoo",
@@ -10,14 +10,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-27T10:14:26.340Z",
+            "checkedAt": "2026-11-27T10:19:03.225Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
-              "shortSha": "de1d072",
-              "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
-              "date": "2026-11-24T11:59:23Z",
+              "sha": "f54408b59d3c0c0871f99cf94fe62de8ce4b2566",
+              "shortSha": "f54408b",
+              "message": "Merge pull request #10321 from espoon-voltti/child-document-edit-lock-fixes",
+              "date": "2026-11-26T14:41:00Z",
               "author": "Joosakur"
             }
           },
@@ -29,7 +29,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging.espoonvarhaiskasvatus.fi",
-            "checkedAt": "2026-11-27T10:14:27.198Z",
+            "checkedAt": "2026-11-27T10:19:06.235Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -48,8 +48,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10321,
               "title": "Parannetaan asiakirjojen muokkauksen vikasietoisuutta",
@@ -116,6 +115,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10325,
@@ -146,7 +146,7 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-27T10:14:30.512Z",
+            "checkedAt": "2026-11-27T10:19:09.818Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "ab2053e96c2e8690a6c2e42f33253bd3843174cb",
@@ -171,7 +171,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "test-varhaiskasvatus.tampere.fi",
-            "checkedAt": "2026-11-27T10:14:42.155Z",
+            "checkedAt": "2026-11-27T10:19:22.536Z",
             "status": "ok",
             "wrapperCommit": {
               "sha": "3247452c984292c2c2aea3559dacc94e70abc6e1",
@@ -299,14 +299,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-27T10:14:59.585Z",
+            "checkedAt": "2026-11-27T10:19:40.857Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
-              "shortSha": "de1d072",
-              "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
-              "date": "2026-11-24T11:59:23Z",
+              "sha": "f54408b59d3c0c0871f99cf94fe62de8ce4b2566",
+              "shortSha": "f54408b",
+              "message": "Merge pull request #10321 from espoon-voltti/child-document-edit-lock-fixes",
+              "date": "2026-11-26T14:41:00Z",
               "author": "Joosakur"
             }
           },
@@ -318,7 +318,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-varhaiskasvatus.ouka.fi",
-            "checkedAt": "2026-11-27T10:15:00.524Z",
+            "checkedAt": "2026-11-27T10:19:43.587Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -337,8 +337,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10321,
               "title": "Parannetaan asiakirjojen muokkauksen vikasietoisuutta",
@@ -422,6 +421,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10325,
@@ -452,14 +452,14 @@
           "type": "production",
           "version": {
             "instanceDomain": "evaka.turku.fi",
-            "checkedAt": "2026-11-27T10:15:04.236Z",
+            "checkedAt": "2026-11-27T10:19:46.972Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
-              "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
-              "shortSha": "de1d072",
-              "message": "Merge pull request #10318 from espoon-voltti/turku-decision-authority-texts",
-              "date": "2026-11-24T11:59:23Z",
+              "sha": "f54408b59d3c0c0871f99cf94fe62de8ce4b2566",
+              "shortSha": "f54408b",
+              "message": "Merge pull request #10321 from espoon-voltti/child-document-edit-lock-fixes",
+              "date": "2026-11-26T14:41:00Z",
               "author": "Joosakur"
             }
           },
@@ -471,7 +471,7 @@
           "type": "staging",
           "version": {
             "instanceDomain": "staging-evaka.turku.fi",
-            "checkedAt": "2026-11-27T10:15:05.182Z",
+            "checkedAt": "2026-11-27T10:19:49.764Z",
             "status": "ok",
             "wrapperCommit": null,
             "coreCommit": {
@@ -490,8 +490,7 @@
         "wrapper": null,
         "core": {
           "repository": "espoon-voltti/evaka",
-          "deployed": [],
-          "inStaging": [
+          "deployed": [
             {
               "number": 10321,
               "title": "Parannetaan asiakirjojen muokkauksen vikasietoisuutta",
@@ -558,6 +557,7 @@
               ]
             }
           ],
+          "inStaging": [],
           "pendingDeployment": [
             {
               "number": 10325,

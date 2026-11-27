@@ -1,6 +1,324 @@
 {
   "events": [
     {
+      "id": "2026-11-27T10:19:06.235Z_espoo-prod_core",
+      "environmentId": "espoo-prod",
+      "cityGroupId": "espoo",
+      "detectedAt": "2026-11-27T10:19:06.235Z",
+      "previousCommit": {
+        "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+        "shortSha": "de1d072",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f54408b59d3c0c0871f99cf94fe62de8ce4b2566",
+        "shortSha": "f54408b",
+        "message": "Merge pull request #10321 from espoon-voltti/child-document-edit-lock-fixes",
+        "date": "2026-11-26T14:41:00Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10321,
+          "title": "Parannetaan asiakirjojen muokkauksen vikasietoisuutta",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-26T14:41:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10321",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10322,
+          "title": "Oulun Fabric-siirron aikaikkuna 5 vuoteen alkulatausta varten",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-11-26T11:35:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10322",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10323,
+          "title": "Audit-lokitusten päivityksiä: maksumuutokset, palvelusetelikertoimet ja hyvityskorjaukset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:57:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10323",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10324,
+          "title": "Lomavarausten poiston audit-lokituksen päivitys",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-11-26T10:53:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10324",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10320,
+          "title": "Perhesuhteiden audit-lokituksen päivitykset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:50:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10320",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-11-27T10:19:43.587Z_oulu-prod_core",
+      "environmentId": "oulu-prod",
+      "cityGroupId": "oulu",
+      "detectedAt": "2026-11-27T10:19:43.587Z",
+      "previousCommit": {
+        "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+        "shortSha": "de1d072",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f54408b59d3c0c0871f99cf94fe62de8ce4b2566",
+        "shortSha": "f54408b",
+        "message": "Merge pull request #10321 from espoon-voltti/child-document-edit-lock-fixes",
+        "date": "2026-11-26T14:41:00Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10321,
+          "title": "Parannetaan asiakirjojen muokkauksen vikasietoisuutta",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-26T14:41:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10321",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10322,
+          "title": "Oulun Fabric-siirron aikaikkuna 5 vuoteen alkulatausta varten",
+          "author": "terolaakso-reaktor",
+          "authorName": "Tero Laakso",
+          "mergedAt": "2026-11-26T11:35:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10322",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10323,
+          "title": "Audit-lokitusten päivityksiä: maksumuutokset, palvelusetelikertoimet ja hyvityskorjaukset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:57:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10323",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10324,
+          "title": "Lomavarausten poiston audit-lokituksen päivitys",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-11-26T10:53:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10324",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10320,
+          "title": "Perhesuhteiden audit-lokituksen päivitykset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:50:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10320",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
+      "id": "2026-11-27T10:19:49.764Z_turku-prod_core",
+      "environmentId": "turku-prod",
+      "cityGroupId": "turku",
+      "detectedAt": "2026-11-27T10:19:49.764Z",
+      "previousCommit": {
+        "sha": "de1d0729561d854b4b763f96db7b48a98617cef2",
+        "shortSha": "de1d072",
+        "message": "",
+        "date": "",
+        "author": ""
+      },
+      "newCommit": {
+        "sha": "f54408b59d3c0c0871f99cf94fe62de8ce4b2566",
+        "shortSha": "f54408b",
+        "message": "Merge pull request #10321 from espoon-voltti/child-document-edit-lock-fixes",
+        "date": "2026-11-26T14:41:00Z",
+        "author": "Joosakur"
+      },
+      "includedPRs": [
+        {
+          "number": 10321,
+          "title": "Parannetaan asiakirjojen muokkauksen vikasietoisuutta",
+          "author": "Joosakur",
+          "authorName": "Joosa Kurvinen",
+          "mergedAt": "2026-11-26T14:41:01Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10321",
+          "labels": [
+            "bugfix",
+            "core",
+            "employee"
+          ]
+        },
+        {
+          "number": 10322,
+          "title": "Oulun Fabric-siirron aikaikkuna 5 vuoteen alkulatausta varten",
+          "author": "terolaakso-reaktor",
+          "authorName": null,
+          "mergedAt": "2026-11-26T11:35:39Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": true,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10322",
+          "labels": [
+            "enhancement",
+            "oulu",
+            "not-visible"
+          ]
+        },
+        {
+          "number": 10323,
+          "title": "Audit-lokitusten päivityksiä: maksumuutokset, palvelusetelikertoimet ja hyvityskorjaukset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:57:20Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10323",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10324,
+          "title": "Lomavarausten poiston audit-lokituksen päivitys",
+          "author": "ohinkinen",
+          "authorName": "Olli-Heikki Inkinen",
+          "mergedAt": "2026-11-26T10:53:23Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10324",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        },
+        {
+          "number": 10320,
+          "title": "Perhesuhteiden audit-lokituksen päivitykset",
+          "author": "tomuli",
+          "authorName": "Samuli Toivonen",
+          "mergedAt": "2026-11-26T10:50:35Z",
+          "repository": "espoon-voltti/evaka",
+          "repoType": "core",
+          "isBot": false,
+          "isHidden": false,
+          "url": "https://github.com/espoon-voltti/evaka/pull/10320",
+          "labels": [
+            "tech",
+            "core"
+          ]
+        }
+      ],
+      "repoType": "core",
+      "isDefaultBranch": true
+    },
+    {
       "id": "2026-11-27T05:19:21.385Z_tampere-test_wrapper",
       "environmentId": "tampere-test",
       "cityGroupId": "tampere-region",
